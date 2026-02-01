@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-FileCopyrightText: The Ferrocene Developers
+
+---
+
+name: Nightly glossary check
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  glossary:
+    name: Check generated glossary
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Install delta
+        run: python tools/install-delta.py
+
+      - name: Run generated glossary check
+        run: ./make.py --check-generated-glossary
+
+      - name: Upload glossary compare artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: glossary-compare
+          path: build/glossary-compare
