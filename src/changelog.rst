@@ -27,6 +27,9 @@ Language changes in Rust 1.93.0
   - No change: the target is outside the scope of FLS
 
 - `Stabilize declaration of C-style variadic functions for the system ABI <https://github.com/rust-lang/rust/pull/145954>`_
+
+  - No change: the variadic ABI list already includes ``extern "system"`` and ``extern "system-unwind"``, and variadic functions are defined as external declarations.
+
 - `Emit error when using some keyword as a cfg predicate <https://github.com/rust-lang/rust/pull/146978>`_
 
   - No change: this bug was not documented in FLS
