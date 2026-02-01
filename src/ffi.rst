@@ -55,6 +55,9 @@ ABI
 :t:`Application Binary Interface` or :t:`ABI` is a set of conventions that
 dictate how data and computation cross language boundaries.
 
+:dp:`fls_TmvfmSQP65pA`
+The :t:`calling convention` of a :t:`function` is the portion of the related :t:`ABI` that defines how arguments are passed, how return values are passed, and which side is responsible for cleaning up the stack.
+
 :dp:`fls_2w0xi6rxw3uz`
 The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
 
@@ -80,6 +83,18 @@ The following :t:`[ABI]s` are supported:
   ``extern "system-unwind"`` - The same as ``extern "system"`` with the
   addition that unwinding across FFI is permitted.
 
+:dp:`fls_ZbvI45Ojpte4`
+The :t:`ABI` of a :t:`function` or :t:`function pointer type` whose :s:`AbiKind` is ``"system"`` is determined as follows:
+
+#. :dp:`fls_tZP7xARsjuYv`
+   If the target is Windows x86_32 and the :t:`function` is a :t:`variadic function` or the :t:`function pointer type` specifies a :s:`VariadicPart`, then the :t:`ABI` is ``extern "C"``.
+
+#. :dp:`fls_NxhrfQzbxetN`
+   Otherwise, if the target is Windows x86_32, then the :t:`ABI` is ``extern "stdcall"``.
+
+#. :dp:`fls_yjRmR5F1cL6i`
+   Otherwise, the :t:`ABI` is ``extern "C"``.
+
 :dp:`fls_r2drzo3dixe4`
 A :t:`function` without an explicit :t:`ABI` has implicit :t:`Rust ABI`, unless
 it appears within an :t:`external block`.
@@ -95,46 +110,40 @@ A tool is allowed to specify additional :t:`[ABI]s`. These :t:`[ABI]s` may
 include, but may not be limited to, the following:
 
 * :dp:`fls_dbbfqaqa80r8`
-  ``extern "aapcs"`` - The soft-float ABI for 32-bit ARM targets.
+  ``extern "aapcs"`` - The soft-float ABI for 32-bit ARM targets. Only available on 32-bit ARM targets.
 
 * :dp:`fls_UippZpUyYpHl`
-  ``extern "aapcs-unwind"`` - The same as ``extern "aapcs"``
-  with the addition that unwinding across FFI is permitted.
+  ``extern "aapcs-unwind"`` - The same as ``extern "aapcs"`` with the addition that unwinding across FFI is permitted. Only available on 32-bit ARM targets.
 
 * :dp:`fls_36qrs2fxxvi7`
-  ``extern "cdecl"`` - The x86_32 :t:`ABI` of :t:`C` code.
+  ``extern "cdecl"`` - The x86_32 :t:`ABI` of :t:`C` code. Only available on x86_32 targets.
 
 * :dp:`fls_CIyK8BYzzo26`
-  ``extern "cdecl-unwind"`` - The same as ``extern "cdecl"``
-  with the addition that unwinding across FFI is permitted.
+  ``extern "cdecl-unwind"`` - The same as ``extern "cdecl"`` with the addition that unwinding across FFI is permitted. Only available on x86_32 targets.
 
 * :dp:`fls_6rtj6rwqxojh`
-  ``extern "fastcall"`` - The ``fastcall`` :t:`ABI` that corresponds to MSVC's
-  ``__fastcall`` and GCC and clang's ``__attribute__((fastcall))``.
+  ``extern "fastcall"`` - The ``fastcall`` :t:`ABI` that corresponds to MSVC's ``__fastcall`` and GCC and clang's ``__attribute__((fastcall))``. Only available on x86_32 targets.
 
 * :dp:`fls_d3nmpc5mtg27`
-  ``extern "stdcall"`` - The x86_32 :t:`ABI` of the Win32 API.
+  ``extern "stdcall"`` - The x86_32 :t:`ABI` of the Win32 API. Only available on x86_32 targets.
 
 * :dp:`fls_7t7yxh94wnbl`
-  ``extern "sysv64"`` - The x86_64 non-Windows :t:`ABI` of :t:`C` code.
+  ``extern "sysv64"`` - The x86_64 non-Windows :t:`ABI` of :t:`C` code. Only available on x86_64 targets.
 
 * :dp:`fls_ccFdnlX5HIYk`
-  ``extern "sysv64-unwind"`` - The same as ``extern "sysv64"``
-  with the addition that unwinding across FFI is permitted.
+  ``extern "sysv64-unwind"`` - The same as ``extern "sysv64"`` with the addition that unwinding across FFI is permitted. Only available on x86_64 targets.
 
 * :dp:`fls_sxj4vy39sj4g`
-  ``extern "vectorcall"`` - The ``vectorcall`` :t:`ABI` that corresponds to
-  MSVC's ``__vectorcall`` and clang's ``__attribute__((vectorcall))``.
+  ``extern "vectorcall"`` - The ``vectorcall`` :t:`ABI` that corresponds to MSVC's ``__vectorcall`` and clang's ``__attribute__((vectorcall))``. Only available on x86 and x86_64 targets.
 
 * :dp:`fls_tyjs1x4j8ovp`
-  ``extern "win64"`` - The x86_64 Windows :t:`ABI` of :t:`C` code.
+  ``extern "win64"`` - The x86_64 Windows :t:`ABI` of :t:`C` code. Only available on x86_64 targets.
 
 * :dp:`fls_xrCRprWS13R1`
-  ``extern "win64-unwind"`` - The same as ``extern "win64"``
-  with the addition that unwinding across FFI is permitted.
+  ``extern "win64-unwind"`` - The same as ``extern "win64"`` with the addition that unwinding across FFI is permitted. Only available on x86_64 targets.
 
 * :dp:`fls_JHlqXjn4Sf07`
-  ``extern "efiapi"`` - The :t:`ABI` for `UEFI <https://uefi.org/specifications>`_.
+  ``extern "efiapi"`` - The :t:`ABI` for `UEFI <https://uefi.org/specifications>`_. Only available on x86 and ARM targets (32-bit and 64-bit).
 
 .. rubric:: Undefined Behavior
 
@@ -180,6 +189,9 @@ External Blocks
 An :t:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
+:dp:`fls_9OFXj6DnKS7W`
+The declarations of an :t:`external block` are introduced into the :t:`value namespace` of the enclosing module or block.
+
 :dp:`fls_8ltVLtAfvy0m`
 An :t:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
 
@@ -221,7 +233,10 @@ An :t:`external function` is an unchecked import of a foreign :t:`function`.
 An :t:`external function` shall be invoked from an :t:`unsafe context` unless it is defined in an :t:`unsafe external block` and subject to :s:`ItemSafety` with keyword ``safe``.
 
 :dp:`fls_qwchgvvnp0qe`
-An :t:`external function` shall not specify a :s:`FunctionQualifierList`.
+An :t:`external function` shall not specify a :s:`FunctionQualifierList` element other than :s:`ItemSafety`.
+
+:dp:`fls_tuP6iLdL6Kx0`
+An :t:`external function` shall only specify :s:`ItemSafety` if it is defined in an :t:`unsafe external block`.
 
 :dp:`fls_w00qi1gx204e`
 An :t:`external function` inherits the :t:`ABI` of its enclosing

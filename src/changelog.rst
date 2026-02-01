@@ -27,6 +27,34 @@ Language changes in Rust 1.93.0
   - No change: the target is outside the scope of FLS
 
 - `Stabilize declaration of C-style variadic functions for the system ABI <https://github.com/rust-lang/rust/pull/145954>`_
+
+  - New paragraphs:
+
+    - :p:`fls_TmvfmSQP65pA`
+    - :p:`fls_9OFXj6DnKS7W`
+    - :p:`fls_tuP6iLdL6Kx0`
+    - :p:`fls_MpcAsy5zhCeW`
+    - :p:`fls_ZbvI45Ojpte4`
+    - :p:`fls_tZP7xARsjuYv`
+    - :p:`fls_NxhrfQzbxetN`
+    - :p:`fls_yjRmR5F1cL6i`
+
+  - Changed paragraphs:
+
+    - :p:`fls_dbbfqaqa80r8`
+    - :p:`fls_UippZpUyYpHl`
+    - :p:`fls_36qrs2fxxvi7`
+    - :p:`fls_CIyK8BYzzo26`
+    - :p:`fls_6rtj6rwqxojh`
+    - :p:`fls_d3nmpc5mtg27`
+    - :p:`fls_7t7yxh94wnbl`
+    - :p:`fls_ccFdnlX5HIYk`
+    - :p:`fls_sxj4vy39sj4g`
+    - :p:`fls_tyjs1x4j8ovp`
+    - :p:`fls_xrCRprWS13R1`
+    - :p:`fls_JHlqXjn4Sf07`
+    - :p:`fls_qwchgvvnp0qe`
+
 - `Emit error when using some keyword as a cfg predicate <https://github.com/rust-lang/rust/pull/146978>`_
 
   - No change: this bug was not documented in FLS
