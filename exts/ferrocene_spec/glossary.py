@@ -3,6 +3,7 @@
 
 from dataclasses import dataclass
 import hashlib
+from pathlib import Path
 import re
 import string
 from typing import Iterable, Optional
@@ -30,6 +31,16 @@ PARAGRAPH_KIND = definitions.paragraphs.NAME
 SPLIT_NUMBERS = re.compile(r"([0-9]+)")
 GLOSSARY_ANCHOR = re.compile(r"^\.\. _fls_[A-Za-z0-9]+:\s*$")
 GLOSSARY_TITLE = "Glossary"
+GLOSSARY_STUB_ANCHOR = "fls_bc2qwbfibrcs"
+GLOSSARY_GENERATED_COMMENT = (
+    ".. This file is generated from chapter definitions. Do not edit."
+)
+ROLE_BY_KIND = {
+    TERM_KIND: "t",
+    SYNTAX_KIND: "s",
+    CODE_TERM_KIND: "c",
+    PARAGRAPH_KIND: "p",
+}
 
 
 class GlossaryMarkerNode(nodes.Element):
@@ -150,6 +161,7 @@ class GlossaryTransform(SphinxTransform):
         if not sections:
             if getattr(self.env, "spec_glossary_signature", None) is not None:
                 warn("no glossary definitions found", node)
+            write_generated_glossary(self.app, sections, self.document)
             node.parent.remove(node)
             return
 
@@ -165,6 +177,7 @@ class GlossaryTransform(SphinxTransform):
         refresh_glossary_sections(self.env, self.document, glossary_docname)
         refresh_glossary_paragraphs(self.env, self.document, glossary_docname)
         refresh_glossary_secnumbers(self.env, glossary_docname, sections)
+        write_generated_glossary(self.app, sections, self.document)
 
     def build_paragraph(self, glossary_docname, definition):
         try:
@@ -276,9 +289,22 @@ def base62_encode(data, length):
 def on_source_read(app, docname, source):
     if docname != GLOSSARY_DOCNAME:
         return
-    if not app.config.spec_glossary_stub_only_check:
-        return
-    check_glossary_stub_only(source[0], docname)
+    override = app.config.spec_glossary_source_override
+    if override:
+        source[0] = read_override_source(override, docname)
+    if app.config.spec_glossary_stub_only_check:
+        check_glossary_stub_only(source[0], docname)
+
+
+def read_override_source(path, docname):
+    try:
+        return Path(path).read_text(encoding="utf-8")
+    except OSError as exc:
+        warn(
+            f"failed to read glossary override source '{path}': {exc}",
+            (docname, 1),
+        )
+        raise
 
 
 def check_glossary_stub_only(text, docname):
@@ -305,6 +331,136 @@ def check_glossary_stub_only(text, docname):
             "glossary stub contains unsupported content",
             (docname, lineno),
         )
+
+
+def write_generated_glossary(app, sections, document):
+    source_has_unicode = not document.astext().isascii()
+    lines = glossary_header_lines()
+    for section in sections:
+        lines.extend(serialize_section(section))
+    output = "\n".join(lines).rstrip() + "\n"
+    if not source_has_unicode and not output.isascii():
+        raise RuntimeError("generated glossary contains non-ASCII characters")
+
+    build_dir = Path(app.outdir).parent
+    generated_path = build_dir / "glossary.generated.rst"
+    generated_path.write_text(output, encoding="utf-8")
+
+
+def glossary_header_lines():
+    return [
+        ".. SPDX-License-Identifier: MIT OR Apache-2.0",
+        "   SPDX-FileCopyrightText: The Ferrocene Developers",
+        "   SPDX-FileCopyrightText: The Rust Project Contributors",
+        "",
+        ".. default-domain:: spec",
+        "",
+        ".. informational-page::",
+        "",
+        f".. _{GLOSSARY_STUB_ANCHOR}:",
+        "",
+        GLOSSARY_TITLE,
+        "=" * len(GLOSSARY_TITLE),
+        "",
+        GLOSSARY_GENERATED_COMMENT,
+        "",
+    ]
+
+
+def serialize_section(section):
+    section_id = None
+    if section.get("ids"):
+        section_id = section["ids"][0]
+    title_node = next(section.findall(nodes.title), None)
+    title = title_node.astext() if title_node is not None else ""
+    lines = []
+    if section_id:
+        lines.append(f".. _{section_id}:")
+        lines.append("")
+    lines.append(title)
+    lines.append("^" * len(title))
+    lines.append("")
+
+    for child in section.children:
+        if not isinstance(child, nodes.paragraph):
+            continue
+        paragraph_id = find_paragraph_id(child)
+        if paragraph_id is None:
+            continue
+        lines.append(f":dp:`{paragraph_id}`")
+        lines.append(serialize_paragraph_text(child))
+        lines.append("")
+    return lines
+
+
+def find_paragraph_id(paragraph):
+    for node in paragraph.findall(definitions.DefIdNode):
+        if node["def_kind"] == PARAGRAPH_KIND:
+            return node["def_id"]
+    return None
+
+
+def serialize_paragraph_text(paragraph):
+    parts = []
+    for child in paragraph.children:
+        if isinstance(child, definitions.DefIdNode) and child["def_kind"] == PARAGRAPH_KIND:
+            continue
+        parts.append(serialize_inline(child))
+    return "".join(parts).replace("\n", " ")
+
+
+def serialize_inline(node):
+    if isinstance(node, definitions.DefRefNode):
+        return serialize_def_ref(node)
+    if isinstance(node, definitions.DefIdNode):
+        return serialize_def_id(node)
+    if isinstance(node, nodes.emphasis):
+        return f"*{serialize_children(node)}*"
+    if isinstance(node, nodes.strong):
+        return f"**{serialize_children(node)}**"
+    if isinstance(node, nodes.literal):
+        return f"``{serialize_children(node)}``"
+    if isinstance(node, nodes.reference):
+        text = node.astext()
+        refuri = node.get("refuri")
+        if refuri:
+            return f"`{text} <{refuri}>`__"
+        return text
+    if isinstance(node, nodes.inline):
+        return serialize_children(node)
+    return node.astext()
+
+
+def serialize_children(node):
+    if not node.children:
+        return node.astext()
+    return "".join(serialize_inline(child) for child in node.children)
+
+
+def serialize_def_ref(node):
+    role = kind_to_role(node["ref_kind"])
+    if role is None:
+        return node.astext()
+    text = node["ref_text"]
+    target = node["ref_target"]
+    if text != target:
+        text = f"{text} <{target}>"
+    return f":{role}:`{text}`"
+
+
+def serialize_def_id(node):
+    role = kind_to_role(node["def_kind"])
+    if role is None:
+        return node.astext()
+    text = node["def_text"]
+    target = node["def_id"]
+    if definitions.id_from_text(node["def_kind"], text) != target:
+        text = f"{text} <{target}>"
+    return f":d{role}:`{text}`"
+
+
+def kind_to_role(kind):
+    return ROLE_BY_KIND.get(kind)
 
 
 def compute_signature(storage):
@@ -456,6 +612,12 @@ def setup(app):
     app.add_node(GlossaryMarkerNode)
     app.add_env_collector(GlossaryCollector)
     app.add_post_transform(GlossaryTransform)
+    app.add_config_value(
+        "spec_glossary_source_override",
+        None,
+        "env",
+        types=[str, type(None)],
+    )
     app.add_config_value(
         "spec_glossary_stub_only_check",
         True,
