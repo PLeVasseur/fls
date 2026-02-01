@@ -1144,6 +1144,14 @@ A :dt:`callee type` is either a :t:`function item type`, a
 or a :t:`type` that implements any of the :std:`core::ops::Fn`,
 :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce` :t:`[trait]s`.
 
+.. _fls_M9Hw83dqGT6w:
+
+calling convention
+^^^^^^^^^^^^^^^^^^
+
+:dp:`fls_MpcAsy5zhCeW`
+:dt:`calling convention` is the portion of an :t:`ABI` that defines how arguments are passed, how return values are passed, and which side is responsible for cleaning up the stack.
+
 .. _fls_s78gd8yxx2yv:
 
 capture mode

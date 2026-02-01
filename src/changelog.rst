@@ -33,6 +33,7 @@ Language changes in Rust 1.93.0
     - :p:`fls_TmvfmSQP65pA`
     - :p:`fls_9OFXj6DnKS7W`
     - :p:`fls_tuP6iLdL6Kx0`
+    - :p:`fls_MpcAsy5zhCeW`
 
   - Changed paragraphs:
 

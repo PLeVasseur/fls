@@ -56,7 +56,7 @@ ABI
 dictate how data and computation cross language boundaries.
 
 :dp:`fls_TmvfmSQP65pA`
-The calling convention of a :t:`function` is the portion of the related :t:`ABI` that defines how arguments are passed, how return values are passed, and which side is responsible for cleaning up the stack.
+The :t:`calling convention` of a :t:`function` is the portion of the related :t:`ABI` that defines how arguments are passed, how return values are passed, and which side is responsible for cleaning up the stack.
 
 :dp:`fls_2w0xi6rxw3uz`
 The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
