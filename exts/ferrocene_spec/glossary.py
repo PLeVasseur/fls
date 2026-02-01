@@ -28,6 +28,8 @@ CODE_TERM_KIND = definitions.code_terms.NAME
 PARAGRAPH_KIND = definitions.paragraphs.NAME
 
 SPLIT_NUMBERS = re.compile(r"([0-9]+)")
+GLOSSARY_ANCHOR = re.compile(r"^\.\. _fls_[A-Za-z0-9]+:\s*$")
+GLOSSARY_TITLE = "Glossary"
 
 
 class GlossaryMarkerNode(nodes.Element):
@@ -271,6 +273,40 @@ def base62_encode(data, length):
     return "".join(chars)
 
 
+def on_source_read(app, docname, source):
+    if docname != GLOSSARY_DOCNAME:
+        return
+    if not app.config.spec_glossary_stub_only_check:
+        return
+    check_glossary_stub_only(source[0], docname)
+
+
+def check_glossary_stub_only(text, docname):
+    allowed = {
+        ".. default-domain:: spec",
+        ".. informational-page::",
+        ".. spec-glossary::",
+        GLOSSARY_TITLE,
+        "=" * len(GLOSSARY_TITLE),
+    }
+    for lineno, line in enumerate(text.splitlines(), start=1):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped in allowed:
+            continue
+        if GLOSSARY_ANCHOR.match(stripped):
+            continue
+        if stripped.startswith("SPDX-") and line[: len(line) - len(line.lstrip())]:
+            continue
+        if line.lstrip().startswith(".. ") and "::" not in line:
+            continue
+        warn(
+            "glossary stub contains unsupported content",
+            (docname, lineno),
+        )
+
+
 def compute_signature(storage):
     items = []
     for term_id, defs in storage.items():
@@ -420,3 +456,10 @@ def setup(app):
     app.add_node(GlossaryMarkerNode)
     app.add_env_collector(GlossaryCollector)
     app.add_post_transform(GlossaryTransform)
+    app.add_config_value(
+        "spec_glossary_stub_only_check",
+        True,
+        "env",
+        types=[bool],
+    )
+    app.connect("source-read", on_source_read)
