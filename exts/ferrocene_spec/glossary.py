@@ -21,8 +21,11 @@ BASE62_ALPHABET = string.ascii_letters + string.digits
 BASE62_BASE = len(BASE62_ALPHABET)
 ID_LENGTH = 12
 
-TERM_KIND = "term"
-PARAGRAPH_KIND = "paragraph"
+GLOSSARY_DOCNAME = "glossary"
+TERM_KIND = definitions.terms.NAME
+SYNTAX_KIND = definitions.syntax.NAME
+CODE_TERM_KIND = definitions.code_terms.NAME
+PARAGRAPH_KIND = definitions.paragraphs.NAME
 
 SPLIT_NUMBERS = re.compile(r"([0-9]+)")
 
@@ -48,21 +51,6 @@ class GlossaryDefinition:
     line: Optional[int]
 
 
-@dataclass(frozen=True)
-class GlossarySectionSource:
-    title: str
-    title_id: str
-    section_id: str
-    node: nodes.section
-    term_ids: tuple[str, ...]
-
-
-@dataclass(frozen=True)
-class GlossaryEntry:
-    term_id: str
-    title: str
-    definition: Optional[GlossaryDefinition]
-    source_section: Optional[GlossarySectionSource]
 
 
 class GlossaryCollector(EnvironmentCollector):
@@ -104,8 +92,8 @@ class GlossaryCollector(EnvironmentCollector):
 
         env.spec_glossary_signature = signature
         apply_term_precedence(env)
-        if "glossary" in env.found_docs:
-            return ["glossary"]
+        if GLOSSARY_DOCNAME in env.found_docs:
+            return [GLOSSARY_DOCNAME]
         return []
 
 
@@ -118,47 +106,8 @@ class GlossaryTransform(SphinxTransform):
 
     def replace_node(self, node):
         glossary_docname = node["docname"]
-        source_sections = collect_glossary_source_sections(self.document)
-        source_by_term_id, source_by_title_id = index_glossary_sources(source_sections)
-
         definitions_storage = get_storage(self.env)
         selected = select_definitions(definitions_storage, glossary_docname)
-
-        entries = []
-        used_source_sections = set()
-        for definition in sort_definitions(selected):
-            source = source_by_term_id.get(definition.term_id) or source_by_title_id.get(
-                definition.term_id
-            )
-            title = source.title if source is not None else definition.display_text
-            entries.append(
-                GlossaryEntry(
-                    term_id=definition.term_id,
-                    title=title,
-                    definition=definition,
-                    source_section=source,
-                )
-            )
-            if source is not None:
-                used_source_sections.add(source.section_id)
-
-        for source in source_sections:
-            if source.section_id in used_source_sections:
-                continue
-            entries.append(
-                GlossaryEntry(
-                    term_id=source.title_id,
-                    title=source.title,
-                    definition=None,
-                    source_section=source,
-                )
-            )
-
-        if not entries:
-            if getattr(self.env, "spec_glossary_signature", None) is not None:
-                warn("no glossary definitions found", node)
-            node.parent.remove(node)
-            return
 
         used_paragraph_ids = {
             item.id
@@ -169,62 +118,38 @@ class GlossaryTransform(SphinxTransform):
         }
 
         sections = []
-        for entry in sort_entries(entries):
-            if entry.definition is None:
-                section = build_section_from_source(
-                    entry,
-                    glossary_docname,
-                    used_paragraph_ids,
-                    used_section_ids,
-                )
-                if section is not None:
-                    sections.append(section)
-                continue
-
-            convert_term_defs = entry.definition.document != glossary_docname
-            paragraph, should_warn = self.build_paragraph(
-                glossary_docname,
-                entry.definition,
-                convert_term_defs,
-            )
+        for definition in sort_definitions(selected):
+            paragraph, should_warn = self.build_paragraph(glossary_docname, definition)
             if paragraph is None:
-                if entry.source_section is not None:
-                    section = build_section_from_source(
-                        entry,
-                        glossary_docname,
-                        used_paragraph_ids,
-                        used_section_ids,
-                    )
-                    if section is not None:
-                        sections.append(section)
-                    continue
                 if should_warn:
                     warn(
-                        f"missing glossary definition for '{entry.title}'",
+                        f"missing glossary definition for '{definition.display_text}'",
                         node,
                     )
                 continue
 
             paragraph_id = stable_fls_id(
                 "glossary:",
-                entry.term_id,
+                definition.term_id,
                 used_paragraph_ids,
             )
             paragraph.insert(0, definitions.DefIdNode(PARAGRAPH_KIND, paragraph_id))
 
-            if entry.source_section is not None:
-                section_id = entry.source_section.section_id
-                used_section_ids.add(section_id)
-            else:
-                section_id = stable_fls_id(
-                    "glossary-section:",
-                    entry.term_id,
-                    used_section_ids,
-                )
+            section_id = stable_fls_id(
+                "glossary-section:",
+                definition.term_id,
+                used_section_ids,
+            )
             section = nodes.section(ids=[section_id], names=[section_id])
-            section += nodes.title("", entry.title)
+            section += nodes.title("", definition.display_text)
             section += paragraph
             sections.append(section)
+
+        if not sections:
+            if getattr(self.env, "spec_glossary_signature", None) is not None:
+                warn("no glossary definitions found", node)
+            node.parent.remove(node)
+            return
 
         parent = node.parent
         node.replace_self(sections)
@@ -239,7 +164,7 @@ class GlossaryTransform(SphinxTransform):
         refresh_glossary_paragraphs(self.env, self.document, glossary_docname)
         refresh_glossary_secnumbers(self.env, glossary_docname, sections)
 
-    def build_paragraph(self, glossary_docname, definition, convert_term_defs):
+    def build_paragraph(self, glossary_docname, definition):
         try:
             source_doctree = self.env.get_doctree(definition.document)
         except Exception:
@@ -264,10 +189,9 @@ class GlossaryTransform(SphinxTransform):
             if node["def_kind"] == PARAGRAPH_KIND:
                 node.replace_self([])
 
-        if convert_term_defs:
-            for node in list(paragraph.findall(definitions.DefIdNode)):
-                if node["def_kind"] == TERM_KIND:
-                    node.replace_self(term_id_to_ref(node, glossary_docname))
+        for node in list(paragraph.findall(definitions.DefIdNode)):
+            if node["def_kind"] in (TERM_KIND, SYNTAX_KIND, CODE_TERM_KIND):
+                node.replace_self(def_id_to_ref(node, glossary_docname))
 
         for node in paragraph.findall(definitions.DefRefNode):
             node["ref_source_doc"] = glossary_docname
@@ -289,11 +213,10 @@ def select_definitions(
 
 def select_preferred_definition(defs, glossary_docname):
     non_glossary = [definition for definition in defs if definition.document != glossary_docname]
-    pool = non_glossary or defs
-    if not pool:
+    if not non_glossary:
         return None
     return sorted(
-        pool,
+        non_glossary,
         key=lambda definition: (
             definition.document,
             definition.line or 0,
@@ -319,110 +242,12 @@ def title_sort_key(text):
     ]
 
 
-def collect_glossary_source_sections(document):
-    sources = []
-    for section in document.findall(nodes.section):
-        if not isinstance(section.parent, nodes.section):
-            continue
-
-        try:
-            section_id, _anchor = utils.section_id_and_anchor(section)
-        except utils.NoSectionIdError:
-            continue
-
-        title_node = None
-        for child in section.children:
-            if isinstance(child, nodes.title):
-                title_node = child
-                break
-        if title_node is None:
-            continue
-
-        title = title_node.astext()
-        term_ids = tuple(
-            node["def_id"]
-            for node in section.findall(definitions.DefIdNode)
-            if node["def_kind"] == TERM_KIND
-        )
-        sources.append(
-            GlossarySectionSource(
-                title=title,
-                title_id=definitions.id_from_text(TERM_KIND, title),
-                section_id=section_id,
-                node=section,
-                term_ids=term_ids,
-            )
-        )
-
-    return sources
-
-
-def index_glossary_sources(sources):
-    by_term_id = {}
-    by_title_id = {}
-    for source in sources:
-        for term_id in source.term_ids:
-            by_term_id.setdefault(term_id, source)
-        by_title_id.setdefault(source.title_id, source)
-    return by_term_id, by_title_id
-
-
-def sort_entries(entries: Iterable[GlossaryEntry]):
-    return sorted(
-        entries,
-        key=lambda entry: (
-            title_sort_key(entry.title),
-            entry.term_id,
-        ),
-    )
-
-
-def build_section_from_source(entry, glossary_docname, used_paragraph_ids, used_section_ids):
-    source = entry.source_section
-    if source is None:
-        return None
-
-    section_id = source.section_id
-    if section_id in used_section_ids:
-        section_id = stable_fls_id(
-            "glossary-section:",
-            entry.term_id,
-            used_section_ids,
-        )
-    else:
-        used_section_ids.add(section_id)
-
-    section = nodes.section(ids=[section_id], names=[section_id])
-    section += nodes.title("", entry.title)
-    for child in source.node.children:
-        if isinstance(child, nodes.title):
-            continue
-        section += child.deepcopy()
-
-    replace_paragraph_ids(section, entry.term_id, used_paragraph_ids)
-    for node in section.findall(definitions.DefRefNode):
-        node["ref_source_doc"] = glossary_docname
-
-    return section
-
-
-def replace_paragraph_ids(section, term_id, used_paragraph_ids):
-    index = 1
-    for node in list(section.findall(definitions.DefIdNode)):
-        if node["def_kind"] != PARAGRAPH_KIND:
-            continue
-        paragraph_id = stable_fls_id(
-            "glossary:",
-            f"{term_id}:{index}",
-            used_paragraph_ids,
-        )
-        node.replace_self(definitions.DefIdNode(PARAGRAPH_KIND, paragraph_id))
-        index += 1
-
-
-def term_id_to_ref(node, docname):
-    text = f"{node['def_text']} <{node['def_id']}>"
-    return definitions.DefRefNode(TERM_KIND, docname, text)
+def def_id_to_ref(node, docname):
+    kind = node["def_kind"]
+    text = node["def_text"]
+    if definitions.id_from_text(kind, text) != node["def_id"]:
+        text = f"{text} <{node['def_id']}>"
+    return definitions.DefRefNode(kind, docname, text)
 
 
 def stable_fls_id(prefix, term_id, used_ids):
@@ -470,7 +295,7 @@ def compute_signature(storage):
 def apply_term_precedence(env):
     terms_storage = definitions.get_storage(env, definitions.terms)
     for term_id, defs in get_storage(env).items():
-        preferred = select_preferred_definition(defs, "glossary")
+        preferred = select_preferred_definition(defs, GLOSSARY_DOCNAME)
         if preferred is None:
             continue
 
