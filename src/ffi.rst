@@ -77,11 +77,23 @@ The following :t:`[ABI]s` are supported:
   :dt:`Rust ABI`.
 
 * :dp:`fls_8m7pc3riokst`
-  ``extern "system"`` - The operating system-dependent :t:`ABI`. It is equivalent to ``extern "C"`` except on Windows x86_32, where it is equivalent to ``extern "stdcall"`` for non-variadic functions and ``extern "C"`` for variadic functions.
+  ``extern "system"`` - The operating system-dependent :t:`ABI`.
 
 * :dp:`fls_NQAzj5ai1La5`
   ``extern "system-unwind"`` - The same as ``extern "system"`` with the
   addition that unwinding across FFI is permitted.
+
+:dp:`fls_ZbvI45Ojpte4`
+The :t:`ABI` of a :t:`function` or :t:`function pointer type` whose :s:`AbiKind` is ``"system"`` is determined as follows:
+
+#. :dp:`fls_tZP7xARsjuYv`
+   If the target is Windows x86_32 and the :t:`function` is a :t:`variadic function` or the :t:`function pointer type` specifies a :s:`VariadicPart`, then the :t:`ABI` is ``extern "C"``.
+
+#. :dp:`fls_NxhrfQzbxetN`
+   Otherwise, if the target is Windows x86_32, then the :t:`ABI` is ``extern "stdcall"``.
+
+#. :dp:`fls_yjRmR5F1cL6i`
+   Otherwise, the :t:`ABI` is ``extern "C"``.
 
 :dp:`fls_r2drzo3dixe4`
 A :t:`function` without an explicit :t:`ABI` has implicit :t:`Rust ABI`, unless
