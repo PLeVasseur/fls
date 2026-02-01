@@ -107,16 +107,20 @@ Glossary generation
 
 The glossary is generated from chapter definitions. Define terms in chapters
 with ``:dt:`term``` and rely on ``:t:`` references throughout the text. The
-glossary document uses ``.. spec-glossary::``. Do not add new definitions there;
-instead, migrate existing glossary definitions into chapters.
+glossary document (``src/glossary.rst``) is a strict stub that only contains
+the spec-glossary marker and the front-matter; any extra content is a lint
+error. Legacy glossary entries are migrated into chapters and are treated like
+any other definition.
 
-Existing glossary entries that are not yet defined in chapters remain in
-``src/glossary.rst`` until they are migrated. The generator preserves those
-entries and assigns deterministic paragraph IDs.
+When a definition paragraph is copied into the glossary, any definition roles
+(``:dt:``, ``:ds:``, ``:dc:``) are converted to references so the glossary does
+not introduce a second definition. Keep definition paragraphs self-contained so
+they read clearly on their own.
 
-When a definition paragraph is copied into the glossary, any ``:dt:`` roles are
-converted to ``:t:`` so the glossary does not introduce a second definition.
-Keep the definition paragraph self-contained so it reads clearly on its own.
+The build writes a drop-in generated glossary source to
+``build/glossary.generated.rst``. Use ``./make.py --check-generated-glossary``
+to compare the generated HTML and paragraph IDs against a build that sources
+that file directly.
 
 If you need to change the display text without changing the term ID, use the
 explicit target form:
