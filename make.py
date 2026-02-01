@@ -28,6 +28,7 @@ def build_docs(
     clear,
     serve,
     debug,
+    force_all=False,
     output_dir_name=None,
     doctree_dir_name=None,
     extra_defines=None,
@@ -37,6 +38,8 @@ def build_docs(
     doctree_dir = dest / (doctree_dir_name or "doctrees")
 
     args = ["-b", builder, "-d", doctree_dir]
+    if force_all:
+        args.append("-a")
     if debug:
         # Disable parallel builds and show exceptions in debug mode.
         #
@@ -134,9 +137,10 @@ def check_generated_glossary(root, debug, clear):
     build_docs(
         root,
         "html",
-        clear=clear,
+        clear=True,
         serve=False,
         debug=debug,
+        force_all=True,
         output_dir_name="html-generated",
         doctree_dir_name="doctrees-generated",
         extra_defines={
@@ -351,9 +355,9 @@ def main(root):
     rendered = build_docs(
         root,
         "xml" if args.xml else "html",
-        args.clear,
-        args.serve,
-        args.debug,
+        clear=args.clear,
+        serve=args.serve,
+        debug=args.debug,
     )
 
     if args.check_links:

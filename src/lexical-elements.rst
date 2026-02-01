@@ -32,6 +32,14 @@ A character is defined by this document for each cell in the coding space
 described by :t:`Unicode`, regardless of whether or not :t:`Unicode` allocates a
 character to that cell.
 
+:dp:`fls_NMynHTjbqK5U`
+In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
+character.
+
+:dp:`fls_fx8uLWAWBWcE`
+In :t:`Unicode`, a :dt:`plane` is a continuous group of 65,536
+:t:`[code point]s`.
+
 :dp:`fls_pvslhm3chtlb`
 A :dt:`whitespace character` is one of the following characters:
 
@@ -1560,4 +1568,3 @@ Word ``union`` acts as a :t:`keyword` only when used in the context of a
 
 :dp:`fls_g0JEluWqBpNc`
 Word ``safe`` acts as a :t:`keyword` only when used as a qualifier of :s:`FunctionDeclaration` or :s:`StaticDeclaration` in the context of a :s:`ExternalBlock`.
-

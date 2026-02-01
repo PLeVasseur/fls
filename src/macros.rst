@@ -1085,13 +1085,13 @@ within them, which aims to eliminate the syntactic interference between a
   :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
-  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
+  environment of a :s:`MacroInvocation`, and are considered :dt:`hygienic`.
 
 * :dp:`fls_puqhytfzfsg6`
   :t:`Call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
   of the :s:`MacroRulesDeclaration`, can reference the environment of the
-  :s:`MacroInvocation`, and are considered :t:`unhygienic`.
+  :s:`MacroInvocation`, and are considered :dt:`unhygienic`.
 
 * :dp:`fls_uyvnq88y9gk3`
   :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
@@ -1113,4 +1113,3 @@ Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 :dp:`fls_7eqqk2cj0clr`
 The :t:`metavariable` ``$crate`` in a :t:`declarative macro`'s expansion refers
 to the crate the :t:`declarative macro` was declared in.
-

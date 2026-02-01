@@ -102,13 +102,25 @@ class GlossaryCollector(EnvironmentCollector):
     def get_updated_docs(self, app, env):
         signature = compute_signature(get_storage(env))
         previous = getattr(env, "spec_glossary_signature", None)
-        if signature == previous:
-            return []
+        signature_changed = signature != previous
+        if signature_changed:
+            env.spec_glossary_signature = signature
+            apply_term_precedence(env)
 
-        env.spec_glossary_signature = signature
-        apply_term_precedence(env)
-        if GLOSSARY_DOCNAME in env.found_docs:
-            return [GLOSSARY_DOCNAME]
+        override_changed = False
+        force_glossary = False
+        override = app.config.spec_glossary_source_override
+        if override:
+            override_signature = compute_override_signature(override)
+            previous_override = getattr(env, "spec_glossary_override_signature", None)
+            override_changed = override_signature != previous_override
+            if override_changed:
+                env.spec_glossary_override_signature = override_signature
+            force_glossary = True
+
+        if signature_changed or override_changed or force_glossary:
+            if GLOSSARY_DOCNAME in env.found_docs:
+                return [GLOSSARY_DOCNAME]
         return []
 
 
@@ -655,6 +667,16 @@ def compute_signature(storage):
     for item in items:
         sha256.update(repr(item).encode("utf-8"))
         sha256.update(b"\n")
+    return sha256.hexdigest()
+
+
+def compute_override_signature(path):
+    sha256 = hashlib.sha256()
+    try:
+        content = Path(path).read_text(encoding="utf-8")
+    except OSError:
+        content = ""
+    sha256.update(content.encode("utf-8"))
     return sha256.hexdigest()
 
 

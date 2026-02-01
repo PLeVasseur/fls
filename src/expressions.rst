@@ -3841,7 +3841,7 @@ A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_aw6qczl4zpko`
-A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no
+A :t:`loop expression` is :dt:`terminated` when its :t:`block expression` is no
 longer evaluated.
 
 .. _fls_onfyolkcbeh3:

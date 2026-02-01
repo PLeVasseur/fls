@@ -136,7 +136,7 @@ Implementation Coherence
 .. rubric:: Legality Rules
 
 :dp:`fls_fv1l4yjuut7p`
-A :t:`trait implementation` exhibits :t:`implementation coherence` when it is
+A :t:`trait implementation` exhibits :dt:`implementation coherence` when it is
 valid and does not overlap with another :t:`trait implementation`.
 
 :dp:`fls_swdusjwzgksx`
@@ -164,7 +164,7 @@ Given :t:`trait implementation`
     :t:`non-[fundamental]` :t:`[type]s` of ``T0, T1, .., TN``.
 
 :dp:`fls_UkQhjEWSJpDq`
-A :t:`trait` or :t:`type` is :t:`fundamental` when its
+A :t:`trait` or :t:`type` is :dt:`fundamental` when its
 :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
 is always treated as if it was a :t:`local trait` or a :t:`local type`.
 
@@ -267,4 +267,3 @@ A :t:`trait implementation` is conformant with an :t:`implemented trait` when:
 
 :dp:`fls_8yq1g7nzv9px`
 A :t:`trait implementation` shall be conformant.
-

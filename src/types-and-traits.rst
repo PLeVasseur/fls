@@ -1198,6 +1198,10 @@ A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :dp:`fls_eWac7zOda3lh`
 The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
+:dp:`fls_02UkkF3xS2vW`
+A :t:`trait` is :dt:`object safe` when it can be used as a
+:t:`trait object type`.
+
 :dp:`fls_9z8oleh0wdel`
 The :t:`principal trait` shall denote an :t:`object safe` :t:`trait`.
 
@@ -1750,12 +1754,12 @@ known :t:`[type]s` across the :t:`type inference root` and assigns concrete
 for compatibility between two :t:`[type]s` during :t:`method resolution`.
 
 :dp:`fls_67VZrx6dw68H`
-A :t:`type` is said to :t:`unify` with another :t:`type` when the domains,
+A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
 ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
 
 :dp:`fls_aie0tr62vhw5`
-Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
+Two types that :t:`unify` are said to be :dt:`[unifiable type]s`.
 
 :dp:`fls_3U7Ue6Xzuv9M`
 :t:`Type unification` is a symmetric operation. If :t:`type` ``A`` unifies
@@ -2163,7 +2167,7 @@ Structural Equality
 .. rubric:: Legality Rules
 
 :dp:`fls_uVTpA7gbLCYX`
-A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
+A :t:`type` is :dt:`structurally equal` when its :t:`[value]s` can be compared
 for equality by structure.
 
 :dp:`fls_2DZAP6JJjJ9h`

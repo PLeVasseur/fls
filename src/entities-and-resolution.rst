@@ -459,7 +459,7 @@ Scopes
 
 :dp:`fls_5x5xykocwyiy`
 A :t:`scope` is a region of program text where an :t:`entity` can be referred
-to. An :t:`entity` is :t:`in scope` when it can be referred to.
+to. An :t:`entity` is :dt:`in scope` when it can be referred to.
 
 .. _fls_6ozthochxz1i:
 
@@ -1224,7 +1224,7 @@ Resolution
 expression` or a :t:`path`.
 
 :dp:`fls_7le2vcdbtxbq`
-A :t:`construct` that is being resolved is said to be :t:`under resolution`.
+A :t:`construct` that is being resolved is said to be :dt:`under resolution`.
 
 :dp:`fls_x3alg07yd7hx`
 A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that

@@ -14,6 +14,12 @@ Values
 A :t:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
 
+:dp:`fls_CEBZEvtmIRGv`
+A :t:`value` is :dt:`immutable` when it cannot be modified.
+
+:dp:`fls_U9CPQq4fs7IK`
+A :t:`value` is :dt:`mutable` when it can be modified.
+
 :dp:`fls_CUJyMj0Sj8NS`
 An :dt:`allocated object` is a :t:`value` stored at some memory address.
 
@@ -26,7 +32,7 @@ An :t:`[allocated object]s` :dt:`memory size` is the number of bytes the object
 spans in memory from its :t:`base address`.
 
 :dp:`fls_rixdyyc525xp`
-Two :t:`[value]s` :t:`overlap` when
+Two :t:`[value]s` :dt:`overlap` when
 
 * :dp:`fls_m6ctqq70vcxr`
   Both :t:`[value]s` are the same, or
@@ -41,6 +47,11 @@ Two :t:`[value]s` :t:`overlap` when
 
 * :dp:`fls_eoak5mdl6ma`
   Both :t:`[value]s` are elements of the same :t:`array`.
+
+:dp:`fls_649WudgnmRKE`
+A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
+:c:`null` or not all of the bytes at the referred memory location are part of
+the same allocation.
 
 .. rubric:: Undefined Behavior
 
