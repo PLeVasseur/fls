@@ -34,6 +34,13 @@ Language changes in Rust 1.93.0
 - `Stabilize asm_cfg <https://github.com/rust-lang/rust/pull/147736>`_
 - `During const-evaluation, support copying pointers byte-by-byte <https://github.com/rust-lang/rust/pull/148259>`_
 - `LUB coercions now correctly handle function item types, and functions with differing safeties <https://github.com/rust-lang/rust/pull/148602>`_
+
+  - New paragraphs:
+
+    - :p:`fls_ReYuWzijQ1aL`
+    - :p:`fls_yhtOWsxAcccM`
+    - :p:`fls_rRegjSIudDM1`
+
 - `Allow const items that contain mutable references to static (which is *very* unsafe, but not *always* UB) <https://github.com/rust-lang/rust/pull/148746>`_
 
   * Removed paragraph: :p:`fls_ooOYxhVh8hZo`
