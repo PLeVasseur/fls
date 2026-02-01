@@ -123,8 +123,8 @@ def build_linkchecker(root):
     return bin
 
 
-def check_generated_glossary(root, debug):
-    build_docs(root, "html", clear=True, serve=False, debug=debug)
+def check_generated_glossary(root, debug, clear):
+    build_docs(root, "html", clear=clear, serve=False, debug=debug)
 
     generated_source = root / "build" / "glossary.generated.rst"
     if not generated_source.is_file():
@@ -134,7 +134,7 @@ def check_generated_glossary(root, debug):
     build_docs(
         root,
         "html",
-        clear=True,
+        clear=clear,
         serve=False,
         debug=debug,
         output_dir_name="html-generated",
@@ -331,15 +331,21 @@ def main(root):
         help="Compare generated glossary output",
         action="store_true",
     )
-    group.add_argument(
+    parser.add_argument(
         "--debug",
-        help="Debug mode for the extensions, showing exceptions",
+        help=(
+            "Debug mode for the extensions, showing exceptions "
+            "(not compatible with --serve)"
+        ),
         action="store_true",
     )
     args = parser.parse_args()
 
+    if args.debug and args.serve:
+        parser.error("--debug is not compatible with --serve")
+
     if args.check_generated_glossary:
-        check_generated_glossary(root, args.debug)
+        check_generated_glossary(root, args.debug, args.clear)
         return
 
     rendered = build_docs(
