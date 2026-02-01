@@ -102,6 +102,29 @@ role within angle brackets:
 
    The :t:`criteria <criterion>` used for the change are:
 
+Glossary generation
+-------------------
+
+The glossary is generated from chapter definitions. Define terms in chapters
+with ``:dt:`term``` and rely on ``:t:`` references throughout the text. The
+glossary document uses ``.. spec-glossary::``. Do not add new definitions there;
+instead, migrate existing glossary definitions into chapters.
+
+Existing glossary entries that are not yet defined in chapters remain in
+``src/glossary.rst`` until they are migrated. The generator preserves those
+entries and assigns deterministic paragraph IDs.
+
+When a definition paragraph is copied into the glossary, any ``:dt:`` roles are
+converted to ``:t:`` so the glossary does not introduce a second definition.
+Keep the definition paragraph self-contained so it reads clearly on its own.
+
+If you need to change the display text without changing the term ID, use the
+explicit target form:
+
+.. code-block:: rst
+
+   :dt:`Display text <canonical-term>`
+
 Links to the Rust standard library
 ==================================
 

@@ -3,11 +3,12 @@
 
 import sphinx
 import typing
-from . import alphabetical_section_titles, require_paragraph_ids
+from . import alphabetical_section_titles, glossary_definitions, require_paragraph_ids
 
 
 def run_lints(app, env):
     alphabetical_section_titles.check(app, raise_error)
+    glossary_definitions.check(app, raise_error)
     require_paragraph_ids.check(app, raise_error)
 
 

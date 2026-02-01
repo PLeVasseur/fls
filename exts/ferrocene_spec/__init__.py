@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: The Ferrocene Developers
 
 from . import definitions, informational, syntax_directive, std_role, paragraph_ids
-from . import items_with_rubric, sphinx_fixes
+from . import glossary, items_with_rubric, sphinx_fixes
 from sphinx.domains import Domain
 
 
@@ -40,6 +40,7 @@ def setup(app):
     definitions.setup(app)
     paragraph_ids.setup(app)
     informational.setup(app)
+    glossary.setup(app)
     items_with_rubric.setup(app)
     sphinx_fixes.setup(app)
 
@@ -61,5 +62,6 @@ def setup(app):
         # Version history:
         # - 0: initial implementation
         # - 1: changed how informational sections and pages are stored
-        "env_version": "1",
+        # - 2: glossary term definitions collected for generated glossary
+        "env_version": "2",
     }

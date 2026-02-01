@@ -11,6 +11,8 @@
 Glossary
 ========
 
+.. spec-glossary::
+
 .. _fls_m98yg554tj9s:
 
 ABI
@@ -1926,7 +1928,7 @@ dynamically sized type
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eeyxu730z2pw`
-A :dt:`dynamically sized type` is a :t:`type` that does not implement the
+A :t:`dynamically sized type` is a :t:`type` that does not implement the
 :std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_2sja3okj27ne:
@@ -2299,7 +2301,7 @@ fat pointer type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_l8ew6udd79hh`
-A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+A :t:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
 
 .. _fls_qi21fdknzez6:
 
@@ -3865,7 +3867,7 @@ lifetime variable
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ucZnCBWxXl6n`
-A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
+A :t:`lifetime variable` is a placeholder used during :t:`type inference` to
 stand in for an undetermined :t:`lifetime` of a :t:`type`.
 
 
@@ -4896,7 +4898,7 @@ partially hygienic
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Qh8V0Y08dNoa`
-An :t:`identifier` is :dt:`partially hygienic` when it has
+An :t:`identifier` is :t:`partially hygienic` when it has
 :t:`mixed site hygiene`.
 
 .. _fls_wqbd5lxki2al:
@@ -5489,7 +5491,7 @@ receiver type
 ^^^^^^^^^^^^^
 
 :dp:`fls_vgQmMlpFas5t`
-A :dt:`receiver type` is the :t:`type` of a :t:`receiver operand`.
+A :t:`receiver type` is the :t:`type` of a :t:`receiver operand`.
 
 .. _fls_nG6ikjLsCW7m:
 
