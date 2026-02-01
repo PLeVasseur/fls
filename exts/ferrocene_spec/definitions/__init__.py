@@ -113,7 +113,8 @@ class DefinitionsCollector(EnvironmentCollector):
         for kind in KINDS:
             storage = get_storage(app.env, kind)
             if kind.NAME == "paragraph" and app.env.docname == "glossary":
-                continue
+                if not app.config.spec_glossary_source_override:
+                    continue
             nodes = filter(
                 lambda node: node["def_kind"] == kind.NAME,
                 document.findall(DefIdNode),

@@ -5,8 +5,10 @@ from dataclasses import dataclass
 import hashlib
 from pathlib import Path
 import re
+import textwrap
 import string
 from typing import Iterable, Optional
+from urllib.parse import parse_qs, unquote, urlparse
 
 from docutils import nodes
 from sphinx.directives import SphinxDirective
@@ -154,7 +156,7 @@ class GlossaryTransform(SphinxTransform):
                 used_section_ids,
             )
             section = nodes.section(ids=[section_id], names=[section_id])
-            section += nodes.title("", definition.display_text)
+            section += nodes.title("", normalize_title_text(definition.display_text))
             section += paragraph
             sections.append(section)
 
@@ -212,6 +214,65 @@ class GlossaryTransform(SphinxTransform):
             node["ref_source_doc"] = glossary_docname
 
         return paragraph, True
+
+
+class GlossaryOverrideTransform(SphinxTransform):
+    default_priority = 450
+
+    def apply(self):
+        docname = document_docname(self.env, self.document)
+        if not docname:
+            docname = getattr(self.env, "spec_glossary_override_docname", None)
+        if docname != GLOSSARY_DOCNAME:
+            return
+        if not self.env.config.spec_glossary_source_override:
+            return
+
+        override_docname = getattr(self.env, "spec_glossary_override_docname", None)
+        if override_docname and docname != override_docname:
+            return
+
+        targets = getattr(self.env, "spec_glossary_override_targets", {})
+        if not targets:
+            override_path = self.env.config.spec_glossary_source_override
+            if override_path:
+                try:
+                    override_text = Path(override_path).read_text(encoding="utf-8")
+                except OSError:
+                    override_text = ""
+                if override_text:
+                    targets = parse_override_targets(override_text)
+        if not targets:
+            return
+
+        updated_sections = []
+        for section in self.document.findall(nodes.section):
+            names = section.get("names", [])
+            fls_name = None
+            for name in names:
+                if not name.startswith("fls_"):
+                    continue
+                if name == GLOSSARY_STUB_ANCHOR:
+                    continue
+                fls_name = name
+                break
+            if not fls_name:
+                continue
+
+            original_id = targets.get(fls_name, targets.get(fls_name.lower()))
+            if not original_id:
+                continue
+
+            section["ids"] = [original_id]
+            section["names"] = [original_id]
+            updated_sections.append(section)
+
+        if not updated_sections:
+            return
+
+        refresh_glossary_sections(self.env, self.document, GLOSSARY_DOCNAME)
+        refresh_glossary_paragraphs(self.env, self.document, GLOSSARY_DOCNAME)
+        refresh_glossary_secnumbers(self.env, GLOSSARY_DOCNAME, updated_sections)
 
 
 def select_definitions(
@@ -291,8 +352,11 @@ def on_source_read(app, docname, source):
         return
     override = app.config.spec_glossary_source_override
     if override:
-        source[0] = read_override_source(override, docname)
-    if app.config.spec_glossary_stub_only_check:
+        source_text = read_override_source(override, docname)
+        source[0] = source_text
+        record_override_targets(app.env, docname, source_text)
+        return
+    if stub_check_enabled(app.config.spec_glossary_stub_only_check):
         check_glossary_stub_only(source[0], docname)
 
 
@@ -305,6 +369,12 @@ def read_override_source(path, docname):
             (docname, 1),
         )
         raise
+
+
+def stub_check_enabled(value):
+    if isinstance(value, str):
+        return value.lower() not in {"0", "false", "no", "off"}
+    return bool(value)
 
 
 def check_glossary_stub_only(text, docname):
@@ -331,6 +401,26 @@ def check_glossary_stub_only(text, docname):
             "glossary stub contains unsupported content",
             (docname, lineno),
         )
+
+
+def record_override_targets(env, docname, text):
+    env.spec_glossary_override_targets = parse_override_targets(text)
+    env.spec_glossary_override_docname = docname
+
+
+def parse_override_targets(text):
+    targets = {}
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped.startswith(".. _"):
+            continue
+        if not stripped.endswith(":"):
+            continue
+        target = stripped[len(".. _") : -1]
+        if not target.startswith("fls_"):
+            continue
+        targets[target.lower()] = target
+    return targets
 
 
 def write_generated_glossary(app, sections, document):
@@ -373,6 +463,7 @@ def serialize_section(section):
         section_id = section["ids"][0]
     title_node = next(section.findall(nodes.title), None)
     title = title_node.astext() if title_node is not None else ""
+    title = normalize_title_text(title)
     lines = []
     if section_id:
         lines.append(f".. _{section_id}:")
@@ -387,8 +478,22 @@ def serialize_section(section):
         paragraph_id = find_paragraph_id(child)
         if paragraph_id is None:
             continue
-        lines.append(f":dp:`{paragraph_id}`")
-        lines.append(serialize_paragraph_text(child))
+        extra_ids = [
+            extra_id
+            for extra_id in child.get("ids", [])
+            if extra_id != paragraph_id
+        ]
+        for extra_id in extra_ids:
+            lines.append(f".. _{extra_id}:")
+            lines.append("")
+
+        text = serialize_paragraph_text(child)
+        if text.startswith(":\n"):
+            lines.append(f":dp:`{paragraph_id}`:")
+            lines.append(text[2:])
+        else:
+            lines.append(f":dp:`{paragraph_id}`")
+            lines.append(text)
         lines.append("")
     return lines
 
@@ -401,12 +506,19 @@ def find_paragraph_id(paragraph):
 
 
 def serialize_paragraph_text(paragraph):
+    raw = getattr(paragraph, "rawsource", "")
+    if raw:
+        text = strip_paragraph_id(raw)
+        text = replace_definition_roles(text)
+        text = textwrap.dedent(text)
+        return text.strip("\n")
+
     parts = []
     for child in paragraph.children:
         if isinstance(child, definitions.DefIdNode) and child["def_kind"] == PARAGRAPH_KIND:
             continue
         parts.append(serialize_inline(child))
-    return "".join(parts).replace("\n", " ")
+    return "".join(parts).replace("\n", " ").lstrip()
 
 
 def serialize_inline(node):
@@ -421,11 +533,18 @@ def serialize_inline(node):
     if isinstance(node, nodes.literal):
         return f"``{serialize_children(node)}``"
     if isinstance(node, nodes.reference):
-        text = node.astext()
         refuri = node.get("refuri")
         if refuri:
+            literal_text = find_literal_text(node)
+            if literal_text:
+                std_target = std_target_from_refuri(refuri)
+                if std_target:
+                    if std_target != literal_text:
+                        literal_text = f"{literal_text} <{std_target}>"
+                    return f":std:`{literal_text}`"
+            text = serialize_children(node)
             return f"`{text} <{refuri}>`__"
-        return text
+        return serialize_children(node)
     if isinstance(node, nodes.inline):
         return serialize_children(node)
     return node.astext()
@@ -435,6 +554,61 @@ def serialize_children(node):
     if not node.children:
         return node.astext()
     return "".join(serialize_inline(child) for child in node.children)
+
+
+def strip_paragraph_id(text):
+    return re.sub(r"^\s*:dp:`[^`]+`\s*", "", text, count=1)
+
+
+def replace_definition_roles(text):
+    text = text.replace(":dt:`", ":t:`")
+    text = text.replace(":ds:`", ":s:`")
+    text = text.replace(":dc:`", ":c:`")
+    return text
+
+
+def normalize_title_text(text):
+    return " ".join(text.split())
+
+
+def find_literal_text(node):
+    for child in node.children:
+        if isinstance(child, nodes.literal):
+            return child.astext()
+    return None
+
+
+def std_target_from_refuri(refuri):
+    parsed = urlparse(refuri)
+    query = parse_qs(parsed.query)
+    search = query.get("search", [])
+    if not search:
+        return None
+    return unquote(search[0])
+
+
+def next_section_sibling(target):
+    parent = target.parent
+    if parent is None:
+        return None
+    try:
+        index = parent.children.index(target)
+    except ValueError:
+        return None
+    for sibling in parent.children[index + 1 :]:
+        if isinstance(sibling, nodes.section):
+            return sibling
+    return None
+
+
+def document_docname(env, document):
+    docname = getattr(env, "docname", None)
+    if docname:
+        return docname
+    source = document.get("source")
+    if not source:
+        return None
+    return Path(source).stem
 
 
 def serialize_def_ref(node):
@@ -612,6 +786,7 @@ def setup(app):
     app.add_node(GlossaryMarkerNode)
     app.add_env_collector(GlossaryCollector)
     app.add_post_transform(GlossaryTransform)
+    app.add_post_transform(GlossaryOverrideTransform)
     app.add_config_value(
         "spec_glossary_source_override",
         None,

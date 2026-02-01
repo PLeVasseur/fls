@@ -16,41 +16,59 @@ def write_paragraph_ids(app):
 
     paragraphs_by_section = defaultdict(list)
     for paragraph in definitions.get_storage(env, definitions.paragraphs).values():
-        paragraphs_by_section[paragraph.section_id].append(
-            {
-                "id": paragraph.id,
-                "number": paragraph.number(app.env),
-                "link": app.builder.get_target_uri(paragraph.document)
-                + "#"
-                + paragraph.id,
-                "checksum": paragraph.content_checksum(),
-            }
-        )
+        paragraphs_by_section[paragraph.section_id].append(paragraph)
 
     sections_by_document = defaultdict(list)
     for section in env.spec_sections:
         sections_by_document[section.document].append(
-            {
-                "id": section.id,
-                "number": ".".join(
-                    str(n) for n in env.toc_secnumbers[section.document][section.anchor]
-                ),
-                "title": section.title,
-                "link": app.builder.get_target_uri(section.document) + section.anchor,
-                "paragraphs": paragraphs_by_section[section.id],
-                "informational": (
-                    section.anchor in informational_storage[section.document]
-                ),
-            }
+            section
         )
 
     documents = []
-    for docname, title in env.titles.items():
+    for docname, title in sorted(env.titles.items(), key=lambda item: item[0]):
+        sections = sections_by_document[docname]
+        sections.sort(
+            key=lambda section: env.toc_secnumbers[section.document].get(
+                section.anchor, ()
+            )
+        )
+        section_payloads = []
+        for section in sections:
+            paragraphs = paragraphs_by_section[section.id]
+            paragraphs.sort(key=lambda paragraph: paragraph.sequential)
+            paragraph_payloads = []
+            for paragraph in paragraphs:
+                paragraph_payloads.append(
+                    {
+                        "id": paragraph.id,
+                        "number": paragraph.number(app.env),
+                        "link": app.builder.get_target_uri(paragraph.document)
+                        + "#"
+                        + paragraph.id,
+                        "checksum": paragraph.content_checksum(),
+                    }
+                )
+            section_payloads.append(
+                {
+                    "id": section.id,
+                    "number": ".".join(
+                        str(n)
+                        for n in env.toc_secnumbers[section.document][section.anchor]
+                    ),
+                    "title": section.title,
+                    "link": app.builder.get_target_uri(section.document)
+                    + section.anchor,
+                    "paragraphs": paragraph_payloads,
+                    "informational": (
+                        section.anchor in informational_storage[section.document]
+                    ),
+                }
+            )
         documents.append(
             {
                 "title": title.astext(),
                 "link": app.builder.get_target_uri(docname),
-                "sections": sections_by_document[docname],
+                "sections": section_payloads,
                 "informational": (
                     informational.WHOLE_PAGE in informational_storage[docname]
                 ),
