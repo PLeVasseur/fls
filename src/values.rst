@@ -55,6 +55,9 @@ Two :t:`[value]s` :dt:`overlap` when
 * :dp:`fls_eoak5mdl6ma`
   Both :t:`[value]s` are elements of the same :t:`array`.
 
+:dp:`fls_EuVKkSlbLq4q`
+A :dc:`null` :t:`value` denotes the address ``0``.
+
 :dp:`fls_649WudgnmRKE`
 A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
 :c:`null` or not all of the bytes at the referred memory location are part of

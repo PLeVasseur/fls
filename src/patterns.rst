@@ -275,7 +275,7 @@ Literal Patterns
 A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 :dp:`fls_COQKJC0dvtNO`
-A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
+A :dt:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
 literal`.
 
 :dp:`fls_JP8YSbxSN0Ym`
@@ -836,7 +836,7 @@ The :t:`type` of a :t:`matched indexed deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 :dp:`fls_46u4ddj0yf93`
-A :t:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
+A :dt:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
 a :t:`field`.
 
 :dp:`fls_qu3dvfdq6oy7`
@@ -1250,7 +1250,7 @@ A :t:`binding` with :t:`binding mode` :dt:`by mutable reference` binds a
 :t:`mutable reference` to the matched :t:`value` to the :t:`name`.
 
 :dp:`fls_dqe75i8h2fie`
-A :t:`non-reference pattern` is any :t:`pattern` except
+A :dt:`non-reference pattern` is any :t:`pattern` except
 :t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
 and :t:`[underscore pattern]s`.
 

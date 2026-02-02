@@ -863,7 +863,7 @@ Named Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_J8wJNfcSAYrS`
-A :t:`named block expression` is a :t:`block expression` with a :t:`label`.
+A :dt:`named block expression` is a :t:`block expression` with a :t:`label`.
 
 :dp:`fls_B4NBv2jfZLuy`
 The :t:`type` of the :t:`named block expression` is the :t:`type` of its
@@ -1274,7 +1274,7 @@ Negation Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_pfa81kv2mru8`
-A :t:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+A :dt:`negation expression` is an :t:`expression` that negates its :t:`operand`.
 
 :dp:`fls_plcut8vzdwox`
 The :t:`type` of the :t:`operand` of a :t:`negation expression` with a
@@ -1969,7 +1969,7 @@ The :t:`value` of a :t:`less-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::le(&left_operand, &right_operand)``.
 
 :dp:`fls_w71j7i3n1kit`
-A :t:`not-equals expression` is a :t:`comparison expression` that tests for
+A :dt:`not-equals expression` is a :t:`comparison expression` that tests for
 inequality.
 
 :dp:`fls_qzo1torhv5i3`
@@ -3242,7 +3242,7 @@ The :t:`value` of an :t:`indexed initializer` is the :t:`value` of its
 :t:`operand`.
 
 :dp:`fls_lwyq3vyc91rn`
-A :t:`named initializer` is a :t:`construct` that specifies the name and
+A :dt:`named initializer` is a :t:`construct` that specifies the name and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_qed1pps827dv`
@@ -3916,7 +3916,7 @@ An :dt:`anonymous loop expression` is a :t:`loop expression` without a
 :t:`label`.
 
 :dp:`fls_phpoq9ho8f1v`
-A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
+A :dt:`named loop expression` is a :t:`loop expression` with a :t:`label`.
 
 .. rubric:: Dynamic Semantics
 

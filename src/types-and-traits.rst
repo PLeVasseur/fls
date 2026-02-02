@@ -370,6 +370,11 @@ inside the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges of
 Numeric Types
 ~~~~~~~~~~~~~
 
+.. rubric:: Legality Rules
+
+:dp:`fls_WoLf75ZAyg05`
+A :dt:`numeric type` is a :t:`type` whose :t:`[value]s` denote numbers.
+
 .. _fls_b4xporvr64s:
 
 Floating Point Types
@@ -1406,7 +1411,7 @@ Never Type
 .. rubric:: Legality Rules
 
 :dp:`fls_4u0v5uy95pyf`
-The :t:`never type` is a :t:`type` that represents the result of a computation
+The :dt:`never type` is a :t:`type` that represents the result of a computation
 that never completes.
 
 :dp:`fls_xmtc10qzw0ui`

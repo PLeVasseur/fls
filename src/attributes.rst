@@ -948,7 +948,7 @@ An :t:`any configuration predicate` evaluates statically to ``true`` when any
 nested configuration predicate evaluates to ``true``.
 
 :dp:`fls_XsxeOd32JI8x`
-A :t:`not configuration predicate` is a :t:`configuration predicate` that
+A :dt:`not configuration predicate` is a :t:`configuration predicate` that
 negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
 
 :dp:`fls_tvsadfy9uibu`

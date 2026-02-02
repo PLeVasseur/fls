@@ -836,7 +836,7 @@ Numeric Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_fqpqnku27v99`
-A :t:`numeric literal` is a :t:`literal` that denotes a number.
+A :dt:`numeric literal` is a :t:`literal` that denotes a number.
 
 .. _fls_2ed4axpsy9u0:
 

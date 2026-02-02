@@ -35,7 +35,7 @@ An :dt:`item` is the most basic semantic element in program text. An :t:`item`
 defines the compile- and run-time semantics of a program.
 
 :dp:`fls_40d2g0hvq2il`
-A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
+A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_lcca91wjwnpx`
 A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
@@ -809,7 +809,7 @@ Namespaces
 .. rubric:: Legality Rules
 
 :dp:`fls_1d4jm61qnt4l`
-A :t:`namespace` is a logical grouping of :t:`[name]s` such that the occurrence
+A :dt:`namespace` is a logical grouping of :t:`[name]s` such that the occurrence
 of a :t:`name` in one :t:`namespace` does not conflict with an occurrence of
 the same :t:`name` in another :t:`namespace`.
 
@@ -1116,7 +1116,7 @@ A :t:`trait` imported by a :t:`simple import` subject to a
 a :t:`name`.
 
 :dp:`fls_ldr7tsuqw34s`
-A :t:`nesting import` is a :t:`use import` that provides a common
+A :dt:`nesting import` is a :t:`use import` that provides a common
 :t:`simple path prefix` for its nested :t:`[use import]s`.
 
 :dp:`fls_iNUBX5fJAI1N`
@@ -1283,6 +1283,10 @@ that is visible from the location of the :t:`field access expression`
 :dp:`fls_G7nIZNc3Nk4M`
 An :dt:`indexed field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an index.
+
+:dp:`fls_NHqdt7U8EoZb`
+A :dt:`named field selector` is a :t:`field selector` where the selected
+:t:`field` is indicated by an :t:`identifier`.
 
 :dp:`fls_jzoon4x89zp7`
 A :dt:`candidate indexed field` is a :t:`candidate field` whose position in the

@@ -575,6 +575,10 @@ A :t:`register class name` is a target-specific string that identifies a
      - ``tmm_reg``
      - ``tmm[0-7]``
 
+:dp:`fls_jS4EegNx4PAy`
+:dt:`NaN-boxing` is a technique for encoding :t:`[value]s` using the low order
+bits of the mantissa of a 64-bit IEEE floating-point ``NaN``.
+
 :dp:`fls_mnzt6bxhycv9`
 If a :t:`value` has a smaller size than the :t:`register` it is allocated in,
 then
@@ -652,7 +656,7 @@ and output of a :t:`register`, and optionally binds the configuration to an
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
 
 :dp:`fls_uddjvkz4g899`
-A :t:`named register argument` is a :t:`register argument` whose configuration
+A :dt:`named register argument` is a :t:`register argument` whose configuration
 is bound to an :t:`identifier`.
 
 :dp:`fls_sqs5to20p0te`
