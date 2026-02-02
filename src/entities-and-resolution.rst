@@ -27,18 +27,18 @@ A :dt:`construct` is a syntactic element of a Rust program defined by this
 specification.
 
 :dp:`fls_x7j6wcigqt7u`
-An :t:`entity` is a :t:`construct` that can be referred to within program text,
+An :dt:`entity` is a :t:`construct` that can be referred to within program text,
 usually via a :t:`field access expression` or a :t:`path`.
 
 :dp:`fls_40d2g0hvq2il`
 A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_lcca91wjwnpx`
-A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
+A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
 :t:`entity`.
 
 :dp:`fls_94l2d7ti0hjw`
-An :t:`explicitly declared entity` is an :t:`entity` that has a
+An :dt:`explicitly declared entity` is an :t:`entity` that has a
 :t:`declaration`. The following :t:`entities <entity>` are
 :t:`explicitly declared entities <explicitly declared entity>`:
 
@@ -1231,11 +1231,11 @@ expression` or a :t:`path`.
 A :t:`construct` that is being resolved is said to be :dt:`under resolution`.
 
 :dp:`fls_x3alg07yd7hx`
-A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that
+A :dt:`dereference type` is either a :t:`reference type` or a :t:`type` that
 implements the :std:`core::ops::Deref` :t:`trait`.
 
 :dp:`fls_4hulwazdu20i`
-A :t:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
+A :dt:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
 :t:`dereference type chain` starts with an initial :t:`dereference type`. From
 then on, the :t:`dereference type chain` continues as follows:
 
@@ -1256,7 +1256,7 @@ Field Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_1nxknwjdp0am`
-:t:`Field resolution` is a form of :t:`resolution` that applies to a
+:dt:`Field resolution` is a form of :t:`resolution` that applies to a
 :t:`field access expression`.
 
 :dp:`fls_j1bip4w30q8`

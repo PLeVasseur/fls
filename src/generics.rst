@@ -56,13 +56,13 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
 :s:`[ConstantParameter]s` and :s:`[TypeParameter]s`.
 
 :dp:`fls_pi6eukz7kc99`
-A :t:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
+A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 
 :dp:`fls_ixmgqupxvf73`
-A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
+A :dt:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 :dp:`fls_z311nxou9yi3`
-A :t:`generic implementation` is an :t:`implementation` with
+A :dt:`generic implementation` is an :t:`implementation` with
 :t:`[generic parameter]s`.
 
 :dp:`fls_wmcp0n36jlbr`
@@ -350,7 +350,7 @@ Generic Arguments
 .. rubric:: Legality Rules
 
 :dp:`fls_3x6qd8vt5uus`
-A :t:`generic argument` supplies a static input for an
+A :dt:`generic argument` supplies a static input for an
 :t:`associated trait type` or a :t:`generic parameter`.
 
 :dp:`fls_ky39fb2vcom6`
@@ -427,7 +427,7 @@ Generic Conformance
 .. rubric:: Legality Rules
 
 :dp:`fls_CBWyxBJeYeb2`
-:t:`Generic conformance` measures the compatibility between a set of
+:dt:`Generic conformance` measures the compatibility between a set of
 :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
 
 :dp:`fls_ltch5eivxgaa`

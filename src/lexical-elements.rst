@@ -925,7 +925,7 @@ An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 A :dt:`binary literal` is an :t:`integer literal` in base 2.
 
 :dp:`fls_rn8xfd66yvst`
-A :t:`decimal literal` is an :t:`integer literal` in base 10.
+A :dt:`decimal literal` is an :t:`integer literal` in base 10.
 
 :dp:`fls_2268lchxkzjp`
 A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
@@ -1045,10 +1045,10 @@ Float Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_rzi7oeqokd6e`
-A :t:`float literal` is a :t:`numeric literal` that denotes a fractional number.
+A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional number.
 
 :dp:`fls_2ru1zyrykd37`
-A :t:`float suffix` is a component of a :t:`float literal` that specifies an
+A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
 
 :dp:`fls_21mhnhplzam7`
@@ -1118,6 +1118,13 @@ Character Literals
      | $$\r$$
      | $$\\$$
      | $$\x$$ OctalDigit HexadecimalDigit
+
+:dp:`fls_TXk2yFGh8at5`
+An :dt:`escaped character` is the textual representation for a character with
+special meaning. An escaped character consists of character 0x5C (reverse
+solidus), followed by the single character encoding of the special meaning
+character. For example, ``\t`` is the escaped character for 0x09 (horizontal
+tabulation).
 
 :dp:`fls_j9q9ton57rvl`
 A :ds:`CharacterLiteralCharacter` is any :t:`Unicode` character except
@@ -1365,7 +1372,7 @@ An :t:`outer doc comment` is either an :t:`outer block doc` or an
 :t:`outer line doc`.
 
 :dp:`fls_7n6d3jx61ose`
-A :t:`doc comment` is a :t:`comment` class that includes :t:`[inner block
+A :dt:`doc comment` is a :t:`comment` class that includes :t:`[inner block
 doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`, and :t:`[outer line
 doc]s`.
 

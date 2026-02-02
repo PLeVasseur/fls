@@ -377,6 +377,13 @@ Floating Point Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_xcUkEjuclTjp`
+A :dt:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+fractional numbers.
+
+:dp:`fls_a5exYaDySck3`
+A :dt:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
+
 :dp:`fls_30yny2xb9b6b`
 :t:`Type` :c:`f32` is equivalent to the IEEE 754-2008 binary32 :t:`type`.
 
@@ -493,6 +500,10 @@ of elements.
 
 :dp:`fls_xmmgSHsTHDtc`
 An :dt:`array` is a :t:`value` of an :t:`array type`.
+
+:dp:`fls_mRbOQQQPbVyU`
+An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
+a :t:`slice type`.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -620,6 +631,9 @@ Abstract Data Types
 :dp:`fls_n9HtRM22YEv5`
 An :dt:`abstract data type` is a collection of other :t:`[type]s`.
 
+:dp:`fls_74bRiJktNHvk`
+A :dt:`field` is an element of an :t:`abstract data type`.
+
 .. _fls_szibmtfv117b:
 
 Enum Types
@@ -648,23 +662,40 @@ Enum Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_9ZleHwO3HlUX`
+An :dt:`enum` is an :t:`item` that declares an :t:`enum type`.
+
 :dp:`fls_gbdd37seqoab`
-An :t:`enum type` is an :t:`abstract data type` that contains
+An :dt:`enum type` is an :t:`abstract data type` that contains
 :t:`[enum variant]s`.
+
+:dp:`fls_v4QIqcZGsG6C`
+An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
+
+:dp:`fls_KTzAGty3T5fF`
+An :dt:`enum variant value` is the :t:`enum value` of the corresponding
+:t:`enum` of the :t:`enum variant`.
 
 :dp:`fls_il9a1olqmu38`
 A :t:`zero-variant enum type` has no :t:`[value]s`.
 
 :dp:`fls_wQTFwl88VujQ`
-An :t:`enum variant` is a :t:`construct` that declares one of the
+An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
+
+:dp:`fls_1PqJYZ5eMNym`
+An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
 
 :dp:`fls_g5qle7xzaoif`
 The :t:`name` of an :t:`enum variant` shall be unique within the related
 :s:`EnumDeclaration`.
 
 :dp:`fls_t4yeovFm83Wo`
-A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+
+:dp:`fls_IhqHv2D1nuXj`
+A :dt:`discriminant initializer` provides the :t:`value` of a
+:t:`discriminant`.
 
 :dp:`fls_hp5frc752dam`
 A :t:`discriminant initializer` shall be specified only when all :t:`[enum
@@ -774,9 +805,18 @@ Struct Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_YERnNZiSdCRn`
+A :dt:`field list` is a :s:`RecordStructFieldList` or a
+:s:`TupleStructFieldList`.
+
 :dp:`fls_g1azfj548136`
 A :t:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
+
+:dp:`fls_3QSa0wGQtbHh`
+A :dt:`field index` is the position of a :t:`field` within a
+:t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
+:dt:`field index` of zero, the Nth :t:`field` has a :dt:`field index` of N-1.
 
 :dp:`fls_r885av95eivp`
 The :t:`name` of a :t:`record struct field` shall be unique within the
@@ -871,6 +911,10 @@ The :t:`type` of a :t:`union field` shall be either:
 Function Types
 --------------
 
+:dp:`fls_P5PFddyptGec`
+A :dt:`function type` is either a :t:`closure type` or a
+:t:`function item type`.
+
 .. _fls_xd2oxlebhs14:
 
 Closure Types
@@ -925,11 +969,11 @@ Function Item Types
 .. rubric:: Legality Rules
 
 :dp:`fls_t24iojx7yc23`
-A :t:`function item type` is a unique anonymous :t:`function type` that
+A :dt:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
 :dp:`fls_sas3ahcshnrh`
-An :t:`external function item type` is a :t:`function item type` where the
+An :dt:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
 
 :dp:`fls_liwnzwu1el1i`
@@ -980,8 +1024,12 @@ Function Pointer Types
 .. rubric:: Legality Rules
 
 :dp:`fls_v2wrytr3t04h`
-A :t:`function pointer type` is an :t:`indirection type` that refers to a
+A :dt:`function pointer type` is an :t:`indirection type` that refers to a
 :t:`function`.
+
+:dp:`fls_aXhHQFNr7kaf`
+A :dt:`function pointer type parameter` is a :t:`function parameter` of a
+:t:`function pointer type`.
 
 :dp:`fls_5dd7icjcl3nt`
 An :t:`unsafe function pointer type` is a function pointer type subject to
@@ -1419,11 +1467,18 @@ Type Layout
 :dp:`fls_kdbq02iguzgl`
 All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
 
+:dp:`fls_c6lSeub6RBUV`
+A :dt:`fixed sized type` is a :t:`type` that implements the
+:std:`core::marker::Sized` :t:`trait`.
+
 :dp:`fls_26Xgem831Nqg`
 A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
 
 :dp:`fls_ozYgHEHFTT5c`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+
+:dp:`fls_w1KifBNDp4VE`
+A :dt:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
 
 :dp:`fls_muxfn9soi47l`
 The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
@@ -1558,7 +1613,7 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
 interoperable with the :t:`C` language.
 
 :dp:`fls_b005bktrkrxy`
-:t:`Default representation` makes no guarantees about the :t:`layout`.
+:dt:`Default representation` makes no guarantees about the :t:`layout`.
 
 :dp:`fls_7plbkqlmed0r`
 :t:`Primitive representation` is the :t:`type representation` of individual
@@ -1598,6 +1653,9 @@ Enum Type Representation
 
 :dp:`fls_p0c62ejo1u1t`
 :t:`[Zero-variant enum type]s` shall not be subject to :t:`C representation`.
+
+:dp:`fls_pwtzoGxdQk3U`
+A :dt:`discriminant type` is the :t:`type` of a :t:`discriminant`.
 
 :dp:`fls_efp1kfgkpba8`
 The :t:`size` and :t:`alignment` of an :t:`enum type` without :t:`[field]s`
@@ -2360,11 +2418,11 @@ An :t:`integer type variable` is a :t:`type variable` that can refer only to
 :t:`[integer type]s`.
 
 :dp:`fls_3hv3wxkhjjp1`
-A :t:`floating-point type variable` is a :t:`type variable` that can refer only
+A :dt:`floating-point type variable` is a :t:`type variable` that can refer only
 to :t:`[floating-point type]s`.
 
 :dp:`fls_bXQ63GYYDuMp`
-A :t:`diverging type variable` is a :t:`type variable` that can refer to any
+A :dt:`diverging type variable` is a :t:`type variable` that can refer to any
 :t:`type` and originates from a :t:`diverging expression`.
 
 :dp:`fls_JryXiKBIFvF3`
@@ -3251,6 +3309,14 @@ Lifetime Elision
 :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
 elided in the source code.
 
+:dp:`fls_HvZUV1WQH4GA`
+For :dt:`elided`, see :t:`elided lifetime`.
+
+:dp:`fls_aHW1eUlKeOgr`
+An :dt:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`
+that has been explicitly omitted from a :t:`function signature` or an
+:t:`implementation`.
+
 :dp:`fls_JmP6O9zj8fkV`
 A :t:`lifetime` may be elided either implicitly or explicitly.
 
@@ -3285,7 +3351,7 @@ Function Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_lAdIRCFFlydD`
-:t:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
+:dt:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
 to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
 that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
 :std:`core::ops::FnOnce` :t:`[trait]s`.

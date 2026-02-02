@@ -49,13 +49,13 @@ Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_gn1ngtx2tp2s`
-A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.
 
 :dp:`fls_87jnkimc15gi`
-A :t:`function qualifier` is a :t:`construct` that determines the role of
+A :dt:`function qualifier` is a :t:`construct` that determines the role of
 a :t:`function`.
 
 :dp:`fls_nwywh1vjt6rr`
@@ -63,7 +63,7 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
 :t:`keyword` ``const``.
 
 :dp:`fls_uwuthzfgslif`
-A :t:`function parameter` is a :t:`construct` that yields a set of
+A :dt:`function parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
 
@@ -150,7 +150,7 @@ The :t:`return type` of a :t:`function` is determined as follows:
   Otherwise the :t:`return type` is the :t:`unit type`.
 
 :dp:`fls_927nfm5mkbsp`
-A :t:`function body` is the :t:`block expression` of a :t:`function`.
+A :dt:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an
@@ -164,7 +164,7 @@ A :t:`function body` of an :t:`async function` denotes an
 :t:`async control flow boundary`.
 
 :dp:`fls_owdlsaaygtho`
-A :t:`function signature` is a unique identification of a :t:`function`
+A :dt:`function signature` is a unique identification of a :t:`function`
 that encompasses of its :t:`[function qualifier]s`, :t:`name`,
 :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
 :t:`where clause`.

@@ -125,7 +125,7 @@ A :t:`register name` is either the :t:`explicit register name` of a
 :t:`register` belongs to.
 
 :dp:`fls_ffwqxlh60i5w`
-An :t:`explicit register name` is a target-specific string that identifies
+An :dt:`explicit register name` is a target-specific string that identifies
 a :t:`register`.
 
 :dp:`fls_3p8akc7gcsnx`
@@ -664,7 +664,7 @@ A :t:`named register argument` shall appear after a
 :t:`positional register argument`.
 
 :dp:`fls_ics6gdzww1p`
-An :t:`explicit register argument` is a :t:`register argument` that uses an
+An :dt:`explicit register argument` is a :t:`register argument` that uses an
 :t:`explicit register name`.
 
 :dp:`fls_mmc1w8jjr55r`
@@ -680,7 +680,7 @@ A :t:`register class argument` causes an assembler to select a suitable
 :t:`register` from the related :t:`register class`.
 
 :dp:`fls_5a3vfresnv5z`
-A :t:`direction modifier` is a :t:`construct` that indicates whether a
+A :dt:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
 :t:`register` to an :t:`expression`, or both.
 

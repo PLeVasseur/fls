@@ -488,7 +488,7 @@ An :t:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_3PyquOKjA7SI`
-An :t:`exclusive range pattern` is a :t:`range pattern` with both a
+An :dt:`exclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_akf9x5r6e0ta`
@@ -748,7 +748,7 @@ A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_6o3x101wo478`
-A :t:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
+A :dt:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
 deconstructed by a :t:`struct pattern`.
 
 :dp:`fls_k9zih9s0oe5h`

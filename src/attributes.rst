@@ -1485,11 +1485,11 @@ or :t:`static`.
 be publicly exported from the produced library or object file.
 
 :dp:`fls_VKuSiswPMll7`
-An :t:`exported function` is a :t:`function` subject to :t:`attribute`
+An :dt:`exported function` is a :t:`function` subject to :t:`attribute`
 :c:`no_mangle`.
 
 :dp:`fls_I029Rvr5BX5P`
-An :t:`exported static` is a :t:`static` subject to :t:`attribute`
+An :dt:`exported static` is a :t:`static` subject to :t:`attribute`
 :c:`no_mangle`.
 
 .. rubric:: Examples

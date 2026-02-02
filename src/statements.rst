@@ -22,13 +22,13 @@ Statements
 .. rubric:: Legality Rules
 
 :dp:`fls_7zh6ziglo5iy`
-An :t:`expression statement` is an :t:`expression` whose result is ignored.
+An :dt:`expression statement` is an :t:`expression` whose result is ignored.
 
 :dp:`fls_kdxe1ukmgl1`
 An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
 :dp:`fls_fftdnwe22xrb`
-An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
+An :dt:`empty statement` is a :t:`statement` expressed as character 0x3B
 (semicolon).
 
 :dp:`fls_or125cqtxg9j`
@@ -38,7 +38,7 @@ A :t:`macro statement` is a :t:`statement` expressed as a
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_estqu395zxgk`
-:t:`Execution` is the process by which a :t:`statement` achieves its runtime
+:dt:`Execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
 :dp:`fls_dl763ssb54q1`

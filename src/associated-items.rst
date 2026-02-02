@@ -49,7 +49,7 @@ An :t:`associated type` with a :s:`TypeBoundList` shall appear only as an
 :t:`associated trait type`.
 
 :dp:`fls_PeD0DzjK57be`
-A :t:`generic associated type` is an :t:`associated type` with
+A :dt:`generic associated type` is an :t:`associated type` with
 :t:`[generic parameter]s`.
 
 :dp:`fls_3foYUch29ZtF`

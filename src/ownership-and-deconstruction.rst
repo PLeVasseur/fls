@@ -360,7 +360,7 @@ Destruction
 .. rubric:: Legality Rules
 
 :dp:`fls_e7ucq87s806d`
-:t:`Destruction` is the process of recovering resources associated with a
+:dt:`Destruction` is the process of recovering resources associated with a
 :t:`value` as it goes out of scope.
 
 .. _fls_u2mzjgiwbkz0:
@@ -371,15 +371,15 @@ Destructors
 .. rubric:: Legality Rules
 
 :dp:`fls_9m0gszdle0qb`
-A :t:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
+A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
 :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 :dp:`fls_4nkzidytpi6`
-A :t:`destructor` is a :t:`function` that is invoked immediately before the
+A :dt:`destructor` is a :t:`function` that is invoked immediately before the
 :t:`destruction` of a :t:`value` of a :t:`drop type`.
 
 :dp:`fls_wzuwapjqtyyy`
-:t:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
+:dt:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
 related :t:`type`. Such an object is said to be :dt:`dropped`.
 
 :dp:`fls_gfvm70iqu1l4`
@@ -462,13 +462,17 @@ Drop Scopes
 .. rubric:: Legality Rules
 
 :dp:`fls_7uav7vkcv4pz`
-A :t:`drop scope` is a region of program text that governs the :t:`dropping` of
+A :dt:`drop scope` is a region of program text that governs the :t:`dropping` of
 :t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
 associated with that :t:`drop scope` are :t:`dropped` based on a
 :t:`drop order`.
 
+:dp:`fls_vWILlWIfhB69`
+:dt:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
+:t:`drop scope` is left.
+
 :dp:`fls_txvxrn6wbyql`
-A :t:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
+A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
 following :t:`[construct]s` are :t:`[drop construct]s`:
 
 * :dp:`fls_n6y6brm6pghr`
@@ -593,7 +597,7 @@ Drop Scope Extension
 .. rubric:: Legality Rules
 
 :dp:`fls_kflqez2mtbit`
-:t:`Drop scope extension` is the process of extending a :t:`drop scope`
+:dt:`Drop scope extension` is the process of extending a :t:`drop scope`
 associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
 :t:`temporary`.
 

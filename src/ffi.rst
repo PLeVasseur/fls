@@ -11,7 +11,7 @@ FFI
 .. rubric:: Legality Rules
 
 :dp:`fls_djlglv2eaihl`
-:t:`Foreign Function Interface` or :t:`FFI` employs :t:`ABI`,
+:dt:`Foreign Function Interface` or :dt:`FFI` employs :t:`ABI`,
 :t:`[attribute]s`, :t:`[external block]s`, :t:`[external function]s`, linkage,
 and :t:`type` :t:`layout` to interface a Rust program with foreign code.
 
@@ -184,7 +184,7 @@ External Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_4dje9t5y2dia`
-An :t:`external block` is a :t:`construct` that provides the declarations of
+An :dt:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
 :dp:`fls_8ltVLtAfvy0m`
@@ -222,7 +222,7 @@ External Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_v24ino4hix3m`
-An :t:`external function` is an unchecked import of a foreign :t:`function`.
+An :dt:`external function` is an unchecked import of a foreign :t:`function`.
 
 :dp:`fls_l88r9fj82650`
 An :t:`external function` shall be invoked from an :t:`unsafe context` unless it is defined in an :t:`unsafe external block` and subject to :s:`ItemSafety` with keyword ``safe``.
@@ -257,7 +257,7 @@ External Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_8ddsytjr4il6`
-An :t:`external static` is an import of a foreign :t:`variable`.
+An :dt:`external static` is an import of a foreign :t:`variable`.
 
 :dp:`fls_H0cg9XMaGz0y`
 An :t:`external static` inherits the :t:`ABI` of its enclosing

@@ -75,15 +75,15 @@ A :ds:`SubjectLetExpression` is any expression in category
 .. rubric:: Legality Rules
 
 :dp:`fls_h5o6tgul4yor`
-An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
-An :t:`expression-with-block` is an :t:`expression` whose structure involves a
+An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
 :t:`block expression`.
 
 :dp:`fls_p15oeage4j0e`
-An :t:`expression-without-block` is an :t:`expression` whose structure does not
+An :dt:`expression-without-block` is an :t:`expression` whose structure does not
 involve a :t:`block expression`.
 
 :dp:`fls_gwgttltgjma4`
@@ -112,7 +112,7 @@ A :t:`subject let expression` is an :t:`expression` that controls
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_1223lwh4nq49`
-:t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
+:dt:`Evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
 
 .. _fls_isyftqu120l:
@@ -359,7 +359,7 @@ Diverging Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_oth9vFtcb9l4`
-A :t:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
+A :dt:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
 program flow to diverge from the normal :t:`evaluation` order.
 
 :dp:`fls_cmBVodJMjZi7`
@@ -1091,8 +1091,12 @@ Dereference Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_f6wktzofzdn1`
-A :t:`dereference expression` is an :t:`expression` that obtains the pointed-to
+A :dt:`dereference expression` is an :t:`expression` that obtains the pointed-to
 memory location of its :t:`operand`.
+
+:dp:`fls_aOXtV5sEUGxJ`
+A :dt:`dereference` is the memory location produced by evaluating a
+:t:`dereference expression`.
 
 :dp:`fls_aeh5pzpcjveq`
 When the :t:`operand` of a :t:`dereference expression` is of a :t:`pointer
@@ -1175,7 +1179,7 @@ Error Propagation Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_8q59wbumrt5s`
-An :t:`error propagation expression` is an :t:`expression` that either evaluates
+An :dt:`error propagation expression` is an :t:`expression` that either evaluates
 to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
 flow boundary.
 
@@ -1423,7 +1427,7 @@ The :t:`value` of an :t:`addition expression` is the result of
 ``core::ops::Add::add(left_operand, right_operand)``.
 
 :dp:`fls_dstca76y08ge`
-A :t:`division expression` is an :t:`arithmetic expression` that uses division.
+A :dt:`division expression` is an :t:`arithmetic expression` that uses division.
 
 :dp:`fls_f1puss9t4btz`
 The :t:`type` of the :t:`left operand` of a :t:`division expression` shall
@@ -1889,7 +1893,7 @@ A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
 The :t:`type` of a :t:`comparison expression` is :t:`type` :c:`bool`.
 
 :dp:`fls_ruyho6cu7rxg`
-An :t:`equals expression` is a :t:`comparison expression` that tests equality.
+An :dt:`equals expression` is a :t:`comparison expression` that tests equality.
 
 :dp:`fls_8echqk9po1cf`
 The :t:`type` of the :t:`left operand` of an :t:`equals expression` shall
@@ -2422,7 +2426,7 @@ Destructuring Assignment
 .. rubric:: Legality Rules
 
 :dp:`fls_2eheo4yo2orm`
-A :t:`destructuring assignment` is an :t:`assignment expression` where
+A :dt:`destructuring assignment` is an :t:`assignment expression` where
 the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
 expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
 
@@ -2596,7 +2600,7 @@ A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
 that uses bit exclusive or arithmetic.
 
 :dp:`fls_pkzj0uigfcgm`
-A :t:`division assignment expression` is a :t:`compound assignment expression`
+A :dt:`division assignment expression` is a :t:`compound assignment expression`
 that uses division.
 
 :dp:`fls_ndlv3k9uclz2`
@@ -2634,6 +2638,9 @@ An :dt:`bit or assignment` is a :t:`bit or assignment expression`.
 
 :dp:`fls_0PENxft8n4Vz`
 An :dt:`bit xor assignment` is a :t:`bit xor assignment expression`.
+
+:dp:`fls_YUraJ9uJt34w`
+A :dt:`division assignment` is a :t:`division assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
@@ -3655,7 +3662,7 @@ Field Access Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_hr8qvwlhd9ts`
-A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
+A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_s2vpn4ihenpe`
@@ -3663,7 +3670,7 @@ A :dt:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
 :dp:`fls_yeuayil6uxzx`
-A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
+A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
 accessed in a :t:`field access expression`.
 
 :dp:`fls_qqrconpa92i3`
@@ -3907,8 +3914,11 @@ For Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_RPflON3LZDnO`
+For :dt:`for loop`, see :t:`for loop expression`.
+
 :dp:`fls_1bh2alh37frz`
-A :t:`for loop expression` is a :t:`loop expression` that continues to evaluate
+A :dt:`for loop expression` is a :t:`loop expression` that continues to evaluate
 its :t:`loop body` as long as its :t:`subject expression` yields a :t:`value`.
 
 :dp:`fls_fkgbin6ydkm4`
@@ -4432,14 +4442,14 @@ The :t:`value` of a :t:`range-from-to expression` is
 ``core::ops::Range { start: range_expression_low_bound, end: range_expression_high_bound }``.
 
 :dp:`fls_x67xo25n0qlz`
-A :t:`range-full expression` is a :t:`range expression` that covers the whole
+A :dt:`full range expression` is a :t:`range expression` that covers the whole
 range of a :t:`type`.
 
 :dp:`fls_m6n0gvg3ct1b`
-The :t:`type` of a :t:`range-full expression` is :std:`core::ops::RangeFull`.
+The :t:`type` of a :t:`full range expression` is :std:`core::ops::RangeFull`.
 
 :dp:`fls_yvh5cdgzevni`
-The :t:`value` of a :t:`range-full expression` is ``core::ops::RangeFull {}``.
+The :t:`value` of a :t:`full range expression` is ``core::ops::RangeFull {}``.
 
 :dp:`fls_lh9my7g8oflq`
 A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
@@ -4521,7 +4531,7 @@ An :t:`if expression` is an :t:`expression` that evaluates either a
 its :t:`subject expression`.
 
 :dp:`fls_5azwlk7hav1k`
-An :t:`else expression` is an :t:`expression` that represents either a
+An :dt:`else expression` is an :t:`expression` that represents either a
 :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
 
 :dp:`fls_r7gzxo16esri`
@@ -4717,7 +4727,7 @@ An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
 :dp:`fls_oj8dg28xw5yp`
-A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 :dp:`fls_lrdrtedyz28i`
 A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
@@ -4930,7 +4940,7 @@ An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
 suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
-A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
+A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
 an :t:`await expression`.
 
 :dp:`fls_k9pncajmhgk1`

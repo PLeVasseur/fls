@@ -15,7 +15,7 @@ without :t:`[data race]s`, whose rules are presented in this chapter.
 .. rubric:: Legality Rules
 
 :dp:`fls_tx4b8r6i93n4`
-A :t:`data race` is a scenario where two or more threads access a shared memory
+A :dt:`data race` is a scenario where two or more threads access a shared memory
 location concurrently without any synchronization, where one of the accesses is
 a modification.
 
@@ -131,7 +131,7 @@ The Rust programming language provides asynchronous computation through
 :t:`module` :std:`core::task` and the :std:`core::future::Future` :t:`trait`.
 
 :dp:`fls_fte085hi1yqj`
-A :t:`future` represents a :t:`value` of a :t:`type` that implements the
+A :dt:`future` represents a :t:`value` of a :t:`type` that implements the
 :std:`core::future::Future` :t:`trait` which may not have finished computing
 yet.
 
