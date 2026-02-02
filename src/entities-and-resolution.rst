@@ -367,14 +367,14 @@ A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 A :t:`type path` is subject to :t:`type path resolution`.
 
 :dp:`fls_e65q3iz50j6a`
-A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
 :t:`qualified type`.
 
 :dp:`fls_Ai1jN5a8h3Dz`
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
 
 :dp:`fls_ybv0tdu7dnj5`
-A :t:`qualified type` is a :t:`type` that is restricted to a set of
+A :dt:`qualified type` is a :t:`type` that is restricted to a set of
 :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
 :t:`qualifying trait`.
 
@@ -385,11 +385,11 @@ A :t:`qualified type` shall resolve to a :t:`type`.
 A :t:`qualified type` shall implement its related :t:`qualifying trait`.
 
 :dp:`fls_7sm3206va03c`
-A :t:`qualified path expression` is a :t:`path expression` that resolves
+A :dt:`qualified path expression` is a :t:`path expression` that resolves
 through a :t:`qualified type`.
 
 :dp:`fls_huynsyx13gsz`
-A :t:`qualified type path` is a :t:`type path` that resolves through a
+A :dt:`qualified type path` is a :t:`type path` that resolves through a
 :t:`qualified type`.
 
 :dp:`fls_RZvIsApi4WQm`
