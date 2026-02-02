@@ -4108,8 +4108,11 @@ While Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_4w8j2v6m0qpc`
+A :dt:`while loop` is a :t:`while loop expression`.
+
 :dp:`fls_ajby242tnu7c`
-A :t:`while loop expression` is a :t:`loop expression` that continues to
+A :dt:`while loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
 true.
 
@@ -4168,8 +4171,11 @@ While Let Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_j3t9k1w5z7rn`
+A :dt:`while let loop` is a :t:`while let loop expression`.
+
 :dp:`fls_fmdlyp9r9zl7`
-A :t:`while let loop expression` is a :t:`loop expression` that continues to
+A :dt:`while let loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`subject let expression` yields
 a :t:`value` that can be matched against its :t:`pattern`.
 

@@ -82,7 +82,7 @@ A :dt:`whitespace character` is one of the following characters:
   0x2029 (paragraph separator)
 
 :dp:`fls_7eifv4ksunu1`
-A :t:`whitespace string` is a string that consists of one or more
+A :dt:`whitespace string` is a string that consists of one or more
 :t:`[whitespace character]s`.
 
 :dp:`fls_PIDKEm8GiLNL`
@@ -1567,7 +1567,7 @@ Weak Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_bv87t1gvj7bz`
-A :t:`weak keyword` is a :t:`keyword` whose special meaning depends on the
+A :dt:`weak keyword` is a :t:`keyword` whose special meaning depends on the
 context.
 
 :dp:`fls_bl55g03jmayf`
