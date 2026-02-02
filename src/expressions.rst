@@ -574,12 +574,12 @@ Value Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_7q4hrt6yfr9b`
-A :t:`value expression` is an :t:`expression` that represents a :t:`value`.
+A :dt:`value expression` is an :t:`expression` that represents a :t:`value`.
 All :t:`[expression]s` that are not :t:`[place expression]s` are
 :t:`[value expression]s`.
 
 :dp:`fls_pB6xlp4uAg37`
-A :t:`value expression context` is an expression context that is not a
+A :dt:`value expression context` is an expression context that is not a
 :t:`place expression context`.
 
 :dp:`fls_8uhfwqurbyqf`
@@ -2396,7 +2396,7 @@ An :dt:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
 
 :dp:`fls_uinh05sslxeo`
-A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
 assigned to an :t:`assignee operand` by an :t:`assignment expression`.
 
 :dp:`fls_qengy157fa4a`

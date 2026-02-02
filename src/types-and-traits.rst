@@ -1221,7 +1221,7 @@ An :dt:`unsafe function pointer type` is a function pointer type subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_B0SMXRqQMS1E`
-A :t:`variadic part` indicates the presence of :t:`C`-like optional
+A :dt:`variadic part` indicates the presence of :t:`C`-like optional
 parameters.
 
 :dp:`fls_hbn1l42xmr3h`
@@ -2506,13 +2506,13 @@ Visible Emptiness
 .. rubric:: Legality Rules
 
 :dp:`fls_SD4yUEQ9hHa3`
-:t:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
+:dt:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
 
 :dp:`fls_GeoneCP5TYwf`
-A :t:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
+A :dt:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
 
 :dp:`fls_A2W4v53ihTGx`
-A :t:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
+A :dt:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
 
 :dp:`fls_AXOtKdSQR4AF`
 A :t:`type` is subject to :t:`visible emptiness` as follows:
@@ -3338,7 +3338,7 @@ Subtyping and Variance
 where another :t:`type` is expected.
 
 :dp:`fls_df87d44kgwcv`
-:t:`Variance` is a property of :t:`[lifetime parameter]s` and
+:dt:`Variance` is a property of :t:`[lifetime parameter]s` and
 :t:`[type parameter]s` that describes the circumstances under which a
 :t:`generic type` is a :t:`subtype` of an instantiation of itself with
 different :t:`[generic argument]s`.

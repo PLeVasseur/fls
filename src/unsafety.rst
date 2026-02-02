@@ -21,6 +21,10 @@ implementation]s` in program text.
 A :dt:`safety invariant` is an invariant that when violated may result in
 :t:`undefined behavior`.
 
+:dp:`fls_M4Q4vAJmapq8`
+A :dt:`validity invariant` is an invariant that when violated results in
+immediate :t:`undefined behavior`.
+
 :dp:`fls_ovn9czwnwxue`
 An :dt:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.

@@ -147,7 +147,7 @@ Visibility
 .. rubric:: Legality Rules
 
 :dp:`fls_7kpepal8ghuj`
-:t:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
+:dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
 which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 :dp:`fls_qo0itr5il1kk`
@@ -161,7 +161,7 @@ to be referred to only by the current :t:`module` of the :t:`entity`, and its
 descendant :t:`[module]s`.
 
 :dp:`fls_t7i4n19qdgn4`
-A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
+A :dt:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 :dp:`fls_aa4f3rvir9lm`
 A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
