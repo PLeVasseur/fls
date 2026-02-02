@@ -469,7 +469,7 @@ Binding Scopes
 .. rubric:: Legality Rules
 
 :dp:`fls_ncg9etb3x7k0`
-A :t:`binding scope` is a :t:`scope` for :t:`[binding]s`.
+A :dt:`binding scope` is a :t:`scope` for :t:`[binding]s`.
 
 :dp:`fls_u52mx4xw8zod`
 The :t:`binding` of a :t:`closure parameter` is :t:`in scope` within the

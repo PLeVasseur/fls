@@ -599,7 +599,7 @@ return), 0x27 (apostrophe), and 0x5C (reverse solidus).
 .. rubric:: Legality Rules
 
 :dp:`fls_q0qwr83frszx`
-A :t:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
+A :dt:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
 
 :dp:`fls_fggytrv5jvw0`
 The :t:`type` of a :t:`byte literal` is :c:`u8`.
@@ -628,7 +628,7 @@ Byte String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_t63zfv5JdUhj`
-A :t:`byte string literal` is a :t:`literal` that consists of multiple
+A :dt:`byte string literal` is a :t:`literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
 
 :dp:`fls_Xd6LnfzMb7t7`
@@ -922,7 +922,7 @@ Integer Literals
 An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 :dp:`fls_nxqncu5yq4eu`
-A :t:`binary literal` is an :t:`integer literal` in base 2.
+A :dt:`binary literal` is an :t:`integer literal` in base 2.
 
 :dp:`fls_rn8xfd66yvst`
 A :t:`decimal literal` is an :t:`integer literal` in base 10.
@@ -1272,7 +1272,7 @@ Boolean Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_1lll64ftupjd`
-A :t:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
+A :dt:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
 logic and Boolean algebra.
 
 :dp:`fls_pgngble3ilyx`
@@ -1335,7 +1335,7 @@ A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
 :dp:`fls_qsbnl11be35s`
-A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
+A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 :dp:`fls_nayisy85kyq2`
 A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.

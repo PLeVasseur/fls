@@ -155,7 +155,7 @@ An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
 :dp:`fls_vy9uw586wy0d`
-A :t:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
+A :dt:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
 :t:`identifier pattern`.
 
 :dp:`fls_hqwt3fvr063y`
@@ -1222,12 +1222,16 @@ Binding Modes
 .. rubric:: Legality Rules
 
 :dp:`fls_7xby6d1903kw`
-A :t:`binding pattern` is either an :t:`identifier pattern` or a
+A :dt:`binding pattern` is either an :t:`identifier pattern` or a
 :t:`shorthand deconstructor`.
 
 :dp:`fls_vnh9wfrvumdz`
-A :t:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
+A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
 :t:`name`.
+
+:dp:`fls_u8Yzdc7Xrksg`
+A :dt:`binding mode` describes whether a :t:`binding` captures a matched
+:t:`value` by value, by reference, or by mutable reference.
 
 :dp:`fls_RViC5UEZPQUV`
 A :t:`binding` with :t:`binding mode` :dt:`by value` binds the matched

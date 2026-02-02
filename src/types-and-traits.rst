@@ -165,7 +165,7 @@ Bool Type
 .. rubric:: Legality Rules
 
 :dp:`fls_h5994su1yft3`
-:c:`Bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
+:dt:`bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
 logic and Boolean algebra.
 
 :dp:`fls_v8atmrwz6wzk`
@@ -2745,6 +2745,10 @@ Traits
 A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
+:dp:`fls_u2XiDIAk6tQz`
+A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
+the compiler.
+
 :dp:`fls_PiAR1B26SoZV`
 A :t:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
@@ -2933,7 +2937,7 @@ Trait and Lifetime Bounds
 .. rubric:: Legality Rules
 
 :dp:`fls_5g508z6c7q5f`
-A :t:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
+A :dt:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
 set of possible :t:`[generic substitution]s`.
 
 :dp:`fls_BqLPVaSyyXRG`

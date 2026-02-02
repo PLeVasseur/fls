@@ -97,6 +97,10 @@ A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
 A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
 
+:dp:`fls_yOW2wnLPzlPy`
+A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
+:t:`right operand`.
+
 :dp:`fls_2j132xueobfv`
 A :t:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
 :t:`[if expression]s`, and :t:`[match expression]s`.
@@ -663,7 +667,7 @@ Block Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_nf65p0l0v0gr`
-A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
+A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
 and :t:`[statement]s`.
 
 :dp:`fls_tn3hj7k2lliu`
@@ -954,7 +958,7 @@ Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_nnqfkl228hjx`
-A :t:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
+A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
 its :t:`operand` and creates a :t:`reference` to the memory location of its
 :t:`operand`.
 
@@ -1652,11 +1656,11 @@ Bit Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_3zd59yuywz6l`
-A :t:`bit expression` is an :t:`expression` that computes a :t:`value` from two
+A :dt:`bit expression` is an :t:`expression` that computes a :t:`value` from two
 :t:`[operand]s` using bit arithmetic.
 
 :dp:`fls_f6mmva3lbj1i`
-A :t:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
+A :dt:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
 
 :dp:`fls_cmowpfrcelke`
 The :t:`type` of the :t:`left operand` of a :t:`bit and expression` shall
@@ -1672,7 +1676,7 @@ The :t:`value` of a :t:`bit and expression` is the result of
 ``core::ops::BitAnd::bitand(left_operand, right_operand)``.
 
 :dp:`fls_3136k1y6x3cu`
-A :t:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+A :dt:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
 
 :dp:`fls_oo2ynd8e1ys6`
 The :t:`type` of the :t:`left operand` of a :t:`bit or expression` shall
@@ -1688,7 +1692,7 @@ The :t:`value` of a :t:`bit or expression` is the result of
 ``core::ops::BitOr::bitor(left_operand, right_operand)``.
 
 :dp:`fls_j7ujcuthga1i`
-A :t:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
+A :dt:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
 arithmetic.
 
 :dp:`fls_fnywefl9nty2`
@@ -2378,7 +2382,7 @@ Basic Assignment
 .. rubric:: Legality Rules
 
 :dp:`fls_uhcodvq75nlr`
-A :t:`basic assignment` is an :t:`assignment expression` that is not a
+A :dt:`basic assignment` is an :t:`assignment expression` that is not a
 :t:`destructuring assignment`.
 
 .. rubric:: Dynamic Semantics
@@ -2574,15 +2578,15 @@ An :dt:`addition assignment expression` is a :t:`compound assignment expression`
 that uses addition.
 
 :dp:`fls_w2hbhb989yr4`
-A :t:`bit and assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit and assignment expression` is a :t:`compound assignment expression`
 that uses bit and arithmetic.
 
 :dp:`fls_ak4g5112jkl`
-A :t:`bit or assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit or assignment expression` is a :t:`compound assignment expression`
 that uses bit or arithmetic.
 
 :dp:`fls_lkjwyy78m2vx`
-A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
 that uses bit exclusive or arithmetic.
 
 :dp:`fls_pkzj0uigfcgm`
@@ -2615,6 +2619,15 @@ An :dt:`assigned operand` is the target :t:`operand` of a
 
 :dp:`fls_UDyCznokIYFo`
 An :dt:`addition assignment` is an :t:`addition assignment expression`.
+
+:dp:`fls_H5zoK7zj9NZZ`
+An :dt:`bit and assignment` is a :t:`bit and assignment expression`.
+
+:dp:`fls_JxiaXUUJY7lz`
+An :dt:`bit or assignment` is a :t:`bit or assignment expression`.
+
+:dp:`fls_0PENxft8n4Vz`
+An :dt:`bit xor assignment` is a :t:`bit xor assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
@@ -3170,7 +3183,7 @@ A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 :dp:`fls_uib1ml41mfrn`
-A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
 a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
@@ -4168,7 +4181,7 @@ Break Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_i5ko1t2wbgxe`
-A :t:`break expression` is an :t:`expression` that terminates a
+A :dt:`break expression` is an :t:`expression` that terminates a
 :t:`loop expression` or a :t:`named block expression`.
 
 :dp:`fls_jiykbp51909f`
@@ -4202,7 +4215,7 @@ with an :t:`infinite loop`.
 The :t:`type` of a :t:`break expression` is the :t:`never type`.
 
 :dp:`fls_1wdybpfldj7q`
-:t:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
+:dt:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
 
 :dp:`fls_8yore99adr22`
 The :t:`break type` is determined as follows:
@@ -4216,7 +4229,7 @@ The :t:`break type` is determined as follows:
   the :t:`type` of its :t:`operand`.
 
 :dp:`fls_bgd7d5q69q0g`
-:t:`Break value` is the :t:`value` of the :t:`operand` of a
+:dt:`Break value` is the :t:`value` of the :t:`operand` of a
 :t:`break expression`.
 
 :dp:`fls_yb8jv4mkmki0`
