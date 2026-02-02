@@ -38,17 +38,17 @@ Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_imegtsi224ts`
-A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
+A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
 the criteria of the :t:`pattern`.
 
 :dp:`fls_VQMmveZUfNTn`
 An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 :dp:`fls_mp6i4blzexnu`
-A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
 :dp:`fls_JJ1fJa1SsaWh`
-A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
+A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
 
 :dp:`fls_6xx34zr069bj`
@@ -315,7 +315,7 @@ Parenthesized Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_kvqzmt7my5dh`
-A :t:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
+A :dt:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
 its :t:`[subpattern]s`.
 
 :dp:`fls_mrjhpiq5refe`
@@ -362,7 +362,7 @@ Path Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_1crq0mexo5r1`
-A :t:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
+A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
 :dp:`fls_xz5otkhogn31`

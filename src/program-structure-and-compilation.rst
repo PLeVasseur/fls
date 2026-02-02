@@ -143,7 +143,7 @@ A :dt:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``
 ``staticlib``, ``dylib``, or ``cdylib``.
 
 :dp:`fls_Mf62VqAhoZ3c`
-A :t:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
+A :dt:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
 
 :dp:`fls_RJJmN4tP7j4m`
 A :t:`proc-macro crate` shall not declare :t:`[item]s` in its :t:`crate root
@@ -256,7 +256,7 @@ Program Entry Point
 .. rubric:: Legality Rules
 
 :dp:`fls_dp64b08em9BJ`
-A :t:`program entry point` is a :t:`function` that is invoked at the start of
+A :dt:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
 :dp:`fls_sbGnkm8Ephiu`

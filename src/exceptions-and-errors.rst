@@ -43,7 +43,7 @@ Panic
 .. rubric:: Legality Rules
 
 :dp:`fls_a554v4n0khye`
-A :t:`panic` is an abnormal program state caused by invoking :t:`macro`
+A :dt:`panic` is an abnormal program state caused by invoking :t:`macro`
 :std:`core::panic`.
 
 .. rubric:: Dynamic Semantics

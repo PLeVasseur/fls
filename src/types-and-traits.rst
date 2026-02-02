@@ -1030,6 +1030,12 @@ Indirection Types
 An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
 locations.
 
+:dp:`fls_mtIPI4ofJsUB`
+A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
+
+:dp:`fls_TGJQnwS4v9nZ`
+A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
+
 .. _fls_xztr1kebz8bo:
 
 Function Pointer Types
@@ -1297,7 +1303,7 @@ A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is not known at compile time.
 
 :dp:`fls_eWac7zOda3lh`
-The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
+The :dt:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
 :dp:`fls_02UkkF3xS2vW`
 A :t:`trait` is :dt:`object safe` when it can be used as a
@@ -1443,7 +1449,7 @@ Parenthesized Types
 .. rubric:: Legality Rules
 
 :dp:`fls_1dvo1epstrdv`
-A :t:`parenthesized type` is a :t:`type` that disambiguates the interpretation
+A :dt:`parenthesized type` is a :t:`type` that disambiguates the interpretation
 of :t:`[lexical element]s`.
 
 .. rubric:: Examples
@@ -1659,7 +1665,7 @@ interoperable with the :t:`C` language.
 :dt:`Default representation` makes no guarantees about the :t:`layout`.
 
 :dp:`fls_7plbkqlmed0r`
-:t:`Primitive representation` is the :t:`type representation` of individual
+:dt:`Primitive representation` is the :t:`type representation` of individual
 :t:`[integer type]s`. :t:`Primitive representation` applies only to an
 :t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
 combine :t:`C representation` and :t:`primitive representation`.

@@ -264,7 +264,7 @@ Passing Conventions
 .. rubric:: Legality Rules
 
 :dp:`fls_fvwx2ufeyzcs`
-A :t:`passing convention` is the mechanism that defines how a :t:`value` is
+A :dt:`passing convention` is the mechanism that defines how a :t:`value` is
 transferred between :t:`[place]s`.
 
 :dp:`fls_h2pgsij1rbms`

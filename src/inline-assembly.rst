@@ -660,7 +660,7 @@ A :dt:`named register argument` is a :t:`register argument` whose configuration
 is bound to an :t:`identifier`.
 
 :dp:`fls_sqs5to20p0te`
-A :t:`positional register argument` is a :t:`register argument` whose
+A :dt:`positional register argument` is a :t:`register argument` whose
 configuration is not bound to an :t:`identifier`.
 
 :dp:`fls_dzlycyk24euk`

@@ -308,7 +308,7 @@ Procedural Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_ejbddhggstd2`
-A :t:`procedural macro` is a :t:`macro` that encapsulates syntactic
+A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
 transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 

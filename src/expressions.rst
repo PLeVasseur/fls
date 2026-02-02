@@ -397,8 +397,11 @@ Place Expressions
 
 .. rubric:: Legality Rules
 
+:dp:`fls_yBEzAdfSAMYQ`
+A :dt:`place` is a location where a :t:`value` resides.
+
 :dp:`fls_qbrcg3cl9td`
-A :t:`place expression` is an :t:`expression` that represents a memory
+A :dt:`place expression` is an :t:`expression` that represents a memory
 location. The following :t:`[expression]s` are :t:`[place expression]s`:
 
 * :dp:`fls_jpmhibm4omm7`
@@ -465,7 +468,7 @@ location cannot be modified. All :t:`[place expression]s` that are not
 :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
 :dp:`fls_4vxi1ji93dxb`
-A :t:`place expression context` is a :t:`construct` that may evaluate its
+A :dt:`place expression context` is a :t:`construct` that may evaluate its
 :t:`operand` as a memory location.
 
 :dp:`fls_fzsrdrHnndRd`
@@ -631,7 +634,7 @@ Path Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_gvanx4874ycy`
-A :t:`path expression` is an :t:`expression` that denotes a :t:`path`.
+A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
 
 :dp:`fls_EOkrcIj9CuhV`
 A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
@@ -2866,7 +2869,7 @@ Parenthesized Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_jhazc75w5vj`
-A :t:`parenthesized expression` is an :t:`expression` that groups other
+A :dt:`parenthesized expression` is an :t:`expression` that groups other
 :t:`[expression]s`.
 
 :dp:`fls_5d66h7naoup6`
@@ -5036,7 +5039,7 @@ Certain :t:`[expression]s` are subject to :t:`precedence` and
 :t:`associativity`.
 
 :dp:`fls_ya23jjg5wjl`
-:t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
+:dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
 presence of other :t:`[expression]s`.
 
 :dp:`fls_bezkcuwp5qol`

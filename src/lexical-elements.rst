@@ -184,6 +184,10 @@ The representation of an end of line is tool-defined.
 A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
 
+:dp:`fls_Ag1xnfxiNYTB`
+A :dt:`punctuator` is a character or a sequence of characters in category
+:s:`Punctuation`.
+
 :dp:`fls_8fv63w6f4udl`
 A :dt:`simple punctuator` is one of the following special characters:
 
@@ -479,7 +483,7 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 :dp:`fls_ktnf6zkrdy45`
-A :t:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
+A :dt:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
 keyword]s`.
 
 :dp:`fls_jpecw46eh061`

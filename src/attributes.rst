@@ -1961,8 +1961,9 @@ Attribute ``path``
 :t:`Attribute` :c:`path` shall apply to :t:`[module]s`.
 
 :dp:`fls_qb6anohvc03k`
-:t:`Attribute` :dc:`path` specifies the :dt:`module path` of the respective
-:t:`module` as a :t:`string literal`.
+The :dt:`path attribute` is an :t:`attribute` (written as :c:`path`) that
+specifies the :dt:`module path` of the respective :t:`module` as a
+:t:`string literal`.
 
 :dp:`fls_18tcecx4p2wp`
 A tool is free to define the format of a :t:`module path`.

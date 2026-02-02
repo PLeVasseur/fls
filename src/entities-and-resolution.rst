@@ -146,12 +146,12 @@ Visibility
 which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 :dp:`fls_qo0itr5il1kk`
-:t:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
+:dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
 to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
 :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
 :dp:`fls_knjruq5wppv`
-:t:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
+:dt:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
 to be referred to only by the current :t:`module` of the :t:`entity`, and its
 descendant :t:`[module]s`.
 
@@ -293,11 +293,11 @@ Paths
 .. rubric:: Legality Rules
 
 :dp:`fls_klcltwcwrw6i`
-A :t:`path` is a sequence of :t:`[path segment]s` logically separated by
+A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
 :t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
 :dp:`fls_y1z7kougmahd`
-A :t:`path segment` is an element of a :t:`path`.
+A :dt:`path segment` is an element of a :t:`path`.
 
 :dp:`fls_8q8nqfpSz7Ly`
 A :t:`path` is subject to :t:`path resolution`.
@@ -941,11 +941,14 @@ Preludes
 .. rubric:: Legality Rules
 
 :dp:`fls_po4gw6t2ptwu`
-A :t:`prelude` is a collection of :t:`entities <entity>` that are automatically
-brought :t:`in scope` of every :t:`module` in a :t:`crate`. Such
-:t:`entities <entity>` are referred to as
-:t:`prelude entities <prelude entity>`. The :t:`name` of a :t:`prelude entity`
-is referred to as a :t:`prelude name`.
+A :dt:`prelude` is a collection of :t:`entities <entity>` that are automatically
+brought :t:`in scope` of every :t:`module` in a :t:`crate`.
+
+:dp:`fls_1fSWTLr3AP5z`
+A :dt:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
+
+:dp:`fls_eS8zAvhDy3gJ`
+A :dt:`prelude name` is a :t:`name` of a :t:`prelude entity`.
 
 :dp:`fls_n4102qskkmz2`
 The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
@@ -1506,7 +1509,7 @@ Path Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_8slvisr3jfja`
-:t:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
+:dt:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
 
 :dp:`fls_nmev0tnzgw35`
 :t:`Path resolution` resolves a :t:`path` by resolving individual
@@ -1695,7 +1698,7 @@ Path Expression Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_akjlqm3a2lb1`
-:t:`Path expression resolution` is a form of :t:`path resolution` that applies
+:dt:`Path expression resolution` is a form of :t:`path resolution` that applies
 to a :t:`unqualified path expression`.
 
 :dp:`fls_xyzdajtf4u2t`
