@@ -60,6 +60,7 @@ class GlossaryDirective(SphinxDirective):
 
 @dataclass(frozen=True)
 class GlossaryDefinition:
+    def_kind: str
     term_id: str
     display_text: str
     document: str
@@ -71,27 +72,28 @@ class GlossaryDefinition:
 class GlossaryCollector(EnvironmentCollector):
     def clear_doc(self, app, env, docname):
         storage = get_storage(env)
-        for term_id in list(storage.keys()):
-            storage[term_id] = [d for d in storage[term_id] if d.document != docname]
-            if not storage[term_id]:
-                del storage[term_id]
+        for key in list(storage.keys()):
+            storage[key] = [d for d in storage[key] if d.document != docname]
+            if not storage[key]:
+                del storage[key]
 
     def merge_other(self, app, env, docnames, other):
         storage = get_storage(env)
         other_storage = get_storage(other)
-        for term_id, defs in other_storage.items():
+        for key, defs in other_storage.items():
             for definition in defs:
                 if definition.document in docnames:
-                    storage.setdefault(term_id, []).append(definition)
+                    storage.setdefault(key, []).append(definition)
 
     def process_doc(self, app, doctree):
         docname = app.env.docname
         storage = get_storage(app.env)
         for node in doctree.findall(definitions.DefIdNode):
-            if node["def_kind"] != TERM_KIND:
+            if node["def_kind"] not in (TERM_KIND, CODE_TERM_KIND):
                 continue
-            storage.setdefault(node["def_id"], []).append(
+            storage.setdefault((node["def_kind"], node["def_id"]), []).append(
                 GlossaryDefinition(
+                    def_kind=node["def_kind"],
                     term_id=node["def_id"],
                     display_text=node["def_text"],
                     document=docname,
@@ -200,8 +202,12 @@ class GlossaryTransform(SphinxTransform):
             return None, False
 
         term_node = None
+        definition_kind = getattr(definition, "def_kind", TERM_KIND)
         for node in source_doctree.findall(definitions.DefIdNode):
-            if node["def_kind"] == TERM_KIND and node["def_id"] == definition.term_id:
+            if (
+                node["def_kind"] == definition_kind
+                and node["def_id"] == definition.term_id
+            ):
                 term_node = node
                 break
 
@@ -292,7 +298,7 @@ def select_definitions(
     glossary_docname: str,
 ) -> list[GlossaryDefinition]:
     selected = []
-    for term_id, defs in storage.items():
+    for _key, defs in storage.items():
         preferred = select_preferred_definition(defs, glossary_docname)
         if preferred is not None:
             selected.append(preferred)
@@ -651,11 +657,12 @@ def kind_to_role(kind):
 
 def compute_signature(storage):
     items = []
-    for term_id, defs in storage.items():
+    for _key, defs in storage.items():
         for definition in defs:
             items.append(
                 (
-                    term_id,
+                    getattr(definition, "def_kind", TERM_KIND),
+                    definition.term_id,
                     definition.display_text,
                     definition.document,
                     definition.line or 0,
@@ -682,7 +689,9 @@ def compute_override_signature(path):
 
 def apply_term_precedence(env):
     terms_storage = definitions.get_storage(env, definitions.terms)
-    for term_id, defs in get_storage(env).items():
+    for (def_kind, term_id), defs in get_storage(env).items():
+        if def_kind != TERM_KIND:
+            continue
         preferred = select_preferred_definition(defs, GLOSSARY_DOCNAME)
         if preferred is None:
             continue
