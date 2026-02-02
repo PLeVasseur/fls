@@ -931,7 +931,7 @@ A :dt:`decimal literal` is an :t:`integer literal` in base 10.
 A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 :dp:`fls_4v7awnutbpoe`
-An :t:`octal literal` is an :t:`integer literal` in base 8.
+An :dt:`octal literal` is an :t:`integer literal` in base 8.
 
 :dp:`fls_f1e29aj0sqvl`
 An :dt:`integer suffix` is a component of an :t:`integer literal` that specifies
@@ -1360,15 +1360,15 @@ An :dt:`inner doc comment` is either an :t:`inner block doc` or an
 :t:`inner line doc`.
 
 :dp:`fls_63gzofa9ktic`
-An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
+An :dt:`outer block doc` is a :t:`block comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_scko7crha0um`
-An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
+An :dt:`outer line doc` is a :t:`line comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_RYVL9KgaxKvl`
-An :t:`outer doc comment` is either an :t:`outer block doc` or an
+An :dt:`outer doc comment` is either an :t:`outer block doc` or an
 :t:`outer line doc`.
 
 :dp:`fls_7n6d3jx61ose`

@@ -87,7 +87,7 @@ An :dt:`expression-without-block` is an :t:`expression` whose structure does not
 involve a :t:`block expression`.
 
 :dp:`fls_gwgttltgjma4`
-An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
+An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 :dp:`fls_1r29rtnjlkql`
 A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
@@ -951,7 +951,7 @@ Operator Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ursc5ynymoy`
-An :t:`operator expression` is an :t:`expression` that involves an operator.
+An :dt:`operator expression` is an :t:`expression` that involves an operator.
 
 .. rubric:: Dynamic Semantics
 

@@ -80,7 +80,7 @@ be consumed by :t:`[macro]s`.
 An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 :dp:`fls_cavwpr1ybk37`
-An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
+An :dt:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
 
 :dp:`fls_plepew2319g4`
 An :t:`outline module` loads a :t:`source file` and considers the text of the

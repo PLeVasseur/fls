@@ -51,7 +51,7 @@ An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
 :t:`item`.
 
 :dp:`fls_8o6vmzbw1b1j`
-An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
+An :dt:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
 :dp:`fls_9TMRVlQwAdTB`

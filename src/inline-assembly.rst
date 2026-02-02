@@ -110,7 +110,7 @@ a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
 or ``inlateout``.
 
 :dp:`fls_5ruu8n6r9mvp`
-An :t:`output register` is a :t:`register` whose :t:`register name` is
+An :dt:`output register` is a :t:`register` whose :t:`register name` is
 used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
 ``lateout``, ``inout``, or ``inlateout``.
 
@@ -693,7 +693,7 @@ An :dt:`input register expression` is an :t:`expression` that provides the
 initial :t:`value` of a :t:`register`.
 
 :dp:`fls_sopiivuae0x7`
-An :t:`output register expression` is an :t:`expression` that is assigned the
+An :dt:`output register expression` is an :t:`expression` that is assigned the
 :t:`value` of a :t:`register`.
 
 :dp:`fls_81Ju1TEqJ48K`

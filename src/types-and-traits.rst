@@ -2958,6 +2958,10 @@ Object Safety
 
 .. rubric:: Legality Rules
 
+:dp:`fls_aG0l4OGm8sMG`
+:dt:`Object safety` is the process of determining whether a :t:`trait` can be used
+as a :t:`trait object type`.
+
 :dp:`fls_lrdki56hpc3k`
 A :t:`trait` is :t:`object safe` when:
 
@@ -3067,11 +3071,11 @@ list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
 
 :dp:`fls_AzuZmR9DXSQh`
-An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
+An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
 that nullifies an implicitly added :t:`trait bound`.
 
 :dp:`fls_1Sm2Yq1Ow76f`
-An :t:`outlives bound` is a :t:`trait bound` which requires that a
+An :dt:`outlives bound` is a :t:`trait bound` which requires that a
 :t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
 
 :dp:`fls_tx4uspewnk7w`
