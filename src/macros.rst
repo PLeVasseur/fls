@@ -25,7 +25,7 @@ distinct forms:
   return a stream of :t:`[lexical element]s`.
 
 :dp:`fls_rnty1c8l5495`
-:t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
+:dt:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
 
 .. _fls_xa7lp0zg1ol2:
 
@@ -548,7 +548,7 @@ A :dt:`macro invocation` is a call of a :t:`declarative macro` or
 result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
-A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used
+A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
 as a :t:`statement`.
 
 .. rubric:: Examples
@@ -822,7 +822,7 @@ Token Matching
 .. rubric:: Legality Rules
 
 :dp:`fls_k6a24sbon5v9`
-:t:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
+:dt:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
 belongs to a resolved :t:`declarative macro`.
 

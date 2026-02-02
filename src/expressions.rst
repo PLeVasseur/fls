@@ -689,7 +689,7 @@ A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
 and :t:`[statement]s`.
 
 :dp:`fls_tn3hj7k2lliu`
-A :t:`tail expression` is the last :t:`expression` within a :t:`block
+A :dt:`tail expression` is the last :t:`expression` within a :t:`block
 expression`.
 
 :dp:`fls_DfCne8YWevLE`
@@ -2169,7 +2169,7 @@ Type Cast Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ltioqbhl14g0`
-A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
+A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
 
 :dp:`fls_99kvyh4puy57`
@@ -3150,10 +3150,10 @@ Tuple Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_87rp1hfwvjel`
-A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
+A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
 :dp:`fls_581y6jq1eyn8`
-A :t:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
+A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
 :t:`tuple field` in a :t:`tuple expression`.
 
 :dp:`fls_ljz3sxmfzflm`
@@ -3459,8 +3459,8 @@ An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
 adjustments required by :t:`call resolution`.
 
 :dp:`fls_QpBu34U6hXn9`
-A :t:`tuple struct call expression` is a :t:`call expression` where the
-:t:`call operand` resolves to a :t:`tuple struct`.
+A :dt:`tuple struct call expression` is a :t:`call expression` where the
+:t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
 
 :dp:`fls_4t6imtiw6kzt`
 A :dt:`callee type` is either a :t:`function item type`, a

@@ -47,8 +47,14 @@ Types
 .. rubric:: Legality Rules
 
 :dp:`fls_4rhjpdu4zfqj`
-A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
+A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
+
+:dp:`fls_r3g5n7t2k9vq`
+A :dt:`type specification` describes the structure of a :t:`type`.
+
+:dp:`fls_x4p7m2c9v6qn`
+A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
 
 :dp:`fls_0yaYKnFrJkhG`
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
@@ -625,6 +631,10 @@ bytes.
 A :t:`value` of :t:`type` :c:`str` shall denote a valid UTF-8 sequence of
 characters.
 
+:dp:`fls_w2n7c4p8m1vj`
+A :dt:`textual type` is a :t:`type` class that includes type :c:`char` and type
+:c:`str`.
+
 .. rubric:: Undefined Behavior
 
 :dp:`fls_wacoqrtzvrwu`
@@ -652,8 +662,14 @@ Tuple Types
 .. rubric:: Legality Rules
 
 :dp:`fls_bn7wmf681ngt`
-A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
+A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
+
+:dp:`fls_m8n4t5c1k0pz`
+A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
+
+:dp:`fls_v7c3y1q9m2bx`
+A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
 
 :dp:`fls_ivWBnhfOZUrW`
 The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
@@ -735,6 +751,12 @@ possible variations of an :t:`enum`.
 :dp:`fls_9vlr65nzdwf2`
 A :dt:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
+:dp:`fls_v1q7n3t5c9xz`
+A :dt:`tuple enum variant` is an :t:`enum variant` with a
+:s:`TupleStructFieldList`.
+
+:dp:`fls_h2m9k6p4r7vd`
+A :dt:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
 :dp:`fls_1PqJYZ5eMNym`
 An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
@@ -881,6 +903,18 @@ A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
 :dp:`fls_9m52m0px5y0r`
 A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+:dp:`fls_q1m7v9b3k5ha`
+A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_g6t2n8c5p4xy`
+A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+
+:dp:`fls_j9r1c6m3v7kw`
+A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
+
+:dp:`fls_z4p8t1x6n2qv`
+A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
+
 :dp:`fls_6b2xm9k1qz0w`
 A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 
@@ -1079,6 +1113,13 @@ A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory location
 :dp:`fls_TGJQnwS4v9nZ`
 A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
 
+:dp:`fls_b7m2q9t4v1cx`
+A :dt:`thin pointer type` is an :t:`indirection type` that refers to a
+:t:`fixed sized type`.
+
+:dp:`fls_p4n8k2y6c7rm`
+A :dt:`thin pointer` is a :t:`value` of a :t:`thin pointer type`.
+
 .. _fls_xztr1kebz8bo:
 
 Function Pointer Types
@@ -1252,6 +1293,10 @@ not :c:`null`.
 Trait Types
 -----------
 
+:dp:`fls_k2m9v6r1t7yx`
+A :dt:`trait type` is either an :t:`impl trait type` or a
+:t:`trait object type`.
+
 .. _fls_3xqobbu7wfsf:
 
 Impl Trait Types
@@ -1345,7 +1390,7 @@ Trait Object Types
 .. rubric:: Legality Rules
 
 :dp:`fls_sgrvona1nb6h`
-A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
+A :dt:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is not known at compile time.
 
 :dp:`fls_eWac7zOda3lh`
@@ -1439,7 +1484,7 @@ Type Parameters
 .. rubric:: Legality Rules
 
 :dp:`fls_dCIIVXGhXDlO`
-A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
+A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
 to be substituted by :t:`generic substitution`.
 
 .. rubric:: Examples
@@ -1523,7 +1568,7 @@ Type Aliases
 .. rubric:: Legality Rules
 
 :dp:`fls_bibigic4jjad`
-A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 
 :dp:`fls_2uLBgKLYXoJV`
 An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
@@ -1687,7 +1732,7 @@ Type Representation
 .. rubric:: Legality Rules
 
 :dp:`fls_mpqlyi3lgrfv`
-:t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
+:dt:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
 :t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
 between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
 does not change the :t:`layout` of the :t:`[field]s` themselves.
@@ -1721,7 +1766,7 @@ interoperable with the :t:`C` language.
 combine :t:`C representation` and :t:`primitive representation`.
 
 :dp:`fls_ml4khttq3w5k`
-:t:`Transparent representation` applies only to an :t:`enum type` with a
+:dt:`Transparent representation` applies only to an :t:`enum type` with a
 single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
 :t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
 of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
@@ -1923,7 +1968,7 @@ Type Unification
 .. rubric:: Legality Rules
 
 :dp:`fls_ryvdhkgm7vzj`
-:t:`Type unification` is the process by which :t:`type inference` propagates
+:dt:`Type unification` is the process by which :t:`type inference` propagates
 known :t:`[type]s` across the :t:`type inference root` and assigns concrete
 :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
 for compatibility between two :t:`[type]s` during :t:`method resolution`.
@@ -2122,7 +2167,7 @@ Type Coercion
 .. rubric:: Legality Rules
 
 :dp:`fls_w5pjcj9qmgbv`
-:t:`Type coercion` is an implicit operation that changes the :t:`type` of a
+:dt:`Type coercion` is an implicit operation that changes the :t:`type` of a
 :t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
 explicit using a :t:`type cast expression`.
 
@@ -2431,11 +2476,11 @@ Type Inference
 .. rubric:: Legality Rules
 
 :dp:`fls_h8sedxew0d4u`
-:t:`Type inference` is the process of automatically determining the :t:`type` of
+:dt:`Type inference` is the process of automatically determining the :t:`type` of
 :t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
 :dp:`fls_ybvrhh96fc7y`
-A :t:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
+A :dt:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
 and :t:`[pattern]s` are subject to :t:`type inference` independently of those
 found in other :t:`[type inference root]s`.
 
@@ -2505,7 +2550,7 @@ depending on the :t:`type inference root` as follows:
   an :t:`array type` is :c:`usize`.
 
 :dp:`fls_uvvn4usfsbhr`
-A :t:`type variable` is a placeholder used during :t:`type inference` to stand
+A :dt:`type variable` is a placeholder used during :t:`type inference` to stand
 in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
 :dp:`fls_gDalJm1XS0mi`
@@ -2903,7 +2948,7 @@ Traits
 .. rubric:: Legality Rules
 
 :dp:`fls_tani6lesan9u`
-A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
 :dp:`fls_u2XiDIAk6tQz`
@@ -2911,7 +2956,7 @@ A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
 the compiler.
 
 :dp:`fls_PiAR1B26SoZV`
-A :t:`trait body` is a :t:`construct` that encapsulates the
+A :dt:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of a :t:`trait`.
 
@@ -3115,7 +3160,7 @@ A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
 :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_knut10hoz6wc`
-A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
+A :dt:`trait bound` is a :t:`bound` that imposes a constraint on the
 :t:`[trait]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_sf6zg0ez9hbb`
@@ -3588,7 +3633,7 @@ Trait Object Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_fuBYWRrgxlbQ`
-:t:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
+:dt:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
 applies to :t:`[trait object type]s`.
 
 :dp:`fls_URl9CeIVsiWs`

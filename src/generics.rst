@@ -102,10 +102,10 @@ A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
 except for the ``'static`` :t:`lifetime`.
 
 :dp:`fls_95eooah0vcqx`
-A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+A :dt:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
 :dp:`fls_ahCqtkh0m5sR`
-A :t:`type parameter initializer` is a :t:`construct` that provides the
+A :dt:`type parameter initializer` is a :t:`construct` that provides the
 default :t:`value` of its related :t:`type parameter`.
 
 :dp:`fls_3qZRBp9j26w3`
@@ -291,7 +291,7 @@ A :dt:`lifetime bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 :dp:`fls_cslGPmVjujHD`
-A :t:`type bound predicate` is a :t:`construct` that specifies
+A :dt:`type bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
 
 :dp:`fls_ytk74dyxuy6d`
@@ -299,7 +299,7 @@ A :t:`construct` is valid when all of its :t:`[where clause predicate]s` hold
 true for the supplied :t:`[generic argument]s`.
 
 :dp:`fls_1xgw1dq60quz`
-A :t:`trivial predicate` is a :t:`where clause predicate` that does not use
+A :dt:`trivial predicate` is a :t:`where clause predicate` that does not use
 the :t:`[generic parameter]s` or :t:`[higher-ranked trait bound]s` of the related
 :t:`construct`.
 
@@ -398,7 +398,7 @@ A :dt:`lifetime argument` is a :t:`generic argument` that supplies the
 :t:`lifetime` of a :t:`lifetime parameter`.
 
 :dp:`fls_d4vdvpihoeb1`
-A :t:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
+A :dt:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
 a :t:`type parameter`.
 
 :dp:`fls_ukarc98ceesz`

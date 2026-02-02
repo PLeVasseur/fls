@@ -366,7 +366,7 @@ An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qua
 A :t:`path expression` is subject to :t:`path expression resolution`.
 
 :dp:`fls_h2zikgmazoxx`
-A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
+A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
@@ -645,7 +645,7 @@ Textual Macro Scope
 .. rubric:: Legality Rules
 
 :dp:`fls_xkh8cqubhxad`
-A :t:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
+A :dt:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
 
 :dp:`fls_iec3otx863yp`
 A :t:`declarative macro` is :t:`in scope` after the related :t:`macro`
@@ -1837,7 +1837,7 @@ Type Path Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_2zuncql8ir5k`
-:t:`Type path resolution` is a form of :t:`path resolution` that applies to
+:dt:`Type path resolution` is a form of :t:`path resolution` that applies to
 a :t:`type path`.
 
 :dp:`fls_bv5cj918dqqe`

@@ -62,7 +62,7 @@ functionality.
 defined within the same :t:`crate`.
 
 :dp:`fls_ry3an0mwb63g`
-A :t:`trait implementation` is an :t:`implementation` that adds functionality
+A :dt:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_8pwr7ibvhmhu`
