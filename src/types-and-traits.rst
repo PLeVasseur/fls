@@ -161,6 +161,10 @@ Type Classification
 Scalar Types
 ------------
 
+:dp:`fls_5y8tfx2kgj0c`
+A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or a
+:t:`numeric type`.
+
 .. _fls_tiqp1gxf116z:
 
 Bool Type
@@ -413,6 +417,10 @@ Integer Types
 An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
 numbers.
 
+:dp:`fls_3g2cxq6r7nkp`
+A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+signed whole numbers.
+
 :dp:`fls_cokwseo3nnr`
 :t:`[Unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
@@ -508,6 +516,9 @@ platform's :t:`pointer type`, and is at least 16-bits wide.
 Sequence Types
 --------------
 
+:dp:`fls_4bc1m2n7r0qp`
+A :dt:`sequence type` is a :t:`type` that represents a sequence of elements.
+
 .. _fls_uj0kpjwyld60:
 
 Array Types
@@ -535,6 +546,10 @@ An :dt:`array` is a :t:`value` of an :t:`array type`.
 :dp:`fls_mRbOQQQPbVyU`
 An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
+
+:dp:`fls_4sd5dgy2unq7`
+A :dt:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
+that specifies the length of an :t:`array type`.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -570,8 +585,11 @@ Slice Types
 .. rubric:: Legality Rules
 
 :dp:`fls_ftvua2hlvr08`
-A :t:`slice type` is a :t:`sequence type` that provides a view into a sequence
+A :dt:`slice type` is a :t:`sequence type` that provides a view into a sequence
 of elements.
+
+:dp:`fls_qqw9h1x0ptl6`
+A :dt:`slice` is a :t:`value` of a :t:`slice type`.
 
 :dp:`fls_acgtczhk8ci0`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -597,7 +615,7 @@ Str Type
 .. rubric:: Legality Rules
 
 :dp:`fls_wlnoq1qoq2kr`
-:c:`Str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
+A :dt:`str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
 bytes.
 
 :dp:`fls_1xa6fas6laha`
@@ -844,8 +862,12 @@ Struct Types
 A :dt:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
+:dp:`fls_9h1rj4lq6vzx`
+A :dt:`struct` is an :t:`abstract data type` declared with a
+:s:`StructDeclaration`.
+
 :dp:`fls_g1azfj548136`
-A :t:`struct type` is an :t:`abstract data type` that is a product of other
+A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
 
 :dp:`fls_r3g6b8q1bphw`
@@ -859,6 +881,11 @@ A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
 :dp:`fls_9m52m0px5y0r`
 A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+:dp:`fls_6b2xm9k1qz0w`
+A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
+
+:dp:`fls_0r4qz8k5n1mp`
+A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
 
 :dp:`fls_3QSa0wGQtbHh`
 A :dt:`field index` is the position of a :t:`field` within a
@@ -1181,7 +1208,7 @@ Reference Types
 A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
 :dp:`fls_w4NbA7WhZfR2`
-A :t:`shared reference type` is a :t:`reference type` not subject to
+A :dt:`shared reference type` is a :t:`reference type` not subject to
 :t:`keyword` ``mut``.
 
 :dp:`fls_ie0avzljmxfm`
@@ -1531,6 +1558,10 @@ Type Layout
 :dp:`fls_kdbq02iguzgl`
 All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
 
+:dp:`fls_5kz6p0m2v9nd`
+A :dt:`sized type` is a :t:`type` that implements the
+:std:`core::marker::Sized` :t:`trait`.
+
 :dp:`fls_c6lSeub6RBUV`
 A :dt:`fixed sized type` is a :t:`type` that implements the
 :std:`core::marker::Sized` :t:`trait`.
@@ -1551,7 +1582,7 @@ and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
 
 :dp:`fls_1pbwigq6f3ha`
-The :t:`size` of a :t:`type` is the offset in bytes between successive elements
+The :dt:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
@@ -2885,17 +2916,18 @@ A :t:`trait body` is a :t:`construct` that encapsulates the
 :t:`[inner doc comment]s` of a :t:`trait`.
 
 :dp:`fls_Y28596CVBzDG`
-Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
-:t:`type` implementing the :t:`trait`, and behaves like a :t:`type parameter`.
+:dt:`Self` is either an implicit :t:`type parameter` in :t:`[trait]s` or an
+implicit :t:`type alias` in :t:`[implementation]s`, and refers to the
+:t:`type` that implements a :t:`trait`.
 
 :dp:`fls_AdbbUZZgMEsQ`
 A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 :dp:`fls_I9JaKZelMiby`
-A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
+A :dt:`subtrait` is a :t:`trait` with a :t:`supertrait`.
 
 :dp:`fls_CYtxPjK3zq2T`
-A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
+A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
 implement.
 
 :dp:`fls_ytn5cdonytyn`
@@ -3303,6 +3335,14 @@ a :t:`tuple type` is determined as follows:
    #. :dp:`fls_9ae3idezsths`
       It is a static error if :t:`variance` ``V`` is ``any``.
 
+:dp:`fls_3l9q2g8v6n0c`
+:dt:`subtyping` is the relation that determines when one :t:`type` may be used
+in place of another.
+
+:dp:`fls_1q7k3n9m5v2b`
+A :dt:`subtype` is a :t:`type` that may be used in place of another :t:`type`
+according to :t:`subtyping`.
+
 :dp:`fls_WD6uyTCziRac`
 :t:`[Expression]s` and :t:`[statement]s` may impose :t:`subtyping` requirements
 on their :t:`[subexpression]s`. Such requirements are applied after
@@ -3509,7 +3549,7 @@ Static Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_l4RDXaFwnQZ6`
-:t:`Static lifetime elision` is a form of :t:`lifetime elision` that applies to
+:dt:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
 the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
 
 :dp:`fls_8irr97rZWfSC`

@@ -14,6 +14,10 @@ Unsafety
 :t:`Unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
 implementation]s` in program text.
 
+:dp:`fls_9k2m4p7q1v6n`
+A :dt:`safety invariant` is an invariant that when violated may result in
+:t:`undefined behavior`.
+
 :dp:`fls_ovn9czwnwxue`
 An :t:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.
@@ -46,4 +50,3 @@ An :t:`unsafe context` is either an :t:`unsafe block` or an
 
 :dp:`fls_ybnpe7ppq1vh`
 An :t:`unsafe operation` shall be used only within an :t:`unsafe context`.
-

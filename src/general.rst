@@ -259,7 +259,7 @@ Backus-Naur form. In particular:
   A ``monospaced`` font is used to denote Rust syntax.
 
 * :dp:`fls_ceb5a8t6cakr`
-  Words in PascalCase font are used to denote a syntactic category, for example:
+  A :dt:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
 .. syntax::
 

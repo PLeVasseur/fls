@@ -35,7 +35,7 @@ Source Files
 .. rubric:: Legality Rules
 
 :dp:`fls_4vicosdeaqmp`
-A :t:`source file` contains the program text consisting of :t:`[inner
+A :dt:`source file` contains the program text consisting of :t:`[inner
 attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
 :t:`source file` is tool defined.
 

@@ -121,6 +121,9 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
 An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
 prevents the mutation of its :t:`referent`.
 
+:dp:`fls_4m2v8k1q9p0s`
+A :dt:`shared reference` is a :t:`value` of a :t:`shared reference type`.
+
 :dp:`fls_fckoj1jh5mrc`
 A :dt:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
 allows the mutation of its :t:`referent`.
@@ -197,6 +200,10 @@ if required.
 :dp:`fls_hyl4bdjbuzbw`
 An :dt:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
+
+:dp:`fls_8q0n7v3k2m1b`
+A :dt:`shared borrow` is a :t:`borrow` produced by evaluating an
+:t:`immutable borrow expression`.
 
 :dp:`fls_pu19i4sj6yg0`
 A :dt:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.

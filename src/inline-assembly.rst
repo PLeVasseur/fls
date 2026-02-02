@@ -704,7 +704,7 @@ An :dt:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
 :dp:`fls_aniw4ehsn2kb`
-A :t:`simple register expression` is either an :t:`expression` or an
+A :dt:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
 :dp:`fls_j9XOoXDmN5Dq`

@@ -37,7 +37,7 @@ The Rust programming language provides the :std:`core::marker::Send` and
 :t:`type` level.
 
 :dp:`fls_2jujsujpjp3w`
-A :t:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
+A :dt:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
 :t:`trait`.
 
 :dp:`fls_cax6fe4em23k`
@@ -50,7 +50,7 @@ A :t:`send type` shall have :t:`[value]s` that are safe to transfer across
 thread boundaries.
 
 :dp:`fls_dekskhk4g895`
-A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
+A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 :t:`trait`.
 
 :dp:`fls_y0iqr5ibnbfe`

@@ -89,6 +89,10 @@ involve a :t:`block expression`.
 :dp:`fls_gwgttltgjma4`
 An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
 
+:dp:`fls_2y7n8m4q1v9c`
+A :dt:`subexpression` is an :t:`expression` nested within another
+:t:`expression`.
+
 :dp:`fls_1r29rtnjlkql`
 A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
@@ -102,11 +106,11 @@ A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
 :t:`right operand`.
 
 :dp:`fls_2j132xueobfv`
-A :t:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
+A :dt:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
 :t:`[if expression]s`, and :t:`[match expression]s`.
 
 :dp:`fls_a243nclqqjlu`
-A :t:`subject let expression` is an :t:`expression` that controls
+A :dt:`subject let expression` is an :t:`expression` that controls
 :t:`[if let expression]s` and :t:`[while let loop]s`.
 
 .. rubric:: Dynamic Semantics
@@ -1491,7 +1495,7 @@ The :t:`value` of a :t:`remainder expression` is the result of
 ``core::ops::Rem::rem(left_operand, right_operand)``.
 
 :dp:`fls_aalxhbvu8kdi`
-A :t:`subtraction expression` is an :t:`arithmetic expression` that uses
+A :dt:`subtraction expression` is an :t:`arithmetic expression` that uses
 subtraction.
 
 :dp:`fls_fjcv1nm8tlgf`
@@ -1731,7 +1735,7 @@ The :t:`value` of a :t:`bit xor expression` is the result of
 ``core::ops::BitXor::bitxor(left_operand, right_operand)``.
 
 :dp:`fls_caxn774ij8lk`
-A :t:`shift left expression` is a :t:`bit expression` that uses bit shift left
+A :dt:`shift left expression` is a :t:`bit expression` that uses bit shift left
 arithmetic.
 
 :dp:`fls_1f4pc612f2a8`
@@ -1748,7 +1752,7 @@ The :t:`value` of a :t:`shift left expression` is the result of
 ``core::ops::Shl::shl(left_operand, right_operand)``.
 
 :dp:`fls_t709sl4co3al`
-A :t:`shift right expression` is a :t:`bit expression` that uses bit shift right
+A :dt:`shift right expression` is a :t:`bit expression` that uses bit shift right
 arithmetic.
 
 :dp:`fls_onutb0b9p9zj`
@@ -2630,15 +2634,15 @@ A :dt:`remainder assignment expression` is a :t:`compound assignment expression`
 that uses remainder division.
 
 :dp:`fls_oy9ur11k78t`
-A :t:`shift left assignment expression` is a :t:`compound assignment expression`
+A :dt:`shift left assignment expression` is a :t:`compound assignment expression`
 that uses bit shift left arithmetic.
 
 :dp:`fls_s7rey2bndfei`
-A :t:`shift right assignment expression` is a
+A :dt:`shift right assignment expression` is a
 :t:`compound assignment expression` that uses bit shift right arithmetic.
 
 :dp:`fls_7l7v7vigw3fu`
-A :t:`subtraction assignment expression` is a
+A :dt:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
 
 :dp:`fls_dvy201zd6oym`
@@ -2665,6 +2669,14 @@ A :dt:`multiplication assignment` is a :t:`multiplication assignment expression`
 
 :dp:`fls_1b5aqr1cp1d0`
 A :dt:`remainder assignment` is a :t:`remainder assignment expression`.
+:dp:`fls_5n1a7tq9vx0p`
+A :dt:`shift left assignment` is a :t:`shift left assignment expression`.
+
+:dp:`fls_j8v2m0p6r3kx`
+A :dt:`shift right assignment` is a :t:`shift right assignment expression`.
+
+:dp:`fls_y1m4q6t9x3nc`
+A :dt:`subtraction assignment` is a :t:`subtraction assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
@@ -3212,7 +3224,7 @@ Struct Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ij8rebvupb85`
-A :t:`struct expression` is an :t:`expression` that constructs an
+A :dt:`struct expression` is an :t:`expression` that constructs an
 :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_4z91ymz3ciup`
@@ -3265,7 +3277,7 @@ The :t:`value` of a :t:`named initializer` is the :t:`value` of its
 :t:`expression`.
 
 :dp:`fls_57t368kema7h`
-A :t:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
+A :dt:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
 of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_sm2hx8sh4agb`
@@ -3698,7 +3710,7 @@ A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
 accessed in a :t:`field access expression`.
 
 :dp:`fls_qqrconpa92i3`
-A :t:`selected field` is a :t:`field` that is selected by a
+A :dt:`selected field` is a :t:`field` that is selected by a
 :t:`field access expression`.
 
 :dp:`fls_fovs9il2h9xg`

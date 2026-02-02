@@ -37,6 +37,11 @@ defines the compile- and run-time semantics of a program.
 :dp:`fls_40d2g0hvq2il`
 A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
+:dp:`fls_6n2v9m1k4c0p`
+:dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
+another :t:`name` with the same characters is introduced in the same
+:t:`scope` within the same :t:`namespace`, effectively hiding it.
+
 :dp:`fls_lcca91wjwnpx`
 A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
 :t:`entity`.
@@ -163,13 +168,13 @@ A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
 :dp:`fls_tnh7o3pb4e22`
-A :t:`self public modifier` is a :t:`visibility modifier` that grants a
+A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
 to a :t:`simple path public modifier` where the :t:`simple path` denotes
 :t:`keyword` ``self``.
 
 :dp:`fls_yymgpyi67dty`
-A :t:`simple path public modifier` is a :t:`visibility modifier` that grants a
+A :dt:`simple path public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the provided :t:`simple path` only.
 
 :dp:`fls_hc121mxknq03`
@@ -183,11 +188,11 @@ an ancestor :t:`module` of the current :t:`module` or the current :t:`module`
 itself.
 
 :dp:`fls_np8aghofjqhm`
-A :t:`simple public modifier` is a :t:`visibility modifier` that grants a
+A :dt:`simple public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility`.
 
 :dp:`fls_quzvhzpr0124`
-A :t:`super public modifier` is a :t:`visibility modifier` that grants a
+A :dt:`super public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the parent :t:`module` only. A
 :t:`super public modifier` is equivalent to a :t:`simple path public modifier`
 where the :t:`simple path` denotes :t:`keyword` ``super``.
@@ -322,7 +327,7 @@ A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 ``::``.
 
 :dp:`fls_n77icl6idazp`
-A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
+A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
 :t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
 above.
 
@@ -347,7 +352,7 @@ be part of the :s:`UseImportContent` of a :t:`nesting import` as long as the
 A :t:`simple path` is subject to :t:`simple path resolution`.
 
 :dp:`fls_chtj3hcfe3ap`
-A :t:`single segment path` is a :t:`path` consisting of exactly one
+A :dt:`single segment path` is a :t:`path` consisting of exactly one
 :t:`path segment`.
 
 :dp:`fls_wm61yeclairz`
@@ -466,7 +471,7 @@ Scopes
 .. rubric:: Legality Rules
 
 :dp:`fls_5x5xykocwyiy`
-A :t:`scope` is a region of program text where an :t:`entity` can be referred
+A :dt:`scope` is a region of program text where an :t:`entity` can be referred
 to. An :t:`entity` is :dt:`in scope` when it can be referred to.
 
 .. _fls_6ozthochxz1i:
@@ -607,7 +612,7 @@ Self Scope
 .. rubric:: Legality Rules
 
 :dp:`fls_kgt81m4f72ne`
-A :t:`Self scope` is a :t:`scope` for :c:`Self`.
+A :dt:`Self scope` is a :t:`scope` for :c:`Self`.
 
 :dp:`fls_kxdwq4b136tl`
 :c:`Self` of an :t:`enum type` is :t:`in scope` within the related
@@ -661,7 +666,7 @@ Scope Hierarchy
 .. rubric:: Legality Rules
 
 :dp:`fls_4o7vfo6v39l7`
-The :t:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
+The :dt:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
 by :t:`[scoping construct]s`. An inner :t:`scope` introduced by a nested
 :t:`scoping construct` is the child of an outer :t:`scope` introduced by an
 enclosing :t:`scoping construct`.
@@ -1029,7 +1034,7 @@ A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`use import` resides.
 
 :dp:`fls_sxo1jb25pl8a`
-A :t:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
+A :dt:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
 or a :t:`nesting import`.
 
 :dp:`fls_WAA4WmohGu6T`
@@ -1060,7 +1065,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
    the current :t:`use import`.
 
 :dp:`fls_2bkcn83smy2y`
-A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
+A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
 :t:`name` than they are declared with by using a :t:`renaming`.
 
@@ -1649,7 +1654,7 @@ Simple Path Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_uml24jw5jo7a`
-:t:`Simple path resolution` is a kind of :t:`path resolution` that applies to
+:dt:`simple path resolution` is a kind of :t:`path resolution` that applies to
 a :t:`simple path`.
 
 :dp:`fls_59wd7loxst43`

@@ -181,7 +181,7 @@ line.
 The representation of an end of line is tool-defined.
 
 :dp:`fls_a6t53o8h1vdk`
-A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
+A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 :dp:`fls_Ag1xnfxiNYTB`
@@ -664,7 +664,7 @@ except characters 0x0D (carriage return), 0x22 (quotation mark), and 0x5C
 .. rubric:: Legality Rules
 
 :dp:`fls_moe3zfx39ox2`
-A :t:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
+A :dt:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
 
 :dp:`fls_vffxb6arj9jf`
@@ -766,7 +766,7 @@ A :t:`simple c string literal` is any :t:`Unicode` character except characters
 .. rubric:: Legality Rules
 
 :dp:`fls_nPI7j0siGP8G`
-A :t:`simple c string literal` is a :t:`c string literal` where the characters are
+A :dt:`simple c string literal` is a :t:`c string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_Ae7LM4Wg0NA7`
@@ -942,7 +942,7 @@ An :dt:`integer suffix` is a component of an :t:`integer literal` that specifies
 an explicit :t:`integer type`.
 
 :dp:`fls_u83mffscqm6`
-A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
+A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 :dp:`fls_g10nuv14q4jn`
 An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
@@ -1056,7 +1056,7 @@ A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
 
 :dp:`fls_21mhnhplzam7`
-A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
+A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 :dp:`fls_drqh80k0sfkb`
 An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
@@ -1176,7 +1176,7 @@ String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_7fuctvtvdi7x`
-A :t:`string literal` is a :t:`literal` that consists of multiple characters.
+A :dt:`string literal` is a :t:`literal` that consists of multiple characters.
 
 :dp:`fls_NyiCpU2tzJlQ`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -1211,7 +1211,7 @@ new line).
 .. rubric:: Legality Rules
 
 :dp:`fls_ycy5ee6orjx`
-A :t:`simple string literal` is a :t:`string literal` where the characters are
+A :dt:`simple string literal` is a :t:`string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_6nt5kls21xes`
@@ -1513,7 +1513,7 @@ Strict Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_bsh7qsyvox21`
-A :t:`strict keyword` is a :t:`keyword` that always holds its special meaning.
+A :dt:`strict keyword` is a :t:`keyword` that always holds its special meaning.
 
 .. _fls_cbsgp6k0qa82:
 

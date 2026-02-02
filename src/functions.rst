@@ -68,7 +68,7 @@ A :dt:`function parameter` is a :t:`construct` that yields a set of
 site of a :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_ymeo93t4mz4`
-A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
 ``self``.
 
 :dp:`fls_ijbt4tgnl95n`

@@ -165,7 +165,7 @@ Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_ibrmiwfypldh`
-A :t:`static` is a :t:`value` that is associated with a specific memory
+A :dt:`static` is a :t:`value` that is associated with a specific memory
 location.
 
 :dp:`fls_mt94jvoot9dx`
@@ -198,7 +198,7 @@ The type of an :t:`immutable static` shall implement the
 :std:`core::marker::Sync` :t:`trait`.
 
 :dp:`fls_t17h5h6a6v4c`
-A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`static`.
 
 :dp:`fls_yq0hpy4jx2qb`
