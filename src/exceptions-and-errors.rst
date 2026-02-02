@@ -72,7 +72,7 @@ Abort
 .. rubric:: Legality Rules
 
 :dp:`fls_9a1izu3omkbn`
-:t:`Abort` is the immediate termination of a program.
+:dt:`Abort` is the immediate termination of a program.
 
 .. rubric:: Dynamic Semantics
 
@@ -84,4 +84,3 @@ Abort
 
 #. :dp:`fls_7bnrbjb0pq5n`
    The program terminates.
-

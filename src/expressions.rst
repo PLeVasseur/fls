@@ -124,7 +124,7 @@ Assignee Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_oqj7s9fi3j3j`
-An :t:`assignee expression` is an :t:`expression` that appears as the
+An :dt:`assignee expression` is an :t:`expression` that appears as the
 :t:`left operand` of an :t:`assignment expression`. The following
 :t:`[expression]s` are :t:`[assignee expression]s`:
 
@@ -746,9 +746,17 @@ Async Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_hhidi5ukxo`
-An :t:`async block expression` is a :t:`block expression` that is specified
+An :dt:`async block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``async`` and encapsulates behavior which is executed in
 an asynchronous manner.
+
+:dp:`fls_DnCb6ei84CeI`
+An :dt:`async block` is an :t:`async block expression`.
+
+:dp:`fls_sRfEgIkgKhlk`
+An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
+by an :t:`async block expression`, :t:`async function`, or
+:t:`async closure expression`.
 
 :dp:`fls_oisws5qykedi`
 An :t:`async block expression` denotes a new :t:`async control flow boundary`.
@@ -1384,11 +1392,14 @@ Arithmetic Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_asibqpe3z95h`
-An :t:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
+An :dt:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
 from two :t:`[operand]s` using arithmetic.
 
+:dp:`fls_I6ELmHXM1xv4`
+An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
+
 :dp:`fls_kr8Opj3c7uvb`
-An :t:`addition expression` is an :t:`arithmetic expression` that uses addition.
+An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
@@ -2342,11 +2353,11 @@ Assignment Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_nhgexeu2h6wi`
-An :t:`assignment expression` is an :t:`expression` that assigns the :t:`value`
+An :dt:`assignment expression` is an :t:`expression` that assigns the :t:`value`
 of a :t:`value operand` to an :t:`assignee operand`.
 
 :dp:`fls_bsjw6f4a3wol`
-An :t:`assignee operand` is the target :t:`operand` of an
+An :dt:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
 
 :dp:`fls_uinh05sslxeo`
@@ -2558,6 +2569,10 @@ A :t:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
+:dp:`fls_tX1jlnTfON9X`
+An :dt:`addition assignment expression` is a :t:`compound assignment expression`
+that uses addition.
+
 :dp:`fls_w2hbhb989yr4`
 A :t:`bit and assignment expression` is a :t:`compound assignment expression`
 that uses bit and arithmetic.
@@ -2595,8 +2610,11 @@ A :t:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
 
 :dp:`fls_dvy201zd6oym`
-An :t:`assigned operand` is the target :t:`operand` of a
+An :dt:`assigned operand` is the target :t:`operand` of a
 :t:`compound assignment expression`.
+
+:dp:`fls_UDyCznokIYFo`
+An :dt:`addition assignment` is an :t:`addition assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
@@ -2858,14 +2876,14 @@ Array Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ya9res33oxt6`
-An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
+An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
 
 :dp:`fls_fwtd3b10veiw`
-An :t:`array element constructor` is an :t:`array expression` that lists all
+An :dt:`array element constructor` is an :t:`array expression` that lists all
 elements of the :t:`array` being constructed.
 
 :dp:`fls_81jf78m5uga4`
-An :t:`array repetition constructor` is an :t:`array expression` that specifies
+An :dt:`array repetition constructor` is an :t:`array expression` that specifies
 how many times an element is repeated in the :t:`array` being constructed.
 
 :dp:`fls_3y69y9ga4at7`
@@ -3366,13 +3384,17 @@ A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_jvz5z3eqxb39`
-An :t:`argument operand` is an :t:`operand` which is used as an argument in a
+An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_7ql1c71eidg8`
 A :t:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
+
+:dp:`fls_qOTBw10dW37D`
+An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
+adjustments required by :t:`call resolution`.
 
 :dp:`fls_QpBu34U6hXn9`
 A :t:`tuple struct call expression` is a :t:`call expression` where the
@@ -3718,7 +3740,11 @@ A :t:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
 :dp:`fls_My6pMgpeFCFg`
-An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+An :dt:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+
+:dp:`fls_7ln7IejTjdmi`
+An :dt:`async closure type` is the :t:`closure type` defined by an
+:t:`async closure expression`.
 
 :dp:`fls_UgJgur0z6d4a`
 The :t:`return type` of a :t:`closure type` is determined as follows:
@@ -3832,7 +3858,7 @@ A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_eg93m93gvwal`
-An :t:`anonymous loop expression` is a :t:`loop expression` without a
+An :dt:`anonymous loop expression` is a :t:`loop expression` without a
 :t:`label`.
 
 :dp:`fls_phpoq9ho8f1v`
@@ -4873,7 +4899,7 @@ Await Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_sjz5s71hwm7l`
-An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
+An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
 suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
@@ -4950,7 +4976,7 @@ Certain :t:`[expression]s` are subject to :t:`precedence` and
 presence of other :t:`[expression]s`.
 
 :dp:`fls_bezkcuwp5qol`
-:t:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
+:dt:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
 single :t:`expression`.
 
 :dp:`fls_48br7odx6nke`
@@ -5176,7 +5202,7 @@ Arithmetic Overflow
 -------------------
 
 :dp:`fls_oFIRXBPXu6Zv`
-An :t:`arithmetic overflow` occurs when an :t:`operator expression` computes a
+An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
 :t:`value` of a :t:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for

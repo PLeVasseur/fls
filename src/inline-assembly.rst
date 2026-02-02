@@ -971,7 +971,7 @@ Assembly Instructions
 .. rubric:: Legality Rules
 
 :dp:`fls_4jr7eg6e0g4w`
-An :t:`assembly instruction` is a :t:`string literal` that represents a
+An :dt:`assembly instruction` is a :t:`string literal` that represents a
 low-level assembly operation or an :t:`assembly directive`.
 
 :dp:`fls_ihjhpy4osl53`
@@ -980,7 +980,7 @@ defined in :t:`module` :std:`std::fmt`, and contain zero or more
 :t:`[register parameter]s`.
 
 :dp:`fls_2d05gcixjrzt`
-An :t:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+An :dt:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
 
 :dp:`fls_z64f094aivp6`
 When an :t:`assembly code block` contains multiple :t:`[assembly instruction]s`,
@@ -1234,7 +1234,7 @@ Directive Support
 .. rubric:: Legality Rules
 
 :dp:`fls_4tfod2vgz2m6`
-An :t:`assembly directive` is a request to the assembler to perform a
+An :dt:`assembly directive` is a request to the assembler to perform a
 particular action or change a setting.
 
 :dp:`fls_3b0ab1nlo641`
@@ -1396,7 +1396,7 @@ ABI Clobbers
 .. rubric:: Legality Rules
 
 :dp:`fls_xa11ggykg0sh`
-An :t:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
+An :dt:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
 indicates that the :t:`[value]s` of selected :t:`[register]s` might be
 overwritten during the :t:`execution` of an :t:`assembly code block`.
 
@@ -1490,7 +1490,7 @@ Assembly Options
 .. rubric:: Legality Rules
 
 :dp:`fls_i21l6t3vn95t`
-An :t:`assembly option` is used to specify a characteristic of or a restriction
+An :dt:`assembly option` is used to specify a characteristic of or a restriction
 on the related :t:`assembly code block`.
 
 :dp:`fls_g09kmp2a04g9`

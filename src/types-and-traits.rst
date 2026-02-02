@@ -484,8 +484,11 @@ Array Types
 .. rubric:: Legality Rules
 
 :dp:`fls_fx7b3qv3ghca`
-An :t:`array type` is a :t:`sequence type` that represents a fixed sequence
+An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
+
+:dp:`fls_xmmgSHsTHDtc`
+An :dt:`array` is a :t:`value` of an :t:`array type`.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -588,6 +591,10 @@ Tuple Types
 A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
 
+:dp:`fls_ivWBnhfOZUrW`
+The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
+:s:`TupleFieldList`.
+
 :dp:`fls_s9a36zsrfqew`
 If the :t:`type` of a :t:`tuple field` is a :t:`dynamically-sized type`, then
 the :t:`tuple field` shall be the last :t:`tuple field` in the
@@ -605,6 +612,9 @@ the :t:`tuple field` shall be the last :t:`tuple field` in the
 
 Abstract Data Types
 -------------------
+
+:dp:`fls_n9HtRM22YEv5`
+An :dt:`abstract data type` is a collection of other :t:`[type]s`.
 
 .. _fls_szibmtfv117b:
 
@@ -1139,8 +1149,12 @@ An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
 
 :dp:`fls_3aKZB0ILIkZw`
-An :t:`anonymous return type` is an :t:`impl trait type` ascribed to a
+An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
 :t:`function` :t:`return type`.
+
+:dp:`fls_0rAmIzljJgWi`
+An :dt:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
+:t:`function parameter`.
 
 :dp:`fls_Xo1ODwOyX7Vm`
 An :t:`anonymous return type` behaves as if it contains all declared :t:`[type
@@ -1408,7 +1422,7 @@ A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
 
 :dp:`fls_muxfn9soi47l`
-The :t:`alignment` of a :t:`value` specifies which addresses are valid for
+The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
 storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
 and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
@@ -2768,7 +2782,7 @@ is equivalent to a :t:`where clause` of the following form:
    	trait T where Self: Bound {}
 
 :dp:`fls_YynbrIceKmsJ`
-An :t:`auto trait` is a :t:`trait` that is implicitly and automatically
+An :dt:`auto trait` is a :t:`trait` that is implicitly and automatically
 implemented by a :t:`type` when the types of its constituent :t:`[field]s`
 implement the :t:`trait`.
 

@@ -446,7 +446,7 @@ Attribute Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_l3epi1dqpi8o`
-An :t:`attribute macro` is a :t:`procedural macro` that consumes two streams
+An :dt:`attribute macro` is a :t:`procedural macro` that consumes two streams
 of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
 new :t:`outer attribute` that can be attached to :t:`[item]s`.
 :t:`[Attribute macro]s` are used to replace :t:`[item]s` with other

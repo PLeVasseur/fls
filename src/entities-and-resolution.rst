@@ -385,7 +385,7 @@ A :t:`qualified type path` is a :t:`type path` that resolves through a
 :t:`qualified type`.
 
 :dp:`fls_RZvIsApi4WQm`
-An :t:`associated type projection` is a :t:`qualified type path` of the form
+An :dt:`associated type projection` is a :t:`qualified type path` of the form
 ``<type as trait>::associated_type``, where ``type`` is a :t:`type`, ``trait``
 is a :t:`qualifying trait`, and ``associated type`` is an :t:`associated type`.
 

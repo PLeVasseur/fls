@@ -43,7 +43,7 @@ Attributes
 .. rubric:: Legality Rules
 
 :dp:`fls_rnzxj1t0hehl`
-An :t:`attribute` is a general, free-form metadatum that is interpreted based on
+An :dt:`attribute` is a general, free-form metadatum that is interpreted based on
 its :t:`name`, convention, language, and tool.
 
 :dp:`fls_yd0ehw5csaur`
@@ -55,7 +55,7 @@ An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
 :dp:`fls_9TMRVlQwAdTB`
-An :t:`attribute content` is a :t:`construct` that provides the content of
+An :dt:`attribute content` is a :t:`construct` that provides the content of
 an :t:`attribute`.
 
 .. rubric:: Examples
@@ -77,7 +77,7 @@ Attribute Properties
 .. rubric:: Legality Rules
 
 :dp:`fls_p4potvq7x532`
-An :t:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
+An :dt:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
 it decorates.
 
 :dp:`fls_xk7lb2g02sy7`
@@ -929,7 +929,7 @@ A :t:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 :dp:`fls_y1MUhnKCxK6T`
-An :t:`all configuration predicate` is a :t:`configuration predicate` that
+An :dt:`all configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ALL.
 
 :dp:`fls_tncxxsyutppf`
@@ -938,7 +938,7 @@ all nested configuration predicates evaluate to ``true``, or there are no nested
 configuration predicates.
 
 :dp:`fls_Rp73YEE3aFdI`
-An :t:`any configuration predicate` is a :t:`configuration predicate` that
+An :dt:`any configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ANY.
 
 :dp:`fls_m0zxktz168e0`
@@ -2373,4 +2373,3 @@ the exhaustiveness of :t:`[match arm]s`.
    struct struct_with_future_fields {
        field: u32
    }
-
