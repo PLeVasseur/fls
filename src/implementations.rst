@@ -37,11 +37,11 @@ Implementations
 .. rubric:: Legality Rules
 
 :dp:`fls_ivxpoxggy7s6`
-An :t:`implementation` is an :t:`item` that supplements an
+An :dt:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
 :dp:`fls_yopmjbnw8tbl`
-An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
 an :t:`implementation` are associated with.
 
 :dp:`fls_eIHc8Y9fBtr0`
@@ -49,12 +49,12 @@ Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
 for the :t:`implementing type`.
 
 :dp:`fls_Mcpdzzcw43M7`
-An :t:`implementation body` is a :t:`construct` that encapsulates the
+An :dt:`implementation body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of an :t:`implementation`.
 
 :dp:`fls_v0n0bna40dqr`
-An :t:`inherent implementation` is an :t:`implementation` that adds direct
+An :dt:`inherent implementation` is an :t:`implementation` that adds direct
 functionality.
 
 :dp:`fls_797etpdk5dyb`
@@ -70,7 +70,7 @@ An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_47x0ep8of8wr`
-An :t:`implemented trait` is a :t:`trait` whose functionality has been
+An :dt:`implemented trait` is a :t:`trait` whose functionality has been
 implemented by an :t:`implementing type`.
 
 :dp:`fls_agitlryvyc16`
@@ -206,7 +206,7 @@ Implementation Conformance
 .. rubric:: Legality Rules
 
 :dp:`fls_YyUSuAYG4lX6`
-A :t:`trait implementation` exhibits :t:`implementation conformance` when it
+A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
 satisfies the constraints of its :t:`implemented trait`.
 
 :dp:`fls_v31idwjau90d`

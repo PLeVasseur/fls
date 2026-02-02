@@ -13,7 +13,7 @@ Inline Assembly
 .. rubric:: Legality Rules
 
 :dp:`fls_leamdp1r3hez`
-:t:`Inline assembly` is hand-written assembly code that is integrated into a
+:dt:`Inline assembly` is hand-written assembly code that is integrated into a
 Rust program.
 
 :dp:`fls_3fg60jblx0xb`
@@ -105,7 +105,7 @@ A :t:`register` is a hardware component capable of holding data that can be
 read and written.
 
 :dp:`fls_rr8rsy7oilf0`
-An :t:`input register` is a :t:`register` whose :t:`register name` is used in
+An :dt:`input register` is a :t:`register` whose :t:`register name` is used in
 a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
 or ``inlateout``.
 
@@ -685,7 +685,7 @@ A :dt:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register` to an :t:`expression`, or both.
 
 :dp:`fls_fta1gb5tzi3a`
-An :t:`input register expression` is an :t:`expression` that provides the
+An :dt:`input register expression` is an :t:`expression` that provides the
 initial :t:`value` of a :t:`register`.
 
 :dp:`fls_sopiivuae0x7`
@@ -696,7 +696,7 @@ An :t:`output register expression` is an :t:`expression` that is assigned the
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.
 
 :dp:`fls_kkrcyk96w8x1`
-An :t:`input-output register expression` is a :t:`construct` that specifies
+An :dt:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
 :dp:`fls_aniw4ehsn2kb`

@@ -30,6 +30,10 @@ specification.
 An :dt:`entity` is a :t:`construct` that can be referred to within program text,
 usually via a :t:`field access expression` or a :t:`path`.
 
+:dp:`fls_ogrs6SwlsaKg`
+An :dt:`item` is the most basic semantic element in program text. An :t:`item`
+defines the compile- and run-time semantics of a program.
+
 :dp:`fls_40d2g0hvq2il`
 A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
@@ -94,7 +98,7 @@ An :dt:`explicitly declared entity` is an :t:`entity` that has a
   :t:`[Union type]s`.
 
 :dp:`fls_ig1l38gpy5gy`
-An :t:`implicitly declared entity` is an :t:`entity` that lacks an explicit
+An :dt:`implicitly declared entity` is an :t:`entity` that lacks an explicit
 :t:`declaration`. The following :t:`entities <entity>` are
 :t:`implicitly declared entities <implicitly declared entity>`:
 
@@ -565,7 +569,7 @@ Item Scope
 .. rubric:: Legality Rules
 
 :dp:`fls_p5o243hhe1y3`
-An :t:`item scope` is a :t:`scope` for :t:`[item]s`.
+An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 :dp:`fls_huvo0mp2i6fb`
 An :t:`item` declared within the :t:`block expression` of an
@@ -585,7 +589,7 @@ Label Scope
 .. rubric:: Legality Rules
 
 :dp:`fls_96kczd4zhpco`
-A :t:`label scope` is a :t:`scope` for :t:`[label]s`.
+A :dt:`label scope` is a :t:`scope` for :t:`[label]s`.
 
 :dp:`fls_8sevg1sa82h4`
 A :t:`label` is :t:`in scope` within the :t:`block expression` of the related
@@ -1275,6 +1279,10 @@ starts with the :t:`type` of the :t:`container operand` of the
 A :dt:`candidate field` is a :t:`field` of a :t:`candidate container type`
 that is visible from the location of the :t:`field access expression`
 :t:`under resolution`.
+
+:dp:`fls_G7nIZNc3Nk4M`
+An :dt:`indexed field selector` is a :t:`field selector` where the selected
+:t:`field` is indicated by an index.
 
 :dp:`fls_jzoon4x89zp7`
 A :dt:`candidate indexed field` is a :t:`candidate field` whose position in the

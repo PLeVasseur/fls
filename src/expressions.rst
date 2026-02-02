@@ -90,7 +90,7 @@ involve a :t:`block expression`.
 An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 :dp:`fls_1r29rtnjlkql`
-A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
+A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
@@ -456,7 +456,7 @@ location can be modified. The following :t:`[place expression]s` are
   A :t:`temporary`.
 
 :dp:`fls_cPEMHZtPkctX`
-An :t:`immutable place expression` is a :t:`place expression` whose memory
+An :dt:`immutable place expression` is a :t:`place expression` whose memory
 location cannot be modified. All :t:`[place expression]s` that are not
 :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
@@ -539,6 +539,13 @@ may evaluate its :t:`operand` as a mutable memory location. The following
 * :dp:`fls_brwv1zwu37e8`
   The :t:`subject expression` of a :t:`match expression`,
 
+:dp:`fls_YHj3sB09Wbyb`
+An :dt:`immutable place expression context` is a :t:`place expression context`
+that may evaluate its :t:`operand` as an immutable memory location. All
+:t:`[place expression context]s` that are not
+:t:`[mutable place expression context]s` are
+:t:`[immutable place expression context]s`.
+
 :dp:`fls_4axr4V0icdBP`
 A :t:`place expression` that is evaluated in a :t:`value expression context`
 or bound :t:`by value` in a :t:`pattern` denotes the :t:`value` held in the
@@ -581,7 +588,7 @@ Literal Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_rbwwczom3agt`
-A :t:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
+A :dt:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
 
 :dp:`fls_w30su9x4q13r`
 The :t:`type` of a :t:`literal expression` is the :t:`type` of the corresponding
@@ -967,7 +974,7 @@ its :t:`operand` and creates a :t:`reference` to the memory location of its
 :t:`operand`.
 
 :dp:`fls_r7ix8webgqlm`
-An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
+An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
 :t:`keyword` ``mut``.
 
 :dp:`fls_50j167r4v61b`
@@ -1932,7 +1939,7 @@ The :t:`value` of a :t:`greater-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::ge(&left_operand, &right_operand)``.
 
 :dp:`fls_yd4qqi39w248`
-A :t:`less-than expression` is a :t:`comparison expression` that tests for a
+A :dt:`less-than expression` is a :t:`comparison expression` that tests for a
 less-than relationship.
 
 :dp:`fls_ynibdcke3etb`
@@ -1945,7 +1952,7 @@ The :t:`value` of a :t:`less-than expression` is the result of
 ``core::cmp::PartialOrd::lt(&left_operand, &right_operand)``.
 
 :dp:`fls_yxwe1o27u6ns`
-A :t:`less-than-or-equals expression` is a :t:`comparison expression` that tests
+A :dt:`less-than-or-equals expression` is a :t:`comparison expression` that tests
 for a less-than-or-equals relationship.
 
 :dp:`fls_6dgfieyxdan0`
@@ -2079,15 +2086,15 @@ Lazy Boolean Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_gpbvus89iy4c`
-A :t:`lazy boolean expression` is an :t:`expression` that performs short circuit
+A :dt:`lazy boolean expression` is an :t:`expression` that performs short circuit
 Boolean arithmetic.
 
 :dp:`fls_40jya46h62yi`
-A :t:`lazy and expression` is a :t:`lazy boolean expression` that uses short
+A :dt:`lazy and expression` is a :t:`lazy boolean expression` that uses short
 circuit and arithmetic.
 
 :dp:`fls_k8u77ow5bb6c`
-A :t:`lazy or expression` is a :t:`lazy boolean expression` that uses short
+A :dt:`lazy or expression` is a :t:`lazy boolean expression` that uses short
 circuit or arithmetic.
 
 :dp:`fls_u0gwo0s2l0tn`
@@ -2466,6 +2473,10 @@ The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
 :dp:`fls_4bb07tn28ivw`
 The :t:`pattern` that corresponds to a :t:`destructuring assignment` shall be
 an :t:`irrefutable pattern`.
+
+:dp:`fls_heGDNsmThYjn`
+An :dt:`initialization expression` is either a :t:`constant initializer` or a
+:t:`static initializer`.
 
 :dp:`fls_g80a92tr2ser`
 A :t:`destructuring assignment` is equivalent to a :t:`block expression` of the
@@ -3014,19 +3025,19 @@ Indexing Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_X9kdEAPTqsAe`
-An :t:`indexable type` is a :t:`type` that implements the
+An :dt:`indexable type` is a :t:`type` that implements the
 :std:`core::ops::Index` :t:`trait`.
 
 :dp:`fls_42ijvuqqqlvh`
-An :t:`index expression` is an :t:`expression` that indexes into a :t:`value`
+An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
 of an :t:`indexable type`.
 
 :dp:`fls_pc0c22asgzvw`
-An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
+An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value`
 being indexed into by an :t:`index expression`.
 
 :dp:`fls_ff3sgpldn52o`
-An :t:`indexing operand` is an :t:`operand` which specifies the index of an
+An :dt:`indexing operand` is an :t:`operand` which specifies the index of an
 :t:`index expression`.
 
 :dp:`fls_w96p9oyv5mqt`
@@ -3206,7 +3217,7 @@ The :t:`type` of a :t:`base initializer` shall be the same as the :t:`type` of
 the :t:`constructee`.
 
 :dp:`fls_ph7fsphbpbv4`
-An :t:`indexed initializer` is a :t:`construct` that specifies the index and
+An :dt:`indexed initializer` is a :t:`construct` that specifies the index and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
@@ -3878,14 +3889,20 @@ Loop Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_y1d8kd1bdlmx`
-A :t:`loop expression` is an :t:`expression` that evaluates a :t:`block
+A :dt:`loop expression` is an :t:`expression` that evaluates a :t:`block
 expression` continuously as long as some criterion holds true.
 
+:dp:`fls_JaGSm6bX2HGc`
+For :dt:`loop`, see :t:`loop expression`.
+
 :dp:`fls_BjZjuiFnPtFd`
-A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 
 :dp:`fls_XEc0cIkpkyzJ`
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
+
+:dp:`fls_1MTa81vtePN8`
+A :dt:`label` is the :t:`name` of a :t:`loop expression`.
 
 :dp:`fls_eg93m93gvwal`
 An :dt:`anonymous loop expression` is a :t:`loop expression` without a
@@ -3992,8 +4009,11 @@ Infinite Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_OcNtRVV2WaUe`
+For :dt:`infinite loop`, see :t:`infinite loop expression`.
+
 :dp:`fls_p11qw6mtxlda`
-An :t:`infinite loop expression` is a :t:`loop expression` that continues to
+An :dt:`infinite loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` indefinitely.
 
 :dp:`fls_b314wjbv0zwe`
@@ -4062,7 +4082,7 @@ evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
 true.
 
 :dp:`fls_13hmhzqz82v6`
-An :t:`iteration expression` is an :t:`expression` that provides the criterion
+An :dt:`iteration expression` is an :t:`expression` that provides the criterion
 of a :t:`while loop expression`.
 
 :dp:`fls_d7ofrq3777kq`
@@ -4178,7 +4198,7 @@ Loop Labels
 .. rubric:: Legality Rules
 
 :dp:`fls_tx5u743391h7`
-A :t:`label indication` is a :t:`construct` that indicates a :t:`label`.
+A :dt:`label indication` is a :t:`construct` that indicates a :t:`label`.
 
 :dp:`fls_7hc8yboeaho0`
 A :t:`label indication` shall indicate a :t:`label` of an enclosing
@@ -4526,7 +4546,7 @@ If Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_2i4fbxbbvpf1`
-An :t:`if expression` is an :t:`expression` that evaluates either a
+An :dt:`if expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on the :t:`value` of
 its :t:`subject expression`.
 
@@ -4609,7 +4629,7 @@ If Let Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_dsrjup2umr9`
-An :t:`if let expression` is an :t:`expression` that evaluates either a
+An :dt:`if let expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on whether its
 :t:`pattern` can be matched against its :t:`subject let expression`.
 
@@ -4723,7 +4743,7 @@ A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
 
 :dp:`fls_d9gerg12hm2d`
-An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
+An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
 :dp:`fls_oj8dg28xw5yp`

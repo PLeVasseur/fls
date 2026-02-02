@@ -99,7 +99,7 @@ Refutability
 match all possible values of a :t:`type`.
 
 :dp:`fls_9fjspnefoyvz`
-An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 :dp:`fls_uq7ftuuq1sig`
 A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
@@ -110,7 +110,7 @@ A :t:`pattern` that is not an :t:`irrefutable pattern` is a
 :t:`refutable pattern`.
 
 :dp:`fls_l76ycteulo8e`
-An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
+An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
 :dp:`fls_lh0d85tl4qvy`
@@ -151,7 +151,7 @@ Identifier Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_uljdw9rf7ies`
-An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
+An :dt:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
 :dp:`fls_vy9uw586wy0d`
@@ -272,7 +272,7 @@ Literal Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_pah15qa54irs`
-A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
+A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 :dp:`fls_COQKJC0dvtNO`
 A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
@@ -484,7 +484,7 @@ A :dt:`half-open range pattern` is a :t:`range pattern` with only a
 :t:`range pattern low bound`.
 
 :dp:`fls_q86j23iiqv8w`
-An :t:`inclusive range pattern` is a :t:`range pattern` with both a
+An :dt:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_3PyquOKjA7SI`
@@ -822,7 +822,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :t:`enum variant`, a :t:`struct type`, or a :t:`union type`.
 
 :dp:`fls_mnh35ehva8tx`
-An :t:`indexed deconstructor` is a :t:`construct` that matches the position of
+An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
 a :t:`field`.
 
 :dp:`fls_p2rjnlbvifaa`

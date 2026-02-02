@@ -168,13 +168,13 @@ element]s`. The meaning of a program depends only on the particular sequence of
 :t:`[lexical element]s`, excluding :t:`non-[doc comment]s`.
 
 :dp:`fls_a1zylpqha73x`
-A :t:`lexical element` is the most basic syntactic element in program text.
+A :dt:`lexical element` is the most basic syntactic element in program text.
 
 :dp:`fls_jy6wifn5r2bu`
 The text of a :t:`source file` is divided into :t:`[line]s`.
 
 :dp:`fls_efdfq9nhpmp5`
-A :t:`line` is a sequence of zero or more characters followed by an end of
+A :dt:`line` is a sequence of zero or more characters followed by an end of
 line.
 
 :dp:`fls_go25sisi5fdp`
@@ -476,7 +476,7 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 .. rubric:: Legality Rules
 
 :dp:`fls_xsdmun5uqy4c`
-An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
+An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 :dp:`fls_ktnf6zkrdy45`
 A :t:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
@@ -563,7 +563,7 @@ Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_s76un78zyd0j`
-A :t:`literal` is a fixed :t:`value` in program text.
+A :dt:`literal` is a fixed :t:`value` in program text.
 
 .. _fls_2ifjqwnw03ms:
 
@@ -919,7 +919,7 @@ Integer Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_vkk2krfn93ry`
-An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
+An :dt:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 :dp:`fls_nxqncu5yq4eu`
 A :dt:`binary literal` is an :t:`integer literal` in base 2.
@@ -934,7 +934,7 @@ A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
 An :t:`octal literal` is an :t:`integer literal` in base 8.
 
 :dp:`fls_f1e29aj0sqvl`
-An :t:`integer suffix` is a component of an :t:`integer literal` that specifies
+An :dt:`integer suffix` is a component of an :t:`integer literal` that specifies
 an explicit :t:`integer type`.
 
 :dp:`fls_u83mffscqm6`
@@ -1345,18 +1345,18 @@ explanation in program text.
 A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 :dp:`fls_nayisy85kyq2`
-A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+A :dt:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
 :dp:`fls_k3hj30hjkdhw`
-An :t:`inner block doc` is a :t:`block comment` that applies to an enclosing
+An :dt:`inner block doc` is a :t:`block comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_tspijl68lduc`
-An :t:`inner line doc` is a :t:`line comment` that applies to an enclosing
+An :dt:`inner line doc` is a :t:`line comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_KZp0yiFLTqxb`
-An :t:`inner doc comment` is either an :t:`inner block doc` or an
+An :dt:`inner doc comment` is either an :t:`inner block doc` or an
 :t:`inner line doc`.
 
 :dp:`fls_63gzofa9ktic`
@@ -1452,7 +1452,7 @@ Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_dti0uu7rz81w`
-A :t:`keyword` is a word in program text that has special meaning.
+A :dt:`keyword` is a word in program text that has special meaning.
 
 :dp:`fls_sxg1o4oxql51`
 :t:`[Keyword]s` are case sensitive.

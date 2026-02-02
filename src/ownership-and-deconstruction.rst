@@ -118,7 +118,7 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
 :t:`active`.
 
 :dp:`fls_wcf5mxrzbujn`
-An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
+An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
 prevents the mutation of its :t:`referent`.
 
 :dp:`fls_fckoj1jh5mrc`
@@ -166,7 +166,7 @@ A :t:`value` is :dt:`borrowed` when it is associated with an active
 :t:`borrow`.
 
 :dp:`fls_zepwytjwy049`
-An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
 program text. An :t:`implicit borrow` occurs in the following contexts:
 
 * :dp:`fls_nordokzfy36d`
@@ -195,7 +195,7 @@ An :t:`implicit borrow` may be an :t:`immutable borrow` or a :t:`mutable borrow`
 if required.
 
 :dp:`fls_hyl4bdjbuzbw`
-An :t:`immutable borrow` is an :t:`immutable reference` produced by
+An :dt:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
 
 :dp:`fls_pu19i4sj6yg0`

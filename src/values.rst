@@ -20,6 +20,10 @@ A :t:`value` is :dt:`immutable` when it cannot be modified.
 :dp:`fls_U9CPQq4fs7IK`
 A :t:`value` is :dt:`mutable` when it can be modified.
 
+:dp:`fls_8rAyM4S3x1ap`
+:dt:`Initialization` is the act of supplying an initial :t:`value` to a
+:t:`constant`, a :t:`static`, or a :t:`variable`.
+
 :dp:`fls_CUJyMj0Sj8NS`
 An :dt:`allocated object` is a :t:`value` stored at some memory address.
 
@@ -181,7 +185,7 @@ A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
 Access to a :t:`mutable static` shall require :t:`unsafe context`.
 
 :dp:`fls_jfde2vg6mtww`
-An :t:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
+An :dt:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
 
 :dp:`fls_k4tyqb1j6zjo`
 The type of an :t:`immutable static` shall implement the
@@ -251,6 +255,13 @@ Variables
 :dp:`fls_hl5tnd9yy252`
 A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
+
+:dp:`fls_DaACqyLYORne`
+A :dt:`local variable` is a :t:`variable`.
+
+:dp:`fls_5rIFH1wsroHb`
+An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
+modified.
 
 :dp:`fls_vgi0gh5zmoiu`
 The following :t:`[construct]s` are :t:`[variable]s`:

@@ -40,6 +40,18 @@ An :dt:`associated function` is a :t:`function` that appears as an
 An :dt:`associated type` is a :t:`type alias` that appears as an
 :t:`associated item`.
 
+:dp:`fls_nNisRZ6p4T6u`
+An :dt:`incomplete associated constant` is an :t:`associated constant` without
+a :t:`constant initializer`.
+
+:dp:`fls_nMEacKMoaVn0`
+An :dt:`incomplete associated function` is an :t:`associated function` without
+a :t:`function body`.
+
+:dp:`fls_FJEqMV7Qt6ZJ`
+An :dt:`incomplete associated type` is an :t:`associated type` without an
+:t:`initialization type`.
+
 :dp:`fls_w8nu8suy7t5`
 An :t:`associated type` shall not be used in the :t:`path expression` of a
 :t:`struct expression`.

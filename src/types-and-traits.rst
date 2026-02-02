@@ -51,7 +51,7 @@ A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
 :dp:`fls_0yaYKnFrJkhG`
-A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 :dp:`fls_cTF1sJ9I2XJd`
 A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
@@ -404,6 +404,10 @@ Integer Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_tHog6qQQp5Bo`
+An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
+numbers.
+
 :dp:`fls_cokwseo3nnr`
 :t:`[Unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
@@ -470,9 +474,29 @@ domain of whole numbers:
      - \- (2\ :sup:`127`)
      - 2\ :sup:`127` - 1
 
+:dp:`fls_ooK58arLzTu0`
+:dc:`i8` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`7`) to 2\ :sup:`7` - 1, all inclusive.
+
+:dp:`fls_oxa40W48GQJa`
+:dc:`i16` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`15`) to 2\ :sup:`15` - 1, all inclusive.
+
+:dp:`fls_qKtVYx9rFwdF`
+:dc:`i32` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`31`) to 2\ :sup:`31` - 1, all inclusive.
+
+:dp:`fls_x0ZGfEWHDE6C`
+:dc:`i64` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`63`) to 2\ :sup:`63` - 1, all inclusive.
+
+:dp:`fls_XmTzsm78eJvh`
+:dc:`i128` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`127`) to 2\ :sup:`127` - 1, all inclusive.
+
 :dp:`fls_t9oyfmgqka6u`
-:t:`Type` :c:`isize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+:dc:`isize` is a :t:`signed integer type` with the same number of bits as the
+platform's :t:`pointer type`, and is at least 16-bits wide.
 
 .. _fls_fbchw64p6n2x:
 
@@ -997,6 +1021,10 @@ the :std:`core::marker::Send` :t:`trait`, and the :std:`core::marker::Sync`
 Indirection Types
 -----------------
 
+:dp:`fls_dPFd7zMOKt5b`
+An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
+locations.
+
 .. _fls_xztr1kebz8bo:
 
 Function Pointer Types
@@ -1087,7 +1115,7 @@ A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``mut``.
 
 :dp:`fls_8uWfFAsZeRCs`
-An :t:`immutable raw pointer type` is a :t:`raw pointer type` subject to
+An :dt:`immutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``const``.
 
 :dp:`fls_hrum767l6dte`
@@ -1195,7 +1223,7 @@ Impl Trait Types
 .. rubric:: Legality Rules
 
 :dp:`fls_a6zlvyxpgsew`
-An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
+An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is known at compile time.
 
 :dp:`fls_ieyqx5vzas2m`
@@ -1315,7 +1343,7 @@ Inferred Types
 .. rubric:: Legality Rules
 
 :dp:`fls_xdtgr5toulpb`
-An :t:`inferred type` is a placeholder for a :t:`type` deduced by
+An :dt:`inferred type` is a placeholder for a :t:`type` deduced by
 :t:`type inference`.
 
 :dp:`fls_3abhsuaa8nas`
@@ -1440,6 +1468,10 @@ Type Aliases
 :dp:`fls_bibigic4jjad`
 A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 
+:dp:`fls_2uLBgKLYXoJV`
+An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
+:t:`name` for.
+
 :dp:`fls_rosdkeck5ax2`
 A :t:`type alias` shall not have a :s:`TypeBoundList` unless it is an
 :t:`associated item`.
@@ -1493,6 +1525,10 @@ The :t:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
+
+:dp:`fls_B2pGRVJlOihB`
+A :dt:`layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
+of :t:`[field]s` in a :t:`type`.
 
 :dp:`fls_bk3nm2n47afu`
 The :t:`size` of :t:`[scalar type]s` is as follows:
@@ -2279,7 +2315,7 @@ Interior Mutability
 .. rubric:: Legality Rules
 
 :dp:`fls_khy2e23i9o7z`
-:t:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
+:dt:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
 be modified through :t:`[immutable reference]s`.
 
 :dp:`fls_sWiU26n2xS3r`
@@ -2416,7 +2452,7 @@ A :dt:`global type variable` is a :t:`type variable` that can refer to any
 :t:`type`.
 
 :dp:`fls_7ov36fpd9mwe`
-An :t:`integer type variable` is a :t:`type variable` that can refer only to
+An :dt:`integer type variable` is a :t:`type variable` that can refer only to
 :t:`[integer type]s`.
 
 :dp:`fls_3hv3wxkhjjp1`
@@ -2823,7 +2859,7 @@ Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
 :t:`type` implementing the :t:`trait`, and behaves like a :t:`type parameter`.
 
 :dp:`fls_AdbbUZZgMEsQ`
-A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
+A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 :dp:`fls_I9JaKZelMiby`
 A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
@@ -3009,7 +3045,7 @@ A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
 :t:`type alias` unless it is an :t:`associated item`.
 
 :dp:`fls_grby8tmmd8sb`
-A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
+A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
 :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_knut10hoz6wc`
@@ -3041,7 +3077,7 @@ An :t:`outlives bound` is a :t:`trait bound` which requires that a
 ``T`` outlive ``'a``.
 
 :dp:`fls_J9DEsd06Ttu9`
-An :t:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
+An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
 is the byproduct of relations between :t:`[lifetime parameter]s` and
 :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
 :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
@@ -3091,7 +3127,7 @@ Lifetimes
 .. rubric:: Legality Rules
 
 :dp:`fls_nne91at3143t`
-A :t:`lifetime` specifies the expected longevity of a :t:`value`.
+A :dt:`lifetime` specifies the expected longevity of a :t:`value`.
 
 :dp:`fls_vbclxg9dq4yo`
 A :t:`lifetime bound` shall apply to :t:`[type]s` and other :t:`[lifetime]s`.
@@ -3307,7 +3343,7 @@ Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_9wtuclhm7yz5`
-:t:`Lifetime elision` is a set of rules that automatically insert
+:dt:`Lifetime elision` is a set of rules that automatically insert
 :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
 elided in the source code.
 
@@ -3538,7 +3574,7 @@ Impl Header Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_FUdsmzN0T8XP`
-:t:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
+:dt:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
 applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
 :t:`implementation`.
 

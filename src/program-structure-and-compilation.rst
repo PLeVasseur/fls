@@ -77,7 +77,7 @@ The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
 be consumed by :t:`[macro]s`.
 
 :dp:`fls_qypjjpcf8uwq`
-An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
+An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 :dp:`fls_cavwpr1ybk37`
 An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
@@ -139,7 +139,7 @@ the :t:`name` ``main`` with a :t:`main function signature` is the :t:`binary
 crate`'s :t:`program entry point`.
 
 :dp:`fls_d9nn4yuiw1ja`
-A :t:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
+A :dt:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
 ``staticlib``, ``dylib``, or ``cdylib``.
 
 :dp:`fls_Mf62VqAhoZ3c`

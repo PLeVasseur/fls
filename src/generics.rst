@@ -95,7 +95,7 @@ It is a static error to use a :t:`generic parameter` in the
 :t:`discriminant initializer` of an :t:`enum variant`.
 
 :dp:`fls_s0nrjwqg2wox`
-A :t:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
+A :dt:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
 
 :dp:`fls_2grtygcj8o3`
 A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
@@ -287,7 +287,7 @@ A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
 :t:`type bound predicate`.
 
 :dp:`fls_V4PKFqtCsAv6`
-A :t:`lifetime bound predicate` is a :t:`construct` that specifies
+A :dt:`lifetime bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 :dp:`fls_cslGPmVjujHD`
@@ -394,7 +394,7 @@ A :t:`constant argument` may only appear as a single segment
 an :t:`array repetition constructor` or a :t:`type`.
 
 :dp:`fls_10k9gdxlpuls`
-A :t:`lifetime argument` is a :t:`generic argument` that supplies the
+A :dt:`lifetime argument` is a :t:`generic argument` that supplies the
 :t:`lifetime` of a :t:`lifetime parameter`.
 
 :dp:`fls_d4vdvpihoeb1`

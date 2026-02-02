@@ -47,7 +47,7 @@ An :dt:`attribute` is a general, free-form metadatum that is interpreted based o
 its :t:`name`, convention, language, and tool.
 
 :dp:`fls_yd0ehw5csaur`
-An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
+An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
 :t:`item`.
 
 :dp:`fls_8o6vmzbw1b1j`
@@ -81,7 +81,7 @@ An :dt:`active attribute` is an :t:`attribute` that is removed from the :t:`item
 it decorates.
 
 :dp:`fls_xk7lb2g02sy7`
-An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
+An :dt:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
 it decorates.
 
 :dp:`fls_q8wl7pidx2za`
