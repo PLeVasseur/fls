@@ -91,7 +91,7 @@ Constants
 .. rubric:: Legality Rules
 
 :dp:`fls_5o5iu4j8in4l`
-A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
+A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
 the :t:`value`.
 
 :dp:`fls_3mhj0kkupwuz`
@@ -107,7 +107,7 @@ The :t:`type` of a :t:`constant` shall implement the :std:`core::marker::Sized`
 :t:`trait`.
 
 :dp:`fls_ndmfqxjpvsqy`
-A :t:`constant initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`constant initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`constant`.
 
 :dp:`fls_6rxwbbhf5tc5`
@@ -278,7 +278,7 @@ Constant Promotion
 .. rubric:: Legality Rules
 
 :dp:`fls_udn9lyf3m0z6`
-:t:`Constant promotion` is the process of converting a :t:`value expression`
+:dt:`constant promotion` is the process of converting a :t:`value expression`
 into a :t:`constant`.
 
 :dp:`fls_yvkdcs4pmxjf`

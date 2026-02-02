@@ -53,6 +53,10 @@ those :t:`[value]s`.
 :dp:`fls_0yaYKnFrJkhG`
 A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
+:dp:`fls_cTF1sJ9I2XJd`
+A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
+:t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
+
 .. _fls_963gsjp2jas2:
 
 Type Classification
@@ -350,7 +354,7 @@ Char Type
 .. rubric:: Legality Rules
 
 :dp:`fls_vnwbs0exbwcn`
-:c:`Char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
+A :dt:`char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
 unsigned word in the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges
 of :t:`Unicode`.
 
@@ -875,7 +879,7 @@ Closure Types
 .. rubric:: Legality Rules
 
 :dp:`fls_bsykgnbatpmi`
-A :t:`closure type` is a unique anonymous :t:`function type` that encapsulates
+A :dt:`closure type` is a unique anonymous :t:`function type` that encapsulates
 all :t:`[capture target]s` of a :t:`closure expression`.
 
 :dp:`fls_zfj4l8bigdg0`
@@ -1550,7 +1554,7 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
   :t:`Transparent representation`.
 
 :dp:`fls_8s1vddh8vdhy`
-:t:`C representation` lays out a :t:`type` such that the :t:`type` is
+:dt:`C representation` lays out a :t:`type` such that the :t:`type` is
 interoperable with the :t:`C` language.
 
 :dp:`fls_b005bktrkrxy`

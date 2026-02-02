@@ -162,7 +162,7 @@ Constant Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_1ji7368ieg0b`
-A :t:`constant expression` is an :t:`expression` that can be evaluated
+A :dt:`constant expression` is an :t:`expression` that can be evaluated
 statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
 long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
 involve :t:`[type]s` that require :t:`destruction`:
@@ -287,7 +287,7 @@ It is a static error if the :t:`size operand` of an
 :t:`[generic parameter]s`.
 
 :dp:`fls_kjhma680hz3g`
-A :t:`constant context` is a :t:`construct` that requires a
+A :dt:`constant context` is a :t:`construct` that requires a
 :t:`constant expression`. The following :t:`[construct]s` are
 :t:`[constant context]s`:
 
@@ -757,6 +757,10 @@ an asynchronous manner.
 :dp:`fls_DnCb6ei84CeI`
 An :dt:`async block` is an :t:`async block expression`.
 
+:dp:`fls_h36F1drHlHkH`
+A :dt:`control flow boundary` is a :t:`construct` that provides the target of
+a :t:`return expression` and bounds its control flow transfer.
+
 :dp:`fls_sRfEgIkgKhlk`
 An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
 by an :t:`async block expression`, :t:`async function`, or
@@ -806,7 +810,7 @@ Const Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_0lcunL4bo8ka`
-A :t:`const block expression` is a :t:`block expression` that is specified
+A :dt:`const block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
 statically.
 
@@ -1874,7 +1878,7 @@ Comparison Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_yzuceqx6nxwa`
-A :t:`comparison expression` is an :t:`expression` that compares the
+A :dt:`comparison expression` is an :t:`expression` that compares the
 :t:`[value]s` of two :t:`[operand]s`.
 
 :dp:`fls_asfrqemqviad`
@@ -2147,8 +2151,7 @@ A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
 
 :dp:`fls_99kvyh4puy57`
-:t:`Cast` or :t:`casting` is the process of changing the :t:`type` of an
-:t:`expression`.
+A :dt:`cast` is the process of changing the :t:`type` of an :t:`expression`.
 
 :dp:`fls_a6midh2m0w0b`
 The ``TypeSpecificationWithoutBounds`` describes the :dt:`target type` of the
@@ -2569,9 +2572,12 @@ Compound Assignment Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_3bu3g8o5nopc`
-A :t:`compound assignment expression` is an expression that first computes
+A :dt:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
+
+:dp:`fls_Z6ch8bZOzgxq`
+A :dt:`compound assignment` is a :t:`compound assignment expression`.
 
 :dp:`fls_tX1jlnTfON9X`
 An :dt:`addition assignment expression` is a :t:`compound assignment expression`
@@ -3179,7 +3185,7 @@ A :t:`struct expression` is an :t:`expression` that constructs an
 :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_4z91ymz3ciup`
-A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
+A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 :dp:`fls_uib1ml41mfrn`
@@ -3393,7 +3399,7 @@ Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_fvgfx17ossd9`
-A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
+A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_jvz5z3eqxb39`
@@ -3401,7 +3407,7 @@ An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_7ql1c71eidg8`
-A :t:`call operand` is the :t:`function` being invoked or the
+A :dt:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
 
@@ -3414,7 +3420,7 @@ A :t:`tuple struct call expression` is a :t:`call expression` where the
 :t:`call operand` resolves to a :t:`tuple struct`.
 
 :dp:`fls_4t6imtiw6kzt`
-A :t:`callee type` is either a :t:`function item type`, a
+A :dt:`callee type` is either a :t:`function item type`, a
 :t:`function pointer type`, a :t:`tuple enum variant`, a
 :t:`tuple struct type`, or a :t:`type` that implements any of the
 :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
@@ -3506,6 +3512,10 @@ The :t:`evaluation` of a :t:`call expression` proceeds as follows:
    is invoked.
 
 .. rubric:: Undefined Behavior
+
+:dp:`fls_PIR4LRdYSKjj`
+A :dt:`call conformance` is the requirement that a :t:`call expression` uses
+the :t:`ABI` of the invoked :t:`function`.
 
 :dp:`fls_5yeq4oah58dl`
 It is undefined behavior to call a :t:`function` with an :t:`ABI` other than the
@@ -3649,7 +3659,7 @@ A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_s2vpn4ihenpe`
-A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
+A :dt:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
 :dp:`fls_yeuayil6uxzx`
@@ -3749,7 +3759,7 @@ Closure Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_2d141c9a0yui`
-A :t:`closure expression` is an :t:`expression` that defines a
+A :dt:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
 :dp:`fls_My6pMgpeFCFg`
@@ -3772,7 +3782,7 @@ The :t:`return type` of a :t:`closure type` is determined as follows:
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.
 
 :dp:`fls_srbl7ptknjyk`
-A :t:`closure body` is a :t:`construct` that represents the executable portion
+A :dt:`closure body` is a :t:`construct` that represents the executable portion
 of a :t:`closure expression`.
 
 :dp:`fls_oey0ivaiu1l`
@@ -3782,7 +3792,7 @@ A :t:`closure body` denotes a new :t:`control flow boundary`.
 A :t:`closure body` is subject to :t:`capturing`.
 
 :dp:`fls_c3rzwUxjmBMY`
-A :t:`closure parameter` is a :t:`construct` that yields a set of
+A :dt:`closure parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
 
@@ -4293,6 +4303,10 @@ Continue Expressions
        $$continue$$ LabelIndication?
 
 .. rubric:: Legality Rules
+
+:dp:`fls_LsRcIX9zGlRG`
+A :dt:`continue expression` is an :t:`expression` that restarts evaluation of
+an enclosing :t:`loop expression`.
 
 :dp:`fls_wzs6kz9ffqzt`
 A :t:`continue expression` shall appear within a :t:`loop expression`.
@@ -5133,19 +5147,19 @@ Capturing
 .. rubric:: Legality Rules
 
 :dp:`fls_iamnzlm430ef`
-A :t:`capturing expression` is either an :t:`async block expression` or a
+A :dt:`capturing expression` is either an :t:`async block expression` or a
 :t:`closure expression`.
 
 :dp:`fls_eca6tl7j0afx`
-A :t:`capture target` is either a :t:`variable` or a :t:`field` of a
+A :dt:`capture target` is either a :t:`variable` or a :t:`field` of a
 :t:`variable`.
 
 :dp:`fls_e70ywb8191h`
-The :t:`capturing environment` of a :t:`capturing expression` consists of the
+The :dt:`capturing environment` of a :t:`capturing expression` consists of the
 :t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
 :dp:`fls_1y2ttb466m9c`
-:t:`Capturing` is the process of saving the :t:`[capture target]s` of a
+:dt:`capturing` is the process of saving the :t:`[capture target]s` of a
 :t:`[capturing expression]'s` :t:`capturing environment`.
 
 :dp:`fls_ip81lt2mm940`
@@ -5155,7 +5169,7 @@ the :t:`capturing expression` and it is defined outside of the
 :dt:`captured`.
 
 :dp:`fls_y9n1i4hbq8sf`
-:t:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
+:dt:`capture mode` is the mechanism by which a :t:`capture target` is captured.
 
 :dp:`fls_O6WYL8AUyPje`
 A :t:`captured` :t:`capture target` with :t:`capture mode` :dt:`by value capture`

@@ -110,11 +110,11 @@ Crates
 .. rubric:: Legality Rules
 
 :dp:`fls_qwghk79ok5h0`
-A :t:`crate` is a unit of compilation and linking that contains a tree of
+A :dt:`crate` is a unit of compilation and linking that contains a tree of
 nested :t:`[module]s`.
 
 :dp:`fls_unxalgMqIr3v`
-The :t:`crate type` of a :t:`crate` is the value of the :t:`attribute`
+The :dt:`crate type` of a :t:`crate` is the value of the :t:`attribute`
 ``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
 the tool compiling the :t:`crate`.
 
@@ -172,10 +172,10 @@ Crate Imports
 .. rubric:: Legality Rules
 
 :dp:`fls_d0pa807s5d5h`
-A :t:`crate import` specifies a required dependency on an external :t:`crate`.
+A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
 
 :dp:`fls_vfam3wzeAiah`
-A :t:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
 
 :dp:`fls_ft860vkz0lkc`
 A :t:`crate import` binds an external :t:`crate` to its :t:`crate indication`.
@@ -204,14 +204,17 @@ Compilation Roots
 .. rubric:: Legality Rules
 
 :dp:`fls_fhiqvgdamq5`
-A :t:`crate root module` is the root of the nested :t:`module` tree of a
+A :dt:`crate root module` is the root of the nested :t:`module` tree of a
 :t:`crate`.
+
+:dp:`fls_1NrcosNZJu5V`
+A :dt:`crate root` is the :t:`crate root module` of a :t:`crate`.
 
 :dp:`fls_tk8tl2e0a34`
 A tool can define a :t:`crate root module` for a single :t:`crate`.
 
 :dp:`fls_bsyfxdk3ap1t`
-A :t:`compilation root` is an input to a compilation performed by a tool. A
+A :dt:`compilation root` is an input to a compilation performed by a tool. A
 :t:`crate root module` is a :t:`compilation root`.
 
 .. _fls_u1afezy1ye99:
@@ -222,12 +225,12 @@ Conditional Compilation
 .. rubric:: Legality Rules
 
 :dp:`fls_9stc6nul6vq9`
-:t:`Conditionally-compiled source code` is source code that may or may
+:dt:`conditionally-compiled source code` is source code that may or may
 not be considered a part of a Rust program depending on
 :t:`[configuration predicate]s`.
 
 :dp:`fls_a0u9nnaf6drz`
-:t:`Conditional compilation` is the process of compiling
+:dt:`conditional compilation` is the process of compiling
 :t:`conditionally-compiled source code`.
 
 :dp:`fls_pf1v89h7pjhh`

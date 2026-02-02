@@ -78,10 +78,10 @@ A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 :dp:`fls_vpcqgec83ybt`
-A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
+A :dt:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
 
 :dp:`fls_3SjMBlc0b7qo`
-A :t:`constant parameter initializer` is a :t:`construct` that provides the
+A :dt:`constant parameter initializer` is a :t:`construct` that provides the
 default :t:`value` of its related :t:`constant parameter`.
 
 :dp:`fls_p4yb8EAXlRU0`
@@ -378,7 +378,7 @@ A :t:`binding bound argument` shall only be used within the confines of a
 :t:`[supertrait]s`.
 
 :dp:`fls_i3z9ueoe99zd`
-A :t:`constant argument` is a :t:`generic argument` that supplies the
+A :dt:`constant argument` is a :t:`generic argument` that supplies the
 :t:`value` of a :t:`constant parameter`.
 
 :dp:`fls_al4dhmqodvwc`

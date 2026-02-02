@@ -22,6 +22,10 @@ Entities
 
 .. rubric:: Legality Rules
 
+:dp:`fls_t1kEzrZaE1Af`
+A :dt:`construct` is a syntactic element of a Rust program defined by this
+specification.
+
 :dp:`fls_x7j6wcigqt7u`
 An :t:`entity` is a :t:`construct` that can be referred to within program text,
 usually via a :t:`field access expression` or a :t:`path`.
@@ -151,7 +155,7 @@ descendant :t:`[module]s`.
 A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 :dp:`fls_aa4f3rvir9lm`
-A :t:`crate public modifier` is a :t:`visibility modifier` that grants a
+A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
 :dp:`fls_tnh7o3pb4e22`
@@ -1457,7 +1461,7 @@ Call Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_ZjJ7y9r6QQMW`
-:t:`Call resolution` is a form of :t:`resolution` that applies to a
+:dt:`call resolution` is a form of :t:`resolution` that applies to a
 :t:`call expression`.
 
 :dp:`fls_zBSloU2Gjv7x`

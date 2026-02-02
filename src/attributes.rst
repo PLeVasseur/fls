@@ -925,7 +925,7 @@ Attribute ``cfg``
 :t:`Attribute` :dc:`cfg` enables :t:`conditional compilation`.
 
 :dp:`fls_l96kyix5xsof`
-A :t:`configuration predicate` is a :t:`construct` that evaluates statically
+A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 :dp:`fls_y1MUhnKCxK6T`

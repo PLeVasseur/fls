@@ -170,7 +170,7 @@ that encompasses of its :t:`[function qualifier]s`, :t:`name`,
 :t:`where clause`.
 
 :dp:`fls_2049qu3ji5x7`
-A :t:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
+A :dt:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
 
 :dp:`fls_7mlanuh5mvpn`
 The :t:`function body` of a :t:`constant function` shall be a

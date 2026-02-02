@@ -729,7 +729,7 @@ C String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_VKCW830CzhhN`
-A :t:`c string literal` is a :t:`literal` that consists of multiple characters
+A :dt:`c string literal` is a :t:`literal` that consists of multiple characters
 with an implicit 0x00 byte appended to it.
 
 :dp:`fls_XJprzaEn82Xs`
@@ -1134,7 +1134,7 @@ the range of U+D800 and U+DFFF, inclusive.
 .. rubric:: Legality Rules
 
 :dp:`fls_vag2oy4q7d4n`
-A :t:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
+A :dt:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
 character.
 
 :dp:`fls_n8z6p6g564r2`
@@ -1331,7 +1331,7 @@ Comments
 .. rubric:: Legality Rules
 
 :dp:`fls_8obn3dtzpe5f`
-A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
+A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
 :dp:`fls_qsbnl11be35s`
