@@ -11,9 +11,12 @@ FFI
 .. rubric:: Legality Rules
 
 :dp:`fls_djlglv2eaihl`
-:dt:`Foreign Function Interface` or :dt:`FFI` employs :t:`ABI`,
-:t:`[attribute]s`, :t:`[external block]s`, :t:`[external function]s`, linkage,
-and :t:`type` :t:`layout` to interface a Rust program with foreign code.
+A :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
+:t:`[external block]s`, :t:`[external function]s`, linkage, and :t:`type`
+:t:`layout` to interface a Rust program with foreign code.
+
+:dp:`fls_JpmkeFXLhQyy`
+:dt:`FFI` is an abbreviation for :t:`Foreign Function Interface`.
 
 :dp:`fls_k1hiwghzxtfa`
 The following :t:`[attribute]s` affect :t:`FFI`:

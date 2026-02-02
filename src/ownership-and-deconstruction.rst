@@ -380,7 +380,10 @@ A :dt:`destructor` is a :t:`function` that is invoked immediately before the
 
 :dp:`fls_wzuwapjqtyyy`
 :dt:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
-related :t:`type`. Such an object is said to be :dt:`dropped`.
+related :t:`type`.
+
+:dp:`fls_8U45VMMfCU7F`
+A :t:`value` is :dt:`dropped` when its :t:`destructor` is invoked.
 
 :dp:`fls_gfvm70iqu1l4`
 An :t:`uninitialized` :t:`variable` is not :t:`dropped`.

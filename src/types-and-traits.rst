@@ -3021,7 +3021,7 @@ A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
 :s:`[TypeParameter]s`.
 
 :dp:`fls_vujl3fblz6x2`
-A :t:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
+A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
 list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
 

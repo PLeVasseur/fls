@@ -480,7 +480,7 @@ A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
 :dp:`fls_jhchm7dy927k`
-A :t:`half-open range pattern` is a :t:`range pattern` with only a
+A :dt:`half-open range pattern` is a :t:`range pattern` with only a
 :t:`range pattern low bound`.
 
 :dp:`fls_q86j23iiqv8w`

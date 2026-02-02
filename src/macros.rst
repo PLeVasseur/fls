@@ -1072,32 +1072,42 @@ Hygiene
 -------
 
 :dp:`fls_7ezc7ncs678f`
-:t:`Hygiene` is a property of :t:`[macro]s` and :t:`[identifier]s` that appear
-within them, which aims to eliminate the syntactic interference between a
+The :dt:`hygiene` of :t:`[macro]s` and :t:`[identifier]s` that appear within
+them is a property that aims to eliminate the syntactic interference between a
 :t:`macro` and its environment.
 
 .. rubric:: Legality Rules
 
 :dp:`fls_3axjf28xb1nt`
-:t:`Hygiene` is categorized as follows:
+:t:`hygiene` is categorized as follows:
 
 * :dp:`fls_dz2mvodl818d`
   :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
-  environment of a :s:`MacroInvocation`, and are considered :dt:`hygienic`.
+  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
 
 * :dp:`fls_puqhytfzfsg6`
   :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
   of the :s:`MacroRulesDeclaration`, can reference the environment of the
-  :s:`MacroInvocation`, and are considered :dt:`unhygienic`.
+  :s:`MacroInvocation`, and are considered :t:`unhygienic`.
 
 * :dp:`fls_uyvnq88y9gk3`
-  :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+  :dt:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site for :t:`[label]s`, :t:`[variable]s`, and the ``$crate``
   :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise, and is
-  considered :dt:`partially hygienic`.
+  considered :t:`partially hygienic`.
+
+:dp:`fls_4bTKuwDSu5FJ`
+An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
+
+:dp:`fls_94TOYfoplm4f`
+An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
+
+:dp:`fls_jGq0s5E0T9fd`
+An :t:`identifier` is :dt:`partially hygienic` when it has
+:t:`mixed site hygiene`.
 
 :dp:`fls_yxqcr19dig18`
 Every :t:`macro` has associated :t:`hygiene` that depends on its kind:

@@ -928,7 +928,7 @@ A :dt:`binary literal` is an :t:`integer literal` in base 2.
 A :dt:`decimal literal` is an :t:`integer literal` in base 10.
 
 :dp:`fls_2268lchxkzjp`
-A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
+A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 :dp:`fls_4v7awnutbpoe`
 An :t:`octal literal` is an :t:`integer literal` in base 8.

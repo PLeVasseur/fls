@@ -405,6 +405,8 @@ Attribute ``inline``
 
 :dp:`fls_s7bf7tf9206d`
 :t:`Attribute` :dc:`inline` marks its related :t:`function` as :dt:`inlined`.
+
+:dp:`fls_WKfvccIyiUsm`
 The process of replacing a :t:`call expression` to an :t:`inlined` :t:`function`
 with the :t:`function body` is referred to as :dt:`inlining`.
 
