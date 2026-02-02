@@ -122,6 +122,9 @@ A :dt:`subject let expression` is an :t:`expression` that controls
 :dt:`Evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
 
+:dp:`fls_47a9kz2nq5l8`
+For :dt:`evaluated`, see :t:`evaluation`.
+
 .. _fls_isyftqu120l:
 
 Expression Classification
@@ -2391,6 +2394,9 @@ Assignment Expressions
 An :dt:`assignment expression` is an :t:`expression` that assigns the :t:`value`
 of a :t:`value operand` to an :t:`assignee operand`.
 
+:dp:`fls_1m8q0t2y6b9v`
+For :dt:`assignment`, see :t:`assignment expression`.
+
 :dp:`fls_bsjw6f4a3wol`
 An :dt:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
@@ -4508,6 +4514,9 @@ The :t:`type` of a :t:`full range expression` is :std:`core::ops::RangeFull`.
 
 :dp:`fls_yvh5cdgzevni`
 The :t:`value` of a :t:`full range expression` is ``core::ops::RangeFull {}``.
+
+:dp:`fls_f4q7x1m8z2cb`
+For :dt:`range-full expression`, see :t:`full range expression`.
 
 :dp:`fls_lh9my7g8oflq`
 A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an

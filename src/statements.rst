@@ -44,6 +44,9 @@ A :dt:`macro statement` is a :t:`statement` expressed as a
 :dt:`Execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
+:dp:`fls_h5c8k2n9p4d1`
+For :dt:`executed`, see :t:`execution`.
+
 :dp:`fls_dl763ssb54q1`
 The :t:`execution` of an :t:`empty statement` has no effect.
 

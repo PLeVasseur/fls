@@ -1805,6 +1805,9 @@ Type Representation
 between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
 does not change the :t:`layout` of the :t:`[field]s` themselves.
 
+:dp:`fls_5n2x8q1j7r4m`
+For :dt:`representation`, see :t:`type representation`.
+
 :dp:`fls_9dhnanv21y9z`
 :t:`Type representation` is classified into:
 
@@ -1878,6 +1881,9 @@ subject to :t:`C representation`, :t:`default representation`, or
 The :t:`discriminant type` of an :t:`enum type` with :t:`C representation` is
 the corresponding :t:`c signed int type` for the target platform's :t:`C`
 :t:`ABI`.
+
+:dp:`fls_w3g7m2k9p1s4`
+:dt:`C signed int type` is the `signed int` :t:`type` of the :t:`C` language.
 
 :dp:`fls_slhvf3gmqz4h`
 The :t:`discriminant type` of an :t:`enum type` with :t:`default representation`
