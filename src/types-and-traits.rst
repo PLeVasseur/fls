@@ -751,6 +751,7 @@ possible variations of an :t:`enum`.
 :dp:`fls_9vlr65nzdwf2`
 A :dt:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
+
 :dp:`fls_v1q7n3t5c9xz`
 A :dt:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
@@ -903,6 +904,7 @@ A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
 :dp:`fls_9m52m0px5y0r`
 A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+
 :dp:`fls_q1m7v9b3k5ha`
 A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
