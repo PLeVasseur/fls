@@ -105,7 +105,7 @@ A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are subst
 the :t:`value`.
 
 :dp:`fls_3mhj0kkupwuz`
-An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
+An :dt:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
 line).
 
 :dp:`fls_ka4y2yd100dx`

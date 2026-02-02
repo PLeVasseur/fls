@@ -105,6 +105,9 @@ A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of 
 A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
 :t:`right operand`.
 
+:dp:`fls_m8v2k1p7t4qa`
+A :dt:`unary operator` is an operator that operates on one :t:`operand`.
+
 :dp:`fls_2j132xueobfv`
 A :dt:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
 :t:`[if expression]s`, and :t:`[match expression]s`.
@@ -903,8 +906,11 @@ Unsafe Blocks
 
 .. rubric:: Legality Rules
 
+:dp:`fls_p1v7k4m2t9qa`
+An :dt:`unsafe block` is an :t:`unsafe block expression`.
+
 :dp:`fls_2az5huhcxzzy`
-An :t:`unsafe block expression` is a :t:`block expression` that is specified
+An :dt:`unsafe block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``unsafe``.
 
 :dp:`fls_5ucvvja4dzoc`
@@ -2855,7 +2861,7 @@ Underscore Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_pydmv629vfuu`
-An :t:`underscore expression` is an :t:`expression` that acts as a placeholder
+An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
 in a :t:`destructuring assignment`.
 
 :dp:`fls_wms3dbwjwyu4`
@@ -5243,6 +5249,11 @@ A :t:`captured` :t:`capture target` with :t:`capture mode`
 :dt:`by mutable reference capture` binds a :t:`mutable reference` to the
 :t:`capture target` and passes the :t:`mutable reference` into the
 :t:`capturing environment`.
+
+:dp:`fls_k2v7m1p9t4qa`
+A :dt:`unique immutable reference` is an :t:`immutable reference` produced by
+:t:`capturing` what is asserted to be the only live :t:`reference` to a
+:t:`value` while the :t:`reference` exists.
 
 :dp:`fls_8HLaLAIZgYfs`
 A :t:`captured` :t:`capture target` with :t:`capture mode`

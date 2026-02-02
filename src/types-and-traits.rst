@@ -427,8 +427,12 @@ numbers.
 A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
 signed whole numbers.
 
+:dp:`fls_k9n8q1rm2v3a`
+An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`values <value>`
+denote zero and positive whole numbers.
+
 :dp:`fls_cokwseo3nnr`
-:t:`[Unsigned integer type]s` define the following inclusive ranges over the
+:t:`[unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
 
 .. list-table::
@@ -458,9 +462,29 @@ domain of whole numbers:
      - 0
      - 2\ :sup:`128` - 1
 
+:dp:`fls_2r9b7y4m1wqk`
+:dc:`u8` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`8` - 1, all inclusive.
+
+:dp:`fls_7p6k2z9n4mva`
+:dc:`u16` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`16` - 1, all inclusive.
+
+:dp:`fls_9f3x8k2m7n1a`
+:dc:`u32` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`32` - 1, all inclusive.
+
+:dp:`fls_w5c1p8r2t9zq`
+:dc:`u64` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`64` - 1, all inclusive.
+
+:dp:`fls_v4m7q1s8k2jd`
+:dc:`u128` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`128` - 1, all inclusive.
+
 :dp:`fls_75lntwhg20l`
-:t:`Type` :c:`usize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+:dc:`usize` is an :t:`unsigned integer type` with the same number of bits as the
+platform's :t:`pointer type`, and is at least 16-bits wide.
 
 :dp:`fls_p2shoji3xg5a`
 :t:`[Signed integer type]s` define the following inclusive ranges over the
@@ -671,6 +695,15 @@ A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
 :dp:`fls_v7c3y1q9m2bx`
 A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
 
+:dp:`fls_s1m7q5t2v8wn`
+The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
+
+:dp:`fls_h7v2m9q3k1zp`
+A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
+
+:dp:`fls_y6c2p9k4m1ra`
+The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
+
 :dp:`fls_ivWBnhfOZUrW`
 The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
 :s:`TupleFieldList`.
@@ -747,6 +780,9 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
 :dp:`fls_wQTFwl88VujQ`
 An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
+
+:dp:`fls_r2m9k6t1v4pa`
+A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_9vlr65nzdwf2`
 A :dt:`record enum variant` is an :t:`enum variant` with a
@@ -917,6 +953,19 @@ A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 :dp:`fls_z4p8t1x6n2qv`
 A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
 
+:dp:`fls_4q6m9t1w7zpa`
+A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+
+:dp:`fls_6c1v8m4p2tqa`
+A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
+:t:`unit struct`.
+
+:dp:`fls_x2k7m9p1v5qa`
+A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
+
+:dp:`fls_t9m2v7k4q1za`
+A :dt:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
+
 :dp:`fls_6b2xm9k1qz0w`
 A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 
@@ -974,9 +1023,18 @@ Union Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_j4m8v1q2t9za`
+A :dt:`union` is an :t:`item` that declares a :t:`union type`.
+
 :dp:`fls_nskmnzq95yqm`
-A :t:`union type` is an :t:`abstract data type` that is a sum of other
+A :dt:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
+
+:dp:`fls_q7v2m9t4k1pa`
+A :dt:`union value` is a :t:`value` of a :t:`union type`.
+
+:dp:`fls_p2m7v9k1t4qa`
+A :dt:`union field` is a :t:`field` of a :t:`union type`.
 
 :dp:`fls_I5fN5Fmo5CyK`
 A :t:`union` without any :t:`[union field]s` is rejected, but may still be consumed by
@@ -1087,7 +1145,7 @@ An :dt:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
 
 :dp:`fls_liwnzwu1el1i`
-An :t:`unsafe function item type` is a :t:`function item type` where the related
+An :dt:`unsafe function item type` is a :t:`function item type` where the related
 :t:`function` is an :t:`unsafe function`.
 
 :dp:`fls_e9x4f7qxvvjv`
@@ -1159,7 +1217,7 @@ A :dt:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
 
 :dp:`fls_5dd7icjcl3nt`
-An :t:`unsafe function pointer type` is a function pointer type subject to
+An :dt:`unsafe function pointer type` is a function pointer type subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_B0SMXRqQMS1E`
@@ -1357,7 +1415,7 @@ of the :t:`return type`'s :t:`function` and its parent :t:`trait` or
 An :t:`impl trait type` shall not contain :t:`[opt-out trait bound]s`.
 
 :dp:`fls_69hqMjvNno9u`
-An :t:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
+An :dt:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
 
 :dp:`fls_KgH6c5cC4S0G`
 An :t:`anonymous return type` that does not specify a list of :t:`[use capture]s` implicitly :t:`[use capture]s` all :t:`[type parameter]s` and :t:`[constant parameter]s` that are in :t:`scope`.
@@ -1615,6 +1673,10 @@ A :dt:`fixed sized type` is a :t:`type` that implements the
 
 :dp:`fls_26Xgem831Nqg`
 A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
+
+:dp:`fls_q3m7v2k9t1pa`
+An :dt:`unsized type` is a :t:`type` that does not implement the
+:std:`core::marker::Sized` :t:`trait`.
 
 :dp:`fls_ozYgHEHFTT5c`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
@@ -1980,6 +2042,12 @@ A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
 ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
 
+:dp:`fls_m4p8k1v7t2qa`
+Two :t:`[type]s` are :dt:`unifiable` when they :t:`unify`.
+
+:dp:`fls_v7k2m9p1t4qa`
+A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
+
 :dp:`fls_aie0tr62vhw5`
 Two types that :t:`unify` are said to be :dt:`[unifiable type]s`.
 
@@ -2277,7 +2345,7 @@ occur when:
   where ``U`` is a :t:`supertrait` of ``T``.
 
 :dp:`fls_iiiu2q7pym4p`
-An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
+An :dt:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
 into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
 target :t:`type` is allowed to occur when:
 
@@ -2953,6 +3021,9 @@ Traits
 A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
+:dp:`fls_q9m2v7k1t4pa`
+An :dt:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
+
 :dp:`fls_u2XiDIAk6tQz`
 A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
 the compiler.
@@ -3470,6 +3541,9 @@ elided in the source code.
 
 :dp:`fls_HvZUV1WQH4GA`
 For :dt:`elided`, see :t:`elided lifetime`.
+
+:dp:`fls_t4m7k2v9q1pa`
+An :dt:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
 
 :dp:`fls_aHW1eUlKeOgr`
 An :dt:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`

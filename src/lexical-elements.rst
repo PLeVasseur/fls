@@ -25,6 +25,11 @@ Character Set
 The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
+:dp:`fls_m2v7k1p9t4qa`
+:dt:`Unicode` is the universal character encoding standard for written
+characters and text described in the Unicode Standard by the Unicode
+Consortium.
+
 .. rubric:: Syntax
 
 :dp:`fls_vfx8byq5zo8t`
@@ -945,7 +950,7 @@ an explicit :t:`integer type`.
 A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 :dp:`fls_g10nuv14q4jn`
-An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
+An :dt:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
 suffix`.
 
 :dp:`fls_hpkkvuj1z1ez`
@@ -1059,7 +1064,7 @@ explicit :t:`floating-point type`.
 A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 :dp:`fls_drqh80k0sfkb`
-An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
+An :dt:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
 
 :dp:`fls_cbs7j9pjpusw`
 The :t:`type` of a :t:`suffixed float` is determined by the :t:`float suffix`

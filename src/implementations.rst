@@ -66,7 +66,7 @@ A :dt:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_8pwr7ibvhmhu`
-An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
+An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_47x0ep8of8wr`

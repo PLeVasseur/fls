@@ -1191,7 +1191,7 @@ Underscore Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_dreny9e0ei6r`
-An :t:`underscore pattern` is a :t:`pattern` that matches any single :t:`value`.
+An :dt:`underscore pattern` is a :t:`pattern` that matches any single :t:`value`.
 
 :dp:`fls_42fye1v0th8l`
 An :t:`underscore pattern` is an :t:`irrefutable pattern`.

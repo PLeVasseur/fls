@@ -360,7 +360,8 @@ A :dt:`multi segment path` is a :t:`path` consisting of more than one
 :t:`path segment`.
 
 :dp:`fls_nRgjCLYZL3iX`
-An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
+An :dt:`unqualified path expression` is a :t:`path expression` without a
+:t:`qualified type`.
 
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.
@@ -1029,7 +1030,7 @@ Use Imports
 .. rubric:: Legality Rules
 
 :dp:`fls_lyw4t098sxrj`
-A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
+A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
 :t:`use import` resides.
 
