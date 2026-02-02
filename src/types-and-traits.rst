@@ -2412,7 +2412,7 @@ A :t:`type variable` is a placeholder used during :t:`type inference` to stand
 in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
 :dp:`fls_gDalJm1XS0mi`
-A :t:`global type variable` is a :t:`type variable` that can refer to any
+A :dt:`global type variable` is a :t:`type variable` that can refer to any
 :t:`type`.
 
 :dp:`fls_7ov36fpd9mwe`

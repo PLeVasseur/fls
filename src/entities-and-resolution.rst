@@ -314,7 +314,7 @@ or the previous :t:`path segment` of the :t:`path` shall also be expressed as
 :t:`keyword` ``super``.
 
 :dp:`fls_7kb6ltajgiou`
-A :t:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
+A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 ``::``.
 
 :dp:`fls_n77icl6idazp`
@@ -512,7 +512,7 @@ Generic Parameter Scope
 .. rubric:: Legality Rules
 
 :dp:`fls_amoh8r4gghyj`
-A :t:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
+A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
@@ -1058,7 +1058,7 @@ it refers to into scope, optionally with a different
 :t:`name` than they are declared with by using a :t:`renaming`.
 
 :dp:`fls_v3a6y2ze44v2`
-A :t:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
+A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
 exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
 into :t:`scope`.
 

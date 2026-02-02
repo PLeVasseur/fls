@@ -47,7 +47,7 @@ Generic Parameters
 .. rubric:: Legality Rules
 
 :dp:`fls_sye3d17l9bf5`
-A :t:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
+A :dt:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
 or a :t:`type`, whose :t:`constant`, :t:`lifetime`, or :t:`type` is supplied
 statically by a :t:`generic argument`.
 
@@ -65,17 +65,20 @@ A :dt:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 A :dt:`generic implementation` is an :t:`implementation` with
 :t:`[generic parameter]s`.
 
+:dp:`fls_0GhOR32Z4j7M`
+A :dt:`generic type` is a :t:`type` with a :t:`generic parameter`.
+
 :dp:`fls_wmcp0n36jlbr`
-A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
+A :dt:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
 
 :dp:`fls_h42kg56vsefx`
-A :t:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
+A :dt:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
 
 :dp:`fls_372h3oevejih`
-A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
+A :dt:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 
 :dp:`fls_u8mqct93yimd`
-A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
+A :dt:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 :dp:`fls_vpcqgec83ybt`
 A :dt:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
@@ -352,6 +355,10 @@ Generic Arguments
 :dp:`fls_3x6qd8vt5uus`
 A :dt:`generic argument` supplies a static input for an
 :t:`associated trait type` or a :t:`generic parameter`.
+
+:dp:`fls_8j3ARLPm65vI`
+A :dt:`generic substitution` is the replacement of a :t:`generic parameter`
+with a :t:`generic argument`.
 
 :dp:`fls_ky39fb2vcom6`
 A :s:`BindingArgument` shall follow :s:`[ConstantArgument]s`,

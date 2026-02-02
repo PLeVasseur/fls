@@ -1905,7 +1905,7 @@ The :t:`value` of an :t:`equals expression` is the result of
 ``core::cmp::PartialEq::eq(&left_operand, &right_operand)``.
 
 :dp:`fls_wapl0ir7uvbp`
-A :t:`greater-than expression` is a :t:`comparison expression` that tests for a
+A :dt:`greater-than expression` is a :t:`comparison expression` that tests for a
 greater-than relationship.
 
 :dp:`fls_x2s6ydvj5zyd`
@@ -1918,7 +1918,7 @@ The :t:`value` of a :t:`greater-than expression` is the result of
 ``core::cmp::PartialOrd::gt(&left_operand, &right_operand)``.
 
 :dp:`fls_7n5gol6a8lod`
-A :t:`greater-than-or-equals expression` is a :t:`comparison expression` that
+A :dt:`greater-than-or-equals expression` is a :t:`comparison expression` that
 tests for a greater-than-or-equals relationship.
 
 :dp:`fls_hholzcbp5u3n`
