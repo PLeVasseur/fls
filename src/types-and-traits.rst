@@ -775,7 +775,8 @@ An :dt:`enum variant value` is the :t:`enum value` of the corresponding
 :t:`enum` of the :t:`enum variant`.
 
 :dp:`fls_il9a1olqmu38`
-A :t:`zero-variant enum type` has no :t:`[value]s`.
+A :dt:`zero-variant enum type` is an :t:`enum type` without any
+:t:`[enum variant]s`.
 
 :dp:`fls_wQTFwl88VujQ`
 An :dt:`enum variant` is a :t:`construct` that declares one of the
@@ -1670,6 +1671,9 @@ A :dt:`sized type` is a :t:`type` that implements the
 :dp:`fls_c6lSeub6RBUV`
 A :dt:`fixed sized type` is a :t:`type` that implements the
 :std:`core::marker::Sized` :t:`trait`.
+
+:dp:`fls_zn7x5u9r0c3y`
+A :dt:`zero-sized type` is a :t:`fixed sized type` with :t:`size` zero.
 
 :dp:`fls_26Xgem831Nqg`
 A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
