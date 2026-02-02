@@ -351,7 +351,7 @@ A :t:`single segment path` is a :t:`path` consisting of exactly one
 :t:`path segment`.
 
 :dp:`fls_wm61yeclairz`
-A :t:`multi segment path` is a :t:`path` consisting of more than one
+A :dt:`multi segment path` is a :t:`path` consisting of more than one
 :t:`path segment`.
 
 :dp:`fls_nRgjCLYZL3iX`
@@ -1340,7 +1340,7 @@ Method Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_e5a5z5yht26l`
-:t:`Method resolution` is a kind of :t:`resolution` that applies to a
+:dt:`Method resolution` is a kind of :t:`resolution` that applies to a
 :t:`method call expression`.
 
 :dp:`fls_mbdS0xiNlj92`

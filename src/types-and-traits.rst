@@ -1111,7 +1111,7 @@ Raw Pointer Types
 A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 
 :dp:`fls_bYWfGDAQcWfA`
-A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
+A :dt:`mutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``mut``.
 
 :dp:`fls_8uWfFAsZeRCs`
@@ -1166,7 +1166,7 @@ A :t:`shared reference type` implements the :std:`core::marker::Copy`
 Releasing a :t:`shared reference` has no effect on the :t:`value` it refers to.
 
 :dp:`fls_GUZuiST7ucib`
-A :t:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
+A :dt:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
 ``mut``.
 
 :dp:`fls_vaas9kns4zo6`

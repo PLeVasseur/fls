@@ -167,7 +167,7 @@ corresponding :t:`associated trait type` of the corresponding :t:`associated
 trait function`.
 
 :dp:`fls_oy92gzxgc273`
-A :t:`method` is an :t:`associated function` with a :t:`self parameter`.
+A :dt:`method` is an :t:`associated function` with a :t:`self parameter`.
 
 :dp:`fls_WXnCWfJGoQx3`
 The type of a :t:`self parameter` shall be one of the following:

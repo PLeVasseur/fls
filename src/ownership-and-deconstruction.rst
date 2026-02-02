@@ -122,7 +122,7 @@ An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`, an
 prevents the mutation of its :t:`referent`.
 
 :dp:`fls_fckoj1jh5mrc`
-A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
+A :dt:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
 allows the mutation of its :t:`referent`.
 
 :dp:`fls_hqxsuyn285he`
@@ -199,7 +199,7 @@ An :dt:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
 
 :dp:`fls_pu19i4sj6yg0`
-A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
+A :dt:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
 
 :dp:`fls_kxws4zmaahj6`
 :t:`Borrowing` a :t:`field` of a :t:`union type` borrows all remaining
@@ -277,7 +277,7 @@ A :t:`value` of a :t:`copy type` is :t:`passed <passing convention>`
 :t:`value`.
 
 :dp:`fls_6ul3f6v0foma`
-A :t:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
+A :dt:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
 :t:`trait` and is not a :t:`copy type`.
 
 :dp:`fls_3ztdz02efeoc`

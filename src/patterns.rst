@@ -1229,6 +1229,9 @@ A :dt:`binding pattern` is either an :t:`identifier pattern` or a
 A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
 :t:`name`.
 
+:dp:`fls_7kYDVf4rLQK5`
+A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
+
 :dp:`fls_u8Yzdc7Xrksg`
 A :dt:`binding mode` describes whether a :t:`binding` captures a matched
 :t:`value` by value, by reference, or by mutable reference.

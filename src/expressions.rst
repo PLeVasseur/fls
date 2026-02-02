@@ -150,6 +150,10 @@ An :dt:`assignee expression` is an :t:`expression` that appears as the
 * :dp:`fls_horl3qcfdb0k`
   :t:`[Tuple struct call expression]s` of :t:`[assignee expression]s`,
 
+:dp:`fls_sehmhBQREyr7`
+A :dt:`mutable assignee expression` is an :t:`assignee expression` whose
+:t:`value` can be modified.
+
 :dp:`fls_1smb3tj9pxsq`
 :t:`[Parenthesized expression]s` are allowed to appear anywhere in
 :t:`[assignee expression]s`.
@@ -417,7 +421,7 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
   A :t:`temporary`.
 
 :dp:`fls_ku38h562vfyl`
-A :t:`mutable place expression` is a :t:`place expression` whose memory
+A :dt:`mutable place expression` is a :t:`place expression` whose memory
 location can be modified. The following :t:`[place expression]s` are
 :t:`[mutable place expression]s`:
 
@@ -503,7 +507,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The :t:`base initializer` of a :t:`struct expression`.
 
 :dp:`fls_wxGAOWEVT77u`
-A :t:`mutable place expression context` is a :t:`place expression context` that
+A :dt:`mutable place expression context` is a :t:`place expression context` that
 may evaluate its :t:`operand` as a mutable memory location. The following
 :t:`[construct]s` are :t:`[mutable place expression context]s`:
 
@@ -978,7 +982,7 @@ An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
 :t:`keyword` ``mut``.
 
 :dp:`fls_50j167r4v61b`
-A :t:`mutable borrow expression` is a :t:`borrow expression` that has
+A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 :t:`keyword` ``mut``.
 
 :dp:`fls_ya77l2zgtilp`
@@ -1450,7 +1454,7 @@ The :t:`value` of a :t:`division expression` is the result of
 ``core::ops::Div::div(left_operand, right_operand)``.
 
 :dp:`fls_kf41bphvlse3`
-A :t:`multiplication expression` is an :t:`arithmetic expression` that uses
+A :dt:`multiplication expression` is an :t:`arithmetic expression` that uses
 multiplication.
 
 :dp:`fls_hrml95g2txcj`
@@ -2615,7 +2619,7 @@ A :dt:`division assignment expression` is a :t:`compound assignment expression`
 that uses division.
 
 :dp:`fls_ndlv3k9uclz2`
-A :t:`multiplication assignment expression` is a
+A :dt:`multiplication assignment expression` is a
 :t:`compound assignment expression` that uses multiplication.
 
 :dp:`fls_fbp5dojti27r`
@@ -2653,8 +2657,11 @@ An :dt:`bit xor assignment` is a :t:`bit xor assignment expression`.
 :dp:`fls_YUraJ9uJt34w`
 A :dt:`division assignment` is a :t:`division assignment expression`.
 
+:dp:`fls_lrPZDSrw30b5`
+A :dt:`multiplication assignment` is a :t:`multiplication assignment expression`.
+
 :dp:`fls_9v09ayi2azpe`
-A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
+A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
 is used in the calculation of a :t:`compound assignment expression`.
 
 :dp:`fls_row7saf53vwd`
@@ -3566,7 +3573,7 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_b7i26954j1hc`
-A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
+A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
@@ -3574,7 +3581,7 @@ A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
-A :t:`method operand` is an :t:`operand` that denotes the :t:`method` being
+A :dt:`method operand` is an :t:`operand` that denotes the :t:`method` being
 invoked by a :t:`method call expression`.
 
 :dp:`fls_11glzggtbgb3`
@@ -4734,12 +4741,12 @@ Match Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ei4pbeksd1v8`
-A :t:`match expression` is an :t:`expression` that tries to match one of its
+A :dt:`match expression` is an :t:`expression` that tries to match one of its
 multiple :t:`[pattern]s` against its :t:`subject expression` and if it succeeds,
 evaluates an :t:`operand`.
 
 :dp:`fls_l45i24ikfavm`
-A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
+A :dt:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
 
 :dp:`fls_d9gerg12hm2d`
@@ -4750,17 +4757,17 @@ An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
 A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 :dp:`fls_lrdrtedyz28i`
-A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
+A :dt:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
 a :t:`match arm guard`.
 
 :dp:`fls_zJQ4LecT1HYd`
 The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the :t:`type` of the :t:`subject expression`.
 
 :dp:`fls_8wjdichfxp0y`
-A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
+A :dt:`match arm body` is the :t:`operand` of a :t:`match arm`.
 
 :dp:`fls_hs1rr54hu18w`
-A :t:`match arm guard` is a :t:`construct` that provides additional filtering to
+A :dt:`match arm guard` is a :t:`construct` that provides additional filtering to
 a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`

@@ -70,7 +70,7 @@ Modules
 .. rubric:: Legality Rules
 
 :dp:`fls_odd1hj3y1mgu`
-A :t:`module` is a container for zero or more :t:`[item]s`.
+A :dt:`module` is a container for zero or more :t:`[item]s`.
 
 :dp:`fls_whgv72emrm47`
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
@@ -260,8 +260,8 @@ A :t:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
 :dp:`fls_sbGnkm8Ephiu`
-A :t:`main function signature` is a :t:`function signature` subject to the
-following restrictions:
+A :dt:`main function signature` is the :t:`function signature` required for the
+:t:`program entry point` function named ``main``.
 
 * :dp:`fls_o4fxok23134r`
   It lacks :t:`[function qualifier]s` ``async`` and ``unsafe``,

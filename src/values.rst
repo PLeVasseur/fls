@@ -14,6 +14,9 @@ Values
 A :t:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
 
+:dp:`fls_RJDPClYE8a9x`
+:dt:`mutability` determines whether a :t:`construct` can modify a :t:`value`.
+
 :dp:`fls_CEBZEvtmIRGv`
 A :t:`value` is :dt:`immutable` when it cannot be modified.
 
@@ -178,7 +181,7 @@ The :t:`type` of a :t:`static` shall implement the :std:`core::marker::Sized`
 A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`external static` in an :t:`unsafe external block`.
 
 :dp:`fls_doi4z6u55bi7`
-A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+A :dt:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
 :t:`value` can be modified.
 
 :dp:`fls_74hp208pto22`
@@ -262,6 +265,9 @@ A :dt:`local variable` is a :t:`variable`.
 :dp:`fls_5rIFH1wsroHb`
 An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
 modified.
+
+:dp:`fls_kBX7Qa4S2VnM`
+A :dt:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
 
 :dp:`fls_vgi0gh5zmoiu`
 The following :t:`[construct]s` are :t:`[variable]s`:
