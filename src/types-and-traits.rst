@@ -385,10 +385,12 @@ fractional numbers.
 A :dt:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
 
 :dp:`fls_30yny2xb9b6b`
-:t:`Type` :c:`f32` is equivalent to the IEEE 754-2008 binary32 :t:`type`.
+:dc:`f32` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+binary32 :t:`type`.
 
 :dp:`fls_yqflrq9s6p6n`
-:t:`Type` :c:`f64` is equivalent to the IEEE 754-2008 binary64 :t:`type`.
+:dc:`f64` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+binary64 :t:`type`.
 
 .. rubric:: Dynamic Semantics
 
@@ -816,7 +818,7 @@ A :t:`struct type` is an :t:`abstract data type` that is a product of other
 :dp:`fls_3QSa0wGQtbHh`
 A :dt:`field index` is the position of a :t:`field` within a
 :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
-:dt:`field index` of zero, the Nth :t:`field` has a :dt:`field index` of N-1.
+:t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
 
 :dp:`fls_r885av95eivp`
 The :t:`name` of a :t:`record struct field` shall be unique within the
