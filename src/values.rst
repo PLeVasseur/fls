@@ -281,6 +281,10 @@ The following :t:`[construct]s` are :t:`[variable]s`:
 * :dp:`fls_3p0sb9ppmg3w`
   A :t:`temporary`.
 
+:dp:`fls_b4nq5tk5j1p9`
+A :dt:`reachable control flow path` is a control flow path that can be
+taken by the execution of a program between two given points in the program.
+
 :dp:`fls_r9km9f969bu8`
 A :t:`variable` shall be used only after it has been initialized through all
 :t:`[reachable control flow path]s` up to the point of its usage.

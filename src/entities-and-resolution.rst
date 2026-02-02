@@ -1230,7 +1230,7 @@ Resolution
 .. rubric:: Legality Rules
 
 :dp:`fls_ho4kem1slcxg`
-:t:`Resolution` is the process of finding a unique interpretation for a
+:dt:`resolution` is the process of finding a unique interpretation for a
 :t:`field access expression`, a :t:`method call expression`, a :t:`call
 expression` or a :t:`path`.
 

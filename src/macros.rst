@@ -246,7 +246,7 @@ A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription`.
 
 :dp:`fls_u86j0zm2jshf`
-A :t:`repetition operator` is a :t:`construct` that indicates the number
+A :dt:`repetition operator` is a :t:`construct` that indicates the number
 of times a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription` can be repeated.
 
@@ -789,7 +789,7 @@ Rule Matching
 .. rubric:: Legality Rules
 
 :dp:`fls_77ucvwu6idms`
-:t:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
+:dt:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
 resolved :t:`declarative macro`.
 

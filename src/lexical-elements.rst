@@ -702,7 +702,7 @@ Raw Byte String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_yyw7nv651580`
-A :t:`raw byte string literal` is a :t:`simple byte string literal` that does not
+A :dt:`raw byte string literal` is a :t:`simple byte string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_5ybq0euwya42`
@@ -809,7 +809,7 @@ Raw C String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_gLrei65i8Uzq`
-A :t:`raw c string literal` is a :t:`simple c string literal` that does not
+A :dt:`raw c string literal` is a :t:`simple c string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_9nJHsg9dCi66`
@@ -1253,7 +1253,7 @@ Raw String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_36suwhbwmq1t`
-A :t:`raw string literal` is a :t:`simple string literal` that does not
+A :dt:`raw string literal` is a :t:`simple string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_ms43w1towz40`
@@ -1542,7 +1542,7 @@ Reserved Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_w4b97ewwnql`
-A :t:`reserved keyword` is a :t:`keyword` that is not yet in use.
+A :dt:`reserved keyword` is a :t:`keyword` that is not yet in use.
 
 .. _fls_9kjpxri0axvg:
 

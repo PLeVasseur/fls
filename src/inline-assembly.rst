@@ -101,7 +101,7 @@ Registers
 .. rubric:: Legality Rules
 
 :dp:`fls_w5a6rybvptn6`
-A :t:`register` is a hardware component capable of holding data that can be
+A :dt:`register` is a hardware component capable of holding data that can be
 read and written.
 
 :dp:`fls_rr8rsy7oilf0`
@@ -120,7 +120,7 @@ same :t:`value` upon exit from an :t:`assembly code block` as it did upon entry
 into the :t:`assembly code block`.
 
 :dp:`fls_vesfzh8h6qzu`
-A :t:`register name` is either the :t:`explicit register name` of a
+A :dt:`register name` is either the :t:`explicit register name` of a
 :t:`register`, or the :t:`register class name` of the :t:`register class` a
 :t:`register` belongs to.
 
@@ -443,10 +443,10 @@ Register Classes
 .. rubric:: Legality Rules
 
 :dp:`fls_7gxb7ztpuofj`
-A :t:`register class` represents a set of :t:`[register]s`.
+A :dt:`register class` represents a set of :t:`[register]s`.
 
 :dp:`fls_on0i2cpk254y`
-A :t:`register class name` is a target-specific string that identifies a
+A :dt:`register class name` is a target-specific string that identifies a
 :t:`register class`.
 
 :dp:`fls_40ksem5g5xx9`
@@ -648,7 +648,7 @@ Register Arguments
 .. rubric:: Legality Rules
 
 :dp:`fls_455dmnp4cxqv`
-A :t:`register argument` is a :t:`construct` that configures the input
+A :dt:`register argument` is a :t:`construct` that configures the input
 and output of a :t:`register`, and optionally binds the configuration to an
 :t:`identifier`.
 
@@ -676,7 +676,7 @@ An :t:`explicit register argument` shall appear after a
 :t:`named register argument`.
 
 :dp:`fls_9hhtcey2d4t6`
-A :t:`register class argument` is a :t:`register argument` that uses a
+A :dt:`register class argument` is a :t:`register argument` that uses a
 :t:`register class name`.
 
 :dp:`fls_8aynifgq02gt`
@@ -708,7 +708,7 @@ A :t:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
 :dp:`fls_j9XOoXDmN5Dq`
-A :t:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
+A :dt:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
 
 :dp:`fls_jU8zg4k8dFsY`
 The :t:`type` of a :t:`const register expression` shall be an :t:`integer type`.
@@ -1006,7 +1006,7 @@ appear in the same declarative order in the final assembly output, or appear
 contiguously in successive addresses.
 
 :dp:`fls_xugsn2ghh73c`
-A :t:`register parameter` is a substring delimited by characters 0x7B (left
+A :dt:`register parameter` is a substring delimited by characters 0x7B (left
 curly bracket) and 0x7D (right curly bracket) that is substituted with a
 :t:`register argument` in an :t:`assembly instruction`.
 
@@ -1034,7 +1034,7 @@ Register Parameter Modifiers
 .. rubric:: Legality Rules
 
 :dp:`fls_2xilifichdqu`
-A :t:`register parameter modifier` is a substring that starts with character
+A :dt:`register parameter modifier` is a substring that starts with character
 0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
 the related :t:`register parameter`.
 

@@ -1559,6 +1559,10 @@ Attribute ``repr``
 :t:`Attribute` :dc:`repr` shall indicate the :t:`type representation` of the
 related :t:`type`.
 
+:dp:`fls_8l5b6qxw0c9d`
+A :dt:`representation modifier` is a :t:`construct` that modifies the
+:t:`alignment` of a :t:`type`.
+
 .. rubric:: Examples
 
 .. code-block:: rust

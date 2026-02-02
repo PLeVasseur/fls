@@ -714,6 +714,10 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
 An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
 
+:dp:`fls_9vlr65nzdwf2`
+A :dt:`record enum variant` is an :t:`enum variant` with a
+:s:`RecordStructFieldList`.
+
 :dp:`fls_1PqJYZ5eMNym`
 An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
 
@@ -843,6 +847,18 @@ A :dt:`field list` is a :s:`RecordStructFieldList` or a
 :dp:`fls_g1azfj548136`
 A :t:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
+
+:dp:`fls_r3g6b8q1bphw`
+A :dt:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+
+:dp:`fls_5b2q0xj9k7ry`
+A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
+
+:dp:`fls_7ac1p6f1v9tj`
+A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
+
+:dp:`fls_9m52m0px5y0r`
+A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
 
 :dp:`fls_3QSa0wGQtbHh`
 A :dt:`field index` is the position of a :t:`field` within a
@@ -1119,7 +1135,10 @@ Raw Pointer Types
 .. rubric:: Legality Rules
 
 :dp:`fls_rpbhr0xukbx9`
-A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+A :dt:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+
+:dp:`fls_7c5w2c2n2nhb`
+A :dt:`raw pointer` is a pointer of a :t:`raw pointer type`.
 
 :dp:`fls_bYWfGDAQcWfA`
 A :dt:`mutable raw pointer type` is a :t:`raw pointer type` subject to
@@ -1159,7 +1178,7 @@ Reference Types
 .. rubric:: Legality Rules
 
 :dp:`fls_twhq24s8kchh`
-A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
+A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
 :dp:`fls_w4NbA7WhZfR2`
 A :t:`shared reference type` is a :t:`reference type` not subject to
@@ -1849,7 +1868,7 @@ Recursive Types
 .. rubric:: Legality Rules
 
 :dp:`fls_z22std1crl49`
-A :t:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
+A :dt:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
 the containing :t:`type`, either directly or by referring to another :t:`type`
 which refers back to the original :t:`recursive type`.
 

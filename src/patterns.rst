@@ -95,15 +95,15 @@ Refutability
 .. rubric:: Legality Rules
 
 :dp:`fls_9ntc4qmjmo90`
-:t:`Refutability` is a property of :t:`[pattern]s` that expresses the ability to
+:dt:`refutability` is a property of :t:`[pattern]s` that expresses the ability to
 match all possible values of a :t:`type`.
 
 :dp:`fls_9fjspnefoyvz`
 An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 :dp:`fls_uq7ftuuq1sig`
-A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
-matching a :t:`value` of its :t:`type`
+A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not
+matching the :t:`value` it is being matched against.
 
 :dp:`fls_mnbyt7jfYAZ9`
 A :t:`pattern` that is not an :t:`irrefutable pattern` is a
@@ -114,7 +114,10 @@ An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
 :dp:`fls_lh0d85tl4qvy`
-A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+A :dt:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+
+:dp:`fls_m5a5si8b9s7x`
+A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. rubric:: Examples
 
@@ -163,8 +166,8 @@ An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
 with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 
 :dp:`fls_joIQdDn44oIT`
-An :t:`identifier pattern` with :t:`keyword` ``ref`` is a
-:t:`reference identifier pattern`.
+A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
+:t:`keyword` ``ref``.
 
 :dp:`fls_24c95c56tugl`
 The :t:`identifier pattern` enters its :t:`binding` into :t:`binding scope` in
@@ -476,7 +479,7 @@ Range Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_okupyoav13rm`
-A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
+A :dt:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
 :dp:`fls_jhchm7dy927k`
@@ -496,14 +499,14 @@ An :dt:`obsolete range pattern` is a :t:`range pattern` that uses obsolete synta
 to express an :t:`inclusive range pattern`.
 
 :dp:`fls_vrpr6ttpfpal`
-A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
+A :dt:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
 
 :dp:`fls_nk48gregn3me`
-A :t:`range pattern low bound` is a :t:`range pattern bound` that specifies the
+A :dt:`range pattern low bound` is a :t:`range pattern bound` that specifies the
 start of a range.
 
 :dp:`fls_83v1xqbebs58`
-A :t:`range pattern high bound` is a :t:`range pattern bound` that specifies the
+A :dt:`range pattern high bound` is a :t:`range pattern bound` that specifies the
 end of a range.
 
 :dp:`fls_2hpuccwh2xml`
@@ -578,7 +581,7 @@ Reference Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_fhahcc1mz2qh`
-A :t:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
+A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
 is being matched.
 
 :dp:`fls_x0bmzl1315gq`
@@ -627,7 +630,7 @@ Rest Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_eso51epfofxb`
-A :t:`rest pattern` is a :t:`pattern` that matches zero or more elements that
+A :dt:`rest pattern` is a :t:`pattern` that matches zero or more elements that
 have not already been matched.
 
 :dp:`fls_5a75a2y43uev`
@@ -814,7 +817,7 @@ Record Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_g6dytd6aq62d`
-A :t:`record struct pattern` is a :t:`pattern` that matches a
+A :dt:`record struct pattern` is a :t:`pattern` that matches a
 :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`

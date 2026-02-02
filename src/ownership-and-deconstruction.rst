@@ -90,12 +90,12 @@ References
 .. rubric:: Legality Rules
 
 :dp:`fls_7x9pi2o7pee7`
-A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+A :dt:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
 can be obtained explicitly by using a :t:`borrow expression` or implicitly in
 certain scenarios.
 
 :dp:`fls_tsqvr3fmcel`
-A :t:`referent` is the :t:`value` pointed-to by a :t:`reference`.
+A :dt:`referent` is the :t:`value` pointed-to by a :t:`reference`.
 
 :dp:`fls_ev4a82fdhwr8`
 A :t:`reference` shall point to an :t:`initialized` :t:`referent`.

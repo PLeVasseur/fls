@@ -94,7 +94,7 @@ A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
-A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
+A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_yOW2wnLPzlPy`
@@ -1046,7 +1046,7 @@ Raw Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_TS6DvMon5h27`
-A :t:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
 
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
@@ -1474,7 +1474,7 @@ The :t:`value` of a :t:`multiplication expression` is the result of
 ``core::ops::Mul::mul(left_operand, right_operand)``.
 
 :dp:`fls_3de9ulyzuoa`
-A :t:`remainder expression` is an :t:`arithmetic expression` that uses remainder
+A :dt:`remainder expression` is an :t:`arithmetic expression` that uses remainder
 division.
 
 :dp:`fls_8fbhreyynhid`
@@ -2626,7 +2626,7 @@ A :dt:`multiplication assignment expression` is a
 :t:`compound assignment expression` that uses multiplication.
 
 :dp:`fls_fbp5dojti27r`
-A :t:`remainder assignment expression` is a :t:`compound assignment expression`
+A :dt:`remainder assignment expression` is a :t:`compound assignment expression`
 that uses remainder division.
 
 :dp:`fls_oy9ur11k78t`
@@ -2662,6 +2662,9 @@ A :dt:`division assignment` is a :t:`division assignment expression`.
 
 :dp:`fls_lrPZDSrw30b5`
 A :dt:`multiplication assignment` is a :t:`multiplication assignment expression`.
+
+:dp:`fls_1b5aqr1cp1d0`
+A :dt:`remainder assignment` is a :t:`remainder assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
@@ -2934,7 +2937,7 @@ An :dt:`array repetition constructor` is an :t:`array expression` that specifies
 how many times an element is repeated in the :t:`array` being constructed.
 
 :dp:`fls_3y69y9ga4at7`
-A :t:`repeat operand` is an :t:`operand` that specifies the element being
+A :dt:`repeat operand` is an :t:`operand` that specifies the element being
 repeated in an :t:`array repetition constructor`.
 
 :dp:`fls_2l9objtb23zn`
@@ -3580,7 +3583,7 @@ A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
-A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
@@ -4434,14 +4437,14 @@ Range Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_bi82rusji8g0`
-A :t:`range expression` is an :t:`expression` that constructs a range.
+A :dt:`range expression` is an :t:`expression` that constructs a range.
 
 :dp:`fls_msyv4oyk5zp9`
-A :t:`range expression low bound` is an :t:`operand` that specifies the start of
+A :dt:`range expression low bound` is an :t:`operand` that specifies the start of
 a range.
 
 :dp:`fls_f648uuxxh4vk`
-A :t:`range expression high bound` is an :t:`operand` that specifies the end of
+A :dt:`range expression high bound` is an :t:`operand` that specifies the end of
 a range.
 
 :dp:`fls_9pl4629t54yq`
@@ -4449,7 +4452,7 @@ If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
 :t:`[operand]s` shall be :t:`unifiable`.
 
 :dp:`fls_xaumwogwbv3g`
-A :t:`range-from expression` is a :t:`range expression` that specifies an
+A :dt:`range-from expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound`.
 
 :dp:`fls_exa2ufugnpgc`
@@ -4460,7 +4463,7 @@ The :t:`value` of a :t:`range-from expression` is
 ``core::ops::RangeFrom { start: range_expression_low_bound }``.
 
 :dp:`fls_ppustuqdji7b`
-A :t:`range-from-to expression` is a :t:`range expression` that specifies an
+A :dt:`range-from-to expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an excluded
 :t:`range expression high bound`.
 
@@ -4482,7 +4485,7 @@ The :t:`type` of a :t:`full range expression` is :std:`core::ops::RangeFull`.
 The :t:`value` of a :t:`full range expression` is ``core::ops::RangeFull {}``.
 
 :dp:`fls_lh9my7g8oflq`
-A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
+A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an included
 :t:`range expression high bound`.
 
@@ -4495,7 +4498,7 @@ The :t:`value` of a :t:`range-inclusive expression` is
 ``core::ops::RangeInclusive::new(range_expression_low_bound, range_expression_high_bound)``.
 
 :dp:`fls_5a1uivj19kob`
-A :t:`range-to expression` is a :t:`range expression` that specifies an excluded
+A :dt:`range-to expression` is a :t:`range expression` that specifies an excluded
 :t:`range expression high bound`.
 
 :dp:`fls_k611yoc8hk0n`
@@ -4506,7 +4509,7 @@ The :t:`value` of a :t:`range-to expression` is
 ``core::ops::RangeTo { end: range_expression_high_bound }``.
 
 :dp:`fls_1gc436ee1nzm`
-A :t:`range-to-inclusive expression` is a :t:`range expression` that specifies
+A :dt:`range-to-inclusive expression` is a :t:`range expression` that specifies
 an included :t:`range expression high bound`.
 
 :dp:`fls_8sfjw83irpre`
@@ -4894,7 +4897,7 @@ Return Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_u7jk4j8gkho`
-A :t:`return expression` is an :t:`expression` that optionally yields a
+A :dt:`return expression` is an :t:`expression` that optionally yields a
 :t:`value` and causes control flow to return to the end of the enclosing
 :t:`control flow boundary`.
 

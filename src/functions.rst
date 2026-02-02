@@ -138,7 +138,7 @@ A :t:`variadic function` shall specify one of the following :t:`[ABI]s`:
   ``extern "win64-unwind"``
 
 :dp:`fls_vljy4mm0zca2`
-A :t:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
+A :dt:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
 :dp:`fls_EqJb3Jl3vK8K`
 The :t:`return type` of a :t:`function` is determined as follows:
