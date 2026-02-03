@@ -89,6 +89,12 @@ involve a :t:`block expression`.
 :dp:`fls_gwgttltgjma4`
 An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
+.. glossary-entry:: binary operator
+   
+   :glossary:
+     :dp:`fls_v0he0zp9ph7a`
+     A :dt:`binary operator` is an operator that operates on two :t:`[operand]s`.
+
 :dp:`fls_1r29rtnjlkql`
 A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
@@ -752,10 +758,27 @@ Async Blocks
 
 .. rubric:: Legality Rules
 
-:dp:`fls_hhidi5ukxo`
-An :t:`async block expression` is a :t:`block expression` that is specified
-with :t:`keyword` ``async`` and encapsulates behavior which is executed in
-an asynchronous manner.
+.. glossary-entry:: async block
+   
+   :glossary:
+     :dp:`fls_pf6lrmcjywoj`
+     For :dt:`async block`, see :t:`async block expression`.
+
+.. glossary-entry:: async block expression
+   
+   :glossary:
+     :dp:`fls_p6nvfs7bfoxd`
+     An :dt:`async block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``async`` and encapsulates behavior which is executed in
+     an asynchronous manner.
+     
+     :dp:`fls_je689rormhd6`
+     See :s:`AsyncBlockExpression`.
+   :chapter:
+     :dp:`fls_hhidi5ukxo`
+     An :t:`async block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``async`` and encapsulates behavior which is executed in
+     an asynchronous manner.
 
 :dp:`fls_oisws5qykedi`
 An :t:`async block expression` denotes a new :t:`async control flow boundary`.
@@ -2425,9 +2448,16 @@ Basic Assignment
 
 .. rubric:: Legality Rules
 
-:dp:`fls_uhcodvq75nlr`
-A :t:`basic assignment` is an :t:`assignment expression` that is not a
-:t:`destructuring assignment`.
+.. glossary-entry:: basic assignment
+   
+   :glossary:
+     :dp:`fls_byq9e2jf8r22`
+     A :dt:`basic assignment` is an :t:`assignment expression` that is not a
+     :t:`destructuring assignment`.
+   :chapter:
+     :dp:`fls_uhcodvq75nlr`
+     A :t:`basic assignment` is an :t:`assignment expression` that is not a
+     :t:`destructuring assignment`.
 
 .. rubric:: Dynamic Semantics
 
@@ -3272,10 +3302,21 @@ A :t:`struct expression` is an :t:`expression` that constructs an
 A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
-:dp:`fls_uib1ml41mfrn`
-A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
-a :t:`struct value` to be used as a base for
-construction in a :t:`struct expression`.
+.. glossary-entry:: base initializer
+   
+   :glossary:
+     :dp:`fls_dnuwn2tnvtgy`
+     A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`,
+     a :t:`struct value`, or a :t:`union value` to be used as a base for
+     construction in a :t:`struct expression`.
+     
+     :dp:`fls_mprzem71zlhy`
+     See :s:`BaseInitializer`.
+   :chapter:
+     :dp:`fls_uib1ml41mfrn`
+     A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+     a :t:`struct value` to be used as a base for
+     construction in a :t:`struct expression`.
 
 :dp:`fls_gfu267bpl9ql`
 The :t:`type` of a :t:`base initializer` is the :t:`type` of its :t:`operand`.
@@ -3851,8 +3892,24 @@ Closure Expressions
 A :t:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
-:dp:`fls_My6pMgpeFCFg`
-An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+.. glossary-entry:: async closure expression
+   
+   :glossary:
+     :dp:`fls_SxydbQPPX9Jw`
+     An :dt:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+     
+     :dp:`fls_JZsDFMg85a3u`
+     See :s:`ClosureExpression`.
+   :chapter:
+     :dp:`fls_My6pMgpeFCFg`
+     An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+
+.. glossary-entry:: async closure type
+   
+   :glossary:
+     :dp:`fls_IT28HJaF8rnm`
+     An :dt:`async closure type` is a unique anonymous :t:`function type` that encapsulates
+     all :t:`[capture target]s` of a :t:`closure expression` producing a :std:`core::future::Future`.
 
 :dp:`fls_UgJgur0z6d4a`
 The :t:`return type` of a :t:`closure type` is determined as follows:
@@ -5013,9 +5070,19 @@ Await Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_sjz5s71hwm7l`
-An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
+.. glossary-entry:: await expression
+   
+   :glossary:
+     :dp:`fls_psbc3b8pec47`
+     An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
+     suspending the execution of the future until the future is ready.
+     
+     :dp:`fls_29gkp9bpo1hi`
+     See :s:`AwaitExpression`.
+   :chapter:
+     :dp:`fls_sjz5s71hwm7l`
+     An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
+     suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
 A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
@@ -5090,9 +5157,16 @@ Certain :t:`[expression]s` are subject to :t:`precedence` and
 :t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
 presence of other :t:`[expression]s`.
 
-:dp:`fls_bezkcuwp5qol`
-:t:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
-single :t:`expression`.
+.. glossary-entry:: associativity
+   
+   :glossary:
+     :dp:`fls_7i7o23mi2i33`
+     :dt:`Associativity` is the order by which :t:`[operand]s` are evaluated within
+     a single :t:`expression`.
+   :chapter:
+     :dp:`fls_bezkcuwp5qol`
+     :t:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
+     single :t:`expression`.
 
 :dp:`fls_48br7odx6nke`
 The :t:`precedence` and :t:`associativity` of qualifying :t:`[expression]s` are

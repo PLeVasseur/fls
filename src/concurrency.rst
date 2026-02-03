@@ -69,10 +69,23 @@ Atomics
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3pjla9s93mhd`
-An :t:`atomic type` is a :t:`type` defined in :t:`module`
-:std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
-communication between threads.
+.. glossary-entry:: atomic
+   
+   :glossary:
+     :dp:`fls_9xd3m2qvqzk`
+     See :t:`atomic type`.
+
+.. glossary-entry:: atomic type
+   
+   :glossary:
+     :dp:`fls_cycpv4fopgx2`
+     An :dt:`atomic type` is a :t:`type` defined in :t:`module`
+     :std:`core::sync::atomic`.
+   :chapter:
+     :dp:`fls_3pjla9s93mhd`
+     An :t:`atomic type` is a :t:`type` defined in :t:`module`
+     :std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
+     communication between threads.
 
 :dp:`fls_wn4ynaio8u47`
 :t:`[Atomic type]s` are related to :t:`[type]s` as follows:
@@ -142,4 +155,3 @@ The computed :t:`value` of a :t:`future` is obtained by using an
 :dp:`fls_ftzey2156ha`
 :std:`core::future::Future::poll` shall not be invoked on a :t:`future` that has
 already returned :std:`core::task::Poll::Ready`.
-

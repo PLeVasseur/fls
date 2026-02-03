@@ -159,6 +159,13 @@ A :t:`function` shall have a :t:`function body` unless it is an
 :dp:`fls_bHwy8FLzEUi3`
 A :t:`function body` denotes a :t:`control flow boundary`.
 
+.. glossary-entry:: async control flow boundary
+   
+   :glossary:
+     :dp:`fls_EXoGOkCRsfKK`
+     An :dt:`async control flow boundary` is a :t:`control flow boundary` that
+     additionally allows the suspension of execution via :t:`[await expression]s`.
+
 :dp:`fls_5Q861wb08DU3`
 A :t:`function body` of an :t:`async function` denotes an
 :t:`async control flow boundary`.
@@ -179,26 +186,32 @@ The :t:`function body` of a :t:`constant function` shall be a
 :dp:`fls_otr3hgp8lj1q`
 A :t:`constant function` shall be callable from a :t:`constant context`.
 
-:dp:`fls_m3jiunibqj81`
-An :t:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
-:t:`async function` of the form
-
-.. code-block:: rust
-
-   async fn async_fn(param: &param_type) -> return_type {
-       /* tail expression */
-   }
-
-:dp:`fls_7vogmqyd87ey`
-is equivalent to :t:`function`
-
-.. code-block:: rust
-
-   fn async_fn<'a>(param: &'a param_type) -> impl Future<Output = return_type> + 'a {
-       async move {
-           /* tail expression */
-       }
-   }
+.. glossary-entry:: async function
+   
+   :glossary:
+     :dp:`fls_gv9wl1cbaw1g`
+     An :dt:`async function` is a :t:`function` subject to :t:`keyword` ``async``.
+   :chapter:
+     :dp:`fls_m3jiunibqj81`
+     An :t:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
+     :t:`async function` of the form
+     
+     .. code-block:: rust
+     
+        async fn async_fn(param: &param_type) -> return_type {
+            /* tail expression */
+        }
+     
+     :dp:`fls_7vogmqyd87ey`
+     is equivalent to :t:`function`
+     
+     .. code-block:: rust
+     
+        fn async_fn<'a>(param: &'a param_type) -> impl Future<Output = return_type> + 'a {
+            async move {
+                /* tail expression */
+            }
+        }
 
 :dp:`fls_7ucwmzqtittv`
 An :t:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.

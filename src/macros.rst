@@ -445,12 +445,20 @@ Attribute Macros
 
 .. rubric:: Legality Rules
 
-:dp:`fls_l3epi1dqpi8o`
-An :t:`attribute macro` is a :t:`procedural macro` that consumes two streams
-of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
-new :t:`outer attribute` that can be attached to :t:`[item]s`.
-:t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
-:t:`[item]s`.
+.. glossary-entry:: attribute macro
+   
+   :glossary:
+     :dp:`fls_mtqr4d817ikn`
+     An :dt:`attribute macro` is a :t:`procedural macro` that consumes two streams
+     of :t:`[token]s` to produce a stream of tokens, and defines a new
+     :t:`outer attribute` that can be attached to :t:`[item]s`.
+   :chapter:
+     :dp:`fls_l3epi1dqpi8o`
+     An :t:`attribute macro` is a :t:`procedural macro` that consumes two streams
+     of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
+     new :t:`outer attribute` that can be attached to :t:`[item]s`.
+     :t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
+     :t:`[item]s`.
 
 :dp:`fls_3sublbi9bz7k`
 The :t:`macro implementation function` of an :t:`attribute macro` shall be
@@ -1113,4 +1121,3 @@ Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 :dp:`fls_7eqqk2cj0clr`
 The :t:`metavariable` ``$crate`` in a :t:`declarative macro`'s expansion refers
 to the crate the :t:`declarative macro` was declared in.
-

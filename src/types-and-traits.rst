@@ -2806,10 +2806,18 @@ is equivalent to a :t:`where clause` of the following form:
 
    	trait T where Self: Bound {}
 
-:dp:`fls_YynbrIceKmsJ`
-An :t:`auto trait` is a :t:`trait` that is implicitly and automatically
-implemented by a :t:`type` when the types of its constituent :t:`[field]s`
-implement the :t:`trait`.
+.. glossary-entry:: auto trait
+   
+   :glossary:
+     :dp:`fls_d84nTOR4pZq5`
+     An :dt:`auto trait` is a :t:`trait` that is implicitly and automatically
+     implemented by a :t:`type` when the types of its constituent :t:`[field]s`
+     implement the :t:`trait`.
+   :chapter:
+     :dp:`fls_YynbrIceKmsJ`
+     An :t:`auto trait` is a :t:`trait` that is implicitly and automatically
+     implemented by a :t:`type` when the types of its constituent :t:`[field]s`
+     implement the :t:`trait`.
 
 :dp:`fls_Bd4HwdrRuXMm`
 A :t:`type` that has no :t:`[field]s` implements all :t:`[auto trait]s`.

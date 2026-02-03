@@ -42,9 +42,16 @@ Attributes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_rnzxj1t0hehl`
-An :t:`attribute` is a general, free-form metadatum that is interpreted based on
-its :t:`name`, convention, language, and tool.
+.. glossary-entry:: attribute
+   
+   :glossary:
+     :dp:`fls_o74rfpe6zo6a`
+     An :dt:`attribute` is a general, free-form metadatum that is interpreted based
+     on its name, convention, language, and tool.
+   :chapter:
+     :dp:`fls_rnzxj1t0hehl`
+     An :t:`attribute` is a general, free-form metadatum that is interpreted based on
+     its :t:`name`, convention, language, and tool.
 
 :dp:`fls_yd0ehw5csaur`
 An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
@@ -54,9 +61,19 @@ An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
 An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
-:dp:`fls_9TMRVlQwAdTB`
-An :t:`attribute content` is a :t:`construct` that provides the content of
-an :t:`attribute`.
+.. glossary-entry:: attribute content
+   
+   :glossary:
+     :dp:`fls_sn0GvVmM3o38`
+     An :dt:`attribute content` is a :t:`construct` that provides the content of
+     an :t:`attribute`.
+     
+     :dp:`fls_YwyrWC8fcmRm`
+     See :s:`AttributeContent`.
+   :chapter:
+     :dp:`fls_9TMRVlQwAdTB`
+     An :t:`attribute content` is a :t:`construct` that provides the content of
+     an :t:`attribute`.
 
 .. rubric:: Examples
 

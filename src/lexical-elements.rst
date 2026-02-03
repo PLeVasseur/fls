@@ -913,8 +913,17 @@ Integer Literals
 :dp:`fls_vkk2krfn93ry`
 An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
-:dp:`fls_nxqncu5yq4eu`
-A :t:`binary literal` is an :t:`integer literal` in base 2.
+.. glossary-entry:: binary literal
+   
+   :glossary:
+     :dp:`fls_hy54uj6u3nqw`
+     A :dt:`binary literal` is an :t:`integer literal` in base 2.
+     
+     :dp:`fls_693r7vs2s7o7`
+     See :s:`BinaryLiteral`.
+   :chapter:
+     :dp:`fls_nxqncu5yq4eu`
+     A :t:`binary literal` is an :t:`integer literal` in base 2.
 
 :dp:`fls_rn8xfd66yvst`
 A :t:`decimal literal` is an :t:`integer literal` in base 10.
@@ -1560,4 +1569,3 @@ Word ``union`` acts as a :t:`keyword` only when used in the context of a
 
 :dp:`fls_g0JEluWqBpNc`
 Word ``safe`` acts as a :t:`keyword` only when used as a qualifier of :s:`FunctionDeclaration` or :s:`StaticDeclaration` in the context of a :s:`ExternalBlock`.
-
