@@ -989,8 +989,17 @@ An :t:`assembly instruction` shall use the syntax of format strings as
 defined in :t:`module` :std:`std::fmt`, and contain zero or more
 :t:`[register parameter]s`.
 
-:dp:`fls_2d05gcixjrzt`
-An :t:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+.. glossary-entry:: assembly code block
+   
+   :glossary:
+     :dp:`fls_d1ojwFwKpvm3`
+     An :dt:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+     
+     :dp:`fls_gXVUuW6iyNhZ`
+     See :s:`AssemblyCodeBlock`.
+   :chapter:
+     :dp:`fls_2d05gcixjrzt`
+     An :t:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
 
 :dp:`fls_z64f094aivp6`
 When an :t:`assembly code block` contains multiple :t:`[assembly instruction]s`,
@@ -1517,9 +1526,19 @@ Assembly Options
 
 .. rubric:: Legality Rules
 
-:dp:`fls_i21l6t3vn95t`
-An :t:`assembly option` is used to specify a characteristic of or a restriction
-on the related :t:`assembly code block`.
+.. glossary-entry:: assembly option
+   
+   :glossary:
+     :dp:`fls_F5I3okDKIYnE`
+     An :dt:`assembly option` is used to specify a characteristic of or a restriction
+     on the related :t:`assembly code block`.
+     
+     :dp:`fls_31NQgPGb73Hy`
+     See :s:`AssemblyOption`.
+   :chapter:
+     :dp:`fls_i21l6t3vn95t`
+     An :t:`assembly option` is used to specify a characteristic of or a restriction
+     on the related :t:`assembly code block`.
 
 :dp:`fls_g09kmp2a04g9`
 :t:`Assembly option` :dc:`att_syntax` is applicable only to x86 architectures

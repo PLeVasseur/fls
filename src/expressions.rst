@@ -123,10 +123,17 @@ Assignee Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_oqj7s9fi3j3j`
-An :t:`assignee expression` is an :t:`expression` that appears as the
-:t:`left operand` of an :t:`assignment expression`. The following
-:t:`[expression]s` are :t:`[assignee expression]s`:
+.. glossary-entry:: assignee expression
+   
+   :glossary:
+     :dp:`fls_wpmcexvbynbu`
+     An :dt:`assignee expression` is an :t:`expression` that appears as the
+     :t:`left operand` of an :t:`assignment expression`.
+   :chapter:
+     :dp:`fls_oqj7s9fi3j3j`
+     An :t:`assignee expression` is an :t:`expression` that appears as the
+     :t:`left operand` of an :t:`assignment expression`. The following
+     :t:`[expression]s` are :t:`[assignee expression]s`:
 
 * :dp:`fls_skopz71arbwa`
   :t:`[Place expression]s`,
@@ -2352,6 +2359,12 @@ See :p:`fls_2jd0mgw4zja4` for the declaration of ``answer``.
 Assignment Expressions
 ~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary-entry:: assignment
+   
+   :glossary:
+     :dp:`fls_j9pyuucyplmi`
+     See :t:`assignment expression`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -2367,13 +2380,33 @@ Assignment Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_nhgexeu2h6wi`
-An :t:`assignment expression` is an :t:`expression` that assigns the :t:`value`
-of a :t:`value operand` to an :t:`assignee operand`.
+.. glossary-entry:: assignment expression
+   
+   :glossary:
+     :dp:`fls_6jkc6a6me3zr`
+     An :dt:`assignment expression` is an :t:`expression` that assigns the
+     :t:`value` of a :t:`value operand` to an :t:`assignee operand`.
+     
+     :dp:`fls_njw68i3bp9qq`
+     See :s:`AssignmentExpression`.
+   :chapter:
+     :dp:`fls_nhgexeu2h6wi`
+     An :t:`assignment expression` is an :t:`expression` that assigns the :t:`value`
+     of a :t:`value operand` to an :t:`assignee operand`.
 
-:dp:`fls_bsjw6f4a3wol`
-An :t:`assignee operand` is the target :t:`operand` of an
-:t:`assignment expression`.
+.. glossary-entry:: assignee operand
+   
+   :glossary:
+     :dp:`fls_4tgf0wu2mr3l`
+     An :dt:`assignee operand` is the target :t:`operand` of an
+     :t:`assignment expression`.
+     
+     :dp:`fls_df0j0vnnq20a`
+     See :s:`AssigneeOperand`.
+   :chapter:
+     :dp:`fls_bsjw6f4a3wol`
+     An :t:`assignee operand` is the target :t:`operand` of an
+     :t:`assignment expression`.
 
 :dp:`fls_uinh05sslxeo`
 A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
@@ -2636,9 +2669,19 @@ A :t:`shift right assignment expression` is a
 A :t:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
 
-:dp:`fls_dvy201zd6oym`
-An :t:`assigned operand` is the target :t:`operand` of a
-:t:`compound assignment expression`.
+.. glossary-entry:: assigned operand
+   
+   :glossary:
+     :dp:`fls_g714mnh7s7fx`
+     An :dt:`assigned operand` is the target :t:`operand` of a
+     :t:`compound assignment expression`.
+     
+     :dp:`fls_z0amfuj9vsqe`
+     See :s:`AssignedOperand`.
+   :chapter:
+     :dp:`fls_dvy201zd6oym`
+     An :t:`assigned operand` is the target :t:`operand` of a
+     :t:`compound assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
