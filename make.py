@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: The Rust Project Contributors
 
 import os
+import sys
 from pathlib import Path
 import argparse
 import subprocess
@@ -13,7 +14,7 @@ import shutil
 EXTRA_WATCH_DIRS = ["exts", "themes"]
 
 
-def build_docs(root, builder, clear, serve, debug):
+def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
     dest = root / "build"
     output_dir = dest / builder
 
@@ -45,6 +46,10 @@ def build_docs(root, builder, clear, serve, debug):
     commit = current_git_commit(root)
     if commit is not None:
         args += ["-D", f"html_theme_options.commit={commit}"]
+
+    subprocess.run([sys.executable, root / "generate-glossary.py"], check=True)
+    if use_generated_glossary:
+        args += ["-t", "use_generated_glossary"]
 
     try:
         subprocess.run(
@@ -142,10 +147,20 @@ def main(root):
         help="Debug mode for the extensions, showing exceptions",
         action="store_true",
     )
+    parser.add_argument(
+        "--use-generated-glossary",
+        help="Build with generated glossary content",
+        action="store_true",
+    )
     args = parser.parse_args()
 
     rendered = build_docs(
-        root, "xml" if args.xml else "html", args.clear, args.serve, args.debug
+        root,
+        "xml" if args.xml else "html",
+        args.clear,
+        args.serve,
+        args.debug,
+        args.use_generated_glossary,
     )
 
     if args.check_links:
