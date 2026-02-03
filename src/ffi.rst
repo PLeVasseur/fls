@@ -51,6 +51,12 @@ ABI
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: ABI
+   
+   :glossary:
+     :dp:`fls_4ko8qcah0f9k`
+     For :dt:`ABI`, see :t:`Application Binary Interface`.
+
 .. glossary-entry:: Application Binary Interface
    
    :glossary:

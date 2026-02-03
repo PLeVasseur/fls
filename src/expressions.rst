@@ -1383,6 +1383,12 @@ Arithmetic Expressions
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: arithmetic operator
+   
+   :glossary:
+     :dp:`fls_Qf7DckakqvRq`
+     An :dt:`arithmetic operator` is the operator of an :t:`arithmetic expression`.
+
 .. glossary-entry:: arithmetic expression
    
    :glossary:
@@ -2571,6 +2577,22 @@ Compound Assignment Expressions
    ModifyingOperand ::=
        Operand
 
+.. glossary-entry:: addition assignment
+   
+   :glossary:
+     :dp:`fls_FVgKeCXlmuPe`
+     For :dt:`addition assignment`, see :t:`addition assignment expression`.
+
+.. glossary-entry:: addition assignment expression
+   
+   :glossary:
+     :dp:`fls_w83tf9m7vu67`
+     An :dt:`addition assignment expression` is a
+     :t:`compound assignment expression` that uses addition.
+     
+     :dp:`fls_hihh97p0rnt8`
+     See :s:`AdditionAssignmentExpression`.
+
 .. rubric:: Legality Rules
 
 :dp:`fls_3bu3g8o5nopc`
@@ -2876,6 +2898,12 @@ Array Expressions
        Operand
 
 .. rubric:: Legality Rules
+
+.. glossary-entry:: array
+   
+   :glossary:
+     :dp:`fls_metry7a5prpt`
+     An :dt:`array` is a :t:`value` of an :t:`array type`.
 
 .. glossary-entry:: array expression
    
@@ -3430,6 +3458,12 @@ constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 A :t:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
+
+.. glossary-entry:: adjusted call operand
+   
+   :glossary:
+     :dp:`fls_mchqbc64iu0u`
+     An :dt:`adjusted call operand` is a :t:`call operand` adjusted with inserted :t:`[borrow expression]s` and :t:`[dereference expression]s`.
 
 :dp:`fls_QpBu34U6hXn9`
 A :t:`tuple struct call expression` is a :t:`call expression` where the

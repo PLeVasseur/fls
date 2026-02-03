@@ -598,6 +598,12 @@ Tuple Types
 A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
 
+.. glossary-entry:: arity
+   
+   :glossary:
+     :dp:`fls_dl2gkip00bua`
+     An :dt:`arity` is the number of :t:`[tuple field]s` in a :t:`tuple type`.
+
 :dp:`fls_s9a36zsrfqew`
 If the :t:`type` of a :t:`tuple field` is a :t:`dynamically-sized type`, then
 the :t:`tuple field` shall be the last :t:`tuple field` in the
@@ -615,6 +621,12 @@ the :t:`tuple field` shall be the last :t:`tuple field` in the
 
 Abstract Data Types
 -------------------
+
+.. glossary-entry:: abstract data type
+   
+   :glossary:
+     :dp:`fls_64drmro2fcfo`
+     An :dt:`abstract data type` is a collection of other :t:`[type]s`.
 
 .. _fls_szibmtfv117b:
 
@@ -1147,6 +1159,13 @@ An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :dp:`fls_ieyqx5vzas2m`
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
+
+.. glossary-entry:: anonymous type parameter
+   
+   :glossary:
+     :dp:`fls_brqaq0736o09`
+     An :dt:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
+     :t:`function parameter`.
 
 .. glossary-entry:: anonymous return type
    
