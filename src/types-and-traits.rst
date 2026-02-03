@@ -53,8 +53,16 @@ those :t:`[value]s`.
 :dp:`fls_r3g5n7t2k9vq`
 A :dt:`type specification` describes the structure of a :t:`type`.
 
+:dp:`fls_yBBJKTChloiC`
+:gsee:`type specification` See :s:`TypeSpecification`.
+
+
 :dp:`fls_x4p7m2c9v6qn`
 A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
+
+:dp:`fls_s6W6oPhCleQx`
+:gsee:`type ascription` See :s:`TypeAscription`.
+
 
 :dp:`fls_0yaYKnFrJkhG`
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
@@ -570,6 +578,10 @@ Array Types
 An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
 
+:dp:`fls_sgDsfVmj7T7y`
+:gsee:`array type` See :s:`ArrayTypeSpecification`.
+
+
 :dp:`fls_xmmgSHsTHDtc`
 An :dt:`array` is a :t:`value` of an :t:`array type`.
 
@@ -577,9 +589,17 @@ An :dt:`array` is a :t:`value` of an :t:`array type`.
 An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
 
+:dp:`fls_bBFdFPLlaUlK`
+:gsee:`element type` See :s:`ElementType`.
+
+
 :dp:`fls_4sd5dgy2unq7`
 A :dt:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
 that specifies the length of an :t:`array type`.
+
+:dp:`fls_qLrmeea2vsXj`
+:gsee:`size operand` See :s:`SizeOperand`.
+
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -617,6 +637,10 @@ Slice Types
 :dp:`fls_ftvua2hlvr08`
 A :dt:`slice type` is a :t:`sequence type` that provides a view into a sequence
 of elements.
+
+:dp:`fls_unneEABU02Lg`
+:gsee:`slice type` See :s:`SliceTypeSpecification`.
+
 
 :dp:`fls_qqw9h1x0ptl6`
 A :dt:`slice` is a :t:`value` of a :t:`slice type`.
@@ -688,6 +712,10 @@ Tuple Types
 :dp:`fls_bn7wmf681ngt`
 A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
+
+:dp:`fls_1cJrOWmYWIOe`
+:gsee:`tuple type` See :s:`TupleTypeSpecification`.
+
 
 :dp:`fls_m8n4t5c1k0pz`
 A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
@@ -767,6 +795,10 @@ An :dt:`enum` is an :t:`item` that declares an :t:`enum type`.
 An :dt:`enum type` is an :t:`abstract data type` that contains
 :t:`[enum variant]s`.
 
+:dp:`fls_QyHknMfcgEUH`
+:gsee:`enum type` See :s:`EnumDeclaration`.
+
+
 :dp:`fls_v4QIqcZGsG6C`
 An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
 
@@ -781,6 +813,10 @@ A :dt:`zero-variant enum type` is an :t:`enum type` without any
 :dp:`fls_wQTFwl88VujQ`
 An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
+
+:dp:`fls_pKYZ2BdvjRZN`
+:gsee:`enum variant` See :s:`EnumVariant`.
+
 
 :dp:`fls_r2m9k6t1v4pa`
 A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
@@ -809,6 +845,10 @@ A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
 :dp:`fls_IhqHv2D1nuXj`
 A :dt:`discriminant initializer` provides the :t:`value` of a
 :t:`discriminant`.
+
+:dp:`fls_zoNRN1k0NnT2`
+:gsee:`discriminant initializer` See :s:`DiscriminantInitializer`.
+
 
 :dp:`fls_hp5frc752dam`
 A :t:`discriminant initializer` shall be specified only when all :t:`[enum
@@ -930,8 +970,16 @@ A :dt:`struct` is an :t:`abstract data type` declared with a
 A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
 
+:dp:`fls_bOPOgI956Zrr`
+:gsee:`struct type` See :s:`StructDeclaration`.
+
+
 :dp:`fls_r3g6b8q1bphw`
 A :dt:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+
+:dp:`fls_9htcnbMKU7uw`
+:gsee:`record struct` See :s:`RecordStructDeclaration`.
+
 
 :dp:`fls_5b2q0xj9k7ry`
 A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
@@ -942,8 +990,16 @@ A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 :dp:`fls_9m52m0px5y0r`
 A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
 
+:dp:`fls_wxqcy6GWuHRv`
+:gsee:`record struct field` See :s:`RecordStructField`.
+
+
 :dp:`fls_q1m7v9b3k5ha`
 A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_OdpsLFmA205I`
+:gsee:`tuple struct` See :s:`TupleStructDeclaration`.
+
 
 :dp:`fls_g6t2n8c5p4xy`
 A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
@@ -954,8 +1010,16 @@ A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 :dp:`fls_z4p8t1x6n2qv`
 A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
 
+:dp:`fls_LPRkMPO3X29e`
+:gsee:`tuple struct field` See :s:`TupleStructField`.
+
+
 :dp:`fls_4q6m9t1w7zpa`
 A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+
+:dp:`fls_3KCakZceC3hB`
+:gsee:`unit struct` See :s:`UnitStructDeclaration`.
+
 
 :dp:`fls_6c1v8m4p2tqa`
 A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
@@ -977,6 +1041,10 @@ A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
 A :dt:`field index` is the position of a :t:`field` within a
 :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
 :t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
+
+:dp:`fls_6kyJuQs2j0t0`
+:gsee:`field index` See :s:`FieldIndex`.
+
 
 :dp:`fls_r885av95eivp`
 The :t:`name` of a :t:`record struct field` shall be unique within the
@@ -1030,6 +1098,10 @@ A :dt:`union` is an :t:`item` that declares a :t:`union type`.
 :dp:`fls_nskmnzq95yqm`
 A :dt:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
+
+:dp:`fls_YX8va2i71MYx`
+:gsee:`union type` See :s:`UnionDeclaration`.
+
 
 :dp:`fls_q7v2m9t4k1pa`
 A :dt:`union value` is a :t:`value` of a :t:`union type`.
@@ -1213,9 +1285,17 @@ Function Pointer Types
 A :dt:`function pointer type` is an :t:`indirection type` that refers to a
 :t:`function`.
 
+:dp:`fls_k1ckHVBWQUda`
+:gsee:`function pointer type` See :s:`FunctionPointerTypeSpecification`.
+
+
 :dp:`fls_aXhHQFNr7kaf`
 A :dt:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
+
+:dp:`fls_FSLbFDEHVPd1`
+:gsee:`function pointer type parameter` See :s:`FunctionPointerTypeParameter`.
+
 
 :dp:`fls_5dd7icjcl3nt`
 An :dt:`unsafe function pointer type` is a function pointer type subject to
@@ -1224,6 +1304,10 @@ An :dt:`unsafe function pointer type` is a function pointer type subject to
 :dp:`fls_B0SMXRqQMS1E`
 A :dt:`variadic part` indicates the presence of :t:`C`-like optional
 parameters.
+
+:dp:`fls_LxTfZZC2OXii`
+:gsee:`variadic part` See :s:`VariadicPart`.
+
 
 :dp:`fls_hbn1l42xmr3h`
 A :t:`variadic part` can only be used in a :t:`variadic function`.
@@ -1265,6 +1349,10 @@ Raw Pointer Types
 
 :dp:`fls_rpbhr0xukbx9`
 A :dt:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+
+:dp:`fls_FwtPpNF1xVgo`
+:gsee:`raw pointer type` See :s:`RawPointerTypeSpecification`.
+
 
 :dp:`fls_7c5w2c2n2nhb`
 A :dt:`raw pointer` is a pointer of a :t:`raw pointer type`.
@@ -1308,6 +1396,10 @@ Reference Types
 
 :dp:`fls_twhq24s8kchh`
 A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
+
+:dp:`fls_AmPkICc5IPux`
+:gsee:`reference type` See :s:`ReferenceTypeSpecification`.
+
 
 :dp:`fls_w4NbA7WhZfR2`
 A :dt:`shared reference type` is a :t:`reference type` not subject to
@@ -1389,6 +1481,10 @@ Impl Trait Types
 An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is known at compile time.
 
+:dp:`fls_vGx1c1o4du1f`
+:gsee:`impl trait type` See :s:`ImplTraitTypeSpecification`, :s:`ImplTraitTypeSpecificationOneBound`.
+
+
 :dp:`fls_ieyqx5vzas2m`
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
@@ -1417,6 +1513,10 @@ An :t:`impl trait type` shall not contain :t:`[opt-out trait bound]s`.
 
 :dp:`fls_69hqMjvNno9u`
 An :dt:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
+
+:dp:`fls_OVflCtS42Tgs`
+:gsee:`use capture` See :s:`UseCaptures`.
+
 
 :dp:`fls_KgH6c5cC4S0G`
 An :t:`anonymous return type` that does not specify a list of :t:`[use capture]s` implicitly :t:`[use capture]s` all :t:`[type parameter]s` and :t:`[constant parameter]s` that are in :t:`scope`.
@@ -1453,6 +1553,12 @@ Trait Object Types
 :dp:`fls_sgrvona1nb6h`
 A :dt:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is not known at compile time.
+
+:dp:`fls_mAvdsNmnd57h`
+:gsee:`trait object type` See :s:`TraitObjectTypeSpecification`, :s:`TraitObjectTypeSpecificationOneBound`.
+
+:dp:`fls_M1n2O3p4Q5r6`
+:gsee:`trait object type` See :s:`TraitObjectTypeSpecification`,
 
 :dp:`fls_eWac7zOda3lh`
 The :dt:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
@@ -1508,6 +1614,10 @@ Inferred Types
 :dp:`fls_xdtgr5toulpb`
 An :dt:`inferred type` is a placeholder for a :t:`type` deduced by
 :t:`type inference`.
+
+:dp:`fls_vOONWdWVxuMP`
+:gsee:`inferred type` See :s:`InferredType`.
+
 
 :dp:`fls_3abhsuaa8nas`
 An :t:`inferred type` shall not appear in the following positions:
@@ -1572,6 +1682,10 @@ Never Type
 The :dt:`never type` is a :t:`type` that represents the result of a computation
 that never completes.
 
+:dp:`fls_8lnTD25x5CBa`
+:gsee:`never type` See :s:`NeverType`.
+
+
 :dp:`fls_xmtc10qzw0ui`
 The :t:`never type` has no :t:`[value]s`.
 
@@ -1604,6 +1718,10 @@ Parenthesized Types
 A :dt:`parenthesized type` is a :t:`type` that disambiguates the interpretation
 of :t:`[lexical element]s`.
 
+:dp:`fls_SmVTWaXwFyqV`
+:gsee:`parenthesized type` See :s:`ParenthesizedTypeSpecification`.
+
+
 .. rubric:: Examples
 
 .. code-block:: rust
@@ -1631,9 +1749,17 @@ Type Aliases
 :dp:`fls_bibigic4jjad`
 A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 
+:dp:`fls_M9eFXEWCecDd`
+:gsee:`type alias` See :s:`TypeAliasDeclaration`.
+
+
 :dp:`fls_2uLBgKLYXoJV`
 An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
 :t:`name` for.
+
+:dp:`fls_p69yyMuPiVXR`
+:gsee:`initialization type` See :s:`InitializationType`.
+
 
 :dp:`fls_rosdkeck5ax2`
 A :t:`type alias` shall not have a :s:`TypeBoundList` unless it is an
@@ -1805,8 +1931,8 @@ Type Representation
 between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
 does not change the :t:`layout` of the :t:`[field]s` themselves.
 
-:dp:`fls_5n2x8q1j7r4m`
-For :dt:`representation`, see :t:`type representation`.
+:dp:`fls_W7x8Y9z0A1b2`
+:gsee:`representation` See :t:`type representation`.
 
 :dp:`fls_9dhnanv21y9z`
 :t:`Type representation` is classified into:
@@ -2051,9 +2177,6 @@ for compatibility between two :t:`[type]s` during :t:`method resolution`.
 A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
 ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
-
-:dp:`fls_m4p8k1v7t2qa`
-Two :t:`[type]s` are :dt:`unifiable` when they :t:`unify`.
 
 :dp:`fls_v7k2m9p1t4qa`
 A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
@@ -3031,6 +3154,10 @@ Traits
 A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
+:dp:`fls_rmHEhnnmhyde`
+:gsee:`trait` See :s:`TraitDeclaration`.
+
+
 :dp:`fls_q9m2v7k1t4pa`
 An :dt:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
 
@@ -3042,6 +3169,10 @@ the compiler.
 A :dt:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of a :t:`trait`.
+
+:dp:`fls_yobkm82JeVze`
+:gsee:`trait body` See :s:`TraitBody`.
+
 
 :dp:`fls_Y28596CVBzDG`
 :dt:`Self` is either an implicit :t:`type parameter` in :t:`[trait]s` or an
@@ -3234,6 +3365,10 @@ Trait and Lifetime Bounds
 A :dt:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
 set of possible :t:`[generic substitution]s`.
 
+:dp:`fls_2cioSEVi350v`
+:gsee:`bound` See :s:`TypeBound`.
+
+
 :dp:`fls_BqLPVaSyyXRG`
 A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
 :t:`type alias` unless it is an :t:`associated item`.
@@ -3242,9 +3377,17 @@ A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
 A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
 :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
+:dp:`fls_FSZAYS0LuPhO`
+:gsee:`lifetime bound` See :s:`LifetimeIndication`.
+
+
 :dp:`fls_knut10hoz6wc`
 A :dt:`trait bound` is a :t:`bound` that imposes a constraint on the
 :t:`[trait]s` of :t:`[generic parameter]s`.
+
+:dp:`fls_W1VIRqwNbf9y`
+:gsee:`trait bound` See :s:`TraitBound`.
+
 
 :dp:`fls_sf6zg0ez9hbb`
 A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
@@ -3254,6 +3397,10 @@ A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
 A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
 list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
+
+:dp:`fls_dEgJgV7ADVSh`
+:gsee:`higher-ranked trait bound` See :s:`ForGenericParameterList`.
+
 
 :dp:`fls_AzuZmR9DXSQh`
 An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
@@ -3322,6 +3469,10 @@ Lifetimes
 
 :dp:`fls_nne91at3143t`
 A :dt:`lifetime` specifies the expected longevity of a :t:`value`.
+
+:dp:`fls_3RQ6FIfxqVT2`
+:gsee:`lifetime` See :s:`Lifetime`.
+
 
 :dp:`fls_vbclxg9dq4yo`
 A :t:`lifetime bound` shall apply to :t:`[type]s` and other :t:`[lifetime]s`.
@@ -3548,9 +3699,6 @@ Lifetime Elision
 :dt:`Lifetime elision` is a set of rules that automatically insert
 :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
 elided in the source code.
-
-:dp:`fls_HvZUV1WQH4GA`
-For :dt:`elided`, see :t:`elided lifetime`.
 
 :dp:`fls_t4m7k2v9q1pa`
 An :dt:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
@@ -3816,3 +3964,9 @@ its :t:`lifetime` :t:`elided` form is
 :dp:`fls_vImY3BrpNvNY`
 where ``'a``, ``'b``, and ``'c`` are anonymous :t:`[lifetime parameter]s` that
 cannot be named by user-written code.
+
+:dp:`fls_rxErpudSvP7O`
+:gsee:`elided` For :dt:`elided`, see :t:`elided lifetime`.
+
+:dp:`fls_K3y8Tzt6e2Qa`
+:gsee:`unifiable` For :dt:`unifiable`, see :t:`unify`.

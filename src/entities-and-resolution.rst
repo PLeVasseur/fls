@@ -34,8 +34,16 @@ usually via a :t:`field access expression` or a :t:`path`.
 An :dt:`item` is the most basic semantic element in program text. An :t:`item`
 defines the compile- and run-time semantics of a program.
 
+:dp:`fls_Hxqsae2JvsFX`
+:gsee:`item` See :s:`Item`.
+
+
 :dp:`fls_40d2g0hvq2il`
 A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
+
+:dp:`fls_9CqZKESQJ5De`
+:gsee:`name` See :s:`Name`.
+
 
 :dp:`fls_6n2v9m1k4c0p`
 :dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
@@ -167,15 +175,27 @@ A :dt:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
+:dp:`fls_IpSbnG0bz2vc`
+:gsee:`crate public modifier` See :s:`CratePublicModifier`.
+
+
 :dp:`fls_tnh7o3pb4e22`
 A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
 to a :t:`simple path public modifier` where the :t:`simple path` denotes
 :t:`keyword` ``self``.
 
+:dp:`fls_28y5J1RFfw3i`
+:gsee:`self public modifier` See :s:`SelfPublicModifier`.
+
+
 :dp:`fls_yymgpyi67dty`
 A :dt:`simple path public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the provided :t:`simple path` only.
+
+:dp:`fls_zHi1XLca6vnq`
+:gsee:`simple path public modifier` See :s:`SimplePathPublicModifier`.
+
 
 :dp:`fls_hc121mxknq03`
 The :t:`simple path` of a :t:`simple path public modifier` shall start
@@ -191,11 +211,19 @@ itself.
 A :dt:`simple public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility`.
 
+:dp:`fls_zsVyMi9VeRaD`
+:gsee:`simple public modifier` See :s:`SelfPublicModifier`.
+
+
 :dp:`fls_quzvhzpr0124`
 A :dt:`super public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the parent :t:`module` only. A
 :t:`super public modifier` is equivalent to a :t:`simple path public modifier`
 where the :t:`simple path` denotes :t:`keyword` ``super``.
+
+:dp:`fls_l7dP3RDBaZdD`
+:gsee:`super public modifier` See :s:`SuperPublicModifier`.
+
 
 :dp:`fls_utgjx6l5zwfl`
 An external :t:`item`, a :t:`field`, or an :t:`item` that appears without a
@@ -304,6 +332,10 @@ A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
 :dp:`fls_y1z7kougmahd`
 A :dt:`path segment` is an element of a :t:`path`.
 
+:dp:`fls_2Uv5zAprgzDw`
+:gsee:`path segment` See :s:`PathSegment`, :s:`SimplePathSegment`, :s:`TypePathSegment`.
+
+
 :dp:`fls_8q8nqfpSz7Ly`
 A :t:`path` is subject to :t:`path resolution`.
 
@@ -330,6 +362,10 @@ A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
 :t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
 above.
+
+:dp:`fls_npY4IfsqzQPc`
+:gsee:`simple path` See :s:`SimplePath`.
+
 
 :dp:`fls_YnUsdSM4x9eq`
 A :dt:`path prefix` is a :t:`path` with its last :t:`path segment` and
@@ -369,12 +405,20 @@ A :t:`path expression` is subject to :t:`path expression resolution`.
 :dp:`fls_h2zikgmazoxx`
 A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
+:dp:`fls_ZgPQBckkyjma`
+:gsee:`type path` See :s:`TypePath`.
+
+
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
 
 :dp:`fls_e65q3iz50j6a`
 A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
 :t:`qualified type`.
+
+:dp:`fls_Tyj9cNVK5npL`
+:gsee:`qualifying trait` See :s:`QualifyingTrait`.
+
 
 :dp:`fls_Ai1jN5a8h3Dz`
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
@@ -383,6 +427,10 @@ A :t:`qualifying trait` shall resolve to a :t:`trait`.
 A :dt:`qualified type` is a :t:`type` that is restricted to a set of
 :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
 :t:`qualifying trait`.
+
+:dp:`fls_bg2z6w2pd3aS`
+:gsee:`qualified type` See :s:`QualifiedType`.
+
 
 :dp:`fls_qkYF2J7GVah8`
 A :t:`qualified type` shall resolve to a :t:`type`.
@@ -394,9 +442,17 @@ A :t:`qualified type` shall implement its related :t:`qualifying trait`.
 A :dt:`qualified path expression` is a :t:`path expression` that resolves
 through a :t:`qualified type`.
 
+:dp:`fls_mkohv9wzdHUS`
+:gsee:`qualified path expression` See :s:`QualifiedPathExpression`.
+
+
 :dp:`fls_huynsyx13gsz`
 A :dt:`qualified type path` is a :t:`type path` that resolves through a
 :t:`qualified type`.
+
+:dp:`fls_GLZOSuldYUd4`
+:gsee:`qualified type path` See :s:`QualifiedTypePath`.
+
 
 :dp:`fls_RZvIsApi4WQm`
 An :dt:`associated type projection` is a :t:`qualified type path` of the form
@@ -1034,9 +1090,17 @@ A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
 :t:`use import` resides.
 
+:dp:`fls_g4qXC5fOEeis`
+:gsee:`use import` See :s:`UseImport`.
+
+
 :dp:`fls_sxo1jb25pl8a`
 A :dt:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
 or a :t:`nesting import`.
+
+:dp:`fls_h7Bv7yhldK9G`
+:gsee:`simple path prefix` See :s:`SimplePathPrefix`.
+
 
 :dp:`fls_WAA4WmohGu6T`
 An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
@@ -1070,10 +1134,18 @@ A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>
 it refers to into scope, optionally with a different
 :t:`name` than they are declared with by using a :t:`renaming`.
 
+:dp:`fls_ZPVD8zWwmvra`
+:gsee:`simple import` See :s:`SimpleImport`.
+
+
 :dp:`fls_v3a6y2ze44v2`
 A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
 exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
 into :t:`scope`.
+
+:dp:`fls_70IIr2aX99B0`
+:gsee:`glob import` See :s:`GlobImport`.
+
 
 :dp:`fls_JHU0ersYB6eL`
 An :t:`import path prefix` shall resolve to a :t:`module` or :t:`enum`.
@@ -1127,6 +1199,10 @@ a :t:`name`.
 :dp:`fls_ldr7tsuqw34s`
 A :dt:`nesting import` is a :t:`use import` that provides a common
 :t:`simple path prefix` for its nested :t:`[use import]s`.
+
+:dp:`fls_24YJ1nWFXWbh`
+:gsee:`nesting import` See :s:`NestingImport`.
+
 
 :dp:`fls_iNUBX5fJAI1N`
 A :t:`glob import` outside of a :t:`nesting import` without a :t:`simple path
@@ -1293,9 +1369,17 @@ that is visible from the location of the :t:`field access expression`
 An :dt:`indexed field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an index.
 
+:dp:`fls_DGVoe8aE44T1`
+:gsee:`indexed field selector` See :s:`IndexedFieldSelector`.
+
+
 :dp:`fls_NHqdt7U8EoZb`
 A :dt:`named field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an :t:`identifier`.
+
+:dp:`fls_ULLWbSN1gizi`
+:gsee:`named field selector` See :s:`NamedFieldSelector`.
+
 
 :dp:`fls_jzoon4x89zp7`
 A :dt:`candidate indexed field` is a :t:`candidate field` whose position in the

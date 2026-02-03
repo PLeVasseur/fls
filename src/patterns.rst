@@ -41,15 +41,31 @@ Patterns
 A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
 the criteria of the :t:`pattern`.
 
+:dp:`fls_hEbczHgQauAD`
+:gsee:`pattern` See :s:`Pattern`.
+
+
 :dp:`fls_VQMmveZUfNTn`
 An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
+
+:dp:`fls_VkB7DzuCxN5J`
+:gsee:`or-pattern` See :s:`Pattern`.
+
 
 :dp:`fls_mp6i4blzexnu`
 A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
+:dp:`fls_PHMmj4KF1RE4`
+:gsee:`pattern-without-alternation` See :s:`PatternWithoutAlternation`.
+
+
 :dp:`fls_JJ1fJa1SsaWh`
 A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
+
+:dp:`fls_NveBf0O1yACT`
+:gsee:`pattern-without-range` See :s:`PatternWithoutRange`.
+
 
 :dp:`fls_6xx34zr069bj`
 A :dt:`subpattern` is a :t:`pattern` nested within another pattern.
@@ -157,9 +173,17 @@ Identifier Patterns
 An :dt:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
+:dp:`fls_4rV3Vdoo0GQg`
+:gsee:`identifier pattern` See :s:`IdentifierPattern`.
+
+
 :dp:`fls_vy9uw586wy0d`
 A :dt:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
 :t:`identifier pattern`.
+
+:dp:`fls_BiRYn9L2Co2p`
+:gsee:`bound pattern` See :s:`BoundPattern`.
+
 
 :dp:`fls_hqwt3fvr063y`
 An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
@@ -277,9 +301,17 @@ Literal Patterns
 :dp:`fls_pah15qa54irs`
 A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
+:dp:`fls_BQnvFHeBXcX0`
+:gsee:`literal pattern` See :s:`LiteralPattern`.
+
+
 :dp:`fls_COQKJC0dvtNO`
 A :dt:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
 literal`.
+
+:dp:`fls_FCE7fS7uiCht`
+:gsee:`numeric literal pattern` See :s:`LiteralPattern`.
+
 
 :dp:`fls_JP8YSbxSN0Ym`
 A :t:`numeric literal pattern`'s :t:`numeric literal` value shall not be a IEEE
@@ -320,6 +352,10 @@ Parenthesized Patterns
 :dp:`fls_kvqzmt7my5dh`
 A :dt:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
 its :t:`[subpattern]s`.
+
+:dp:`fls_aZAbXdE2VpPt`
+:gsee:`parenthesized pattern` See :s:`ParenthesizedPattern`.
+
 
 :dp:`fls_mrjhpiq5refe`
 A :t:`parenthesized pattern` is an :t:`irrefutable pattern` when its nested
@@ -367,6 +403,10 @@ Path Patterns
 :dp:`fls_1crq0mexo5r1`
 A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
+
+:dp:`fls_JVZ121QlbVBq`
+:gsee:`path pattern` See :s:`PathPattern`.
+
 
 :dp:`fls_xz5otkhogn31`
 A :t:`path pattern` expressed as a :t:`path expression` shall refer to either
@@ -482,32 +522,64 @@ Range Patterns
 A :dt:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
+:dp:`fls_hyzp76hAfjUA`
+:gsee:`range pattern` See ``RangePattern``.
+
+
 :dp:`fls_jhchm7dy927k`
 A :dt:`half-open range pattern` is a :t:`range pattern` with only a
 :t:`range pattern low bound`.
+
+:dp:`fls_ERmLTamFgMl7`
+:gsee:`half-open range pattern` See :s:`HalfOpenRangePattern`.
+
 
 :dp:`fls_q86j23iiqv8w`
 An :dt:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
+:dp:`fls_7lRcv6jwzx04`
+:gsee:`inclusive range pattern` See :s:`InclusiveRangePattern`.
+
+
 :dp:`fls_3PyquOKjA7SI`
 An :dt:`exclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
+
+:dp:`fls_yBbOrsumM7uZ`
+:gsee:`exclusive range pattern` See :s:`ExclusiveRangePattern`.
+
 
 :dp:`fls_akf9x5r6e0ta`
 An :dt:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
 to express an :t:`inclusive range pattern`.
 
+:dp:`fls_pJudx0bbYmgM`
+:gsee:`obsolete range pattern` See :s:`ObsoleteRangePattern`.
+
+
 :dp:`fls_vrpr6ttpfpal`
 A :dt:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
+
+:dp:`fls_xQvaf6IuJ7s4`
+:gsee:`range pattern bound` See :s:`RangePatternBound`.
+
 
 :dp:`fls_nk48gregn3me`
 A :dt:`range pattern low bound` is a :t:`range pattern bound` that specifies the
 start of a range.
 
+:dp:`fls_cHDgR9LuL97x`
+:gsee:`range pattern low bound` See :s:`RangePatternLowBound`.
+
+
 :dp:`fls_83v1xqbebs58`
 A :dt:`range pattern high bound` is a :t:`range pattern bound` that specifies the
 end of a range.
+
+:dp:`fls_bcnNREv0efPm`
+:gsee:`range pattern high bound` See :s:`RangePatternHighBound`.
+
 
 :dp:`fls_2hpuccwh2xml`
 A :t:`half-open range pattern` shall appear within a :t:`parenthesized pattern`
@@ -584,6 +656,10 @@ Reference Patterns
 A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
 is being matched.
 
+:dp:`fls_wbtQY1T72yvj`
+:gsee:`reference pattern` See :s:`ReferencePattern`.
+
+
 :dp:`fls_x0bmzl1315gq`
 A :t:`reference pattern` is an :t:`irrefutable pattern` when its nested :t:`pattern` itself is an :t:`irrefutable pattern`.
 
@@ -632,6 +708,10 @@ Rest Patterns
 :dp:`fls_eso51epfofxb`
 A :dt:`rest pattern` is a :t:`pattern` that matches zero or more elements that
 have not already been matched.
+
+:dp:`fls_Q2XWsOFlhPMF`
+:gsee:`rest pattern` See :s:`RestPattern`.
+
 
 :dp:`fls_5a75a2y43uev`
 A :t:`rest pattern` shall appear at most once within a :t:`slice pattern`, an
@@ -698,6 +778,10 @@ Slice Patterns
 A :dt:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed size
 and :t:`[slice]s` of dynamic size.
 
+:dp:`fls_swOWFRk1LMxU`
+:gsee:`slice pattern` See :s:`SlicePattern`.
+
+
 :dp:`fls_h6x9xlxi7y5n`
 A :t:`slice pattern` is an :t:`irrefutable pattern` when it refers to:
 
@@ -750,9 +834,17 @@ Struct Patterns
 A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
+:dp:`fls_4cv1NEfW9xnp`
+:gsee:`struct pattern` See :s:`StructPattern`.
+
+
 :dp:`fls_6o3x101wo478`
 A :dt:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
 deconstructed by a :t:`struct pattern`.
+
+:dp:`fls_mOvUdsKJVlCI`
+:gsee:`deconstructee` See :s:`Deconstructee`.
+
 
 :dp:`fls_k9zih9s0oe5h`
 A :t:`struct pattern` is interpreted based on the :t:`deconstructee`. It is a
@@ -820,6 +912,10 @@ Record Struct Patterns
 A :dt:`record struct pattern` is a :t:`pattern` that matches a
 :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
+:dp:`fls_BZwQhM13ULee`
+:gsee:`record struct pattern` See :s:`RecordStructPattern`.
+
+
 :dp:`fls_3px4oiweg9dm`
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :t:`enum variant`, a :t:`struct type`, or a :t:`union type`.
@@ -827,6 +923,10 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :dp:`fls_mnh35ehva8tx`
 An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
 a :t:`field`.
+
+:dp:`fls_qJSzNxtmkwFw`
+:gsee:`indexed deconstructor` See :s:`IndexedDeconstructor`.
+
 
 :dp:`fls_p2rjnlbvifaa`
 An :t:`indexed deconstructor` matches a :t:`field` of the :t:`deconstructee`
@@ -842,6 +942,10 @@ matched :t:`field` shall be :t:`unifiable`.
 A :dt:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
 a :t:`field`.
 
+:dp:`fls_SlX1v6T2DP3r`
+:gsee:`named deconstructor` See :s:`NamedDeconstructor`.
+
+
 :dp:`fls_qu3dvfdq6oy7`
 A :t:`named deconstructor` matches a :t:`field` of the :t:`deconstructee` when
 its :t:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
@@ -855,6 +959,10 @@ matched :t:`field` shall be :t:`unifiable`.
 A :dt:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
 of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
 :t:`binding`.
+
+:dp:`fls_5LUlWFN4oxIf`
+:gsee:`shorthand deconstructor` See :s:`ShorthandDeconstructor`.
+
 
 :dp:`fls_jTh9Hur0qsIb`
 A :t:`shorthand deconstructor` with :t:`keyword` ``mut`` yields a
@@ -1032,6 +1140,10 @@ Tuple Struct Patterns
 A :dt:`tuple struct pattern` is a :t:`pattern` that matches a
 :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
+:dp:`fls_hzwUoBCyPpvM`
+:gsee:`tuple struct pattern` See :s:`TupleStructPattern`.
+
+
 :dp:`fls_t1mrijw16k9a`
 The :t:`deconstructee` of a :t:`tuple struct pattern` shall resolve to a
 :t:`tuple enum variant` or a :t:`tuple struct type`.
@@ -1114,6 +1226,10 @@ Tuple Patterns
 A :dt:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which satisfies
 all criteria defined by its :t:`[subpattern]s`.
 
+:dp:`fls_8p9oWxJd1bD3`
+:gsee:`tuple pattern` See :s:`TuplePattern`.
+
+
 :dp:`fls_xk8udu4k61kj`
 A :t:`tuple pattern` is an :t:`irrefutable pattern` when all of its
 :t:`[subpattern]s` are :t:`[irrefutable pattern]s`.
@@ -1193,6 +1309,10 @@ Underscore Patterns
 :dp:`fls_dreny9e0ei6r`
 An :dt:`underscore pattern` is a :t:`pattern` that matches any single :t:`value`.
 
+:dp:`fls_hm7ddZBwWNOy`
+:gsee:`underscore pattern` See :s:`UnderscorePattern`.
+
+
 :dp:`fls_42fye1v0th8l`
 An :t:`underscore pattern` is an :t:`irrefutable pattern`.
 
@@ -1231,6 +1351,10 @@ A :dt:`binding pattern` is either an :t:`identifier pattern` or a
 :dp:`fls_vnh9wfrvumdz`
 A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
 :t:`name`.
+
+:dp:`fls_pLlf6ceUpQZI`
+:gsee:`binding` See :s:`Binding`.
+
 
 :dp:`fls_7kYDVf4rLQK5`
 A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.

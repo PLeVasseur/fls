@@ -29,9 +29,6 @@ immediate :t:`undefined behavior`.
 An :dt:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.
 
-:dp:`fls_1m8v4k2t9qpa`
-For :dt:`unsafe Rust`, see :t:`[unsafe operation]s`.
-
 :dp:`fls_pfhmcafsjyf7`
 The :t:`[unsafe operation]s` are:
 
@@ -59,3 +56,6 @@ An :dt:`unsafe context` is either an :t:`unsafe block` or an
 
 :dp:`fls_ybnpe7ppq1vh`
 An :t:`unsafe operation` shall be used only within an :t:`unsafe context`.
+
+:dp:`fls_uLXIFup49ytu`
+:gsee:`unsafe Rust` For :dt:`unsafe Rust`, see :t:`[unsafe operation]s`.

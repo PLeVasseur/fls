@@ -74,8 +74,8 @@ An :dt:`atomic type` is a :t:`type` defined in :t:`module`
 :std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
 communication between threads.
 
-:dp:`fls_7r2m9q4t1c6v`
-For :dt:`atomic`, see :t:`atomic type`.
+:dp:`fls_lZXpH6rYkApU`
+:gsee:`atomic` See :t:`atomic type`.
 
 :dp:`fls_wn4ynaio8u47`
 :t:`[Atomic type]s` are related to :t:`[type]s` as follows:

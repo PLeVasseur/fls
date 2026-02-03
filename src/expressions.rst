@@ -78,16 +78,32 @@ A :ds:`SubjectLetExpression` is any expression in category
 An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
+:dp:`fls_uSnQlWia5SIn`
+:gsee:`expression` See :s:`Expression`.
+
+
 :dp:`fls_xmklb3070sp`
 An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
 :t:`block expression`.
+
+:dp:`fls_GSmRVl742OkK`
+:gsee:`expression-with-block` See :s:`ExpressionWithBlock`.
+
 
 :dp:`fls_p15oeage4j0e`
 An :dt:`expression-without-block` is an :t:`expression` whose structure does not
 involve a :t:`block expression`.
 
+:dp:`fls_97XffKq2jLAV`
+:gsee:`expression-without-block` See :s:`ExpressionWithoutBlock`.
+
+
 :dp:`fls_gwgttltgjma4`
 An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
+
+:dp:`fls_4qZGwVa1LnAv`
+:gsee:`operand` See :s:`Operand`.
+
 
 :dp:`fls_2y7n8m4q1v9c`
 A :dt:`subexpression` is an :t:`expression` nested within another
@@ -97,9 +113,17 @@ A :dt:`subexpression` is an :t:`expression` nested within another
 A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
 
+:dp:`fls_LuQALs2fveDI`
+:gsee:`left operand` See :s:`LeftOperand`.
+
+
 :dp:`fls_qxdpyf4u3hbz`
 A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
+
+:dp:`fls_3eDOGgzZ2Cgq`
+:gsee:`right operand` See :s:`RightOperand`.
+
 
 :dp:`fls_yOW2wnLPzlPy`
 A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
@@ -112,9 +136,17 @@ A :dt:`unary operator` is an operator that operates on one :t:`operand`.
 A :dt:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
 :t:`[if expression]s`, and :t:`[match expression]s`.
 
+:dp:`fls_hADvVuouVDej`
+:gsee:`subject expression` See :s:`SubjectExpression`.
+
+
 :dp:`fls_a243nclqqjlu`
 A :dt:`subject let expression` is an :t:`expression` that controls
 :t:`[if let expression]s` and :t:`[while let loop]s`.
+
+:dp:`fls_dUnzqy5K6ZPC`
+:gsee:`subject let expression` See :s:`SubjectLetExpression`.
+
 
 .. rubric:: Dynamic Semantics
 
@@ -122,8 +154,8 @@ A :dt:`subject let expression` is an :t:`expression` that controls
 :dt:`Evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
 
-:dp:`fls_47a9kz2nq5l8`
-For :dt:`evaluated`, see :t:`evaluation`.
+:dp:`fls_UP03mkzzz5kj`
+:gsee:`evaluated` See :t:`evaluation`.
 
 .. _fls_isyftqu120l:
 
@@ -607,6 +639,10 @@ Literal Expressions
 :dp:`fls_rbwwczom3agt`
 A :dt:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
 
+:dp:`fls_iTVVsACXspr4`
+:gsee:`literal expression` See :s:`LiteralExpression`.
+
+
 :dp:`fls_w30su9x4q13r`
 The :t:`type` of a :t:`literal expression` is the :t:`type` of the corresponding
 :t:`literal`.
@@ -645,6 +681,10 @@ Path Expressions
 
 :dp:`fls_gvanx4874ycy`
 A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
+
+:dp:`fls_Z62hljqjPJ0k`
+:gsee:`path expression` See :s:`PathExpression`.
+
 
 :dp:`fls_EOkrcIj9CuhV`
 A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
@@ -693,6 +733,10 @@ Block Expressions
 :dp:`fls_nf65p0l0v0gr`
 A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
 and :t:`[statement]s`.
+
+:dp:`fls_ngrtdw5Ciy63`
+:gsee:`block expression` See :s:`BlockExpression`.
+
 
 :dp:`fls_tn3hj7k2lliu`
 A :dt:`tail expression` is the last :t:`expression` within a :t:`block
@@ -778,8 +822,9 @@ An :dt:`async block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``async`` and encapsulates behavior which is executed in
 an asynchronous manner.
 
-:dp:`fls_DnCb6ei84CeI`
-An :dt:`async block` is an :t:`async block expression`.
+:dp:`fls_Vcu4sgrhwMyq`
+:gsee:`async block expression` See :s:`AsyncBlockExpression`.
+
 
 :dp:`fls_h36F1drHlHkH`
 A :dt:`control flow boundary` is a :t:`construct` that provides the target of
@@ -909,12 +954,13 @@ Unsafe Blocks
 
 .. rubric:: Legality Rules
 
-:dp:`fls_p1v7k4m2t9qa`
-An :dt:`unsafe block` is an :t:`unsafe block expression`.
-
 :dp:`fls_2az5huhcxzzy`
 An :dt:`unsafe block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``unsafe``.
+
+:dp:`fls_3k6jxLE7yX7z`
+:gsee:`unsafe block expression` See :s:`UnsafeBlockExpression`.
+
 
 :dp:`fls_5ucvvja4dzoc`
 An :t:`unsafe block expression` allows :t:`unsafety`.
@@ -969,6 +1015,10 @@ Operator Expressions
 :dp:`fls_ursc5ynymoy`
 An :dt:`operator expression` is an :t:`expression` that involves an operator.
 
+:dp:`fls_R93uVWLKjLH6`
+:gsee:`operator expression` See :s:`OperatorExpression`.
+
+
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_lSxXWxJn0vMO`
@@ -992,6 +1042,10 @@ Borrow Expression
 A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
 its :t:`operand` and creates a :t:`reference` to the memory location of its
 :t:`operand`.
+
+:dp:`fls_VUGg9eBLHe1W`
+:gsee:`borrow expression` See :s:`BorrowExpression`.
+
 
 :dp:`fls_r7ix8webgqlm`
 An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
@@ -1061,6 +1115,10 @@ Raw Borrow Expression
 :dp:`fls_TS6DvMon5h27`
 A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
 
+:dp:`fls_blVOShKQNLuL`
+:gsee:`raw borrow expression` See :s:`RawBorrowExpression`.
+
+
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
 
@@ -1120,6 +1178,10 @@ Dereference Expression
 :dp:`fls_f6wktzofzdn1`
 A :dt:`dereference expression` is an :t:`expression` that obtains the pointed-to
 memory location of its :t:`operand`.
+
+:dp:`fls_NG62FEOfTU58`
+:gsee:`dereference expression` See :s:`DereferenceExpression`.
+
 
 :dp:`fls_aOXtV5sEUGxJ`
 A :dt:`dereference` is the memory location produced by evaluating a
@@ -1210,6 +1272,10 @@ An :dt:`error propagation expression` is an :t:`expression` that either evaluate
 to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
 flow boundary.
 
+:dp:`fls_piS0gFis4COD`
+:gsee:`error propagation expression` See :s:`ErrorPropagationExpression`.
+
+
 :dp:`fls_mq2h4seoxah`
 An :t:`error propagation expression` shall appear within a :t:`control flow
 boundary`.
@@ -1291,6 +1357,10 @@ Negation Expression
 
 :dp:`fls_pfa81kv2mru8`
 A :dt:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+
+:dp:`fls_Ex3cimpchXwu`
+:gsee:`negation expression` See :s:`NegationExpression`.
+
 
 :dp:`fls_plcut8vzdwox`
 The :t:`type` of the :t:`operand` of a :t:`negation expression` with a
@@ -1434,11 +1504,19 @@ Arithmetic Expressions
 An :dt:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
 from two :t:`[operand]s` using arithmetic.
 
+:dp:`fls_yJkJndNxShRf`
+:gsee:`arithmetic expression` See :s:`ArithmeticExpression`.
+
+
 :dp:`fls_I6ELmHXM1xv4`
 An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
 
 :dp:`fls_kr8Opj3c7uvb`
 An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
+
+:dp:`fls_zCGVLXGJ862D`
+:gsee:`addition expression` See :s:`AdditionExpression`.
+
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
@@ -1455,6 +1533,10 @@ The :t:`value` of an :t:`addition expression` is the result of
 
 :dp:`fls_dstca76y08ge`
 A :dt:`division expression` is an :t:`arithmetic expression` that uses division.
+
+:dp:`fls_tGNLN32PqYde`
+:gsee:`division expression` See :s:`DivisionExpression`.
+
 
 :dp:`fls_f1puss9t4btz`
 The :t:`type` of the :t:`left operand` of a :t:`division expression` shall
@@ -1473,6 +1555,10 @@ The :t:`value` of a :t:`division expression` is the result of
 A :dt:`multiplication expression` is an :t:`arithmetic expression` that uses
 multiplication.
 
+:dp:`fls_Pem3wLQ89DjE`
+:gsee:`multiplication expression` See :s:`MultiplicationExpression`.
+
+
 :dp:`fls_hrml95g2txcj`
 The :t:`type` of the :t:`left operand` of a :t:`multiplication expression`
 shall implement the :std:`core::ops::Mul` :t:`trait` where the :t:`type` of the
@@ -1490,6 +1576,10 @@ The :t:`value` of a :t:`multiplication expression` is the result of
 A :dt:`remainder expression` is an :t:`arithmetic expression` that uses remainder
 division.
 
+:dp:`fls_TStOLbhauzxT`
+:gsee:`remainder expression` See :s:`RemainderExpression`.
+
+
 :dp:`fls_8fbhreyynhid`
 The :t:`type` of the :t:`left operand` of a :t:`remainder expression` shall
 implement the :std:`core::ops::Rem` :t:`trait` where the :t:`type` of the
@@ -1506,6 +1596,10 @@ The :t:`value` of a :t:`remainder expression` is the result of
 :dp:`fls_aalxhbvu8kdi`
 A :dt:`subtraction expression` is an :t:`arithmetic expression` that uses
 subtraction.
+
+:dp:`fls_leLqUvUs5lgi`
+:gsee:`subtraction expression` See :s:`SubtractionExpression`.
+
 
 :dp:`fls_fjcv1nm8tlgf`
 The :t:`type` of the :t:`left operand` of a :t:`subtraction expression` shall
@@ -1694,8 +1788,16 @@ Bit Expressions
 A :dt:`bit expression` is an :t:`expression` that computes a :t:`value` from two
 :t:`[operand]s` using bit arithmetic.
 
+:dp:`fls_hE6YgEJ5fMIz`
+:gsee:`bit expression` See :s:`BitExpression`.
+
+
 :dp:`fls_f6mmva3lbj1i`
 A :dt:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
+
+:dp:`fls_MijmyXOJZWFP`
+:gsee:`bit and expression` See :s:`BitAndExpression`.
+
 
 :dp:`fls_cmowpfrcelke`
 The :t:`type` of the :t:`left operand` of a :t:`bit and expression` shall
@@ -1712,6 +1814,10 @@ The :t:`value` of a :t:`bit and expression` is the result of
 
 :dp:`fls_3136k1y6x3cu`
 A :dt:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+
+:dp:`fls_UvnLvivzGNHh`
+:gsee:`bit or expression` See :s:`BitOrExpression`.
+
 
 :dp:`fls_oo2ynd8e1ys6`
 The :t:`type` of the :t:`left operand` of a :t:`bit or expression` shall
@@ -1730,6 +1836,10 @@ The :t:`value` of a :t:`bit or expression` is the result of
 A :dt:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
 arithmetic.
 
+:dp:`fls_gc6ro3bwj4d3`
+:gsee:`bit xor expression` See :s:`BitXorExpression`.
+
+
 :dp:`fls_fnywefl9nty2`
 The :t:`type` of the :t:`left operand` of a :t:`bit xor expression` shall
 implement the :std:`core::ops::BitXor` :t:`trait` where the :t:`type` of the
@@ -1747,6 +1857,10 @@ The :t:`value` of a :t:`bit xor expression` is the result of
 A :dt:`shift left expression` is a :t:`bit expression` that uses bit shift left
 arithmetic.
 
+:dp:`fls_RqB1uQfeqEiv`
+:gsee:`shift left expression` See :s:`ShiftLeftExpression`.
+
+
 :dp:`fls_1f4pc612f2a8`
 The :t:`type` of the :t:`left operand` of a :t:`shift left expression` shall
 implement the :std:`core::ops::Shl` :t:`trait` where the :t:`type` of the
@@ -1763,6 +1877,10 @@ The :t:`value` of a :t:`shift left expression` is the result of
 :dp:`fls_t709sl4co3al`
 A :dt:`shift right expression` is a :t:`bit expression` that uses bit shift right
 arithmetic.
+
+:dp:`fls_Sa5GfgZJNGfJ`
+:gsee:`shift right expression` See :s:`ShiftRightExpression`.
+
 
 :dp:`fls_onutb0b9p9zj`
 The :t:`type` of the :t:`left operand` of a :t:`shift right expression` shall
@@ -1912,6 +2030,10 @@ Comparison Expressions
 A :dt:`comparison expression` is an :t:`expression` that compares the
 :t:`[value]s` of two :t:`[operand]s`.
 
+:dp:`fls_dmAW7m0gBeOf`
+:gsee:`comparison expression` See :s:`ComparisonExpression`.
+
+
 :dp:`fls_asfrqemqviad`
 A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
 :t:`[operand]s`.
@@ -1921,6 +2043,10 @@ The :t:`type` of a :t:`comparison expression` is :t:`type` :c:`bool`.
 
 :dp:`fls_ruyho6cu7rxg`
 An :dt:`equals expression` is a :t:`comparison expression` that tests equality.
+
+:dp:`fls_JbT63mKJzmDz`
+:gsee:`equals expression` See :s:`EqualsExpression`.
+
 
 :dp:`fls_8echqk9po1cf`
 The :t:`type` of the :t:`left operand` of an :t:`equals expression` shall
@@ -1935,6 +2061,10 @@ The :t:`value` of an :t:`equals expression` is the result of
 A :dt:`greater-than expression` is a :t:`comparison expression` that tests for a
 greater-than relationship.
 
+:dp:`fls_LaQSY1iEJpi6`
+:gsee:`greater-than expression` See :s:`GreaterThanExpression`.
+
+
 :dp:`fls_x2s6ydvj5zyd`
 The :t:`type` of the :t:`left operand` of a :t:`greater-than expression` shall
 implement the :std:`core::cmp::PartialOrd` :t:`trait` where the :t:`type` of the
@@ -1947,6 +2077,10 @@ The :t:`value` of a :t:`greater-than expression` is the result of
 :dp:`fls_7n5gol6a8lod`
 A :dt:`greater-than-or-equals expression` is a :t:`comparison expression` that
 tests for a greater-than-or-equals relationship.
+
+:dp:`fls_o9kQmFIa81MO`
+:gsee:`greater-than-or-equals expression` See :s:`GreaterThanOrEqualsExpression`.
+
 
 :dp:`fls_hholzcbp5u3n`
 The :t:`type` of the :t:`left operand` of a
@@ -1962,6 +2096,10 @@ The :t:`value` of a :t:`greater-than-or-equals expression` is the result of
 A :dt:`less-than expression` is a :t:`comparison expression` that tests for a
 less-than relationship.
 
+:dp:`fls_16qZGpbwTzLx`
+:gsee:`less-than expression` See :s:`LessThanExpression`.
+
+
 :dp:`fls_ynibdcke3etb`
 The :t:`type` of the :t:`left operand` of a :t:`less-than expression` shall
 implement the :std:`core::cmp::PartialOrd` :t:`trait` where the :t:`type` of
@@ -1975,6 +2113,10 @@ The :t:`value` of a :t:`less-than expression` is the result of
 A :dt:`less-than-or-equals expression` is a :t:`comparison expression` that tests
 for a less-than-or-equals relationship.
 
+:dp:`fls_BH2iVYDs2gFo`
+:gsee:`less-than-or-equals expression` See :s:`LessThanOrEqualsExpression`.
+
+
 :dp:`fls_6dgfieyxdan0`
 The :t:`type` of the :t:`left operand` of a :t:`less-than-or-equals expression`
 shall implement the :std:`core::cmp::PartialOrd` :t:`trait` where the :t:`type`
@@ -1987,6 +2129,10 @@ The :t:`value` of a :t:`less-than-or-equals expression` is the result of
 :dp:`fls_w71j7i3n1kit`
 A :dt:`not-equals expression` is a :t:`comparison expression` that tests for
 inequality.
+
+:dp:`fls_lHcbzgA8tJQm`
+:gsee:`not-equals expression` See :s:`NotEqualsExpression`.
+
 
 :dp:`fls_qzo1torhv5i3`
 The :t:`type` of the :t:`left operand` of a :t:`not-equals expression` shall
@@ -2109,13 +2255,25 @@ Lazy Boolean Expressions
 A :dt:`lazy boolean expression` is an :t:`expression` that performs short circuit
 Boolean arithmetic.
 
+:dp:`fls_y0pvwSVYkzku`
+:gsee:`lazy boolean expression` See :s:`LazyBooleanExpression`.
+
+
 :dp:`fls_40jya46h62yi`
 A :dt:`lazy and expression` is a :t:`lazy boolean expression` that uses short
 circuit and arithmetic.
 
+:dp:`fls_gBJaznEZDMvI`
+:gsee:`lazy and expression` See :s:`LazyAndExpression`.
+
+
 :dp:`fls_k8u77ow5bb6c`
 A :dt:`lazy or expression` is a :t:`lazy boolean expression` that uses short
 circuit or arithmetic.
+
+:dp:`fls_KVpsf18r2nfw`
+:gsee:`lazy or expression` See :s:`LazyOrExpression`.
+
 
 :dp:`fls_u0gwo0s2l0tn`
 The :t:`[type]s` of the :t:`[operand]s` of a :t:`lazy boolean expression` shall
@@ -2180,6 +2338,10 @@ Type Cast Expressions
 :dp:`fls_ltioqbhl14g0`
 A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
+
+:dp:`fls_VF7ZA3txas12`
+:gsee:`type cast expression` See :s:`TypeCastExpression`.
+
 
 :dp:`fls_99kvyh4puy57`
 A :dt:`cast` is the process of changing the :t:`type` of an :t:`expression`.
@@ -2394,16 +2556,28 @@ Assignment Expressions
 An :dt:`assignment expression` is an :t:`expression` that assigns the :t:`value`
 of a :t:`value operand` to an :t:`assignee operand`.
 
-:dp:`fls_1m8q0t2y6b9v`
-For :dt:`assignment`, see :t:`assignment expression`.
+:dp:`fls_ceAi1oAH5Bne`
+:gsee:`assignment expression` See :s:`AssignmentExpression`.
+
+
+:dp:`fls_lh25l4K2V7kF`
+:gsee:`assignment` See :t:`assignment expression`.
 
 :dp:`fls_bsjw6f4a3wol`
 An :dt:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
 
+:dp:`fls_jRQWSt4bLgCP`
+:gsee:`assignee operand` See :s:`AssigneeOperand`.
+
+
 :dp:`fls_uinh05sslxeo`
 A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
 assigned to an :t:`assignee operand` by an :t:`assignment expression`.
+
+:dp:`fls_QawUd3GSIdQy`
+:gsee:`value operand` See :s:`ValueOperand`.
+
 
 :dp:`fls_qengy157fa4a`
 The :t:`type` of an :t:`assignment expression` is the :t:`unit type`.
@@ -2614,86 +2788,108 @@ A :dt:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
-:dp:`fls_Z6ch8bZOzgxq`
-A :dt:`compound assignment` is a :t:`compound assignment expression`.
+:dp:`fls_mHzeBMrl41Am`
+:gsee:`compound assignment expression` See :s:`CompoundAssignmentExpression`.
+
 
 :dp:`fls_tX1jlnTfON9X`
 An :dt:`addition assignment expression` is a :t:`compound assignment expression`
 that uses addition.
 
+:dp:`fls_fqPwHOzqW5HR`
+:gsee:`addition assignment expression` See :s:`AdditionAssignmentExpression`.
+
+
 :dp:`fls_w2hbhb989yr4`
 A :dt:`bit and assignment expression` is a :t:`compound assignment expression`
 that uses bit and arithmetic.
+
+:dp:`fls_sayLRevqnQak`
+:gsee:`bit and assignment expression` See :s:`BitAndAssignmentExpression`.
+
 
 :dp:`fls_ak4g5112jkl`
 A :dt:`bit or assignment expression` is a :t:`compound assignment expression`
 that uses bit or arithmetic.
 
+:dp:`fls_CGBMzxQfue4a`
+:gsee:`bit or assignment expression` See :s:`BitOrAssignmentExpression`.
+
+
 :dp:`fls_lkjwyy78m2vx`
 A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
 that uses bit exclusive or arithmetic.
+
+:dp:`fls_Y4XubE3CGX04`
+:gsee:`bit xor assignment expression` See :s:`BitXorAssignmentExpression`.
+
 
 :dp:`fls_pkzj0uigfcgm`
 A :dt:`division assignment expression` is a :t:`compound assignment expression`
 that uses division.
 
+:dp:`fls_VIFiXAG8PFDD`
+:gsee:`division assignment expression` See :s:`DivisionAssignmentExpression`.
+
+
 :dp:`fls_ndlv3k9uclz2`
 A :dt:`multiplication assignment expression` is a
 :t:`compound assignment expression` that uses multiplication.
+
+:dp:`fls_ruI2Fepv5R8g`
+:gsee:`multiplication assignment expression` See :s:`MultiplicationAssignmentExpression`.
+
 
 :dp:`fls_fbp5dojti27r`
 A :dt:`remainder assignment expression` is a :t:`compound assignment expression`
 that uses remainder division.
 
+:dp:`fls_LKGuRJ31FncG`
+:gsee:`remainder assignment expression` See :s:`RemainderAssignmentExpression`.
+
+
 :dp:`fls_oy9ur11k78t`
 A :dt:`shift left assignment expression` is a :t:`compound assignment expression`
 that uses bit shift left arithmetic.
+
+:dp:`fls_Gy783tN8WcE8`
+:gsee:`shift left assignment expression` See :s:`ShiftLeftAssignmentExpression`.
+
 
 :dp:`fls_s7rey2bndfei`
 A :dt:`shift right assignment expression` is a
 :t:`compound assignment expression` that uses bit shift right arithmetic.
 
+:dp:`fls_pSX4EhPtbEwS`
+:gsee:`shift right assignment expression` See :s:`ShiftRightAssignmentExpression`.
+
+
 :dp:`fls_7l7v7vigw3fu`
 A :dt:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
+
+:dp:`fls_nsE3hnzAy09a`
+:gsee:`subtraction assignment expression` See :s:`SubtractionAssignmentExpression`.
+
 
 :dp:`fls_dvy201zd6oym`
 An :dt:`assigned operand` is the target :t:`operand` of a
 :t:`compound assignment expression`.
 
-:dp:`fls_UDyCznokIYFo`
-An :dt:`addition assignment` is an :t:`addition assignment expression`.
+:dp:`fls_JsNQiHzirn6G`
+:gsee:`assigned operand` See :s:`AssignedOperand`.
 
-:dp:`fls_H5zoK7zj9NZZ`
-An :dt:`bit and assignment` is a :t:`bit and assignment expression`.
 
-:dp:`fls_JxiaXUUJY7lz`
-An :dt:`bit or assignment` is a :t:`bit or assignment expression`.
-
-:dp:`fls_0PENxft8n4Vz`
-An :dt:`bit xor assignment` is a :t:`bit xor assignment expression`.
-
-:dp:`fls_YUraJ9uJt34w`
-A :dt:`division assignment` is a :t:`division assignment expression`.
-
-:dp:`fls_lrPZDSrw30b5`
-A :dt:`multiplication assignment` is a :t:`multiplication assignment expression`.
-
-:dp:`fls_1b5aqr1cp1d0`
-A :dt:`remainder assignment` is a :t:`remainder assignment expression`.
-
-:dp:`fls_5n1a7tq9vx0p`
-A :dt:`shift left assignment` is a :t:`shift left assignment expression`.
-
-:dp:`fls_j8v2m0p6r3kx`
-A :dt:`shift right assignment` is a :t:`shift right assignment expression`.
-
-:dp:`fls_y1m4q6t9x3nc`
-A :dt:`subtraction assignment` is a :t:`subtraction assignment expression`.
+:dp:`fls_w6Q2mL9pR4tB`
+:gsee:`multiplication assignment` For :dt:`multiplication assignment`, see :t:`multiplication assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
 A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
 is used in the calculation of a :t:`compound assignment expression`.
+
+:dp:`fls_sYqRTSEnfFvI`
+:gsee:`modifying operand` See :s:`ModifyingOperand`.
+
 
 :dp:`fls_row7saf53vwd`
 An :t:`assigned operand` shall denote a :t:`mutable assignee expression`.
@@ -2870,6 +3066,10 @@ Underscore Expressions
 An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
 in a :t:`destructuring assignment`.
 
+:dp:`fls_TWSnNlTrzwS6`
+:gsee:`underscore expression` See :s:`UnderscoreExpression`.
+
+
 :dp:`fls_wms3dbwjwyu4`
 An :t:`underscore expression` shall appear in the :t:`assigned operand` of a
 :t:`destructuring assignment`.
@@ -2899,6 +3099,10 @@ Parenthesized Expressions
 :dp:`fls_jhazc75w5vj`
 A :dt:`parenthesized expression` is an :t:`expression` that groups other
 :t:`[expression]s`.
+
+:dp:`fls_l06LLv09rs1d`
+:gsee:`parenthesized expression` See :s:`ParenthesizedExpression`.
+
 
 :dp:`fls_5d66h7naoup6`
 The :t:`type` of a :t:`parenthesized expression` is the :t:`type` of its
@@ -2953,17 +3157,33 @@ Array Expressions
 :dp:`fls_ya9res33oxt6`
 An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
 
+:dp:`fls_86XgildxEsVo`
+:gsee:`array expression` See :s:`ArrayExpression`.
+
+
 :dp:`fls_fwtd3b10veiw`
 An :dt:`array element constructor` is an :t:`array expression` that lists all
 elements of the :t:`array` being constructed.
+
+:dp:`fls_GTm60LnUyzS0`
+:gsee:`array element constructor` See :s:`ArrayElementConstructor`.
+
 
 :dp:`fls_81jf78m5uga4`
 An :dt:`array repetition constructor` is an :t:`array expression` that specifies
 how many times an element is repeated in the :t:`array` being constructed.
 
+:dp:`fls_ubSUZIVbh560`
+:gsee:`array repetition constructor` See :s:`ArrayRepetitionConstructor`.
+
+
 :dp:`fls_3y69y9ga4at7`
 A :dt:`repeat operand` is an :t:`operand` that specifies the element being
 repeated in an :t:`array repetition constructor`.
+
+:dp:`fls_RfTcgNFnUTiH`
+:gsee:`repeat operand` See :s:`RepeatOperand`.
+
 
 :dp:`fls_2l9objtb23zn`
 A :t:`size operand` is an :t:`operand` that specifies the size of an :t:`array`
@@ -3070,13 +3290,25 @@ An :dt:`indexable type` is a :t:`type` that implements the
 An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
 of an :t:`indexable type`.
 
+:dp:`fls_1cgpK9eXA8LU`
+:gsee:`index expression` See :s:`IndexExpression`.
+
+
 :dp:`fls_pc0c22asgzvw`
 An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value`
 being indexed into by an :t:`index expression`.
 
+:dp:`fls_jdTnwYduPC6P`
+:gsee:`indexed operand` See :s:`IndexedOperand`.
+
+
 :dp:`fls_ff3sgpldn52o`
 An :dt:`indexing operand` is an :t:`operand` which specifies the index of an
 :t:`index expression`.
+
+:dp:`fls_GbjBVj5XuJCQ`
+:gsee:`indexing operand` See :s:`IndexingOperand`.
+
 
 :dp:`fls_w96p9oyv5mqt`
 An :t:`index expression` is a :t:`constant expression` if the
@@ -3165,6 +3397,10 @@ Tuple Expressions
 :dp:`fls_87rp1hfwvjel`
 A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
+:dp:`fls_G7oFKXD037Fz`
+:gsee:`tuple expression` See :s:`TupleExpression`.
+
+
 :dp:`fls_581y6jq1eyn8`
 A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
 :t:`tuple field` in a :t:`tuple expression`.
@@ -3240,6 +3476,10 @@ Struct Expressions
 A :dt:`struct expression` is an :t:`expression` that constructs an
 :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
+:dp:`fls_K9cphCeo7KE3`
+:gsee:`struct expression` See :s:`StructExpression`.
+
+
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
@@ -3249,6 +3489,10 @@ A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, 
 a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
+:dp:`fls_x3mDm69jrHOE`
+:gsee:`base initializer` See :s:`BaseInitializer`.
+
+
 :dp:`fls_gfu267bpl9ql`
 The :t:`type` of a :t:`base initializer` is the :t:`type` of its :t:`operand`.
 The :t:`type` of a :t:`base initializer` shall be the same as the :t:`type` of
@@ -3257,6 +3501,10 @@ the :t:`constructee`.
 :dp:`fls_ph7fsphbpbv4`
 An :dt:`indexed initializer` is a :t:`construct` that specifies the index and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
+
+:dp:`fls_O5l7v5AnELKj`
+:gsee:`indexed initializer` See :s:`IndexedInitializer`.
+
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
@@ -3276,6 +3524,10 @@ The :t:`value` of an :t:`indexed initializer` is the :t:`value` of its
 A :dt:`named initializer` is a :t:`construct` that specifies the name and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
+:dp:`fls_kxQXmXshmIub`
+:gsee:`named initializer` See :s:`NamedInitializer`.
+
+
 :dp:`fls_qed1pps827dv`
 A :t:`named initializer` matches a :t:`field` of the :t:`constructee` when
 its :t:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
@@ -3292,6 +3544,10 @@ The :t:`value` of a :t:`named initializer` is the :t:`value` of its
 :dp:`fls_57t368kema7h`
 A :dt:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
 of a :t:`field` in a :t:`struct expression`.
+
+:dp:`fls_E81RRr8QThL5`
+:gsee:`shorthand initializer` See :s:`ShorthandInitializer`.
+
 
 :dp:`fls_sm2hx8sh4agb`
 A :t:`shorthand initializer` is equivalent to a :t:`named initializer` where
@@ -3458,6 +3714,10 @@ Call Expressions
 A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
+:dp:`fls_c7EQaR3ARptI`
+:gsee:`call expression` See :s:`CallExpression`.
+
+
 :dp:`fls_jvz5z3eqxb39`
 An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
@@ -3466,6 +3726,10 @@ An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 A :dt:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
+
+:dp:`fls_Q76dLXa9gCsC`
+:gsee:`call operand` See :s:`CallOperand`.
+
 
 :dp:`fls_qOTBw10dW37D`
 An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
@@ -3607,13 +3871,25 @@ Method Call Expressions
 A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
 of a :t:`variable`.
 
+:dp:`fls_4NeDjWVlxCGj`
+:gsee:`method call expression` See :s:`MethodCallExpression`.
+
+
 :dp:`fls_jx3ryre0xs88`
 A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
+:dp:`fls_vONZx1ktvclR`
+:gsee:`receiver operand` See :s:`ReceiverOperand`.
+
+
 :dp:`fls_3AQUOBo7akXu`
 A :dt:`method operand` is an :t:`operand` that denotes the :t:`method` being
 invoked by a :t:`method call expression`.
+
+:dp:`fls_9m1jvhbCs3sC`
+:gsee:`method operand` See :s:`MethodOperand`.
+
 
 :dp:`fls_11glzggtbgb3`
 The :t:`type` of a :t:`method call expression` is the :t:`return type` of the
@@ -3714,13 +3990,25 @@ Field Access Expressions
 A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
+:dp:`fls_Cy6a1sxujaGl`
+:gsee:`field access expression` See :s:`FieldAccessExpression`.
+
+
 :dp:`fls_s2vpn4ihenpe`
 A :dt:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
+:dp:`fls_iSyg8AA8s0Tk`
+:gsee:`container operand` See :s:`ContainerOperand`.
+
+
 :dp:`fls_yeuayil6uxzx`
 A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
 accessed in a :t:`field access expression`.
+
+:dp:`fls_6xBYLtGDObwo`
+:gsee:`field selector` See :s:`FieldSelector`.
+
 
 :dp:`fls_qqrconpa92i3`
 A :dt:`selected field` is a :t:`field` that is selected by a
@@ -3818,8 +4106,16 @@ Closure Expressions
 A :dt:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
+:dp:`fls_rDF9fvVk8cOD`
+:gsee:`closure expression` See :s:`ClosureExpression`.
+
+
 :dp:`fls_My6pMgpeFCFg`
 An :dt:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+
+:dp:`fls_Lxpslxdd6ZBE`
+:gsee:`async closure expression` See :s:`ClosureExpression`.
+
 
 :dp:`fls_7ln7IejTjdmi`
 An :dt:`async closure type` is the :t:`closure type` defined by an
@@ -3841,6 +4137,10 @@ The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return ty
 A :dt:`closure body` is a :t:`construct` that represents the executable portion
 of a :t:`closure expression`.
 
+:dp:`fls_whvALZz68Lk1`
+:gsee:`closure body` See :s:`ClosureBody`, :s:`ClosureBodyWithReturnType`.
+
+
 :dp:`fls_oey0ivaiu1l`
 A :t:`closure body` denotes a new :t:`control flow boundary`.
 
@@ -3851,6 +4151,10 @@ A :t:`closure body` is subject to :t:`capturing`.
 A :dt:`closure parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
+
+:dp:`fls_9eEnYziBYXBl`
+:gsee:`closure parameter` See :s:`ClosureParameter`.
+
 
 :dp:`fls_81KOEXwps2HS`
 The :t:`type` of a :t:`closure parameter` is determined as follows:
@@ -3930,17 +4234,26 @@ Loop Expressions
 A :dt:`loop expression` is an :t:`expression` that evaluates a :t:`block
 expression` continuously as long as some criterion holds true.
 
-:dp:`fls_JaGSm6bX2HGc`
-For :dt:`loop`, see :t:`loop expression`.
+:dp:`fls_C0nFQg6poalh`
+:gsee:`loop expression` See :s:`LoopExpression`.
+
 
 :dp:`fls_BjZjuiFnPtFd`
 A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+
+:dp:`fls_rb26QHc8aBHU`
+:gsee:`loop body` See :s:`LoopBody`.
+
 
 :dp:`fls_XEc0cIkpkyzJ`
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_1MTa81vtePN8`
 A :dt:`label` is the :t:`name` of a :t:`loop expression`.
+
+:dp:`fls_nrgTfKwWS9pw`
+:gsee:`label` See :s:`Label`.
+
 
 :dp:`fls_eg93m93gvwal`
 An :dt:`anonymous loop expression` is a :t:`loop expression` without a
@@ -3969,12 +4282,13 @@ For Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_RPflON3LZDnO`
-For :dt:`for loop`, see :t:`for loop expression`.
-
 :dp:`fls_1bh2alh37frz`
 A :dt:`for loop expression` is a :t:`loop expression` that continues to evaluate
 its :t:`loop body` as long as its :t:`subject expression` yields a :t:`value`.
+
+:dp:`fls_QHZ0dbYc1Gws`
+:gsee:`for loop expression` See :s:`ForLoopExpression`.
+
 
 :dp:`fls_fkgbin6ydkm4`
 The :t:`type` of a :t:`subject expression` shall implement the
@@ -4047,12 +4361,13 @@ Infinite Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_OcNtRVV2WaUe`
-For :dt:`infinite loop`, see :t:`infinite loop expression`.
-
 :dp:`fls_p11qw6mtxlda`
 An :dt:`infinite loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` indefinitely.
+
+:dp:`fls_gvGIhtItRSEX`
+:gsee:`infinite loop expression` See :s:`InfiniteLoopExpression`.
+
 
 :dp:`fls_b314wjbv0zwe`
 The :t:`type` of an :t:`infinite loop expression` is determined as follows:
@@ -4114,17 +4429,22 @@ While Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4w8j2v6m0qpc`
-A :dt:`while loop` is a :t:`while loop expression`.
-
 :dp:`fls_ajby242tnu7c`
 A :dt:`while loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
 true.
 
+:dp:`fls_YeGDu3s91Pf3`
+:gsee:`while loop expression` See :s:`WhileLoopExpression`.
+
+
 :dp:`fls_13hmhzqz82v6`
 An :dt:`iteration expression` is an :t:`expression` that provides the criterion
 of a :t:`while loop expression`.
+
+:dp:`fls_GNq5Z5SqZYEy`
+:gsee:`iteration expression` See :s:`IterationExpression`.
+
 
 :dp:`fls_d7ofrq3777kq`
 The :t:`type` of an :t:`iteration expression` shall be :t:`type` :c:`bool`.
@@ -4177,13 +4497,14 @@ While Let Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_j3t9k1w5z7rn`
-A :dt:`while let loop` is a :t:`while let loop expression`.
-
 :dp:`fls_fmdlyp9r9zl7`
 A :dt:`while let loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`subject let expression` yields
 a :t:`value` that can be matched against its :t:`pattern`.
+
+:dp:`fls_WVn2xncWhIRD`
+:gsee:`while let loop expression` See :s:`WhileLetLoopExpression`.
+
 
 :dp:`fls_bC60ZSC9yUOI`
 The :t:`expected type` of the :t:`pattern` is the :t:`type` of the :t:`subject let expression`.
@@ -4244,6 +4565,10 @@ Loop Labels
 :dp:`fls_tx5u743391h7`
 A :dt:`label indication` is a :t:`construct` that indicates a :t:`label`.
 
+:dp:`fls_GeiwY0nnU2Qy`
+:gsee:`label indication` See :s:`LabelIndication`.
+
+
 :dp:`fls_7hc8yboeaho0`
 A :t:`label indication` shall indicate a :t:`label` of an enclosing
 :t:`named block expression` or :t:`named loop expression` that does not pass a
@@ -4267,6 +4592,10 @@ Break Expressions
 :dp:`fls_i5ko1t2wbgxe`
 A :dt:`break expression` is an :t:`expression` that terminates a
 :t:`loop expression` or a :t:`named block expression`.
+
+:dp:`fls_gdYjhcmqqzuY`
+:gsee:`break expression` See :s:`BreakExpression`.
+
 
 :dp:`fls_jiykbp51909f`
 A :t:`break expression` shall appear within a :t:`loop body` or a
@@ -4382,6 +4711,10 @@ Continue Expressions
 A :dt:`continue expression` is an :t:`expression` that restarts evaluation of
 an enclosing :t:`loop expression`.
 
+:dp:`fls_Y5RP7NNJxxn8`
+:gsee:`continue expression` See :s:`ContinueExpression`.
+
+
 :dp:`fls_wzs6kz9ffqzt`
 A :t:`continue expression` shall appear within a :t:`loop expression`.
 
@@ -4470,13 +4803,25 @@ Range Expressions
 :dp:`fls_bi82rusji8g0`
 A :dt:`range expression` is an :t:`expression` that constructs a range.
 
+:dp:`fls_slHJhjenxO3l`
+:gsee:`range expression` See :s:`RangeExpression`.
+
+
 :dp:`fls_msyv4oyk5zp9`
 A :dt:`range expression low bound` is an :t:`operand` that specifies the start of
 a range.
 
+:dp:`fls_gS5LxgRCYf8H`
+:gsee:`range expression low bound` See :s:`RangeExpressionLowBound`.
+
+
 :dp:`fls_f648uuxxh4vk`
 A :dt:`range expression high bound` is an :t:`operand` that specifies the end of
 a range.
+
+:dp:`fls_mtcfSiW9PeKr`
+:gsee:`range expression high bound` See :s:`RangeExpressionHighBound`.
+
 
 :dp:`fls_9pl4629t54yq`
 If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
@@ -4485,6 +4830,10 @@ If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
 :dp:`fls_xaumwogwbv3g`
 A :dt:`range-from expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound`.
+
+:dp:`fls_hMTUmuQbF7sV`
+:gsee:`range-from expression` See :s:`RangeFromExpression`.
+
 
 :dp:`fls_exa2ufugnpgc`
 The :t:`type` of a :t:`range-from expression` is :std:`core::ops::RangeFrom`.
@@ -4497,6 +4846,10 @@ The :t:`value` of a :t:`range-from expression` is
 A :dt:`range-from-to expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an excluded
 :t:`range expression high bound`.
+
+:dp:`fls_o4Ir4UQWMv70`
+:gsee:`range-from-to expression` See :s:`RangeFromToExpression`.
+
 
 :dp:`fls_ke2fpgodq84u`
 The :t:`type` of a :t:`range-from-to expression` is :std:`core::ops::Range`.
@@ -4515,13 +4868,17 @@ The :t:`type` of a :t:`full range expression` is :std:`core::ops::RangeFull`.
 :dp:`fls_yvh5cdgzevni`
 The :t:`value` of a :t:`full range expression` is ``core::ops::RangeFull {}``.
 
-:dp:`fls_f4q7x1m8z2cb`
-For :dt:`range-full expression`, see :t:`full range expression`.
+:dp:`fls_tdYHh4Qrz00H`
+:gsee:`range-full expression` See :s:`RangeFullExpression`.
 
 :dp:`fls_lh9my7g8oflq`
 A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an included
 :t:`range expression high bound`.
+
+:dp:`fls_iIeUtQOUNtdi`
+:gsee:`range-inclusive expression` See :s:`RangeInclusiveExpression`.
+
 
 :dp:`fls_livflk52xaj9`
 The :t:`type` of a :t:`range-inclusive expression` is
@@ -4535,6 +4892,10 @@ The :t:`value` of a :t:`range-inclusive expression` is
 A :dt:`range-to expression` is a :t:`range expression` that specifies an excluded
 :t:`range expression high bound`.
 
+:dp:`fls_2GjCqwkd416o`
+:gsee:`range-to expression` See :s:`RangeToExpression`.
+
+
 :dp:`fls_k611yoc8hk0n`
 The :t:`type` of a :t:`range-to expression` is :std:`core::ops::RangeTo`.
 
@@ -4545,6 +4906,10 @@ The :t:`value` of a :t:`range-to expression` is
 :dp:`fls_1gc436ee1nzm`
 A :dt:`range-to-inclusive expression` is a :t:`range expression` that specifies
 an included :t:`range expression high bound`.
+
+:dp:`fls_3yMFRz7DL8YX`
+:gsee:`range-to-inclusive expression` See :s:`RangeToInclusiveExpression`.
+
 
 :dp:`fls_8sfjw83irpre`
 The :t:`type` of a :t:`range-to-inclusive expression` is
@@ -4597,9 +4962,17 @@ An :dt:`if expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on the :t:`value` of
 its :t:`subject expression`.
 
+:dp:`fls_RvEIVBaxn4MN`
+:gsee:`if expression` See :s:`IfExpression`.
+
+
 :dp:`fls_5azwlk7hav1k`
 An :dt:`else expression` is an :t:`expression` that represents either a
 :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
+
+:dp:`fls_DJ8tsxfBiuqM`
+:gsee:`else expression` See :s:`ElseExpression`.
+
 
 :dp:`fls_r7gzxo16esri`
 The :t:`type` of the :t:`subject expression` of an :t:`if expression` shall be
@@ -4679,6 +5052,10 @@ If Let Expressions
 An :dt:`if let expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on whether its
 :t:`pattern` can be matched against its :t:`subject let expression`.
+
+:dp:`fls_t33zvMNnXMOJ`
+:gsee:`if let expression` See :s:`IfLetExpression`.
+
 
 :dp:`fls_okVOYzTT6fBK`
 The :t:`expected type` of the :t:`pattern` is the :t:`type` of the :t:`subject let expression`.
@@ -4785,6 +5162,10 @@ A :dt:`match expression` is an :t:`expression` that tries to match one of its
 multiple :t:`[pattern]s` against its :t:`subject expression` and if it succeeds,
 evaluates an :t:`operand`.
 
+:dp:`fls_LrEbYpgsq4l0`
+:gsee:`match expression` See :s:`MatchExpression`.
+
+
 :dp:`fls_l45i24ikfavm`
 A :dt:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
@@ -4793,12 +5174,24 @@ and a :t:`match arm body`.
 An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
+:dp:`fls_L02L5yBOlZKb`
+:gsee:`intermediate match arm` See :s:`IntermediateMatchArm`.
+
+
 :dp:`fls_oj8dg28xw5yp`
 A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+
+:dp:`fls_pkGHwkcFwyN1`
+:gsee:`final match arm` See :s:`FinalMatchArm`.
+
 
 :dp:`fls_lrdrtedyz28i`
 A :dt:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
 a :t:`match arm guard`.
+
+:dp:`fls_lpFv1f0B0DKU`
+:gsee:`match arm matcher` See :s:`MatchArmMatcher`.
+
 
 :dp:`fls_zJQ4LecT1HYd`
 The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the :t:`type` of the :t:`subject expression`.
@@ -4809,6 +5202,10 @@ A :dt:`match arm body` is the :t:`operand` of a :t:`match arm`.
 :dp:`fls_hs1rr54hu18w`
 A :dt:`match arm guard` is a :t:`construct` that provides additional filtering to
 a :t:`match arm matcher`.
+
+:dp:`fls_nmSqNb8v6nk7`
+:gsee:`match arm guard` See :s:`MatchArmGuard`.
+
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are
@@ -4935,6 +5332,10 @@ A :dt:`return expression` is an :t:`expression` that optionally yields a
 :t:`value` and causes control flow to return to the end of the enclosing
 :t:`control flow boundary`.
 
+:dp:`fls_FazVoPuwVtYj`
+:gsee:`return expression` See :s:`ReturnExpression`.
+
+
 :dp:`fls_5v3j5ghhw8j8`
 A :t:`return expression` shall appear within a :t:`control flow boundary`.
 
@@ -5006,9 +5407,17 @@ Await Expressions
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
 suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
+:dp:`fls_rFEgPbgrEhTw`
+:gsee:`await expression` See :s:`AwaitExpression`.
+
+
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
 an :t:`await expression`.
+
+:dp:`fls_2Mx48hIqg88F`
+:gsee:`future operand` See :s:`FutureOperand`.
+
 
 :dp:`fls_k9pncajmhgk1`
 An :t:`await expression` shall appear within an
@@ -5328,3 +5737,54 @@ There are two allowed behaviors for :t:`arithmetic overflow`:
 #. :dp:`fls_QMpI8K43K2yU`
    The resulting :t:`value` of the :t:`expression` may be truncated, discarding
    the most significant bits that do not fit in the target :t:`type`.
+
+:dp:`fls_4kqtyRQ2gCq9`
+:gsee:`addition assignment` For :dt:`addition assignment`, see :t:`addition assignment expression`.
+
+:dp:`fls_bpdO9RyJOAxU`
+:gsee:`async block` For :dt:`async block`, see :t:`async block expression`.
+
+:dp:`fls_hfGDZhH8pitB`
+:gsee:`bit and assignment` For :dt:`bit and assignment`, see :t:`bit and assignment expression`.
+
+:dp:`fls_vnNHqNrP2smE`
+:gsee:`bit or assignment` For :dt:`bit or assignment`, see :t:`bit or assignment expression`.
+
+:dp:`fls_1JRYVGZyxDKU`
+:gsee:`bit xor assignment` For :dt:`bit xor assignment`, see :t:`bit xor assignment expression`.
+
+:dp:`fls_UVXPPjNrJueX`
+:gsee:`compound assignment` For :dt:`compound assignment`, see :t:`compound assignment expression`.
+
+:dp:`fls_0bOBB3XgifF8`
+:gsee:`division assignment` For :dt:`division assignment`, see :t:`division assignment expression`.
+
+:dp:`fls_0HgcsK6qy9kr`
+:gsee:`for loop` For :dt:`for loop`, see :t:`for loop expression`.
+
+:dp:`fls_QXByyZZCAPOU`
+:gsee:`infinite loop` For :dt:`infinite loop`, see :t:`infinite loop expression`.
+
+:dp:`fls_zN24wxEakYf9`
+:gsee:`loop` For :dt:`loop`, see :t:`loop expression`.
+
+:dp:`fls_Aceo0xwtTyGf`
+:gsee:`remainder assignment` For :dt:`remainder assignment`, see :t:`remainder assignment expression`.
+
+:dp:`fls_VrLxS3YmVLMs`
+:gsee:`shift left assignment` For :dt:`shift left assignment`, see :t:`shift left assignment expression`.
+
+:dp:`fls_1K7ibbCJYhaq`
+:gsee:`shift right assignment` For :dt:`shift right assignment`, see :t:`shift right assignment expression`.
+
+:dp:`fls_ptNAHrJxgJ5n`
+:gsee:`subtraction assignment` For :dt:`subtraction assignment`, see :t:`subtraction assignment`.
+
+:dp:`fls_DdKEwRySwtGP`
+:gsee:`unsafe block` For :dt:`unsafe block`, see :t:`unsafe block expression`.
+
+:dp:`fls_KFrE0jDZVPg1`
+:gsee:`while let loop` For :dt:`while let loop`, see :t:`while let loop expression`.
+
+:dp:`fls_08tFVGhQIWoE`
+:gsee:`while loop` For :dt:`while loop`, see :t:`while loop expression`.

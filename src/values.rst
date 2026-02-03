@@ -104,6 +104,10 @@ Constants
 A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
 the :t:`value`.
 
+:dp:`fls_sQ1xZwL9LCFg`
+:gsee:`constant` See :s:`ConstantDeclaration`.
+
+
 :dp:`fls_3mhj0kkupwuz`
 An :dt:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
 line).
@@ -119,6 +123,10 @@ The :t:`type` of a :t:`constant` shall implement the :std:`core::marker::Sized`
 :dp:`fls_ndmfqxjpvsqy`
 A :dt:`constant initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`constant`.
+
+:dp:`fls_VpRFdIdpTPon`
+:gsee:`constant initializer` See :s:`ConstantInitializer`.
+
 
 :dp:`fls_6rxwbbhf5tc5`
 A :t:`constant` shall have a :t:`constant initializer`, unless it is an
@@ -168,6 +176,10 @@ Statics
 A :dt:`static` is a :t:`value` that is associated with a specific memory
 location.
 
+:dp:`fls_XiLKhUtaICm4`
+:gsee:`static` See :s:`StaticDeclaration`.
+
+
 :dp:`fls_mt94jvoot9dx`
 A :t:`static` defined within a :t:`generic function` exists once in the
 output executable or library.
@@ -200,6 +212,10 @@ The type of an :t:`immutable static` shall implement the
 :dp:`fls_t17h5h6a6v4c`
 A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`static`.
+
+:dp:`fls_un6UPnH1UGwR`
+:gsee:`static initializer` See :s:`StaticInitializer`.
+
 
 :dp:`fls_yq0hpy4jx2qb`
 A :t:`static` shall have a :t:`static initializer`, unless it is an
@@ -261,9 +277,6 @@ Variables
 :dp:`fls_hl5tnd9yy252`
 A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
-
-:dp:`fls_DaACqyLYORne`
-A :dt:`local variable` is a :t:`variable`.
 
 :dp:`fls_5rIFH1wsroHb`
 An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
@@ -341,3 +354,6 @@ promoting the produced :t:`mutable borrow` to have ``'static`` :t:`lifetime`.
 #. :dp:`fls_ap85svxyuhvg`
    The :t:`value` of the anonymous :t:`constant` is :t:`borrowed` with
    ``'static`` :t:`lifetime`.
+
+:dp:`fls_32esEeb7Bhfg`
+:gsee:`local variable` For :dt:`local variable`, see :t:`variable`.

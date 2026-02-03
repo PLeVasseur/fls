@@ -24,8 +24,16 @@ Statements
 :dp:`fls_5t8n2p7c0m1d`
 A :dt:`statement` is a :t:`construct` described by :s:`Statement`.
 
+:dp:`fls_BHe0aKhQM05M`
+:gsee:`statement` See :s:`Statement`.
+
+
 :dp:`fls_7zh6ziglo5iy`
 An :dt:`expression statement` is an :t:`expression` whose result is ignored.
+
+:dp:`fls_PlqWiQ3OaQaK`
+:gsee:`expression statement` See :s:`ExpressionStatement`.
+
 
 :dp:`fls_kdxe1ukmgl1`
 An :dt:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
@@ -44,8 +52,8 @@ A :dt:`macro statement` is a :t:`statement` expressed as a
 :dt:`Execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
-:dp:`fls_h5c8k2n9p4d1`
-For :dt:`executed`, see :t:`execution`.
+:dp:`fls_ax5HS5T6kWR1`
+:gsee:`executed` See :t:`execution`.
 
 :dp:`fls_dl763ssb54q1`
 The :t:`execution` of an :t:`empty statement` has no effect.
@@ -72,6 +80,10 @@ A :dt:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
 produced by its :t:`pattern-without-alternation` that are optionally
 initialized to a :t:`value`.
 
+:dp:`fls_5vdRCUoLrsd1`
+:gsee:`let statement` See :s:`LetStatement`.
+
+
 :dp:`fls_PptD5p96AyBk`
 A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an
 :t:`if let expression`, or a :t:`while let loop expression`.
@@ -80,6 +92,10 @@ A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an
 A :dt:`let initializer` is a :t:`construct` that provides the :t:`value` of
 the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
 alternatively executes a :t:`block expression`.
+
+:dp:`fls_Wl9eLmL0PfZ4`
+:gsee:`let initializer` See :s:`LetInitializer`.
+
 
 :dp:`fls_iqar7vvtw22c`
 If a :t:`let statement` lacks a :t:`block expression`, then the :t:`pattern` of

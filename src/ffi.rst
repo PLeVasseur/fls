@@ -15,9 +15,6 @@ A :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
 :t:`[external block]s`, :t:`[external function]s`, linkage, and :t:`type`
 :t:`layout` to interface a Rust program with foreign code.
 
-:dp:`fls_JpmkeFXLhQyy`
-:dt:`FFI` is an abbreviation for :t:`Foreign Function Interface`.
-
 :dp:`fls_k1hiwghzxtfa`
 The following :t:`[attribute]s` affect :t:`FFI`:
 
@@ -58,8 +55,9 @@ ABI
 An :dt:`Application Binary Interface` is a set of conventions that dictate how
 data and computation cross language boundaries.
 
-:dp:`fls_q2wp45ZVk16O`
-An :dt:`ABI` is an :t:`Application Binary Interface`.
+:dp:`fls_wcXAs6cwbdw2`
+:gsee:`Application Binary Interface` See :s:`AbiSpecification`.
+
 
 :dp:`fls_EcG0AVDg8TUj`
 In this specification, :dt:`C` refers to the C programming language used for
@@ -67,6 +65,10 @@ foreign function interfaces.
 
 :dp:`fls_2w0xi6rxw3uz`
 The :dt:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
+
+:dp:`fls_jMkdOLXdmfWp`
+:gsee:`ABI kind` See :s:`AbiKind`.
+
 
 :dp:`fls_9zitf1fvvfk8`
 The following :t:`[ABI]s` are supported:
@@ -190,6 +192,10 @@ External Blocks
 An :dt:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
+:dp:`fls_rE8QmdLg8umB`
+:gsee:`external block` See :s:`ExternalBlock`.
+
+
 :dp:`fls_8ltVLtAfvy0m`
 An :dt:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
 
@@ -277,3 +283,9 @@ An :t:`external static` shall not specify a :t:`static initializer`.
 :dp:`fls_en2h09ehj0j3`
 An :t:`immutable` :t:`external static` shall be initialized before Rust code
 is executed.
+
+:dp:`fls_i6qs4mc5TbAM`
+:gsee:`ABI` For :dt:`ABI`, see :t:`Application Binary Interface`.
+
+:dp:`fls_rZjjVYiUZZ1Q`
+:gsee:`FFI` For :dt:`FFI`, see :t:`Foreign Function Interface`.

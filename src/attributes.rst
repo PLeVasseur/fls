@@ -50,13 +50,25 @@ its :t:`name`, convention, language, and tool.
 An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
 :t:`item`.
 
+:dp:`fls_NbvADTvmNoj4`
+:gsee:`inner attribute` See :s:`InnerAttribute`.
+
+
 :dp:`fls_8o6vmzbw1b1j`
 An :dt:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
+:dp:`fls_96YcIfSzM5eM`
+:gsee:`outer attribute` See :s:`OuterAttribute`.
+
+
 :dp:`fls_9TMRVlQwAdTB`
 An :dt:`attribute content` is a :t:`construct` that provides the content of
 an :t:`attribute`.
+
+:dp:`fls_lL6NnQ34kZXC`
+:gsee:`attribute content` See :s:`AttributeContent`.
+
 
 .. rubric:: Examples
 
@@ -166,6 +178,10 @@ Built-in Attributes
 
 :dp:`fls_92tqo8uas8kd`
 A :dt:`built-in attribute` is a language-defined :t:`attribute`.
+
+:dp:`fls_MVQtQv4iaLV6`
+:gsee:`built-in attribute` See :s:`InnerBuiltinAttribute`, :s:`OuterBuiltinAttribute`.
+
 
 :dp:`fls_bxucstrfcco8`
 The following :t:`[built-in attribute]s` are :dt:`[code generation attribute]s`:
@@ -930,9 +946,17 @@ Attribute ``cfg``
 A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
+:dp:`fls_PLpRV02xhw50`
+:gsee:`configuration predicate` See :s:`ConfigurationPredicate`.
+
+
 :dp:`fls_y1MUhnKCxK6T`
 An :dt:`all configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ALL.
+
+:dp:`fls_wBEIIkEBfilc`
+:gsee:`all configuration predicate` See :s:`ConfigurationPredicateAll`.
+
 
 :dp:`fls_tncxxsyutppf`
 An :t:`all configuration predicate` evaluates statically to ``true`` when either
@@ -943,6 +967,10 @@ configuration predicates.
 An :dt:`any configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ANY.
 
+:dp:`fls_5lEpUqQSwsQ4`
+:gsee:`any configuration predicate` See :s:`ConfigurationPredicateAny`.
+
+
 :dp:`fls_m0zxktz168e0`
 An :t:`any configuration predicate` evaluates statically to ``true`` when any
 nested configuration predicate evaluates to ``true``.
@@ -950,6 +978,10 @@ nested configuration predicate evaluates to ``true``.
 :dp:`fls_XsxeOd32JI8x`
 A :dt:`not configuration predicate` is a :t:`configuration predicate` that
 negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
+
+:dp:`fls_SGRoqScbm6eY`
+:gsee:`not configuration predicate` See :s:`ConfigurationPredicateNot`.
+
 
 :dp:`fls_tvsadfy9uibu`
 A :t:`not configuration predicate` evaluates statically to ``true`` when its
@@ -1562,6 +1594,10 @@ related :t:`type`.
 :dp:`fls_8l5b6qxw0c9d`
 A :dt:`representation modifier` is a :t:`construct` that modifies the
 :t:`alignment` of a :t:`type`.
+
+:dp:`fls_L7WyQvmJTSoZ`
+:gsee:`representation modifier` See :s:`Alignment`.
+
 
 .. rubric:: Examples
 

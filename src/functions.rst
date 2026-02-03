@@ -51,12 +51,20 @@ Functions
 :dp:`fls_gn1ngtx2tp2s`
 A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
+:dp:`fls_GJAWkCazSavv`
+:gsee:`function` See :s:`FunctionDeclaration`.
+
+
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.
 
 :dp:`fls_87jnkimc15gi`
 A :dt:`function qualifier` is a :t:`construct` that determines the role of
 a :t:`function`.
+
+:dp:`fls_EDzOYSZ9S5Nd`
+:gsee:`function qualifier` See :s:`FunctionQualifierList`.
+
 
 :dp:`fls_nwywh1vjt6rr`
 A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
@@ -66,6 +74,10 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
 A :dt:`function parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
+
+:dp:`fls_gFW9zPTggbgr`
+:gsee:`function parameter` See :s:`FunctionParameter`.
+
 
 :dp:`fls_ymeo93t4mz4`
 A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
@@ -140,6 +152,10 @@ A :t:`variadic function` shall specify one of the following :t:`[ABI]s`:
 :dp:`fls_vljy4mm0zca2`
 A :dt:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
+:dp:`fls_OjnVfJNVzjjd`
+:gsee:`return type` See :s:`ReturnType`.
+
+
 :dp:`fls_EqJb3Jl3vK8K`
 The :t:`return type` of a :t:`function` is determined as follows:
 
@@ -151,6 +167,10 @@ The :t:`return type` of a :t:`function` is determined as follows:
 
 :dp:`fls_927nfm5mkbsp`
 A :dt:`function body` is the :t:`block expression` of a :t:`function`.
+
+:dp:`fls_bw4kwgpbofJq`
+:gsee:`function body` See :s:`FunctionBody`.
+
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an

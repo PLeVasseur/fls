@@ -74,20 +74,40 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
 A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
 of syntactic transformation :t:`[macro rule]s`.
 
+:dp:`fls_u8p14XdLpL8T`
+:gsee:`declarative macro` See :s:`MacroRulesDeclaration`.
+
+
 :dp:`fls_dw1nq4r9ghhd`
 A :dt:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
 a :t:`macro transcriber`.
+
+:dp:`fls_HNR3DcnAVRnP`
+:gsee:`macro rule` See :s:`MacroRule`.
+
 
 :dp:`fls_oq4xn8guos8f`
 A :dt:`macro matcher` is a :t:`construct` that describes a syntactic pattern that
 a :t:`macro` must match.
 
+:dp:`fls_bCMr9JyM5AY3`
+:gsee:`macro matcher` See :s:`MacroMatcher`.
+
+
 :dp:`fls_cdaf8viwmdfe`
 A :dt:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
+
+:dp:`fls_UiA3Nkqd1kvx`
+:gsee:`macro match` See :s:`MacroMatch`.
+
 
 :dp:`fls_ljavs0w61z3j`
 A :dt:`macro transcriber` is a :t:`construct` that describes the replacement
 syntax of a :t:`macro`.
+
+:dp:`fls_YQVLAhIDKfmk`
+:gsee:`macro transcriber` See :s:`MacroTranscriber`.
+
 
 :dp:`fls_3jspk8obv7sd`
 A :t:`declarative macro` is invoked using a :t:`macro invocation`.
@@ -146,6 +166,10 @@ a particular kind and bind its :t:`value` to a name for use during
 :dp:`fls_4zdait30exvn`
 A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
 
+:dp:`fls_pgg9gbK0liLd`
+:gsee:`metavariable` See :s:`MacroMetavariable`.
+
+
 :dp:`fls_2HguXbL7DjKH`
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :t:`macro rule` of the :t:`macro matcher` it is declared in.
@@ -153,6 +177,10 @@ A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :dp:`fls_8zypylq60zba`
 A :dt:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
 a :t:`metavariable`.
+
+:dp:`fls_rEFOr3VAOyIg`
+:gsee:`fragment specifier` See ``MacroFragmentSpecifier``.
+
 
 :dp:`fls_8o9mcV2KrKac`
 :t:`Fragment specifier` kinds impose the following
@@ -194,6 +222,10 @@ a :t:`metavariable`.
 :dp:`fls_ephlmLsGTMgw`
 A :dt:`metavariable indication` is a :t:`construct` that indicates a
 :t:`metavariable`.
+
+:dp:`fls_u3DRWDasSVYs`
+:gsee:`metavariable indication` See :s:`MacroMetavariableIndication`.
+
 
 .. rubric:: Examples
 
@@ -237,9 +269,17 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
 A :dt:`macro repetition in matching` allows for a syntactic pattern to be matched
 zero or multiple times during :t:`macro matching`.
 
+:dp:`fls_GjIWyffaTJXf`
+:gsee:`macro repetition in matching` See :s:`MacroRepetitionMatch`.
+
+
 :dp:`fls_ltdp3zs60dzr`
 A :dt:`macro repetition in transcription` allows for a syntactic pattern to be
 transcribed zero or multiple times during :t:`macro transcription`.
+
+:dp:`fls_wp9UjWeyuqrf`
+:gsee:`macro repetition in transcription` See :s:`MacroRepetitionTranscriber`.
+
 
 :dp:`fls_V1WRuzZUWUGj`
 A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
@@ -249,6 +289,10 @@ A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
 A :dt:`repetition operator` is a :t:`construct` that indicates the number
 of times a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription` can be repeated.
+
+:dp:`fls_ewp3KTSf7Qpx`
+:gsee:`repetition operator` See :s:`MacroRepetitionOperator`.
+
 
 :dp:`fls_h5f8x4jdnvbu`
 The effects of a :t:`repetition operator` are as follows:
@@ -547,52 +591,40 @@ A :dt:`macro invocation` is a call of a :t:`declarative macro` or
 :t:`function-like macro` that is expanded statically and replaced with the
 result of the :t:`macro`.
 
+:dp:`fls_VNhGsgTBhXa6`
+:gsee:`macro invocation` See :s:`MacroInvocation`.
+
+
 :dp:`fls_6v06zvi1ctub`
 A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
 as a :t:`statement`.
 
-.. rubric:: Examples
+:dp:`fls_m03XnVfvVwnM`
+:gsee:`terminated macro invocation` See :s:`TerminatedMacroInvocation`.
 
-:dp:`fls_338rmbazl67o`
-See :p:`fls_xa7lp0zg1ol2` for the declaration of ``answer_to_life``.
+
+.. rubric:: Examples
 
 .. code-block:: rust
 
    answer_to_life!();
 
-:dp:`fls_lrr7gg8tian`
-See :p:`fls_8nzypdu9j3ge` for the declaration of ``square``.
-
 .. code-block:: rust
 
    square!(5);
-
-:dp:`fls_8qxwwf4trnl`
-See :p:`fls_k01lsksqtq1r` for the declaration of ``generate_pairs``.
 
 .. code-block:: rust
 
    generate_pairs!(1, 2, 3; 9, 8, 7);
 
-:dp:`fls_8z1sgtvchhhw`
-See :p:`fls_2d6bqnpy6tvs` for the declaration of
-``make_answer_to_life``.
-
 .. code-block:: rust
 
    make_answer_to_life!();
-
-:dp:`fls_d9w3dn2yn7mo`
-See :p:`fls_o8s3r7m90q59` for the declaration of ``Answer``.
 
 .. code-block:: rust
 
    #[derive(Answer)]
    struct derive_macro_invoker;
-
-:dp:`fls_1tftbd91yfpd`
-See :p:`fls_4vjbkm4ceymk` for the declaration of
-``output_and_return_item``.
 
 .. code-block:: rust
 

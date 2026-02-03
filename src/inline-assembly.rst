@@ -124,9 +124,17 @@ A :dt:`register name` is either the :t:`explicit register name` of a
 :t:`register`, or the :t:`register class name` of the :t:`register class` a
 :t:`register` belongs to.
 
+:dp:`fls_PhybOLiROC7C`
+:gsee:`register name` See :s:`RegisterName`.
+
+
 :dp:`fls_ffwqxlh60i5w`
 An :dt:`explicit register name` is a target-specific string that identifies
 a :t:`register`.
+
+:dp:`fls_7OMMouCJAkYv`
+:gsee:`explicit register name` See :s:`ExplicitRegisterName`.
+
 
 :dp:`fls_3p8akc7gcsnx`
 An :t:`explicit register name` may be aliased as follows:
@@ -449,6 +457,10 @@ A :dt:`register class` represents a set of :t:`[register]s`.
 A :dt:`register class name` is a target-specific string that identifies a
 :t:`register class`.
 
+:dp:`fls_oMSCtDBeVJjp`
+:gsee:`register class name` See :s:`RegisterClassName`.
+
+
 :dp:`fls_40ksem5g5xx9`
 :t:`[Register]s` are organized into :t:`[register class]es` as follows:
 
@@ -652,6 +664,10 @@ A :dt:`register argument` is a :t:`construct` that configures the input
 and output of a :t:`register`, and optionally binds the configuration to an
 :t:`identifier`.
 
+:dp:`fls_eOZCPYBoVPm9`
+:gsee:`register argument` See :s:`RegisterArgument`.
+
+
 :dp:`fls_6bv3s8be5xif`
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
 
@@ -688,13 +704,25 @@ A :dt:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
 :t:`register` to an :t:`expression`, or both.
 
+:dp:`fls_Tz9HXT93pcXE`
+:gsee:`direction modifier` See :s:`DirectionModifier`.
+
+
 :dp:`fls_fta1gb5tzi3a`
 An :dt:`input register expression` is an :t:`expression` that provides the
 initial :t:`value` of a :t:`register`.
 
+:dp:`fls_6QQ5BUVCB9Dw`
+:gsee:`input register expression` See :s:`InputRegisterExpression`.
+
+
 :dp:`fls_sopiivuae0x7`
 An :dt:`output register expression` is an :t:`expression` that is assigned the
 :t:`value` of a :t:`register`.
+
+:dp:`fls_WEb7MLphjBQl`
+:gsee:`output register expression` See :s:`OutputRegisterExpression`.
+
 
 :dp:`fls_81Ju1TEqJ48K`
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.
@@ -703,12 +731,24 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
 An :dt:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
+:dp:`fls_s5qxTdAolzAY`
+:gsee:`input-output register expression` See :s:`InputOutputRegisterExpression`.
+
+
 :dp:`fls_aniw4ehsn2kb`
 A :dt:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
+:dp:`fls_bgUt4RZcbWnJ`
+:gsee:`simple register expression` See :s:`SimpleRegisterExpression`.
+
+
 :dp:`fls_j9XOoXDmN5Dq`
 A :dt:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
+
+:dp:`fls_owm9MCR4j1Io`
+:gsee:`register expression` See :s:`RegisterExpression`.
+
 
 :dp:`fls_jU8zg4k8dFsY`
 The :t:`type` of a :t:`const register expression` shall be an :t:`integer type`.
@@ -978,6 +1018,10 @@ Assembly Instructions
 An :dt:`assembly instruction` is a :t:`string literal` that represents a
 low-level assembly operation or an :t:`assembly directive`.
 
+:dp:`fls_4mPtPOyicxB2`
+:gsee:`assembly instruction` See :s:`AssemblyInstruction`.
+
+
 :dp:`fls_ihjhpy4osl53`
 An :t:`assembly instruction` shall use the syntax of format strings as
 defined in :t:`module` :std:`std::fmt`, and contain zero or more
@@ -985,6 +1029,10 @@ defined in :t:`module` :std:`std::fmt`, and contain zero or more
 
 :dp:`fls_2d05gcixjrzt`
 An :dt:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+
+:dp:`fls_5DnzbgTNWXX4`
+:gsee:`assembly code block` See :s:`AssemblyCodeBlock`.
+
 
 :dp:`fls_z64f094aivp6`
 When an :t:`assembly code block` contains multiple :t:`[assembly instruction]s`,
@@ -1404,6 +1452,10 @@ An :dt:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
 indicates that the :t:`[value]s` of selected :t:`[register]s` might be
 overwritten during the :t:`execution` of an :t:`assembly code block`.
 
+:dp:`fls_09AuGgBn4VZ4`
+:gsee:`ABI clobber` See :s:`AbiClobber`.
+
+
 :dp:`fls_e43sj9inlsym`
 Multiple :t:`[ABI clobber]s` may be specified for an :t:`assembly code block`.
 Clobber constraints are applied for all unique :t:`[register]s` in the union of
@@ -1496,6 +1548,10 @@ Assembly Options
 :dp:`fls_i21l6t3vn95t`
 An :dt:`assembly option` is used to specify a characteristic of or a restriction
 on the related :t:`assembly code block`.
+
+:dp:`fls_5AOFvdzbFB2u`
+:gsee:`assembly option` See :s:`AssemblyOption`.
+
 
 :dp:`fls_g09kmp2a04g9`
 :t:`Assembly option` :dc:`att_syntax` is applicable only to x86 architectures

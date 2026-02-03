@@ -28,6 +28,10 @@ Associated Items
 An :dt:`associated item` is an :t:`item` that appears within an
 :t:`implementation` or a :t:`trait`.
 
+:dp:`fls_pBSvRzhHfUy2`
+:gsee:`associated item` See :s:`AssociatedItem`.
+
+
 :dp:`fls_5y6ae0xqux57`
 An :dt:`associated constant` is a :t:`constant` that appears as an
 :t:`associated item`.

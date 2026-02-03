@@ -487,6 +487,10 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 :dp:`fls_xsdmun5uqy4c`
 An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
+:dp:`fls_S5SljeqmD27E`
+:gsee:`identifier` See :s:`Identifier`.
+
+
 :dp:`fls_ktnf6zkrdy45`
 A :dt:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
 keyword]s`.
@@ -574,6 +578,10 @@ Literals
 :dp:`fls_s76un78zyd0j`
 A :dt:`literal` is a fixed :t:`value` in program text.
 
+:dp:`fls_GOojH9RBk6cW`
+:gsee:`literal` See :s:`Literal`.
+
+
 .. _fls_2ifjqwnw03ms:
 
 Byte Literals
@@ -610,6 +618,10 @@ return), 0x27 (apostrophe), and 0x5C (reverse solidus).
 :dp:`fls_q0qwr83frszx`
 A :dt:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
 
+:dp:`fls_x1bx2aSWESrY`
+:gsee:`byte literal` See :s:`ByteLiteral`.
+
+
 :dp:`fls_fggytrv5jvw0`
 The :t:`type` of a :t:`byte literal` is :c:`u8`.
 
@@ -639,6 +651,10 @@ Byte String Literals
 :dp:`fls_t63zfv5JdUhj`
 A :dt:`byte string literal` is a :t:`literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
+
+:dp:`fls_9wEJYqdBJMXW`
+:gsee:`byte string literal` See :s:`ByteStringLiteral`.
+
 
 :dp:`fls_Xd6LnfzMb7t7`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -671,6 +687,10 @@ except characters 0x0D (carriage return), 0x22 (quotation mark), and 0x5C
 :dp:`fls_moe3zfx39ox2`
 A :dt:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
+
+:dp:`fls_jEC1LF8KaSBt`
+:gsee:`simple byte string literal` See :s:`SimpleByteStringLiteral`.
+
 
 :dp:`fls_vffxb6arj9jf`
 The :t:`type` of a :t:`simple byte string literal` of size ``N`` is ``&'static [u8;
@@ -710,6 +730,10 @@ Raw Byte String Literals
 A :dt:`raw byte string literal` is a :t:`simple byte string literal` that does not
 recognize :t:`[escaped character]s`.
 
+:dp:`fls_BY6vEEErT0Ze`
+:gsee:`raw byte string literal` See :s:`RawByteStringLiteral`.
+
+
 :dp:`fls_5ybq0euwya42`
 The :t:`type` of a :t:`raw byte string literal` of size ``N`` is ``&'static
 [u8; N]``.
@@ -740,6 +764,10 @@ C String Literals
 :dp:`fls_VKCW830CzhhN`
 A :dt:`c string literal` is a :t:`literal` that consists of multiple characters
 with an implicit 0x00 byte appended to it.
+
+:dp:`fls_sjh1dVwnehqI`
+:gsee:`c string literal` See :s:`CStringLiteral`.
+
 
 :dp:`fls_XJprzaEn82Xs`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -773,6 +801,10 @@ A :t:`simple c string literal` is any :t:`Unicode` character except characters
 :dp:`fls_nPI7j0siGP8G`
 A :dt:`simple c string literal` is a :t:`c string literal` where the characters are
 :t:`Unicode` characters.
+
+:dp:`fls_2Qwel53UojXv`
+:gsee:`simple c string literal` See :s:`SimpleCStringLiteral`.
+
 
 :dp:`fls_Ae7LM4Wg0NA7`
 The :t:`type` of a :t:`simple string literal` is :std:`&'static
@@ -817,6 +849,10 @@ Raw C String Literals
 A :dt:`raw c string literal` is a :t:`simple c string literal` that does not
 recognize :t:`[escaped character]s`.
 
+:dp:`fls_U3zwJNeQHh3k`
+:gsee:`raw c string literal` See :s:`RawCStringLiteral`.
+
+
 :dp:`fls_9nJHsg9dCi66`
 The :t:`type` of a :t:`simple string literal` is :std:`&'static
 [core::ffi::CStr]`.
@@ -846,6 +882,10 @@ Numeric Literals
 
 :dp:`fls_fqpqnku27v99`
 A :dt:`numeric literal` is a :t:`literal` that denotes a number.
+
+:dp:`fls_Tx8DvwPnV0Nb`
+:gsee:`numeric literal` See :s:`NumericLiteral`.
+
 
 .. _fls_2ed4axpsy9u0:
 
@@ -930,21 +970,45 @@ Integer Literals
 :dp:`fls_vkk2krfn93ry`
 An :dt:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
+:dp:`fls_yQNiGJyXbGvg`
+:gsee:`integer literal` See :s:`IntegerLiteral`.
+
+
 :dp:`fls_nxqncu5yq4eu`
 A :dt:`binary literal` is an :t:`integer literal` in base 2.
+
+:dp:`fls_A3mZd2NJQ91Q`
+:gsee:`binary literal` See :s:`BinaryLiteral`.
+
 
 :dp:`fls_rn8xfd66yvst`
 A :dt:`decimal literal` is an :t:`integer literal` in base 10.
 
+:dp:`fls_jOxOUMoSh4zx`
+:gsee:`decimal literal` See :s:`DecimalLiteral`.
+
+
 :dp:`fls_2268lchxkzjp`
 A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
+
+:dp:`fls_27WYbZFNNHCk`
+:gsee:`hexadecimal literal` See :s:`HexadecimalLiteral`.
+
 
 :dp:`fls_4v7awnutbpoe`
 An :dt:`octal literal` is an :t:`integer literal` in base 8.
 
+:dp:`fls_99yN0uX07LfN`
+:gsee:`octal literal` See ``OctalLiteral.``
+
+
 :dp:`fls_f1e29aj0sqvl`
 An :dt:`integer suffix` is a component of an :t:`integer literal` that specifies
 an explicit :t:`integer type`.
+
+:dp:`fls_b3OZCzwYqGrn`
+:gsee:`integer suffix` See ``IntegerSuffix.``
+
 
 :dp:`fls_u83mffscqm6`
 A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
@@ -1056,9 +1120,17 @@ Float Literals
 :dp:`fls_rzi7oeqokd6e`
 A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional number.
 
+:dp:`fls_gv1rci4hToYq`
+:gsee:`float literal` See :s:`FloatLiteral`.
+
+
 :dp:`fls_2ru1zyrykd37`
 A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
+
+:dp:`fls_cGaBKmQQQ19y`
+:gsee:`float suffix` See :s:`FloatSuffix`.
+
 
 :dp:`fls_21mhnhplzam7`
 A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
@@ -1153,6 +1225,10 @@ the range of U+D800 and U+DFFF, inclusive.
 A :dt:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
 character.
 
+:dp:`fls_DMBZWEOMVkB3`
+:gsee:`character literal` See :s:`CharacterLiteral`.
+
+
 :dp:`fls_n8z6p6g564r2`
 The :t:`type` of a :t:`character literal` is :c:`char`.
 
@@ -1182,6 +1258,10 @@ String Literals
 
 :dp:`fls_7fuctvtvdi7x`
 A :dt:`string literal` is a :t:`literal` that consists of multiple characters.
+
+:dp:`fls_77LIvjbfqoCp`
+:gsee:`string literal` See :s:`StringLiteral`.
+
 
 :dp:`fls_NyiCpU2tzJlQ`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -1218,6 +1298,10 @@ new line).
 :dp:`fls_ycy5ee6orjx`
 A :dt:`simple string literal` is a :t:`string literal` where the characters are
 :t:`Unicode` characters.
+
+:dp:`fls_6Z8LbNXLo918`
+:gsee:`simple string literal` See :s:`SimpleStringLiteral`.
+
 
 :dp:`fls_6nt5kls21xes`
 The :t:`type` of a :t:`simple string literal` is ``&'static str``.
@@ -1261,6 +1345,10 @@ Raw String Literals
 A :dt:`raw string literal` is a :t:`simple string literal` that does not
 recognize :t:`[escaped character]s`.
 
+:dp:`fls_H1HPSIwhHNom`
+:gsee:`raw string literal` See :s:`RawStringLiteral`.
+
+
 :dp:`fls_ms43w1towz40`
 The :t:`type` of a :t:`raw string literal` is ``&'static str``.
 
@@ -1290,6 +1378,10 @@ Boolean Literals
 :dp:`fls_1lll64ftupjd`
 A :dt:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
 logic and Boolean algebra.
+
+:dp:`fls_CETCWFCglv16`
+:gsee:`boolean literal` See :s:`BooleanLiteral`.
+
 
 :dp:`fls_pgngble3ilyx`
 The :t:`type` of a :t:`boolean literal` is :c:`bool`.
@@ -1350,19 +1442,39 @@ Comments
 A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
+:dp:`fls_X1ipHCCUYKdD`
+:gsee:`comment` See :s:`Comment`.
+
+
 :dp:`fls_qsbnl11be35s`
 A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
+:dp:`fls_TRYxzVqM4AvZ`
+:gsee:`block comment` See :s:`BlockComment`.
+
+
 :dp:`fls_nayisy85kyq2`
 A :dt:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+
+:dp:`fls_zO4vf04h2jxq`
+:gsee:`line comment` See :s:`LineComment`.
+
 
 :dp:`fls_k3hj30hjkdhw`
 An :dt:`inner block doc` is a :t:`block comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
+:dp:`fls_jZfobkBFoYjh`
+:gsee:`inner block doc` See :s:`InnerBlockDoc`.
+
+
 :dp:`fls_tspijl68lduc`
 An :dt:`inner line doc` is a :t:`line comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
+
+:dp:`fls_1n6BsBb9V23g`
+:gsee:`inner line doc` See :s:`InnerLineDoc`.
+
 
 :dp:`fls_KZp0yiFLTqxb`
 An :dt:`inner doc comment` is either an :t:`inner block doc` or an
@@ -1372,9 +1484,17 @@ An :dt:`inner doc comment` is either an :t:`inner block doc` or an
 An :dt:`outer block doc` is a :t:`block comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
+:dp:`fls_LrAS5C5cGu0e`
+:gsee:`outer block doc` See :s:`OuterBlockDoc`.
+
+
 :dp:`fls_scko7crha0um`
 An :dt:`outer line doc` is a :t:`line comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
+
+:dp:`fls_eDtV4AjZOHO3`
+:gsee:`outer line doc` See :s:`OuterLineDoc`.
+
 
 :dp:`fls_RYVL9KgaxKvl`
 An :dt:`outer doc comment` is either an :t:`outer block doc` or an
@@ -1463,6 +1583,10 @@ Keywords
 :dp:`fls_dti0uu7rz81w`
 A :dt:`keyword` is a word in program text that has special meaning.
 
+:dp:`fls_fm0dUBNpy7ZY`
+:gsee:`keyword` See :s:`Keyword`.
+
+
 :dp:`fls_sxg1o4oxql51`
 :t:`[Keyword]s` are case sensitive.
 
@@ -1520,6 +1644,10 @@ Strict Keywords
 :dp:`fls_bsh7qsyvox21`
 A :dt:`strict keyword` is a :t:`keyword` that always holds its special meaning.
 
+:dp:`fls_yc9WZ7dy5UPp`
+:gsee:`strict keyword` See :s:`StrictKeyword`.
+
+
 .. _fls_cbsgp6k0qa82:
 
 Reserved Keywords
@@ -1549,6 +1677,10 @@ Reserved Keywords
 :dp:`fls_w4b97ewwnql`
 A :dt:`reserved keyword` is a :t:`keyword` that is not yet in use.
 
+:dp:`fls_nnKrFpJiDu8f`
+:gsee:`reserved keyword` See :s:`ReservedKeyword`.
+
+
 .. _fls_9kjpxri0axvg:
 
 Weak Keywords
@@ -1569,6 +1701,10 @@ Weak Keywords
 :dp:`fls_bv87t1gvj7bz`
 A :dt:`weak keyword` is a :t:`keyword` whose special meaning depends on the
 context.
+
+:dp:`fls_YQBrhsHRvW5Z`
+:gsee:`weak keyword` See :s:`WeakKeyword`.
+
 
 :dp:`fls_bl55g03jmayf`
 Word ``macro_rules`` acts as a :t:`keyword` only when used in the context of a

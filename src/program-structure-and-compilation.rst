@@ -39,6 +39,10 @@ A :dt:`source file` contains the program text consisting of :t:`[inner
 attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
 :t:`source file` is tool defined.
 
+:dp:`fls_MtCiUQETks71`
+:gsee:`source file` See :s:`SourceFile`.
+
+
 :dp:`fls_ann3cha1xpek`
 A :s:`Shebang` does not have an effect on the compilation.
 
@@ -72,6 +76,10 @@ Modules
 :dp:`fls_odd1hj3y1mgu`
 A :dt:`module` is a container for zero or more :t:`[item]s`.
 
+:dp:`fls_8xN9TqUAMhDe`
+:gsee:`module` See :s:`ModuleDeclaration`.
+
+
 :dp:`fls_whgv72emrm47`
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
 be consumed by :t:`[macro]s`.
@@ -79,8 +87,16 @@ be consumed by :t:`[macro]s`.
 :dp:`fls_qypjjpcf8uwq`
 An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
+:dp:`fls_yccSxGy5JroQ`
+:gsee:`inline module` See :s:`InlineModuleSpecification`.
+
+
 :dp:`fls_cavwpr1ybk37`
 An :dt:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
+
+:dp:`fls_RcwvKMqWu6pa`
+:gsee:`outline module` See :s:`OutlineModuleSpecification`.
+
 
 :dp:`fls_plepew2319g4`
 An :t:`outline module` loads a :t:`source file` and considers the text of the
@@ -174,11 +190,23 @@ Crate Imports
 :dp:`fls_d0pa807s5d5h`
 A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
 
+:dp:`fls_agVuGvyxXKSD`
+:gsee:`crate import` See :s:`ExternalCrateImport`.
+
+
 :dp:`fls_vfam3wzeAiah`
 A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
 
+:dp:`fls_a8TBCvvefJzq`
+:gsee:`crate indication` See :s:`CrateIndication`.
+
+
 :dp:`fls_2v7k7p4v0xra`
 A :dt:`renaming` provides an alternative :t:`name` for an existing name.
+
+:dp:`fls_zjvMTpHS7997`
+:gsee:`renaming` See :s:`Renaming`.
+
 
 :dp:`fls_ft860vkz0lkc`
 A :t:`crate import` binds an external :t:`crate` to its :t:`crate indication`.

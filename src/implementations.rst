@@ -40,9 +40,17 @@ Implementations
 An :dt:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
+:dp:`fls_Iu0zWeqLFrhR`
+:gsee:`implementation` See :s:`Implementation`.
+
+
 :dp:`fls_yopmjbnw8tbl`
 An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
 an :t:`implementation` are associated with.
+
+:dp:`fls_0fFIIT4bKPMi`
+:gsee:`implementing type` See :s:`ImplementingType`.
+
 
 :dp:`fls_eIHc8Y9fBtr0`
 Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
@@ -53,9 +61,17 @@ An :dt:`implementation body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of an :t:`implementation`.
 
+:dp:`fls_Kx0fKCV1BWDv`
+:gsee:`implementation body` See :s:`ImplementationBody`.
+
+
 :dp:`fls_v0n0bna40dqr`
 An :dt:`inherent implementation` is an :t:`implementation` that adds direct
 functionality.
+
+:dp:`fls_yBuazrB7w3dQ`
+:gsee:`inherent implementation` See :s:`InherentImplementation`.
+
 
 :dp:`fls_797etpdk5dyb`
 :t:`[Inherent implementation]s` of the same :t:`implementing type` shall be
@@ -65,6 +81,10 @@ defined within the same :t:`crate`.
 A :dt:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
+:dp:`fls_8fMuO57Zadsn`
+:gsee:`trait implementation` See :s:`TraitImplementation`.
+
+
 :dp:`fls_8pwr7ibvhmhu`
 An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
@@ -72,6 +92,10 @@ An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :dp:`fls_47x0ep8of8wr`
 An :dt:`implemented trait` is a :t:`trait` whose functionality has been
 implemented by an :t:`implementing type`.
+
+:dp:`fls_nZWjVwU2MWLx`
+:gsee:`implemented trait` See :s:`ImplementedTrait`.
+
 
 :dp:`fls_agitlryvyc16`
 The :t:`type path` of a :t:`trait implementation` shall resolve to a :t:`trait`.

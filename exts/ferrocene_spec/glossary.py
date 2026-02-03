@@ -11,7 +11,8 @@ from typing import Iterable, Optional
 from urllib.parse import parse_qs, unquote, urlparse
 
 from docutils import nodes
-from sphinx.directives import SphinxDirective
+from sphinx.util import logging as sphinx_logging
+from sphinx.util.docutils import SphinxDirective, SphinxRole
 from sphinx.environment.collectors import EnvironmentCollector
 from sphinx.transforms import SphinxTransform
 import sphinx
@@ -47,6 +48,24 @@ ROLE_BY_KIND = {
 
 class GlossaryMarkerNode(nodes.Element):
     pass
+
+
+class GlossarySeeNode(nodes.inline):
+    pass
+
+
+class GlossarySeeRole(SphinxRole):
+    def run(self):
+        term_text = self.text.strip()
+        if not term_text:
+            logger = sphinx_logging.getLogger(__name__)
+            logger.warning("gsee role requires a term name", location=self.get_location())
+            return [], []
+        term_id = definitions.id_from_text(TERM_KIND, term_text)
+        node = GlossarySeeNode()
+        node["term_text"] = term_text
+        node["term_id"] = term_id
+        return [node], []
 
 
 class GlossaryDirective(SphinxDirective):
@@ -88,6 +107,7 @@ class GlossaryCollector(EnvironmentCollector):
     def process_doc(self, app, doctree):
         docname = app.env.docname
         storage = get_storage(app.env)
+        defined_terms = set()
         for node in doctree.findall(definitions.DefIdNode):
             if node["def_kind"] not in (TERM_KIND, CODE_TERM_KIND):
                 continue
@@ -100,6 +120,23 @@ class GlossaryCollector(EnvironmentCollector):
                     line=node.line,
                 )
             )
+            if node["def_kind"] == TERM_KIND:
+                defined_terms.add(node["def_id"])
+
+        for paragraph in doctree.findall(nodes.paragraph):
+            for node in paragraph.findall(lambda item: isinstance(item, GlossarySeeNode)):
+                term_id = node["term_id"]
+                if term_id in defined_terms:
+                    continue
+                storage.setdefault((TERM_KIND, term_id), []).append(
+                    GlossaryDefinition(
+                        def_kind=TERM_KIND,
+                        term_id=term_id,
+                        display_text=node["term_text"],
+                        document=docname,
+                        line=node.line or paragraph.line,
+                    )
+                )
 
     def get_updated_docs(self, app, env):
         signature = compute_signature(get_storage(env))
@@ -212,17 +249,34 @@ class GlossaryTransform(SphinxTransform):
                 break
 
         if term_node is None:
-            return None, True
-
-        paragraph = paragraphs.find_parent_of_type(term_node, nodes.paragraph)
-        if paragraph is None:
-            return None, True
+            paragraph = find_glossary_see_paragraph(source_doctree, definition.term_id)
+            if paragraph is None:
+                return None, True
+        else:
+            paragraph = paragraphs.find_parent_of_type(term_node, nodes.paragraph)
+            if paragraph is None:
+                return None, True
 
         paragraphs_out = [normalize_glossary_paragraph(glossary_docname, paragraph)]
-        for sibling in iter_adjacent_see_paragraphs(paragraph):
+        for sibling in iter_adjacent_see_paragraphs(paragraph, definition.term_id):
             paragraphs_out.append(normalize_glossary_paragraph(glossary_docname, sibling))
 
         return paragraphs_out, True
+
+
+class GlossarySeeTransform(SphinxTransform):
+    default_priority = 500
+
+    def apply(self):
+        term_definitions = collect_term_definitions(self.document)
+        for paragraph in list(self.document.findall(nodes.paragraph)):
+            term_id = glossary_see_term_id(paragraph)
+            if term_id is None:
+                continue
+            if not is_glossary_see_adjacent(paragraph, term_id, term_definitions):
+                warn("gsee paragraph must follow matching term definition", paragraph)
+            if self.env.docname != GLOSSARY_DOCNAME:
+                paragraph.parent.remove(paragraph)
 
 
 def normalize_glossary_paragraph(glossary_docname, paragraph):
@@ -231,6 +285,8 @@ def normalize_glossary_paragraph(glossary_docname, paragraph):
     for node in list(paragraph.findall(definitions.DefIdNode)):
         if node["def_kind"] == PARAGRAPH_KIND:
             node.replace_self([])
+    for node in list(paragraph.findall(GlossarySeeNode)):
+        node.replace_self([])
 
     for node in list(paragraph.findall(definitions.DefIdNode)):
         if node["def_kind"] in (TERM_KIND, SYNTAX_KIND, CODE_TERM_KIND):
@@ -242,7 +298,7 @@ def normalize_glossary_paragraph(glossary_docname, paragraph):
     return paragraph
 
 
-def iter_adjacent_see_paragraphs(paragraph):
+def iter_adjacent_see_paragraphs(paragraph, term_id):
     parent = paragraph.parent
     if parent is None:
         return
@@ -254,21 +310,33 @@ def iter_adjacent_see_paragraphs(paragraph):
     for sibling in parent.children[index + 1 :]:
         if not isinstance(sibling, nodes.paragraph):
             break
-        if paragraph_has_term_definition(sibling):
+        if paragraph_has_other_term_definition(sibling, term_id):
             break
-        if not is_adjacent_see_paragraph(sibling):
+        if not is_adjacent_see_paragraph(sibling, term_id):
             break
         yield sibling
 
 
-def paragraph_has_term_definition(paragraph):
+def paragraph_has_term_definition(paragraph, term_id=None):
     for node in paragraph.findall(definitions.DefIdNode):
-        if node["def_kind"] == TERM_KIND:
+        if node["def_kind"] != TERM_KIND:
+            continue
+        if term_id is None or node["def_id"] == term_id:
             return True
     return False
 
 
-def is_adjacent_see_paragraph(paragraph):
+def paragraph_has_other_term_definition(paragraph, term_id):
+    for node in paragraph.findall(definitions.DefIdNode):
+        if node["def_kind"] == TERM_KIND and node["def_id"] != term_id:
+            return True
+    return False
+
+
+def is_adjacent_see_paragraph(paragraph, term_id):
+    glossary_term = glossary_see_term_id(paragraph)
+    if glossary_term is not None:
+        return glossary_term == term_id
     text = serialize_paragraph_text(paragraph).strip()
     if not text:
         return False
@@ -276,6 +344,46 @@ def is_adjacent_see_paragraph(paragraph):
     if lowered.startswith("see ") or lowered.startswith("see:"):
         return True
     if lowered.startswith("for ") and (" see " in lowered or " see:" in lowered):
+        return True
+    return False
+
+
+def glossary_see_term_id(paragraph):
+    for node in paragraph.findall(lambda item: isinstance(item, GlossarySeeNode)):
+        return node.get("term_id")
+    return None
+
+
+def find_glossary_see_paragraph(document, term_id):
+    for paragraph in document.findall(nodes.paragraph):
+        if glossary_see_term_id(paragraph) == term_id:
+            return paragraph
+    return None
+
+
+def collect_term_definitions(document):
+    term_ids = set()
+    for node in document.findall(definitions.DefIdNode):
+        if node["def_kind"] == TERM_KIND:
+            term_ids.add(node["def_id"])
+    return term_ids
+
+
+def is_glossary_see_adjacent(paragraph, term_id, term_definitions):
+    if paragraph_has_term_definition(paragraph, term_id):
+        return True
+    parent = paragraph.parent
+    if parent is not None:
+        try:
+            index = parent.children.index(paragraph)
+        except ValueError:
+            index = None
+        if index is not None and index > 0:
+            previous = parent.children[index - 1]
+            if isinstance(previous, nodes.paragraph):
+                if paragraph_has_term_definition(previous, term_id):
+                    return True
+    if term_id not in term_definitions:
         return True
     return False
 
@@ -573,6 +681,7 @@ def serialize_paragraph_text(paragraph):
     raw = getattr(paragraph, "rawsource", "")
     if raw:
         text = strip_paragraph_id(raw)
+        text = strip_glossary_only_role(text)
         text = replace_definition_roles(text)
         text = textwrap.dedent(text)
         return text.strip("\n")
@@ -622,6 +731,10 @@ def serialize_children(node):
 
 def strip_paragraph_id(text):
     return re.sub(r"^\s*:dp:`[^`]+`\s*", "", text, count=1)
+
+
+def strip_glossary_only_role(text):
+    return re.sub(r"\s*:gsee:`[^`]+`\s*", "", text, count=1)
 
 
 def replace_definition_roles(text):
@@ -854,15 +967,18 @@ def get_storage(env):
 
 
 def warn(message, location):
-    logger = sphinx.util.logging.getLogger(__name__)
+    logger = sphinx_logging.getLogger(__name__)
     logger.warning(message, location=location)
 
 
 def setup(app):
     app.add_directive("spec-glossary", GlossaryDirective)
     app.add_node(GlossaryMarkerNode)
+    app.add_node(GlossarySeeNode)
+    app.add_role_to_domain("spec", "gsee", GlossarySeeRole())
     app.add_env_collector(GlossaryCollector)
     app.add_post_transform(GlossaryTransform)
+    app.add_post_transform(GlossarySeeTransform)
     app.add_post_transform(GlossaryOverrideTransform)
     app.add_config_value(
         "spec_glossary_source_override",
