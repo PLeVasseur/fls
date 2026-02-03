@@ -93,11 +93,17 @@ class GlossaryIncludeDirective(SphinxDirective):
     }
 
     def run(self):
+        logger = logging.getLogger(__name__)
         tag_expr = self.options.get("tag")
+        include_path = directives.path(self.arguments[0])
         if tag_expr and not self.env.app.tags.eval_condition(tag_expr):
+            logger.info(
+                "glossary-include: skipped tag=%r include=%s",
+                tag_expr,
+                include_path,
+            )
             return []
 
-        include_path = directives.path(self.arguments[0])
         source = self.get_source_info()[0]
         if source:
             source_dir = Path(source).parent
@@ -107,6 +113,12 @@ class GlossaryIncludeDirective(SphinxDirective):
         if not resolved.is_file():
             warn(f"missing include file: {resolved}", self.get_location())
             return []
+
+        logger.info(
+            "glossary-include: using tag=%r include=%s",
+            tag_expr,
+            resolved,
+        )
 
         text = resolved.read_text(encoding="utf-8")
         lines = text.splitlines()

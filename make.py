@@ -14,8 +14,32 @@ import shutil
 EXTRA_WATCH_DIRS = ["exts", "themes"]
 
 
+def run_with_log(command, log_path):
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    command = [str(part) for part in command]
+    with log_path.open("w", encoding="utf-8") as log_file:
+        process = subprocess.Popen(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+        try:
+            assert process.stdout is not None
+            for line in process.stdout:
+                sys.stdout.write(line)
+                sys.stdout.flush()
+                log_file.write(line)
+            return process.wait()
+        except KeyboardInterrupt:
+            process.terminate()
+            process.wait()
+            raise
+
+
 def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
     dest = root / "build"
+    dest.mkdir(parents=True, exist_ok=True)
     output_dir = dest / builder
 
     args = ["-b", builder, "-d", dest / "doctrees"]
@@ -51,19 +75,20 @@ def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
     if use_generated_glossary:
         args += ["-t", "use_generated_glossary"]
 
+    log_path = dest / "sphinx-build.log"
     try:
-        subprocess.run(
+        returncode = run_with_log(
             [
                 "sphinx-autobuild" if serve else "sphinx-build",
                 *args,
                 root / "src",
                 output_dir,
             ],
-            check=True,
+            log_path,
         )
     except KeyboardInterrupt:
         exit(1)
-    except subprocess.CalledProcessError:
+    if returncode != 0:
         print("\nhint: if you see an exception, pass --debug to see the full traceback")
         exit(1)
 
