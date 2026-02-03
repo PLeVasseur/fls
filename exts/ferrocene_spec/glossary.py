@@ -148,21 +148,14 @@ class GlossaryTransform(SphinxTransform):
 
         sections = []
         for definition in sort_definitions(selected):
-            paragraph, should_warn = self.build_paragraph(glossary_docname, definition)
-            if paragraph is None:
+            paragraphs, should_warn = self.build_paragraphs(glossary_docname, definition)
+            if not paragraphs:
                 if should_warn:
                     warn(
                         f"missing glossary definition for '{definition.display_text}'",
                         node,
                     )
                 continue
-
-            paragraph_id = stable_fls_id(
-                "glossary:",
-                definition.term_id,
-                used_paragraph_ids,
-            )
-            paragraph.insert(0, definitions.DefIdNode(PARAGRAPH_KIND, paragraph_id))
 
             section_id = stable_fls_id(
                 "glossary-section:",
@@ -171,7 +164,14 @@ class GlossaryTransform(SphinxTransform):
             )
             section = nodes.section(ids=[section_id], names=[section_id])
             section += nodes.title("", normalize_title_text(definition.display_text))
-            section += paragraph
+            for paragraph in paragraphs:
+                paragraph_id = stable_fls_id(
+                    "glossary:",
+                    definition.term_id,
+                    used_paragraph_ids,
+                )
+                paragraph.insert(0, definitions.DefIdNode(PARAGRAPH_KIND, paragraph_id))
+                section += paragraph
             sections.append(section)
 
         if not sections:
@@ -195,7 +195,7 @@ class GlossaryTransform(SphinxTransform):
         refresh_glossary_secnumbers(self.env, glossary_docname, sections)
         write_generated_glossary(self.app, sections, self.document)
 
-    def build_paragraph(self, glossary_docname, definition):
+    def build_paragraphs(self, glossary_docname, definition):
         try:
             source_doctree = self.env.get_doctree(definition.document)
         except Exception:
@@ -218,20 +218,66 @@ class GlossaryTransform(SphinxTransform):
         if paragraph is None:
             return None, True
 
-        paragraph = paragraph.deepcopy()
+        paragraphs_out = [normalize_glossary_paragraph(glossary_docname, paragraph)]
+        for sibling in iter_adjacent_see_paragraphs(paragraph):
+            paragraphs_out.append(normalize_glossary_paragraph(glossary_docname, sibling))
 
-        for node in list(paragraph.findall(definitions.DefIdNode)):
-            if node["def_kind"] == PARAGRAPH_KIND:
-                node.replace_self([])
+        return paragraphs_out, True
 
-        for node in list(paragraph.findall(definitions.DefIdNode)):
-            if node["def_kind"] in (TERM_KIND, SYNTAX_KIND, CODE_TERM_KIND):
-                node.replace_self(def_id_to_ref(node, glossary_docname))
 
-        for node in paragraph.findall(definitions.DefRefNode):
-            node["ref_source_doc"] = glossary_docname
+def normalize_glossary_paragraph(glossary_docname, paragraph):
+    paragraph = paragraph.deepcopy()
 
-        return paragraph, True
+    for node in list(paragraph.findall(definitions.DefIdNode)):
+        if node["def_kind"] == PARAGRAPH_KIND:
+            node.replace_self([])
+
+    for node in list(paragraph.findall(definitions.DefIdNode)):
+        if node["def_kind"] in (TERM_KIND, SYNTAX_KIND, CODE_TERM_KIND):
+            node.replace_self(def_id_to_ref(node, glossary_docname))
+
+    for node in paragraph.findall(definitions.DefRefNode):
+        node["ref_source_doc"] = glossary_docname
+
+    return paragraph
+
+
+def iter_adjacent_see_paragraphs(paragraph):
+    parent = paragraph.parent
+    if parent is None:
+        return
+    try:
+        index = parent.children.index(paragraph)
+    except ValueError:
+        return
+
+    for sibling in parent.children[index + 1 :]:
+        if not isinstance(sibling, nodes.paragraph):
+            break
+        if paragraph_has_term_definition(sibling):
+            break
+        if not is_adjacent_see_paragraph(sibling):
+            break
+        yield sibling
+
+
+def paragraph_has_term_definition(paragraph):
+    for node in paragraph.findall(definitions.DefIdNode):
+        if node["def_kind"] == TERM_KIND:
+            return True
+    return False
+
+
+def is_adjacent_see_paragraph(paragraph):
+    text = serialize_paragraph_text(paragraph).strip()
+    if not text:
+        return False
+    lowered = text.lower()
+    if lowered.startswith("see ") or lowered.startswith("see:"):
+        return True
+    if lowered.startswith("for ") and (" see " in lowered or " see:" in lowered):
+        return True
+    return False
 
 
 class GlossaryOverrideTransform(SphinxTransform):
