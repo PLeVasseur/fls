@@ -970,9 +970,19 @@ Assembly Instructions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4jr7eg6e0g4w`
-An :t:`assembly instruction` is a :t:`string literal` that represents a
-low-level assembly operation or an :t:`assembly directive`.
+.. glossary-entry:: assembly instruction
+   
+   :glossary:
+     :dp:`fls_VLu28hOvCy2o`
+     An :dt:`assembly instruction` is a :t:`string literal` that represents a
+     low-level assembly operation or an :t:`assembly directive`.
+     
+     :dp:`fls_EYHuB5cCldbm`
+     See :s:`AssemblyInstruction`.
+   :chapter:
+     :dp:`fls_4jr7eg6e0g4w`
+     An :t:`assembly instruction` is a :t:`string literal` that represents a
+     low-level assembly operation or an :t:`assembly directive`.
 
 :dp:`fls_ihjhpy4osl53`
 An :t:`assembly instruction` shall use the syntax of format strings as
@@ -1233,9 +1243,16 @@ Directive Support
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4tfod2vgz2m6`
-An :t:`assembly directive` is a request to the assembler to perform a
-particular action or change a setting.
+.. glossary-entry:: assembly directive
+   
+   :glossary:
+     :dp:`fls_FP2KbO6c3cpq`
+     An :dt:`assembly directive` is a request to the assembler to perform a
+     particular action or change a setting.
+   :chapter:
+     :dp:`fls_4tfod2vgz2m6`
+     An :t:`assembly directive` is a request to the assembler to perform a
+     particular action or change a setting.
 
 :dp:`fls_3b0ab1nlo641`
 If an :t:`assembly code block` contains stateful :t:`[assembly directive]s`
@@ -1395,10 +1412,21 @@ ABI Clobbers
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xa11ggykg0sh`
-An :t:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
-indicates that the :t:`[value]s` of selected :t:`[register]s` might be
-overwritten during the :t:`execution` of an :t:`assembly code block`.
+.. glossary-entry:: ABI clobber
+   
+   :glossary:
+     :dp:`fls_OVX4RFcWKfP9`
+     An :dt:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
+     indicates that the :t:`[value]s` of selected :t:`[register]s` might be
+     overwritten during the :t:`execution` of an :t:`assembly code block`.
+     
+     :dp:`fls_pMNTKjDMCHia`
+     See :s:`AbiClobber`.
+   :chapter:
+     :dp:`fls_xa11ggykg0sh`
+     An :t:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
+     indicates that the :t:`[value]s` of selected :t:`[register]s` might be
+     overwritten during the :t:`execution` of an :t:`assembly code block`.
 
 :dp:`fls_e43sj9inlsym`
 Multiple :t:`[ABI clobber]s` may be specified for an :t:`assembly code block`.

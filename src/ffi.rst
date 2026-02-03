@@ -51,12 +51,31 @@ ABI
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xangrq3tfze0`
-:t:`Application Binary Interface` or :t:`ABI` is a set of conventions that
-dictate how data and computation cross language boundaries.
+.. glossary-entry:: Application Binary Interface
+   
+   :glossary:
+     :dp:`fls_ew4babc9467c`
+     :dt:`Application Binary Interface` is a set of conventions that dictate how
+     data and computation cross language boundaries.
+     
+     :dp:`fls_8dgmmsp34lgc`
+     See :s:`AbiSpecification`.
+   :chapter:
+     :dp:`fls_xangrq3tfze0`
+     :t:`Application Binary Interface` or :t:`ABI` is a set of conventions that
+     dictate how data and computation cross language boundaries.
 
-:dp:`fls_2w0xi6rxw3uz`
-The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
+.. glossary-entry:: ABI kind
+   
+   :glossary:
+     :dp:`fls_qo9itrt0n3h8`
+     The :dt:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
+     
+     :dp:`fls_rd4kpubxygie`
+     See :s:`AbiKind`.
+   :chapter:
+     :dp:`fls_2w0xi6rxw3uz`
+     The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
 
 :dp:`fls_9zitf1fvvfk8`
 The following :t:`[ABI]s` are supported:

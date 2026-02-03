@@ -76,9 +76,16 @@ Attribute Properties
 
 .. rubric:: Legality Rules
 
-:dp:`fls_p4potvq7x532`
-An :t:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
-it decorates.
+.. glossary-entry:: active attribute
+   
+   :glossary:
+     :dp:`fls_r8rzj8mtxtp1`
+     An :dt:`active attribute` is an :t:`attribute` that is removed from the
+     :t:`item` it decorates.
+   :chapter:
+     :dp:`fls_p4potvq7x532`
+     An :t:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
+     it decorates.
 
 :dp:`fls_xk7lb2g02sy7`
 An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
@@ -928,18 +935,38 @@ Attribute ``cfg``
 A :t:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
-:dp:`fls_y1MUhnKCxK6T`
-An :t:`all configuration predicate` is a :t:`configuration predicate` that
-models existential quantifier ALL.
+.. glossary-entry:: all configuration predicate
+   
+   :glossary:
+     :dp:`fls_IyMZWiTnkYPv`
+     An :dt:`all configuration predicate` is a :t:`configuration predicate` that
+     models existential quantifier ALL.
+     
+     :dp:`fls_0fEw9Bx8xX8q`
+     See :s:`ConfigurationPredicateAll`.
+   :chapter:
+     :dp:`fls_y1MUhnKCxK6T`
+     An :t:`all configuration predicate` is a :t:`configuration predicate` that
+     models existential quantifier ALL.
 
 :dp:`fls_tncxxsyutppf`
 An :t:`all configuration predicate` evaluates statically to ``true`` when either
 all nested configuration predicates evaluate to ``true``, or there are no nested
 configuration predicates.
 
-:dp:`fls_Rp73YEE3aFdI`
-An :t:`any configuration predicate` is a :t:`configuration predicate` that
-models existential quantifier ANY.
+.. glossary-entry:: any configuration predicate
+   
+   :glossary:
+     :dp:`fls_0nWHML8eoozG`
+     An :dt:`any configuration predicate` is a :t:`configuration predicate` that
+     models existential quantifier ANY.
+     
+     :dp:`fls_xhhXonDldWQY`
+     See :s:`ConfigurationPredicateAny`.
+   :chapter:
+     :dp:`fls_Rp73YEE3aFdI`
+     An :t:`any configuration predicate` is a :t:`configuration predicate` that
+     models existential quantifier ANY.
 
 :dp:`fls_m0zxktz168e0`
 An :t:`any configuration predicate` evaluates statically to ``true`` when any
@@ -2373,4 +2400,3 @@ the exhaustiveness of :t:`[match arm]s`.
    struct struct_with_future_fields {
        field: u32
    }
-

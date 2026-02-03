@@ -43,6 +43,7 @@ class GlossaryEntryData:
 class GlossaryEntryDirective(SphinxDirective):
     required_arguments = 1
     has_content = True
+    final_argument_whitespace = True
     option_spec = {
         "kind": lambda argument: directives.choice(argument, VALID_KINDS),
         "propagate": _parse_bool_option,

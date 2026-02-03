@@ -483,9 +483,19 @@ Array Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fx7b3qv3ghca`
-An :t:`array type` is a :t:`sequence type` that represents a fixed sequence
-of elements.
+.. glossary-entry:: array type
+   
+   :glossary:
+     :dp:`fls_muddb5qxdc4k`
+     An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence of
+     elements.
+     
+     :dp:`fls_wre34hexlv6s`
+     See :s:`ArrayTypeSpecification`.
+   :chapter:
+     :dp:`fls_fx7b3qv3ghca`
+     An :t:`array type` is a :t:`sequence type` that represents a fixed sequence
+     of elements.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -1138,9 +1148,16 @@ An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
 
-:dp:`fls_3aKZB0ILIkZw`
-An :t:`anonymous return type` is an :t:`impl trait type` ascribed to a
-:t:`function` :t:`return type`.
+.. glossary-entry:: anonymous return type
+   
+   :glossary:
+     :dp:`fls_z6t6lbwwztuf`
+     An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
+     :t:`function` return type.
+   :chapter:
+     :dp:`fls_3aKZB0ILIkZw`
+     An :t:`anonymous return type` is an :t:`impl trait type` ascribed to a
+     :t:`function` :t:`return type`.
 
 :dp:`fls_Xo1ODwOyX7Vm`
 An :t:`anonymous return type` behaves as if it contains all declared :t:`[type
@@ -1403,11 +1420,18 @@ A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`
 :dp:`fls_ozYgHEHFTT5c`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
 
-:dp:`fls_muxfn9soi47l`
-The :t:`alignment` of a :t:`value` specifies which addresses are valid for
-storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
-and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
-address that is a multiple of ``N``.
+.. glossary-entry:: alignment
+   
+   :glossary:
+     :dp:`fls_c0hbatn5o8x3`
+     The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
+     storing the value.
+   :chapter:
+     :dp:`fls_muxfn9soi47l`
+     The :t:`alignment` of a :t:`value` specifies which addresses are valid for
+     storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
+     and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
+     address that is a multiple of ``N``.
 
 :dp:`fls_1pbwigq6f3ha`
 The :t:`size` of a :t:`type` is the offset in bytes between successive elements

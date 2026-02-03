@@ -1383,12 +1383,32 @@ Arithmetic Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_asibqpe3z95h`
-An :t:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
-from two :t:`[operand]s` using arithmetic.
+.. glossary-entry:: arithmetic expression
+   
+   :glossary:
+     :dp:`fls_u3z2r1fw89xo`
+     An :dt:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
+     from two :t:`[operand]s` using arithmetic.
+     
+     :dp:`fls_in59ccg4g3we`
+     See :s:`ArithmeticExpression`.
+   :chapter:
+     :dp:`fls_asibqpe3z95h`
+     An :t:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
+     from two :t:`[operand]s` using arithmetic.
 
-:dp:`fls_kr8Opj3c7uvb`
-An :t:`addition expression` is an :t:`arithmetic expression` that uses addition.
+.. glossary-entry:: addition expression
+   
+   :glossary:
+     :dp:`fls_ylfdtuajmi0t`
+     An :dt:`addition expression` is an :t:`arithmetic expression` that uses
+     addition.
+     
+     :dp:`fls_5bgx5dyi817x`
+     See :s:`AdditionExpression`.
+   :chapter:
+     :dp:`fls_kr8Opj3c7uvb`
+     An :t:`addition expression` is an :t:`arithmetic expression` that uses addition.
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
@@ -2857,16 +2877,46 @@ Array Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ya9res33oxt6`
-An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
+.. glossary-entry:: array expression
+   
+   :glossary:
+     :dp:`fls_pyjkjbvqarto`
+     An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
+     
+     :dp:`fls_vua1xy4y9irp`
+     See :s:`ArrayExpression`.
+   :chapter:
+     :dp:`fls_ya9res33oxt6`
+     An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
 
-:dp:`fls_fwtd3b10veiw`
-An :t:`array element constructor` is an :t:`array expression` that lists all
-elements of the :t:`array` being constructed.
+.. glossary-entry:: array element constructor
+   
+   :glossary:
+     :dp:`fls_cmx9ls5zoazp`
+     An :dt:`array element constructor` is an :t:`array expression` that lists all
+     elements of the :t:`array` being constructed.
+     
+     :dp:`fls_9bwte7cmszl1`
+     See :s:`ArrayElementConstructor`.
+   :chapter:
+     :dp:`fls_fwtd3b10veiw`
+     An :t:`array element constructor` is an :t:`array expression` that lists all
+     elements of the :t:`array` being constructed.
 
-:dp:`fls_81jf78m5uga4`
-An :t:`array repetition constructor` is an :t:`array expression` that specifies
-how many times an element is repeated in the :t:`array` being constructed.
+.. glossary-entry:: array repetition constructor
+   
+   :glossary:
+     :dp:`fls_st1kw8mor2zk`
+     An :dt:`array repetition constructor` is an :t:`array expression` that
+     specifies how many times an element is repeated in the :t:`array` being
+     constructed.
+     
+     :dp:`fls_1zr997qwsal2`
+     See :s:`ArrayRepetitionConstructor`.
+   :chapter:
+     :dp:`fls_81jf78m5uga4`
+     An :t:`array repetition constructor` is an :t:`array expression` that specifies
+     how many times an element is repeated in the :t:`array` being constructed.
 
 :dp:`fls_3y69y9ga4at7`
 A :t:`repeat operand` is an :t:`operand` that specifies the element being
@@ -3365,9 +3415,16 @@ Call Expressions
 A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
-:dp:`fls_jvz5z3eqxb39`
-An :t:`argument operand` is an :t:`operand` which is used as an argument in a
-:t:`call expression` or a :t:`method call expression`.
+.. glossary-entry:: argument operand
+   
+   :glossary:
+     :dp:`fls_ljuwr88k92vp`
+     An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
+     :t:`call expression` or a :t:`method call expression`.
+   :chapter:
+     :dp:`fls_jvz5z3eqxb39`
+     An :t:`argument operand` is an :t:`operand` which is used as an argument in a
+     :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_7ql1c71eidg8`
 A :t:`call operand` is the :t:`function` being invoked or the
@@ -3831,9 +3888,16 @@ A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 :dp:`fls_XEc0cIkpkyzJ`
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
-:dp:`fls_eg93m93gvwal`
-An :t:`anonymous loop expression` is a :t:`loop expression` without a
-:t:`label`.
+.. glossary-entry:: anonymous loop expression
+   
+   :glossary:
+     :dp:`fls_csss2a8yk52k`
+     An :dt:`anonymous loop expression` is a :t:`loop expression` without a
+     :t:`label`.
+   :chapter:
+     :dp:`fls_eg93m93gvwal`
+     An :t:`anonymous loop expression` is a :t:`loop expression` without a
+     :t:`label`.
 
 :dp:`fls_phpoq9ho8f1v`
 A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
@@ -5175,12 +5239,20 @@ the :t:`capture target`.
 Arithmetic Overflow
 -------------------
 
-:dp:`fls_oFIRXBPXu6Zv`
-An :t:`arithmetic overflow` occurs when an :t:`operator expression` computes a
-:t:`value` of a :t:`scalar type` that lies outside of the range of valid
-:t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
-:t:`operator expression` lies outside of the range of valid :t:`[value]s` for
-the operation.
+.. glossary-entry:: arithmetic overflow
+   
+   :glossary:
+     :dp:`fls_jbytOQvIddAl`
+     An :dt:`arithmetic overflow` occurs if an :t:`arithmetic expression` or a
+     :t:`negation expression` computes a :t:`value` of a :t:`scalar type` that lies
+     outside of the range of valid :t:`[value]s` for the :t:`scalar type`.
+   :chapter:
+     :dp:`fls_oFIRXBPXu6Zv`
+     An :t:`arithmetic overflow` occurs when an :t:`operator expression` computes a
+     :t:`value` of a :t:`scalar type` that lies outside of the range of valid
+     :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
+     :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
+     the operation.
 
 .. rubric:: Dynamic Semantics
 
