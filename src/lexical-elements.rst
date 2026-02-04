@@ -895,8 +895,17 @@ Numeric Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fqpqnku27v99`
-A :t:`numeric literal` is a :t:`literal` that denotes a number.
+.. glossary-entry:: numeric literal
+   
+   :glossary:
+     :dp:`fls_978ndaqdv4r`
+     A :dt:`numeric literal` is a :t:`literal` that denotes a number.
+     
+     :dp:`fls_swue4tma9fmf`
+     See :s:`NumericLiteral`.
+   :chapter:
+     :dp:`fls_fqpqnku27v99`
+     A :t:`numeric literal` is a :t:`literal` that denotes a number.
 
 .. _fls_2ed4axpsy9u0:
 
@@ -1026,8 +1035,17 @@ Integer Literals
      :dp:`fls_2268lchxkzjp`
      A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
-:dp:`fls_4v7awnutbpoe`
-An :t:`octal literal` is an :t:`integer literal` in base 8.
+.. glossary-entry:: octal literal
+   
+   :glossary:
+     :dp:`fls_pf4341vnqiin`
+     An :dt:`octal literal` is an :t:`integer literal` in base 8.
+     
+     :dp:`fls_8u0n6xu0mizm`
+     See ``OctalLiteral.``
+   :chapter:
+     :dp:`fls_4v7awnutbpoe`
+     An :t:`octal literal` is an :t:`integer literal` in base 8.
 
 .. glossary-entry:: integer suffix
    
@@ -1553,17 +1571,34 @@ Comments
      An :t:`inner doc comment` is either an :t:`inner block doc` or an
      :t:`inner line doc`.
 
-:dp:`fls_63gzofa9ktic`
-An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
-:t:`non-[comment]` :t:`construct`.
+.. glossary-entry:: outer block doc
+   
+   :glossary:
+     :dp:`fls_531ggn1f8f6u`
+     An :dt:`outer block doc` is a :t:`block comment` that applies to a subsequent
+     :t:`non-[comment]` :t:`construct`.
+     
+     :dp:`fls_ddy9a66tpytp`
+     See :s:`OuterBlockDoc`.
+   :chapter:
+     :dp:`fls_63gzofa9ktic`
+     An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
+     :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_scko7crha0um`
 An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
-:dp:`fls_RYVL9KgaxKvl`
-An :t:`outer doc comment` is either an :t:`outer block doc` or an
-:t:`outer line doc`.
+.. glossary-entry:: outer doc comment
+   
+   :glossary:
+     :dp:`fls_mgSEUNUPcPBs`
+     An :dt:`outer doc comment` is either an :t:`outer block doc` or an
+     :t:`outer line doc`.
+   :chapter:
+     :dp:`fls_RYVL9KgaxKvl`
+     An :t:`outer doc comment` is either an :t:`outer block doc` or an
+     :t:`outer line doc`.
 
 .. glossary-entry:: doc comment
    

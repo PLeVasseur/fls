@@ -1224,9 +1224,19 @@ A :t:`trait` imported by a :t:`simple import` subject to a
 :t:`renaming` with character underscore ``_`` is added into :t:`scope` without
 a :t:`name`.
 
-:dp:`fls_ldr7tsuqw34s`
-A :t:`nesting import` is a :t:`use import` that provides a common
-:t:`simple path prefix` for its nested :t:`[use import]s`.
+.. glossary-entry:: nesting import
+   
+   :glossary:
+     :dp:`fls_nhkqkdqo32xs`
+     A :dt:`nesting import` is a :t:`use import` that provides a common :t:`path`
+     prefix for its nested :t:`[use import]s`.
+     
+     :dp:`fls_z4d611glen13`
+     See :s:`NestingImport`.
+   :chapter:
+     :dp:`fls_ldr7tsuqw34s`
+     A :t:`nesting import` is a :t:`use import` that provides a common
+     :t:`simple path prefix` for its nested :t:`[use import]s`.
 
 :dp:`fls_iNUBX5fJAI1N`
 A :t:`glob import` outside of a :t:`nesting import` without a :t:`simple path

@@ -116,8 +116,17 @@ A :ds:`SubjectLetExpression` is any expression in category
      An :t:`expression-without-block` is an :t:`expression` whose structure does not
      involve a :t:`block expression`.
 
-:dp:`fls_gwgttltgjma4`
-An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
+.. glossary-entry:: operand
+   
+   :glossary:
+     :dp:`fls_3mnn1au9ob6q`
+     An :dt:`operand` is an :t:`expression` nested within an expression.
+     
+     :dp:`fls_8299xfhdsd1`
+     See :s:`Operand`.
+   :chapter:
+     :dp:`fls_gwgttltgjma4`
+     An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 .. glossary-entry:: binary operator
    
@@ -1088,8 +1097,17 @@ Operator Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ursc5ynymoy`
-An :t:`operator expression` is an :t:`expression` that involves an operator.
+.. glossary-entry:: operator expression
+   
+   :glossary:
+     :dp:`fls_6ev01xwcfow1`
+     An :dt:`operator expression` is an :t:`expression` that involves an operator.
+     
+     :dp:`fls_qdszbyeuo7w1`
+     See :s:`OperatorExpression`.
+   :chapter:
+     :dp:`fls_ursc5ynymoy`
+     An :t:`operator expression` is an :t:`expression` that involves an operator.
 
 .. rubric:: Dynamic Semantics
 
@@ -2319,9 +2337,19 @@ of the :t:`right operand` is the :t:`trait implementation` :t:`type parameter`.
 The :t:`value` of a :t:`less-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::le(&left_operand, &right_operand)``.
 
-:dp:`fls_w71j7i3n1kit`
-A :t:`not-equals expression` is a :t:`comparison expression` that tests for
-inequality.
+.. glossary-entry:: not-equals expression
+   
+   :glossary:
+     :dp:`fls_2hmynl94uusk`
+     A :dt:`not-equals expression` is a :t:`comparison expression` that tests for
+     inequality.
+     
+     :dp:`fls_5d6vvr9m35n2`
+     See :s:`NotEqualsExpression`.
+   :chapter:
+     :dp:`fls_w71j7i3n1kit`
+     A :t:`not-equals expression` is a :t:`comparison expression` that tests for
+     inequality.
 
 :dp:`fls_qzo1torhv5i3`
 The :t:`type` of the :t:`left operand` of a :t:`not-equals expression` shall

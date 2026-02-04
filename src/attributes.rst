@@ -67,9 +67,19 @@ Attributes
      An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
      :t:`item`.
 
-:dp:`fls_8o6vmzbw1b1j`
-An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
-:t:`item`.
+.. glossary-entry:: outer attribute
+   
+   :glossary:
+     :dp:`fls_gffxnbilsqly`
+     An :dt:`outer attribute` is an :t:`attribute` that applies to a subsequent
+     :t:`item`.
+     
+     :dp:`fls_ty6ihy6x3kf`
+     See :s:`OuterAttribute`.
+   :chapter:
+     :dp:`fls_8o6vmzbw1b1j`
+     An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
+     :t:`item`.
 
 .. glossary-entry:: attribute content
    
@@ -1039,9 +1049,19 @@ configuration predicates.
 An :t:`any configuration predicate` evaluates statically to ``true`` when any
 nested configuration predicate evaluates to ``true``.
 
-:dp:`fls_XsxeOd32JI8x`
-A :t:`not configuration predicate` is a :t:`configuration predicate` that
-negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
+.. glossary-entry:: not configuration predicate
+   
+   :glossary:
+     :dp:`fls_BVMlBterkFYq`
+     A :dt:`not configuration predicate` is a :t:`configuration predicate` that
+     negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
+     
+     :dp:`fls_9j9AaNcv0VNA`
+     See :s:`ConfigurationPredicateNot`.
+   :chapter:
+     :dp:`fls_XsxeOd32JI8x`
+     A :t:`not configuration predicate` is a :t:`configuration predicate` that
+     negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
 
 :dp:`fls_tvsadfy9uibu`
 A :t:`not configuration predicate` evaluates statically to ``true`` when its

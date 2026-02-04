@@ -41,8 +41,17 @@ Patterns
 A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
 the criteria of the :t:`pattern`.
 
-:dp:`fls_VQMmveZUfNTn`
-An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
+.. glossary-entry:: or-pattern
+   
+   :glossary:
+     :dp:`fls_LnPDQW3bnNUw`
+     An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line, i.e. ``|``).
+     
+     :dp:`fls_urIJ5JNHLhm6`
+     See :s:`Pattern`.
+   :chapter:
+     :dp:`fls_VQMmveZUfNTn`
+     An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 :dp:`fls_mp6i4blzexnu`
 A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
@@ -323,9 +332,19 @@ Literal Patterns
      :dp:`fls_pah15qa54irs`
      A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
-:dp:`fls_COQKJC0dvtNO`
-A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
-literal`.
+.. glossary-entry:: numeric literal pattern
+   
+   :glossary:
+     :dp:`fls_azqQ3JxD5Lt7`
+     A :dt:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
+     literal`.
+     
+     :dp:`fls_QYDZm7pKy1nW`
+     See :s:`LiteralPattern`.
+   :chapter:
+     :dp:`fls_COQKJC0dvtNO`
+     A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
+     literal`.
 
 :dp:`fls_JP8YSbxSN0Ym`
 A :t:`numeric literal pattern`'s :t:`numeric literal` value shall not be a IEEE
@@ -570,9 +589,19 @@ within a range.
      An :t:`exclusive range pattern` is a :t:`range pattern` with both a
      :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
-:dp:`fls_akf9x5r6e0ta`
-An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
-to express an :t:`inclusive range pattern`.
+.. glossary-entry:: obsolete range pattern
+   
+   :glossary:
+     :dp:`fls_ave42vwb45zb`
+     An :dt:`obsolete range pattern` is a :t:`range pattern` that uses obsolete
+     syntax to express an :t:`inclusive range pattern`.
+     
+     :dp:`fls_ta0wa8ta9ol4`
+     See :s:`ObsoleteRangePattern`.
+   :chapter:
+     :dp:`fls_akf9x5r6e0ta`
+     An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
+     to express an :t:`inclusive range pattern`.
 
 :dp:`fls_vrpr6ttpfpal`
 A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
@@ -1375,10 +1404,18 @@ A :t:`binding` with :t:`binding mode` :dt:`by reference` binds an
 A :t:`binding` with :t:`binding mode` :dt:`by mutable reference` binds a
 :t:`mutable reference` to the matched :t:`value` to the :t:`name`.
 
-:dp:`fls_dqe75i8h2fie`
-A :t:`non-reference pattern` is any :t:`pattern` except
-:t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
-and :t:`[underscore pattern]s`.
+.. glossary-entry:: non-reference pattern
+   
+   :glossary:
+     :dp:`fls_tejled5izyue`
+     A :dt:`non-reference pattern` is any :t:`pattern` except
+     :t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
+     and :t:`[underscore pattern]s`.
+   :chapter:
+     :dp:`fls_dqe75i8h2fie`
+     A :t:`non-reference pattern` is any :t:`pattern` except
+     :t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
+     and :t:`[underscore pattern]s`.
 
 :dp:`fls_y3wuvj1y5j20`
 If a :t:`binding pattern` does not explicitly specify :t:`keyword` ``ref``,

@@ -385,6 +385,12 @@ inside the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges of
 Numeric Types
 ~~~~~~~~~~~~~
 
+.. glossary-entry:: numeric type
+   
+   :glossary:
+     :dp:`fls_cpdsj94l57af`
+     A :dt:`numeric type` is a :t:`type` whose :t:`[value]s` denote numbers.
+
 .. _fls_b4xporvr64s:
 
 Floating Point Types
@@ -1628,9 +1634,19 @@ Never Type
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4u0v5uy95pyf`
-The :t:`never type` is a :t:`type` that represents the result of a computation
-that never completes.
+.. glossary-entry:: never type
+   
+   :glossary:
+     :dp:`fls_m9v5j6detob4`
+     The :dt:`never type` is a :t:`type` that represents the result of a computation
+     that never completes.
+     
+     :dp:`fls_k5z1vjxepnfj`
+     See :s:`NeverType`.
+   :chapter:
+     :dp:`fls_4u0v5uy95pyf`
+     The :t:`never type` is a :t:`type` that represents the result of a computation
+     that never completes.
 
 :dp:`fls_xmtc10qzw0ui`
 The :t:`never type` has no :t:`[value]s`.
@@ -3292,10 +3308,24 @@ Circle is a subtrait of Shape.
 Object Safety
 ~~~~~~~~~~~~~
 
+.. glossary-entry:: object safety
+   
+   :glossary:
+     :dp:`fls_vqmng1l9ab8a`
+     :dt:`Object safety` is the process of determining whether a :t:`trait` can be
+     used as a :t:`trait object type`.
+
 .. rubric:: Legality Rules
 
-:dp:`fls_lrdki56hpc3k`
-A :t:`trait` is :t:`object safe` when:
+.. glossary-entry:: object safe
+   
+   :glossary:
+     :dp:`fls_oa2jiklr5nl2`
+     A :t:`trait` is :dt:`object safe` when it can be used as a
+     :t:`trait object type`.
+   :chapter:
+     :dp:`fls_lrdki56hpc3k`
+     A :t:`trait` is :t:`object safe` when:
 
 * :dp:`fls_5wlltclogfkw`
   Its :t:`[supertrait]s` are :t:`object safe`, and
@@ -3432,9 +3462,16 @@ A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
      list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
      :s:`ForGenericParameterList`.
 
-:dp:`fls_AzuZmR9DXSQh`
-An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
-that nullifies an implicitly added :t:`trait bound`.
+.. glossary-entry:: opt-out trait bound
+   
+   :glossary:
+     :dp:`fls_wS4EzN0N1GDP`
+     An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
+     that nullifies an implicitly added :t:`trait bound`.
+   :chapter:
+     :dp:`fls_AzuZmR9DXSQh`
+     An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
+     that nullifies an implicitly added :t:`trait bound`.
 
 :dp:`fls_1Sm2Yq1Ow76f`
 An :t:`outlives bound` is a :t:`trait bound` which requires that a

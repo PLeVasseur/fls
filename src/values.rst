@@ -48,6 +48,12 @@ Two :t:`[value]s` :t:`overlap` when
 * :dp:`fls_eoak5mdl6ma`
   Both :t:`[value]s` are elements of the same :t:`array`.
 
+.. glossary-entry:: null
+   
+   :glossary:
+     :dp:`fls_8sh17t37b2ml`
+     A :dc:`null` :t:`value` denotes the address ``0``.
+
 .. rubric:: Undefined Behavior
 
 :dp:`fls_6lg0oaaopc26`
