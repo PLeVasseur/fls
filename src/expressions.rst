@@ -677,8 +677,17 @@ Literal Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_rbwwczom3agt`
-A :t:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
+.. glossary-entry:: literal expression
+   
+   :glossary:
+     :dp:`fls_otaauusc24v5`
+     A :dt:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
+     
+     :dp:`fls_7po7zobtlhzn`
+     See :s:`LiteralExpression`.
+   :chapter:
+     :dp:`fls_rbwwczom3agt`
+     A :t:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
 
 :dp:`fls_w30su9x4q13r`
 The :t:`type` of a :t:`literal expression` is the :t:`type` of the corresponding

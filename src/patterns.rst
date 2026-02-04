@@ -305,8 +305,17 @@ Literal Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_pah15qa54irs`
-A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
+.. glossary-entry:: literal pattern
+   
+   :glossary:
+     :dp:`fls_5s9b4bza13xf`
+     A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
+     
+     :dp:`fls_o7q7wfjulc24`
+     See :s:`LiteralPattern`.
+   :chapter:
+     :dp:`fls_pah15qa54irs`
+     A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 :dp:`fls_COQKJC0dvtNO`
 A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric

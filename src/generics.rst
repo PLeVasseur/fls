@@ -164,8 +164,17 @@ A :t:`constant parameter initializer` shall be a :t:`constant expression`.
 It is a static error to use a :t:`generic parameter` in the
 :t:`discriminant initializer` of an :t:`enum variant`.
 
-:dp:`fls_s0nrjwqg2wox`
-A :t:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
+.. glossary-entry:: lifetime parameter
+   
+   :glossary:
+     :dp:`fls_7g0iu68nrsd4`
+     A :dt:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
+     
+     :dp:`fls_z1wl2uiwip98`
+     See :s:`LifetimeParameter`.
+   :chapter:
+     :dp:`fls_s0nrjwqg2wox`
+     A :t:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
 
 :dp:`fls_2grtygcj8o3`
 A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
@@ -363,9 +372,19 @@ to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
 :t:`type bound predicate`.
 
-:dp:`fls_V4PKFqtCsAv6`
-A :t:`lifetime bound predicate` is a :t:`construct` that specifies
-:t:`[lifetime bound]s` on a :t:`lifetime parameter`.
+.. glossary-entry:: lifetime bound predicate
+   
+   :glossary:
+     :dp:`fls_AHftLKgSP9Xk`
+     A :dt:`lifetime bound predicate` is a :t:`construct` that specifies
+     :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
+     
+     :dp:`fls_8WIod9Rm5IXa`
+     See :s:`LifetimeBoundPredicate`.
+   :chapter:
+     :dp:`fls_V4PKFqtCsAv6`
+     A :t:`lifetime bound predicate` is a :t:`construct` that specifies
+     :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 :dp:`fls_cslGPmVjujHD`
 A :t:`type bound predicate` is a :t:`construct` that specifies
@@ -500,9 +519,19 @@ A :t:`constant argument` may only appear as a single segment
 :t:`path expression`, optionally encapsulated in a :t:`block expression`, within
 an :t:`array repetition constructor` or a :t:`type`.
 
-:dp:`fls_10k9gdxlpuls`
-A :t:`lifetime argument` is a :t:`generic argument` that supplies the
-:t:`lifetime` of a :t:`lifetime parameter`.
+.. glossary-entry:: lifetime argument
+   
+   :glossary:
+     :dp:`fls_oaf87yjb3xjs`
+     A :dt:`lifetime argument` is a :t:`generic argument` that supplies the
+     :t:`value` of a :t:`lifetime parameter`.
+     
+     :dp:`fls_la8lbv14zj28`
+     See :s:`LifetimeArgument`.
+   :chapter:
+     :dp:`fls_10k9gdxlpuls`
+     A :t:`lifetime argument` is a :t:`generic argument` that supplies the
+     :t:`lifetime` of a :t:`lifetime parameter`.
 
 :dp:`fls_d4vdvpihoeb1`
 A :t:`type argument` is a :t:`generic argument` that supplies the :t:`type` of

@@ -166,15 +166,29 @@ The text of a :t:`source file` is a sequence of separate :t:`[lexical
 element]s`. The meaning of a program depends only on the particular sequence of
 :t:`[lexical element]s`, excluding :t:`non-[doc comment]s`.
 
-:dp:`fls_a1zylpqha73x`
-A :t:`lexical element` is the most basic syntactic element in program text.
+.. glossary-entry:: lexical element
+   
+   :glossary:
+     :dp:`fls_nrxnbkatn63n`
+     A :dt:`lexical element` is the most basic syntactic element in program
+     text.
+   :chapter:
+     :dp:`fls_a1zylpqha73x`
+     A :t:`lexical element` is the most basic syntactic element in program text.
 
 :dp:`fls_jy6wifn5r2bu`
 The text of a :t:`source file` is divided into :t:`[line]s`.
 
-:dp:`fls_efdfq9nhpmp5`
-A :t:`line` is a sequence of zero or more characters followed by an end of
-line.
+.. glossary-entry:: line
+   
+   :glossary:
+     :dp:`fls_oqf2439j3y7b`
+     A :dt:`line` is a sequence of zero or more characters followed by an end of
+     line.
+   :chapter:
+     :dp:`fls_efdfq9nhpmp5`
+     A :t:`line` is a sequence of zero or more characters followed by an end of
+     line.
 
 :dp:`fls_go25sisi5fdp`
 The representation of an end of line is tool-defined.
@@ -570,8 +584,17 @@ Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_s76un78zyd0j`
-A :t:`literal` is a fixed :t:`value` in program text.
+.. glossary-entry:: literal
+   
+   :glossary:
+     :dp:`fls_ckbyt11pku9j`
+     A :dt:`literal` is a fixed :t:`value` in program text.
+     
+     :dp:`fls_h1g46cevrqjv`
+     See :s:`Literal`.
+   :chapter:
+     :dp:`fls_s76un78zyd0j`
+     A :t:`literal` is a fixed :t:`value` in program text.
 
 .. _fls_2ifjqwnw03ms:
 
@@ -1479,8 +1502,17 @@ Comments
      :dp:`fls_qsbnl11be35s`
      A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
-:dp:`fls_nayisy85kyq2`
-A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+.. glossary-entry:: line comment
+   
+   :glossary:
+     :dp:`fls_3e7asah7lkqj`
+     A :dt:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+     
+     :dp:`fls_8j5j777dv2jm`
+     See :s:`LineComment`.
+   :chapter:
+     :dp:`fls_nayisy85kyq2`
+     A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
 .. glossary-entry:: inner block doc
    

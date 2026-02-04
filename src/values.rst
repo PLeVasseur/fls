@@ -280,6 +280,12 @@ Variables
 A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
 
+.. glossary-entry:: local variable
+   
+   :glossary:
+     :dp:`fls_3inlcyi6444u`
+     For :dt:`local variable`, see :t:`variable`.
+
 .. glossary-entry:: immutable variable
    
    :glossary:

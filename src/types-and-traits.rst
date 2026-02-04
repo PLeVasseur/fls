@@ -50,8 +50,14 @@ Types
 A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
-:dp:`fls_0yaYKnFrJkhG`
-A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+.. glossary-entry:: local type
+   
+   :glossary:
+     :dp:`fls_HvGPB3CsN4Ah`
+     A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+   :chapter:
+     :dp:`fls_0yaYKnFrJkhG`
+     A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 .. _fls_963gsjp2jas2:
 
@@ -539,9 +545,16 @@ domain of whole numbers:
      :dc:`i128` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
      :sup:`127`) to 2\ :sup:`127` - 1, all inclusive.
 
-:dp:`fls_t9oyfmgqka6u`
-:t:`Type` :c:`isize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+.. glossary-entry:: isize
+   
+   :glossary:
+     :dp:`fls_6x617i9zcj7o`
+     :dc:`isize` is a :t:`signed integer type` with the same number of bits as the
+     platform's :t:`pointer type`, and is at least 16-bits wide.
+   :chapter:
+     :dp:`fls_t9oyfmgqka6u`
+     :t:`Type` :c:`isize` has the same number of bits as the platform's
+     :t:`pointer type`, and is at least 16-bits wide.
 
 .. _fls_fbchw64p6n2x:
 
@@ -1777,6 +1790,13 @@ The :t:`size` of :t:`[scalar type]s` is as follows:
 Types :c:`usize` and :c:`isize` have :t:`size` big enough to contain every
 address on the target platform.
 
+.. glossary-entry:: layout
+   
+   :glossary:
+     :dp:`fls_qk602dmhc0d6`
+     :dt:`Layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
+     of :t:`[field]s` in a :t:`type`.
+
 :dp:`fls_pzi6izljfv0f`
 For :t:`type` :c:`str`, the :t:`layout` is that of :t:`slice type`
 ``[u8]``.
@@ -2551,9 +2571,16 @@ Interior Mutability
 
 .. rubric:: Legality Rules
 
-:dp:`fls_khy2e23i9o7z`
-:t:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
-be modified through :t:`[immutable reference]s`.
+.. glossary-entry:: interior mutability
+   
+   :glossary:
+     :dp:`fls_e0173dd09znl`
+     :dt:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
+     be modified through :t:`[immutable reference]s`.
+   :chapter:
+     :dp:`fls_khy2e23i9o7z`
+     :t:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
+     be modified through :t:`[immutable reference]s`.
 
 :dp:`fls_sWiU26n2xS3r`
 A :t:`type` is subject to :t:`interior mutability` when it contains a
@@ -2728,9 +2755,16 @@ in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
      A :t:`diverging type variable` is a :t:`type variable` that can refer to any
      :t:`type` and originates from a :t:`diverging expression`.
 
-:dp:`fls_JryXiKBIFvF3`
-A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
-stand in for an undetermined :t:`lifetime` of a :t:`type`.
+.. glossary-entry:: lifetime variable
+   
+   :glossary:
+     :dp:`fls_ucZnCBWxXl6n`
+     A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
+     stand in for an undetermined :t:`lifetime` of a :t:`type`.
+   :chapter:
+     :dp:`fls_JryXiKBIFvF3`
+     A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
+     stand in for an undetermined :t:`lifetime` of a :t:`type`.
 
 :dp:`fls_rvj3XspFZ1u3`
 The :t:`type inference` algorithm uses :t:`type unification` to propagate known
@@ -3125,8 +3159,14 @@ A :t:`trait body` is a :t:`construct` that encapsulates the
 Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
 :t:`type` implementing the :t:`trait`, and behaves like a :t:`type parameter`.
 
-:dp:`fls_AdbbUZZgMEsQ`
-A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
+.. glossary-entry:: local trait
+   
+   :glossary:
+     :dp:`fls_I9JaKZelMiby`
+     A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
+   :chapter:
+     :dp:`fls_AdbbUZZgMEsQ`
+     A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 :dp:`fls_I9JaKZelMiby`
 A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
@@ -3329,9 +3369,19 @@ Trait and Lifetime Bounds
 A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
 :t:`type alias` unless it is an :t:`associated item`.
 
-:dp:`fls_grby8tmmd8sb`
-A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
-:t:`[lifetime]s` of :t:`[generic parameter]s`.
+.. glossary-entry:: lifetime bound
+   
+   :glossary:
+     :dp:`fls_u6xfs8fg558`
+     A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
+     :t:`[lifetime]s` of :t:`[generic parameter]s`.
+     
+     :dp:`fls_ivcjmp54hdej`
+     See :s:`LifetimeIndication`.
+   :chapter:
+     :dp:`fls_grby8tmmd8sb`
+     A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
+     :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_knut10hoz6wc`
 A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
@@ -3427,8 +3477,17 @@ Lifetimes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_nne91at3143t`
-A :t:`lifetime` specifies the expected longevity of a :t:`value`.
+.. glossary-entry:: lifetime
+   
+   :glossary:
+     :dp:`fls_il3n0w4m084b`
+     A :dt:`lifetime` specifies the expected longevity of a :t:`reference`.
+     
+     :dp:`fls_2nywjifee7q`
+     See :s:`Lifetime`.
+   :chapter:
+     :dp:`fls_nne91at3143t`
+     A :t:`lifetime` specifies the expected longevity of a :t:`value`.
 
 :dp:`fls_vbclxg9dq4yo`
 A :t:`lifetime bound` shall apply to :t:`[type]s` and other :t:`[lifetime]s`.
@@ -3649,10 +3708,18 @@ Lifetime Elision
 
 .. rubric:: Legality Rules
 
-:dp:`fls_9wtuclhm7yz5`
-:t:`Lifetime elision` is a set of rules that automatically insert
-:t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
-elided in the source code.
+.. glossary-entry:: lifetime elision
+   
+   :glossary:
+     :dp:`fls_dq5wkd61ry3l`
+     :dt:`Lifetime elision` is a set of rules that automatically insert
+     :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
+     elided in the source code.
+   :chapter:
+     :dp:`fls_9wtuclhm7yz5`
+     :t:`Lifetime elision` is a set of rules that automatically insert
+     :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
+     elided in the source code.
 
 :dp:`fls_JmP6O9zj8fkV`
 A :t:`lifetime` may be elided either implicitly or explicitly.
