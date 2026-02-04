@@ -15,8 +15,8 @@ import sys
 
 
 def main() -> int:
-    repo_root = Path(__file__).resolve().parent
-    if not (repo_root / "make.py").is_file():
+    repo_root = find_repo_root(Path(__file__).resolve().parent)
+    if repo_root is None:
         print("error: make.py not found in repo root", file=sys.stderr)
         return 1
 
@@ -27,6 +27,11 @@ def main() -> int:
         "--output-dir",
         default="build/html-diff",
         help="Output directory for baseline/generated HTML and report",
+    )
+    parser.add_argument(
+        "--keep-output",
+        action="store_true",
+        help="Keep existing baseline/generated output directories",
     )
     args = parser.parse_args()
 
@@ -39,11 +44,15 @@ def main() -> int:
     generated_dir = output_dir / "generated"
     report_path = output_dir / "html-diff.txt"
 
-    clean_dir(baseline_dir)
-    clean_dir(generated_dir)
+    if not args.keep_output:
+        clean_dir(baseline_dir)
+        clean_dir(generated_dir)
 
     run(["./make.py", "--clear"], repo_root)
     copy_tree(repo_root / "build" / "html", baseline_dir)
+
+    if not ensure_generated_glossary(repo_root):
+        return 1
 
     run(["./make.py", "--use-generated-glossary", "--clear"], repo_root)
     copy_tree(repo_root / "build" / "html", generated_dir)
@@ -63,12 +72,41 @@ def run(command: list[object], cwd: Path) -> None:
     subprocess.run([str(part) for part in command], check=True, cwd=cwd)
 
 
+def find_repo_root(start: Path) -> Path | None:
+    for candidate in (start, *start.parents):
+        if (candidate / "make.py").is_file():
+            return candidate
+    return None
+
+
 def clean_dir(path: Path) -> None:
     if path.exists():
         if path.is_dir():
             shutil.rmtree(path)
         else:
             path.unlink()
+
+
+def ensure_generated_glossary(repo_root: Path) -> bool:
+    glossary_path = repo_root / "build" / "generated.glossary.rst"
+    if glossary_path.is_file():
+        return True
+    try:
+        run(["./generate-glossary.py"], repo_root)
+    except subprocess.CalledProcessError as exc:
+        print(
+            "error: generate-glossary.py failed "
+            f"with exit code {exc.returncode}",
+            file=sys.stderr,
+        )
+        return False
+    if not glossary_path.is_file():
+        print(
+            f"error: generated glossary not found at {glossary_path}",
+            file=sys.stderr,
+        )
+        return False
+    return True
 
 
 def copy_tree(source: Path, destination: Path) -> None:
