@@ -394,10 +394,18 @@ A :t:`type bound predicate` is a :t:`construct` that specifies
 A :t:`construct` is valid when all of its :t:`[where clause predicate]s` hold
 true for the supplied :t:`[generic argument]s`.
 
-:dp:`fls_1xgw1dq60quz`
-A :t:`trivial predicate` is a :t:`where clause predicate` that does not use
-the :t:`[generic parameter]s` or :t:`[higher-ranked trait bound]s` of the related
-:t:`construct`.
+.. glossary-entry:: trivial predicate
+   
+   :glossary:
+     :dp:`fls_db5njwrjolhs`
+     A :dt:`trivial predicate` is a :t:`where clause predicate` that does not use
+     the :t:`[generic parameter]s` or :t:`[higher-ranked trait bound]s` of the related
+     :t:`construct`.
+   :chapter:
+     :dp:`fls_1xgw1dq60quz`
+     A :t:`trivial predicate` is a :t:`where clause predicate` that does not use
+     the :t:`[generic parameter]s` or :t:`[higher-ranked trait bound]s` of the related
+     :t:`construct`.
 
 :dp:`fls_47s8i7pzb9gg`
 It is a static error to create a :t:`trivial predicate` that does not hold.
@@ -533,9 +541,19 @@ an :t:`array repetition constructor` or a :t:`type`.
      A :t:`lifetime argument` is a :t:`generic argument` that supplies the
      :t:`lifetime` of a :t:`lifetime parameter`.
 
-:dp:`fls_d4vdvpihoeb1`
-A :t:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
-a :t:`type parameter`.
+.. glossary-entry:: type argument
+   
+   :glossary:
+     :dp:`fls_152lk7hrtd11`
+     A :dt:`type argument` is a :t:`generic argument` that supplies the :t:`value`
+     of a :t:`type parameter`.
+     
+     :dp:`fls_91tqk65qiygf`
+     See :s:`TypeArgument`.
+   :chapter:
+     :dp:`fls_d4vdvpihoeb1`
+     A :t:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
+     a :t:`type parameter`.
 
 :dp:`fls_ukarc98ceesz`
 :t:`[Generic argument]s` are subject to :t:`generic conformance`.

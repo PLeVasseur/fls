@@ -1353,9 +1353,19 @@ Tuple Struct Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ks6y1syab2bp`
-A :t:`tuple struct pattern` is a :t:`pattern` that matches a
-:t:`tuple enum variant value`, or a :t:`tuple struct value`.
+.. glossary-entry:: tuple struct pattern
+   
+   :glossary:
+     :dp:`fls_gu1mfurivnfz`
+     A :dt:`tuple struct pattern` is a :t:`pattern` that matches a
+     :t:`tuple enum variant value` or a :t:`tuple struct value`.
+     
+     :dp:`fls_3jx5683mdm10`
+     See :s:`TupleStructPattern`.
+   :chapter:
+     :dp:`fls_ks6y1syab2bp`
+     A :t:`tuple struct pattern` is a :t:`pattern` that matches a
+     :t:`tuple enum variant value`, or a :t:`tuple struct value`.
 
 :dp:`fls_t1mrijw16k9a`
 The :t:`deconstructee` of a :t:`tuple struct pattern` shall resolve to a
@@ -1435,9 +1445,19 @@ Tuple Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_e2manugp4e0b`
-A :t:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which satisfies
-all criteria defined by its :t:`[subpattern]s`.
+.. glossary-entry:: tuple pattern
+   
+   :glossary:
+     :dp:`fls_al2q3vh1rg6e`
+     A :dt:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which
+     satisfies all criteria defined by its :t:`[subpattern]s`.
+     
+     :dp:`fls_bevmt5t0238j`
+     See :s:`TuplePattern`.
+   :chapter:
+     :dp:`fls_e2manugp4e0b`
+     A :t:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which satisfies
+     all criteria defined by its :t:`[subpattern]s`.
 
 :dp:`fls_xk8udu4k61kj`
 A :t:`tuple pattern` is an :t:`irrefutable pattern` when all of its

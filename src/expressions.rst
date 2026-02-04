@@ -4005,12 +4005,28 @@ Tuple Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_87rp1hfwvjel`
-A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
+.. glossary-entry:: tuple expression
+   
+   :glossary:
+     :dp:`fls_x7m4u1dx4eli`
+     A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
+     
+     :dp:`fls_qawnvcddgyxx`
+     See :s:`TupleExpression`.
+   :chapter:
+     :dp:`fls_87rp1hfwvjel`
+     A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
-:dp:`fls_581y6jq1eyn8`
-A :t:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
-:t:`tuple field` in a :t:`tuple expression`.
+.. glossary-entry:: tuple initializer
+   
+   :glossary:
+     :dp:`fls_94hg6re11zl5`
+     A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
+     :t:`tuple field` in a :t:`tuple expression`.
+   :chapter:
+     :dp:`fls_581y6jq1eyn8`
+     A :t:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
+     :t:`tuple field` in a :t:`tuple expression`.
 
 :dp:`fls_ljz3sxmfzflm`
 The :t:`type` of a :t:`tuple expression` is ``(T1, T2, ..., TN)``, where ``T1``
@@ -4410,9 +4426,16 @@ Call Expressions
      :dp:`fls_mchqbc64iu0u`
      An :dt:`adjusted call operand` is a :t:`call operand` adjusted with inserted :t:`[borrow expression]s` and :t:`[dereference expression]s`.
 
-:dp:`fls_QpBu34U6hXn9`
-A :t:`tuple struct call expression` is a :t:`call expression` where the
-:t:`call operand` resolves to a :t:`tuple struct`.
+.. glossary-entry:: tuple struct call expression
+   
+   :glossary:
+     :dp:`fls_DQaCUkskfXzk`
+     A :dt:`tuple struct call expression` is a :t:`call expression` where the
+     :t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
+   :chapter:
+     :dp:`fls_QpBu34U6hXn9`
+     A :t:`tuple struct call expression` is a :t:`call expression` where the
+     :t:`call operand` resolves to a :t:`tuple struct`.
 
 .. glossary-entry:: callee type
    

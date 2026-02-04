@@ -46,9 +46,16 @@ Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4rhjpdu4zfqj`
-A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
-those :t:`[value]s`.
+.. glossary-entry:: type
+   
+   :glossary:
+     :dp:`fls_nhlh7vvgsbwo`
+     A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
+     those :t:`[value]s`.
+   :chapter:
+     :dp:`fls_4rhjpdu4zfqj`
+     A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
+     those :t:`[value]s`.
 
 .. glossary-entry:: local type
    
@@ -769,9 +776,31 @@ Tuple Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bn7wmf681ngt`
-A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
-of other :t:`[type]s`.
+.. glossary-entry:: tuple
+   
+   :glossary:
+     :dp:`fls_yhcfqz6p0059`
+     A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
+
+.. glossary-entry:: tuple type
+   
+   :glossary:
+     :dp:`fls_q0ulqfvnxwni`
+     A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
+     of other :t:`[type]s`.
+     
+     :dp:`fls_rkugxsau1w78`
+     See :s:`TupleTypeSpecification`.
+   :chapter:
+     :dp:`fls_bn7wmf681ngt`
+     A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
+     of other :t:`[type]s`.
+
+.. glossary-entry:: tuple field
+   
+   :glossary:
+     :dp:`fls_8rq1gbzij5tk`
+     A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
 
 .. glossary-entry:: arity
    
@@ -875,6 +904,13 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
      A :dt:`record enum variant` is an :t:`enum variant` with a
      :s:`RecordStructFieldList`.
 
+.. glossary-entry:: tuple enum variant
+   
+   :glossary:
+     :dp:`fls_eduQhUYBEkVx`
+     A :dt:`tuple enum variant` is an :t:`enum variant` with a
+     :s:`TupleStructFieldList`.
+
 .. glossary-entry:: enum field
    
    :glossary:
@@ -893,6 +929,12 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
      :dp:`fls_VQRqNPFFWmDp`
      An :dt:`enum variant value` is the :t:`enum value` of the corresponding
      :t:`enum` of the :t:`enum variant`.
+
+.. glossary-entry:: tuple enum variant value
+   
+   :glossary:
+     :dp:`fls_ORURxipGqNrZ`
+     A :dt:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
 :dp:`fls_g5qle7xzaoif`
 The :t:`name` of an :t:`enum variant` shall be unique within the related
@@ -1057,6 +1099,36 @@ Struct Types
    :glossary:
      :dp:`fls_SMBIc0JMck1H`
      A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
+
+.. glossary-entry:: tuple struct
+   
+   :glossary:
+     :dp:`fls_pdcpmapiq491`
+     A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+     
+     :dp:`fls_1tj4p05m4wdf`
+     See :s:`TupleStructDeclaration`.
+
+.. glossary-entry:: tuple struct type
+   
+   :glossary:
+     :dp:`fls_hhikx5ajx3bl`
+     A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+
+.. glossary-entry:: tuple struct field
+   
+   :glossary:
+     :dp:`fls_ndeb1a2hm9d8`
+     A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
+     
+     :dp:`fls_v4eq8xg608d5`
+     See :s:`TupleStructField`.
+
+.. glossary-entry:: tuple struct value
+   
+   :glossary:
+     :dp:`fls_xz1p4pss2Ocn`
+     A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 
 .. glossary-entry:: struct field
    
@@ -1563,6 +1635,13 @@ not :c:`null`.
 Trait Types
 -----------
 
+.. glossary-entry:: trait type
+   
+   :glossary:
+     :dp:`fls_JQsQnQ0dTHlS`
+     A :dt:`trait type` is either an :t:`impl trait type` or a
+     :t:`trait object type`.
+
 .. _fls_3xqobbu7wfsf:
 
 Impl Trait Types
@@ -1903,8 +1982,17 @@ Type Aliases
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bibigic4jjad`
-A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+.. glossary-entry:: type alias
+   
+   :glossary:
+     :dp:`fls_8pcsxodv1xp5`
+     A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+     
+     :dp:`fls_qfzskp1t3h5w`
+     See :s:`TypeAliasDeclaration`.
+   :chapter:
+     :dp:`fls_bibigic4jjad`
+     A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 
 :dp:`fls_rosdkeck5ax2`
 A :t:`type alias` shall not have a :s:`TypeBoundList` unless it is an
@@ -2170,11 +2258,21 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
      :t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
      combine :t:`C representation` and :t:`primitive representation`.
 
-:dp:`fls_ml4khttq3w5k`
-:t:`Transparent representation` applies only to an :t:`enum type` with a
-single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
-:t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
-of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
+.. glossary-entry:: transparent representation
+   
+   :glossary:
+     :dp:`fls_hb3e72rhzpnv`
+     :dt:`Transparent representation` is a :t:`type representation` that applies
+     only to an :t:`enum type` with a single :t:`enum variant` or a :t:`struct type`
+     where the :t:`struct type` or :t:`enum variant` has a single :t:`field` of
+     non-zero :t:`size` and any number of :t:`[field]s` of :t:`size` zero and
+     :t:`alignment` one.
+   :chapter:
+     :dp:`fls_ml4khttq3w5k`
+     :t:`Transparent representation` applies only to an :t:`enum type` with a
+     single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
+     :t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
+     of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
 
 :dp:`fls_9q2iqzbup8oy`
 :t:`[Type]s` subject to :t:`transparent representation` have the same
