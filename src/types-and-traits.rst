@@ -489,6 +489,13 @@ Integer Types
      An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
      numbers.
 
+.. glossary-entry:: unsigned integer type
+   
+   :glossary:
+     :dp:`fls_dxnf79qemlg6`
+     An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`[value]s`
+     denote zero and positive whole numbers.
+
 :dp:`fls_cokwseo3nnr`
 :t:`[Unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
@@ -861,6 +868,24 @@ Tuple Types
      :dp:`fls_dl2gkip00bua`
      An :dt:`arity` is the number of :t:`[tuple field]s` in a :t:`tuple type`.
 
+.. glossary-entry:: unit type
+   
+   :glossary:
+     :dp:`fls_jtdtv3q2ls05`
+     The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
+
+.. glossary-entry:: unit tuple
+   
+   :glossary:
+     :dp:`fls_vo1jw6rmu4yy`
+     A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
+
+.. glossary-entry:: unit value
+   
+   :glossary:
+     :dp:`fls_ycdv4nvsdyx`
+     The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
+
 :dp:`fls_s9a36zsrfqew`
 If the :t:`type` of a :t:`tuple field` is a :t:`dynamically-sized type`, then
 the :t:`tuple field` shall be the last :t:`tuple field` in the
@@ -1211,6 +1236,12 @@ Struct Types
      :dp:`fls_oIzmvACNeQpE`
      A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
 
+.. glossary-entry:: unit struct value
+   
+   :glossary:
+     :dp:`fls_Kr9nGIjx3N4R`
+     A :dt:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
+
 .. glossary-entry:: struct field
    
    :glossary:
@@ -1460,9 +1491,16 @@ Function Item Types
      An :t:`external function item type` is a :t:`function item type` where the
      related :t:`function` is an :t:`external function`.
 
-:dp:`fls_liwnzwu1el1i`
-An :t:`unsafe function item type` is a :t:`function item type` where the related
-:t:`function` is an :t:`unsafe function`.
+.. glossary-entry:: unsafe function item type
+   
+   :glossary:
+     :dp:`fls_r91tuwi55nu7`
+     An :dt:`unsafe function item type` is a :t:`function item type` where the
+     related :t:`function` is an :t:`unsafe function`.
+   :chapter:
+     :dp:`fls_liwnzwu1el1i`
+     An :t:`unsafe function item type` is a :t:`function item type` where the related
+     :t:`function` is an :t:`unsafe function`.
 
 :dp:`fls_e9x4f7qxvvjv`
 A :t:`function item type` is coercible to a :t:`function pointer type`.
@@ -1550,9 +1588,16 @@ Function Pointer Types
      A :t:`function pointer type` is an :t:`indirection type` that refers to a
      :t:`function`.
 
-:dp:`fls_5dd7icjcl3nt`
-An :t:`unsafe function pointer type` is a function pointer type subject to
-:t:`keyword` ``unsafe``.
+.. glossary-entry:: unsafe function pointer type
+   
+   :glossary:
+     :dp:`fls_tiluwa2v4l6d`
+     An :dt:`unsafe function pointer type` is a function pointer type subject to
+     :t:`keyword` ``unsafe``.
+   :chapter:
+     :dp:`fls_5dd7icjcl3nt`
+     An :t:`unsafe function pointer type` is a function pointer type subject to
+     :t:`keyword` ``unsafe``.
 
 :dp:`fls_B0SMXRqQMS1E`
 A :t:`variadic part` indicates the presence of :t:`C`-like optional
@@ -3742,6 +3787,12 @@ Traits
      A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
      implement.
 
+.. glossary-entry:: unsafe trait
+   
+   :glossary:
+     :dp:`fls_w6zlsf2ye457`
+     An :dt:`unsafe trait` is a :t:`trait` subject to :t:`keyword` ``unsafe``
+
 .. glossary-entry:: built-in trait
    
    :glossary:
@@ -4478,6 +4529,13 @@ An :dt:`output lifetime` is one of the following :t:`[lifetime]s`:
   Any :t:`lifetime` related to the :t:`[return type]s` of the
   :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and :std:`core::ops::FnOnce`
   :t:`[trait]s`.
+
+.. glossary-entry:: unnamed lifetime
+   
+   :glossary:
+     :dp:`fls_4iy6zpq66mit`
+     An :dt:`unnamed lifetime` is a :t:`lifetime` declared with character 0x5F (low
+     line).
 
 .. glossary-entry:: elided lifetime
    

@@ -1116,9 +1116,25 @@ Unsafe Blocks
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2az5huhcxzzy`
-An :t:`unsafe block expression` is a :t:`block expression` that is specified
-with :t:`keyword` ``unsafe``.
+.. glossary-entry:: unsafe block
+   
+   :glossary:
+     :dp:`fls_8tkolhmd6xfp`
+     For :dt:`unsafe block`, see :t:`unsafe block expression`.
+
+.. glossary-entry:: unsafe block expression
+   
+   :glossary:
+     :dp:`fls_et2h89jyivhs`
+     An :dt:`unsafe block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``unsafe``.
+     
+     :dp:`fls_c94rudunhp5b`
+     See :s:`UnsafeBlockExpression`.
+   :chapter:
+     :dp:`fls_2az5huhcxzzy`
+     An :t:`unsafe block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``unsafe``.
 
 :dp:`fls_5ucvvja4dzoc`
 An :t:`unsafe block expression` allows :t:`unsafety`.

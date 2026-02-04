@@ -496,8 +496,14 @@ A :t:`simple path` is subject to :t:`simple path resolution`.
      A :t:`multi segment path` is a :t:`path` consisting of more than one
      :t:`path segment`.
 
-:dp:`fls_nRgjCLYZL3iX`
-An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
+.. glossary-entry:: unqualified path expression
+   
+   :glossary:
+     :dp:`fls_9xKgP8uVsOaR`
+     An :dt:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
+   :chapter:
+     :dp:`fls_nRgjCLYZL3iX`
+     An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
 
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.

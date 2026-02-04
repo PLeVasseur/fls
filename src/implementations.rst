@@ -116,9 +116,16 @@ defined within the same :t:`crate`.
      A :t:`trait implementation` is an :t:`implementation` that adds functionality
      specified by a :t:`trait`.
 
-:dp:`fls_8pwr7ibvhmhu`
-An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
-:t:`keyword` ``unsafe``.
+.. glossary-entry:: unsafe trait implementation
+   
+   :glossary:
+     :dp:`fls_kqwcv076dzie`
+     An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
+     :t:`keyword` ``unsafe``.
+   :chapter:
+     :dp:`fls_8pwr7ibvhmhu`
+     An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
+     :t:`keyword` ``unsafe``.
 
 .. glossary-entry:: implemented trait
    

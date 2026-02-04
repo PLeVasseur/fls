@@ -112,9 +112,16 @@ Constants
      A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
      the :t:`value`.
 
-:dp:`fls_3mhj0kkupwuz`
-An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
-line).
+.. glossary-entry:: unnamed constant
+   
+   :glossary:
+     :dp:`fls_ufj01cxxsv1w`
+     An :dt:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
+     line).
+   :chapter:
+     :dp:`fls_3mhj0kkupwuz`
+     An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
+     line).
 
 :dp:`fls_ka4y2yd100dx`
 The :t:`type specification` of a :t:`constant` shall have ``'static``

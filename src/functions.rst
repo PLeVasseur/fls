@@ -291,8 +291,14 @@ A :t:`constant function` shall be callable from a :t:`constant context`.
             }
         }
 
-:dp:`fls_7ucwmzqtittv`
-An :t:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
+.. glossary-entry:: unsafe function
+   
+   :glossary:
+     :dp:`fls_2ht13dgtxi1o`
+     An :dt:`unsafe function` is a :t:`function` subject to :t:`keyword` ``unsafe``.
+   :chapter:
+     :dp:`fls_7ucwmzqtittv`
+     An :t:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
 
 :dp:`fls_nUADhgcfvvGC`
 A :t:`function` shall only be subject to an :s:`ItemSafety` with :t:`keyword` ``safe`` if it is an :t:`external function` in an :t:`unsafe external block`.
