@@ -146,6 +146,13 @@ match all possible values of a :t:`type`.
      :dp:`fls_9fjspnefoyvz`
      An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
+.. glossary-entry:: refutability
+   
+   :glossary:
+     :dp:`fls_gzjrfx19fg40`
+     :dt:`Refutability` is a property of :t:`[pattern]s` that expresses the ability
+     to match all possible :t:`[value]s` of a :t:`type`.
+
 .. glossary-entry:: refutable pattern
    
    :glossary:

@@ -357,21 +357,10 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
      A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
      :t:`macro repetition in transcription`.
 
-.. glossary-entry:: repetition operator
-   
-   :glossary:
-     :dp:`fls_67907pk7uogl`
-     A :dt:`repetition operator` is a :t:`construct` that indicates the number
-     of times a :t:`macro repetition in matching` or a
-     :t:`macro repetition in transcription` can be repeated.
-     
-     :dp:`fls_hiasmmpr2jks`
-     See :s:`MacroRepetitionOperator`.
-   :chapter:
-     :dp:`fls_u86j0zm2jshf`
-     A :t:`repetition operator` is a :t:`construct` that indicates the number
-     of times a :t:`macro repetition in matching` or a
-     :t:`macro repetition in transcription` can be repeated.
+:dp:`fls_u86j0zm2jshf`
+A :t:`repetition operator` is a :t:`construct` that indicates the number
+of times a :t:`macro repetition in matching` or a
+:t:`macro repetition in transcription` can be repeated.
 
 :dp:`fls_h5f8x4jdnvbu`
 The effects of a :t:`repetition operator` are as follows:
