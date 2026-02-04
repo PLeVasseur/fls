@@ -199,8 +199,17 @@ Metavariables
 a particular kind and bind its :t:`value` to a name for use during
 :t:`macro transcription`.
 
-:dp:`fls_4zdait30exvn`
-A :t:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+.. glossary-entry:: metavariable
+   
+   :glossary:
+     :dp:`fls_fu1esz5i9mt`
+     A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+     
+     :dp:`fls_k4xaw93z8x33`
+     See :s:`MacroMetavariable`.
+   :chapter:
+     :dp:`fls_4zdait30exvn`
+     A :t:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
 
 :dp:`fls_2HguXbL7DjKH`
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
@@ -257,9 +266,19 @@ A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 * :dp:`fls_lZ8F1zUJju33`
   Any other kind may be followed by any token.
 
-:dp:`fls_ephlmLsGTMgw`
-A :t:`metavariable indication` is a :t:`construct` that indicates a
-:t:`metavariable`.
+.. glossary-entry:: metavariable indication
+   
+   :glossary:
+     :dp:`fls_r1FxbWffC9Wt`
+     A :dt:`metavariable indication` is a :t:`construct` that indicates a
+     :t:`metavariable`.
+     
+     :dp:`fls_bcMO2a0e0gXJ`
+     See :s:`MacroMetavariableIndication`.
+   :chapter:
+     :dp:`fls_ephlmLsGTMgw`
+     A :t:`metavariable indication` is a :t:`construct` that indicates a
+     :t:`metavariable`.
 
 .. rubric:: Examples
 
@@ -740,10 +759,18 @@ Macro Expansion
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xscdaxvs4wx4`
-:t:`Macro expansion` is the process of statically executing a
-:t:`macro invocation` and replacing it with the produced output of the
-:t:`macro invocation`.
+.. glossary-entry:: macro expansion
+   
+   :glossary:
+     :dp:`fls_t383uo1l4h8x`
+     :dt:`Macro expansion` is the process of statically executing a
+     :t:`macro invocation` and replacing it with the produced output of the
+     :t:`macro invocation`.
+   :chapter:
+     :dp:`fls_xscdaxvs4wx4`
+     :t:`Macro expansion` is the process of statically executing a
+     :t:`macro invocation` and replacing it with the produced output of the
+     :t:`macro invocation`.
 
 :dp:`fls_nz5stwcc41gk`
 :t:`Macro expansion` of :t:`[declarative macro]s` proceeds as follows:
@@ -911,9 +938,16 @@ Macro Matching
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ZmQZ8HQWv77L`
-:t:`Macro matching` is the process of performing :t:`rule matching` and
-:t:`token matching`.
+.. glossary-entry:: macro matching
+   
+   :glossary:
+     :dp:`fls_RrDmFXuZrhFT`
+     :dt:`Macro matching` is the process of performing :t:`rule matching` and
+     :t:`token matching`.
+   :chapter:
+     :dp:`fls_ZmQZ8HQWv77L`
+     :t:`Macro matching` is the process of performing :t:`rule matching` and
+     :t:`token matching`.
 
 .. _fls_n3ktmjqf87qb:
 
@@ -1080,9 +1114,16 @@ Macro Transcription
 
 .. rubric:: Legality Rules
 
-:dp:`fls_y21i8062mft0`
-:t:`Macro transcription` is the process of producing the expansion of a
-:t:`declarative macro`.
+.. glossary-entry:: macro transcription
+   
+   :glossary:
+     :dp:`fls_nouiggbpipg`
+     :dt:`Macro transcription` is the process of producing the expansion of a
+     :t:`declarative macro`.
+   :chapter:
+     :dp:`fls_y21i8062mft0`
+     :t:`Macro transcription` is the process of producing the expansion of a
+     :t:`declarative macro`.
 
 :dp:`fls_n2dx4ug5nd5w`
 :t:`Macro transcription` proceeds as follows:
@@ -1262,11 +1303,21 @@ within them, which aims to eliminate the syntactic interference between a
          of the :s:`MacroRulesDeclaration`, can reference the environment of the
          :s:`MacroInvocation`, and are considered :t:`unhygienic`.
 
-* :dp:`fls_uyvnq88y9gk3`
-  :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
-  site for :t:`[label]s`, :t:`[variable]s`, and the ``$crate``
-  :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise, and is
-  considered :dt:`partially hygienic`.
+*
+  .. glossary-entry:: mixed site hygiene
+     
+     :glossary:
+       :dp:`fls_hjJpNmKiZxlT`
+       :dt:`Mixed site hygiene` is a type of :t:`hygiene` which resolves to the
+       :s:`MacroRulesDeclaration` site for :t:`[variable]s`, :t:`[label]s`, and the
+       ``$crate`` :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise,
+       and is considered :t:`partially hygienic`.
+     :chapter:
+       * :dp:`fls_uyvnq88y9gk3`
+         :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+         site for :t:`[label]s`, :t:`[variable]s`, and the ``$crate``
+         :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise, and is
+         considered :dt:`partially hygienic`.
 
 :dp:`fls_yxqcr19dig18`
 Every :t:`macro` has associated :t:`hygiene` that depends on its kind:

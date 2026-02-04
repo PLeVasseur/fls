@@ -1660,9 +1660,19 @@ The :t:`type` of a :t:`division expression` is :t:`associated type`
 The :t:`value` of a :t:`division expression` is the result of
 ``core::ops::Div::div(left_operand, right_operand)``.
 
-:dp:`fls_kf41bphvlse3`
-A :t:`multiplication expression` is an :t:`arithmetic expression` that uses
-multiplication.
+.. glossary-entry:: multiplication expression
+   
+   :glossary:
+     :dp:`fls_324qh8wz474b`
+     A :dt:`multiplication expression` is an :t:`arithmetic expression` that uses
+     multiplication.
+     
+     :dp:`fls_34bkl5i75q5`
+     See :s:`MultiplicationExpression`.
+   :chapter:
+     :dp:`fls_kf41bphvlse3`
+     A :t:`multiplication expression` is an :t:`arithmetic expression` that uses
+     multiplication.
 
 :dp:`fls_hrml95g2txcj`
 The :t:`type` of the :t:`left operand` of a :t:`multiplication expression`
@@ -3095,9 +3105,26 @@ Compound Assignment Expressions
      A :t:`division assignment expression` is a :t:`compound assignment expression`
      that uses division.
 
-:dp:`fls_ndlv3k9uclz2`
-A :t:`multiplication assignment expression` is a
-:t:`compound assignment expression` that uses multiplication.
+.. glossary-entry:: multiplication assignment
+   
+   :glossary:
+     :dp:`fls_llUb5VHKjwW4`
+     For :dt:`multiplication assignment`, see
+     :t:`multiplication assignment expression`.
+
+.. glossary-entry:: multiplication assignment expression
+   
+   :glossary:
+     :dp:`fls_eo9gx05n5ru3`
+     A :dt:`multiplication assignment expression` is a
+     :t:`compound assignment expression` that uses multiplication.
+     
+     :dp:`fls_b0dc5lec1mdc`
+     See :s:`MultiplicationAssignmentExpression`.
+   :chapter:
+     :dp:`fls_ndlv3k9uclz2`
+     A :t:`multiplication assignment expression` is a
+     :t:`compound assignment expression` that uses multiplication.
 
 :dp:`fls_fbp5dojti27r`
 A :t:`remainder assignment expression` is a :t:`compound assignment expression`
@@ -3129,9 +3156,26 @@ A :t:`subtraction assignment expression` is a
      An :t:`assigned operand` is the target :t:`operand` of a
      :t:`compound assignment expression`.
 
-:dp:`fls_9v09ayi2azpe`
-A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
-is used in the calculation of a :t:`compound assignment expression`.
+.. glossary-entry:: modifying operand
+   
+   :glossary:
+     :dp:`fls_9wt2l5gg06pb`
+     A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
+     is used in the calculation of a :t:`compound assignment expression`.
+     
+     :dp:`fls_qnwbrwdnv7n0`
+     See :s:`ModifyingOperand`.
+   :chapter:
+     :dp:`fls_9v09ayi2azpe`
+     A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
+     is used in the calculation of a :t:`compound assignment expression`.
+
+.. glossary-entry:: mutable assignee expression
+   
+   :glossary:
+     :dp:`fls_0RSlFbwrB3gp`
+     A :dt:`mutable assignee expression` is an :t:`assignee expression` whose
+     :t:`value` can be modified.
 
 :dp:`fls_row7saf53vwd`
 An :t:`assigned operand` shall denote a :t:`mutable assignee expression`.
@@ -4186,17 +4230,37 @@ Method Call Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_b7i26954j1hc`
-A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
-of a :t:`variable`.
+.. glossary-entry:: method call expression
+   
+   :glossary:
+     :dp:`fls_367sod24edts`
+     A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
+     of a :t:`variable`.
+     
+     :dp:`fls_ohhcvxcaqv11`
+     See :s:`MethodCallExpression`.
+   :chapter:
+     :dp:`fls_b7i26954j1hc`
+     A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
+     of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
 A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
-:dp:`fls_3AQUOBo7akXu`
-A :t:`method operand` is an :t:`operand` that denotes the :t:`method` being
-invoked by a :t:`method call expression`.
+.. glossary-entry:: method operand
+   
+   :glossary:
+     :dp:`fls_VLLAFjAxCfkE`
+     A :dt:`method operand` is an :t:`operand` that denotes the :t:`method` being
+     invoked by a :t:`method call expression`.
+     
+     :dp:`fls_Pkgr4fJQZpJ6`
+     See :s:`MethodOperand`.
+   :chapter:
+     :dp:`fls_3AQUOBo7akXu`
+     A :t:`method operand` is an :t:`operand` that denotes the :t:`method` being
+     invoked by a :t:`method call expression`.
 
 :dp:`fls_11glzggtbgb3`
 The :t:`type` of a :t:`method call expression` is the :t:`return type` of the

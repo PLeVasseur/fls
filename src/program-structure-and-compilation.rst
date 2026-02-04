@@ -69,8 +69,17 @@ Modules
 
 .. rubric:: Legality Rules
 
-:dp:`fls_odd1hj3y1mgu`
-A :t:`module` is a container for zero or more :t:`[item]s`.
+.. glossary-entry:: module
+   
+   :glossary:
+     :dp:`fls_ujlsg58bskl5`
+     A :dt:`module` is a container for zero or more :t:`[item]s`.
+     
+     :dp:`fls_os60q6vvm71c`
+     See :s:`ModuleDeclaration`.
+   :chapter:
+     :dp:`fls_odd1hj3y1mgu`
+     A :t:`module` is a container for zero or more :t:`[item]s`.
 
 :dp:`fls_whgv72emrm47`
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still

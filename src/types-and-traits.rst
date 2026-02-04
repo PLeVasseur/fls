@@ -2264,6 +2264,18 @@ A :t:`function pointer type` is unifiable only with another
 * :dp:`fls_5dh8c5gg0hmk`
   The :t:`[return type]s` are unifiable.
 
+.. glossary-entry:: mutability
+   
+   :glossary:
+     :dp:`fls_lBrXj9lo4s6o`
+     :dt:`Mutability` determines whether a :t:`construct` can modify a :t:`value`.
+
+.. glossary-entry:: mutable
+   
+   :glossary:
+     :dp:`fls_dqm58deu1orn`
+     A :t:`value` is :dt:`mutable` when it can be modified.
+
 :dp:`fls_ismr7wwvek4q`
 A :t:`raw pointer type` is unifiable only with another :t:`raw pointer type`
 when:

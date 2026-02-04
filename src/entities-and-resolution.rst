@@ -387,9 +387,16 @@ A :t:`simple path` is subject to :t:`simple path resolution`.
 A :t:`single segment path` is a :t:`path` consisting of exactly one
 :t:`path segment`.
 
-:dp:`fls_wm61yeclairz`
-A :t:`multi segment path` is a :t:`path` consisting of more than one
-:t:`path segment`.
+.. glossary-entry:: multi segment path
+   
+   :glossary:
+     :dp:`fls_T4Xd6W6EqPSb`
+     A :dt:`multi segment path` is a :t:`path` consisting of more than one
+     :t:`path segment`.
+   :chapter:
+     :dp:`fls_wm61yeclairz`
+     A :t:`multi segment path` is a :t:`path` consisting of more than one
+     :t:`path segment`.
 
 :dp:`fls_nRgjCLYZL3iX`
 An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
@@ -1440,9 +1447,16 @@ Method Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_e5a5z5yht26l`
-:t:`Method resolution` is a kind of :t:`resolution` that applies to a
-:t:`method call expression`.
+.. glossary-entry:: method resolution
+   
+   :glossary:
+     :dp:`fls_LbW4z6OTuD1l`
+     :dt:`Method resolution` is a kind of :t:`resolution` that applies to a
+     :t:`method call expression`.
+   :chapter:
+     :dp:`fls_e5a5z5yht26l`
+     :t:`Method resolution` is a kind of :t:`resolution` that applies to a
+     :t:`method call expression`.
 
 :dp:`fls_mbdS0xiNlj92`
 A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`

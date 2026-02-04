@@ -313,9 +313,16 @@ A :t:`value` of a :t:`copy type` is :t:`passed <passing convention>`
 :dt:`by copy`. Passing :t:`by copy` does not change the :t:`owner` of the
 :t:`value`.
 
-:dp:`fls_6ul3f6v0foma`
-A :t:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
-:t:`trait` and is not a :t:`copy type`.
+.. glossary-entry:: move type
+   
+   :glossary:
+     :dp:`fls_ri37ez31gai8`
+     A :dt:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
+     :t:`trait` and that is not a :t:`copy type`.
+   :chapter:
+     :dp:`fls_6ul3f6v0foma`
+     A :t:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
+     :t:`trait` and is not a :t:`copy type`.
 
 :dp:`fls_3ztdz02efeoc`
 A :t:`value` of a :t:`move type` is :t:`passed <passing convention>`
