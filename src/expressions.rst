@@ -1182,6 +1182,12 @@ Operator Expressions
      :dp:`fls_ursc5ynymoy`
      An :t:`operator expression` is an :t:`expression` that involves an operator.
 
+.. glossary-entry:: unary operator
+   
+   :glossary:
+     :dp:`fls_p6mk2zrwgwem`
+     A :dt:`unary operator` operates on one :t:`operand`.
+
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_lSxXWxJn0vMO`
@@ -2699,9 +2705,19 @@ Type Cast Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ltioqbhl14g0`
-A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
-an :t:`operand`.
+.. glossary-entry:: type cast expression
+   
+   :glossary:
+     :dp:`fls_j6zo3rir1x76`
+     A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type`
+     of an :t:`operand`.
+     
+     :dp:`fls_dvh1xy9w74ch`
+     See :s:`TypeCastExpression`.
+   :chapter:
+     :dp:`fls_ltioqbhl14g0`
+     A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
+     an :t:`operand`.
 
 .. glossary-entry:: cast
    
@@ -3605,9 +3621,19 @@ Underscore Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_pydmv629vfuu`
-An :t:`underscore expression` is an :t:`expression` that acts as a placeholder
-in a :t:`destructuring assignment`.
+.. glossary-entry:: underscore expression
+   
+   :glossary:
+     :dp:`fls_ukl1sefb99gj`
+     An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+     in a :t:`destructuring assignment`.
+     
+     :dp:`fls_qbo267kdjcgs`
+     See :s:`UnderscoreExpression`.
+   :chapter:
+     :dp:`fls_pydmv629vfuu`
+     An :t:`underscore expression` is an :t:`expression` that acts as a placeholder
+     in a :t:`destructuring assignment`.
 
 :dp:`fls_wms3dbwjwyu4`
 An :t:`underscore expression` shall appear in the :t:`assigned operand` of a

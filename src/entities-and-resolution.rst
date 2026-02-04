@@ -502,8 +502,17 @@ An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qua
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.
 
-:dp:`fls_h2zikgmazoxx`
-A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
+.. glossary-entry:: type path
+   
+   :glossary:
+     :dp:`fls_UBR5czHrMTrx`
+     A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
+     
+     :dp:`fls_7CbNAZYSZayW`
+     See :s:`TypePath`.
+   :chapter:
+     :dp:`fls_h2zikgmazoxx`
+     A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
@@ -1576,8 +1585,14 @@ Resolution
      :t:`field access expression`, a :t:`method call expression`, a :t:`call
      expression` or a :t:`path`.
 
-:dp:`fls_7le2vcdbtxbq`
-A :t:`construct` that is being resolved is said to be :t:`under resolution`.
+.. glossary-entry:: under resolution
+   
+   :glossary:
+     :dp:`fls_BppwXSVUWtEu`
+     A :t:`construct` that is being resolved is said to be :dt:`under resolution`.
+   :chapter:
+     :dp:`fls_7le2vcdbtxbq`
+     A :t:`construct` that is being resolved is said to be :t:`under resolution`.
 
 .. glossary-entry:: dereference type
    

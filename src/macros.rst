@@ -1318,6 +1318,12 @@ within them, which aims to eliminate the syntactic interference between a
      :dp:`fls_hiDddAkNH5Ms`
      An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
 
+.. glossary-entry:: unhygienic
+   
+   :glossary:
+     :dp:`fls_0t4lFZLkNieR`
+     An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
+
 :dp:`fls_3axjf28xb1nt`
 :t:`Hygiene` is categorized as follows:
 

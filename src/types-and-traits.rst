@@ -46,6 +46,24 @@ Types
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: type ascription
+   
+   :glossary:
+     :dp:`fls_pm5jytclqn7y`
+     A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
+     
+     :dp:`fls_c3xtiputfxea`
+     See :s:`TypeAscription`.
+
+.. glossary-entry:: type specification
+   
+   :glossary:
+     :dp:`fls_tdjhjg9zhnv5`
+     A :dt:`type specification` describes the structure of a :t:`type`.
+     
+     :dp:`fls_a3sqjp1l8po6`
+     See :s:`TypeSpecification`.
+
 .. glossary-entry:: type
    
    :glossary:
@@ -1216,6 +1234,12 @@ Union Types
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: union
+   
+   :glossary:
+     :dp:`fls_x3oibk39dvem`
+     A :dt:`union` is an :t:`item` that declares a :t:`union type`.
+
 :dp:`fls_nskmnzq95yqm`
 A :t:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
@@ -1871,9 +1895,16 @@ Type Parameters
 
 .. rubric:: Legality Rules
 
-:dp:`fls_dCIIVXGhXDlO`
-A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
-to be substituted by :t:`generic substitution`.
+.. glossary-entry:: type parameter type
+   
+   :glossary:
+     :dp:`fls_EuHHxwHd0RHV`
+     A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
+     to be substituted by :t:`generic substitution`.
+   :chapter:
+     :dp:`fls_dCIIVXGhXDlO`
+     A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
+     to be substituted by :t:`generic substitution`.
 
 .. glossary-entry:: generic substitution
    
@@ -2502,10 +2533,29 @@ known :t:`[type]s` across the :t:`type inference root` and assigns concrete
 :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
 for compatibility between two :t:`[type]s` during :t:`method resolution`.
 
-:dp:`fls_67VZrx6dw68H`
-A :t:`type` is said to :t:`unify` with another :t:`type` when the domains,
-ranges, and structures of both :t:`[type]s` are compatible according to the
-rules detailed below.
+.. glossary-entry:: unify
+   
+   :glossary:
+     :dp:`fls_mango4gffb9e`
+     A :t:`type` is said to :dt:`unify` with another type when the domains, ranges,
+     and structures of both :t:`[type]s` are compatible.
+   :chapter:
+     :dp:`fls_67VZrx6dw68H`
+     A :t:`type` is said to :t:`unify` with another :t:`type` when the domains,
+     ranges, and structures of both :t:`[type]s` are compatible according to the
+     rules detailed below.
+
+.. glossary-entry:: unifiable
+   
+   :glossary:
+     :dp:`fls_01BNTCL4u8Gn`
+     For :dt:`unifiable`, see :t:`unify`.
+
+.. glossary-entry:: unified type
+   
+   :glossary:
+     :dp:`fls_tqRwIe6z3a4j`
+     A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
 
 :dp:`fls_aie0tr62vhw5`
 Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
@@ -3040,10 +3090,18 @@ Type Inference
 :t:`Type inference` is the process of automatically determining the :t:`type` of
 :t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
-:dp:`fls_ybvrhh96fc7y`
-A :t:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
-and :t:`[pattern]s` are subject to :t:`type inference` independently of those
-found in other :t:`[type inference root]s`.
+.. glossary-entry:: type inference root
+   
+   :glossary:
+     :dp:`fls_hLI7lCixs48z`
+     A :dt:`type inference root` is a :t:`construct` whose inner :t:`[expression]s`
+     and :t:`[pattern]s` are subject to :t:`type inference` independently of other
+     :t:`[type inference root]s`.
+   :chapter:
+     :dp:`fls_ybvrhh96fc7y`
+     A :t:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
+     and :t:`[pattern]s` are subject to :t:`type inference` independently of those
+     found in other :t:`[type inference root]s`.
 
 :dp:`fls_EWBilpepaDcX`
 The following :t:`[expression]s` are considered :t:`[type inference root]s`:
@@ -3110,9 +3168,16 @@ depending on the :t:`type inference root` as follows:
   The :t:`expected type` of a :t:`size operand` of an :t:`array expression` or
   an :t:`array type` is :c:`usize`.
 
-:dp:`fls_uvvn4usfsbhr`
-A :t:`type variable` is a placeholder used during :t:`type inference` to stand
-in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
+.. glossary-entry:: type variable
+   
+   :glossary:
+     :dp:`fls_j9eusnwze4rz`
+     A :dt:`type variable` is a placeholder used during :t:`type inference` to stand
+     in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
+   :chapter:
+     :dp:`fls_uvvn4usfsbhr`
+     A :t:`type variable` is a placeholder used during :t:`type inference` to stand
+     in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
 .. glossary-entry:: global type variable
    

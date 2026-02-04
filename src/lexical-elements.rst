@@ -25,6 +25,14 @@ Character Set
 The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
+.. glossary-entry:: Unicode
+   
+   :glossary:
+     :dp:`fls_y7gwku7pe1f4`
+     :dt:`Unicode` is the universal character encoding standard for written
+     characters and text described in the Unicode® Standard by the Unicode
+     Consortium.
+
 .. rubric:: Syntax
 
 :dp:`fls_vfx8byq5zo8t`

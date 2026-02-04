@@ -180,12 +180,31 @@ It is a static error to use a :t:`generic parameter` in the
 A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
 except for the ``'static`` :t:`lifetime`.
 
-:dp:`fls_95eooah0vcqx`
-A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+.. glossary-entry:: type parameter
+   
+   :glossary:
+     :dp:`fls_5t6510wkb67x`
+     A :dt:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+     
+     :dp:`fls_vquy0tsvd93x`
+     See :s:`TypeParameter`.
+   :chapter:
+     :dp:`fls_95eooah0vcqx`
+     A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
-:dp:`fls_ahCqtkh0m5sR`
-A :t:`type parameter initializer` is a :t:`construct` that provides the
-default :t:`value` of its related :t:`type parameter`.
+.. glossary-entry:: type parameter initializer
+   
+   :glossary:
+     :dp:`fls_Xpz47JLNsOXI`
+     A :dt:`type parameter initializer` is a :t:`construct` that provides the
+     default :t:`value` of its related :t:`type parameter`.
+     
+     :dp:`fls_6Ap26AcSadP8`
+     See :s:`TypeParameterInitializer`.
+   :chapter:
+     :dp:`fls_ahCqtkh0m5sR`
+     A :t:`type parameter initializer` is a :t:`construct` that provides the
+     default :t:`value` of its related :t:`type parameter`.
 
 :dp:`fls_3qZRBp9j26w3`
 The :t:`type` of the :t:`type parameter initializer` of a :t:`type parameter`
@@ -386,9 +405,19 @@ A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
      A :t:`lifetime bound predicate` is a :t:`construct` that specifies
      :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
-:dp:`fls_cslGPmVjujHD`
-A :t:`type bound predicate` is a :t:`construct` that specifies
-:t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
+.. glossary-entry:: type bound predicate
+   
+   :glossary:
+     :dp:`fls_j6WKoybB4cep`
+     A :dt:`type bound predicate` is a :t:`construct` that specifies
+     :t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
+     
+     :dp:`fls_oMlPNgoDjnoW`
+     See :s:`TypeBoundPredicate`.
+   :chapter:
+     :dp:`fls_cslGPmVjujHD`
+     A :t:`type bound predicate` is a :t:`construct` that specifies
+     :t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
 
 :dp:`fls_ytk74dyxuy6d`
 A :t:`construct` is valid when all of its :t:`[where clause predicate]s` hold
