@@ -497,9 +497,19 @@ A :t:`half-open range pattern` is a :t:`range pattern` with only a
 An :t:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
-:dp:`fls_3PyquOKjA7SI`
-An :t:`exclusive range pattern` is a :t:`range pattern` with both a
-:t:`range pattern low bound` and a :t:`range pattern high bound`.
+.. glossary-entry:: exclusive range pattern
+   
+   :glossary:
+     :dp:`fls_qxsV6ZxFfDHm`
+     An :dt:`exclusive range pattern` is a :t:`range pattern` with both a
+     :t:`range pattern low bound` and a :t:`range pattern high bound`.
+     
+     :dp:`fls_kHIWYUPhxikM`
+     See :s:`ExclusiveRangePattern`.
+   :chapter:
+     :dp:`fls_3PyquOKjA7SI`
+     An :t:`exclusive range pattern` is a :t:`range pattern` with both a
+     :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_akf9x5r6e0ta`
 An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax

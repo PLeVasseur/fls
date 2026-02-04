@@ -74,17 +74,47 @@ A :ds:`SubjectLetExpression` is any expression in category
 
 .. rubric:: Legality Rules
 
-:dp:`fls_h5o6tgul4yor`
-An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
-side effects at run-time.
+.. glossary-entry:: expression
+   
+   :glossary:
+     :dp:`fls_f7iuwgbs1lql`
+     An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may
+     have side effects at run-time.
+     
+     :dp:`fls_8l9hru1x586q`
+     See :s:`Expression`.
+   :chapter:
+     :dp:`fls_h5o6tgul4yor`
+     An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+     side effects at run-time.
 
-:dp:`fls_xmklb3070sp`
-An :t:`expression-with-block` is an :t:`expression` whose structure involves a
-:t:`block expression`.
+.. glossary-entry:: expression-with-block
+   
+   :glossary:
+     :dp:`fls_ujlm50le5dnj`
+     An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
+     :t:`block expression`.
+     
+     :dp:`fls_iwheys965ml3`
+     See :s:`ExpressionWithBlock`.
+   :chapter:
+     :dp:`fls_xmklb3070sp`
+     An :t:`expression-with-block` is an :t:`expression` whose structure involves a
+     :t:`block expression`.
 
-:dp:`fls_p15oeage4j0e`
-An :t:`expression-without-block` is an :t:`expression` whose structure does not
-involve a :t:`block expression`.
+.. glossary-entry:: expression-without-block
+   
+   :glossary:
+     :dp:`fls_xfh9xmsphzqb`
+     An :dt:`expression-without-block` is an :t:`expression` whose structure does
+     not involve a :t:`block expression`.
+     
+     :dp:`fls_miaphjnikd51`
+     See :s:`ExpressionWithoutBlock`.
+   :chapter:
+     :dp:`fls_p15oeage4j0e`
+     An :t:`expression-without-block` is an :t:`expression` whose structure does not
+     involve a :t:`block expression`.
 
 :dp:`fls_gwgttltgjma4`
 An :t:`operand` is an :t:`expression` nested within an :t:`expression`.

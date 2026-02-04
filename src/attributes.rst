@@ -1561,13 +1561,25 @@ or :t:`static`.
 :t:`Attribute` :c:`no_mangle` causes the related :t:`function` or :t:`static` to
 be publicly exported from the produced library or object file.
 
-:dp:`fls_VKuSiswPMll7`
-An :t:`exported function` is a :t:`function` subject to :t:`attribute`
-:c:`no_mangle`.
+.. glossary-entry:: exported function
+   
+   :glossary:
+     :dp:`fls_QotMF1iaEYod`
+     An :dt:`exported function` is an export of a :t:`function`.
+   :chapter:
+     :dp:`fls_VKuSiswPMll7`
+     An :t:`exported function` is a :t:`function` subject to :t:`attribute`
+     :c:`no_mangle`.
 
-:dp:`fls_I029Rvr5BX5P`
-An :t:`exported static` is a :t:`static` subject to :t:`attribute`
-:c:`no_mangle`.
+.. glossary-entry:: exported static
+   
+   :glossary:
+     :dp:`fls_aolCSvb349ZU`
+     An :dt:`exported static` is an export of a :t:`static`.
+   :chapter:
+     :dp:`fls_I029Rvr5BX5P`
+     An :t:`exported static` is a :t:`static` subject to :t:`attribute`
+     :c:`no_mangle`.
 
 .. rubric:: Examples
 

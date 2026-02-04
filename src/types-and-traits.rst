@@ -386,11 +386,25 @@ Floating Point Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_30yny2xb9b6b`
-:t:`Type` :c:`f32` is equivalent to the IEEE 754-2008 binary32 :t:`type`.
+.. glossary-entry:: f32
+   
+   :glossary:
+     :dp:`fls_4w5rqj7zdemu`
+     :dc:`f32` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+     binary32 :t:`type`.
+   :chapter:
+     :dp:`fls_30yny2xb9b6b`
+     :t:`Type` :c:`f32` is equivalent to the IEEE 754-2008 binary32 :t:`type`.
 
-:dp:`fls_yqflrq9s6p6n`
-:t:`Type` :c:`f64` is equivalent to the IEEE 754-2008 binary64 :t:`type`.
+.. glossary-entry:: f64
+   
+   :glossary:
+     :dp:`fls_ly6p0i6lsibh`
+     :dc:`f64` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+     binary64 :t:`type`.
+   :chapter:
+     :dp:`fls_yqflrq9s6p6n`
+     :t:`Type` :c:`f64` is equivalent to the IEEE 754-2008 binary64 :t:`type`.
 
 .. rubric:: Dynamic Semantics
 
@@ -1026,9 +1040,16 @@ Function Item Types
 A :t:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
-:dp:`fls_sas3ahcshnrh`
-An :t:`external function item type` is a :t:`function item type` where the
-related :t:`function` is an :t:`external function`.
+.. glossary-entry:: external function item type
+   
+   :glossary:
+     :dp:`fls_dwlovqly44dj`
+     An :dt:`external function item type` is a :t:`function item type` where the
+     related :t:`function` is an :t:`external function`.
+   :chapter:
+     :dp:`fls_sas3ahcshnrh`
+     An :t:`external function item type` is a :t:`function item type` where the
+     related :t:`function` is an :t:`external function`.
 
 :dp:`fls_liwnzwu1el1i`
 An :t:`unsafe function item type` is a :t:`function item type` where the related
@@ -1533,8 +1554,20 @@ All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
      :dp:`fls_26Xgem831Nqg`
      A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
 
-:dp:`fls_ozYgHEHFTT5c`
-A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+.. glossary-entry:: fat pointer
+   
+   :glossary:
+     :dp:`fls_knbc2jv5c5ds`
+     A :dt:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
+
+.. glossary-entry:: fat pointer type
+   
+   :glossary:
+     :dp:`fls_l8ew6udd79hh`
+     A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+   :chapter:
+     :dp:`fls_ozYgHEHFTT5c`
+     A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
 
 .. glossary-entry:: alignment
    

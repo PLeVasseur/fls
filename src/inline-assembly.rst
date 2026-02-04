@@ -124,9 +124,19 @@ A :t:`register name` is either the :t:`explicit register name` of a
 :t:`register`, or the :t:`register class name` of the :t:`register class` a
 :t:`register` belongs to.
 
-:dp:`fls_ffwqxlh60i5w`
-An :t:`explicit register name` is a target-specific string that identifies
-a :t:`register`.
+.. glossary-entry:: explicit register name
+   
+   :glossary:
+     :dp:`fls_UcMk6RRLrkB5`
+     An :dt:`explicit register name` is a target-specific string that identifies
+     a :t:`register`.
+     
+     :dp:`fls_Z3WDh75VpSUU`
+     See :s:`ExplicitRegisterName`.
+   :chapter:
+     :dp:`fls_ffwqxlh60i5w`
+     An :t:`explicit register name` is a target-specific string that identifies
+     a :t:`register`.
 
 :dp:`fls_3p8akc7gcsnx`
 An :t:`explicit register name` may be aliased as follows:
@@ -663,9 +673,16 @@ configuration is not bound to an :t:`identifier`.
 A :t:`named register argument` shall appear after a
 :t:`positional register argument`.
 
-:dp:`fls_ics6gdzww1p`
-An :t:`explicit register argument` is a :t:`register argument` that uses an
-:t:`explicit register name`.
+.. glossary-entry:: explicit register argument
+   
+   :glossary:
+     :dp:`fls_2o6S1WGDrMh3`
+     An :dt:`explicit register argument` is a :t:`register argument` that uses an
+     :t:`explicit register name`.
+   :chapter:
+     :dp:`fls_ics6gdzww1p`
+     An :t:`explicit register argument` is a :t:`register argument` that uses an
+     :t:`explicit register name`.
 
 :dp:`fls_mmc1w8jjr55r`
 An :t:`explicit register argument` shall appear after a

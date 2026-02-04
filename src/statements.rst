@@ -44,9 +44,22 @@ A :t:`macro statement` is a :t:`statement` expressed as a
 
 .. rubric:: Dynamic Semantics
 
-:dp:`fls_estqu395zxgk`
-:t:`Execution` is the process by which a :t:`statement` achieves its runtime
-effects.
+.. glossary-entry:: execution
+   
+   :glossary:
+     :dp:`fls_e5jbii84hd5g`
+     :dt:`Execution` is the process by which a :t:`statement` achieves its runtime
+     effects.
+   :chapter:
+     :dp:`fls_estqu395zxgk`
+     :t:`Execution` is the process by which a :t:`statement` achieves its runtime
+     effects.
+
+.. glossary-entry:: executed
+   
+   :glossary:
+     :dp:`fls_kelmsc68lyf7`
+     See :t:`execution`.
 
 :dp:`fls_dl763ssb54q1`
 The :t:`execution` of an :t:`empty statement` has no effect.
@@ -170,8 +183,17 @@ Expression Statements
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xmdj8uj7ixoe`
-An :t:`expression statement` is an :t:`expression` whose result is ignored.
+.. glossary-entry:: expression statement
+   
+   :glossary:
+     :dp:`fls_ds0pspiqk4am`
+     An :dt:`expression statement` is an :t:`expression` whose result is ignored.
+     
+     :dp:`fls_41jt1h3audzv`
+     See :s:`ExpressionStatement`.
+   :chapter:
+     :dp:`fls_xmdj8uj7ixoe`
+     An :t:`expression statement` is an :t:`expression` whose result is ignored.
 
 :dp:`fls_gzzmudc1hl6s`
 The :t:`expected type` of an :t:`expression statement` without character 0x3B

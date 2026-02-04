@@ -47,10 +47,17 @@ A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
      A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
      :t:`entity`.
 
-:dp:`fls_94l2d7ti0hjw`
-An :t:`explicitly declared entity` is an :t:`entity` that has a
-:t:`declaration`. The following :t:`entities <entity>` are
-:t:`explicitly declared entities <explicitly declared entity>`:
+.. glossary-entry:: explicitly declared entity
+   
+   :glossary:
+     :dp:`fls_shpNJ0JCSCwa`
+     An :dt:`explicitly declared entity` is an :t:`entity` that has a
+     :t:`declaration`.
+   :chapter:
+     :dp:`fls_94l2d7ti0hjw`
+     An :t:`explicitly declared entity` is an :t:`entity` that has a
+     :t:`declaration`. The following :t:`entities <entity>` are
+     :t:`explicitly declared entities <explicitly declared entity>`:
 
 * :dp:`fls_kvdqmo8gmdxi`
   :t:`[Associated item]s`,
