@@ -382,9 +382,19 @@ Parenthesized Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_kvqzmt7my5dh`
-A :t:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
-its :t:`[subpattern]s`.
+.. glossary-entry:: parenthesized pattern
+   
+   :glossary:
+     :dp:`fls_7j12dwsx9ghg`
+     A :dt:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
+     its :t:`[subpattern]s`.
+     
+     :dp:`fls_rwt31e8m694i`
+     See :s:`ParenthesizedPattern`.
+   :chapter:
+     :dp:`fls_kvqzmt7my5dh`
+     A :t:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
+     its :t:`[subpattern]s`.
 
 :dp:`fls_mrjhpiq5refe`
 A :t:`parenthesized pattern` is an :t:`irrefutable pattern` when its nested
@@ -429,9 +439,20 @@ Path Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1crq0mexo5r1`
-A :t:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
-:t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
+.. glossary-entry:: path pattern
+   
+   :glossary:
+     :dp:`fls_vacvk3t26ctg`
+     A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
+     :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a
+     :t:`path`.
+     
+     :dp:`fls_9fudbxoyq8k4`
+     See :s:`PathPattern`.
+   :chapter:
+     :dp:`fls_1crq0mexo5r1`
+     A :t:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
+     :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
 :dp:`fls_xz5otkhogn31`
 A :t:`path pattern` expressed as a :t:`path expression` shall refer to either

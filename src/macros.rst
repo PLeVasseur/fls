@@ -1319,6 +1319,13 @@ within them, which aims to eliminate the syntactic interference between a
          :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise, and is
          considered :dt:`partially hygienic`.
 
+.. glossary-entry:: partially hygienic
+   
+   :glossary:
+     :dp:`fls_Qh8V0Y08dNoa`
+     An :t:`identifier` is :dt:`partially hygienic` when it has
+     :t:`mixed site hygiene`.
+
 :dp:`fls_yxqcr19dig18`
 Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 

@@ -97,12 +97,22 @@ be consumed by :t:`[macro]s`.
      :dp:`fls_qypjjpcf8uwq`
      An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
-:dp:`fls_cavwpr1ybk37`
-An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
-
-:dp:`fls_plepew2319g4`
-An :t:`outline module` loads a :t:`source file` and considers the text of the
-:t:`source file` to be inlined within the context of the :t:`outline module`.
+.. glossary-entry:: outline module
+   
+   :glossary:
+     :dp:`fls_xhe5gmr0r9zn`
+     An :dt:`outline module` is a :t:`module` with an
+     :s:`OutlineModuleSpecification`.
+     
+     :dp:`fls_wu5wqylzx9ke`
+     See :s:`OutlineModuleSpecification`.
+   :chapter:
+     :dp:`fls_cavwpr1ybk37`
+     An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
+     
+     :dp:`fls_plepew2319g4`
+     An :t:`outline module` loads a :t:`source file` and considers the text of the
+     :t:`source file` to be inlined within the context of the :t:`outline module`.
 
 :dp:`fls_1aruwps62c4p`
 The location of a :t:`module` :t:`source file` can be specified using

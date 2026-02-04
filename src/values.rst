@@ -31,22 +31,29 @@ the object is stored.
 An :t:`[allocated object]s` :dt:`memory size` is the number of bytes the object
 spans in memory from its :t:`base address`.
 
-:dp:`fls_rixdyyc525xp`
-Two :t:`[value]s` :t:`overlap` when
-
-* :dp:`fls_m6ctqq70vcxr`
-  Both :t:`[value]s` are the same, or
-
-* :dp:`fls_s231d18x5eay`
-  One :t:`value` is of an :t:`abstract data type` and the other denotes a
-  :t:`field` of the same :t:`value`, or
-
-* :dp:`fls_dfr4yqo93fsn`
-  One :t:`value` denotes an :t:`array` and the other denotes an element of the
-  same :t:`value`, or
-
-* :dp:`fls_eoak5mdl6ma`
-  Both :t:`[value]s` are elements of the same :t:`array`.
+.. glossary-entry:: overlap
+   
+   :glossary:
+     :dp:`fls_itkz9y19923k`
+     Two :t:`[value]s` :dt:`overlap` when their memory locations overlap, or both
+     values are elements of the same :t:`array`.
+   :chapter:
+     :dp:`fls_rixdyyc525xp`
+     Two :t:`[value]s` :t:`overlap` when
+     
+     * :dp:`fls_m6ctqq70vcxr`
+       Both :t:`[value]s` are the same, or
+     
+     * :dp:`fls_s231d18x5eay`
+       One :t:`value` is of an :t:`abstract data type` and the other denotes a
+       :t:`field` of the same :t:`value`, or
+     
+     * :dp:`fls_dfr4yqo93fsn`
+       One :t:`value` denotes an :t:`array` and the other denotes an element of the
+       same :t:`value`, or
+     
+     * :dp:`fls_eoak5mdl6ma`
+       Both :t:`[value]s` are elements of the same :t:`array`.
 
 .. glossary-entry:: null
    

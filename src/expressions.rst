@@ -748,8 +748,17 @@ Path Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_gvanx4874ycy`
-A :t:`path expression` is an :t:`expression` that denotes a :t:`path`.
+.. glossary-entry:: path expression
+   
+   :glossary:
+     :dp:`fls_4ik66nmvx5hn`
+     A :dt:`path expression` is a :t:`path` that acts as an :t:`expression`.
+     
+     :dp:`fls_3qjpjqm0legc`
+     See :s:`PathExpression`.
+   :chapter:
+     :dp:`fls_gvanx4874ycy`
+     A :t:`path expression` is an :t:`expression` that denotes a :t:`path`.
 
 :dp:`fls_EOkrcIj9CuhV`
 A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
@@ -3442,9 +3451,19 @@ Parenthesized Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_jhazc75w5vj`
-A :t:`parenthesized expression` is an :t:`expression` that groups other
-:t:`[expression]s`.
+.. glossary-entry:: parenthesized expression
+   
+   :glossary:
+     :dp:`fls_yu1x2rr7cewa`
+     A :dt:`parenthesized expression` is an :t:`expression` that groups other
+     expressions.
+     
+     :dp:`fls_p9exa6fpplfu`
+     See :s:`ParenthesizedExpression`.
+   :chapter:
+     :dp:`fls_jhazc75w5vj`
+     A :t:`parenthesized expression` is an :t:`expression` that groups other
+     :t:`[expression]s`.
 
 :dp:`fls_5d66h7naoup6`
 The :t:`type` of a :t:`parenthesized expression` is the :t:`type` of its

@@ -124,10 +124,18 @@ read and written.
      a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
      or ``inlateout``.
 
-:dp:`fls_5ruu8n6r9mvp`
-An :t:`output register` is a :t:`register` whose :t:`register name` is
-used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
-``lateout``, ``inout``, or ``inlateout``.
+.. glossary-entry:: output register
+   
+   :glossary:
+     :dp:`fls_4METI8qE9JiY`
+     An :dt:`output register` is a :t:`register` whose :t:`register name` is
+     used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
+     ``lateout``, ``inout``, or ``inlateout``.
+   :chapter:
+     :dp:`fls_5ruu8n6r9mvp`
+     An :t:`output register` is a :t:`register` whose :t:`register name` is
+     used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
+     ``lateout``, ``inout``, or ``inlateout``.
 
 :dp:`fls_HV3Y1A2xn0zr`
 A :t:`register` that is not specified as an :t:`output register` shall have the
@@ -755,9 +763,19 @@ A :t:`register class argument` causes an assembler to select a suitable
      An :t:`input register expression` is an :t:`expression` that provides the
      initial :t:`value` of a :t:`register`.
 
-:dp:`fls_sopiivuae0x7`
-An :t:`output register expression` is an :t:`expression` that is assigned the
-:t:`value` of a :t:`register`.
+.. glossary-entry:: output register expression
+   
+   :glossary:
+     :dp:`fls_w95YRZ4JjBxl`
+     An :dt:`output register expression` is an :t:`expression` that is assigned the
+     :t:`value` of a :t:`register`.
+     
+     :dp:`fls_8B3ldFZVy7PA`
+     See :s:`OutputRegisterExpression`.
+   :chapter:
+     :dp:`fls_sopiivuae0x7`
+     An :t:`output register expression` is an :t:`expression` that is assigned the
+     :t:`value` of a :t:`register`.
 
 :dp:`fls_81Ju1TEqJ48K`
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.

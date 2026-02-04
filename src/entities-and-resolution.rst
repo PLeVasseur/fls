@@ -331,12 +331,28 @@ Paths
 
 .. rubric:: Legality Rules
 
-:dp:`fls_klcltwcwrw6i`
-A :t:`path` is a sequence of :t:`[path segment]s` logically separated by
-:t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
+.. glossary-entry:: path
+   
+   :glossary:
+     :dp:`fls_u3jyud6mhy1f`
+     A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
+     :dt:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
+   :chapter:
+     :dp:`fls_klcltwcwrw6i`
+     A :t:`path` is a sequence of :t:`[path segment]s` logically separated by
+     :t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
-:dp:`fls_y1z7kougmahd`
-A :t:`path segment` is an element of a :t:`path`.
+.. glossary-entry:: path segment
+   
+   :glossary:
+     :dp:`fls_gsumebjc2bsp`
+     A :dt:`path segment` is a constituent of a :t:`path`.
+     
+     :dp:`fls_m067uq7fo66i`
+     See :s:`PathSegment`, :s:`SimplePathSegment`, :s:`TypePathSegment`.
+   :chapter:
+     :dp:`fls_y1z7kougmahd`
+     A :t:`path segment` is an element of a :t:`path`.
 
 :dp:`fls_8q8nqfpSz7Ly`
 A :t:`path` is subject to :t:`path resolution`.
@@ -1660,12 +1676,18 @@ Path Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_8slvisr3jfja`
-:t:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
-
-:dp:`fls_nmev0tnzgw35`
-:t:`Path resolution` resolves a :t:`path` by resolving individual
-:t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
+.. glossary-entry:: path resolution
+   
+   :glossary:
+     :dp:`fls_uy9Ai9vwTkjB`
+     :dt:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
+   :chapter:
+     :dp:`fls_8slvisr3jfja`
+     :t:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
+     
+     :dp:`fls_nmev0tnzgw35`
+     :t:`Path resolution` resolves a :t:`path` by resolving individual
+     :t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
 
 :dp:`fls_p23q1ob2qitz`
 A :t:`path segment` shall resolve to exactly one :t:`entity`.
@@ -1849,9 +1871,16 @@ Path Expression Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_akjlqm3a2lb1`
-:t:`Path expression resolution` is a form of :t:`path resolution` that applies
-to a :t:`unqualified path expression`.
+.. glossary-entry:: path expression resolution
+   
+   :glossary:
+     :dp:`fls_WYcEVyc3SHuK`
+     :dt:`Path expression resolution` is a form of :t:`path resolution` that applies
+     to a :t:`path expression`.
+   :chapter:
+     :dp:`fls_akjlqm3a2lb1`
+     :t:`Path expression resolution` is a form of :t:`path resolution` that applies
+     to a :t:`unqualified path expression`.
 
 :dp:`fls_xyzdajtf4u2t`
 The :t:`namespace context` of :t:`path expression resolution` is the

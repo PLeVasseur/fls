@@ -1585,9 +1585,19 @@ Comments
      An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
      :t:`non-[comment]` :t:`construct`.
 
-:dp:`fls_scko7crha0um`
-An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
-:t:`non-[comment]` :t:`construct`.
+.. glossary-entry:: outer line doc
+   
+   :glossary:
+     :dp:`fls_m3u30fu8uac3`
+     An :dt:`outer line doc` is a :t:`line comment` that applies to a subsequent
+     :t:`non-[comment]` :t:`construct`.
+     
+     :dp:`fls_1ppwidw7szk5`
+     See :s:`OuterLineDoc`.
+   :chapter:
+     :dp:`fls_scko7crha0um`
+     An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
+     :t:`non-[comment]` :t:`construct`.
 
 .. glossary-entry:: outer doc comment
    

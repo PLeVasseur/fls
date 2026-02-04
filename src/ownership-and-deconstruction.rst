@@ -15,12 +15,25 @@ Ownership
 
 .. rubric:: Legality Rules
 
-:dp:`fls_wt81sbsecmu0`
-:t:`Ownership` is a property of :t:`[value]s` that is central to the resource
-management model of Rust.
+.. glossary-entry:: ownership
+   
+   :glossary:
+     :dp:`fls_tu4zt8twucsz`
+     :dt:`Ownership` is a property of :t:`[value]s` that is central to the resource
+     management model of Rust.
+   :chapter:
+     :dp:`fls_wt81sbsecmu0`
+     :t:`Ownership` is a property of :t:`[value]s` that is central to the resource
+     management model of Rust.
 
-:dp:`fls_ckcnkbb6y3cq`
-An :t:`owner` is a :t:`variable` that holds a :t:`value`.
+.. glossary-entry:: owner
+   
+   :glossary:
+     :dp:`fls_7vwwhberexeb`
+     An :dt:`owner` is a :t:`variable` that holds a :t:`value`.
+   :chapter:
+     :dp:`fls_ckcnkbb6y3cq`
+     An :t:`owner` is a :t:`variable` that holds a :t:`value`.
 
 :dp:`fls_ze0u9gfylmhn`
 A :t:`value` shall have only one :t:`owner`.
@@ -306,9 +319,16 @@ Passing Conventions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fvwx2ufeyzcs`
-A :t:`passing convention` is the mechanism that defines how a :t:`value` is
-transferred between :t:`[place]s`.
+.. glossary-entry:: passing convention
+   
+   :glossary:
+     :dp:`fls_eqgsg8j9btic`
+     A :dt:`passing convention` is the mechanism that defines how a :t:`value` is
+     transferred between :t:`[place]s`.
+   :chapter:
+     :dp:`fls_fvwx2ufeyzcs`
+     A :t:`passing convention` is the mechanism that defines how a :t:`value` is
+     transferred between :t:`[place]s`.
 
 .. glossary-entry:: copy type
    

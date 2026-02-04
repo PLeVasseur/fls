@@ -1676,9 +1676,19 @@ Parenthesized Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1dvo1epstrdv`
-A :t:`parenthesized type` is a :t:`type` that disambiguates the interpretation
-of :t:`[lexical element]s`.
+.. glossary-entry:: parenthesized type
+   
+   :glossary:
+     :dp:`fls_pamypc7t7l5n`
+     A :dt:`parenthesized type` is a :t:`type` that disambiguates the interpretation
+     of :t:`[lexical element]s`.
+     
+     :dp:`fls_lovkvqoni3xs`
+     See :s:`ParenthesizedTypeSpecification`.
+   :chapter:
+     :dp:`fls_1dvo1epstrdv`
+     A :t:`parenthesized type` is a :t:`type` that disambiguates the interpretation
+     of :t:`[lexical element]s`.
 
 .. rubric:: Examples
 
@@ -3473,16 +3483,23 @@ A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
      An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
      that nullifies an implicitly added :t:`trait bound`.
 
-:dp:`fls_1Sm2Yq1Ow76f`
-An :t:`outlives bound` is a :t:`trait bound` which requires that a
-:t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
-
-:dp:`fls_tx4uspewnk7w`
-:t:`Outlives bound` ``'a: 'b`` indicates that ``'a`` outlives ``'b``.
-
-:dp:`fls_5kj8bmvb8xfc`
-:t:`Outlives bound` ``T: 'a`` indicates that all :t:`[lifetime parameter]s` of
-``T`` outlive ``'a``.
+.. glossary-entry:: outlives bound
+   
+   :glossary:
+     :dp:`fls_J5dt34II7Pm6`
+     An :dt:`outlives bound` is a :t:`trait bound` which requires that a
+     :t:`generic parameter` outlives a :t:`lifetime parameter`.
+   :chapter:
+     :dp:`fls_1Sm2Yq1Ow76f`
+     An :t:`outlives bound` is a :t:`trait bound` which requires that a
+     :t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
+     
+     :dp:`fls_tx4uspewnk7w`
+     :t:`Outlives bound` ``'a: 'b`` indicates that ``'a`` outlives ``'b``.
+     
+     :dp:`fls_5kj8bmvb8xfc`
+     :t:`Outlives bound` ``T: 'a`` indicates that all :t:`[lifetime parameter]s` of
+     ``T`` outlive ``'a``.
 
 .. glossary-entry:: implied bound
    
