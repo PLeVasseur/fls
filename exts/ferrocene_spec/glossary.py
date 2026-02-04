@@ -3,6 +3,7 @@
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.statemachine import StringList
@@ -11,12 +12,14 @@ from sphinx.environment.collectors import EnvironmentCollector
 from sphinx.util import logging
 
 VALID_KINDS = ("term", "code", "syntax")
+GLOSSARY_DP_RE = re.compile(r"^fls_[A-Za-z0-9]+$")
 
 
 class GlossaryEntryNode(nodes.Element):
-    __slots__ = ("glossary_lines", "chapter_lines")
+    __slots__ = ("glossary_lines", "chapter_lines", "glossary_dp")
     glossary_lines: list[str] | None
     chapter_lines: list[str] | None
+    glossary_dp: str | None
 
 
 def _parse_bool_option(argument):
@@ -31,6 +34,7 @@ def _parse_bool_option(argument):
 @dataclass
 class GlossaryEntryData:
     term: str
+    glossary_dp: str | None
     kind: str
     propagate: bool
     glossary_lines: list[str] | None
@@ -47,6 +51,7 @@ class GlossaryEntryDirective(SphinxDirective):
     option_spec = {
         "kind": lambda argument: directives.choice(argument, VALID_KINDS),
         "propagate": _parse_bool_option,
+        "glossary-dp": directives.unchanged_required,
     }
 
     def run(self):
@@ -65,6 +70,17 @@ class GlossaryEntryDirective(SphinxDirective):
 
         propagate = self.options.get("propagate", False)
         kind = self.options.get("kind", "term")
+        glossary_dp, glossary_dp_error = normalize_glossary_dp(
+            self.options.get("glossary-dp"), self.get_location()
+        )
+        requires_glossary_dp = glossary_lines is not None or (
+            chapter_lines is not None and propagate
+        )
+        if requires_glossary_dp and glossary_dp is None and not glossary_dp_error:
+            warn(
+                "glossary-entry requires :glossary-dp: for exported terms",
+                self.get_location(),
+            )
 
         node = GlossaryEntryNode()
         source, line = self.get_source_info()
@@ -73,6 +89,7 @@ class GlossaryEntryDirective(SphinxDirective):
         node["propagate"] = propagate
         node.glossary_lines = glossary_lines
         node.chapter_lines = chapter_lines
+        node.glossary_dp = glossary_dp
         node["source"] = source
         node["line"] = line
         node.source = source
@@ -113,6 +130,8 @@ class GlossaryIncludeDirective(SphinxDirective):
         if not resolved.is_file():
             warn(f"missing include file: {resolved}", self.get_location())
             return []
+
+        self.env.note_dependency(str(resolved))
 
         logger.info(
             "glossary-include: using tag=%r include=%s",
@@ -212,19 +231,37 @@ def lines_after_marker(lines, marker, path, location):
 class GlossaryEntryCollector(EnvironmentCollector):
     def clear_doc(self, app, env, docname):
         storage = get_storage(env)
+        glossary_dp_storage = get_glossary_dp_storage(env)
         for term, entry in list(storage.items()):
             if entry.document == docname:
+                if entry.glossary_dp:
+                    glossary_dp_storage.pop(entry.glossary_dp, None)
                 del storage[term]
 
     def merge_other(self, app, env, docnames, other):
         current = get_storage(env)
+        current_glossary_dp = get_glossary_dp_storage(env)
         other_storage = get_storage(other)
         for entry in other_storage.values():
             if entry.document in docnames:
+                if entry.term in current:
+                    warn(
+                        f"duplicate glossary-entry for {entry.term}",
+                        (entry.source, entry.line),
+                    )
                 current[entry.term] = entry
+                if entry.glossary_dp:
+                    if entry.glossary_dp in current_glossary_dp:
+                        warn(
+                            f"duplicate glossary-dp for {entry.glossary_dp}",
+                            (entry.source, entry.line),
+                        )
+                    else:
+                        current_glossary_dp[entry.glossary_dp] = entry.term
 
     def process_doc(self, app, doctree):
         storage = get_storage(app.env)
+        glossary_dp_storage = get_glossary_dp_storage(app.env)
         for node in doctree.findall(GlossaryEntryNode):
             term = node["term"]
             if term in storage:
@@ -234,8 +271,19 @@ class GlossaryEntryCollector(EnvironmentCollector):
                 )
                 continue
 
+            glossary_dp = node.glossary_dp
+            if glossary_dp:
+                if glossary_dp in glossary_dp_storage:
+                    warn(
+                        f"duplicate glossary-dp for {glossary_dp}",
+                        (node.get("source"), node.get("line")),
+                    )
+                else:
+                    glossary_dp_storage[glossary_dp] = term
+
             storage[term] = GlossaryEntryData(
                 term=term,
+                glossary_dp=glossary_dp,
                 kind=node["kind"],
                 propagate=node["propagate"],
                 glossary_lines=node.glossary_lines,
@@ -251,6 +299,69 @@ def get_storage(env):
     if not hasattr(env, key):
         setattr(env, key, {})
     return getattr(env, key)
+
+
+def get_glossary_dp_storage(env):
+    key = "spec_glossary_dp_ids"
+    if not hasattr(env, key):
+        setattr(env, key, {})
+    return getattr(env, key)
+
+
+def normalize_glossary_dp(value: str | None, location):
+    if value is None:
+        return None, False
+    value = value.strip()
+    if not value:
+        warn(":glossary-dp: requires a value", location)
+        return None, True
+    if not GLOSSARY_DP_RE.fullmatch(value):
+        warn(
+            f"invalid :glossary-dp: {value} (expected fls_ + [A-Za-z0-9]+)",
+            location,
+        )
+        return None, True
+    return value, False
+
+
+def select_glossary_block(entry: GlossaryEntryData) -> list[str] | None:
+    if entry.glossary_lines is not None:
+        return entry.glossary_lines
+    if entry.chapter_lines is not None and entry.propagate:
+        return entry.chapter_lines
+    return None
+
+
+SPLIT_NUMBERS = re.compile(r"([0-9]+)")
+
+
+def natural_sort_key(term: str) -> list[object]:
+    return [
+        int(fragment) if fragment.isdigit() else fragment.casefold()
+        for fragment in SPLIT_NUMBERS.split(term)
+    ]
+
+
+def trim_trailing_blanks(lines: list[str]) -> list[str]:
+    trimmed = list(lines)
+    while trimmed and trimmed[-1].strip() == "":
+        trimmed.pop()
+    return trimmed
+
+
+def render_glossary_entry(term: str, glossary_dp: str, body_lines: list[str]) -> list[str]:
+    heading = "^" * len(term)
+    body = list(body_lines)
+    if not body or body[-1].strip() != "":
+        body.append("")
+    return [
+        f".. _{glossary_dp}:",
+        "",
+        term,
+        heading,
+        "",
+        *body,
+    ]
 
 
 def visit_glossary_entry_node(self, node):

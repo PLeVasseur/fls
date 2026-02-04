@@ -55,6 +55,7 @@ compiler validation. As such, given any doubt, it prefers documenting behavior
 of :t:`rustc` over claiming correctness as a specification.
 
 .. glossary-entry:: rustc
+   :glossary-dp: fls_fki32ns69q4j
    
    :glossary:
      :dp:`fls_zdgbeixirjfm`
@@ -161,6 +162,7 @@ relevant to the topic:
 The syntax representation of a :t:`construct`.
 
 .. glossary-entry:: construct
+   :glossary-dp: fls_4305i29nt5d6
    
    :glossary:
      :dp:`fls_10tvzeo8xex0`
@@ -266,6 +268,7 @@ The context-free syntax of Rust is described using a simple variant of the
 Backus-Naur form. In particular:
 
 .. glossary-entry:: syntactic category
+   :glossary-dp: fls_44djv0wocacs
    
    :glossary:
      :dp:`fls_f981e3m7kq50`
@@ -273,6 +276,7 @@ Backus-Naur form. In particular:
      definition of the Rust programming language.
 
 .. glossary-entry:: escaped character
+   :glossary-dp: fls_9hw559b548m0
    
    :glossary:
      :dp:`fls_7yvnbakmo7y5`

@@ -35,6 +35,7 @@ Source Files
 .. rubric:: Legality Rules
 
 .. glossary-entry:: source file
+   :glossary-dp: fls_wlwwxzpnhk6i
    
    :glossary:
      :dp:`fls_nh737q4mn27u`
@@ -80,6 +81,7 @@ Modules
 .. rubric:: Legality Rules
 
 .. glossary-entry:: module
+   :glossary-dp: fls_kbxk78vm564e
    
    :glossary:
      :dp:`fls_ujlsg58bskl5`
@@ -96,6 +98,7 @@ The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
 be consumed by :t:`[macro]s`.
 
 .. glossary-entry:: inline module
+   :glossary-dp: fls_c54lmkluwbwr
    
    :glossary:
      :dp:`fls_tbldwtisl9vc`
@@ -108,6 +111,7 @@ be consumed by :t:`[macro]s`.
      An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 .. glossary-entry:: outline module
+   :glossary-dp: fls_de935b1pzd28
    
    :glossary:
      :dp:`fls_xhe5gmr0r9zn`
@@ -148,6 +152,7 @@ Crates
 .. rubric:: Legality Rules
 
 .. glossary-entry:: crate
+   :glossary-dp: fls_kf8yukhxudw8
    
    :glossary:
      :dp:`fls_qplsjzb2uyim`
@@ -159,6 +164,7 @@ Crates
      nested :t:`[module]s`.
 
 .. glossary-entry:: crate type
+   :glossary-dp: fls_lVpE4uFDsXH4
    
    :glossary:
      :dp:`fls_eaxsgPMFNH7f`
@@ -179,6 +185,7 @@ A :t:`crate` may be subject to multiple :t:`[crate type]s`, treating each type
 as a separate :t:`crate`.
 
 .. glossary-entry:: binary crate
+   :glossary-dp: fls_kahj3y4rvmvb
    
    :glossary:
      :dp:`fls_8gfe7hajxkd7`
@@ -198,6 +205,7 @@ the :t:`name` ``main`` with a :t:`main function signature` is the :t:`binary
 crate`'s :t:`program entry point`.
 
 .. glossary-entry:: library crate
+   :glossary-dp: fls_r1sk7vdgckym
    
    :glossary:
      :dp:`fls_3m8lg4mdc2x0`
@@ -209,6 +217,7 @@ crate`'s :t:`program entry point`.
      ``staticlib``, ``dylib``, or ``cdylib``.
 
 .. glossary-entry:: proc-macro crate
+   :glossary-dp: fls_kCA6SW8bUq5x
    
    :glossary:
      .. _fls_AjjdLZWiL9Tq:
@@ -246,6 +255,7 @@ Crate Imports
 .. rubric:: Legality Rules
 
 .. glossary-entry:: crate import
+   :glossary-dp: fls_xwbmmcbbowtu
    
    :glossary:
      :dp:`fls_y91ja1a87g7a`
@@ -258,6 +268,7 @@ Crate Imports
      A :t:`crate import` specifies a required dependency on an external :t:`crate`.
 
 .. glossary-entry:: crate indication
+   :glossary-dp: fls_CXvNvsO10pLL
    
    :glossary:
      :dp:`fls_XUSFUErxQRRA`
@@ -296,12 +307,14 @@ Compilation Roots
 .. rubric:: Legality Rules
 
 .. glossary-entry:: crate root
+   :glossary-dp: fls_hv9zyxb72soh
    
    :glossary:
      :dp:`fls_yxcgiuybqqy8`
      A :dt:`crate root` is an entry point into a :t:`crate`.
 
 .. glossary-entry:: crate root module
+   :glossary-dp: fls_iucxone5ta26
    
    :glossary:
      :dp:`fls_oo4nmqv78wno`
@@ -316,6 +329,7 @@ Compilation Roots
 A tool can define a :t:`crate root module` for a single :t:`crate`.
 
 .. glossary-entry:: compilation root
+   :glossary-dp: fls_riwule1euzlj
    
    :glossary:
      :dp:`fls_stwsfyvov2fx`
@@ -364,6 +378,7 @@ Program Entry Point
 .. rubric:: Legality Rules
 
 .. glossary-entry:: program entry point
+   :glossary-dp: fls_SIFecOZqloyx
    
    :glossary:
      :dp:`fls_9m37hN9zgEQf`
@@ -375,6 +390,7 @@ Program Entry Point
      a Rust program.
 
 .. glossary-entry:: main function signature
+   :glossary-dp: fls_MJ1YWiOpxAa8
    
    :glossary:
      :dp:`fls_QijObGZEIykU`

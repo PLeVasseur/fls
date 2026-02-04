@@ -11,6 +11,7 @@ Unsafety
 .. rubric:: Legality Rules
 
 .. glossary-entry:: unsafety
+   :glossary-dp: fls_pst7yov6vnr9
    
    :glossary:
      :dp:`fls_742ycx5181n`
@@ -21,6 +22,7 @@ Unsafety
      implementation]s` in program text.
 
 .. glossary-entry:: unsafe operation
+   :glossary-dp: fls_e2wyfbem6vwn
    
    :glossary:
      :dp:`fls_34h60ubicgsj`
@@ -34,6 +36,7 @@ Unsafety
      :t:`[Unsafe operation]s` are referred to as :t:`unsafe Rust`.
 
 .. glossary-entry:: unsafe Rust
+   :glossary-dp: fls_4f6mppoenj3b
    
    :glossary:
      :dp:`fls_30asi010yf1a`
@@ -61,6 +64,7 @@ The :t:`[unsafe operation]s` are:
   Calling :t:`macro` :std:`core::arch::asm`.
 
 .. glossary-entry:: unsafe context
+   :glossary-dp: fls_5m85wlr2qw78
    
    :glossary:
      :dp:`fls_qn1s845ejbu0`

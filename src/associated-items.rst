@@ -25,6 +25,7 @@ Associated Items
 .. rubric:: Legality Rules
 
 .. glossary-entry:: associated item
+   :glossary-dp: fls_f3ferow5ugp
    
    :glossary:
      :dp:`fls_o5ysjk7l91ni`
@@ -39,6 +40,7 @@ Associated Items
      :t:`implementation` or a :t:`trait`.
 
 .. glossary-entry:: associated constant
+   :glossary-dp: fls_pjb22ylz5swp
    
    :glossary:
      :dp:`fls_hi9qa0k2nujb`
@@ -50,6 +52,7 @@ Associated Items
      :t:`associated item`.
 
 .. glossary-entry:: incomplete associated constant
+   :glossary-dp: fls_j44ow2k5va3s
    
    :glossary:
      :dp:`fls_bq48gl84bul0`
@@ -57,6 +60,7 @@ Associated Items
      a :t:`constant initializer`.
 
 .. glossary-entry:: associated function
+   :glossary-dp: fls_vxiitesidcc2
    
    :glossary:
      :dp:`fls_zcy5pat39bq7`
@@ -68,6 +72,7 @@ Associated Items
      :t:`associated item`.
 
 .. glossary-entry:: incomplete associated function
+   :glossary-dp: fls_ga2n4nbm1pkk
    
    :glossary:
      :dp:`fls_iboondra204w`
@@ -75,6 +80,7 @@ Associated Items
      a :t:`function body`.
 
 .. glossary-entry:: associated type
+   :glossary-dp: fls_zfs68g3yk0uw
    
    :glossary:
      :dp:`fls_rs0n72c2d8f`
@@ -86,6 +92,7 @@ Associated Items
      :t:`associated item`.
 
 .. glossary-entry:: incomplete associated type
+   :glossary-dp: fls_n99acc2tr9qm
    
    :glossary:
      :dp:`fls_tka0gth8rc9x`
@@ -93,6 +100,7 @@ Associated Items
      :t:`initialization type`.
 
 .. glossary-entry:: initialization type
+   :glossary-dp: fls_pd30dl2envjn
    
    :glossary:
      :dp:`fls_crn87nne7k38`
@@ -111,6 +119,7 @@ An :t:`associated type` with a :s:`TypeBoundList` shall appear only as an
 :t:`associated trait type`.
 
 .. glossary-entry:: generic associated type
+   :glossary-dp: fls_nooYIxMnV8Ps
    
    :glossary:
      :dp:`fls_O4wckPZPmree`
@@ -139,6 +148,7 @@ or :c:`Self` and ``'lifetime`` is the :t:`lifetime parameter`, when
   The intersection of all such uses is not empty.
 
 .. glossary-entry:: associated implementation constant
+   :glossary-dp: fls_9mcx6h6irrlx
    
    :glossary:
      :dp:`fls_rfaxcrrrb5q9`
@@ -154,6 +164,7 @@ An :t:`associated implementation constant` shall have a :t:`constant
 initializer`.
 
 .. glossary-entry:: associated implementation function
+   :glossary-dp: fls_n85fwe75ku60
    
    :glossary:
      :dp:`fls_7xbmvl3jrc27`
@@ -168,6 +179,7 @@ initializer`.
 An :t:`associated implementation function` shall have a :t:`function body`.
 
 .. glossary-entry:: associated implementation type
+   :glossary-dp: fls_c0hekhwpznyq
    
    :glossary:
      :dp:`fls_6g5t81gx9ayx`
@@ -182,6 +194,7 @@ An :t:`associated implementation function` shall have a :t:`function body`.
 An :t:`associated implementation type` shall have an :t:`initialization type`.
 
 .. glossary-entry:: associated trait item
+   :glossary-dp: fls_J946yIcmlAyV
    
    :glossary:
      :dp:`fls_IlRrVLm05GTf`
@@ -193,6 +206,7 @@ An :t:`associated implementation type` shall have an :t:`initialization type`.
      within a :t:`trait`.
 
 .. glossary-entry:: associated trait implementation item
+   :glossary-dp: fls_47xtji9Pk8Lw
    
    :glossary:
      :dp:`fls_PaENehzTVgfB`
@@ -204,6 +218,7 @@ An :t:`associated implementation type` shall have an :t:`initialization type`.
      appears within a :t:`trait implementation`.
 
 .. glossary-entry:: associated trait constant
+   :glossary-dp: fls_8p8teeamua55
    
    :glossary:
      :dp:`fls_xhhsej8db74y`
@@ -215,6 +230,7 @@ An :t:`associated implementation type` shall have an :t:`initialization type`.
      within a :t:`trait`.
 
 .. glossary-entry:: associated trait function
+   :glossary-dp: fls_4h7s8u1zumnq
    
    :glossary:
      :dp:`fls_r927r0pdkb6h`
@@ -234,6 +250,7 @@ Every occurrence of an :t:`impl trait type` in the :t:`return type` of an
 anonymous :t:`associated trait type` of the :t:`implemented trait`.
 
 .. glossary-entry:: associated trait type
+   :glossary-dp: fls_azz308k3ra99
    
    :glossary:
      :dp:`fls_dndsgkiq9r7i`
@@ -270,6 +287,7 @@ is equivalent to a :t:`where clause` of the following form:
    	}
 
 .. glossary-entry:: associated trait implementation function
+   :glossary-dp: fls_fufF4UmzLg5G
    
    :glossary:
      :dp:`fls_bzdXloUGlVSC`
@@ -287,6 +305,7 @@ corresponding :t:`associated trait type` of the corresponding :t:`associated
 trait function`.
 
 .. glossary-entry:: method
+   :glossary-dp: fls_bi3g8xkk9ekf
    
    :glossary:
      :dp:`fls_n4opbiofu9q6`

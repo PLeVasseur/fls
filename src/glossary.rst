@@ -10,6 +10,6 @@
    :start-after: .. informational-page::
    :tag: use_generated_glossary
 
-.. glossary-include:: glossary.static.rst.inc
+.. glossary-include:: glossary.rst.inc
    :start-after: .. informational-page::
    :tag: not use_generated_glossary

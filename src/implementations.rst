@@ -37,6 +37,7 @@ Implementations
 .. rubric:: Legality Rules
 
 .. glossary-entry:: implementation
+   :glossary-dp: fls_bj1u4k3akecp
    
    :glossary:
      :dp:`fls_pjulppit1r6`
@@ -51,6 +52,7 @@ Implementations
      :t:`implementing type` by extending its functionality.
 
 .. glossary-entry:: implementing type
+   :glossary-dp: fls_ow4b5iqas115
    
    :glossary:
      :dp:`fls_vs5ia3uupdcc`
@@ -69,6 +71,7 @@ Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
 for the :t:`implementing type`.
 
 .. glossary-entry:: implementation body
+   :glossary-dp: fls_vofxuHcXpt6X
    
    :glossary:
      :dp:`fls_1iS30Nv9myEd`
@@ -85,6 +88,7 @@ for the :t:`implementing type`.
      :t:`[inner doc comment]s` of an :t:`implementation`.
 
 .. glossary-entry:: inherent implementation
+   :glossary-dp: fls_o57p4yhjci61
    
    :glossary:
      :dp:`fls_6fpicw8ss4h3`
@@ -103,6 +107,7 @@ for the :t:`implementing type`.
 defined within the same :t:`crate`.
 
 .. glossary-entry:: trait implementation
+   :glossary-dp: fls_kflieu6uottg
    
    :glossary:
      :dp:`fls_5v7kbg144pr8`
@@ -117,6 +122,7 @@ defined within the same :t:`crate`.
      specified by a :t:`trait`.
 
 .. glossary-entry:: unsafe trait implementation
+   :glossary-dp: fls_h62dfjfyqcbn
    
    :glossary:
      :dp:`fls_kqwcv076dzie`
@@ -128,6 +134,7 @@ defined within the same :t:`crate`.
      :t:`keyword` ``unsafe``.
 
 .. glossary-entry:: implemented trait
+   :glossary-dp: fls_c0xxvivt8t1u
    
    :glossary:
      :dp:`fls_7twlizi3v8cb`
@@ -204,6 +211,7 @@ Implementation Coherence
 .. rubric:: Legality Rules
 
 .. glossary-entry:: implementation coherence
+   :glossary-dp: fls_41GLrzVxcOV6
    
    :glossary:
      :dp:`fls_hAmKcuYT9hHi`
@@ -239,6 +247,7 @@ Given :t:`trait implementation`
     :t:`non-[fundamental]` :t:`[type]s` of ``T0, T1, .., TN``.
 
 .. glossary-entry:: fundamental
+   :glossary-dp: fls_OFMoUA3eFtuC
    
    :glossary:
      :dp:`fls_e0dRD4NTE0UP`
@@ -289,6 +298,7 @@ Implementation Conformance
 .. rubric:: Legality Rules
 
 .. glossary-entry:: implementation conformance
+   :glossary-dp: fls_SBkTVa8bzGDx
    
    :glossary:
      :dp:`fls_Gpq4EP1SsYJR`

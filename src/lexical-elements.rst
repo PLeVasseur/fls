@@ -26,6 +26,7 @@ The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
 .. glossary-entry:: Unicode
+   :glossary-dp: fls_kafgmevvzl5t
    
    :glossary:
      :dp:`fls_y7gwku7pe1f4`
@@ -41,6 +42,7 @@ described by :t:`Unicode`, regardless of whether or not :t:`Unicode` allocates a
 character to that cell.
 
 .. glossary-entry:: code point
+   :glossary-dp: fls_aqovhozevngd
    
    :glossary:
      :dp:`fls_6xw8jtiomc2n`
@@ -48,6 +50,7 @@ character to that cell.
      character.
 
 .. glossary-entry:: plane
+   :glossary-dp: fls_dr6wbsqjd2qm
    
    :glossary:
      :dp:`fls_x1wbguoqdsf9`
@@ -91,6 +94,7 @@ A :dt:`whitespace character` is one of the following characters:
   0x2029 (paragraph separator)
 
 .. glossary-entry:: whitespace string
+   :glossary-dp: fls_cxm8nw6qiryr
    
    :glossary:
      :dp:`fls_nljkmadklwdp`
@@ -189,6 +193,7 @@ element]s`. The meaning of a program depends only on the particular sequence of
 :t:`[lexical element]s`, excluding :t:`non-[doc comment]s`.
 
 .. glossary-entry:: lexical element
+   :glossary-dp: fls_h2tqtmm5686y
    
    :glossary:
      :dp:`fls_nrxnbkatn63n`
@@ -202,6 +207,7 @@ element]s`. The meaning of a program depends only on the particular sequence of
 The text of a :t:`source file` is divided into :t:`[line]s`.
 
 .. glossary-entry:: line
+   :glossary-dp: fls_8qputmx0i7ku
    
    :glossary:
      :dp:`fls_oqf2439j3y7b`
@@ -216,6 +222,7 @@ The text of a :t:`source file` is divided into :t:`[line]s`.
 The representation of an end of line is tool-defined.
 
 .. glossary-entry:: separator
+   :glossary-dp: fls_at8q1svh3isg
    
    :glossary:
      :dp:`fls_128xny4qfcj5`
@@ -227,6 +234,7 @@ The representation of an end of line is tool-defined.
      element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 .. glossary-entry:: punctuator
+   :glossary-dp: fls_hdwmw3jbwefi
    
    :glossary:
      :dp:`fls_gwqgi0b7jxmu`
@@ -525,6 +533,7 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 .. rubric:: Legality Rules
 
 .. glossary-entry:: identifier
+   :glossary-dp: fls_kpsyz8yopova
    
    :glossary:
      :dp:`fls_14zc5bcm9d8o`
@@ -537,6 +546,7 @@ except ``crate``, ``self``, ``Self``, and ``super``.
      An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 .. glossary-entry:: pure identifier
+   :glossary-dp: fls_sgwvmnoio1ql
    
    :glossary:
      :dp:`fls_6pez8fyiew0k`
@@ -628,6 +638,7 @@ Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: literal
+   :glossary-dp: fls_z850pyf9r1f4
    
    :glossary:
      :dp:`fls_ckbyt11pku9j`
@@ -673,6 +684,7 @@ return), 0x27 (apostrophe), and 0x5C (reverse solidus).
 .. rubric:: Legality Rules
 
 .. glossary-entry:: byte literal
+   :glossary-dp: fls_e8rokiw23i9t
    
    :glossary:
      :dp:`fls_l67oo0u12zjb`
@@ -711,6 +723,7 @@ Byte String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: byte string literal
+   :glossary-dp: fls_uwe7iomhvgtp
    
    :glossary:
      :dp:`fls_my4r1l3ilyt2`
@@ -753,6 +766,7 @@ except characters 0x0D (carriage return), 0x22 (quotation mark), and 0x5C
 .. rubric:: Legality Rules
 
 .. glossary-entry:: simple byte string literal
+   :glossary-dp: fls_4GvXiDfcPlRD
    
    :glossary:
      :dp:`fls_XpbU4Up0Aza8`
@@ -801,6 +815,7 @@ Raw Byte String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: raw byte string literal
+   :glossary-dp: fls_ipeh92kh17ze
    
    :glossary:
      :dp:`fls_8v5k3wemy4tl`
@@ -842,6 +857,7 @@ C String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: c string literal
+   :glossary-dp: fls_roz4WXH5JZFj
    
    :glossary:
      :dp:`fls_g3NHtaOhTB7g`
@@ -878,6 +894,7 @@ Simple C String Literals
      | UnicodeEscape
 
 .. glossary-entry:: simple c string literal
+   :glossary-dp: fls_fx2hhB0HHSUG
    
    :glossary:
      :dp:`fls_qoHXrmds9SgI`
@@ -939,6 +956,7 @@ Raw C String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: raw c string literal
+   :glossary-dp: fls_yGGvg3e0nPOh
    
    :glossary:
      :dp:`fls_qhWBzqoYZL0e`
@@ -980,6 +998,7 @@ Numeric Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: numeric literal
+   :glossary-dp: fls_a0qsojiymgjy
    
    :glossary:
      :dp:`fls_978ndaqdv4r`
@@ -1072,6 +1091,7 @@ Integer Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: integer literal
+   :glossary-dp: fls_e2kizieowvuh
    
    :glossary:
      :dp:`fls_23a1fjpf15qv`
@@ -1084,6 +1104,7 @@ Integer Literals
      An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 .. glossary-entry:: binary literal
+   :glossary-dp: fls_or4o65fyt28y
    
    :glossary:
      :dp:`fls_hy54uj6u3nqw`
@@ -1096,6 +1117,7 @@ Integer Literals
      A :t:`binary literal` is an :t:`integer literal` in base 2.
 
 .. glossary-entry:: decimal literal
+   :glossary-dp: fls_128iunbbiuql
    
    :glossary:
      :dp:`fls_lwv823lih69m`
@@ -1108,6 +1130,7 @@ Integer Literals
      A :t:`decimal literal` is an :t:`integer literal` in base 10.
 
 .. glossary-entry:: hexadecimal literal
+   :glossary-dp: fls_5uiij8eqln5g
    
    :glossary:
      :dp:`fls_8b6njsi8g68i`
@@ -1120,6 +1143,7 @@ Integer Literals
      A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 .. glossary-entry:: octal literal
+   :glossary-dp: fls_q47u2zq6clon
    
    :glossary:
      :dp:`fls_pf4341vnqiin`
@@ -1132,6 +1156,7 @@ Integer Literals
      An :t:`octal literal` is an :t:`integer literal` in base 8.
 
 .. glossary-entry:: integer suffix
+   :glossary-dp: fls_bhvh8qwqy8ve
    
    :glossary:
      :dp:`fls_qazh8f8rs528`
@@ -1146,6 +1171,7 @@ Integer Literals
      an explicit :t:`integer type`.
 
 .. glossary-entry:: suffixed integer
+   :glossary-dp: fls_bmbu11ycjpor
    
    :glossary:
      :dp:`fls_ltzetxu3sq7k`
@@ -1155,6 +1181,7 @@ Integer Literals
      A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 .. glossary-entry:: unsuffixed integer
+   :glossary-dp: fls_d18nctsj8wu5
    
    :glossary:
      :dp:`fls_t419z3zder0q`
@@ -1266,6 +1293,7 @@ Float Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: float literal
+   :glossary-dp: fls_achdyw3nbme3
    
    :glossary:
      :dp:`fls_53o8dio9vpjh`
@@ -1279,6 +1307,7 @@ Float Literals
      A :t:`float literal` is a :t:`numeric literal` that denotes a fractional number.
 
 .. glossary-entry:: float suffix
+   :glossary-dp: fls_wgylj1n4wrqe
    
    :glossary:
      :dp:`fls_vka2z7frq9j8`
@@ -1293,6 +1322,7 @@ Float Literals
      explicit :t:`floating-point type`.
 
 .. glossary-entry:: suffixed float
+   :glossary-dp: fls_qar9v52smi9j
    
    :glossary:
      :dp:`fls_7reb4jp0x1wf`
@@ -1302,6 +1332,7 @@ Float Literals
      A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 .. glossary-entry:: unsuffixed float
+   :glossary-dp: fls_4ph9cact2scc
    
    :glossary:
      :dp:`fls_7wp6y0xeqqve`
@@ -1387,6 +1418,7 @@ the range of U+D800 and U+DFFF, inclusive.
 .. rubric:: Legality Rules
 
 .. glossary-entry:: character literal
+   :glossary-dp: fls_cfphqaml82ik
    
    :glossary:
      :dp:`fls_8oah1cf8p0lb`
@@ -1428,6 +1460,7 @@ String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: string literal
+   :glossary-dp: fls_cck2tmyzmpja
    
    :glossary:
      :dp:`fls_dphk5br0ag35`
@@ -1472,6 +1505,7 @@ new line).
 .. rubric:: Legality Rules
 
 .. glossary-entry:: simple string literal
+   :glossary-dp: fls_dpod2gc7a0u
    
    :glossary:
      :dp:`fls_p6qyyptz8w8w`
@@ -1524,6 +1558,7 @@ Raw String Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: raw string literal
+   :glossary-dp: fls_echjohx6fjc
    
    :glossary:
      :dp:`fls_48t4v316951j`
@@ -1564,6 +1599,7 @@ Boolean Literals
 .. rubric:: Legality Rules
 
 .. glossary-entry:: boolean literal
+   :glossary-dp: fls_oz4tdyp3rvm4
    
    :glossary:
      :dp:`fls_5mrxdqh474vk`
@@ -1633,6 +1669,7 @@ Comments
 .. rubric:: Legality Rules
 
 .. glossary-entry:: comment
+   :glossary-dp: fls_2moavfyeit0m
    
    :glossary:
      :dp:`fls_3xhoz9f7xy1t`
@@ -1647,6 +1684,7 @@ Comments
      explanation in program text.
 
 .. glossary-entry:: block comment
+   :glossary-dp: fls_aa980vviqjue
    
    :glossary:
      :dp:`fls_a0ejcfs7y5uy`
@@ -1659,6 +1697,7 @@ Comments
      A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 .. glossary-entry:: line comment
+   :glossary-dp: fls_k5ycqijslkxh
    
    :glossary:
      :dp:`fls_3e7asah7lkqj`
@@ -1671,6 +1710,7 @@ Comments
      A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
 .. glossary-entry:: inner block doc
+   :glossary-dp: fls_chbp2je32okc
    
    :glossary:
      :dp:`fls_f4nqkybpwj1a`
@@ -1685,6 +1725,7 @@ Comments
      :t:`non-[comment]` :t:`construct`.
 
 .. glossary-entry:: inner line doc
+   :glossary-dp: fls_xgm53126q9c4
    
    :glossary:
      :dp:`fls_vtwavwjhgvlz`
@@ -1699,6 +1740,7 @@ Comments
      :t:`non-[comment]` :t:`construct`.
 
 .. glossary-entry:: inner doc comment
+   :glossary-dp: fls_vR1ucGTBKjlH
    
    :glossary:
      :dp:`fls_6KunKwZf9QaF`
@@ -1710,6 +1752,7 @@ Comments
      :t:`inner line doc`.
 
 .. glossary-entry:: outer block doc
+   :glossary-dp: fls_toncretg92qh
    
    :glossary:
      :dp:`fls_531ggn1f8f6u`
@@ -1724,6 +1767,7 @@ Comments
      :t:`non-[comment]` :t:`construct`.
 
 .. glossary-entry:: outer line doc
+   :glossary-dp: fls_eqjbv8sovvfl
    
    :glossary:
      :dp:`fls_m3u30fu8uac3`
@@ -1738,6 +1782,7 @@ Comments
      :t:`non-[comment]` :t:`construct`.
 
 .. glossary-entry:: outer doc comment
+   :glossary-dp: fls_PuTD100sWO5N
    
    :glossary:
      :dp:`fls_mgSEUNUPcPBs`
@@ -1749,6 +1794,7 @@ Comments
      :t:`outer line doc`.
 
 .. glossary-entry:: doc comment
+   :glossary-dp: fls_4nm1r57ntecm
    
    :glossary:
      :dp:`fls_wkc1w2xk7ebh`
@@ -1837,6 +1883,7 @@ Keywords
 .. rubric:: Legality Rules
 
 .. glossary-entry:: keyword
+   :glossary-dp: fls_yjs58mp5fkxz
    
    :glossary:
      :dp:`fls_z3825koc9c1w`
@@ -1903,6 +1950,7 @@ Strict Keywords
 .. rubric:: Legality Rules
 
 .. glossary-entry:: strict keyword
+   :glossary-dp: fls_bzhaq3q378ay
    
    :glossary:
      :dp:`fls_hza9spr6behn`
@@ -1941,6 +1989,7 @@ Reserved Keywords
 .. rubric:: Legality Rules
 
 .. glossary-entry:: reserved keyword
+   :glossary-dp: fls_x7yd6o4akrrg
    
    :glossary:
      :dp:`fls_b67hj7fdbq4s`
@@ -1970,6 +2019,7 @@ Weak Keywords
 .. rubric:: Legality Rules
 
 .. glossary-entry:: weak keyword
+   :glossary-dp: fls_iplp3gvfbcpw
    
    :glossary:
      :dp:`fls_4hiznltf5wlu`

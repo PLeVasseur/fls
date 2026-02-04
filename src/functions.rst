@@ -49,6 +49,7 @@ Functions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: function
+   :glossary-dp: fls_yllg093syzdi
    
    :glossary:
      :dp:`fls_ni14pcm4ap9l`
@@ -64,6 +65,7 @@ Functions
 A :t:`function` declares a unique :t:`function item type` for itself.
 
 .. glossary-entry:: function qualifier
+   :glossary-dp: fls_2uvom1x42dcs
    
    :glossary:
      :dp:`fls_8cux22275v8r`
@@ -82,6 +84,7 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
 :t:`keyword` ``const``.
 
 .. glossary-entry:: function parameter
+   :glossary-dp: fls_xn800gcjnln1
    
    :glossary:
      :dp:`fls_2feq1ky9pla1`
@@ -98,6 +101,7 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
      site of a :t:`call expression` or a :t:`method call expression`.
 
 .. glossary-entry:: self parameter
+   :glossary-dp: fls_6wjlbzmlx9n4
    
    :glossary:
      :dp:`fls_ksne48eip15`
@@ -175,6 +179,7 @@ A :t:`variadic function` shall specify one of the following :t:`[ABI]s`:
   ``extern "win64-unwind"``
 
 .. glossary-entry:: return type
+   :glossary-dp: fls_b8dbm1bs65kw
    
    :glossary:
      :dp:`fls_cwucgbmmhnnm`
@@ -196,6 +201,7 @@ The :t:`return type` of a :t:`function` is determined as follows:
   Otherwise the :t:`return type` is the :t:`unit type`.
 
 .. glossary-entry:: function body
+   :glossary-dp: fls_vjgkg8kfi93
    
    :glossary:
      :dp:`fls_y5ha4123alik`
@@ -215,6 +221,7 @@ A :t:`function` shall have a :t:`function body` unless it is an
 A :t:`function body` denotes a :t:`control flow boundary`.
 
 .. glossary-entry:: control flow boundary
+   :glossary-dp: fls_nC4Knv4tpenW
    
    :glossary:
      :dp:`fls_SmipZJDp02ij`
@@ -223,6 +230,7 @@ A :t:`function body` denotes a :t:`control flow boundary`.
      returning operations.
 
 .. glossary-entry:: async control flow boundary
+   :glossary-dp: fls_lYrTaCM1LcXU
    
    :glossary:
      :dp:`fls_EXoGOkCRsfKK`
@@ -234,6 +242,7 @@ A :t:`function body` of an :t:`async function` denotes an
 :t:`async control flow boundary`.
 
 .. glossary-entry:: function signature
+   :glossary-dp: fls_hz3zunp8lrfl
    
    :glossary:
      :dp:`fls_ndld48kg6o8d`
@@ -249,6 +258,7 @@ A :t:`function body` of an :t:`async function` denotes an
      :t:`where clause`.
 
 .. glossary-entry:: constant function
+   :glossary-dp: fls_6j1wluj8sku8
    
    :glossary:
      :dp:`fls_4glkwg11p5ml`
@@ -265,6 +275,7 @@ The :t:`function body` of a :t:`constant function` shall be a
 A :t:`constant function` shall be callable from a :t:`constant context`.
 
 .. glossary-entry:: async function
+   :glossary-dp: fls_nlafxy2z1moc
    
    :glossary:
      :dp:`fls_gv9wl1cbaw1g`
@@ -292,6 +303,7 @@ A :t:`constant function` shall be callable from a :t:`constant context`.
         }
 
 .. glossary-entry:: unsafe function
+   :glossary-dp: fls_ua64pv82skaw
    
    :glossary:
      :dp:`fls_2ht13dgtxi1o`

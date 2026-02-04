@@ -43,6 +43,7 @@ Attributes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: attribute
+   :glossary-dp: fls_w1plocebd7kg
    
    :glossary:
      :dp:`fls_o74rfpe6zo6a`
@@ -54,6 +55,7 @@ Attributes
      its :t:`name`, convention, language, and tool.
 
 .. glossary-entry:: inner attribute
+   :glossary-dp: fls_joxepyv84ajz
    
    :glossary:
      :dp:`fls_l7kxkav42l5d`
@@ -68,6 +70,7 @@ Attributes
      :t:`item`.
 
 .. glossary-entry:: outer attribute
+   :glossary-dp: fls_gllzixm9yt9w
    
    :glossary:
      :dp:`fls_gffxnbilsqly`
@@ -82,6 +85,7 @@ Attributes
      :t:`item`.
 
 .. glossary-entry:: attribute content
+   :glossary-dp: fls_SsMRqkHLDAgG
    
    :glossary:
      :dp:`fls_sn0GvVmM3o38`
@@ -114,6 +118,7 @@ Attribute Properties
 .. rubric:: Legality Rules
 
 .. glossary-entry:: active attribute
+   :glossary-dp: fls_5fu0ncvnjyna
    
    :glossary:
      :dp:`fls_r8rzj8mtxtp1`
@@ -125,6 +130,7 @@ Attribute Properties
      it decorates.
 
 .. glossary-entry:: inert attribute
+   :glossary-dp: fls_gccnknktzp7g
    
    :glossary:
      :dp:`fls_o4e3tyjz7l1h`
@@ -216,6 +222,7 @@ Built-in Attributes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: built-in attribute
+   :glossary-dp: fls_82ev7wknxqmk
    
    :glossary:
      :dp:`fls_a40rclur4orm`
@@ -939,6 +946,7 @@ Conditional Compilation Attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary-entry:: conditional compilation
+   :glossary-dp: fls_lmacvq89lj2j
    
    :glossary:
      :dp:`fls_xymops69eer3`
@@ -946,6 +954,7 @@ Conditional Compilation Attributes
      :t:`conditionally-compiled source code`.
 
 .. glossary-entry:: conditionally-compiled source code
+   :glossary-dp: fls_bqq013n2cy4t
    
    :glossary:
      :dp:`fls_hs4lnrdxpj2g`
@@ -999,6 +1008,7 @@ Attribute ``cfg``
 :t:`Attribute` :dc:`cfg` enables :t:`conditional compilation`.
 
 .. glossary-entry:: configuration predicate
+   :glossary-dp: fls_vRjPmHYEVVAf
    
    :glossary:
      :dp:`fls_TyKIUQMxO9Si`
@@ -1013,6 +1023,7 @@ Attribute ``cfg``
      to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 .. glossary-entry:: all configuration predicate
+   :glossary-dp: fls_jZKpckU1t2lR
    
    :glossary:
      :dp:`fls_IyMZWiTnkYPv`
@@ -1032,6 +1043,7 @@ all nested configuration predicates evaluate to ``true``, or there are no nested
 configuration predicates.
 
 .. glossary-entry:: any configuration predicate
+   :glossary-dp: fls_jrzM6C5B6AMt
    
    :glossary:
      :dp:`fls_0nWHML8eoozG`
@@ -1050,6 +1062,7 @@ An :t:`any configuration predicate` evaluates statically to ``true`` when any
 nested configuration predicate evaluates to ``true``.
 
 .. glossary-entry:: not configuration predicate
+   :glossary-dp: fls_5u8ihVDp4mdb
    
    :glossary:
      :dp:`fls_BVMlBterkFYq`
@@ -1599,6 +1612,7 @@ or :t:`static`.
 be publicly exported from the produced library or object file.
 
 .. glossary-entry:: exported function
+   :glossary-dp: fls_5oQllRM7Wjsg
    
    :glossary:
      :dp:`fls_QotMF1iaEYod`
@@ -1609,6 +1623,7 @@ be publicly exported from the produced library or object file.
      :c:`no_mangle`.
 
 .. glossary-entry:: exported static
+   :glossary-dp: fls_zkq5ZkJwsyoD
    
    :glossary:
      :dp:`fls_aolCSvb349ZU`
@@ -1823,6 +1838,7 @@ Attribute ``type_length_limit``
 :t:`concrete type`.
 
 .. glossary-entry:: concrete type
+   :glossary-dp: fls_qyfn5u5cl5l1
    
    :glossary:
      :dp:`fls_l0lr3ybgccjc`

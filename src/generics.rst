@@ -47,6 +47,7 @@ Generic Parameters
 .. rubric:: Legality Rules
 
 .. glossary-entry:: generic parameter
+   :glossary-dp: fls_s2syghgn74e2
    
    :glossary:
      :dp:`fls_61e6br8jy1v2`
@@ -67,6 +68,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
 :s:`[ConstantParameter]s` and :s:`[TypeParameter]s`.
 
 .. glossary-entry:: generic enum
+   :glossary-dp: fls_3tj3i83eoi36
    
    :glossary:
      :dp:`fls_pnu8w26uexaq`
@@ -76,6 +78,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic function
+   :glossary-dp: fls_votx8gvy5utg
    
    :glossary:
      :dp:`fls_rfkbc967d48h`
@@ -85,6 +88,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic implementation
+   :glossary-dp: fls_1xjbrp376niw
    
    :glossary:
      :dp:`fls_jic937ujpnar`
@@ -96,6 +100,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic struct
+   :glossary-dp: fls_cgtu4v2vxvh
    
    :glossary:
      :dp:`fls_mcb2mlklith8`
@@ -105,6 +110,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic trait
+   :glossary-dp: fls_hppo1v3ia4wu
    
    :glossary:
      :dp:`fls_h515f11akr91`
@@ -114,6 +120,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic type alias
+   :glossary-dp: fls_18ow0q8at1pi
    
    :glossary:
      :dp:`fls_zgxsqq4vu7e3`
@@ -123,6 +130,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: generic union
+   :glossary-dp: fls_xn9mla1vm6iv
    
    :glossary:
      :dp:`fls_93rxr0yjx1e7`
@@ -132,6 +140,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: constant parameter
+   :glossary-dp: fls_pj0f0p4avbyw
    
    :glossary:
      :dp:`fls_z7e491m3dx4u`
@@ -144,6 +153,7 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
 
 .. glossary-entry:: constant parameter initializer
+   :glossary-dp: fls_sIvXMhYaZVjD
    
    :glossary:
      :dp:`fls_OXD2YaOkfjcI`
@@ -165,6 +175,7 @@ It is a static error to use a :t:`generic parameter` in the
 :t:`discriminant initializer` of an :t:`enum variant`.
 
 .. glossary-entry:: lifetime parameter
+   :glossary-dp: fls_md7ii59zobrc
    
    :glossary:
      :dp:`fls_7g0iu68nrsd4`
@@ -181,6 +192,7 @@ A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
 except for the ``'static`` :t:`lifetime`.
 
 .. glossary-entry:: type parameter
+   :glossary-dp: fls_uv2damik654e
    
    :glossary:
      :dp:`fls_5t6510wkb67x`
@@ -193,6 +205,7 @@ except for the ``'static`` :t:`lifetime`.
      A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
 .. glossary-entry:: type parameter initializer
+   :glossary-dp: fls_Fq2zTHYRpK2V
    
    :glossary:
      :dp:`fls_Xpz47JLNsOXI`
@@ -224,6 +237,7 @@ A :t:`generic union` shall use all of its :t:`[type parameter]s` and
 :t:`[lifetime parameter]s` at least once in at least one of its :t:`[field]s`.
 
 .. glossary-entry:: constrain
+   :glossary-dp: fls_x4niicvxxv9k
    
    :glossary:
      :dp:`fls_fna0ch8ucyhv`
@@ -383,6 +397,7 @@ Where Clauses
 .. rubric:: Legality Rules
 
 .. glossary-entry:: where clause
+   :glossary-dp: fls_ew2gsg72rjxk
    
    :glossary:
      :dp:`fls_prljyrhontzn`
@@ -398,6 +413,7 @@ Where Clauses
      to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
 .. glossary-entry:: where clause predicate
+   :glossary-dp: fls_myNeYCm4VI0R
    
    :glossary:
      :dp:`fls_0LACQVmZpDQF`
@@ -412,6 +428,7 @@ Where Clauses
      :t:`type bound predicate`.
 
 .. glossary-entry:: lifetime bound predicate
+   :glossary-dp: fls_fV8sP0roRyBN
    
    :glossary:
      :dp:`fls_AHftLKgSP9Xk`
@@ -426,6 +443,7 @@ Where Clauses
      :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 .. glossary-entry:: type bound predicate
+   :glossary-dp: fls_zDdXv5I4bW9H
    
    :glossary:
      :dp:`fls_j6WKoybB4cep`
@@ -444,6 +462,7 @@ A :t:`construct` is valid when all of its :t:`[where clause predicate]s` hold
 true for the supplied :t:`[generic argument]s`.
 
 .. glossary-entry:: trivial predicate
+   :glossary-dp: fls_soqkluvirlsd
    
    :glossary:
      :dp:`fls_db5njwrjolhs`
@@ -506,6 +525,7 @@ Generic Arguments
 .. rubric:: Legality Rules
 
 .. glossary-entry:: generic argument
+   :glossary-dp: fls_j1cyhud0h65t
    
    :glossary:
      :dp:`fls_meimxi20p51a`
@@ -530,6 +550,7 @@ A :s:`LifetimeArgument` shall precede :s:`[BindingArgument]s`,
 :s:`GenericArgumentList`.
 
 .. glossary-entry:: binding argument
+   :glossary-dp: fls_glblhx8vzd3z
    
    :glossary:
      :dp:`fls_9lzcasl4tw7k`
@@ -541,6 +562,7 @@ A :s:`LifetimeArgument` shall precede :s:`[BindingArgument]s`,
      of an :t:`associated trait type`.
 
 .. glossary-entry:: binding bound argument
+   :glossary-dp: fls_t2cit5QOte8U
    
    :glossary:
      :dp:`fls_D3i3n4RIReCA`
@@ -558,6 +580,7 @@ A :t:`binding bound argument` shall only be used within the confines of a
 :t:`[supertrait]s`.
 
 .. glossary-entry:: constant argument
+   :glossary-dp: fls_n7z4cl1fsk6l
    
    :glossary:
      :dp:`fls_sz10vgh260xo`
@@ -577,6 +600,7 @@ A :t:`constant argument` may only appear as a single segment
 an :t:`array repetition constructor` or a :t:`type`.
 
 .. glossary-entry:: lifetime argument
+   :glossary-dp: fls_d0s6bk7ljqrb
    
    :glossary:
      :dp:`fls_oaf87yjb3xjs`
@@ -591,6 +615,7 @@ an :t:`array repetition constructor` or a :t:`type`.
      :t:`lifetime` of a :t:`lifetime parameter`.
 
 .. glossary-entry:: type argument
+   :glossary-dp: fls_89ollsdjx3uy
    
    :glossary:
      :dp:`fls_152lk7hrtd11`
@@ -637,6 +662,7 @@ Generic Conformance
 .. rubric:: Legality Rules
 
 .. glossary-entry:: generic conformance
+   :glossary-dp: fls_3uFg0NK5fYQ6
    
    :glossary:
      :dp:`fls_PfvELNsNySLT`

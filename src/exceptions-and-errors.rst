@@ -43,6 +43,7 @@ Panic
 .. rubric:: Legality Rules
 
 .. glossary-entry:: panic
+   :glossary-dp: fls_wzpivxkhpln
    
    :glossary:
      :dp:`fls_t3kpbnmohtp6`
@@ -79,6 +80,7 @@ Abort
 .. rubric:: Legality Rules
 
 .. glossary-entry:: abort
+   :glossary-dp: fls_ymnz0mt7i4m8
    
    :glossary:
      :dp:`fls_u4o7tda3ilv0`

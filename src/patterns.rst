@@ -38,6 +38,7 @@ Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: pattern
+   :glossary-dp: fls_uj1o721im5lb
    
    :glossary:
      :dp:`fls_9wwt9k1xlm6n`
@@ -52,6 +53,7 @@ Patterns
      the criteria of the :t:`pattern`.
 
 .. glossary-entry:: or-pattern
+   :glossary-dp: fls_LnPDQW3bnNUw
    
    :glossary:
      :dp:`fls_LnPDQW3bnNUw`
@@ -64,6 +66,7 @@ Patterns
      An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 .. glossary-entry:: pattern-without-alternation
+   :glossary-dp: fls_cptagvgpgnze
    
    :glossary:
      :dp:`fls_brussjs3wo6r`
@@ -76,6 +79,7 @@ Patterns
      A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
 .. glossary-entry:: pattern-without-range
+   :glossary-dp: fls_yeQOZKPoNzw3
    
    :glossary:
      :dp:`fls_LSEOvAwUM7g6`
@@ -90,6 +94,7 @@ Patterns
      excludes :t:`[range pattern]s`.
 
 .. glossary-entry:: subpattern
+   :glossary-dp: fls_k7ro8n23wtdc
    
    :glossary:
      :dp:`fls_942ulj9qsdes`
@@ -143,6 +148,7 @@ Refutability
 match all possible values of a :t:`type`.
 
 .. glossary-entry:: irrefutable pattern
+   :glossary-dp: fls_ckz7pujdnuo5
    
    :glossary:
      :dp:`fls_y421hdrbs6ak`
@@ -153,6 +159,7 @@ match all possible values of a :t:`type`.
      An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 .. glossary-entry:: refutability
+   :glossary-dp: fls_bkwy183h9ygt
    
    :glossary:
      :dp:`fls_gzjrfx19fg40`
@@ -160,6 +167,7 @@ match all possible values of a :t:`type`.
      to match all possible :t:`[value]s` of a :t:`type`.
 
 .. glossary-entry:: refutable pattern
+   :glossary-dp: fls_srdcx5oi4dcp
    
    :glossary:
      :dp:`fls_re7qz78koman`
@@ -175,12 +183,14 @@ match all possible values of a :t:`type`.
      :t:`refutable pattern`.
 
 .. glossary-entry:: refutable type
+   :glossary-dp: fls_dkq1h6p9yaar
    
    :glossary:
      :dp:`fls_l2yz6jeehm52`
      A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. glossary-entry:: irrefutable constant
+   :glossary-dp: fls_fgmvmcw2kw5i
    
    :glossary:
      :dp:`fls_hd02jah50qzl`
@@ -192,6 +202,7 @@ match all possible values of a :t:`type`.
      one :t:`value`.
 
 .. glossary-entry:: refutable constant
+   :glossary-dp: fls_v99joc4m6cup
    
    :glossary:
      :dp:`fls_mc6hsomq08uu`
@@ -235,6 +246,7 @@ Identifier Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: identifier pattern
+   :glossary-dp: fls_1g9xxx8s498u
    
    :glossary:
      :dp:`fls_f2va67gvpqe0`
@@ -249,6 +261,7 @@ Identifier Patterns
      matches to a :t:`binding`.
 
 .. glossary-entry:: bound pattern
+   :glossary-dp: fls_jlfqyn3enrsi
    
    :glossary:
      :dp:`fls_uusfbosjwyd1`
@@ -267,12 +280,14 @@ An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
 with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 
 .. glossary-entry:: mutable binding
+   :glossary-dp: fls_ntaA0NtJ9z5h
    
    :glossary:
      :dp:`fls_v2pGKVaQjtcl`
      A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
 
 .. glossary-entry:: reference identifier pattern
+   :glossary-dp: fls_1XGsXRZIFnqL
    
    :glossary:
      :dp:`fls_jQs6oJ4RFBPN`
@@ -389,6 +404,7 @@ Literal Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: literal pattern
+   :glossary-dp: fls_bo2tv8ky1jc
    
    :glossary:
      :dp:`fls_5s9b4bza13xf`
@@ -401,6 +417,7 @@ Literal Patterns
      A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 .. glossary-entry:: numeric literal pattern
+   :glossary-dp: fls_CmvuNXmowCz8
    
    :glossary:
      :dp:`fls_azqQ3JxD5Lt7`
@@ -451,6 +468,7 @@ Parenthesized Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: parenthesized pattern
+   :glossary-dp: fls_ww6nyinsw1lr
    
    :glossary:
      :dp:`fls_7j12dwsx9ghg`
@@ -508,6 +526,7 @@ Path Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: path pattern
+   :glossary-dp: fls_ptikwcw3b20l
    
    :glossary:
      :dp:`fls_vacvk3t26ctg`
@@ -633,6 +652,7 @@ Range Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: range pattern
+   :glossary-dp: fls_6pxg401r6juc
    
    :glossary:
      :dp:`fls_vf42zdyq23lc`
@@ -647,6 +667,7 @@ Range Patterns
      within a range.
 
 .. glossary-entry:: half-open range pattern
+   :glossary-dp: fls_fquvoglio1jz
    
    :glossary:
      :dp:`fls_tymjispfgp7u`
@@ -661,6 +682,7 @@ Range Patterns
      :t:`range pattern low bound`.
 
 .. glossary-entry:: inclusive range pattern
+   :glossary-dp: fls_nscfxu6huw6q
    
    :glossary:
      :dp:`fls_olfeuvwkosse`
@@ -675,6 +697,7 @@ Range Patterns
      :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 .. glossary-entry:: exclusive range pattern
+   :glossary-dp: fls_EJSzYb4IxvtR
    
    :glossary:
      :dp:`fls_qxsV6ZxFfDHm`
@@ -689,6 +712,7 @@ Range Patterns
      :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 .. glossary-entry:: obsolete range pattern
+   :glossary-dp: fls_bo889w63y7oi
    
    :glossary:
      :dp:`fls_ave42vwb45zb`
@@ -703,6 +727,7 @@ Range Patterns
      to express an :t:`inclusive range pattern`.
 
 .. glossary-entry:: range pattern bound
+   :glossary-dp: fls_3ls9xlgt8ei1
    
    :glossary:
      :dp:`fls_l9xq96bjs4o2`
@@ -716,6 +741,7 @@ Range Patterns
      A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
 
 .. glossary-entry:: range pattern low bound
+   :glossary-dp: fls_laev4lmmv0cw
    
    :glossary:
      :dp:`fls_rt7q0msh3op4`
@@ -730,6 +756,7 @@ Range Patterns
      start of a range.
 
 .. glossary-entry:: range pattern high bound
+   :glossary-dp: fls_y4rv5cbowvwg
    
    :glossary:
      :dp:`fls_arp7y7yme7yp`
@@ -815,6 +842,7 @@ Reference Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: reference pattern
+   :glossary-dp: fls_kiy6b1wbn0a3
    
    :glossary:
      :dp:`fls_ebshqnhmwgow`
@@ -874,6 +902,7 @@ Rest Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: rest pattern
+   :glossary-dp: fls_uuo1qvrz1i0k
    
    :glossary:
      :dp:`fls_xngp3h1znw9o`
@@ -949,6 +978,7 @@ Slice Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: slice pattern
+   :glossary-dp: fls_1s3a31o9zx1a
    
    :glossary:
      :dp:`fls_7613qu4igwiw`
@@ -1011,6 +1041,7 @@ Struct Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: struct pattern
+   :glossary-dp: fls_ook43xes5t34
    
    :glossary:
      :dp:`fls_xbtoiwegp8gu`
@@ -1025,6 +1056,7 @@ Struct Patterns
      :t:`struct value`, or a :t:`union value`.
 
 .. glossary-entry:: deconstructee
+   :glossary-dp: fls_GAlaslkO8gLG
    
    :glossary:
      :dp:`fls_QsvWOdoFWtUO`
@@ -1101,6 +1133,7 @@ Record Struct Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: record struct pattern
+   :glossary-dp: fls_at2caaqlpva1
    
    :glossary:
      :dp:`fls_q7njznxhmmw`
@@ -1119,6 +1152,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :t:`enum variant`, a :t:`struct type`, or a :t:`union type`.
 
 .. glossary-entry:: indexed deconstructor
+   :glossary-dp: fls_qs654p61ivpx
    
    :glossary:
      :dp:`fls_q7eta38vw0ig`
@@ -1143,6 +1177,7 @@ The :t:`type` of a :t:`matched indexed deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 .. glossary-entry:: named deconstructor
+   :glossary-dp: fls_dgs9y3nan69v
    
    :glossary:
      :dp:`fls_g3k1hy3j4qn9`
@@ -1166,6 +1201,7 @@ The :t:`type` of a :t:`matched named deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 .. glossary-entry:: shorthand deconstructor
+   :glossary-dp: fls_5sxhx0w3d63z
    
    :glossary:
      :dp:`fls_22yxrde244w8`
@@ -1354,6 +1390,7 @@ Tuple Struct Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: tuple struct pattern
+   :glossary-dp: fls_u2j18nl1t12f
    
    :glossary:
      :dp:`fls_gu1mfurivnfz`
@@ -1446,6 +1483,7 @@ Tuple Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: tuple pattern
+   :glossary-dp: fls_7f2sx37kg4ca
    
    :glossary:
      :dp:`fls_al2q3vh1rg6e`
@@ -1536,6 +1574,7 @@ Underscore Patterns
 .. rubric:: Legality Rules
 
 .. glossary-entry:: underscore pattern
+   :glossary-dp: fls_fhwqe6afup2o
    
    :glossary:
      :dp:`fls_f6yroesif1q4`
@@ -1578,6 +1617,7 @@ Binding Modes
        Name
 
 .. glossary-entry:: binding mode
+   :glossary-dp: fls_bv1k866tai6j
    
    :glossary:
      :dp:`fls_e3uvvvvyzq8h`
@@ -1587,6 +1627,7 @@ Binding Modes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: binding pattern
+   :glossary-dp: fls_1nw19qc14zg6
    
    :glossary:
      :dp:`fls_ancqgz8pybbe`
@@ -1598,6 +1639,7 @@ Binding Modes
      :t:`shorthand deconstructor`.
 
 .. glossary-entry:: binding
+   :glossary-dp: fls_jrelzibadg7b
    
    :glossary:
      :dp:`fls_89qi3unjvwd7`
@@ -1625,6 +1667,7 @@ A :t:`binding` with :t:`binding mode` :dt:`by mutable reference` binds a
 :t:`mutable reference` to the matched :t:`value` to the :t:`name`.
 
 .. glossary-entry:: non-reference pattern
+   :glossary-dp: fls_3vhflvajgqzd
    
    :glossary:
      :dp:`fls_tejled5izyue`
@@ -1690,6 +1733,7 @@ Pattern Matching
 ----------------
 
 .. glossary-entry:: pattern matching
+   :glossary-dp: fls_48mv0zecb0un
    
    :glossary:
      :dp:`fls_y3oputy9e0sz`

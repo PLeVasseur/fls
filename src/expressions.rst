@@ -65,6 +65,7 @@ Expressions
        Operand
 
 .. glossary-entry:: subject expression
+   :glossary-dp: fls_wee9stfk0abp
    
    :glossary:
      :dp:`fls_xisqke87ert`
@@ -79,6 +80,7 @@ Expressions
      :s:`StructExpression`.
 
 .. glossary-entry:: subject let expression
+   :glossary-dp: fls_dc5ibvnnhs7e
    
    :glossary:
      :dp:`fls_b3ckv6zgnaeb`
@@ -93,6 +95,7 @@ Expressions
      :s:`SubjectExpression`, except :s:`LazyBooleanExpression`.
 
 .. glossary-entry:: subexpression
+   :glossary-dp: fls_feZ3iDff05Cb
    
    :glossary:
      :dp:`fls_bNSHwD4Kpfm0`
@@ -102,6 +105,7 @@ Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: expression
+   :glossary-dp: fls_q8ofwncggngd
    
    :glossary:
      :dp:`fls_f7iuwgbs1lql`
@@ -116,6 +120,7 @@ Expressions
      side effects at run-time.
 
 .. glossary-entry:: expression-with-block
+   :glossary-dp: fls_u6huewic8650
    
    :glossary:
      :dp:`fls_ujlm50le5dnj`
@@ -130,6 +135,7 @@ Expressions
      :t:`block expression`.
 
 .. glossary-entry:: expression-without-block
+   :glossary-dp: fls_378e2xhxzk26
    
    :glossary:
      :dp:`fls_xfh9xmsphzqb`
@@ -144,6 +150,7 @@ Expressions
      involve a :t:`block expression`.
 
 .. glossary-entry:: operand
+   :glossary-dp: fls_pv4lok5qcn8y
    
    :glossary:
      :dp:`fls_3mnn1au9ob6q`
@@ -156,12 +163,14 @@ Expressions
      An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 .. glossary-entry:: binary operator
+   :glossary-dp: fls_xydujcfvvb8p
    
    :glossary:
      :dp:`fls_v0he0zp9ph7a`
      A :dt:`binary operator` is an operator that operates on two :t:`[operand]s`.
 
 .. glossary-entry:: left operand
+   :glossary-dp: fls_x6vo9pysmex2
    
    :glossary:
      :dp:`fls_m821x5195ac9`
@@ -176,6 +185,7 @@ Expressions
      :t:`binary operator`.
 
 .. glossary-entry:: right operand
+   :glossary-dp: fls_76o7m8vny72n
    
    :glossary:
      :dp:`fls_e1j9s4odze9b`
@@ -200,6 +210,7 @@ A :t:`subject let expression` is an :t:`expression` that controls
 .. rubric:: Dynamic Semantics
 
 .. glossary-entry:: evaluation
+   :glossary-dp: fls_p3gre0895k2u
    
    :glossary:
      :dp:`fls_8zmtio6razl1`
@@ -211,6 +222,7 @@ A :t:`subject let expression` is an :t:`expression` that controls
      effects.
 
 .. glossary-entry:: evaluated
+   :glossary-dp: fls_pefe9ng1mm81
    
    :glossary:
      :dp:`fls_769tm6hn9g5e`
@@ -229,6 +241,7 @@ Assignee Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: assignee expression
+   :glossary-dp: fls_m1mim5qdzf2u
    
    :glossary:
      :dp:`fls_wpmcexvbynbu`
@@ -270,6 +283,7 @@ Constant Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: constant expression
+   :glossary-dp: fls_iofbib2gavnv
    
    :glossary:
      :dp:`fls_rmn8w4rh3juf`
@@ -402,6 +416,7 @@ It is a static error if the :t:`size operand` of an
 :t:`[generic parameter]s`.
 
 .. glossary-entry:: constant context
+   :glossary-dp: fls_mtbhv6e9izzm
    
    :glossary:
      :dp:`fls_9j6mc4i1t73z`
@@ -481,6 +496,7 @@ Diverging Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: diverging expression
+   :glossary-dp: fls_gDFsAj1Bvx7A
    
    :glossary:
      :dp:`fls_fLlNzmB34cj9`
@@ -523,12 +539,14 @@ Place Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: place
+   :glossary-dp: fls_5zjHBZMsCqJZ
    
    :glossary:
      :dp:`fls_uCTiUBWHMPY9`
      A :dt:`place` is a location where a :t:`value` resides.
 
 .. glossary-entry:: place expression
+   :glossary-dp: fls_7x6jhh0sz2f
    
    :glossary:
      :dp:`fls_z6mgu2mk142r`
@@ -559,6 +577,7 @@ Place Expressions
   A :t:`temporary`.
 
 .. glossary-entry:: mutable place expression
+   :glossary-dp: fls_7eyza445ew53
    
    :glossary:
      :dp:`fls_kq877s3vij70`
@@ -605,6 +624,7 @@ Place Expressions
   A :t:`temporary`.
 
 .. glossary-entry:: immutable place expression
+   :glossary-dp: fls_TXQzFM77s4uj
    
    :glossary:
      :dp:`fls_MXBEZjzBxw5Z`
@@ -617,6 +637,7 @@ Place Expressions
      :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
 .. glossary-entry:: place expression context
+   :glossary-dp: fls_tshbqttxdox1
    
    :glossary:
      :dp:`fls_fqcx8suiy5k`
@@ -666,6 +687,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The :t:`base initializer` of a :t:`struct expression`.
 
 .. glossary-entry:: immutable place expression context
+   :glossary-dp: fls_O0924m8mSfIa
    
    :glossary:
      :dp:`fls_UvrQ49dSoQGc`
@@ -673,6 +695,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
      whose memory location cannot be modified.
 
 .. glossary-entry:: mutable place expression context
+   :glossary-dp: fls_x5BKVLc4KDlK
    
    :glossary:
      :dp:`fls_2ixH8LWGHi3k`
@@ -730,6 +753,7 @@ Value Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: value expression
+   :glossary-dp: fls_h03noz6jzpyl
    
    :glossary:
      :dp:`fls_mn6tcuz5j3p`
@@ -741,6 +765,7 @@ Value Expressions
      :t:`[value expression]s`.
 
 .. glossary-entry:: value expression context
+   :glossary-dp: fls_7xiaXXSwy4GP
    
    :glossary:
      :dp:`fls_NGGZEbmoLRbD`
@@ -771,6 +796,7 @@ Literal Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: literal expression
+   :glossary-dp: fls_b57clq8jhw5w
    
    :glossary:
      :dp:`fls_otaauusc24v5`
@@ -819,6 +845,7 @@ Path Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: path expression
+   :glossary-dp: fls_1xdj34py8zc3
    
    :glossary:
      :dp:`fls_4ik66nmvx5hn`
@@ -875,6 +902,7 @@ Block Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: block expression
+   :glossary-dp: fls_c5qn7wjk0mnx
    
    :glossary:
      :dp:`fls_gvjvzxi2xps4`
@@ -889,6 +917,7 @@ Block Expressions
      and :t:`[statement]s`.
 
 .. glossary-entry:: tail expression
+   :glossary-dp: fls_psd2ll10ixs
    
    :glossary:
      :dp:`fls_6k873f1knasi`
@@ -975,12 +1004,14 @@ Async Blocks
 .. rubric:: Legality Rules
 
 .. glossary-entry:: async block
+   :glossary-dp: fls_9speqyus5ku3
    
    :glossary:
      :dp:`fls_pf6lrmcjywoj`
      For :dt:`async block`, see :t:`async block expression`.
 
 .. glossary-entry:: async block expression
+   :glossary-dp: fls_n5m58be9jnjj
    
    :glossary:
      :dp:`fls_p6nvfs7bfoxd`
@@ -1040,6 +1071,7 @@ Const Blocks
 .. rubric:: Legality Rules
 
 .. glossary-entry:: const block expression
+   :glossary-dp: fls_vuBjK3kdImTn
    
    :glossary:
      :dp:`fls_5ApoJzRSTZGH`
@@ -1090,6 +1122,7 @@ Named Blocks
 .. rubric:: Legality Rules
 
 .. glossary-entry:: named block expression
+   :glossary-dp: fls_CxzbzLu4pWPY
    
    :glossary:
      :dp:`fls_ivFb8uAMVY3Q`
@@ -1130,12 +1163,14 @@ Unsafe Blocks
 .. rubric:: Legality Rules
 
 .. glossary-entry:: unsafe block
+   :glossary-dp: fls_6349nvapfj9d
    
    :glossary:
      :dp:`fls_8tkolhmd6xfp`
      For :dt:`unsafe block`, see :t:`unsafe block expression`.
 
 .. glossary-entry:: unsafe block expression
+   :glossary-dp: fls_u8sdp2fxz9pn
    
    :glossary:
      :dp:`fls_et2h89jyivhs`
@@ -1200,6 +1235,7 @@ Operator Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: operator expression
+   :glossary-dp: fls_smk8mi72lt57
    
    :glossary:
      :dp:`fls_6ev01xwcfow1`
@@ -1212,6 +1248,7 @@ Operator Expressions
      An :t:`operator expression` is an :t:`expression` that involves an operator.
 
 .. glossary-entry:: unary operator
+   :glossary-dp: fls_p032easjag3d
    
    :glossary:
      :dp:`fls_p6mk2zrwgwem`
@@ -1237,6 +1274,7 @@ Borrow Expression
 .. rubric:: Legality Rules
 
 .. glossary-entry:: borrow expression
+   :glossary-dp: fls_u0hymkjwyur7
    
    :glossary:
      :dp:`fls_2f55piwg78ru`
@@ -1253,6 +1291,7 @@ Borrow Expression
      :t:`operand`.
 
 .. glossary-entry:: immutable borrow expression
+   :glossary-dp: fls_pqunxp6io1n9
    
    :glossary:
      :dp:`fls_dojod5pg4r7l`
@@ -1264,6 +1303,7 @@ Borrow Expression
      :t:`keyword` ``mut``.
 
 .. glossary-entry:: shared borrow
+   :glossary-dp: fls_c9xwhhg639u5
    
    :glossary:
      :dp:`fls_gmbskxin90zi`
@@ -1271,6 +1311,7 @@ Borrow Expression
      :t:`immutable borrow expression`.
 
 .. glossary-entry:: mutable borrow expression
+   :glossary-dp: fls_kw3oiotr98tt
    
    :glossary:
      :dp:`fls_80kcc4y21hu6`
@@ -1288,6 +1329,7 @@ indicated by the :t:`operand`. The memory location is placed in a borrowed
 state, or simply :t:`borrowed`.
 
 .. glossary-entry:: borrowed
+   :glossary-dp: fls_gl84828b074a
    
    :glossary:
      :dp:`fls_3gnps2s95ck4`
@@ -1346,6 +1388,7 @@ Raw Borrow Expression
 .. rubric:: Legality Rules
 
 .. glossary-entry:: raw borrow expression
+   :glossary-dp: fls_YLhE2qpzYXRK
    
    :glossary:
      :dp:`fls_Fe39wLb0vvEg`
@@ -1414,6 +1457,7 @@ Dereference Expression
 .. rubric:: Legality Rules
 
 .. glossary-entry:: dereference expression
+   :glossary-dp: fls_o588wfq878rm
    
    :glossary:
      :dp:`fls_3cuyhbh2llei`
@@ -1428,6 +1472,7 @@ Dereference Expression
      memory location of its :t:`operand`.
 
 .. glossary-entry:: dereference
+   :glossary-dp: fls_127n1n5ssk2b
    
    :glossary:
      :dp:`fls_hk97pb1qt04y`
@@ -1486,6 +1531,7 @@ The :t:`value` of a :t:`dereference expression` is determined as follows:
 The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
 
 .. glossary-entry:: dangling
+   :glossary-dp: fls_76cj65bptdpn
    
    :glossary:
      :dp:`fls_lq2urzh7bzxx`
@@ -1523,6 +1569,7 @@ Error Propagation Expression
 .. rubric:: Legality Rules
 
 .. glossary-entry:: error propagation expression
+   :glossary-dp: fls_kz7tgpi8xkt4
    
    :glossary:
      :dp:`fls_5kebgodxtqqt`
@@ -1618,6 +1665,7 @@ Negation Expression
 .. rubric:: Legality Rules
 
 .. glossary-entry:: negation expression
+   :glossary-dp: fls_3sp4twvfvb32
    
    :glossary:
      :dp:`fls_pmn6cjamdt0a`
@@ -1768,12 +1816,14 @@ Arithmetic Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: arithmetic operator
+   :glossary-dp: fls_kSuc3Gi7cdly
    
    :glossary:
      :dp:`fls_Qf7DckakqvRq`
      An :dt:`arithmetic operator` is the operator of an :t:`arithmetic expression`.
 
 .. glossary-entry:: arithmetic expression
+   :glossary-dp: fls_kf81ozijral2
    
    :glossary:
      :dp:`fls_u3z2r1fw89xo`
@@ -1788,6 +1838,7 @@ Arithmetic Expressions
      from two :t:`[operand]s` using arithmetic.
 
 .. glossary-entry:: addition expression
+   :glossary-dp: fls_mcabdigrqv21
    
    :glossary:
      :dp:`fls_ylfdtuajmi0t`
@@ -1814,6 +1865,7 @@ The :t:`value` of an :t:`addition expression` is the result of
 ``core::ops::Add::add(left_operand, right_operand)``.
 
 .. glossary-entry:: division expression
+   :glossary-dp: fls_vxd5q8nekkn0
    
    :glossary:
      :dp:`fls_du05yp205f4y`
@@ -1839,6 +1891,7 @@ The :t:`value` of a :t:`division expression` is the result of
 ``core::ops::Div::div(left_operand, right_operand)``.
 
 .. glossary-entry:: multiplication expression
+   :glossary-dp: fls_bgtznqqgtmd8
    
    :glossary:
      :dp:`fls_324qh8wz474b`
@@ -1866,6 +1919,7 @@ The :t:`value` of a :t:`multiplication expression` is the result of
 ``core::ops::Mul::mul(left_operand, right_operand)``.
 
 .. glossary-entry:: remainder expression
+   :glossary-dp: fls_f15h4919ln3k
    
    :glossary:
      :dp:`fls_l6muwnclm1do`
@@ -1893,6 +1947,7 @@ The :t:`value` of a :t:`remainder expression` is the result of
 ``core::ops::Rem::rem(left_operand, right_operand)``.
 
 .. glossary-entry:: subtraction expression
+   :glossary-dp: fls_25ru96mfdcsn
    
    :glossary:
      :dp:`fls_caamjgpw59id`
@@ -2090,6 +2145,7 @@ Bit Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: bit expression
+   :glossary-dp: fls_ed6yltkt0gb1
    
    :glossary:
      :dp:`fls_b3p5xqsfolqo`
@@ -2104,6 +2160,7 @@ Bit Expressions
      :t:`[operand]s` using bit arithmetic.
 
 .. glossary-entry:: bit and expression
+   :glossary-dp: fls_h6sh4im3gjys
    
    :glossary:
      :dp:`fls_c1g5gljnr9kz`
@@ -2130,6 +2187,7 @@ The :t:`value` of a :t:`bit and expression` is the result of
 ``core::ops::BitAnd::bitand(left_operand, right_operand)``.
 
 .. glossary-entry:: bit or expression
+   :glossary-dp: fls_m33m8nd2rnf8
    
    :glossary:
      :dp:`fls_183aem60of9o`
@@ -2155,6 +2213,7 @@ The :t:`value` of a :t:`bit or expression` is the result of
 ``core::ops::BitOr::bitor(left_operand, right_operand)``.
 
 .. glossary-entry:: bit xor expression
+   :glossary-dp: fls_ixw1601j8u39
    
    :glossary:
      :dp:`fls_kccsvtzfhbp1`
@@ -2182,6 +2241,7 @@ The :t:`value` of a :t:`bit xor expression` is the result of
 ``core::ops::BitXor::bitxor(left_operand, right_operand)``.
 
 .. glossary-entry:: shift left expression
+   :glossary-dp: fls_sru4wi5jomoe
    
    :glossary:
      :dp:`fls_phiv6k4emauc`
@@ -2209,6 +2269,7 @@ The :t:`value` of a :t:`shift left expression` is the result of
 ``core::ops::Shl::shl(left_operand, right_operand)``.
 
 .. glossary-entry:: shift right expression
+   :glossary-dp: fls_dj6epbraptqn
    
    :glossary:
      :dp:`fls_j6itily0u0k9`
@@ -2367,6 +2428,7 @@ Comparison Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: comparison expression
+   :glossary-dp: fls_hjxuoe1hwlhm
    
    :glossary:
      :dp:`fls_394p7gdruvk7`
@@ -2388,6 +2450,7 @@ A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
 The :t:`type` of a :t:`comparison expression` is :t:`type` :c:`bool`.
 
 .. glossary-entry:: equals expression
+   :glossary-dp: fls_alifv570nx7q
    
    :glossary:
      :dp:`fls_mn1g2hijtd6f`
@@ -2409,6 +2472,7 @@ The :t:`value` of an :t:`equals expression` is the result of
 ``core::cmp::PartialEq::eq(&left_operand, &right_operand)``.
 
 .. glossary-entry:: greater-than expression
+   :glossary-dp: fls_g4n20dy3utzy
    
    :glossary:
      :dp:`fls_j7x5qii6rhwj`
@@ -2432,6 +2496,7 @@ The :t:`value` of a :t:`greater-than expression` is the result of
 ``core::cmp::PartialOrd::gt(&left_operand, &right_operand)``.
 
 .. glossary-entry:: greater-than-or-equals expression
+   :glossary-dp: fls_mxz589rq4hiy
    
    :glossary:
      :dp:`fls_wvspqc2otn6v`
@@ -2456,6 +2521,7 @@ The :t:`value` of a :t:`greater-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::ge(&left_operand, &right_operand)``.
 
 .. glossary-entry:: less-than expression
+   :glossary-dp: fls_ulmspewtlo57
    
    :glossary:
      :dp:`fls_9ttxqxt9ui4t`
@@ -2479,6 +2545,7 @@ The :t:`value` of a :t:`less-than expression` is the result of
 ``core::cmp::PartialOrd::lt(&left_operand, &right_operand)``.
 
 .. glossary-entry:: less-than-or-equals expression
+   :glossary-dp: fls_es169x7ars9a
    
    :glossary:
      :dp:`fls_8pya58ug180j`
@@ -2502,6 +2569,7 @@ The :t:`value` of a :t:`less-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::le(&left_operand, &right_operand)``.
 
 .. glossary-entry:: not-equals expression
+   :glossary-dp: fls_shgatqvpdqkg
    
    :glossary:
      :dp:`fls_2hmynl94uusk`
@@ -2633,6 +2701,7 @@ Lazy Boolean Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: lazy boolean expression
+   :glossary-dp: fls_4a6yhxj783a1
    
    :glossary:
      :dp:`fls_jpv7l86sdh6i`
@@ -2647,6 +2716,7 @@ Lazy Boolean Expressions
      Boolean arithmetic.
 
 .. glossary-entry:: lazy and expression
+   :glossary-dp: fls_bputdgkeezfs
    
    :glossary:
      :dp:`fls_v2e6t73uk6nt`
@@ -2661,6 +2731,7 @@ Lazy Boolean Expressions
      circuit and arithmetic.
 
 .. glossary-entry:: lazy or expression
+   :glossary-dp: fls_9mvrfhsegwp0
    
    :glossary:
      :dp:`fls_aln8bbvx9kzm`
@@ -2735,6 +2806,7 @@ Type Cast Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: type cast expression
+   :glossary-dp: fls_k24jb967nu1q
    
    :glossary:
      :dp:`fls_j6zo3rir1x76`
@@ -2749,6 +2821,7 @@ Type Cast Expressions
      an :t:`operand`.
 
 .. glossary-entry:: cast
+   :glossary-dp: fls_pcaygpx7db24
    
    :glossary:
      :dp:`fls_e5hvszhcrtmj`
@@ -2951,6 +3024,7 @@ Assignment Expressions
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary-entry:: assignment
+   :glossary-dp: fls_f6ztsofr6xa9
    
    :glossary:
      :dp:`fls_j9pyuucyplmi`
@@ -2972,6 +3046,7 @@ Assignment Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: assignment expression
+   :glossary-dp: fls_2d2elg5eukv4
    
    :glossary:
      :dp:`fls_6jkc6a6me3zr`
@@ -2986,6 +3061,7 @@ Assignment Expressions
      of a :t:`value operand` to an :t:`assignee operand`.
 
 .. glossary-entry:: assignee operand
+   :glossary-dp: fls_3hs9hqsthil1
    
    :glossary:
      :dp:`fls_4tgf0wu2mr3l`
@@ -3000,6 +3076,7 @@ Assignment Expressions
      :t:`assignment expression`.
 
 .. glossary-entry:: value operand
+   :glossary-dp: fls_a5xof9jlpc2e
    
    :glossary:
      :dp:`fls_x4seemjknk2z`
@@ -3027,6 +3104,7 @@ Basic Assignment
 .. rubric:: Legality Rules
 
 .. glossary-entry:: basic assignment
+   :glossary-dp: fls_bii5eu1wznzk
    
    :glossary:
      :dp:`fls_byq9e2jf8r22`
@@ -3071,6 +3149,7 @@ Destructuring Assignment
 .. rubric:: Legality Rules
 
 .. glossary-entry:: destructuring assignment
+   :glossary-dp: fls_2fuu3zr9rn2q
    
    :glossary:
      :dp:`fls_7jienn9uzn5k`
@@ -3125,6 +3204,7 @@ A :t:`destructuring assignment` is equivalent to a :t:`block expression` of the
 following form:
 
 .. glossary-entry:: initialization expression
+   :glossary-dp: fls_ctusGvpQvJue
    
    :glossary:
      :dp:`fls_KUeiSByPUc4w`
@@ -3234,12 +3314,14 @@ Compound Assignment Expressions
        Operand
 
 .. glossary-entry:: addition assignment
+   :glossary-dp: fls_xqZapSv9tM1F
    
    :glossary:
      :dp:`fls_FVgKeCXlmuPe`
      For :dt:`addition assignment`, see :t:`addition assignment expression`.
 
 .. glossary-entry:: addition assignment expression
+   :glossary-dp: fls_iw30dqjaeqle
    
    :glossary:
      :dp:`fls_w83tf9m7vu67`
@@ -3250,24 +3332,28 @@ Compound Assignment Expressions
      See :s:`AdditionAssignmentExpression`.
 
 .. glossary-entry:: bit and assignment
+   :glossary-dp: fls_clut5DWMQin8
    
    :glossary:
      :dp:`fls_wIl0K7O6lTXJ`
      For :dt:`bit and assignment`, see :t:`bit and assignment expression`.
 
 .. glossary-entry:: bit or assignment
+   :glossary-dp: fls_90E3eiBYgicI
    
    :glossary:
      :dp:`fls_21iFIDCu7Pk4`
      For :dt:`bit or assignment`, see :t:`bit or assignment expression`.
 
 .. glossary-entry:: bit xor assignment
+   :glossary-dp: fls_jEnv7RjEUZvm
    
    :glossary:
      :dp:`fls_VJpCPVCuszs1`
      For :dt:`bit xor assignment`, see :t:`bit xor assignment expression`.
 
 .. glossary-entry:: compound assignment
+   :glossary-dp: fls_pTMrfPXETibe
    
    :glossary:
      :dp:`fls_lGV9QvCmYGcH`
@@ -3276,6 +3362,7 @@ Compound Assignment Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: compound assignment expression
+   :glossary-dp: fls_iktiir89xbo2
    
    :glossary:
      :dp:`fls_mkxpk2jhe5s0`
@@ -3292,6 +3379,7 @@ Compound Assignment Expressions
      :t:`assigned operand`.
 
 .. glossary-entry:: bit and assignment expression
+   :glossary-dp: fls_y72vyr2tmdyb
    
    :glossary:
      :dp:`fls_dvqotpte0pc2`
@@ -3306,6 +3394,7 @@ Compound Assignment Expressions
      that uses bit and arithmetic.
 
 .. glossary-entry:: bit or assignment expression
+   :glossary-dp: fls_ehorb0lul906
    
    :glossary:
      :dp:`fls_tu1owkfk0lu0`
@@ -3320,6 +3409,7 @@ Compound Assignment Expressions
      that uses bit or arithmetic.
 
 .. glossary-entry:: bit xor assignment expression
+   :glossary-dp: fls_u3fcq7jjyxux
    
    :glossary:
      :dp:`fls_ma980ujltab2`
@@ -3334,12 +3424,14 @@ Compound Assignment Expressions
      that uses bit exclusive or arithmetic.
 
 .. glossary-entry:: division assignment
+   :glossary-dp: fls_0lpT9Ncj7S9X
    
    :glossary:
      :dp:`fls_kvQskrzE1y97`
      For :dt:`division assignment`, see :t:`division assignment expression`.
 
 .. glossary-entry:: division assignment expression
+   :glossary-dp: fls_ccv27fji08ou
    
    :glossary:
      :dp:`fls_lzuz5fkveikk`
@@ -3354,6 +3446,7 @@ Compound Assignment Expressions
      that uses division.
 
 .. glossary-entry:: multiplication assignment
+   :glossary-dp: fls_lpSCLhnaxeCg
    
    :glossary:
      :dp:`fls_llUb5VHKjwW4`
@@ -3361,6 +3454,7 @@ Compound Assignment Expressions
      :t:`multiplication assignment expression`.
 
 .. glossary-entry:: multiplication assignment expression
+   :glossary-dp: fls_yo4k6lk0tizn
    
    :glossary:
      :dp:`fls_eo9gx05n5ru3`
@@ -3375,12 +3469,14 @@ Compound Assignment Expressions
      :t:`compound assignment expression` that uses multiplication.
 
 .. glossary-entry:: remainder assignment
+   :glossary-dp: fls_JnhUWipah0nO
    
    :glossary:
      :dp:`fls_58eDC2XtQcaR`
      For :dt:`remainder assignment`, see :t:`remainder assignment expression`.
 
 .. glossary-entry:: remainder assignment expression
+   :glossary-dp: fls_mio7pagghcks
    
    :glossary:
      :dp:`fls_en7ytqvefw7j`
@@ -3395,12 +3491,14 @@ Compound Assignment Expressions
      that uses remainder division.
 
 .. glossary-entry:: shift left assignment
+   :glossary-dp: fls_o8EVuKgr0Y98
    
    :glossary:
      :dp:`fls_6adWrtvab6Tw`
      For :dt:`shift left assignment`, see :t:`shift left assignment expression`.
 
 .. glossary-entry:: shift left assignment expression
+   :glossary-dp: fls_29n0oe4d7lwa
    
    :glossary:
      :dp:`fls_j15ke2p8cjfp`
@@ -3415,12 +3513,14 @@ Compound Assignment Expressions
      that uses bit shift left arithmetic.
 
 .. glossary-entry:: shift right assignment
+   :glossary-dp: fls_V5LMAe8ijiMQ
    
    :glossary:
      :dp:`fls_XuwcHjwHdyA8`
      For :dt:`shift right assignment`, see :t:`shift right assignment expression`.
 
 .. glossary-entry:: shift right assignment expression
+   :glossary-dp: fls_cqfzbsasnd1t
    
    :glossary:
      :dp:`fls_1jpnp7hatlmu`
@@ -3435,12 +3535,14 @@ Compound Assignment Expressions
      :t:`compound assignment expression` that uses bit shift right arithmetic.
 
 .. glossary-entry:: subtraction assignment
+   :glossary-dp: fls_0hf1gNf90qKr
    
    :glossary:
      :dp:`fls_75Eyk2YXO2j4`
      For :dt:`subtraction assignment`, see :t:`subtraction assignment`.
 
 .. glossary-entry:: subtraction assignment expression
+   :glossary-dp: fls_a4iu72zn4h0
    
    :glossary:
      :dp:`fls_4pb85nl4r7vs`
@@ -3455,6 +3557,7 @@ Compound Assignment Expressions
      :t:`compound assignment expression` that uses subtraction.
 
 .. glossary-entry:: assigned operand
+   :glossary-dp: fls_l78iam7w8w38
    
    :glossary:
      :dp:`fls_g714mnh7s7fx`
@@ -3469,6 +3572,7 @@ Compound Assignment Expressions
      :t:`compound assignment expression`.
 
 .. glossary-entry:: modifying operand
+   :glossary-dp: fls_5hoe1v960xfi
    
    :glossary:
      :dp:`fls_9wt2l5gg06pb`
@@ -3483,6 +3587,7 @@ Compound Assignment Expressions
      is used in the calculation of a :t:`compound assignment expression`.
 
 .. glossary-entry:: mutable assignee expression
+   :glossary-dp: fls_TEVPHHiCMByO
    
    :glossary:
      :dp:`fls_0RSlFbwrB3gp`
@@ -3661,6 +3766,7 @@ Underscore Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: underscore expression
+   :glossary-dp: fls_57kis2vnt3cv
    
    :glossary:
      :dp:`fls_ukl1sefb99gj`
@@ -3701,6 +3807,7 @@ Parenthesized Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: parenthesized expression
+   :glossary-dp: fls_fl56jfxbj0f
    
    :glossary:
      :dp:`fls_yu1x2rr7cewa`
@@ -3765,12 +3872,14 @@ Array Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: array
+   :glossary-dp: fls_bn1regeucxqi
    
    :glossary:
      :dp:`fls_metry7a5prpt`
      An :dt:`array` is a :t:`value` of an :t:`array type`.
 
 .. glossary-entry:: array expression
+   :glossary-dp: fls_yvzpqb192pci
    
    :glossary:
      :dp:`fls_pyjkjbvqarto`
@@ -3783,6 +3892,7 @@ Array Expressions
      An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
 
 .. glossary-entry:: array element constructor
+   :glossary-dp: fls_2d9fee2o9
    
    :glossary:
      :dp:`fls_cmx9ls5zoazp`
@@ -3797,6 +3907,7 @@ Array Expressions
      elements of the :t:`array` being constructed.
 
 .. glossary-entry:: array repetition constructor
+   :glossary-dp: fls_6jkgj61m49vg
    
    :glossary:
      :dp:`fls_st1kw8mor2zk`
@@ -3812,6 +3923,7 @@ Array Expressions
      how many times an element is repeated in the :t:`array` being constructed.
 
 .. glossary-entry:: repeat operand
+   :glossary-dp: fls_b35oy3nnzixm
    
    :glossary:
      :dp:`fls_ol2y1og2jwss`
@@ -3826,6 +3938,7 @@ Array Expressions
      repeated in an :t:`array repetition constructor`.
 
 .. glossary-entry:: size operand
+   :glossary-dp: fls_2y5oyon3y1za
    
    :glossary:
      :dp:`fls_srajsqi5i3py`
@@ -3933,6 +4046,7 @@ Indexing Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: indexable type
+   :glossary-dp: fls_S0pnJKPJPU0i
    
    :glossary:
      :dp:`fls_AdVGyKZFvvUS`
@@ -3944,6 +4058,7 @@ Indexing Expressions
      :std:`core::ops::Index` :t:`trait`.
 
 .. glossary-entry:: index expression
+   :glossary-dp: fls_6tysvlg2ifr3
    
    :glossary:
      :dp:`fls_1f7e9q8n431n`
@@ -3958,6 +4073,7 @@ Indexing Expressions
      of an :t:`indexable type`.
 
 .. glossary-entry:: indexed operand
+   :glossary-dp: fls_irp9ive4e66r
    
    :glossary:
      :dp:`fls_dvmm47wnl33e`
@@ -3973,6 +4089,7 @@ Indexing Expressions
      being indexed into by an :t:`index expression`.
 
 .. glossary-entry:: indexing operand
+   :glossary-dp: fls_a350zwl1or4g
    
    :glossary:
      :dp:`fls_ipw4tfrserbu`
@@ -4071,6 +4188,7 @@ Tuple Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: tuple expression
+   :glossary-dp: fls_udl6ujjg1jae
    
    :glossary:
      :dp:`fls_x7m4u1dx4eli`
@@ -4083,6 +4201,7 @@ Tuple Expressions
      A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
 .. glossary-entry:: tuple initializer
+   :glossary-dp: fls_zfvvbf7ncrhj
    
    :glossary:
      :dp:`fls_94hg6re11zl5`
@@ -4161,6 +4280,7 @@ Struct Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: struct expression
+   :glossary-dp: fls_dxfyejkbiz3p
    
    :glossary:
      :dp:`fls_m8n9e0sxyb95`
@@ -4175,6 +4295,7 @@ Struct Expressions
      :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 .. glossary-entry:: constructee
+   :glossary-dp: fls_fBGjoTVhYvUe
    
    :glossary:
      :dp:`fls_Twbu94uGW4Cb`
@@ -4186,6 +4307,7 @@ Struct Expressions
      whose value is being constructed by a :t:`struct expression`.
 
 .. glossary-entry:: base initializer
+   :glossary-dp: fls_a8tavqxuvaju
    
    :glossary:
      :dp:`fls_dnuwn2tnvtgy`
@@ -4207,6 +4329,7 @@ The :t:`type` of a :t:`base initializer` shall be the same as the :t:`type` of
 the :t:`constructee`.
 
 .. glossary-entry:: indexed initializer
+   :glossary-dp: fls_rua2ni3p9qz2
    
    :glossary:
      :dp:`fls_oonqolgqyrq1`
@@ -4235,6 +4358,7 @@ The :t:`value` of an :t:`indexed initializer` is the :t:`value` of its
 :t:`operand`.
 
 .. glossary-entry:: named initializer
+   :glossary-dp: fls_kp0mbopkbjer
    
    :glossary:
      :dp:`fls_xwvz8i4jim7a`
@@ -4262,6 +4386,7 @@ The :t:`value` of a :t:`named initializer` is the :t:`value` of its
 :t:`expression`.
 
 .. glossary-entry:: shorthand initializer
+   :glossary-dp: fls_oa4p10yles30
    
    :glossary:
      :dp:`fls_bgxxg48snck1`
@@ -4437,6 +4562,7 @@ Call Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: call expression
+   :glossary-dp: fls_xeo59ol6uh5i
    
    :glossary:
      :dp:`fls_a9ap0tyk2eou`
@@ -4451,6 +4577,7 @@ Call Expressions
      constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 .. glossary-entry:: argument operand
+   :glossary-dp: fls_dd008npswhij
    
    :glossary:
      :dp:`fls_ljuwr88k92vp`
@@ -4462,6 +4589,7 @@ Call Expressions
      :t:`call expression` or a :t:`method call expression`.
 
 .. glossary-entry:: call operand
+   :glossary-dp: fls_ezk9xkst7gfj
    
    :glossary:
      :dp:`fls_cqnko94y4xbs`
@@ -4478,6 +4606,7 @@ Call Expressions
      by a :t:`call expression`.
 
 .. glossary-entry:: Call conformance
+   :glossary-dp: fls_Egfa8tdbqllA
    
    :glossary:
      :dp:`fls_Jr1gUX7Ju4Oh`
@@ -4486,12 +4615,14 @@ Call Expressions
      :t:`[field]s`.
 
 .. glossary-entry:: adjusted call operand
+   :glossary-dp: fls_wbdlbe61de3t
    
    :glossary:
      :dp:`fls_mchqbc64iu0u`
      An :dt:`adjusted call operand` is a :t:`call operand` adjusted with inserted :t:`[borrow expression]s` and :t:`[dereference expression]s`.
 
 .. glossary-entry:: tuple struct call expression
+   :glossary-dp: fls_UYCpeq4Z87My
    
    :glossary:
      :dp:`fls_DQaCUkskfXzk`
@@ -4503,6 +4634,7 @@ Call Expressions
      :t:`call operand` resolves to a :t:`tuple struct`.
 
 .. glossary-entry:: callee type
+   :glossary-dp: fls_luuc01g4ffog
    
    :glossary:
      :dp:`fls_o21myf6wnnn6`
@@ -4636,6 +4768,7 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: method call expression
+   :glossary-dp: fls_l4wel2551cw9
    
    :glossary:
      :dp:`fls_367sod24edts`
@@ -4650,6 +4783,7 @@ Method Call Expressions
      of a :t:`variable`.
 
 .. glossary-entry:: receiver operand
+   :glossary-dp: fls_nfb3ciarl50w
    
    :glossary:
      :dp:`fls_odbg4bizvqxq`
@@ -4664,6 +4798,7 @@ Method Call Expressions
      :t:`method` is being invoked by a :t:`method call expression`.
 
 .. glossary-entry:: method operand
+   :glossary-dp: fls_l6eJxvmplLqQ
    
    :glossary:
      :dp:`fls_VLLAFjAxCfkE`
@@ -4773,6 +4908,7 @@ Field Access Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: field access expression
+   :glossary-dp: fls_yipl7ajrbs6y
    
    :glossary:
      :dp:`fls_gdl348a04d15`
@@ -4787,6 +4923,7 @@ Field Access Expressions
      of a :t:`value`.
 
 .. glossary-entry:: container operand
+   :glossary-dp: fls_39s6od9hj4g6
    
    :glossary:
      :dp:`fls_stjmobac6wyd`
@@ -4801,6 +4938,7 @@ Field Access Expressions
      :t:`field` is selected in a :t:`field access expression`.
 
 .. glossary-entry:: field selector
+   :glossary-dp: fls_kqbata8slp1y
    
    :glossary:
      :dp:`fls_aq1yg9cp1uof`
@@ -4815,6 +4953,7 @@ Field Access Expressions
      accessed in a :t:`field access expression`.
 
 .. glossary-entry:: indexed field selector
+   :glossary-dp: fls_bu46dg60o8us
    
    :glossary:
      :dp:`fls_u6mh5yediub`
@@ -4825,6 +4964,7 @@ Field Access Expressions
      See :s:`IndexedFieldSelector`.
 
 .. glossary-entry:: field index
+   :glossary-dp: fls_6uwwat9j4x7y
    
    :glossary:
      :dp:`fls_6061r871qgbj`
@@ -4836,6 +4976,7 @@ Field Access Expressions
      See :s:`FieldIndex`.
 
 .. glossary-entry:: selected field
+   :glossary-dp: fls_rfk06mm3pdxg
    
    :glossary:
      :dp:`fls_8otlvwlqrd4e`
@@ -4935,6 +5076,7 @@ Closure Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: closure expression
+   :glossary-dp: fls_mrwle2ediywb
    
    :glossary:
      :dp:`fls_x87rhn9ikz00`
@@ -4949,6 +5091,7 @@ Closure Expressions
      :t:`closure type` and constructs a value of that :t:`type`.
 
 .. glossary-entry:: async closure expression
+   :glossary-dp: fls_oUdQnbW1MAFW
    
    :glossary:
      :dp:`fls_SxydbQPPX9Jw`
@@ -4961,6 +5104,7 @@ Closure Expressions
      An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
 
 .. glossary-entry:: async closure type
+   :glossary-dp: fls_Pq4ohvrMOi5p
    
    :glossary:
      :dp:`fls_IT28HJaF8rnm`
@@ -4980,6 +5124,7 @@ The :t:`return type` of a :t:`closure type` is determined as follows:
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.
 
 .. glossary-entry:: closure body
+   :glossary-dp: fls_5vm5cijnucsr
    
    :glossary:
      :dp:`fls_vgnycw6dykwo`
@@ -5000,6 +5145,7 @@ A :t:`closure body` denotes a new :t:`control flow boundary`.
 A :t:`closure body` is subject to :t:`capturing`.
 
 .. glossary-entry:: closure parameter
+   :glossary-dp: fls_f5RBXj9g5iab
    
    :glossary:
      :dp:`fls_yQBZHBLhPswn`
@@ -5090,12 +5236,14 @@ Loop Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: loop
+   :glossary-dp: fls_kdqa8zs8tk6g
    
    :glossary:
      :dp:`fls_omjnvxva07z2`
      For :dt:`loop`, see :t:`loop expression`.
 
 .. glossary-entry:: loop expression
+   :glossary-dp: fls_an1s2hnapd59
    
    :glossary:
      :dp:`fls_2yypq3m1kquj`
@@ -5110,6 +5258,7 @@ Loop Expressions
      expression` continuously as long as some criterion holds true.
 
 .. glossary-entry:: loop body
+   :glossary-dp: fls_5vt0Ph5BfDnU
    
    :glossary:
      :dp:`fls_fRWcWPeKgx9g`
@@ -5125,6 +5274,7 @@ Loop Expressions
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 .. glossary-entry:: anonymous loop expression
+   :glossary-dp: fls_du8uevac5q7j
    
    :glossary:
      :dp:`fls_csss2a8yk52k`
@@ -5136,6 +5286,7 @@ The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
      :t:`label`.
 
 .. glossary-entry:: named loop expression
+   :glossary-dp: fls_biwn3hxza37n
    
    :glossary:
      :dp:`fls_440dr5qix3ns`
@@ -5147,6 +5298,7 @@ The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
      .. rubric:: Dynamic Semantics
 
 .. glossary-entry:: terminated
+   :glossary-dp: fls_ihv02usuziw8
    
    :glossary:
      :dp:`fls_med1l8vheb83`
@@ -5172,12 +5324,14 @@ For Loops
 .. rubric:: Legality Rules
 
 .. glossary-entry:: for loop
+   :glossary-dp: fls_dwnvkq8n94h1
    
    :glossary:
      :dp:`fls_gmhh56arsbw8`
      For :dt:`for loop`, see :t:`for loop expression`.
 
 .. glossary-entry:: for loop expression
+   :glossary-dp: fls_vfkqbovqbw86
    
    :glossary:
      :dp:`fls_f0gp7qxoc4o4`
@@ -5264,12 +5418,14 @@ Infinite Loops
 .. rubric:: Legality Rules
 
 .. glossary-entry:: infinite loop
+   :glossary-dp: fls_kg9aeyrw822m
    
    :glossary:
      :dp:`fls_xpm53i3rkuu0`
      For :dt:`infinite loop`, see :t:`infinite loop expression`.
 
 .. glossary-entry:: infinite loop expression
+   :glossary-dp: fls_o2eei5aqgds6
    
    :glossary:
      :dp:`fls_mvplpa4t1f2p`
@@ -5332,6 +5488,7 @@ While Loops
 ~~~~~~~~~~~
 
 .. glossary-entry:: while loop
+   :glossary-dp: fls_od59yim9kasi
    
    :glossary:
      :dp:`fls_ug9cxoml9ged`
@@ -5350,6 +5507,7 @@ While Loops
 .. rubric:: Legality Rules
 
 .. glossary-entry:: while loop expression
+   :glossary-dp: fls_1qxi3h3qmgso
    
    :glossary:
      :dp:`fls_fq0zyup4djyh`
@@ -5366,6 +5524,7 @@ While Loops
      true.
 
 .. glossary-entry:: iteration expression
+   :glossary-dp: fls_orde7iunolyx
    
    :glossary:
      :dp:`fls_suz163n1x1xm`
@@ -5422,6 +5581,7 @@ While Let Loops
 ~~~~~~~~~~~~~~~
 
 .. glossary-entry:: while let loop
+   :glossary-dp: fls_8hcsablipi17
    
    :glossary:
      :dp:`fls_ovutw52qtx71`
@@ -5437,6 +5597,7 @@ While Let Loops
 .. rubric:: Legality Rules
 
 .. glossary-entry:: while let loop expression
+   :glossary-dp: fls_gme4odk59x6d
    
    :glossary:
      :dp:`fls_g35gn7n88acp`
@@ -5509,6 +5670,7 @@ Loop Labels
 .. rubric:: Legality Rules
 
 .. glossary-entry:: label
+   :glossary-dp: fls_uVUoHmNtPRtS
    
    :glossary:
      :dp:`fls_iAAf2rLmgmGQ`
@@ -5518,6 +5680,7 @@ Loop Labels
      See :s:`Label`.
 
 .. glossary-entry:: label indication
+   :glossary-dp: fls_dw5s7jhk4v8s
    
    :glossary:
      :dp:`fls_sso322p7adt0`
@@ -5550,6 +5713,7 @@ Break Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: break expression
+   :glossary-dp: fls_xki2cerozblt
    
    :glossary:
      :dp:`fls_8ys8hlqgizoa`
@@ -5594,6 +5758,7 @@ with an :t:`infinite loop`.
 The :t:`type` of a :t:`break expression` is the :t:`never type`.
 
 .. glossary-entry:: break type
+   :glossary-dp: fls_ff2zt3ww2yw3
    
    :glossary:
      :dp:`fls_jvm1vsqmslxn`
@@ -5615,6 +5780,7 @@ The :t:`break type` is determined as follows:
   the :t:`type` of its :t:`operand`.
 
 .. glossary-entry:: break value
+   :glossary-dp: fls_owtptuvleeb
    
    :glossary:
      :dp:`fls_kpka4jf2qr5l`
@@ -5686,6 +5852,7 @@ Continue Expressions
        $$continue$$ LabelIndication?
 
 .. glossary-entry:: continue expression
+   :glossary-dp: fls_doazu99vos8x
    
    :glossary:
      :dp:`fls_waxam3m9plfj`
@@ -5783,6 +5950,7 @@ Range Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: range expression
+   :glossary-dp: fls_tbvugpuvcluj
    
    :glossary:
      :dp:`fls_bffrbucfwu7`
@@ -5795,6 +5963,7 @@ Range Expressions
      A :t:`range expression` is an :t:`expression` that constructs a range.
 
 .. glossary-entry:: full range expression
+   :glossary-dp: fls_tWp1PLe8m83K
    
    :glossary:
      :dp:`fls_NIb9UOIRjMqa`
@@ -5802,6 +5971,7 @@ Range Expressions
      range of a :t:`type`.
 
 .. glossary-entry:: range expression low bound
+   :glossary-dp: fls_smvgd160eynr
    
    :glossary:
      :dp:`fls_t10o1p950u00`
@@ -5816,6 +5986,7 @@ Range Expressions
      a range.
 
 .. glossary-entry:: range expression high bound
+   :glossary-dp: fls_mdvdxr6u13fw
    
    :glossary:
      :dp:`fls_c70pj8w15nmc`
@@ -5834,6 +6005,7 @@ If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
 :t:`[operand]s` shall be :t:`unifiable`.
 
 .. glossary-entry:: range-from expression
+   :glossary-dp: fls_iqpxlg7w3cvf
    
    :glossary:
      :dp:`fls_6enyv2oa4abq`
@@ -5855,6 +6027,7 @@ The :t:`value` of a :t:`range-from expression` is
 ``core::ops::RangeFrom { start: range_expression_low_bound }``.
 
 .. glossary-entry:: range-from-to expression
+   :glossary-dp: fls_125h4p4zt86q
    
    :glossary:
      :dp:`fls_nzf6y64jz83f`
@@ -5878,6 +6051,7 @@ The :t:`value` of a :t:`range-from-to expression` is
 ``core::ops::Range { start: range_expression_low_bound, end: range_expression_high_bound }``.
 
 .. glossary-entry:: range-full expression
+   :glossary-dp: fls_8z8nrblarxrv
    
    :glossary:
      :dp:`fls_6mchm7kb7i41`
@@ -5898,6 +6072,7 @@ The :t:`type` of a :t:`range-full expression` is :std:`core::ops::RangeFull`.
 The :t:`value` of a :t:`range-full expression` is ``core::ops::RangeFull {}``.
 
 .. glossary-entry:: range-inclusive expression
+   :glossary-dp: fls_tie80ejz8s19
    
    :glossary:
      :dp:`fls_9vja0wev84a7`
@@ -5922,6 +6097,7 @@ The :t:`value` of a :t:`range-inclusive expression` is
 ``core::ops::RangeInclusive::new(range_expression_low_bound, range_expression_high_bound)``.
 
 .. glossary-entry:: range-to expression
+   :glossary-dp: fls_etvgkb8zcfpd
    
    :glossary:
      :dp:`fls_urnfp1j9d5v4`
@@ -5943,6 +6119,7 @@ The :t:`value` of a :t:`range-to expression` is
 ``core::ops::RangeTo { end: range_expression_high_bound }``.
 
 .. glossary-entry:: range-to-inclusive expression
+   :glossary-dp: fls_ap5754dfltt5
    
    :glossary:
      :dp:`fls_t4fjanjvkd69`
@@ -6003,6 +6180,7 @@ If Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: if expression
+   :glossary-dp: fls_al9gtcy5b5og
    
    :glossary:
      :dp:`fls_rk0661mtdvsi`
@@ -6019,6 +6197,7 @@ If Expressions
      its :t:`subject expression`.
 
 .. glossary-entry:: else expression
+   :glossary-dp: fls_ff5zp7m9d5ot
    
    :glossary:
      :dp:`fls_inp7luoqkjc5`
@@ -6107,6 +6286,7 @@ If Let Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: if let expression
+   :glossary-dp: fls_j9wb2wtqp5u8
    
    :glossary:
      :dp:`fls_ky6ng7jy1g6z`
@@ -6223,6 +6403,7 @@ Match Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: match expression
+   :glossary-dp: fls_w15uouo0sjao
    
    :glossary:
      :dp:`fls_2ohrphptjny6`
@@ -6239,6 +6420,7 @@ Match Expressions
      evaluates an :t:`operand`.
 
 .. glossary-entry:: match arm
+   :glossary-dp: fls_fizf1byuspv2
    
    :glossary:
      :dp:`fls_z5qsy5z2zak3`
@@ -6250,6 +6432,7 @@ Match Expressions
      and a :t:`match arm body`.
 
 .. glossary-entry:: intermediate match arm
+   :glossary-dp: fls_7rj914fhginh
    
    :glossary:
      :dp:`fls_l6pemxmdllvl`
@@ -6264,6 +6447,7 @@ Match Expressions
      :t:`match expression`.
 
 .. glossary-entry:: final match arm
+   :glossary-dp: fls_mj9mmkar8c6f
    
    :glossary:
      :dp:`fls_btoz8jioisx9`
@@ -6276,6 +6460,7 @@ Match Expressions
      A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 .. glossary-entry:: match arm matcher
+   :glossary-dp: fls_i3omadaygum2
    
    :glossary:
      :dp:`fls_paz9358w4cpu`
@@ -6293,6 +6478,7 @@ Match Expressions
 The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the :t:`type` of the :t:`subject expression`.
 
 .. glossary-entry:: match arm body
+   :glossary-dp: fls_q7lcdtxuy1ac
    
    :glossary:
      :dp:`fls_33e7oefx0xqm`
@@ -6302,6 +6488,7 @@ The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the 
      A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
 
 .. glossary-entry:: match arm guard
+   :glossary-dp: fls_aa1x6ajl4zid
    
    :glossary:
      :dp:`fls_uhn07jmvv9ea`
@@ -6436,6 +6623,7 @@ Return Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: return expression
+   :glossary-dp: fls_7tl9qo8yj8xh
    
    :glossary:
      :dp:`fls_vnupfc6s0s7b`
@@ -6518,6 +6706,7 @@ Await Expressions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: await expression
+   :glossary-dp: fls_n4oo89apywk4
    
    :glossary:
      :dp:`fls_psbc3b8pec47`
@@ -6532,6 +6721,7 @@ Await Expressions
      suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 .. glossary-entry:: future operand
+   :glossary-dp: fls_dvk8ccb46abk
    
    :glossary:
      :dp:`fls_fold1inh5jev`
@@ -6611,6 +6801,7 @@ Certain :t:`[expression]s` are subject to :t:`precedence` and
 :t:`associativity`.
 
 .. glossary-entry:: precedence
+   :glossary-dp: fls_ukvdoqo68y5b
    
    :glossary:
      :dp:`fls_sz93844rqc4r`
@@ -6622,6 +6813,7 @@ Certain :t:`[expression]s` are subject to :t:`precedence` and
      presence of other :t:`[expression]s`.
 
 .. glossary-entry:: associativity
+   :glossary-dp: fls_fczijre8123c
    
    :glossary:
      :dp:`fls_7i7o23mi2i33`
@@ -6773,6 +6965,7 @@ Capturing
 .. rubric:: Legality Rules
 
 .. glossary-entry:: capturing expression
+   :glossary-dp: fls_cl3lpsfgt5eb
    
    :glossary:
      :dp:`fls_awtny282gtud`
@@ -6784,6 +6977,7 @@ Capturing
      :t:`closure expression`.
 
 .. glossary-entry:: capture target
+   :glossary-dp: fls_c6qwfwsyizya
    
    :glossary:
      :dp:`fls_xmhcp4x8wblz`
@@ -6795,6 +6989,7 @@ Capturing
      :t:`variable`.
 
 .. glossary-entry:: capturing environment
+   :glossary-dp: fls_yfk2xfifltxy
    
    :glossary:
      :dp:`fls_7br4azaay3wu`
@@ -6806,6 +7001,7 @@ Capturing
      :t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
 .. glossary-entry:: capturing
+   :glossary-dp: fls_kvu447p6j61k
    
    :glossary:
      :dp:`fls_4achbk2ewyyb`
@@ -6823,6 +7019,7 @@ the :t:`capturing expression` and it is defined outside of the
 :dt:`captured`.
 
 .. glossary-entry:: capture mode
+   :glossary-dp: fls_s78gd8yxx2yv
    
    :glossary:
      :dp:`fls_beer0d7wva1d`
@@ -6855,6 +7052,7 @@ A :t:`captured` :t:`capture target` with :t:`capture mode`
 :t:`mutable reference` into the :t:`capturing environment`.
 
 .. glossary-entry:: unique immutable reference
+   :glossary-dp: fls_Is9hWLC6Q0g5
    
    :glossary:
      :dp:`fls_eXrivAmNxzmv`
@@ -6897,6 +7095,7 @@ Arithmetic Overflow
 -------------------
 
 .. glossary-entry:: arithmetic overflow
+   :glossary-dp: fls_vZ1H57x9OFSZ
    
    :glossary:
      :dp:`fls_jbytOQvIddAl`

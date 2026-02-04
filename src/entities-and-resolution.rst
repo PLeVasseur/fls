@@ -23,6 +23,7 @@ Entities
 .. rubric:: Legality Rules
 
 .. glossary-entry:: entity
+   :glossary-dp: fls_1qu1t74ga8aa
    
    :glossary:
      :dp:`fls_mdbck557k8sy`
@@ -34,6 +35,7 @@ Entities
      usually via a :t:`field access expression` or a :t:`path`.
 
 .. glossary-entry:: name
+   :glossary-dp: fls_kad7fzn94x4d
    
    :glossary:
      :dp:`fls_jjpzrs38vs3y`
@@ -46,6 +48,7 @@ Entities
      A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 .. glossary-entry:: declaration
+   :glossary-dp: fls_9qgy7x6w5ro5
    
    :glossary:
      :dp:`fls_kct7ducpli6k`
@@ -57,6 +60,7 @@ Entities
      :t:`entity`.
 
 .. glossary-entry:: explicitly declared entity
+   :glossary-dp: fls_lqxcnZqvwcsH
    
    :glossary:
      :dp:`fls_shpNJ0JCSCwa`
@@ -120,6 +124,7 @@ Entities
   :t:`[Union type]s`.
 
 .. glossary-entry:: implicitly declared entity
+   :glossary-dp: fls_i3iB9xP8h8Ci
    
    :glossary:
      :dp:`fls_VQs1jd4Nx3qR`
@@ -171,6 +176,7 @@ Visibility
 .. rubric:: Legality Rules
 
 .. glossary-entry:: visibility
+   :glossary-dp: fls_svx87y4p8fdx
    
    :glossary:
      :dp:`fls_sadmsqhptlho`
@@ -182,6 +188,7 @@ Visibility
      which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 .. glossary-entry:: public visibility
+   :glossary-dp: fls_v2rjlovqsdyr
    
    :glossary:
      :dp:`fls_6cfxqtl921ko`
@@ -195,6 +202,7 @@ Visibility
      :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
 .. glossary-entry:: private visibility
+   :glossary-dp: fls_v1u1mevpj0kj
    
    :glossary:
      :dp:`fls_duop22hyaweq`
@@ -208,6 +216,7 @@ Visibility
      descendant :t:`[module]s`.
 
 .. glossary-entry:: visibility modifier
+   :glossary-dp: fls_xqjk8avt7t51
    
    :glossary:
      :dp:`fls_ze7befho4jhs`
@@ -218,6 +227,7 @@ Visibility
      A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 .. glossary-entry:: crate public modifier
+   :glossary-dp: fls_yf9yjzzhw0rn
    
    :glossary:
      :dp:`fls_dj7fmrqhbhsv`
@@ -232,6 +242,7 @@ Visibility
      :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
 .. glossary-entry:: self public modifier
+   :glossary-dp: fls_jq213cesxhyp
    
    :glossary:
      :dp:`fls_ln3bzqgctfym`
@@ -248,6 +259,7 @@ Visibility
      :t:`keyword` ``self``.
 
 .. glossary-entry:: simple path public modifier
+   :glossary-dp: fls_sgy9q06yt6cl
    
    :glossary:
      :dp:`fls_mby9r0jm6uyv`
@@ -272,6 +284,7 @@ an ancestor :t:`module` of the current :t:`module` or the current :t:`module`
 itself.
 
 .. glossary-entry:: simple public modifier
+   :glossary-dp: fls_k5uqt5oj7wvl
    
    :glossary:
      :dp:`fls_ce1ounn1g68`
@@ -286,6 +299,7 @@ itself.
      :t:`name` :t:`public visibility`.
 
 .. glossary-entry:: super public modifier
+   :glossary-dp: fls_12bluakt0jnj
    
    :glossary:
      :dp:`fls_vry5mhs3a5wv`
@@ -402,6 +416,7 @@ Paths
 .. rubric:: Legality Rules
 
 .. glossary-entry:: path
+   :glossary-dp: fls_9zl72vtkgkuo
    
    :glossary:
      :dp:`fls_u3jyud6mhy1f`
@@ -413,6 +428,7 @@ Paths
      :t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
 .. glossary-entry:: path segment
+   :glossary-dp: fls_xb54s9cs7h08
    
    :glossary:
      :dp:`fls_gsumebjc2bsp`
@@ -443,6 +459,7 @@ or the previous :t:`path segment` of the :t:`path` shall also be expressed as
 :t:`keyword` ``super``.
 
 .. glossary-entry:: global path
+   :glossary-dp: fls_g6g8c58bilen
    
    :glossary:
      :dp:`fls_msg8jw9momfw`
@@ -454,6 +471,7 @@ or the previous :t:`path segment` of the :t:`path` shall also be expressed as
      ``::``.
 
 .. glossary-entry:: simple path
+   :glossary-dp: fls_o5kv9lrtz4fq
    
    :glossary:
      :dp:`fls_db91duoug4eb`
@@ -489,6 +507,7 @@ be part of the :s:`UseImportContent` of a :t:`nesting import` as long as the
 A :t:`simple path` is subject to :t:`simple path resolution`.
 
 .. glossary-entry:: single segment path
+   :glossary-dp: fls_JS91BDzd03Qj
    
    :glossary:
      :dp:`fls_Hun5BCZsqd6k`
@@ -500,6 +519,7 @@ A :t:`simple path` is subject to :t:`simple path resolution`.
      :t:`path segment`.
 
 .. glossary-entry:: multi segment path
+   :glossary-dp: fls_iw2vYgmLhlsg
    
    :glossary:
      :dp:`fls_T4Xd6W6EqPSb`
@@ -511,6 +531,7 @@ A :t:`simple path` is subject to :t:`simple path resolution`.
      :t:`path segment`.
 
 .. glossary-entry:: unqualified path expression
+   :glossary-dp: fls_cDVmvrVhUBmr
    
    :glossary:
      :dp:`fls_9xKgP8uVsOaR`
@@ -523,6 +544,7 @@ A :t:`simple path` is subject to :t:`simple path resolution`.
 A :t:`path expression` is subject to :t:`path expression resolution`.
 
 .. glossary-entry:: type path
+   :glossary-dp: fls_QDCiXh7uSj9r
    
    :glossary:
      :dp:`fls_UBR5czHrMTrx`
@@ -538,6 +560,7 @@ A :t:`path expression` is subject to :t:`path expression resolution`.
 A :t:`type path` is subject to :t:`type path resolution`.
 
 .. glossary-entry:: qualifying trait
+   :glossary-dp: fls_B0m82A8jIerQ
    
    :glossary:
      :dp:`fls_zKY1dWBMrqXZ`
@@ -555,6 +578,7 @@ A :t:`type path` is subject to :t:`type path resolution`.
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
 
 .. glossary-entry:: qualified type
+   :glossary-dp: fls_Qv0UvhSfwBuM
    
    :glossary:
      :dp:`fls_e7YyZXOFo6ei`
@@ -577,6 +601,7 @@ A :t:`qualified type` shall resolve to a :t:`type`.
 A :t:`qualified type` shall implement its related :t:`qualifying trait`.
 
 .. glossary-entry:: qualified path expression
+   :glossary-dp: fls_O6CFtnpN3UEE
    
    :glossary:
      :dp:`fls_wKAS6FxqGmTf`
@@ -591,6 +616,7 @@ A :t:`qualified type` shall implement its related :t:`qualifying trait`.
      through a :t:`qualified type`.
 
 .. glossary-entry:: qualified type path
+   :glossary-dp: fls_koVlQq8aPdPv
    
    :glossary:
      :dp:`fls_S0QT9ib38i8E`
@@ -605,6 +631,7 @@ A :t:`qualified type` shall implement its related :t:`qualifying trait`.
      :t:`qualified type`.
 
 .. glossary-entry:: associated type projection
+   :glossary-dp: fls_zOe783MlE9i9
    
    :glossary:
      :dp:`fls_4moFUY6epk0v`
@@ -686,6 +713,7 @@ Scopes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: scope
+   :glossary-dp: fls_fj8mdxi967px
    
    :glossary:
      :dp:`fls_fachaj550cq1`
@@ -696,6 +724,7 @@ Scopes
      to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. glossary-entry:: in scope
+   :glossary-dp: fls_3lo8ygoyxxyf
    
    :glossary:
      :dp:`fls_sy380geqvf2l`
@@ -709,6 +738,7 @@ Binding Scopes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: binding scope
+   :glossary-dp: fls_5ep4xSGZwtoL
    
    :glossary:
      :dp:`fls_6qPYH5NJ8usI`
@@ -754,6 +784,7 @@ Generic Parameter Scope
 .. rubric:: Legality Rules
 
 .. glossary-entry:: generic parameter scope
+   :glossary-dp: fls_CzudKdaYbfBF
    
    :glossary:
      :dp:`fls_e2tICijmLkj4`
@@ -813,6 +844,7 @@ Item Scope
 .. rubric:: Legality Rules
 
 .. glossary-entry:: item scope
+   :glossary-dp: fls_wojJZZ4gYGfl
    
    :glossary:
      :dp:`fls_mW7IwWGSjrl2`
@@ -839,6 +871,7 @@ Label Scope
 .. rubric:: Legality Rules
 
 .. glossary-entry:: label scope
+   :glossary-dp: fls_P0on44EAB3cn
    
    :glossary:
      :dp:`fls_2H6HkQ102hVS`
@@ -856,6 +889,7 @@ A :t:`label` is not :t:`in scope` within nested :t:`[async block]s`,
 :t:`[closure expression]s`, :t:`[constant context]s`, and :t:`[item]s`.
 
 .. glossary-entry:: Self
+   :glossary-dp: fls_9o2hcy6t7dac
    
    :glossary:
      :dp:`fls_q6whqbfusswf`
@@ -871,6 +905,7 @@ Self Scope
 .. rubric:: Legality Rules
 
 .. glossary-entry:: Self scope
+   :glossary-dp: fls_exMZlNMxQvP7
    
    :glossary:
      :dp:`fls_pSvqWGRmFmH0`
@@ -910,6 +945,7 @@ Textual Macro Scope
 .. rubric:: Legality Rules
 
 .. glossary-entry:: textual macro scope
+   :glossary-dp: fls_AVZGZPd6WXXO
    
    :glossary:
      :dp:`fls_xyeYk6vrmlWp`
@@ -937,6 +973,7 @@ Scope Hierarchy
 .. rubric:: Legality Rules
 
 .. glossary-entry:: scope hierarchy
+   :glossary-dp: fls_xZUiNkBN5e00
    
    :glossary:
      :dp:`fls_Spcc3L9X939d`
@@ -1092,6 +1129,7 @@ Namespaces
 .. rubric:: Legality Rules
 
 .. glossary-entry:: namespace
+   :glossary-dp: fls_GesmsWSVhv3f
    
    :glossary:
      :dp:`fls_er8lcvnEqxa5`
@@ -1232,6 +1270,7 @@ Preludes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: prelude
+   :glossary-dp: fls_8Gn72FJBarfb
    
    :glossary:
      :dp:`fls_D0PJioOZjKNN`
@@ -1246,12 +1285,14 @@ Preludes
      is referred to as a :t:`prelude name`.
 
 .. glossary-entry:: prelude entity
+   :glossary-dp: fls_AWySDxPgypiw
    
    :glossary:
      :dp:`fls_2lU7RUjzFlsz`
      A :dt:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
 
 .. glossary-entry:: prelude name
+   :glossary-dp: fls_FYn5JqPOhiIs
    
    :glossary:
      :dp:`fls_6Jk7fUAK122A`
@@ -1331,6 +1372,7 @@ Use Imports
 .. rubric:: Legality Rules
 
 .. glossary-entry:: use import
+   :glossary-dp: fls_fow1bnvduafi
    
    :glossary:
      :dp:`fls_uccv9zthh5vt`
@@ -1347,6 +1389,7 @@ Use Imports
      :t:`use import` resides.
 
 .. glossary-entry:: simple path prefix
+   :glossary-dp: fls_23G6TAntJXqa
    
    :glossary:
      :dp:`fls_ijc2yHQuIltY`
@@ -1388,6 +1431,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
    the current :t:`use import`.
 
 .. glossary-entry:: renaming
+   :glossary-dp: fls_8ibsdx4dx6s7
    
    :glossary:
      :dp:`fls_cp8u9kq44o8a`
@@ -1397,6 +1441,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
      See :s:`Renaming`.
 
 .. glossary-entry:: simple import
+   :glossary-dp: fls_6mcm7xdcyn40
    
    :glossary:
      :dp:`fls_jrlzpoauui9g`
@@ -1412,6 +1457,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
      :t:`name` than they are declared with by using a :t:`renaming`.
 
 .. glossary-entry:: glob import
+   :glossary-dp: fls_euukteybsbi
    
    :glossary:
      :dp:`fls_90qsib7g8e9j`
@@ -1476,6 +1522,7 @@ A :t:`trait` imported by a :t:`simple import` subject to a
 a :t:`name`.
 
 .. glossary-entry:: nesting import
+   :glossary-dp: fls_6rlvd0u4w6h2
    
    :glossary:
      :dp:`fls_nhkqkdqo32xs`
@@ -1552,6 +1599,7 @@ Shadowing
 .. rubric:: Legality Rules
 
 .. glossary-entry:: shadowing
+   :glossary-dp: fls_HUklMSWzx8Mg
    
    :glossary:
      :dp:`fls_li3NXOPEH9cL`
@@ -1605,6 +1653,7 @@ Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: resolution
+   :glossary-dp: fls_O5iuGATZgyBu
    
    :glossary:
      :dp:`fls_PQjEvLs5cE4y`
@@ -1617,6 +1666,7 @@ Resolution
      expression` or a :t:`path`.
 
 .. glossary-entry:: under resolution
+   :glossary-dp: fls_X6XjWwYeTnVR
    
    :glossary:
      :dp:`fls_BppwXSVUWtEu`
@@ -1626,6 +1676,7 @@ Resolution
      A :t:`construct` that is being resolved is said to be :t:`under resolution`.
 
 .. glossary-entry:: dereference type
+   :glossary-dp: fls_xbN0GtcH8emc
    
    :glossary:
      :dp:`fls_HfuUQ7IaoI5j`
@@ -1637,6 +1688,7 @@ Resolution
      implements the :std:`core::ops::Deref` :t:`trait`.
 
 .. glossary-entry:: dereference type chain
+   :glossary-dp: fls_T380NdEsFxIp
    
    :glossary:
      :dp:`fls_kIzoAEf069HE`
@@ -1664,6 +1716,7 @@ Field Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: field resolution
+   :glossary-dp: fls_BlZwxp6H62sS
    
    :glossary:
      :dp:`fls_nL8UuclgxfGL`
@@ -1719,6 +1772,7 @@ the characters of a :t:`named field selector`.
       stops.
 
 .. glossary-entry:: named field selector
+   :glossary-dp: fls_cvxdoycoytc5
    
    :glossary:
      :dp:`fls_cczpgxqdyh1e`
@@ -1757,6 +1811,7 @@ Method Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: method resolution
+   :glossary-dp: fls_05yFh5Ud0YkW
    
    :glossary:
      :dp:`fls_LbW4z6OTuD1l`
@@ -1768,6 +1823,7 @@ Method Resolution
      :t:`method call expression`.
 
 .. glossary-entry:: receiver type
+   :glossary-dp: fls_Kpkm0J40xq5J
    
    :glossary:
      :dp:`fls_vgQmMlpFas5t`
@@ -1899,6 +1955,7 @@ Call Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: call resolution
+   :glossary-dp: fls_zSh4enFjxeaN
    
    :glossary:
      :dp:`fls_fS1ZjGGypvbn`
@@ -1939,6 +1996,7 @@ Path Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: path resolution
+   :glossary-dp: fls_J8kiBhcawvnj
    
    :glossary:
      :dp:`fls_uy9Ai9vwTkjB`
@@ -2085,6 +2143,7 @@ Simple Path Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: simple path resolution
+   :glossary-dp: fls_gT5rZ4qC3pHo
    
    :glossary:
      :dp:`fls_CQlepoN6PmKq`
@@ -2141,6 +2200,7 @@ Path Expression Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: path expression resolution
+   :glossary-dp: fls_EIFtIeLGZNy5
    
    :glossary:
      :dp:`fls_WYcEVyc3SHuK`
@@ -2282,6 +2342,7 @@ Type Path Resolution
 .. rubric:: Legality Rules
 
 .. glossary-entry:: type path resolution
+   :glossary-dp: fls_wa3biT0rQ102
    
    :glossary:
      :dp:`fls_Xv6JbfdIyvA3`

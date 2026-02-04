@@ -7,8 +7,11 @@ import os
 import sys
 from pathlib import Path
 import argparse
+import shlex
 import subprocess
 import shutil
+import threading
+import time
 
 # Automatically watch the following extra directories when --serve is used.
 EXTRA_WATCH_DIRS = ["exts", "themes"]
@@ -37,7 +40,88 @@ def run_with_log(command, log_path):
             raise
 
 
-def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
+def generate_glossary_command(root, tags):
+    command = [sys.executable, str(root / "generate-glossary.py")]
+    for tag in tags:
+        command += ["-t", tag]
+    return command
+
+
+def run_generate_glossary(root, tags):
+    subprocess.run(generate_glossary_command(root, tags), check=True)
+
+
+def sync_static_glossary(root, overwrite):
+    generated_path = root / "build" / "generated.glossary.rst"
+    static_path = root / "src" / "glossary.rst.inc"
+    if not generated_path.is_file() or not static_path.is_file():
+        return
+    generated_text = generated_path.read_text(encoding="utf-8")
+    static_text = static_path.read_text(encoding="utf-8")
+    if generated_text == static_text:
+        return
+    if overwrite:
+        static_path.write_text(generated_text, encoding="utf-8")
+        print(f"updated {static_path} from generated glossary")
+        return
+    print(
+        "warning: static glossary does not match generated output; "
+        "run ./make.py --overwrite-glossary-from-build to update src/glossary.rst.inc",
+        file=sys.stderr,
+    )
+
+
+def supports_pre_build():
+    try:
+        result = subprocess.run(
+            ["sphinx-autobuild", "--help"],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        return False
+    return "--pre-build" in result.stdout
+
+
+def iter_glossary_sources(root):
+    src_dir = root / "src"
+    yield from src_dir.rglob("*.rst")
+    yield from src_dir.rglob("*.rst.inc")
+
+
+def snapshot_glossary_sources(root):
+    snapshot = {}
+    for path in iter_glossary_sources(root):
+        try:
+            snapshot[path] = path.stat().st_mtime
+        except FileNotFoundError:
+            continue
+    return snapshot
+
+
+def start_glossary_watcher(root, tags, stamp_path, stop_event):
+    def watcher():
+        previous = snapshot_glossary_sources(root)
+        while not stop_event.is_set():
+            time.sleep(0.5)
+            current = snapshot_glossary_sources(root)
+            if current == previous:
+                continue
+            previous = current
+            try:
+                run_generate_glossary(root, tags)
+                stamp_path.touch()
+            except subprocess.CalledProcessError:
+                print("warning: glossary generator failed during serve", file=sys.stderr)
+
+    thread = threading.Thread(target=watcher, daemon=True)
+    thread.start()
+    return thread
+
+
+def build_docs(root, builder, clear, serve, debug, tags, overwrite_glossary_from_build):
     dest = root / "build"
     dest.mkdir(parents=True, exist_ok=True)
     output_dir = dest / builder
@@ -58,6 +142,8 @@ def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
             shutil.rmtree(output_dir)
         # Using a fresh environment
         args.append("-E")
+    for tag in tags:
+        args += ["-t", tag]
     if serve:
         for extra_watch_dir in EXTRA_WATCH_DIRS:
             extra_watch_dir = root / extra_watch_dir
@@ -71,9 +157,25 @@ def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
     if commit is not None:
         args += ["-D", f"html_theme_options.commit={commit}"]
 
-    subprocess.run([sys.executable, root / "generate-glossary.py"], check=True)
-    if use_generated_glossary:
-        args += ["-t", "use_generated_glossary"]
+    run_generate_glossary(root, tags)
+    sync_static_glossary(root, overwrite_glossary_from_build)
+
+    watcher_thread = None
+    watcher_stop = None
+    if serve:
+        pre_build_command = shlex.join(generate_glossary_command(root, tags))
+        if supports_pre_build():
+            args += ["--pre-build", pre_build_command]
+        else:
+            stamp_dir = dest / "glossary-watch"
+            stamp_dir.mkdir(parents=True, exist_ok=True)
+            stamp_path = stamp_dir / "glossary.stamp"
+            stamp_path.touch()
+            args += ["--watch", stamp_dir]
+            watcher_stop = threading.Event()
+            watcher_thread = start_glossary_watcher(
+                root, tags, stamp_path, watcher_stop
+            )
 
     log_path = dest / "sphinx-build.log"
     try:
@@ -87,7 +189,14 @@ def build_docs(root, builder, clear, serve, debug, use_generated_glossary):
             log_path,
         )
     except KeyboardInterrupt:
+        if watcher_stop is not None:
+            watcher_stop.set()
         exit(1)
+    finally:
+        if watcher_stop is not None:
+            watcher_stop.set()
+        if watcher_thread is not None:
+            watcher_thread.join()
     if returncode != 0:
         print("\nhint: if you see an exception, pass --debug to see the full traceback")
         exit(1)
@@ -177,7 +286,23 @@ def main(root):
         help="Build with generated glossary content",
         action="store_true",
     )
+    parser.add_argument(
+        "--overwrite-glossary-from-build",
+        help="Overwrite src/glossary.rst.inc from build output",
+        action="store_true",
+    )
+    parser.add_argument(
+        "-t",
+        "--tag",
+        action="append",
+        default=[],
+        help="Sphinx tag (repeatable)",
+    )
     args = parser.parse_args()
+
+    tags = list(dict.fromkeys(args.tag))
+    if args.use_generated_glossary and "use_generated_glossary" not in tags:
+        tags.append("use_generated_glossary")
 
     rendered = build_docs(
         root,
@@ -185,7 +310,8 @@ def main(root):
         args.clear,
         args.serve,
         args.debug,
-        args.use_generated_glossary,
+        tags,
+        args.overwrite_glossary_from_build,
     )
 
     if args.check_links:

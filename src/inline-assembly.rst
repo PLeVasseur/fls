@@ -13,6 +13,7 @@ Inline Assembly
 .. rubric:: Legality Rules
 
 .. glossary-entry:: inline assembly
+   :glossary-dp: fls_lbL2b9wyg6es
    
    :glossary:
      :dp:`fls_1MtaLEA7YfSv`
@@ -108,6 +109,7 @@ Registers
 .. rubric:: Legality Rules
 
 .. glossary-entry:: register
+   :glossary-dp: fls_T84qaJMZzMbb
    
    :glossary:
      :dp:`fls_fVdSybu8DW8w`
@@ -119,6 +121,7 @@ Registers
      read and written.
 
 .. glossary-entry:: input register
+   :glossary-dp: fls_DTb5xegDqm9S
    
    :glossary:
      :dp:`fls_dTvdQaFpncCj`
@@ -132,6 +135,7 @@ Registers
      or ``inlateout``.
 
 .. glossary-entry:: output register
+   :glossary-dp: fls_XsGnaA47Nen0
    
    :glossary:
      :dp:`fls_4METI8qE9JiY`
@@ -150,6 +154,7 @@ same :t:`value` upon exit from an :t:`assembly code block` as it did upon entry
 into the :t:`assembly code block`.
 
 .. glossary-entry:: register name
+   :glossary-dp: fls_kbBK666iBS2X
    
    :glossary:
      :dp:`fls_U5r8Ypnjah5E`
@@ -166,6 +171,7 @@ into the :t:`assembly code block`.
      :t:`register` belongs to.
 
 .. glossary-entry:: explicit register name
+   :glossary-dp: fls_uc7PnSbVVd9X
    
    :glossary:
      :dp:`fls_UcMk6RRLrkB5`
@@ -494,6 +500,7 @@ Register Classes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: register class
+   :glossary-dp: fls_2qKUiHcfmZQ6
    
    :glossary:
      :dp:`fls_2H0OYS733VJl`
@@ -503,6 +510,7 @@ Register Classes
      A :t:`register class` represents a set of :t:`[register]s`.
 
 .. glossary-entry:: register class name
+   :glossary-dp: fls_xZTkANlRsKRt
    
    :glossary:
      :dp:`fls_QsSFoL0UyRRB`
@@ -659,6 +667,7 @@ then
   Otherwise, for an :t:`output register`, the upper bits are ignored.
 
 .. glossary-entry:: NaN-boxing
+   :glossary-dp: fls_z3lxbjF4gaqV
    
    :glossary:
      :dp:`fls_s956sJGwOa6z`
@@ -718,6 +727,7 @@ Register Arguments
 .. rubric:: Legality Rules
 
 .. glossary-entry:: register argument
+   :glossary-dp: fls_ISWWmgKjfYwt
    
    :glossary:
      :dp:`fls_rNoFdCKbVmRC`
@@ -737,6 +747,7 @@ Register Arguments
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
 
 .. glossary-entry:: named register argument
+   :glossary-dp: fls_WT1ZdxTZwUUE
    
    :glossary:
      :dp:`fls_QBWHppNO8FPk`
@@ -748,6 +759,7 @@ A :t:`register argument` shall be used within an :t:`assembly instruction`.
      is bound to an :t:`identifier`.
 
 .. glossary-entry:: positional register argument
+   :glossary-dp: fls_Q0r8JkqAP6Of
    
    :glossary:
      :dp:`fls_GJd6i52P3KM3`
@@ -763,6 +775,7 @@ A :t:`named register argument` shall appear after a
 :t:`positional register argument`.
 
 .. glossary-entry:: explicit register argument
+   :glossary-dp: fls_B1qkkSvc69J4
    
    :glossary:
      :dp:`fls_2o6S1WGDrMh3`
@@ -778,6 +791,7 @@ An :t:`explicit register argument` shall appear after a
 :t:`named register argument`.
 
 .. glossary-entry:: register class argument
+   :glossary-dp: fls_8gC17CgCS9n1
    
    :glossary:
      :dp:`fls_ksLXAyPLx9IL`
@@ -793,6 +807,7 @@ An :t:`explicit register argument` shall appear after a
      :t:`register` from the related :t:`register class`.
 
 .. glossary-entry:: direction modifier
+   :glossary-dp: fls_ugIFZlAzDK6H
    
    :glossary:
      :dp:`fls_8DY7xPVX4nXx`
@@ -809,6 +824,7 @@ An :t:`explicit register argument` shall appear after a
      :t:`register` to an :t:`expression`, or both.
 
 .. glossary-entry:: input register expression
+   :glossary-dp: fls_Tmju2kXErYhJ
    
    :glossary:
      :dp:`fls_rvbuHSgg2RHt`
@@ -823,6 +839,7 @@ An :t:`explicit register argument` shall appear after a
      initial :t:`value` of a :t:`register`.
 
 .. glossary-entry:: output register expression
+   :glossary-dp: fls_t79aKPilX8jk
    
    :glossary:
      :dp:`fls_w95YRZ4JjBxl`
@@ -840,6 +857,7 @@ An :t:`explicit register argument` shall appear after a
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.
 
 .. glossary-entry:: input-output register expression
+   :glossary-dp: fls_y9EOkstHPckB
    
    :glossary:
      :dp:`fls_lLQw3EFl7x5z`
@@ -854,6 +872,7 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
      both an :t:`input register expression` and an :t:`output register expression`.
 
 .. glossary-entry:: simple register expression
+   :glossary-dp: fls_JDB3eBO0DY4o
    
    :glossary:
      :dp:`fls_4Yp4R7gXucL2`
@@ -868,6 +887,7 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
      :t:`underscore expression`.
 
 .. glossary-entry:: register expression
+   :glossary-dp: fls_7KIReJZLKdeK
    
    :glossary:
      :dp:`fls_2cVy6XfOQ4QG`
@@ -1145,6 +1165,7 @@ Assembly Instructions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: assembly instruction
+   :glossary-dp: fls_HliSgbSzPO2r
    
    :glossary:
      :dp:`fls_VLu28hOvCy2o`
@@ -1164,6 +1185,7 @@ defined in :t:`module` :std:`std::fmt`, and contain zero or more
 :t:`[register parameter]s`.
 
 .. glossary-entry:: assembly code block
+   :glossary-dp: fls_et0NKXAYyDmh
    
    :glossary:
      :dp:`fls_d1ojwFwKpvm3`
@@ -1195,6 +1217,7 @@ appear in the same declarative order in the final assembly output, or appear
 contiguously in successive addresses.
 
 .. glossary-entry:: register parameter
+   :glossary-dp: fls_foh6xELWBsY9
    
    :glossary:
      :dp:`fls_JicHMIj5dlxJ`
@@ -1231,6 +1254,7 @@ Register Parameter Modifiers
 .. rubric:: Legality Rules
 
 .. glossary-entry:: register parameter modifier
+   :glossary-dp: fls_NDpKXnlmnN7M
    
    :glossary:
      :dp:`fls_8BdOnxHZS0Qi`
@@ -1443,6 +1467,7 @@ Directive Support
 .. rubric:: Legality Rules
 
 .. glossary-entry:: assembly directive
+   :glossary-dp: fls_iUnmWXxcuzif
    
    :glossary:
      :dp:`fls_FP2KbO6c3cpq`
@@ -1612,6 +1637,7 @@ ABI Clobbers
 .. rubric:: Legality Rules
 
 .. glossary-entry:: ABI clobber
+   :glossary-dp: fls_zOdDwoObYHC0
    
    :glossary:
      :dp:`fls_OVX4RFcWKfP9`
@@ -1717,6 +1743,7 @@ Assembly Options
 .. rubric:: Legality Rules
 
 .. glossary-entry:: assembly option
+   :glossary-dp: fls_1iVIUoVDsYph
    
    :glossary:
      :dp:`fls_F5I3okDKIYnE`

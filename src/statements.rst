@@ -9,6 +9,7 @@ Statements
 ==========
 
 .. glossary-entry:: statement
+   :glossary-dp: fls_e7cvo0usw86i
    
    :glossary:
      :dp:`fls_faijgwg4lhp9`
@@ -34,6 +35,7 @@ Statements
 An :t:`expression statement` is an :t:`expression` whose result is ignored.
 
 .. glossary-entry:: item statement
+   :glossary-dp: fls_yaurxo4ogfsh
    
    :glossary:
      :dp:`fls_r0crucpuhtj`
@@ -43,6 +45,7 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
      An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
 .. glossary-entry:: empty statement
+   :glossary-dp: fls_iwed9n4jz6b8
    
    :glossary:
      :dp:`fls_irw5gwuvj3nn`
@@ -54,6 +57,7 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
      (semicolon).
 
 .. glossary-entry:: macro statement
+   :glossary-dp: fls_i4yf4lt8qvkt
    
    :glossary:
      :dp:`fls_yhh9k9epv3g6`
@@ -67,6 +71,7 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
 .. rubric:: Dynamic Semantics
 
 .. glossary-entry:: execution
+   :glossary-dp: fls_q0ur239s8uv
    
    :glossary:
      :dp:`fls_e5jbii84hd5g`
@@ -78,6 +83,7 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
      effects.
 
 .. glossary-entry:: executed
+   :glossary-dp: fls_nw0eg7gwayrg
    
    :glossary:
      :dp:`fls_kelmsc68lyf7`
@@ -104,6 +110,7 @@ Let Statements
 .. rubric:: Legality Rules
 
 .. glossary-entry:: initialization
+   :glossary-dp: fls_c1wbumq0bumj
    
    :glossary:
      :dp:`fls_xi07ycze6mo0`
@@ -111,12 +118,14 @@ Let Statements
      :t:`constant`, a :t:`static`, or a :t:`variable`.
 
 .. glossary-entry:: let binding
+   :glossary-dp: fls_DdZ1ZwjLZTeG
    
    :glossary:
      :dp:`fls_sw6HrsxsnG2y`
      A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an :t:`if let expression`, or a :t:`while let loop expression`.
 
 .. glossary-entry:: let statement
+   :glossary-dp: fls_39k0ebr7snb0
    
    :glossary:
      :dp:`fls_yh7hn6jjv3ur`
@@ -133,6 +142,7 @@ Let Statements
      initialized to a :t:`value`.
 
 .. glossary-entry:: let initializer
+   :glossary-dp: fls_hqj80jHcxEBB
    
    :glossary:
      :dp:`fls_jtTpBZ4ujZRc`
@@ -241,6 +251,7 @@ Expression Statements
 .. rubric:: Legality Rules
 
 .. glossary-entry:: expression statement
+   :glossary-dp: fls_a1rorkjt3vpc
    
    :glossary:
      :dp:`fls_ds0pspiqk4am`

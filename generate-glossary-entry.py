@@ -12,6 +12,7 @@ import sys
 
 
 DP_RE = re.compile(r":dp:`(?P<id>[^`]+)`")
+GLOSSARY_DP_RE = re.compile(r"^fls_[A-Za-z0-9]+$")
 
 DIRECTIVE_INDENT = 3
 CONTENT_INDENT = 5
@@ -20,6 +21,7 @@ CONTENT_INDENT = 5
 @dataclass
 class GlossaryStaticEntry:
     term: str
+    glossary_dp: str
     body_lines: list[str]
 
 
@@ -28,6 +30,7 @@ class EntryHeader:
     start: int
     term: str
     header_end: int
+    glossary_dp: str
 
 
 def main() -> int:
@@ -38,8 +41,12 @@ def main() -> int:
     parser.add_argument("--repo-root", default=".", help="Repo root directory")
     parser.add_argument(
         "--glossary",
-        default="src/glossary.static.rst.inc",
+        default="src/glossary.rst.inc",
         help="Static glossary file",
+    )
+    parser.add_argument(
+        "--glossary-dp",
+        help="Glossary :glossary-dp: id (fls_ + [A-Za-z0-9]+)",
     )
     parser.add_argument(
         "--glossary-line",
@@ -83,7 +90,18 @@ def main() -> int:
     repo_root = Path(args.repo_root).resolve()
     glossary_path = repo_root / args.glossary
 
+    needs_static = not has_manual_lines(
+        args.glossary_line, args.glossary_text_file, args.glossary_stdin
+    ) or args.glossary_dp is None
+    static_entries = None
+    if needs_static:
+        if not glossary_path.is_file():
+            print(f"error: missing glossary file at {glossary_path}", file=sys.stderr)
+            return 1
+        static_entries = parse_glossary_static(glossary_path)
+
     glossary_lines = resolve_block_lines(
+        static_entries,
         glossary_path,
         args.term,
         args.glossary_line,
@@ -94,6 +112,8 @@ def main() -> int:
         print("error: glossary lines are empty", file=sys.stderr)
         return 1
 
+    glossary_dp = resolve_glossary_dp(args.glossary_dp, args.term, static_entries)
+
     chapter_lines = resolve_chapter_lines(
         repo_root,
         args.chapter_file,
@@ -103,12 +123,13 @@ def main() -> int:
         args.chapter_stdin,
     )
 
-    output_lines = render_entry(args.term, glossary_lines, chapter_lines)
+    output_lines = render_entry(args.term, glossary_dp, glossary_lines, chapter_lines)
     print("\n".join(output_lines))
     return 0
 
 
 def resolve_block_lines(
+    static_entries: dict[str, GlossaryStaticEntry] | None,
     glossary_path: Path,
     term: str,
     line_args: list[str],
@@ -119,16 +140,46 @@ def resolve_block_lines(
     if manual_lines is not None:
         return trim_trailing_blanks(manual_lines)
 
-    if not glossary_path.is_file():
+    if static_entries is None:
         print(f"error: missing glossary file at {glossary_path}", file=sys.stderr)
         raise SystemExit(1)
-
-    entries = parse_glossary_static(glossary_path)
-    entry = entries.get(term)
+    entry = static_entries.get(term)
     if entry is None:
         print(f"error: term not found in glossary: {term}", file=sys.stderr)
         raise SystemExit(1)
     return trim_trailing_blanks(entry.body_lines)
+
+
+def has_manual_lines(line_args: list[str], text_file: str | None, stdin_flag: bool) -> bool:
+    return bool(line_args) or bool(text_file) or stdin_flag
+
+
+def resolve_glossary_dp(
+    glossary_dp: str | None,
+    term: str,
+    static_entries: dict[str, GlossaryStaticEntry] | None,
+) -> str:
+    if glossary_dp is not None:
+        glossary_dp = glossary_dp.strip()
+        if not glossary_dp:
+            print("error: --glossary-dp requires a value", file=sys.stderr)
+            raise SystemExit(1)
+        if not GLOSSARY_DP_RE.fullmatch(glossary_dp):
+            print(
+                "error: --glossary-dp must match fls_ + [A-Za-z0-9]+",
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
+        return glossary_dp
+
+    if static_entries is None:
+        print("error: --glossary-dp is required without a static glossary", file=sys.stderr)
+        raise SystemExit(1)
+    entry = static_entries.get(term)
+    if entry is None:
+        print(f"error: term not found in glossary: {term}", file=sys.stderr)
+        raise SystemExit(1)
+    return entry.glossary_dp
 
 
 def resolve_chapter_lines(
@@ -189,9 +240,16 @@ def load_manual_lines(
 
 
 def render_entry(
-    term: str, glossary_lines: list[str], chapter_lines: list[str] | None
+    term: str,
+    glossary_dp: str,
+    glossary_lines: list[str],
+    chapter_lines: list[str] | None,
 ) -> list[str]:
-    output: list[str] = [f".. glossary-entry:: {term}", " " * DIRECTIVE_INDENT]
+    output: list[str] = [
+        f".. glossary-entry:: {term}",
+        " " * DIRECTIVE_INDENT + f":glossary-dp: {glossary_dp}",
+        " " * DIRECTIVE_INDENT,
+    ]
     output.append(" " * DIRECTIVE_INDENT + ":glossary:")
     output.extend(indent_block(glossary_lines, CONTENT_INDENT))
     if chapter_lines is not None:
@@ -256,16 +314,35 @@ def parse_glossary_static(path: Path) -> dict[str, GlossaryStaticEntry]:
             headers.append(header)
 
     entries: dict[str, GlossaryStaticEntry] = {}
+    glossary_dps: set[str] = set()
     for pos, header in enumerate(headers):
         next_start = headers[pos + 1].start if pos + 1 < len(headers) else len(lines)
         body_lines = trim_trailing_blanks(lines[header.header_end:next_start])
-        entries[header.term] = GlossaryStaticEntry(term=header.term, body_lines=body_lines)
+        if header.term in entries:
+            print(f"error: duplicate term in glossary: {header.term}", file=sys.stderr)
+            raise SystemExit(1)
+        if header.glossary_dp in glossary_dps:
+            print(
+                f"error: duplicate glossary anchor in glossary: {header.glossary_dp}",
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
+        glossary_dps.add(header.glossary_dp)
+        entries[header.term] = GlossaryStaticEntry(
+            term=header.term,
+            glossary_dp=header.glossary_dp,
+            body_lines=body_lines,
+        )
     return entries
 
 
 def parse_entry_header(lines: list[str], index: int) -> EntryHeader | None:
     line = lines[index]
     if not line.startswith(".. _fls_"):
+        return None
+
+    anchor = line.strip().removeprefix(".. _").removesuffix(":")
+    if not anchor:
         return None
 
     cursor = index + 1
@@ -283,7 +360,12 @@ def parse_entry_header(lines: list[str], index: int) -> EntryHeader | None:
     if header_end < len(lines) and lines[header_end].strip() == "":
         header_end += 1
 
-    return EntryHeader(start=index, term=title.strip(), header_end=header_end)
+    return EntryHeader(
+        start=index,
+        term=title.strip(),
+        header_end=header_end,
+        glossary_dp=anchor,
+    )
 
 
 def is_caret_underline(line: str) -> bool:

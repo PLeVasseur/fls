@@ -560,7 +560,6 @@ async closure type
 An :dt:`async closure type` is a unique anonymous :t:`function type` that encapsulates
 all :t:`[capture target]s` of a :t:`closure expression` producing a :std:`core::future::Future`.
 
-
 .. _fls_lYrTaCM1LcXU:
 
 async control flow boundary
@@ -1057,7 +1056,7 @@ C representation
 :dt:`C representation` is a :t:`type representation` that lays out :t:`[type]s`
 such that they are interoperable with the :t:`C` language.
 
-.. _fls_fls_J0xUy4Mcxoe6:
+.. _fls_J0xUy4Mcxoe6:
 
 C signed int type
 ^^^^^^^^^^^^^^^^^
@@ -1120,7 +1119,6 @@ call resolution
 :dp:`fls_fS1ZjGGypvbn`
 :dt:`Call resolution` is a kind of :t:`resolution` that applies to a
 :t:`call expression`.
-
 
 .. _fls_AK8mL1LeftO0:
 
@@ -2178,7 +2176,7 @@ An :dt:`exported function` is an export of a :t:`function`.
 .. _fls_zkq5ZkJwsyoD:
 
 exported static
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 :dp:`fls_aolCSvb349ZU`
 An :dt:`exported static` is an export of a :t:`static`.
@@ -3006,7 +3004,6 @@ immutable place expression
 An :dt:`immutable place expression` is a :t:`place expression` whose memory
 location cannot be modified.
 
-
 .. _fls_O0924m8mSfIa:
 
 immutable place expression context
@@ -3557,7 +3554,6 @@ irrefutable constant
 An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
-
 .. _fls_ckz7pujdnuo5:
 
 irrefutable pattern
@@ -3738,7 +3734,6 @@ tests for a less-than-or-equals relationship.
 :dp:`fls_ft5aeo4ilgwc`
 See :s:`LessThanOrEqualsExpression`.
 
-
 .. _fls_DdZ1ZwjLZTeG:
 
 let binding
@@ -3867,7 +3862,6 @@ lifetime variable
 :dp:`fls_ucZnCBWxXl6n`
 A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
 stand in for an undetermined :t:`lifetime` of a :t:`type`.
-
 
 .. _fls_8qputmx0i7ku:
 
@@ -4718,7 +4712,6 @@ opt-out trait bound
 :dp:`fls_wS4EzN0N1GDP`
 An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
 that nullifies an implicitly added :t:`trait bound`.
-
 
 .. _fls_LnPDQW3bnNUw:
 
@@ -6480,7 +6473,6 @@ A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 
 :dp:`fls_dhlww4yrnb2v`
 See :s:`StructDeclaration`.
-
 
 .. _fls_GOnQHAsYw1oi:
 

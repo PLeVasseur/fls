@@ -15,6 +15,7 @@ without :t:`[data race]s`, whose rules are presented in this chapter.
 .. rubric:: Legality Rules
 
 .. glossary-entry:: data race
+   :glossary-dp: fls_9meaofgcpvx6
    
    :glossary:
      :dp:`fls_v2s1b57e3r7n`
@@ -44,6 +45,7 @@ The Rust programming language provides the :std:`core::marker::Send` and
 :t:`type` level.
 
 .. glossary-entry:: send type
+   :glossary-dp: fls_8spw41g0dbqw
    
    :glossary:
      :dp:`fls_qfkng98dw6yy`
@@ -64,6 +66,7 @@ A :t:`send type` shall have :t:`[value]s` that are safe to transfer across
 thread boundaries.
 
 .. glossary-entry:: sync type
+   :glossary-dp: fls_r4eoz3ohvpdi
    
    :glossary:
      :dp:`fls_rpc0c8qx3nbo`
@@ -91,12 +94,14 @@ Atomics
 .. rubric:: Legality Rules
 
 .. glossary-entry:: atomic
+   :glossary-dp: fls_yikjq8yn3nnh
    
    :glossary:
      :dp:`fls_9xd3m2qvqzk`
      See :t:`atomic type`.
 
 .. glossary-entry:: atomic type
+   :glossary-dp: fls_197vnaw2zbnc
    
    :glossary:
      :dp:`fls_cycpv4fopgx2`
@@ -165,6 +170,7 @@ The Rust programming language provides asynchronous computation through
 :t:`module` :std:`core::task` and the :std:`core::future::Future` :t:`trait`.
 
 .. glossary-entry:: future
+   :glossary-dp: fls_yxzpexco8ag3
    
    :glossary:
      :dp:`fls_pvigospl4n3g`

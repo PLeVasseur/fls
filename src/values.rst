@@ -11,6 +11,7 @@ Values
 .. rubric:: Legality Rules
 
 .. glossary-entry:: value
+   :glossary-dp: fls_tg866bc926ms
    
    :glossary:
      :dp:`fls_h8jn338b51yu`
@@ -22,6 +23,7 @@ Values
      be stored in a memory location, and interpreted based on some :t:`type`.
 
 .. glossary-entry:: immutable
+   :glossary-dp: fls_xiocbknerufq
    
    :glossary:
      :dp:`fls_sttdfynyqr5h`
@@ -39,6 +41,7 @@ An :t:`[allocated object]s` :dt:`memory size` is the number of bytes the object
 spans in memory from its :t:`base address`.
 
 .. glossary-entry:: overlap
+   :glossary-dp: fls_nhamq7xtz384
    
    :glossary:
      :dp:`fls_itkz9y19923k`
@@ -63,6 +66,7 @@ spans in memory from its :t:`base address`.
        Both :t:`[value]s` are elements of the same :t:`array`.
 
 .. glossary-entry:: null
+   :glossary-dp: fls_gqw1bzwexxt0
    
    :glossary:
      :dp:`fls_8sh17t37b2ml`
@@ -106,6 +110,7 @@ Constants
 .. rubric:: Legality Rules
 
 .. glossary-entry:: constant
+   :glossary-dp: fls_yw57di94gwpf
    
    :glossary:
      :dp:`fls_p8rjw2qok85b`
@@ -120,6 +125,7 @@ Constants
      the :t:`value`.
 
 .. glossary-entry:: unnamed constant
+   :glossary-dp: fls_u78ng1tleh0w
    
    :glossary:
      :dp:`fls_ufj01cxxsv1w`
@@ -139,6 +145,7 @@ The :t:`type` of a :t:`constant` shall implement the :std:`core::marker::Sized`
 :t:`trait`.
 
 .. glossary-entry:: constant initializer
+   :glossary-dp: fls_mf022jo05ziu
    
    :glossary:
      :dp:`fls_2ge48v1kmw8`
@@ -167,6 +174,7 @@ The value of a :t:`constant` is determined by evaluating its
 .. rubric:: Dynamic Semantics
 
 .. glossary-entry:: elaboration
+   :glossary-dp: fls_2sja3okj27ne
    
    :glossary:
      :dp:`fls_xoahzmwu1std`
@@ -204,6 +212,7 @@ Statics
 .. rubric:: Legality Rules
 
 .. glossary-entry:: static
+   :glossary-dp: fls_tpazbmuq9hag
    
    :glossary:
      :dp:`fls_srx4v1e20yxa`
@@ -233,6 +242,7 @@ The :t:`type` of a :t:`static` shall implement the :std:`core::marker::Sized`
 A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`external static` in an :t:`unsafe external block`.
 
 .. glossary-entry:: mutable static
+   :glossary-dp: fls_omgyj7yxwgua
    
    :glossary:
      :dp:`fls_3ss4bokujaby`
@@ -246,6 +256,7 @@ A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`extern
 Access to a :t:`mutable static` shall require :t:`unsafe context`.
 
 .. glossary-entry:: immutable static
+   :glossary-dp: fls_my7jjwi0ncen
    
    :glossary:
      :dp:`fls_eonlhz79ur3d`
@@ -259,6 +270,7 @@ The type of an :t:`immutable static` shall implement the
 :std:`core::marker::Sync` :t:`trait`.
 
 .. glossary-entry:: static initializer
+   :glossary-dp: fls_x331kxllyzim
    
    :glossary:
      :dp:`fls_6jjbfni87tax`
@@ -319,6 +331,7 @@ Temporaries
 .. rubric:: Legality Rules
 
 .. glossary-entry:: temporary
+   :glossary-dp: fls_4omay4i65dwz
    
    :glossary:
      :dp:`fls_fathkxu9kxvw`
@@ -337,6 +350,7 @@ Variables
 .. rubric:: Legality Rules
 
 .. glossary-entry:: variable
+   :glossary-dp: fls_donq6w1906lw
    
    :glossary:
      :dp:`fls_9ab12k4vwsio`
@@ -348,12 +362,14 @@ Variables
      stack.
 
 .. glossary-entry:: local variable
+   :glossary-dp: fls_lkxiws55xhpq
    
    :glossary:
      :dp:`fls_3inlcyi6444u`
      For :dt:`local variable`, see :t:`variable`.
 
 .. glossary-entry:: immutable variable
+   :glossary-dp: fls_8xrhfwgep3nk
    
    :glossary:
      :dp:`fls_sdg35i92taip`
@@ -361,6 +377,7 @@ Variables
      modified.
 
 .. glossary-entry:: mutable variable
+   :glossary-dp: fls_n7h4xr40xwgb
    
    :glossary:
      :dp:`fls_kjjv9jvdpf2o`
@@ -380,6 +397,7 @@ A :t:`variable` shall be used only after it has been initialized through all
 :t:`[reachable control flow path]s` up to the point of its usage.
 
 .. glossary-entry:: reachable control flow path
+   :glossary-dp: fls_sAe1HaaVSPvP
    
    :glossary:
      :dp:`fls_IxrvzuBg8j3E`
@@ -399,6 +417,7 @@ Constant Promotion
 .. rubric:: Legality Rules
 
 .. glossary-entry:: constant promotion
+   :glossary-dp: fls_f95c9hrk7t2p
    
    :glossary:
      :dp:`fls_ku2md8lnei12`

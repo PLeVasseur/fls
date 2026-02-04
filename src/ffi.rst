@@ -11,12 +11,14 @@ FFI
 .. rubric:: Legality Rules
 
 .. glossary-entry:: FFI
+   :glossary-dp: fls_qi21fdknzez6
    
    :glossary:
      :dp:`fls_z363fu89mj1c`
      For :dt:`FFI`, see :t:`Foreign Function Interface`.
 
 .. glossary-entry:: Foreign Function Interface
+   :glossary-dp: fls_fo7vyxs4l3yh
    
    :glossary:
      :dp:`fls_240yj1kym1kh`
@@ -66,12 +68,14 @@ ABI
 .. rubric:: Legality Rules
 
 .. glossary-entry:: ABI
+   :glossary-dp: fls_m98yg554tj9s
    
    :glossary:
      :dp:`fls_4ko8qcah0f9k`
      For :dt:`ABI`, see :t:`Application Binary Interface`.
 
 .. glossary-entry:: Application Binary Interface
+   :glossary-dp: fls_pcum2wpmgskk
    
    :glossary:
      :dp:`fls_ew4babc9467c`
@@ -86,6 +90,7 @@ ABI
      dictate how data and computation cross language boundaries.
 
 .. glossary-entry:: ABI kind
+   :glossary-dp: fls_g791aj7w5iz1
    
    :glossary:
      :dp:`fls_qo9itrt0n3h8`
@@ -216,6 +221,7 @@ External Blocks
 .. rubric:: Legality Rules
 
 .. glossary-entry:: external block
+   :glossary-dp: fls_9k6jcsljghab
    
    :glossary:
      :dp:`fls_z2ebcp7kjpuy`
@@ -230,6 +236,7 @@ External Blocks
      :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
 .. glossary-entry:: unsafe external block
+   :glossary-dp: fls_pre02nas9dad
    
    :glossary:
      :dp:`fls_pkfgas34msas`
@@ -270,6 +277,7 @@ External Functions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: external function
+   :glossary-dp: fls_8ffbgzkbsf9r
    
    :glossary:
      :dp:`fls_ngz5fqwrf86e`
@@ -311,6 +319,7 @@ External Statics
 .. rubric:: Legality Rules
 
 .. glossary-entry:: external static
+   :glossary-dp: fls_c89migfc2m6e
    
    :glossary:
      :dp:`fls_bqq6cncstzeg`

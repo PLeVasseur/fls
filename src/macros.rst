@@ -11,6 +11,7 @@ Macros
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro
+   :glossary-dp: fls_sdkcn1exc9da
    
    :glossary:
      :dp:`fls_bt16qi8g2js5`
@@ -32,6 +33,7 @@ Macros
        return a stream of :t:`[lexical element]s`.
 
 .. glossary-entry:: tokens
+   :glossary-dp: fls_ma3vs7yoj285
    
    :glossary:
      :dp:`fls_v23kqvyvscd7`
@@ -85,6 +87,7 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 .. glossary-entry:: declarative macro
+   :glossary-dp: fls_5944xn0lz8e
    
    :glossary:
      :dp:`fls_pe12lfffaoqt`
@@ -99,6 +102,7 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
      of syntactic transformation :t:`[macro rule]s`.
 
 .. glossary-entry:: macro rule
+   :glossary-dp: fls_gw31cagmzx26
    
    :glossary:
      :dp:`fls_7gfdqggs33id`
@@ -113,6 +117,7 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
      a :t:`macro transcriber`.
 
 .. glossary-entry:: macro matcher
+   :glossary-dp: fls_4h4snjd4thsv
    
    :glossary:
      :dp:`fls_sqncf88chnsy`
@@ -127,6 +132,7 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
      a :t:`macro` must match.
 
 .. glossary-entry:: macro match
+   :glossary-dp: fls_boanb1ipzc9
    
    :glossary:
      :dp:`fls_q0ve6nd287ta`
@@ -139,6 +145,7 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
      A :t:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
 
 .. glossary-entry:: macro transcriber
+   :glossary-dp: fls_76o6rjh6lrqd
    
    :glossary:
      :dp:`fls_ug79qf3p693h`
@@ -207,6 +214,7 @@ a particular kind and bind its :t:`value` to a name for use during
 :t:`macro transcription`.
 
 .. glossary-entry:: metavariable
+   :glossary-dp: fls_xo9uyazcfuq3
    
    :glossary:
      :dp:`fls_fu1esz5i9mt`
@@ -223,6 +231,7 @@ A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :t:`macro rule` of the :t:`macro matcher` it is declared in.
 
 .. glossary-entry:: fragment specifier
+   :glossary-dp: fls_pi7j0t7h1y86
    
    :glossary:
      :dp:`fls_6lhwep7ulpr0`
@@ -274,6 +283,7 @@ A :t:`metavariable` is visible in the :t:`macro transcriber` of the
   Any other kind may be followed by any token.
 
 .. glossary-entry:: metavariable indication
+   :glossary-dp: fls_5P2594jy7uDE
    
    :glossary:
      :dp:`fls_r1FxbWffC9Wt`
@@ -326,6 +336,7 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro repetition in matching
+   :glossary-dp: fls_a5j2hztrjfv5
    
    :glossary:
      :dp:`fls_wio0e9qzstjh`
@@ -340,6 +351,7 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
      zero or multiple times during :t:`macro matching`.
 
 .. glossary-entry:: macro repetition in transcription
+   :glossary-dp: fls_sqv126lwdz23
    
    :glossary:
      :dp:`fls_ex9vd3w0t4wo`
@@ -354,6 +366,7 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
      transcribed zero or multiple times during :t:`macro transcription`.
 
 .. glossary-entry:: macro repetition
+   :glossary-dp: fls_kddW7EirSn0g
    
    :glossary:
      :dp:`fls_sDomcFWIeUAT`
@@ -365,6 +378,7 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
      :t:`macro repetition in transcription`.
 
 .. glossary-entry:: repetition operator
+   :glossary-dp: fls_r2yjjhrvr9qi
    
    :glossary:
      :dp:`fls_67907pk7uogl`
@@ -438,6 +452,7 @@ Procedural Macros
 .. rubric:: Legality Rules
 
 .. glossary-entry:: procedural macro
+   :glossary-dp: fls_sp5wdsxwmxf
    
    :glossary:
      :dp:`fls_u4utpx4zgund`
@@ -454,6 +469,7 @@ Procedural Macros
 :t:`attribute` :c:`crate_type` where the type is ``proc-macro``.
 
 .. glossary-entry:: macro implementation function
+   :glossary-dp: fls_o5jy1u64nyiy
    
    :glossary:
      :dp:`fls_xy4t1suhrn46`
@@ -476,6 +492,7 @@ Function-like Macros
 .. rubric:: Legality Rules
 
 .. glossary-entry:: function-like macro
+   :glossary-dp: fls_gzybxk1gosm6
    
    :glossary:
      :dp:`fls_psnab9cuq4bu`
@@ -535,6 +552,7 @@ Derive Macros
 .. rubric:: Legality Rules
 
 .. glossary-entry:: derive macro
+   :glossary-dp: fls_7ipdj78o7ln
    
    :glossary:
      :dp:`fls_jrrjhl9hocrm`
@@ -605,6 +623,7 @@ Attribute Macros
 .. rubric:: Legality Rules
 
 .. glossary-entry:: attribute macro
+   :glossary-dp: fls_x1fafbpo0mlu
    
    :glossary:
      :dp:`fls_mtqr4d817ikn`
@@ -710,6 +729,7 @@ A :ds:`NonDelimitedToken` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro invocation
+   :glossary-dp: fls_20x9eqa7xeui
    
    :glossary:
      :dp:`fls_5qtwcp5ns5vz`
@@ -726,6 +746,7 @@ A :ds:`NonDelimitedToken` is any :t:`lexical element` in category
      result of the :t:`macro`.
 
 .. glossary-entry:: terminated macro invocation
+   :glossary-dp: fls_ef03n3ehz372
    
    :glossary:
      :dp:`fls_542es82wfzco`
@@ -795,6 +816,7 @@ Macro Expansion
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro expansion
+   :glossary-dp: fls_td4jm76u9m03
    
    :glossary:
      :dp:`fls_t383uo1l4h8x`
@@ -974,6 +996,7 @@ Macro Matching
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro matching
+   :glossary-dp: fls_ao7GhE0C8MQO
    
    :glossary:
      :dp:`fls_RrDmFXuZrhFT`
@@ -992,6 +1015,7 @@ Rule Matching
 .. rubric:: Legality Rules
 
 .. glossary-entry:: rule matching
+   :glossary-dp: fls_9u67noriaxfe
    
    :glossary:
      :dp:`fls_dux9js5oixjd`
@@ -1033,6 +1057,7 @@ Token Matching
 .. rubric:: Legality Rules
 
 .. glossary-entry:: token matching
+   :glossary-dp: fls_tzoko74t5t6n
    
    :glossary:
      :dp:`fls_a19q6lhvakcm`
@@ -1166,6 +1191,7 @@ Macro Transcription
 .. rubric:: Legality Rules
 
 .. glossary-entry:: macro transcription
+   :glossary-dp: fls_vdq3cphhpxmg
    
    :glossary:
      :dp:`fls_nouiggbpipg`
@@ -1305,6 +1331,7 @@ within them, which aims to eliminate the syntactic interference between a
 .. rubric:: Legality Rules
 
 .. glossary-entry:: hygiene
+   :glossary-dp: fls_GuMMjhEMMLvF
    
    :glossary:
      :dp:`fls_AQg0MqAQZqkz`
@@ -1313,12 +1340,14 @@ within them, which aims to eliminate the syntactic interference between a
      a :t:`macro` and its environment.
 
 .. glossary-entry:: hygienic
+   :glossary-dp: fls_95h0aWZ7xx6U
    
    :glossary:
      :dp:`fls_hiDddAkNH5Ms`
      An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
 
 .. glossary-entry:: unhygienic
+   :glossary-dp: fls_HpUSWMvNS5f4
    
    :glossary:
      :dp:`fls_0t4lFZLkNieR`
@@ -1329,6 +1358,7 @@ within them, which aims to eliminate the syntactic interference between a
 
 *
   .. glossary-entry:: definition site hygiene
+     :glossary-dp: fls_FrfnICpg81sr
      
      :glossary:
        :dp:`fls_2Y1Dpw5ZEqT3`
@@ -1346,6 +1376,7 @@ within them, which aims to eliminate the syntactic interference between a
 
 *
   .. glossary-entry:: call site hygiene
+     :glossary-dp: fls_AK8mL1LeftO0
      
      :glossary:
        :dp:`fls_YTQmXotFOXWU`
@@ -1362,6 +1393,7 @@ within them, which aims to eliminate the syntactic interference between a
 
 *
   .. glossary-entry:: mixed site hygiene
+     :glossary-dp: fls_2FFRdj5cO0ks
      
      :glossary:
        :dp:`fls_hjJpNmKiZxlT`
@@ -1377,6 +1409,7 @@ within them, which aims to eliminate the syntactic interference between a
          considered :dt:`partially hygienic`.
 
 .. glossary-entry:: partially hygienic
+   :glossary-dp: fls_fULM1oCKSakS
    
    :glossary:
      :dp:`fls_Qh8V0Y08dNoa`

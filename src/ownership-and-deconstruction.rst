@@ -16,6 +16,7 @@ Ownership
 .. rubric:: Legality Rules
 
 .. glossary-entry:: ownership
+   :glossary-dp: fls_1gmetz8qtr0l
    
    :glossary:
      :dp:`fls_tu4zt8twucsz`
@@ -27,6 +28,7 @@ Ownership
      management model of Rust.
 
 .. glossary-entry:: owner
+   :glossary-dp: fls_ke52l9lsvyu2
    
    :glossary:
      :dp:`fls_7vwwhberexeb`
@@ -103,6 +105,7 @@ References
 .. rubric:: Legality Rules
 
 .. glossary-entry:: reference
+   :glossary-dp: fls_onv3cs5tckgo
    
    :glossary:
      :dp:`fls_s82y4hsuytiq`
@@ -114,6 +117,7 @@ References
      certain scenarios.
 
 .. glossary-entry:: referent
+   :glossary-dp: fls_h8x0u32wfz8v
    
    :glossary:
      :dp:`fls_78ipj8avpwzl`
@@ -143,6 +147,7 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
 :t:`active`.
 
 .. glossary-entry:: immutable reference
+   :glossary-dp: fls_bhx0l676dmgc
    
    :glossary:
      :dp:`fls_u9kne5zfmhoe`
@@ -154,6 +159,7 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
      prevents the mutation of its :t:`referent`.
 
 .. glossary-entry:: mutable reference
+   :glossary-dp: fls_jtzj092hyjkz
    
    :glossary:
      :dp:`fls_wujjrhm1d338`
@@ -194,6 +200,7 @@ Borrowing
 .. rubric:: Legality Rules
 
 .. glossary-entry:: borrowing
+   :glossary-dp: fls_95c5cbc2jvpc
    
    :glossary:
      :dp:`fls_2epblwd2slp8`
@@ -205,6 +212,7 @@ Borrowing
      :t:`value` without transferring :t:`ownership` permanently.
 
 .. glossary-entry:: borrow
+   :glossary-dp: fls_7ef4c6ss7m6i
    
    :glossary:
      :dp:`fls_2tpbdddvrl2f`
@@ -214,6 +222,7 @@ Borrowing
      A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
 .. glossary-entry:: implicit borrow
+   :glossary-dp: fls_wa7t6cqgjksd
    
    :glossary:
      :dp:`fls_q2v9ejpcvtwg`
@@ -250,6 +259,7 @@ An :t:`implicit borrow` may be an :t:`immutable borrow` or a :t:`mutable borrow`
 if required.
 
 .. glossary-entry:: immutable borrow
+   :glossary-dp: fls_utucrvtzjhoc
    
    :glossary:
      :dp:`fls_p0abqkiuk7y9`
@@ -261,6 +271,7 @@ if required.
      :t:`borrowing`.
 
 .. glossary-entry:: mutable borrow
+   :glossary-dp: fls_iku91jwdtdr1
    
    :glossary:
      :dp:`fls_5knwbyz4fd9z`
@@ -332,6 +343,7 @@ Passing Conventions
 .. rubric:: Legality Rules
 
 .. glossary-entry:: passing convention
+   :glossary-dp: fls_wqbd5lxki2al
    
    :glossary:
      :dp:`fls_eqgsg8j9btic`
@@ -343,6 +355,7 @@ Passing Conventions
      transferred between :t:`[place]s`.
 
 .. glossary-entry:: copy type
+   :glossary-dp: fls_lnwxm6ffy15w
    
    :glossary:
      :dp:`fls_j7r33ecacyh`
@@ -359,6 +372,7 @@ A :t:`value` of a :t:`copy type` is :t:`passed <passing convention>`
 :t:`value`.
 
 .. glossary-entry:: move type
+   :glossary-dp: fls_gnucgrytswa4
    
    :glossary:
      :dp:`fls_ri37ez31gai8`
@@ -449,6 +463,7 @@ Destruction
 .. rubric:: Legality Rules
 
 .. glossary-entry:: destruction
+   :glossary-dp: fls_7b3fsp356e9l
    
    :glossary:
      :dp:`fls_58i2nfhxze3j`
@@ -467,6 +482,7 @@ Destructors
 .. rubric:: Legality Rules
 
 .. glossary-entry:: drop type
+   :glossary-dp: fls_4v6vsuw4g89l
    
    :glossary:
      :dp:`fls_ot3e31kwixil`
@@ -478,6 +494,7 @@ Destructors
      :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 .. glossary-entry:: destructor
+   :glossary-dp: fls_kwxpy451gtc
    
    :glossary:
      :dp:`fls_79pp7o1xooja`
@@ -537,6 +554,7 @@ An :t:`uninitialized` :t:`variable` is not :t:`dropped`.
    Otherwise, :t:`dropping` has no effect.
 
 .. glossary-entry:: dropping
+   :glossary-dp: fls_68cl4paduzx2
    
    :glossary:
      :dp:`fls_k4mguykh8ey`
@@ -579,6 +597,7 @@ Drop Scopes
 .. rubric:: Legality Rules
 
 .. glossary-entry:: drop scope
+   :glossary-dp: fls_foszri7hdym0
    
    :glossary:
      :dp:`fls_6bu8x0g9q0er`
@@ -592,6 +611,7 @@ Drop Scopes
      :t:`drop order`.
 
 .. glossary-entry:: drop construct
+   :glossary-dp: fls_nw0qr4xy3zxq
    
    :glossary:
      :dp:`fls_odg2asgj28m`
@@ -723,6 +743,7 @@ Drop Scope Extension
 .. rubric:: Legality Rules
 
 .. glossary-entry:: drop scope extension
+   :glossary-dp: fls_qp3ksd2lxm8
    
    :glossary:
      :dp:`fls_pmdh8kkrwkd0`
@@ -829,6 +850,7 @@ Drop Order
 .. rubric:: Legality Rules
 
 .. glossary-entry:: drop order
+   :glossary-dp: fls_j12e358828h
    
    :glossary:
      :dp:`fls_qddkiabu6swt`

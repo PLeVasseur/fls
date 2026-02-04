@@ -64,5 +64,6 @@ def setup(app):
         # Version history:
         # - 0: initial implementation
         # - 1: changed how informational sections and pages are stored
-        "env_version": "1",
+        # - 2: added glossary-dp metadata to glossary entries
+        "env_version": "2",
     }
