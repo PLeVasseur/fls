@@ -240,9 +240,16 @@ with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
      :dp:`fls_v2pGKVaQjtcl`
      A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
 
-:dp:`fls_joIQdDn44oIT`
-An :t:`identifier pattern` with :t:`keyword` ``ref`` is a
-:t:`reference identifier pattern`.
+.. glossary-entry:: reference identifier pattern
+   
+   :glossary:
+     :dp:`fls_jQs6oJ4RFBPN`
+     A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
+     :t:`keyword` ``ref``.
+   :chapter:
+     :dp:`fls_joIQdDn44oIT`
+     An :t:`identifier pattern` with :t:`keyword` ``ref`` is a
+     :t:`reference identifier pattern`.
 
 :dp:`fls_24c95c56tugl`
 The :t:`identifier pattern` enters its :t:`binding` into :t:`binding scope` in
@@ -775,9 +782,19 @@ Reference Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fhahcc1mz2qh`
-A :t:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
-is being matched.
+.. glossary-entry:: reference pattern
+   
+   :glossary:
+     :dp:`fls_ebshqnhmwgow`
+     A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer`
+     that is being matched.
+     
+     :dp:`fls_rghv5drrqxs1`
+     See :s:`ReferencePattern`.
+   :chapter:
+     :dp:`fls_fhahcc1mz2qh`
+     A :t:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
+     is being matched.
 
 :dp:`fls_x0bmzl1315gq`
 A :t:`reference pattern` is an :t:`irrefutable pattern` when its nested :t:`pattern` itself is an :t:`irrefutable pattern`.
@@ -1021,9 +1038,19 @@ Record Struct Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_g6dytd6aq62d`
-A :t:`record struct pattern` is a :t:`pattern` that matches a
-:t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
+.. glossary-entry:: record struct pattern
+   
+   :glossary:
+     :dp:`fls_q7njznxhmmw`
+     A :dt:`record struct pattern` is a :t:`pattern` that matches a
+     :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
+     
+     :dp:`fls_viwieu1p3hds`
+     See :s:`RecordStructPattern`.
+   :chapter:
+     :dp:`fls_g6dytd6aq62d`
+     A :t:`record struct pattern` is a :t:`pattern` that matches a
+     :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an

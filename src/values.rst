@@ -331,6 +331,13 @@ The following :t:`[construct]s` are :t:`[variable]s`:
 A :t:`variable` shall be used only after it has been initialized through all
 :t:`[reachable control flow path]s` up to the point of its usage.
 
+.. glossary-entry:: reachable control flow path
+   
+   :glossary:
+     :dp:`fls_IxrvzuBg8j3E`
+     A :dt:`reachable control flow path` is a control flow path that can be
+     taken by the execution of a program between two given points in the program.
+
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_g8etd5lsgn9j`

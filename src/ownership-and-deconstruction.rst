@@ -102,10 +102,16 @@ References
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7x9pi2o7pee7`
-A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
-can be obtained explicitly by using a :t:`borrow expression` or implicitly in
-certain scenarios.
+.. glossary-entry:: reference
+   
+   :glossary:
+     :dp:`fls_s82y4hsuytiq`
+     A :dt:`reference` is a :t:`value` of a :t:`reference type`.
+   :chapter:
+     :dp:`fls_7x9pi2o7pee7`
+     A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+     can be obtained explicitly by using a :t:`borrow expression` or implicitly in
+     certain scenarios.
 
 :dp:`fls_tsqvr3fmcel`
 A :t:`referent` is the :t:`value` pointed-to by a :t:`reference`.

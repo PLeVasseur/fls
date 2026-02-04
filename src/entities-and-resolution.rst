@@ -1587,9 +1587,15 @@ Method Resolution
      :t:`Method resolution` is a kind of :t:`resolution` that applies to a
      :t:`method call expression`.
 
-:dp:`fls_mbdS0xiNlj92`
-A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
-of a :t:`method call expression`.
+.. glossary-entry:: receiver type
+   
+   :glossary:
+     :dp:`fls_vgQmMlpFas5t`
+     A :dt:`receiver type` is the :t:`type` of a :t:`receiver operand`.
+   :chapter:
+     :dp:`fls_mbdS0xiNlj92`
+     A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
+     of a :t:`method call expression`.
 
 :dp:`fls_z80ylmlu1f3q`
 A :dt:`candidate receiver type` is the :t:`type` of the :t:`receiver operand`

@@ -811,6 +811,13 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
      An :t:`enum variant` is a :t:`construct` that declares one of the
      possible variations of an :t:`enum`.
 
+.. glossary-entry:: record enum variant
+   
+   :glossary:
+     :dp:`fls_NWyvPQmOIjo2`
+     A :dt:`record enum variant` is an :t:`enum variant` with a
+     :s:`RecordStructFieldList`.
+
 .. glossary-entry:: enum field
    
    :glossary:
@@ -957,6 +964,36 @@ Struct Types
 
    UnitStructDeclaration ::=
        $$struct$$ Name GenericParameterList? WhereClause? $$;$$
+
+.. glossary-entry:: record struct
+   
+   :glossary:
+     :dp:`fls_qyd7kqnpjs2`
+     A :dt:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+     
+     :dp:`fls_rqs5rdnhkwnx`
+     See :s:`RecordStructDeclaration`.
+
+.. glossary-entry:: record struct type
+   
+   :glossary:
+     :dp:`fls_mgrz3o51gbis`
+     A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
+
+.. glossary-entry:: record struct field
+   
+   :glossary:
+     :dp:`fls_lb0t10evec6z`
+     A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+     
+     :dp:`fls_bjwmhxf3ae14`
+     See :s:`RecordStructField`.
+
+.. glossary-entry:: record struct value
+   
+   :glossary:
+     :dp:`fls_SMBIc0JMck1H`
+     A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
 .. rubric:: Legality Rules
 
@@ -1294,8 +1331,24 @@ Raw Pointer Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_rpbhr0xukbx9`
-A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+.. glossary-entry:: raw pointer
+   
+   :glossary:
+     :dp:`fls_rbdilcmt2cns`
+     A :dt:`raw pointer` is a pointer of a :t:`raw pointer type`.
+
+.. glossary-entry:: raw pointer type
+   
+   :glossary:
+     :dp:`fls_wspawcoqxfbh`
+     A :dt:`raw pointer type` is an :t:`indirection type` without safety and
+     liveness guarantees.
+     
+     :dp:`fls_ctksliaxhzo9`
+     See :s:`RawPointerTypeSpecification`.
+   :chapter:
+     :dp:`fls_rpbhr0xukbx9`
+     A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 
 .. glossary-entry:: mutable raw pointer type
    
@@ -1348,8 +1401,17 @@ Reference Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_twhq24s8kchh`
-A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
+.. glossary-entry:: reference type
+   
+   :glossary:
+     :dp:`fls_l3knopsdlyf2`
+     A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
+     
+     :dp:`fls_jzjatdpxqt9u`
+     See :s:`ReferenceTypeSpecification`.
+   :chapter:
+     :dp:`fls_twhq24s8kchh`
+     A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
 :dp:`fls_w4NbA7WhZfR2`
 A :t:`shared reference type` is a :t:`reference type` not subject to
@@ -2159,10 +2221,17 @@ Recursive Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_z22std1crl49`
-A :t:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
-the containing :t:`type`, either directly or by referring to another :t:`type`
-which refers back to the original :t:`recursive type`.
+.. glossary-entry:: recursive type
+   
+   :glossary:
+     :dp:`fls_2t8qom6dhcjb`
+     A :dt:`recursive type` is a :t:`type` that may define other types within its
+     :t:`type specification`.
+   :chapter:
+     :dp:`fls_z22std1crl49`
+     A :t:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
+     the containing :t:`type`, either directly or by referring to another :t:`type`
+     which refers back to the original :t:`recursive type`.
 
 :dp:`fls_eddnwlr0rz59`
 A :t:`type` that is not an :t:`abstract data type` shall not be recursive.

@@ -1259,8 +1259,17 @@ Raw Borrow Expression
 
 .. rubric:: Legality Rules
 
-:dp:`fls_TS6DvMon5h27`
-A :t:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+.. glossary-entry:: raw borrow expression
+   
+   :glossary:
+     :dp:`fls_Fe39wLb0vvEg`
+     A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+     
+     :dp:`fls_I71jq8BGyLqi`
+     See :s:`RawBorrowExpression`.
+   :chapter:
+     :dp:`fls_TS6DvMon5h27`
+     A :t:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
 
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
@@ -4357,9 +4366,19 @@ Method Call Expressions
      A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
      of a :t:`variable`.
 
-:dp:`fls_jx3ryre0xs88`
-A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
-:t:`method` is being invoked by a :t:`method call expression`.
+.. glossary-entry:: receiver operand
+   
+   :glossary:
+     :dp:`fls_odbg4bizvqxq`
+     A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+     :t:`method` is being invoked by a :t:`method call expression`.
+     
+     :dp:`fls_4rme1x6romeg`
+     See :s:`ReceiverOperand`.
+   :chapter:
+     :dp:`fls_jx3ryre0xs88`
+     A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+     :t:`method` is being invoked by a :t:`method call expression`.
 
 .. glossary-entry:: method operand
    
@@ -5592,9 +5611,19 @@ The :t:`type` of a :t:`range-to expression` is :std:`core::ops::RangeTo`.
 The :t:`value` of a :t:`range-to expression` is
 ``core::ops::RangeTo { end: range_expression_high_bound }``.
 
-:dp:`fls_1gc436ee1nzm`
-A :t:`range-to-inclusive expression` is a :t:`range expression` that specifies
-an included :t:`range expression high bound`.
+.. glossary-entry:: range-to-inclusive expression
+   
+   :glossary:
+     :dp:`fls_t4fjanjvkd69`
+     A :dt:`range-to-inclusive expression` is a :t:`range expression` that specifies
+     an included :t:`range expression high bound`.
+     
+     :dp:`fls_krei7lc6lo8q`
+     See :s:`RangeToInclusiveExpression`.
+   :chapter:
+     :dp:`fls_1gc436ee1nzm`
+     A :t:`range-to-inclusive expression` is a :t:`range expression` that specifies
+     an included :t:`range expression high bound`.
 
 :dp:`fls_8sfjw83irpre`
 The :t:`type` of a :t:`range-to-inclusive expression` is

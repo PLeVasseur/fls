@@ -768,9 +768,19 @@ Raw Byte String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_yyw7nv651580`
-A :t:`raw byte string literal` is a :t:`simple byte string literal` that does not
-recognize :t:`[escaped character]s`.
+.. glossary-entry:: raw byte string literal
+   
+   :glossary:
+     :dp:`fls_8v5k3wemy4tl`
+     A :dt:`raw byte string literal` is a :t:`simple byte string literal` that does
+     not recognize :t:`[escaped character]s`.
+     
+     :dp:`fls_5x71i3ay3na2`
+     See :s:`RawByteStringLiteral`.
+   :chapter:
+     :dp:`fls_yyw7nv651580`
+     A :t:`raw byte string literal` is a :t:`simple byte string literal` that does not
+     recognize :t:`[escaped character]s`.
 
 :dp:`fls_5ybq0euwya42`
 The :t:`type` of a :t:`raw byte string literal` of size ``N`` is ``&'static
@@ -885,9 +895,19 @@ Raw C String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_gLrei65i8Uzq`
-A :t:`raw c string literal` is a :t:`simple c string literal` that does not
-recognize :t:`[escaped character]s`.
+.. glossary-entry:: raw c string literal
+   
+   :glossary:
+     :dp:`fls_qhWBzqoYZL0e`
+     A :dt:`raw c string literal` is a :t:`simple c string literal` that does not
+     recognize :t:`[escaped character]s`.
+     
+     :dp:`fls_WpFJyq6q4k6E`
+     See :s:`RawCStringLiteral`.
+   :chapter:
+     :dp:`fls_gLrei65i8Uzq`
+     A :t:`raw c string literal` is a :t:`simple c string literal` that does not
+     recognize :t:`[escaped character]s`.
 
 :dp:`fls_9nJHsg9dCi66`
 The :t:`type` of a :t:`simple string literal` is :std:`&'static
@@ -1416,9 +1436,19 @@ Raw String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_36suwhbwmq1t`
-A :t:`raw string literal` is a :t:`simple string literal` that does not
-recognize :t:`[escaped character]s`.
+.. glossary-entry:: raw string literal
+   
+   :glossary:
+     :dp:`fls_48t4v316951j`
+     A :dt:`raw string literal` is a :t:`simple string literal` that does not
+     recognize :t:`[escaped character]s`.
+     
+     :dp:`fls_26ol7lrnux94`
+     See :s:`RawStringLiteral`.
+   :chapter:
+     :dp:`fls_36suwhbwmq1t`
+     A :t:`raw string literal` is a :t:`simple string literal` that does not
+     recognize :t:`[escaped character]s`.
 
 :dp:`fls_ms43w1towz40`
 The :t:`type` of a :t:`raw string literal` is ``&'static str``.
