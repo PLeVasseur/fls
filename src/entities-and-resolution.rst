@@ -179,10 +179,18 @@ which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
 :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
-:dp:`fls_knjruq5wppv`
-:t:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
-to be referred to only by the current :t:`module` of the :t:`entity`, and its
-descendant :t:`[module]s`.
+.. glossary-entry:: private visibility
+   
+   :glossary:
+     :dp:`fls_duop22hyaweq`
+     :dt:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
+     to be referred to only by the current :t:`module` of the :t:`entity`, and its
+     descendant :t:`[module]s`.
+   :chapter:
+     :dp:`fls_knjruq5wppv`
+     :t:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
+     to be referred to only by the current :t:`module` of the :t:`entity`, and its
+     descendant :t:`[module]s`.
 
 :dp:`fls_t7i4n19qdgn4`
 A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
@@ -1055,12 +1063,31 @@ Preludes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_po4gw6t2ptwu`
-A :t:`prelude` is a collection of :t:`entities <entity>` that are automatically
-brought :t:`in scope` of every :t:`module` in a :t:`crate`. Such
-:t:`entities <entity>` are referred to as
-:t:`prelude entities <prelude entity>`. The :t:`name` of a :t:`prelude entity`
-is referred to as a :t:`prelude name`.
+.. glossary-entry:: prelude
+   
+   :glossary:
+     :dp:`fls_D0PJioOZjKNN`
+     A :dt:`prelude` is a collection of :t:`entities <entity>` that are
+     automatically brought :t:`in scope` of every :t:`module` in a :t:`crate`.
+   :chapter:
+     :dp:`fls_po4gw6t2ptwu`
+     A :t:`prelude` is a collection of :t:`entities <entity>` that are automatically
+     brought :t:`in scope` of every :t:`module` in a :t:`crate`. Such
+     :t:`entities <entity>` are referred to as
+     :t:`prelude entities <prelude entity>`. The :t:`name` of a :t:`prelude entity`
+     is referred to as a :t:`prelude name`.
+
+.. glossary-entry:: prelude entity
+   
+   :glossary:
+     :dp:`fls_2lU7RUjzFlsz`
+     A :dt:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
+
+.. glossary-entry:: prelude name
+   
+   :glossary:
+     :dp:`fls_6Jk7fUAK122A`
+     A :dt:`prelude name` is a :t:`name` of a :t:`prelude entity`.
 
 :dp:`fls_n4102qskkmz2`
 The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every

@@ -37,9 +37,19 @@ Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_imegtsi224ts`
-A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
-the criteria of the :t:`pattern`.
+.. glossary-entry:: pattern
+   
+   :glossary:
+     :dp:`fls_9wwt9k1xlm6n`
+     A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies
+     all the criteria of the pattern.
+     
+     :dp:`fls_9va04w9jgdyp`
+     See :s:`Pattern`.
+   :chapter:
+     :dp:`fls_imegtsi224ts`
+     A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
+     the criteria of the :t:`pattern`.
 
 .. glossary-entry:: or-pattern
    
@@ -53,12 +63,31 @@ the criteria of the :t:`pattern`.
      :dp:`fls_VQMmveZUfNTn`
      An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
-:dp:`fls_mp6i4blzexnu`
-A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+.. glossary-entry:: pattern-without-alternation
+   
+   :glossary:
+     :dp:`fls_brussjs3wo6r`
+     A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+     
+     :dp:`fls_fmysn3eezr54`
+     See :s:`PatternWithoutAlternation`.
+   :chapter:
+     :dp:`fls_mp6i4blzexnu`
+     A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
-:dp:`fls_JJ1fJa1SsaWh`
-A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
-excludes :t:`[range pattern]s`.
+.. glossary-entry:: pattern-without-range
+   
+   :glossary:
+     :dp:`fls_LSEOvAwUM7g6`
+     A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
+     excludes :t:`[range pattern]s`.
+     
+     :dp:`fls_Rj8ir4k0K811`
+     See :s:`PatternWithoutRange`.
+   :chapter:
+     :dp:`fls_JJ1fJa1SsaWh`
+     A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
+     excludes :t:`[range pattern]s`.
 
 :dp:`fls_6xx34zr069bj`
 A :t:`subpattern` is a :t:`pattern` nested within another pattern.
@@ -1490,8 +1519,14 @@ follows:
 Pattern Matching
 ----------------
 
-:dp:`fls_zv73CR8rplIa`
-:dt:`Pattern matching` is the process of matching a :t:`pattern` against a :t:`value`.
+.. glossary-entry:: pattern matching
+   
+   :glossary:
+     :dp:`fls_y3oputy9e0sz`
+     :t:`Pattern matching` is the process of matching a :t:`pattern` against a :t:`value`.
+   :chapter:
+     :dp:`fls_zv73CR8rplIa`
+     :dt:`Pattern matching` is the process of matching a :t:`pattern` against a :t:`value`.
 
 .. rubric:: Legality Rules
 

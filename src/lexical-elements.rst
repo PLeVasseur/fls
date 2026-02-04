@@ -39,6 +39,13 @@ character to that cell.
      In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
      character.
 
+.. glossary-entry:: plane
+   
+   :glossary:
+     :dp:`fls_x1wbguoqdsf9`
+     In :t:`Unicode`, a :dt:`plane` is a continuous group of 65,536
+     :t:`[code point]s`.
+
 :dp:`fls_pvslhm3chtlb`
 A :dt:`whitespace character` is one of the following characters:
 

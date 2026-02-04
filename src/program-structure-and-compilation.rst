@@ -198,8 +198,16 @@ crate`'s :t:`program entry point`.
      A :t:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
      ``staticlib``, ``dylib``, or ``cdylib``.
 
-:dp:`fls_Mf62VqAhoZ3c`
-A :t:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
+.. glossary-entry:: proc-macro crate
+   
+   :glossary:
+     .. _fls_AjjdLZWiL9Tq:
+     
+     :dp:`fls_DfTszT1PjV7o`
+     A :dt:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
+   :chapter:
+     :dp:`fls_Mf62VqAhoZ3c`
+     A :t:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
 
 :dp:`fls_RJJmN4tP7j4m`
 A :t:`proc-macro crate` shall not declare :t:`[item]s` in its :t:`crate root

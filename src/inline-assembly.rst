@@ -702,9 +702,16 @@ A :t:`register argument` shall be used within an :t:`assembly instruction`.
      A :t:`named register argument` is a :t:`register argument` whose configuration
      is bound to an :t:`identifier`.
 
-:dp:`fls_sqs5to20p0te`
-A :t:`positional register argument` is a :t:`register argument` whose
-configuration is not bound to an :t:`identifier`.
+.. glossary-entry:: positional register argument
+   
+   :glossary:
+     :dp:`fls_GJd6i52P3KM3`
+     A :dt:`positional register argument` is a :t:`register argument` whose
+     configuration is not bound to an :t:`identifier`.
+   :chapter:
+     :dp:`fls_sqs5to20p0te`
+     A :t:`positional register argument` is a :t:`register argument` whose
+     configuration is not bound to an :t:`identifier`.
 
 :dp:`fls_dzlycyk24euk`
 A :t:`named register argument` shall appear after a

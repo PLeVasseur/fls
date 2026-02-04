@@ -485,9 +485,22 @@ Place Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_qbrcg3cl9td`
-A :t:`place expression` is an :t:`expression` that represents a memory
-location. The following :t:`[expression]s` are :t:`[place expression]s`:
+.. glossary-entry:: place
+   
+   :glossary:
+     :dp:`fls_uCTiUBWHMPY9`
+     A :dt:`place` is a location where a :t:`value` resides.
+
+.. glossary-entry:: place expression
+   
+   :glossary:
+     :dp:`fls_z6mgu2mk142r`
+     A :dt:`place expression` is an :t:`expression` that represents a memory
+     location.
+   :chapter:
+     :dp:`fls_qbrcg3cl9td`
+     A :t:`place expression` is an :t:`expression` that represents a memory
+     location. The following :t:`[expression]s` are :t:`[place expression]s`:
 
 * :dp:`fls_jpmhibm4omm7`
   :t:`[Dereference expression]s`,
@@ -566,9 +579,16 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
      location cannot be modified. All :t:`[place expression]s` that are not
      :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
-:dp:`fls_4vxi1ji93dxb`
-A :t:`place expression context` is a :t:`construct` that may evaluate its
-:t:`operand` as a memory location.
+.. glossary-entry:: place expression context
+   
+   :glossary:
+     :dp:`fls_fqcx8suiy5k`
+     A :dt:`place expression context` is a :t:`construct` that may evaluate its
+     operand as a memory location.
+   :chapter:
+     :dp:`fls_4vxi1ji93dxb`
+     A :t:`place expression context` is a :t:`construct` that may evaluate its
+     :t:`operand` as a memory location.
 
 :dp:`fls_fzsrdrHnndRd`
 The following :t:`[construct]s` are :t:`[place expression context]s`:
@@ -6139,9 +6159,16 @@ Expression Precedence
 Certain :t:`[expression]s` are subject to :t:`precedence` and
 :t:`associativity`.
 
-:dp:`fls_ya23jjg5wjl`
-:t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
-presence of other :t:`[expression]s`.
+.. glossary-entry:: precedence
+   
+   :glossary:
+     :dp:`fls_sz93844rqc4r`
+     :dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
+     presence of other expressions.
+   :chapter:
+     :dp:`fls_ya23jjg5wjl`
+     :t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
+     presence of other :t:`[expression]s`.
 
 .. glossary-entry:: associativity
    

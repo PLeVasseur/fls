@@ -1184,6 +1184,18 @@ Indirection Types
      An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
      locations.
 
+.. glossary-entry:: pointer
+   
+   :glossary:
+     :dp:`fls_DRjhMWo9mjoF`
+     A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
+
+.. glossary-entry:: pointer type
+   
+   :glossary:
+     :dp:`fls_F2dUxEa4nheL`
+     A :dt:`pointer type` is a :t:`type` whose values indicate memory locations.
+
 .. _fls_xztr1kebz8bo:
 
 Function Pointer Types
@@ -1507,8 +1519,14 @@ Trait Object Types
 A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is not known at compile time.
 
-:dp:`fls_eWac7zOda3lh`
-The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
+.. glossary-entry:: principal trait
+   
+   :glossary:
+     :dp:`fls_YtYOHoPaMPFX`
+     The :dt:`principal trait` of :t:`trait object type` is its first :t:`trait bound`.
+   :chapter:
+     :dp:`fls_eWac7zOda3lh`
+     The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
 :dp:`fls_9z8oleh0wdel`
 The :t:`principal trait` shall denote an :t:`object safe` :t:`trait`.
@@ -1941,11 +1959,18 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
      :dp:`fls_b005bktrkrxy`
      :t:`Default representation` makes no guarantees about the :t:`layout`.
 
-:dp:`fls_7plbkqlmed0r`
-:t:`Primitive representation` is the :t:`type representation` of individual
-:t:`[integer type]s`. :t:`Primitive representation` applies only to an
-:t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
-combine :t:`C representation` and :t:`primitive representation`.
+.. glossary-entry:: primitive representation
+   
+   :glossary:
+     :dp:`fls_bydly1rt63pf`
+     :dt:`Primitive representation` is the :t:`type representation` of
+     :t:`[integer type]s`.
+   :chapter:
+     :dp:`fls_7plbkqlmed0r`
+     :t:`Primitive representation` is the :t:`type representation` of individual
+     :t:`[integer type]s`. :t:`Primitive representation` applies only to an
+     :t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
+     combine :t:`C representation` and :t:`primitive representation`.
 
 :dp:`fls_ml4khttq3w5k`
 :t:`Transparent representation` applies only to an :t:`enum type` with a
