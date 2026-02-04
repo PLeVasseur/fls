@@ -216,9 +216,15 @@ A :t:`crate root module` is the root of the nested :t:`module` tree of a
 :dp:`fls_tk8tl2e0a34`
 A tool can define a :t:`crate root module` for a single :t:`crate`.
 
-:dp:`fls_bsyfxdk3ap1t`
-A :t:`compilation root` is an input to a compilation performed by a tool. A
-:t:`crate root module` is a :t:`compilation root`.
+.. glossary-entry:: compilation root
+   
+   :glossary:
+     :dp:`fls_stwsfyvov2fx`
+     A :dt:`compilation root` is an input to a compilation performed by a tool.
+   :chapter:
+     :dp:`fls_bsyfxdk3ap1t`
+     A :t:`compilation root` is an input to a compilation performed by a tool. A
+     :t:`crate root module` is a :t:`compilation root`.
 
 .. _fls_u1afezy1ye99:
 

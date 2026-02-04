@@ -32,6 +32,13 @@ A character is defined by this document for each cell in the coding space
 described by :t:`Unicode`, regardless of whether or not :t:`Unicode` allocates a
 character to that cell.
 
+.. glossary-entry:: code point
+   
+   :glossary:
+     :dp:`fls_6xw8jtiomc2n`
+     In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
+     character.
+
 :dp:`fls_pvslhm3chtlb`
 A :dt:`whitespace character` is one of the following characters:
 
@@ -1163,9 +1170,19 @@ the range of U+D800 and U+DFFF, inclusive.
 
 .. rubric:: Legality Rules
 
-:dp:`fls_vag2oy4q7d4n`
-A :t:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
-character.
+.. glossary-entry:: character literal
+   
+   :glossary:
+     :dp:`fls_8oah1cf8p0lb`
+     A :dt:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
+     character.
+     
+     :dp:`fls_sup0h5mvibzs`
+     See :s:`CharacterLiteral`.
+   :chapter:
+     :dp:`fls_vag2oy4q7d4n`
+     A :t:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
+     character.
 
 :dp:`fls_n8z6p6g564r2`
 The :t:`type` of a :t:`character literal` is :c:`char`.
@@ -1370,9 +1387,19 @@ Comments
 
 .. rubric:: Legality Rules
 
-:dp:`fls_8obn3dtzpe5f`
-A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
-explanation in program text.
+.. glossary-entry:: comment
+   
+   :glossary:
+     :dp:`fls_3xhoz9f7xy1t`
+     A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
+     explanation in program text.
+     
+     :dp:`fls_pi32rhfqghma`
+     See :s:`Comment`.
+   :chapter:
+     :dp:`fls_8obn3dtzpe5f`
+     A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
+     explanation in program text.
 
 .. glossary-entry:: block comment
    

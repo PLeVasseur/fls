@@ -1470,9 +1470,16 @@ Call Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ZjJ7y9r6QQMW`
-:t:`Call resolution` is a form of :t:`resolution` that applies to a
-:t:`call expression`.
+.. glossary-entry:: call resolution
+   
+   :glossary:
+     :dp:`fls_fS1ZjGGypvbn`
+     :dt:`Call resolution` is a kind of :t:`resolution` that applies to a
+     :t:`call expression`.
+   :chapter:
+     :dp:`fls_ZjJ7y9r6QQMW`
+     :t:`Call resolution` is a form of :t:`resolution` that applies to a
+     :t:`call expression`.
 
 :dp:`fls_zBSloU2Gjv7x`
 A :dt:`candidate callee type` is the :t:`type` of the :t:`call operand`

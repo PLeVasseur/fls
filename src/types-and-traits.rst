@@ -356,10 +356,16 @@ Char Type
 
 .. rubric:: Legality Rules
 
-:dp:`fls_vnwbs0exbwcn`
-:c:`Char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
-unsigned word in the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges
-of :t:`Unicode`.
+.. glossary-entry:: char
+   
+   :glossary:
+     :dp:`fls_vx0dss1yplw1`
+     :dc:`char` is a :t:`type` whose :t:`[value]s` denote :t:`Unicode` characters.
+   :chapter:
+     :dp:`fls_vnwbs0exbwcn`
+     :c:`Char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
+     unsigned word in the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges
+     of :t:`Unicode`.
 
 .. rubric:: Undefined Behavior
 
@@ -893,9 +899,16 @@ Closure Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bsykgnbatpmi`
-A :t:`closure type` is a unique anonymous :t:`function type` that encapsulates
-all :t:`[capture target]s` of a :t:`closure expression`.
+.. glossary-entry:: closure type
+   
+   :glossary:
+     :dp:`fls_wp4kues3nbvn`
+     A :dt:`closure type` is a unique anonymous :t:`function type` that encapsulates
+     all :t:`[capture target]s` of a :t:`closure expression`.
+   :chapter:
+     :dp:`fls_bsykgnbatpmi`
+     A :t:`closure type` is a unique anonymous :t:`function type` that encapsulates
+     all :t:`[capture target]s` of a :t:`closure expression`.
 
 :dp:`fls_zfj4l8bigdg0`
 A :t:`closure type` implements the :std:`core::ops::FnOnce` :t:`trait`.

@@ -1981,9 +1981,19 @@ Comparison Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_yzuceqx6nxwa`
-A :t:`comparison expression` is an :t:`expression` that compares the
-:t:`[value]s` of two :t:`[operand]s`.
+.. glossary-entry:: comparison expression
+   
+   :glossary:
+     :dp:`fls_394p7gdruvk7`
+     A :dt:`comparison expression` is an :t:`expression` that compares the
+     :t:`[value]s` of two :t:`[operand]s`.
+     
+     :dp:`fls_1jk0s7389mt0`
+     See :s:`ComparisonExpression`.
+   :chapter:
+     :dp:`fls_yzuceqx6nxwa`
+     A :t:`comparison expression` is an :t:`expression` that compares the
+     :t:`[value]s` of two :t:`[operand]s`.
 
 :dp:`fls_asfrqemqviad`
 A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
@@ -2254,9 +2264,16 @@ Type Cast Expressions
 A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
 
-:dp:`fls_99kvyh4puy57`
-:t:`Cast` or :t:`casting` is the process of changing the :t:`type` of an
-:t:`expression`.
+.. glossary-entry:: cast
+   
+   :glossary:
+     :dp:`fls_e5hvszhcrtmj`
+     :dt:`Cast` or :dt:`casting` is the process of changing the :t:`type` of an
+     :t:`expression`.
+   :chapter:
+     :dp:`fls_99kvyh4puy57`
+     :t:`Cast` or :t:`casting` is the process of changing the :t:`type` of an
+     :t:`expression`.
 
 :dp:`fls_a6midh2m0w0b`
 The ``TypeSpecificationWithoutBounds`` describes the :dt:`target type` of the
@@ -2740,6 +2757,12 @@ Compound Assignment Expressions
    :glossary:
      :dp:`fls_VJpCPVCuszs1`
      For :dt:`bit xor assignment`, see :t:`bit xor assignment expression`.
+
+.. glossary-entry:: compound assignment
+   
+   :glossary:
+     :dp:`fls_lGV9QvCmYGcH`
+     For :dt:`compound assignment`, see :t:`compound assignment expression`.
 
 .. rubric:: Legality Rules
 
@@ -3697,12 +3720,21 @@ Call Expressions
 A :t:`tuple struct call expression` is a :t:`call expression` where the
 :t:`call operand` resolves to a :t:`tuple struct`.
 
-:dp:`fls_4t6imtiw6kzt`
-A :t:`callee type` is either a :t:`function item type`, a
-:t:`function pointer type`, a :t:`tuple enum variant`, a
-:t:`tuple struct type`, or a :t:`type` that implements any of the
-:std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
-:t:`[trait]s`.
+.. glossary-entry:: callee type
+   
+   :glossary:
+     :dp:`fls_o21myf6wnnn6`
+     A :dt:`callee type` is either a :t:`function item type`, a
+     :t:`function pointer type`, a :t:`tuple struct type`, a :t:`tuple enum variant`
+     or a :t:`type` that implements any of the :std:`core::ops::Fn`,
+     :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce` :t:`[trait]s`.
+   :chapter:
+     :dp:`fls_4t6imtiw6kzt`
+     A :t:`callee type` is either a :t:`function item type`, a
+     :t:`function pointer type`, a :t:`tuple enum variant`, a
+     :t:`tuple struct type`, or a :t:`type` that implements any of the
+     :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
+     :t:`[trait]s`.
 
 :dp:`fls_bu6i3mcvnbin`
 The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
@@ -4032,9 +4064,19 @@ Closure Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2d141c9a0yui`
-A :t:`closure expression` is an :t:`expression` that defines a
-:t:`closure type` and constructs a value of that :t:`type`.
+.. glossary-entry:: closure expression
+   
+   :glossary:
+     :dp:`fls_x87rhn9ikz00`
+     A :dt:`closure expression` is an :t:`expression` that defines a
+     :t:`closure type` and constructs a value of that :t:`type`.
+     
+     :dp:`fls_psd18dkzplf6`
+     See :s:`ClosureExpression`.
+   :chapter:
+     :dp:`fls_2d141c9a0yui`
+     A :t:`closure expression` is an :t:`expression` that defines a
+     :t:`closure type` and constructs a value of that :t:`type`.
 
 .. glossary-entry:: async closure expression
    
@@ -4067,9 +4109,19 @@ The :t:`return type` of a :t:`closure type` is determined as follows:
 :dp:`fls_DSy7bPKGzyov`
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.
 
-:dp:`fls_srbl7ptknjyk`
-A :t:`closure body` is a :t:`construct` that represents the executable portion
-of a :t:`closure expression`.
+.. glossary-entry:: closure body
+   
+   :glossary:
+     :dp:`fls_vgnycw6dykwo`
+     A :dt:`closure body` is a :t:`construct` that represents the executable portion
+     of a :t:`closure expression`.
+     
+     :dp:`fls_zefhg4auut8d`
+     See :s:`ClosureBody`, :s:`ClosureBodyWithReturnType`.
+   :chapter:
+     :dp:`fls_srbl7ptknjyk`
+     A :t:`closure body` is a :t:`construct` that represents the executable portion
+     of a :t:`closure expression`.
 
 :dp:`fls_oey0ivaiu1l`
 A :t:`closure body` denotes a new :t:`control flow boundary`.
@@ -4077,10 +4129,21 @@ A :t:`closure body` denotes a new :t:`control flow boundary`.
 :dp:`fls_fg8lx0yyt6oq`
 A :t:`closure body` is subject to :t:`capturing`.
 
-:dp:`fls_c3rzwUxjmBMY`
-A :t:`closure parameter` is a :t:`construct` that yields a set of
-:t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
-site of a :t:`call expression` or a :t:`method call expression`.
+.. glossary-entry:: closure parameter
+   
+   :glossary:
+     :dp:`fls_yQBZHBLhPswn`
+     A :dt:`closure parameter` is a :t:`construct` that yields a set of
+     :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
+     site of a :t:`call expression` or a :t:`method call expression`.
+     
+     :dp:`fls_Dus3fBU3TwR4`
+     See :s:`ClosureParameter`.
+   :chapter:
+     :dp:`fls_c3rzwUxjmBMY`
+     A :t:`closure parameter` is a :t:`construct` that yields a set of
+     :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
+     site of a :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_81KOEXwps2HS`
 The :t:`type` of a :t:`closure parameter` is determined as follows:
@@ -5476,21 +5539,49 @@ Capturing
 
 .. rubric:: Legality Rules
 
-:dp:`fls_iamnzlm430ef`
-A :t:`capturing expression` is either an :t:`async block expression` or a
-:t:`closure expression`.
+.. glossary-entry:: capturing expression
+   
+   :glossary:
+     :dp:`fls_awtny282gtud`
+     A :dt:`capturing expression` is either an :t:`async block expression` or a
+     :t:`closure expression`.
+   :chapter:
+     :dp:`fls_iamnzlm430ef`
+     A :t:`capturing expression` is either an :t:`async block expression` or a
+     :t:`closure expression`.
 
-:dp:`fls_eca6tl7j0afx`
-A :t:`capture target` is either a :t:`variable` or a :t:`field` of a
-:t:`variable`.
+.. glossary-entry:: capture target
+   
+   :glossary:
+     :dp:`fls_xmhcp4x8wblz`
+     A :dt:`capture target` is either a :t:`binding` or a :t:`field` of a
+     :t:`binding`.
+   :chapter:
+     :dp:`fls_eca6tl7j0afx`
+     A :t:`capture target` is either a :t:`variable` or a :t:`field` of a
+     :t:`variable`.
 
-:dp:`fls_e70ywb8191h`
-The :t:`capturing environment` of a :t:`capturing expression` consists of the
-:t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
+.. glossary-entry:: capturing environment
+   
+   :glossary:
+     :dp:`fls_7br4azaay3wu`
+     The :dt:`capturing environment` of a :t:`capturing expression` consists of all
+     :t:`[capture target]s` that are defined outside the :t:`capturing expression`.
+   :chapter:
+     :dp:`fls_e70ywb8191h`
+     The :t:`capturing environment` of a :t:`capturing expression` consists of the
+     :t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
-:dp:`fls_1y2ttb466m9c`
-:t:`Capturing` is the process of saving the :t:`[capture target]s` of a
-:t:`[capturing expression]'s` :t:`capturing environment`.
+.. glossary-entry:: capturing
+   
+   :glossary:
+     :dp:`fls_4achbk2ewyyb`
+     :dt:`Capturing` is the process of saving the :t:`[capture target]s` of a
+     :t:`[capturing expression]'s` :t:`capturing environment`.
+   :chapter:
+     :dp:`fls_1y2ttb466m9c`
+     :t:`Capturing` is the process of saving the :t:`[capture target]s` of a
+     :t:`[capturing expression]'s` :t:`capturing environment`.
 
 :dp:`fls_ip81lt2mm940`
 A :t:`capture target` requires :t:`capturing` when it is used by
@@ -5498,8 +5589,14 @@ the :t:`capturing expression` and it is defined outside of the
 :t:`capturing expression`. Such a :t:`capture target` is said to be
 :dt:`captured`.
 
-:dp:`fls_y9n1i4hbq8sf`
-:t:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
+.. glossary-entry:: capture mode
+   
+   :glossary:
+     :dp:`fls_beer0d7wva1d`
+     :dt:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
+   :chapter:
+     :dp:`fls_y9n1i4hbq8sf`
+     :t:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
 
 :dp:`fls_O6WYL8AUyPje`
 A :t:`captured` :t:`capture target` with :t:`capture mode` :dt:`by value capture`

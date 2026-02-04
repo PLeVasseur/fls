@@ -1095,11 +1095,21 @@ within them, which aims to eliminate the syntactic interference between a
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
   environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
 
-* :dp:`fls_puqhytfzfsg6`
-  :t:`Call site hygiene`, which resolves to a :s:`MacroInvocation` site.
-  :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
-  of the :s:`MacroRulesDeclaration`, can reference the environment of the
-  :s:`MacroInvocation`, and are considered :t:`unhygienic`.
+*
+  .. glossary-entry:: call site hygiene
+     
+     :glossary:
+       :dp:`fls_YTQmXotFOXWU`
+       :dt:`Call site hygiene` is a type of :t:`hygiene` which resolves to the
+       :s:`MacroInvocation` site. :t:`[Identifier]s` with :t:`call site hygiene` can
+       reference the environment of the :s:`MacroRulesDeclaration`, can reference the
+       environment of the :s:`MacroInvocation`, and are considered :t:`unhygienic`.
+     :chapter:
+       * :dp:`fls_puqhytfzfsg6`
+         :t:`Call site hygiene`, which resolves to a :s:`MacroInvocation` site.
+         :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
+         of the :s:`MacroRulesDeclaration`, can reference the environment of the
+         :s:`MacroInvocation`, and are considered :t:`unhygienic`.
 
 * :dp:`fls_uyvnq88y9gk3`
   :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
