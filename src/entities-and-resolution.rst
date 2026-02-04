@@ -174,10 +174,18 @@ Visibility
 :t:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
 which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
-:dp:`fls_qo0itr5il1kk`
-:t:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
-to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
-:t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
+.. glossary-entry:: public visibility
+   
+   :glossary:
+     :dp:`fls_6cfxqtl921ko`
+     :dt:`Public visibility` is a kind of :t:`visibility` that allows a :t:`name`
+     to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
+     :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
+   :chapter:
+     :dp:`fls_qo0itr5il1kk`
+     :t:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
+     to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
+     :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
 .. glossary-entry:: private visibility
    
@@ -443,17 +451,38 @@ A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
 
-:dp:`fls_e65q3iz50j6a`
-A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
-:t:`qualified type`.
+.. glossary-entry:: qualifying trait
+   
+   :glossary:
+     :dp:`fls_zKY1dWBMrqXZ`
+     A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+     :t:`qualified type`.
+     
+     :dp:`fls_z6OeUWBnec90`
+     See :s:`QualifyingTrait`.
+   :chapter:
+     :dp:`fls_e65q3iz50j6a`
+     A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+     :t:`qualified type`.
 
 :dp:`fls_Ai1jN5a8h3Dz`
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
 
-:dp:`fls_ybv0tdu7dnj5`
-A :t:`qualified type` is a :t:`type` that is restricted to a set of
-:t:`[implementation]s` that exhibit :t:`implementation conformance` to a
-:t:`qualifying trait`.
+.. glossary-entry:: qualified type
+   
+   :glossary:
+     :dp:`fls_e7YyZXOFo6ei`
+     A :dt:`qualified type` is a :t:`type` that is restricted to a set of
+     :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
+     :t:`qualifying trait`.
+     
+     :dp:`fls_a4heXjzO3jem`
+     See :s:`QualifiedType`.
+   :chapter:
+     :dp:`fls_ybv0tdu7dnj5`
+     A :t:`qualified type` is a :t:`type` that is restricted to a set of
+     :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
+     :t:`qualifying trait`.
 
 :dp:`fls_qkYF2J7GVah8`
 A :t:`qualified type` shall resolve to a :t:`type`.
@@ -461,13 +490,33 @@ A :t:`qualified type` shall resolve to a :t:`type`.
 :dp:`fls_QjNQbQhUcRTT`
 A :t:`qualified type` shall implement its related :t:`qualifying trait`.
 
-:dp:`fls_7sm3206va03c`
-A :t:`qualified path expression` is a :t:`path expression` that resolves
-through a :t:`qualified type`.
+.. glossary-entry:: qualified path expression
+   
+   :glossary:
+     :dp:`fls_wKAS6FxqGmTf`
+     A :dt:`qualified path expression` is a :t:`path expression` that resolves
+     through a :t:`qualified type`.
+     
+     :dp:`fls_MXxJn64eJpC5`
+     See :s:`QualifiedPathExpression`.
+   :chapter:
+     :dp:`fls_7sm3206va03c`
+     A :t:`qualified path expression` is a :t:`path expression` that resolves
+     through a :t:`qualified type`.
 
-:dp:`fls_huynsyx13gsz`
-A :t:`qualified type path` is a :t:`type path` that resolves through a
-:t:`qualified type`.
+.. glossary-entry:: qualified type path
+   
+   :glossary:
+     :dp:`fls_S0QT9ib38i8E`
+     A :dt:`qualified type path` is a :t:`type path` that resolves through a
+     :t:`qualified type`.
+     
+     :dp:`fls_RR8fFLD7Rxlt`
+     See :s:`QualifiedTypePath`.
+   :chapter:
+     :dp:`fls_huynsyx13gsz`
+     A :t:`qualified type path` is a :t:`type path` that resolves through a
+     :t:`qualified type`.
 
 .. glossary-entry:: associated type projection
    

@@ -593,9 +593,19 @@ Range Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_okupyoav13rm`
-A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
-within a range.
+.. glossary-entry:: range pattern
+   
+   :glossary:
+     :dp:`fls_vf42zdyq23lc`
+     A :dt:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
+     within a range.
+     
+     :dp:`fls_r36uf3y2denr`
+     See ``RangePattern``.
+   :chapter:
+     :dp:`fls_okupyoav13rm`
+     A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
+     within a range.
 
 .. glossary-entry:: half-open range pattern
    
@@ -653,16 +663,46 @@ within a range.
      An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
      to express an :t:`inclusive range pattern`.
 
-:dp:`fls_vrpr6ttpfpal`
-A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
+.. glossary-entry:: range pattern bound
+   
+   :glossary:
+     :dp:`fls_l9xq96bjs4o2`
+     A :dt:`range pattern bound` is a constraint on the range of a
+     :t:`range pattern`.
+     
+     :dp:`fls_80736cs3axo4`
+     See :s:`RangePatternBound`.
+   :chapter:
+     :dp:`fls_vrpr6ttpfpal`
+     A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
 
-:dp:`fls_nk48gregn3me`
-A :t:`range pattern low bound` is a :t:`range pattern bound` that specifies the
-start of a range.
+.. glossary-entry:: range pattern low bound
+   
+   :glossary:
+     :dp:`fls_rt7q0msh3op4`
+     A :dt:`range pattern low bound` is a :t:`range pattern bound` that specifies
+     the start of a range.
+     
+     :dp:`fls_j695o93wsu3i`
+     See :s:`RangePatternLowBound`.
+   :chapter:
+     :dp:`fls_nk48gregn3me`
+     A :t:`range pattern low bound` is a :t:`range pattern bound` that specifies the
+     start of a range.
 
-:dp:`fls_83v1xqbebs58`
-A :t:`range pattern high bound` is a :t:`range pattern bound` that specifies the
-end of a range.
+.. glossary-entry:: range pattern high bound
+   
+   :glossary:
+     :dp:`fls_arp7y7yme7yp`
+     A :dt:`range pattern high bound` is a :t:`range pattern bound` that specifies
+     the end of a range.
+     
+     :dp:`fls_dnwqcswftw71`
+     See :s:`RangePatternHighBound`.
+   :chapter:
+     :dp:`fls_83v1xqbebs58`
+     A :t:`range pattern high bound` is a :t:`range pattern bound` that specifies the
+     end of a range.
 
 :dp:`fls_2hpuccwh2xml`
 A :t:`half-open range pattern` shall appear within a :t:`parenthesized pattern`

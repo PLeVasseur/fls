@@ -5432,8 +5432,17 @@ Range Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bi82rusji8g0`
-A :t:`range expression` is an :t:`expression` that constructs a range.
+.. glossary-entry:: range expression
+   
+   :glossary:
+     :dp:`fls_bffrbucfwu7`
+     A :dt:`range expression` is an :t:`expression` that constructs a range.
+     
+     :dp:`fls_1jk43yvxa8ks`
+     See :s:`RangeExpression`.
+   :chapter:
+     :dp:`fls_bi82rusji8g0`
+     A :t:`range expression` is an :t:`expression` that constructs a range.
 
 .. glossary-entry:: full range expression
    
@@ -5442,21 +5451,51 @@ A :t:`range expression` is an :t:`expression` that constructs a range.
      A :dt:`full range expression` is a :t:`range expression` that covers the full
      range of a :t:`type`.
 
-:dp:`fls_msyv4oyk5zp9`
-A :t:`range expression low bound` is an :t:`operand` that specifies the start of
-a range.
+.. glossary-entry:: range expression low bound
+   
+   :glossary:
+     :dp:`fls_t10o1p950u00`
+     A :dt:`range expression low bound` is an :t:`operand` that specifies the start
+     of a range.
+     
+     :dp:`fls_vmb2z7oh6gzm`
+     See :s:`RangeExpressionLowBound`.
+   :chapter:
+     :dp:`fls_msyv4oyk5zp9`
+     A :t:`range expression low bound` is an :t:`operand` that specifies the start of
+     a range.
 
-:dp:`fls_f648uuxxh4vk`
-A :t:`range expression high bound` is an :t:`operand` that specifies the end of
-a range.
+.. glossary-entry:: range expression high bound
+   
+   :glossary:
+     :dp:`fls_c70pj8w15nmc`
+     A :dt:`range expression high bound` is an :t:`operand` that specifies the end
+     of a range.
+     
+     :dp:`fls_yxem0ckicxav`
+     See :s:`RangeExpressionHighBound`.
+   :chapter:
+     :dp:`fls_f648uuxxh4vk`
+     A :t:`range expression high bound` is an :t:`operand` that specifies the end of
+     a range.
 
 :dp:`fls_9pl4629t54yq`
 If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
 :t:`[operand]s` shall be :t:`unifiable`.
 
-:dp:`fls_xaumwogwbv3g`
-A :t:`range-from expression` is a :t:`range expression` that specifies an
-included :t:`range expression low bound`.
+.. glossary-entry:: range-from expression
+   
+   :glossary:
+     :dp:`fls_6enyv2oa4abq`
+     A :dt:`range-from expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound`.
+     
+     :dp:`fls_e1smn0b478ik`
+     See :s:`RangeFromExpression`.
+   :chapter:
+     :dp:`fls_xaumwogwbv3g`
+     A :t:`range-from expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound`.
 
 :dp:`fls_exa2ufugnpgc`
 The :t:`type` of a :t:`range-from expression` is :std:`core::ops::RangeFrom`.
@@ -5465,10 +5504,21 @@ The :t:`type` of a :t:`range-from expression` is :std:`core::ops::RangeFrom`.
 The :t:`value` of a :t:`range-from expression` is
 ``core::ops::RangeFrom { start: range_expression_low_bound }``.
 
-:dp:`fls_ppustuqdji7b`
-A :t:`range-from-to expression` is a :t:`range expression` that specifies an
-included :t:`range expression low bound` and an excluded
-:t:`range expression high bound`.
+.. glossary-entry:: range-from-to expression
+   
+   :glossary:
+     :dp:`fls_nzf6y64jz83f`
+     A :dt:`range-from-to expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound` and an excluded
+     :t:`range expression high bound`.
+     
+     :dp:`fls_mjbxfjulryt`
+     See :s:`RangeFromToExpression`.
+   :chapter:
+     :dp:`fls_ppustuqdji7b`
+     A :t:`range-from-to expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound` and an excluded
+     :t:`range expression high bound`.
 
 :dp:`fls_ke2fpgodq84u`
 The :t:`type` of a :t:`range-from-to expression` is :std:`core::ops::Range`.
@@ -5477,9 +5527,19 @@ The :t:`type` of a :t:`range-from-to expression` is :std:`core::ops::Range`.
 The :t:`value` of a :t:`range-from-to expression` is
 ``core::ops::Range { start: range_expression_low_bound, end: range_expression_high_bound }``.
 
-:dp:`fls_x67xo25n0qlz`
-A :t:`range-full expression` is a :t:`range expression` that covers the whole
-range of a :t:`type`.
+.. glossary-entry:: range-full expression
+   
+   :glossary:
+     :dp:`fls_6mchm7kb7i41`
+     A :dt:`range-full expression` is a :t:`range expression` that covers the whole
+     range of a :t:`type`.
+     
+     :dp:`fls_u7kd8w5g2icd`
+     See :s:`RangeFullExpression`.
+   :chapter:
+     :dp:`fls_x67xo25n0qlz`
+     A :t:`range-full expression` is a :t:`range expression` that covers the whole
+     range of a :t:`type`.
 
 :dp:`fls_m6n0gvg3ct1b`
 The :t:`type` of a :t:`range-full expression` is :std:`core::ops::RangeFull`.
@@ -5487,10 +5547,21 @@ The :t:`type` of a :t:`range-full expression` is :std:`core::ops::RangeFull`.
 :dp:`fls_yvh5cdgzevni`
 The :t:`value` of a :t:`range-full expression` is ``core::ops::RangeFull {}``.
 
-:dp:`fls_lh9my7g8oflq`
-A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
-included :t:`range expression low bound` and an included
-:t:`range expression high bound`.
+.. glossary-entry:: range-inclusive expression
+   
+   :glossary:
+     :dp:`fls_9vja0wev84a7`
+     A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound` and an included
+     :t:`range expression high bound`.
+     
+     :dp:`fls_lpcsb8dtldk3`
+     See :s:`RangeInclusiveExpression`.
+   :chapter:
+     :dp:`fls_lh9my7g8oflq`
+     A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
+     included :t:`range expression low bound` and an included
+     :t:`range expression high bound`.
 
 :dp:`fls_livflk52xaj9`
 The :t:`type` of a :t:`range-inclusive expression` is
@@ -5500,9 +5571,19 @@ The :t:`type` of a :t:`range-inclusive expression` is
 The :t:`value` of a :t:`range-inclusive expression` is
 ``core::ops::RangeInclusive::new(range_expression_low_bound, range_expression_high_bound)``.
 
-:dp:`fls_5a1uivj19kob`
-A :t:`range-to expression` is a :t:`range expression` that specifies an excluded
-:t:`range expression high bound`.
+.. glossary-entry:: range-to expression
+   
+   :glossary:
+     :dp:`fls_urnfp1j9d5v4`
+     A :dt:`range-to expression` is a :t:`range expression` that specifies an
+     excluded :t:`range expression high bound`.
+     
+     :dp:`fls_lft9cd7h8cfv`
+     See :s:`RangeToExpression`.
+   :chapter:
+     :dp:`fls_5a1uivj19kob`
+     A :t:`range-to expression` is a :t:`range expression` that specifies an excluded
+     :t:`range expression high bound`.
 
 :dp:`fls_k611yoc8hk0n`
 The :t:`type` of a :t:`range-to expression` is :std:`core::ops::RangeTo`.
