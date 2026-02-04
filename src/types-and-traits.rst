@@ -723,6 +723,12 @@ Array Types
      A :dt:`fixed sized type` is a :t:`type` that implements the
      :std:`core::marker::Sized` :t:`trait`.
 
+.. glossary-entry:: zero-sized type
+   
+   :glossary:
+     :dp:`fls_rmd6pearrhr8`
+     A :dt:`zero-sized type` is a :t:`fixed sized type` with :t:`size` zero.
+
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
 
@@ -972,8 +978,15 @@ Enum Types
      An :t:`enum type` is an :t:`abstract data type` that contains
      :t:`[enum variant]s`.
 
-:dp:`fls_il9a1olqmu38`
-A :t:`zero-variant enum type` has no :t:`[value]s`.
+.. glossary-entry:: zero-variant enum type
+   
+   :glossary:
+     :dp:`fls_84gqz3vwi5mj`
+     A :dt:`zero-variant enum type` is an :t:`enum type` without any
+     :t:`[enum variant]s`.
+   :chapter:
+     :dp:`fls_il9a1olqmu38`
+     A :t:`zero-variant enum type` has no :t:`[value]s`.
 
 .. glossary-entry:: enum variant
    

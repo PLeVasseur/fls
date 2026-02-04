@@ -382,14 +382,34 @@ Where Clauses
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3nqb7p5ifvio`
-A :t:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
-:t:`[lifetime parameter]s` and :t:`[type]s` that have
-to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
+.. glossary-entry:: where clause
+   
+   :glossary:
+     :dp:`fls_prljyrhontzn`
+     A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+     :t:`[lifetime parameter]s` and :t:`[type parameter]s`.
+     
+     :dp:`fls_k32hnug33eo9`
+     See :s:`WhereClause`.
+   :chapter:
+     :dp:`fls_3nqb7p5ifvio`
+     A :t:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+     :t:`[lifetime parameter]s` and :t:`[type]s` that have
+     to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
-:dp:`fls_fhy4rsmmbvyy`
-A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
-:t:`type bound predicate`.
+.. glossary-entry:: where clause predicate
+   
+   :glossary:
+     :dp:`fls_0LACQVmZpDQF`
+     A :dt:`where clause predicate` is either a :t:`lifetime bound predicate` or a
+     :t:`type bound predicate`.
+     
+     :dp:`fls_Jk7V1SOKE4Gm`
+     See :s:`WhereClausePredicate`.
+   :chapter:
+     :dp:`fls_fhy4rsmmbvyy`
+     A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
+     :t:`type bound predicate`.
 
 .. glossary-entry:: lifetime bound predicate
    

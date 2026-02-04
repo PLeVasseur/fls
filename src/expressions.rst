@@ -5331,6 +5331,12 @@ The :t:`evaluation` of an :t:`infinite loop expression` proceeds as follows:
 While Loops
 ~~~~~~~~~~~
 
+.. glossary-entry:: while loop
+   
+   :glossary:
+     :dp:`fls_ug9cxoml9ged`
+     For :dt:`while loop`, see :t:`while loop expression`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -5343,10 +5349,21 @@ While Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ajby242tnu7c`
-A :t:`while loop expression` is a :t:`loop expression` that continues to
-evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
-true.
+.. glossary-entry:: while loop expression
+   
+   :glossary:
+     :dp:`fls_fq0zyup4djyh`
+     A :dt:`while loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
+     true.
+     
+     :dp:`fls_7htwpbmyq83u`
+     See :s:`WhileLoopExpression`.
+   :chapter:
+     :dp:`fls_ajby242tnu7c`
+     A :t:`while loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
+     true.
 
 .. glossary-entry:: iteration expression
    
@@ -5404,6 +5421,12 @@ The :t:`evaluation` of a :t:`while loop expression` proceeds as follows:
 While Let Loops
 ~~~~~~~~~~~~~~~
 
+.. glossary-entry:: while let loop
+   
+   :glossary:
+     :dp:`fls_ovutw52qtx71`
+     For :dt:`while let loop`, see :t:`while let loop expression`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -5413,10 +5436,21 @@ While Let Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fmdlyp9r9zl7`
-A :t:`while let loop expression` is a :t:`loop expression` that continues to
-evaluate its :t:`loop body` as long as its :t:`subject let expression` yields
-a :t:`value` that can be matched against its :t:`pattern`.
+.. glossary-entry:: while let loop expression
+   
+   :glossary:
+     :dp:`fls_g35gn7n88acp`
+     A :dt:`while let loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` as long as its :t:`subject let expression` yields a
+     :t:`value` that can be matched against its :t:`pattern`.
+     
+     :dp:`fls_q3jcb4nodqba`
+     See :s:`WhileLetLoopExpression`.
+   :chapter:
+     :dp:`fls_fmdlyp9r9zl7`
+     A :t:`while let loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` as long as its :t:`subject let expression` yields
+     a :t:`value` that can be matched against its :t:`pattern`.
 
 :dp:`fls_bC60ZSC9yUOI`
 The :t:`expected type` of the :t:`pattern` is the :t:`type` of the :t:`subject let expression`.

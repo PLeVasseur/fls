@@ -90,9 +90,16 @@ A :dt:`whitespace character` is one of the following characters:
 * :dp:`fls_zfs15iel08y0`
   0x2029 (paragraph separator)
 
-:dp:`fls_7eifv4ksunu1`
-A :t:`whitespace string` is a string that consists of one or more
-:t:`[whitespace character]s`.
+.. glossary-entry:: whitespace string
+   
+   :glossary:
+     :dp:`fls_nljkmadklwdp`
+     A :dt:`whitespace string` is a string that consists of one or more
+     :t:`[whitespace character]s`.
+   :chapter:
+     :dp:`fls_7eifv4ksunu1`
+     A :t:`whitespace string` is a string that consists of one or more
+     :t:`[whitespace character]s`.
 
 :dp:`fls_PIDKEm8GiLNL`
 An :ds:`AsciiCharacter` is any :t:`Unicode` character in the range 0x00 - 0x7F, both inclusive.
@@ -1962,9 +1969,19 @@ Weak Keywords
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bv87t1gvj7bz`
-A :t:`weak keyword` is a :t:`keyword` whose special meaning depends on the
-context.
+.. glossary-entry:: weak keyword
+   
+   :glossary:
+     :dp:`fls_4hiznltf5wlu`
+     A :dt:`weak keyword` is a :t:`keyword` whose special meaning depends on the
+     context.
+     
+     :dp:`fls_psah573fsrig`
+     See :s:`WeakKeyword`.
+   :chapter:
+     :dp:`fls_bv87t1gvj7bz`
+     A :t:`weak keyword` is a :t:`keyword` whose special meaning depends on the
+     context.
 
 :dp:`fls_bl55g03jmayf`
 Word ``macro_rules`` acts as a :t:`keyword` only when used in the context of a
