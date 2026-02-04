@@ -10,19 +10,26 @@ Macros
 
 .. rubric:: Legality Rules
 
-:dp:`fls_j1jc83erljo0`
-A :t:`macro` is a custom definition that extends Rust by defining callable
-syntactic transformations. The effects of a :t:`macro` are realized through
-:t:`[macro invocation]s` or :t:`attribute` use. :t:`[Macro]s` come in two
-distinct forms:
-
-* :dp:`fls_23eapx3ckymf`
-  :t:`[Declarative macro]s` define rules for recognizing syntactic patterns and
-  generating direct syntax.
-
-* :dp:`fls_a5uemz2hnbi8`
-  :t:`[Procedural macro]s` define augmented :t:`[function]s` that operate on and
-  return a stream of :t:`[lexical element]s`.
+.. glossary-entry:: macro
+   
+   :glossary:
+     :dp:`fls_bt16qi8g2js5`
+     A :dt:`macro` is a custom definition that extends Rust by defining callable
+     syntactic transformations.
+   :chapter:
+     :dp:`fls_j1jc83erljo0`
+     A :t:`macro` is a custom definition that extends Rust by defining callable
+     syntactic transformations. The effects of a :t:`macro` are realized through
+     :t:`[macro invocation]s` or :t:`attribute` use. :t:`[Macro]s` come in two
+     distinct forms:
+     
+     * :dp:`fls_23eapx3ckymf`
+       :t:`[Declarative macro]s` define rules for recognizing syntactic patterns and
+       generating direct syntax.
+     
+     * :dp:`fls_a5uemz2hnbi8`
+       :t:`[Procedural macro]s` define augmented :t:`[function]s` that operate on and
+       return a stream of :t:`[lexical element]s`.
 
 :dp:`fls_rnty1c8l5495`
 :t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
@@ -84,20 +91,59 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
      A :t:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
      of syntactic transformation :t:`[macro rule]s`.
 
-:dp:`fls_dw1nq4r9ghhd`
-A :t:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
-a :t:`macro transcriber`.
+.. glossary-entry:: macro rule
+   
+   :glossary:
+     :dp:`fls_7gfdqggs33id`
+     A :dt:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher`
+     and a :t:`macro transcriber`.
+     
+     :dp:`fls_qv68aj43mz5m`
+     See :s:`MacroRule`.
+   :chapter:
+     :dp:`fls_dw1nq4r9ghhd`
+     A :t:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
+     a :t:`macro transcriber`.
 
-:dp:`fls_oq4xn8guos8f`
-A :t:`macro matcher` is a :t:`construct` that describes a syntactic pattern that
-a :t:`macro` must match.
+.. glossary-entry:: macro matcher
+   
+   :glossary:
+     :dp:`fls_sqncf88chnsy`
+     A :dt:`macro matcher` is a :t:`construct` that describes a syntactic pattern
+     that a :t:`macro` must match.
+     
+     :dp:`fls_ioyegc6ggd7o`
+     See :s:`MacroMatcher`.
+   :chapter:
+     :dp:`fls_oq4xn8guos8f`
+     A :t:`macro matcher` is a :t:`construct` that describes a syntactic pattern that
+     a :t:`macro` must match.
 
-:dp:`fls_cdaf8viwmdfe`
-A :t:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
+.. glossary-entry:: macro match
+   
+   :glossary:
+     :dp:`fls_q0ve6nd287ta`
+     A :dt:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
+     
+     :dp:`fls_dww6sqbj2vin`
+     See :s:`MacroMatch`.
+   :chapter:
+     :dp:`fls_cdaf8viwmdfe`
+     A :t:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
 
-:dp:`fls_ljavs0w61z3j`
-A :t:`macro transcriber` is a :t:`construct` that describes the replacement
-syntax of a :t:`macro`.
+.. glossary-entry:: macro transcriber
+   
+   :glossary:
+     :dp:`fls_ug79qf3p693h`
+     A :dt:`macro transcriber` is a :t:`construct` that describes the replacement
+     syntax of a :t:`macro`.
+     
+     :dp:`fls_myubuihvjl4s`
+     See :s:`MacroTranscriber`.
+   :chapter:
+     :dp:`fls_ljavs0w61z3j`
+     A :t:`macro transcriber` is a :t:`construct` that describes the replacement
+     syntax of a :t:`macro`.
 
 :dp:`fls_3jspk8obv7sd`
 A :t:`declarative macro` is invoked using a :t:`macro invocation`.
@@ -253,17 +299,44 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
 
 .. rubric:: Legality Rules
 
-:dp:`fls_8byjmlgum2f3`
-A :t:`macro repetition in matching` allows for a syntactic pattern to be matched
-zero or multiple times during :t:`macro matching`.
+.. glossary-entry:: macro repetition in matching
+   
+   :glossary:
+     :dp:`fls_wio0e9qzstjh`
+     A :dt:`macro repetition in matching` allows for a syntactic pattern to be
+     matched zero or multiple times during :t:`macro matching`.
+     
+     :dp:`fls_potk1y850zer`
+     See :s:`MacroRepetitionMatch`.
+   :chapter:
+     :dp:`fls_8byjmlgum2f3`
+     A :t:`macro repetition in matching` allows for a syntactic pattern to be matched
+     zero or multiple times during :t:`macro matching`.
 
-:dp:`fls_ltdp3zs60dzr`
-A :t:`macro repetition in transcription` allows for a syntactic pattern to be
-transcribed zero or multiple times during :t:`macro transcription`.
+.. glossary-entry:: macro repetition in transcription
+   
+   :glossary:
+     :dp:`fls_ex9vd3w0t4wo`
+     A :dt:`macro repetition in transcription` allows for a syntactic pattern to be
+     transcribed zero or multiple times during :t:`macro transcription`.
+     
+     :dp:`fls_5wdiqbwgr9nt`
+     See :s:`MacroRepetitionTranscriber`.
+   :chapter:
+     :dp:`fls_ltdp3zs60dzr`
+     A :t:`macro repetition in transcription` allows for a syntactic pattern to be
+     transcribed zero or multiple times during :t:`macro transcription`.
 
-:dp:`fls_V1WRuzZUWUGj`
-A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
-:t:`macro repetition in transcription`.
+.. glossary-entry:: macro repetition
+   
+   :glossary:
+     :dp:`fls_sDomcFWIeUAT`
+     A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
+     :t:`macro repetition in transcription`.
+   :chapter:
+     :dp:`fls_V1WRuzZUWUGj`
+     A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
+     :t:`macro repetition in transcription`.
 
 :dp:`fls_u86j0zm2jshf`
 A :t:`repetition operator` is a :t:`construct` that indicates the number
@@ -336,9 +409,16 @@ streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 :t:`[Procedural macro]s` shall be defined in a :t:`crate` subject to
 :t:`attribute` :c:`crate_type` where the type is ``proc-macro``.
 
-:dp:`fls_vtzuplb1p3s`
-A :t:`macro implementation function` is the :t:`function` that encapsulates the
-syntactic transformations of a :t:`procedural macro`.
+.. glossary-entry:: macro implementation function
+   
+   :glossary:
+     :dp:`fls_xy4t1suhrn46`
+     A :dt:`macro implementation function` is the :t:`function` that encapsulates
+     the syntactic transformations of a :t:`procedural macro`.
+   :chapter:
+     :dp:`fls_vtzuplb1p3s`
+     A :t:`macro implementation function` is the :t:`function` that encapsulates the
+     syntactic transformations of a :t:`procedural macro`.
 
 :dp:`fls_mewfehvgm16r`
 A :t:`macro implementation function` enters the :t:`name` of the
@@ -585,10 +665,21 @@ A :ds:`NonDelimitedToken` is any :t:`lexical element` in category
 
 .. rubric:: Legality Rules
 
-:dp:`fls_snpxxcqhtjfv`
-A :t:`macro invocation` is a call of a :t:`declarative macro` or
-:t:`function-like macro` that is expanded statically and replaced with the
-result of the :t:`macro`.
+.. glossary-entry:: macro invocation
+   
+   :glossary:
+     :dp:`fls_5qtwcp5ns5vz`
+     A :dt:`macro invocation` is a call of a :t:`declarative macro` or
+     :t:`function-like macro` that is expanded statically and replaced with the
+     result of the :t:`macro`.
+     
+     :dp:`fls_IgzL0OJ9Ja7y`
+     See :s:`MacroInvocation`.
+   :chapter:
+     :dp:`fls_snpxxcqhtjfv`
+     A :t:`macro invocation` is a call of a :t:`declarative macro` or
+     :t:`function-like macro` that is expanded statically and replaced with the
+     result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
 A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used

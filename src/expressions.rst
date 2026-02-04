@@ -4603,12 +4603,37 @@ Loop Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_y1d8kd1bdlmx`
-A :t:`loop expression` is an :t:`expression` that evaluates a :t:`block
-expression` continuously as long as some criterion holds true.
+.. glossary-entry:: loop
+   
+   :glossary:
+     :dp:`fls_omjnvxva07z2`
+     For :dt:`loop`, see :t:`loop expression`.
 
-:dp:`fls_BjZjuiFnPtFd`
-A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+.. glossary-entry:: loop expression
+   
+   :glossary:
+     :dp:`fls_2yypq3m1kquj`
+     A :dt:`loop expression` is an :t:`expression` that evaluates a
+     :t:`block expression` continuously as long as some criterion holds true.
+     
+     :dp:`fls_o2dyznhq7rez`
+     See :s:`LoopExpression`.
+   :chapter:
+     :dp:`fls_y1d8kd1bdlmx`
+     A :t:`loop expression` is an :t:`expression` that evaluates a :t:`block
+     expression` continuously as long as some criterion holds true.
+
+.. glossary-entry:: loop body
+   
+   :glossary:
+     :dp:`fls_fRWcWPeKgx9g`
+     A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+     
+     :dp:`fls_vWuR2TET712r`
+     See :s:`LoopBody`.
+   :chapter:
+     :dp:`fls_BjZjuiFnPtFd`
+     A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 
 :dp:`fls_XEc0cIkpkyzJ`
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
@@ -5573,14 +5598,32 @@ Match Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ei4pbeksd1v8`
-A :t:`match expression` is an :t:`expression` that tries to match one of its
-multiple :t:`[pattern]s` against its :t:`subject expression` and if it succeeds,
-evaluates an :t:`operand`.
+.. glossary-entry:: match expression
+   
+   :glossary:
+     :dp:`fls_2ohrphptjny6`
+     A :dt:`match expression` is an :t:`expression` that tries to match one of
+     its multiple :t:`[pattern]s` against its :t:`subject expression` and if it
+     succeeds, evaluates an :t:`operand`.
+     
+     :dp:`fls_wkalvzkmp95y`
+     See :s:`MatchExpression`.
+   :chapter:
+     :dp:`fls_ei4pbeksd1v8`
+     A :t:`match expression` is an :t:`expression` that tries to match one of its
+     multiple :t:`[pattern]s` against its :t:`subject expression` and if it succeeds,
+     evaluates an :t:`operand`.
 
-:dp:`fls_l45i24ikfavm`
-A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
-and a :t:`match arm body`.
+.. glossary-entry:: match arm
+   
+   :glossary:
+     :dp:`fls_z5qsy5z2zak3`
+     A :dt:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
+     and a :t:`match arm body`.
+   :chapter:
+     :dp:`fls_l45i24ikfavm`
+     A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
+     and a :t:`match arm body`.
 
 .. glossary-entry:: intermediate match arm
    
@@ -5608,19 +5651,45 @@ and a :t:`match arm body`.
      :dp:`fls_oj8dg28xw5yp`
      A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
-:dp:`fls_lrdrtedyz28i`
-A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
-a :t:`match arm guard`.
+.. glossary-entry:: match arm matcher
+   
+   :glossary:
+     :dp:`fls_paz9358w4cpu`
+     A :dt:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern`
+     and a :t:`match arm guard`.
+     
+     :dp:`fls_j7i2bjvzz1tx`
+     See :s:`MatchArmMatcher`.
+   :chapter:
+     :dp:`fls_lrdrtedyz28i`
+     A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
+     a :t:`match arm guard`.
 
 :dp:`fls_zJQ4LecT1HYd`
 The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the :t:`type` of the :t:`subject expression`.
 
-:dp:`fls_8wjdichfxp0y`
-A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
+.. glossary-entry:: match arm body
+   
+   :glossary:
+     :dp:`fls_33e7oefx0xqm`
+     A :dt:`match arm body` is the :t:`operand` of a :t:`match arm`.
+   :chapter:
+     :dp:`fls_8wjdichfxp0y`
+     A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
 
-:dp:`fls_hs1rr54hu18w`
-A :t:`match arm guard` is a :t:`construct` that provides additional filtering to
-a :t:`match arm matcher`.
+.. glossary-entry:: match arm guard
+   
+   :glossary:
+     :dp:`fls_uhn07jmvv9ea`
+     A :dt:`match arm guard` is a :t:`construct` that provides additional filtering
+     to a :t:`match arm matcher`.
+     
+     :dp:`fls_ykf70vbng54n`
+     See :s:`MatchArmGuard`.
+   :chapter:
+     :dp:`fls_hs1rr54hu18w`
+     A :t:`match arm guard` is a :t:`construct` that provides additional filtering to
+     a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are

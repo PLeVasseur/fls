@@ -44,9 +44,16 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
      An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
      (semicolon).
 
-:dp:`fls_or125cqtxg9j`
-A :t:`macro statement` is a :t:`statement` expressed as a
-:t:`terminated macro invocation`.
+.. glossary-entry:: macro statement
+   
+   :glossary:
+     :dp:`fls_yhh9k9epv3g6`
+     A :dt:`macro statement` is a :t:`statement` expressed as a
+     :t:`terminated macro invocation`.
+   :chapter:
+     :dp:`fls_or125cqtxg9j`
+     A :t:`macro statement` is a :t:`statement` expressed as a
+     :t:`terminated macro invocation`.
 
 .. rubric:: Dynamic Semantics
 

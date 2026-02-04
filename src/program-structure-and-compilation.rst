@@ -330,27 +330,34 @@ Program Entry Point
 A :t:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
-:dp:`fls_sbGnkm8Ephiu`
-A :t:`main function signature` is a :t:`function signature` subject to the
-following restrictions:
-
-* :dp:`fls_o4fxok23134r`
-  It lacks :t:`[function qualifier]s` ``async`` and ``unsafe``,
-
-* :dp:`fls_bk755pvc1l53`
-  Its :t:`ABI` is Rust,
-
-* :dp:`fls_a3je4wc53bmo`
-  It lacks :t:`[generic parameter]s`,
-
-* :dp:`fls_w8q15zp7kyl0`
-  It lacks :t:`[function parameter]s`,
-
-* :dp:`fls_4psnfphsgdek`
-  It lacks a :t:`return type`,
-
-* :dp:`fls_m7xfrhqif74`
-  It lacks a :t:`where clause`,
-
-* :dp:`fls_qq9fzrw4aykd`
-  It has a :t:`function body`.
+.. glossary-entry:: main function signature
+   
+   :glossary:
+     :dp:`fls_QijObGZEIykU`
+     A :dt:`main function signature` is a :t:`function signature` subject to specific
+     restrictions.
+   :chapter:
+     :dp:`fls_sbGnkm8Ephiu`
+     A :t:`main function signature` is a :t:`function signature` subject to the
+     following restrictions:
+     
+     * :dp:`fls_o4fxok23134r`
+       It lacks :t:`[function qualifier]s` ``async`` and ``unsafe``,
+     
+     * :dp:`fls_bk755pvc1l53`
+       Its :t:`ABI` is Rust,
+     
+     * :dp:`fls_a3je4wc53bmo`
+       It lacks :t:`[generic parameter]s`,
+     
+     * :dp:`fls_w8q15zp7kyl0`
+       It lacks :t:`[function parameter]s`,
+     
+     * :dp:`fls_4psnfphsgdek`
+       It lacks a :t:`return type`,
+     
+     * :dp:`fls_m7xfrhqif74`
+       It lacks a :t:`where clause`,
+     
+     * :dp:`fls_qq9fzrw4aykd`
+       It has a :t:`function body`.
