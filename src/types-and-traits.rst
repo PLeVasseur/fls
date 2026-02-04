@@ -1151,6 +1151,13 @@ the :std:`core::marker::Send` :t:`trait`, and the :std:`core::marker::Sync`
 Indirection Types
 -----------------
 
+.. glossary-entry:: indirection type
+   
+   :glossary:
+     :dp:`fls_8so1phpdjyk8`
+     An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
+     locations.
+
 .. _fls_xztr1kebz8bo:
 
 Function Pointer Types
@@ -1507,9 +1514,19 @@ Inferred Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xdtgr5toulpb`
-An :t:`inferred type` is a placeholder for a :t:`type` deduced by
-:t:`type inference`.
+.. glossary-entry:: inferred type
+   
+   :glossary:
+     :dp:`fls_9xgfexeqr4ed`
+     An :dt:`inferred type` is a placeholder for a :t:`type` deduced by
+     :t:`type inference`.
+     
+     :dp:`fls_z2p8378sd93z`
+     See :s:`InferredType`.
+   :chapter:
+     :dp:`fls_xdtgr5toulpb`
+     An :t:`inferred type` is a placeholder for a :t:`type` deduced by
+     :t:`type inference`.
 
 :dp:`fls_3abhsuaa8nas`
 An :t:`inferred type` shall not appear in the following positions:
@@ -3340,11 +3357,17 @@ An :t:`outlives bound` is a :t:`trait bound` which requires that a
 :t:`Outlives bound` ``T: 'a`` indicates that all :t:`[lifetime parameter]s` of
 ``T`` outlive ``'a``.
 
-:dp:`fls_J9DEsd06Ttu9`
-An :t:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
-is the byproduct of relations between :t:`[lifetime parameter]s` and
-:t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
-:t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
+.. glossary-entry:: implied bound
+   
+   :glossary:
+     :dp:`fls_t77d8xwG1l9Q`
+     An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is the byproduct of relations between :t:`[lifetime parameter]s` and :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
+   :chapter:
+     :dp:`fls_J9DEsd06Ttu9`
+     An :t:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
+     is the byproduct of relations between :t:`[lifetime parameter]s` and
+     :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
+     :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
 
 :dp:`fls_IfHRxSasGAih`
 A :t:`reference` of the form ``&'a T``, where ``'a`` is a

@@ -181,9 +181,16 @@ Borrowing
      :dp:`fls_j9kof0px3l7s`
      A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
-:dp:`fls_zepwytjwy049`
-An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
-program text. An :t:`implicit borrow` occurs in the following contexts:
+.. glossary-entry:: implicit borrow
+   
+   :glossary:
+     :dp:`fls_q2v9ejpcvtwg`
+     An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+     program text.
+   :chapter:
+     :dp:`fls_zepwytjwy049`
+     An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+     program text. An :t:`implicit borrow` occurs in the following contexts:
 
 * :dp:`fls_nordokzfy36d`
   The :t:`call operand` of a :t:`call expression`,

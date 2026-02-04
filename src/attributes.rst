@@ -104,9 +104,16 @@ Attribute Properties
      An :t:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
      it decorates.
 
-:dp:`fls_xk7lb2g02sy7`
-An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
-it decorates.
+.. glossary-entry:: inert attribute
+   
+   :glossary:
+     :dp:`fls_o4e3tyjz7l1h`
+     An :dt:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
+     it decorates.
+   :chapter:
+     :dp:`fls_xk7lb2g02sy7`
+     An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
+     it decorates.
 
 :dp:`fls_q8wl7pidx2za`
 The following :t:`[attribute]s` are :t:`[active attribute]s`:

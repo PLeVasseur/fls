@@ -110,10 +110,17 @@ A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 * :dp:`fls_v7w8ptbyxv9w`
   :t:`[Union type]s`.
 
-:dp:`fls_ig1l38gpy5gy`
-An :t:`implicitly declared entity` is an :t:`entity` that lacks an explicit
-:t:`declaration`. The following :t:`entities <entity>` are
-:t:`implicitly declared entities <implicitly declared entity>`:
+.. glossary-entry:: implicitly declared entity
+   
+   :glossary:
+     :dp:`fls_VQs1jd4Nx3qR`
+     An :dt:`implicitly declared entity` is an :t:`entity` that lacks an explicit
+     :t:`declaration`.
+   :chapter:
+     :dp:`fls_ig1l38gpy5gy`
+     An :t:`implicitly declared entity` is an :t:`entity` that lacks an explicit
+     :t:`declaration`. The following :t:`entities <entity>` are
+     :t:`implicitly declared entities <implicitly declared entity>`:
 
 * :dp:`fls_ed0t6u7fo3fi`
   :t:`[Built-in attribute]s`.
@@ -506,6 +513,12 @@ Scopes
 :dp:`fls_5x5xykocwyiy`
 A :t:`scope` is a region of program text where an :t:`entity` can be referred
 to. An :t:`entity` is :t:`in scope` when it can be referred to.
+
+.. glossary-entry:: in scope
+   
+   :glossary:
+     :dp:`fls_sy380geqvf2l`
+     A :t:`name` is :dt:`in scope` when it can be referred to.
 
 .. _fls_6ozthochxz1i:
 

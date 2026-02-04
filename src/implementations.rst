@@ -50,9 +50,19 @@ Implementations
      An :t:`implementation` is an :t:`item` that supplements an
      :t:`implementing type` by extending its functionality.
 
-:dp:`fls_yopmjbnw8tbl`
-An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
-an :t:`implementation` are associated with.
+.. glossary-entry:: implementing type
+   
+   :glossary:
+     :dp:`fls_vs5ia3uupdcc`
+     An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+     an :t:`implementation` are associated with.
+     
+     :dp:`fls_9ixcwh6to74g`
+     See :s:`ImplementingType`.
+   :chapter:
+     :dp:`fls_yopmjbnw8tbl`
+     An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+     an :t:`implementation` are associated with.
 
 :dp:`fls_eIHc8Y9fBtr0`
 Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
@@ -90,9 +100,19 @@ specified by a :t:`trait`.
 An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
-:dp:`fls_47x0ep8of8wr`
-An :t:`implemented trait` is a :t:`trait` whose functionality has been
-implemented by an :t:`implementing type`.
+.. glossary-entry:: implemented trait
+   
+   :glossary:
+     :dp:`fls_7twlizi3v8cb`
+     An :dt:`implemented trait` is a :t:`trait` whose functionality has been
+     implemented by an :t:`implementing type`.
+     
+     :dp:`fls_2brvfx5wmvkf`
+     See :s:`ImplementedTrait`.
+   :chapter:
+     :dp:`fls_47x0ep8of8wr`
+     An :t:`implemented trait` is a :t:`trait` whose functionality has been
+     implemented by an :t:`implementing type`.
 
 :dp:`fls_agitlryvyc16`
 The :t:`type path` of a :t:`trait implementation` shall resolve to a :t:`trait`.

@@ -49,6 +49,13 @@ Associated Items
      An :t:`associated constant` is a :t:`constant` that appears as an
      :t:`associated item`.
 
+.. glossary-entry:: incomplete associated constant
+   
+   :glossary:
+     :dp:`fls_bq48gl84bul0`
+     An :dt:`incomplete associated constant` is an :t:`associated constant` without
+     a :t:`constant initializer`.
+
 .. glossary-entry:: associated function
    
    :glossary:
@@ -60,6 +67,13 @@ Associated Items
      An :t:`associated function` is a :t:`function` that appears as an
      :t:`associated item`.
 
+.. glossary-entry:: incomplete associated function
+   
+   :glossary:
+     :dp:`fls_iboondra204w`
+     An :dt:`incomplete associated function` is an :t:`associated function` without
+     a :t:`function body`.
+
 .. glossary-entry:: associated type
    
    :glossary:
@@ -70,6 +84,13 @@ Associated Items
      :dp:`fls_8cz4rdrklaj4`
      An :t:`associated type` is a :t:`type alias` that appears as an
      :t:`associated item`.
+
+.. glossary-entry:: incomplete associated type
+   
+   :glossary:
+     :dp:`fls_tka0gth8rc9x`
+     An :dt:`incomplete associated type` is an :t:`associated type` without an
+     :t:`initialization type`.
 
 :dp:`fls_w8nu8suy7t5`
 An :t:`associated type` shall not be used in the :t:`path expression` of a

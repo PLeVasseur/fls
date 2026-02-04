@@ -3460,21 +3460,59 @@ Indexing Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_X9kdEAPTqsAe`
-An :t:`indexable type` is a :t:`type` that implements the
-:std:`core::ops::Index` :t:`trait`.
+.. glossary-entry:: indexable type
+   
+   :glossary:
+     :dp:`fls_AdVGyKZFvvUS`
+     A :dt:`indexable type` is a :t:`type` that implements the
+     :std:`core::ops::Index` :t:`trait`.
+   :chapter:
+     :dp:`fls_X9kdEAPTqsAe`
+     An :t:`indexable type` is a :t:`type` that implements the
+     :std:`core::ops::Index` :t:`trait`.
 
-:dp:`fls_42ijvuqqqlvh`
-An :t:`index expression` is an :t:`expression` that indexes into a :t:`value`
-of an :t:`indexable type`.
+.. glossary-entry:: index expression
+   
+   :glossary:
+     :dp:`fls_1f7e9q8n431n`
+     An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
+     of a :t:`type`.
+     
+     :dp:`fls_xm2er7vuo07g`
+     See :s:`IndexExpression`.
+   :chapter:
+     :dp:`fls_42ijvuqqqlvh`
+     An :t:`index expression` is an :t:`expression` that indexes into a :t:`value`
+     of an :t:`indexable type`.
 
-:dp:`fls_pc0c22asgzvw`
-An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
-being indexed into by an :t:`index expression`.
+.. glossary-entry:: indexed operand
+   
+   :glossary:
+     :dp:`fls_dvmm47wnl33e`
+     An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value` of a
+     :t:`type` implementing :std:`core::ops::Index` being indexed into by an
+     :t:`index expression`.
+     
+     :dp:`fls_je8eh3a02riq`
+     See :s:`IndexedOperand`.
+   :chapter:
+     :dp:`fls_pc0c22asgzvw`
+     An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
+     being indexed into by an :t:`index expression`.
 
-:dp:`fls_ff3sgpldn52o`
-An :t:`indexing operand` is an :t:`operand` which specifies the index of an
-:t:`index expression`.
+.. glossary-entry:: indexing operand
+   
+   :glossary:
+     :dp:`fls_ipw4tfrserbu`
+     An :dt:`indexing operand` is an :t:`operand` which specifies the index for the
+     :t:`indexed operand` being indexed into by an :t:`index expression`.
+     
+     :dp:`fls_t2j8vzlrlvb0`
+     See :s:`IndexingOperand`.
+   :chapter:
+     :dp:`fls_ff3sgpldn52o`
+     An :t:`indexing operand` is an :t:`operand` which specifies the index of an
+     :t:`index expression`.
 
 :dp:`fls_w96p9oyv5mqt`
 An :t:`index expression` is a :t:`constant expression` if the
@@ -3670,9 +3708,19 @@ The :t:`type` of a :t:`base initializer` is the :t:`type` of its :t:`operand`.
 The :t:`type` of a :t:`base initializer` shall be the same as the :t:`type` of
 the :t:`constructee`.
 
-:dp:`fls_ph7fsphbpbv4`
-An :t:`indexed initializer` is a :t:`construct` that specifies the index and
-initial :t:`value` of a :t:`field` in a :t:`struct expression`.
+.. glossary-entry:: indexed initializer
+   
+   :glossary:
+     :dp:`fls_oonqolgqyrq1`
+     An :dt:`indexed initializer` is a :t:`construct` that specifies the index and
+     initial :t:`value` of a :t:`field` in a :t:`struct expression`.
+     
+     :dp:`fls_werlw98l3ra0`
+     See :s:`IndexedInitializer`.
+   :chapter:
+     :dp:`fls_ph7fsphbpbv4`
+     An :t:`indexed initializer` is a :t:`construct` that specifies the index and
+     initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
@@ -4210,6 +4258,16 @@ Field Access Expressions
      :dp:`fls_yeuayil6uxzx`
      A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
      accessed in a :t:`field access expression`.
+
+.. glossary-entry:: indexed field selector
+   
+   :glossary:
+     :dp:`fls_u6mh5yediub`
+     An :dt:`indexed field selector` is a :t:`field selector` where the selected
+     :t:`field` is indicated by an index.
+     
+     :dp:`fls_wbbyf2szc8a7`
+     See :s:`IndexedFieldSelector`.
 
 .. glossary-entry:: field index
    

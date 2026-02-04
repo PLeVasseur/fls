@@ -513,9 +513,19 @@ within a range.
      A :t:`half-open range pattern` is a :t:`range pattern` with only a
      :t:`range pattern low bound`.
 
-:dp:`fls_q86j23iiqv8w`
-An :t:`inclusive range pattern` is a :t:`range pattern` with both a
-:t:`range pattern low bound` and a :t:`range pattern high bound`.
+.. glossary-entry:: inclusive range pattern
+   
+   :glossary:
+     :dp:`fls_olfeuvwkosse`
+     An :dt:`inclusive range pattern` is a :t:`range pattern` with both a
+     :t:`range pattern low bound` and a :t:`range pattern high bound`.
+     
+     :dp:`fls_9bdxsn6nasjr`
+     See :s:`InclusiveRangePattern`.
+   :chapter:
+     :dp:`fls_q86j23iiqv8w`
+     An :t:`inclusive range pattern` is a :t:`range pattern` with both a
+     :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 .. glossary-entry:: exclusive range pattern
    
@@ -871,9 +881,19 @@ A :t:`record struct pattern` is a :t:`pattern` that matches a
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :t:`enum variant`, a :t:`struct type`, or a :t:`union type`.
 
-:dp:`fls_mnh35ehva8tx`
-An :t:`indexed deconstructor` is a :t:`construct` that matches the position of
-a :t:`field`.
+.. glossary-entry:: indexed deconstructor
+   
+   :glossary:
+     :dp:`fls_q7eta38vw0ig`
+     An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
+     a :t:`tuple field`.
+     
+     :dp:`fls_gryv4audvann`
+     See :s:`IndexedDeconstructor`.
+   :chapter:
+     :dp:`fls_mnh35ehva8tx`
+     An :t:`indexed deconstructor` is a :t:`construct` that matches the position of
+     a :t:`field`.
 
 :dp:`fls_p2rjnlbvifaa`
 An :t:`indexed deconstructor` matches a :t:`field` of the :t:`deconstructee`
