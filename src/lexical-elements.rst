@@ -1147,9 +1147,16 @@ Integer Literals
      :dp:`fls_u83mffscqm6`
      A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
-:dp:`fls_g10nuv14q4jn`
-An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
-suffix`.
+.. glossary-entry:: unsuffixed integer
+   
+   :glossary:
+     :dp:`fls_t419z3zder0q`
+     An :dt:`unsuffixed integer` is an :t:`integer literal` without an
+     :t:`integer suffix`.
+   :chapter:
+     :dp:`fls_g10nuv14q4jn`
+     An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
+     suffix`.
 
 :dp:`fls_hpkkvuj1z1ez`
 The :t:`type` of a :t:`suffixed integer` is determined by its :t:`integer
@@ -1287,8 +1294,14 @@ Float Literals
      :dp:`fls_21mhnhplzam7`
      A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
-:dp:`fls_drqh80k0sfkb`
-An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
+.. glossary-entry:: unsuffixed float
+   
+   :glossary:
+     :dp:`fls_7wp6y0xeqqve`
+     An :dt:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
+   :chapter:
+     :dp:`fls_drqh80k0sfkb`
+     An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
 
 :dp:`fls_cbs7j9pjpusw`
 The :t:`type` of a :t:`suffixed float` is determined by the :t:`float suffix`

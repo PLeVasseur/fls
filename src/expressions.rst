@@ -729,14 +729,27 @@ Value Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7q4hrt6yfr9b`
-A :t:`value expression` is an :t:`expression` that represents a :t:`value`.
-All :t:`[expression]s` that are not :t:`[place expression]s` are
-:t:`[value expression]s`.
+.. glossary-entry:: value expression
+   
+   :glossary:
+     :dp:`fls_mn6tcuz5j3p`
+     A :dt:`value expression` is an :t:`expression` that represents a :t:`value`.
+   :chapter:
+     :dp:`fls_7q4hrt6yfr9b`
+     A :t:`value expression` is an :t:`expression` that represents a :t:`value`.
+     All :t:`[expression]s` that are not :t:`[place expression]s` are
+     :t:`[value expression]s`.
 
-:dp:`fls_pB6xlp4uAg37`
-A :t:`value expression context` is an expression context that is not a
-:t:`place expression context`.
+.. glossary-entry:: value expression context
+   
+   :glossary:
+     :dp:`fls_NGGZEbmoLRbD`
+     A :dt:`value expression context` is an expression context that is not a
+     :t:`place expression context`.
+   :chapter:
+     :dp:`fls_pB6xlp4uAg37`
+     A :t:`value expression context` is an expression context that is not a
+     :t:`place expression context`.
 
 :dp:`fls_8uhfwqurbyqf`
 The evaluation of a :t:`value expression` in a :t:`place expression context`
@@ -2986,9 +2999,19 @@ Assignment Expressions
      An :t:`assignee operand` is the target :t:`operand` of an
      :t:`assignment expression`.
 
-:dp:`fls_uinh05sslxeo`
-A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
-assigned to an :t:`assignee operand` by an :t:`assignment expression`.
+.. glossary-entry:: value operand
+   
+   :glossary:
+     :dp:`fls_x4seemjknk2z`
+     A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+     assigned to an :t:`assignee operand` by an :t:`assignment expression`.
+     
+     :dp:`fls_cl4fakfkpscp`
+     See :s:`ValueOperand`.
+   :chapter:
+     :dp:`fls_uinh05sslxeo`
+     A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+     assigned to an :t:`assignee operand` by an :t:`assignment expression`.
 
 :dp:`fls_qengy157fa4a`
 The :t:`type` of an :t:`assignment expression` is the :t:`unit type`.

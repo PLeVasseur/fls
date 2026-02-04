@@ -170,9 +170,16 @@ Visibility
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7kpepal8ghuj`
-:t:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
-which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
+.. glossary-entry:: visibility
+   
+   :glossary:
+     :dp:`fls_sadmsqhptlho`
+     :dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
+     which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
+   :chapter:
+     :dp:`fls_7kpepal8ghuj`
+     :t:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
+     which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 .. glossary-entry:: public visibility
    
@@ -200,8 +207,15 @@ which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
      to be referred to only by the current :t:`module` of the :t:`entity`, and its
      descendant :t:`[module]s`.
 
-:dp:`fls_t7i4n19qdgn4`
-A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
+.. glossary-entry:: visibility modifier
+   
+   :glossary:
+     :dp:`fls_ze7befho4jhs`
+     A :dt:`visibility modifier` sets the :t:`visibility` of the :t:`name` of an
+     :t:`item`.
+   :chapter:
+     :dp:`fls_t7i4n19qdgn4`
+     A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 .. glossary-entry:: crate public modifier
    
@@ -1316,10 +1330,21 @@ Use Imports
 
 .. rubric:: Legality Rules
 
-:dp:`fls_lyw4t098sxrj`
-A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
-:t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
-:t:`use import` resides.
+.. glossary-entry:: use import
+   
+   :glossary:
+     :dp:`fls_uccv9zthh5vt`
+     A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
+     :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
+     :t:`use import` resides.
+     
+     :dp:`fls_ib5wf62j4uhr`
+     See :s:`UseImport`.
+   :chapter:
+     :dp:`fls_lyw4t098sxrj`
+     A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
+     :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
+     :t:`use import` resides.
 
 .. glossary-entry:: simple path prefix
    

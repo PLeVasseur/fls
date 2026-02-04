@@ -390,6 +390,13 @@ Operation ``a <= b`` is equivalent to ``a == b | a < b``.
 
 .. rubric:: Undefined Behavior
 
+.. glossary-entry:: validity invariant
+   
+   :glossary:
+     :dp:`fls_3ebC3l839ajF`
+     A :dt:`validity invariant` is an invariant that when violated results in
+     immediate :t:`undefined behavior`.
+
 :dp:`fls_2sd39mj05mb9`
 It is a :t:`validity invariant` for a :t:`value` of :t:`type` :c:`bool` to have
 a bit pattern of ``0x00`` and ``0x01``.
@@ -562,9 +569,16 @@ domain of whole numbers:
      :dc:`u128` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
      2\ :sup:`128` - 1, all inclusive.
 
-:dp:`fls_75lntwhg20l`
-:t:`Type` :c:`usize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+.. glossary-entry:: usize
+   
+   :glossary:
+     :dp:`fls_r22k1l8799k6`
+     :dc:`usize` is an :t:`unsigned integer type` with the same number of bits as
+     the platform's :t:`pointer type`, and is at least 16-bits wide.
+   :chapter:
+     :dp:`fls_75lntwhg20l`
+     :t:`Type` :c:`usize` has the same number of bits as the platform's
+     :t:`pointer type`, and is at least 16-bits wide.
 
 .. glossary-entry:: signed integer type
    
@@ -1599,9 +1613,19 @@ Function Pointer Types
      An :t:`unsafe function pointer type` is a function pointer type subject to
      :t:`keyword` ``unsafe``.
 
-:dp:`fls_B0SMXRqQMS1E`
-A :t:`variadic part` indicates the presence of :t:`C`-like optional
-parameters.
+.. glossary-entry:: variadic part
+   
+   :glossary:
+     :dp:`fls_ePnTyLoqJ1i7`
+     A :dt:`variadic part` indicates the presence of :t:`C`-like optional
+     parameters.
+     
+     :dp:`fls_z9D86gBFbKB5`
+     See :s:`VariadicPart`.
+   :chapter:
+     :dp:`fls_B0SMXRqQMS1E`
+     A :t:`variadic part` indicates the presence of :t:`C`-like optional
+     parameters.
 
 :dp:`fls_hbn1l42xmr3h`
 A :t:`variadic part` can only be used in a :t:`variadic function`.
@@ -1872,8 +1896,17 @@ of the :t:`return type`'s :t:`function` and its parent :t:`trait` or
 :dp:`fls_ECjhEI7eCwAj`
 An :t:`impl trait type` shall not contain :t:`[opt-out trait bound]s`.
 
-:dp:`fls_69hqMjvNno9u`
-An :t:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
+.. glossary-entry:: use capture
+   
+   :glossary:
+     :dp:`fls_eZyPXG27Zwcg`
+     An :dt:`use capture` is a :t:`generic parameter` referenced via keyword $$use$$ within an :t:`anonymous return type`.
+     
+     :dp:`fls_Z8qvOkP4Zfj5`
+     See :s:`UseCaptures`.
+   :chapter:
+     :dp:`fls_69hqMjvNno9u`
+     An :t:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
 
 :dp:`fls_KgH6c5cC4S0G`
 An :t:`anonymous return type` that does not specify a list of :t:`[use capture]s` implicitly :t:`[use capture]s` all :t:`[type parameter]s` and :t:`[constant parameter]s` that are in :t:`scope`.
@@ -3029,51 +3062,64 @@ occur when:
      :dp:`fls_pwcgsRCNSwKn`
      A :dt:`sized type` is a :t:`type` with statically known size.
 
-:dp:`fls_iiiu2q7pym4p`
-An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
-into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
-target :t:`type` is allowed to occur when:
+.. glossary-entry:: unsized type
+   
+   :glossary:
+     :dp:`fls_M9NpzBH8Wf4z`
+     An :dt:`unsized type` is a :t:`type` with statically unknown size.
 
-* :dp:`fls_jte6n2js32af`
-  The source :t:`type` is :t:`array type` ``[T; N]`` and the target :t:`type` is
-  :t:`slice type` ``[T]``.
-
-* :dp:`fls_20pvqqayzqra`
-  The source :t:`type` is ``T`` and the target :t:`type` is ``dyn U``, where
-  ``T`` implements ``U + core::marker::Sized``, and ``U`` is :t:`object safe`.
-
-* :dp:`fls_j8rcy0xvd155`
-  The source type is
-
-.. code-block:: rust
-
-               S<..., T, ...> {
-                   ...
-                   last_field: X
-               }
-
-:dp:`fls_wuka4uyo3oj7`
-where
-
-* :dp:`fls_w15yo8yvuxq3`
-  ``S`` is a :t:`struct type`,
-
-* :dp:`fls_7aw3ifbvfgbd`
-  ``T`` implements ``core::marker::Unsize<U>``,
-
-* :dp:`fls_cnkth59djwgl`
-  ``last_field`` is a :t:`struct field` of ``S``,
-
-* :dp:`fls_4wbk7pqj010i`
-  The :t:`type` of ``last_field`` involves ``T`` and if the :t:`type` of
-  ``last_field`` is ``W<T>``, then ``W<T>`` implements
-  ``core::marker::Unsize<W<U>>``,
-
-* :dp:`fls_47u0039t0l8f`
-  ``T`` is not part of any other :t:`struct field` of ``S``.
-
-:dp:`fls_bmh6g3jju7eq`
-and the target ``type`` is ``S<..., U, ...>``.
+.. glossary-entry:: unsized coercion
+   
+   :glossary:
+     :dp:`fls_olt5qhyvhmtq`
+     An :dt:`unsized coercion` is a :t:`type coercion` that converts a
+     :t:`sized type` into an :t:`unsized type`.
+   :chapter:
+     :dp:`fls_iiiu2q7pym4p`
+     An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
+     into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
+     target :t:`type` is allowed to occur when:
+     
+     * :dp:`fls_jte6n2js32af`
+       The source :t:`type` is :t:`array type` ``[T; N]`` and the target :t:`type` is
+       :t:`slice type` ``[T]``.
+     
+     * :dp:`fls_20pvqqayzqra`
+       The source :t:`type` is ``T`` and the target :t:`type` is ``dyn U``, where
+       ``T`` implements ``U + core::marker::Sized``, and ``U`` is :t:`object safe`.
+     
+     * :dp:`fls_j8rcy0xvd155`
+       The source type is
+     
+     .. code-block:: rust
+     
+                    S<..., T, ...> {
+                        ...
+                        last_field: X
+                    }
+     
+     :dp:`fls_wuka4uyo3oj7`
+     where
+     
+     * :dp:`fls_w15yo8yvuxq3`
+       ``S`` is a :t:`struct type`,
+     
+     * :dp:`fls_7aw3ifbvfgbd`
+       ``T`` implements ``core::marker::Unsize<U>``,
+     
+     * :dp:`fls_cnkth59djwgl`
+       ``last_field`` is a :t:`struct field` of ``S``,
+     
+     * :dp:`fls_4wbk7pqj010i`
+       The :t:`type` of ``last_field`` involves ``T`` and if the :t:`type` of
+       ``last_field`` is ``W<T>``, then ``W<T>`` implements
+       ``core::marker::Unsize<W<U>>``,
+     
+     * :dp:`fls_47u0039t0l8f`
+       ``T`` is not part of any other :t:`struct field` of ``S``.
+     
+     :dp:`fls_bmh6g3jju7eq`
+     and the target ``type`` is ``S<..., U, ...>``.
 
 :dp:`fls_da4w32rsrwxc`
 :dt:`Least upper bound coercion` is a :t:`multi-[type coercion]` that is used in
@@ -3204,14 +3250,32 @@ Visible Emptiness
 
 .. rubric:: Legality Rules
 
-:dp:`fls_SD4yUEQ9hHa3`
-:t:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
+.. glossary-entry:: visible emptiness
+   
+   :glossary:
+     :dp:`fls_shXDYqnUy2Pb`
+     :dt:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
+   :chapter:
+     :dp:`fls_SD4yUEQ9hHa3`
+     :t:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
 
-:dp:`fls_GeoneCP5TYwf`
-A :t:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
+.. glossary-entry:: visible empty type
+   
+   :glossary:
+     :dp:`fls_OLVD0u9w68Gl`
+     A :dt:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
+   :chapter:
+     :dp:`fls_GeoneCP5TYwf`
+     A :t:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
 
-:dp:`fls_A2W4v53ihTGx`
-A :t:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
+.. glossary-entry:: visible empty enum variant
+   
+   :glossary:
+     :dp:`fls_MQiPWNwdk95I`
+     A :dt:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
+   :chapter:
+     :dp:`fls_A2W4v53ihTGx`
+     A :t:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
 
 :dp:`fls_AXOtKdSQR4AF`
 A :t:`type` is subject to :t:`visible emptiness` as follows:
@@ -4237,11 +4301,20 @@ Subtyping and Variance
      :t:`Subtyping` is a property of :t:`[type]s`, allowing one :t:`type` to be used
      where another :t:`type` is expected.
 
-:dp:`fls_df87d44kgwcv`
-:t:`Variance` is a property of :t:`[lifetime parameter]s` and
-:t:`[type parameter]s` that describes the circumstances under which a
-:t:`generic type` is a :t:`subtype` of an instantiation of itself with
-different :t:`[generic argument]s`.
+.. glossary-entry:: variance
+   
+   :glossary:
+     :dp:`fls_il0krrsf09f8`
+     :dt:`Variance` is a property of :t:`[lifetime parameter]s` and
+     :t:`[type parameter]s` that describes the circumstances under which a
+     :t:`generic type` is a :t:`subtype` of an instantiation of itself with
+     different :t:`[generic argument]s`.
+   :chapter:
+     :dp:`fls_df87d44kgwcv`
+     :t:`Variance` is a property of :t:`[lifetime parameter]s` and
+     :t:`[type parameter]s` that describes the circumstances under which a
+     :t:`generic type` is a :t:`subtype` of an instantiation of itself with
+     different :t:`[generic argument]s`.
 
 .. glossary-entry:: generic type
    
