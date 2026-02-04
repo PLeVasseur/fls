@@ -911,6 +911,20 @@ It is a :t:`safety invariant` for the :t:`function body` to :t:`diverge <divergi
 Conditional Compilation Attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary-entry:: conditional compilation
+   
+   :glossary:
+     :dp:`fls_xymops69eer3`
+     :dt:`Conditional compilation` is the process of compiling
+     :t:`conditionally-compiled source code`.
+
+.. glossary-entry:: conditionally-compiled source code
+   
+   :glossary:
+     :dp:`fls_hs4lnrdxpj2g`
+     :dt:`Conditionally-compiled source code` is source code that may or may not be
+     considered a part of a Rust program depending on certain conditions.
+
 .. _fls_fymvsy6ig99a:
 
 Attribute ``cfg``
@@ -957,9 +971,19 @@ Attribute ``cfg``
 :dp:`fls_xrjp7xw9jutz`
 :t:`Attribute` :dc:`cfg` enables :t:`conditional compilation`.
 
-:dp:`fls_l96kyix5xsof`
-A :t:`configuration predicate` is a :t:`construct` that evaluates statically
-to either ``true`` or ``false``, and controls :t:`conditional compilation`.
+.. glossary-entry:: configuration predicate
+   
+   :glossary:
+     :dp:`fls_TyKIUQMxO9Si`
+     A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
+     to either ``true`` or ``false``, and controls :t:`conditional compilation`.
+     
+     :dp:`fls_99ioki0M64fD`
+     See :s:`ConfigurationPredicate`.
+   :chapter:
+     :dp:`fls_l96kyix5xsof`
+     A :t:`configuration predicate` is a :t:`construct` that evaluates statically
+     to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 .. glossary-entry:: all configuration predicate
    
@@ -1748,6 +1772,12 @@ Attribute ``type_length_limit``
 :t:`Attribute` :dc:`type_length_limit` sets the maximum number of
 :t:`[generic substitution]s` for :t:`[type parameter]s` when constructing a
 :t:`concrete type`.
+
+.. glossary-entry:: concrete type
+   
+   :glossary:
+     :dp:`fls_l0lr3ybgccjc`
+     A :dt:`concrete type` is a :t:`type` described by a :t:`type specification`.
 
 .. rubric:: Examples
 

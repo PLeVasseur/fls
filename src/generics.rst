@@ -77,12 +77,31 @@ A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 :dp:`fls_u8mqct93yimd`
 A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
-:dp:`fls_vpcqgec83ybt`
-A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
+.. glossary-entry:: constant parameter
+   
+   :glossary:
+     :dp:`fls_z7e491m3dx4u`
+     A :dt:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
+     
+     :dp:`fls_9093wziwxk1g`
+     See :s:`ConstantParameter`.
+   :chapter:
+     :dp:`fls_vpcqgec83ybt`
+     A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
 
-:dp:`fls_3SjMBlc0b7qo`
-A :t:`constant parameter initializer` is a :t:`construct` that provides the
-default :t:`value` of its related :t:`constant parameter`.
+.. glossary-entry:: constant parameter initializer
+   
+   :glossary:
+     :dp:`fls_OXD2YaOkfjcI`
+     A :dt:`constant parameter initializer` is a :t:`construct` that provides the
+     default `:t:`value` of its related :t:`constant parameter`.
+     
+     :dp:`fls_CMsyUCxGm8Xs`
+     See :s:`ConstantParameterInitializer`.
+   :chapter:
+     :dp:`fls_3SjMBlc0b7qo`
+     A :t:`constant parameter initializer` is a :t:`construct` that provides the
+     default :t:`value` of its related :t:`constant parameter`.
 
 :dp:`fls_p4yb8EAXlRU0`
 A :t:`constant parameter initializer` shall be a :t:`constant expression`.
@@ -122,9 +141,16 @@ A :t:`generic struct` shall use all of its :t:`[type parameter]s` and
 A :t:`generic union` shall use all of its :t:`[type parameter]s` and
 :t:`[lifetime parameter]s` at least once in at least one of its :t:`[field]s`.
 
-:dp:`fls_hyi2jnp38v1n`
-A :t:`generic parameter` is said to constrain an :t:`implementation` if the
-:t:`generic parameter` appears at least once in one of the following:
+.. glossary-entry:: constrain
+   
+   :glossary:
+     :dp:`fls_fna0ch8ucyhv`
+     A :t:`generic parameter` is said to :dt:`constrain` an :t:`implementation` if
+     it makes the :t:`[implementation]'s` applicability more narrow.
+   :chapter:
+     :dp:`fls_hyi2jnp38v1n`
+     A :t:`generic parameter` is said to constrain an :t:`implementation` if the
+     :t:`generic parameter` appears at least once in one of the following:
 
 * :dp:`fls_sseo6u6pbcki`
   As a :t:`binding argument` in the :t:`[trait bound]s` of a :t:`type` that
@@ -391,9 +417,19 @@ A :t:`binding bound argument` shall only be used within the confines of a
 :t:`[bound]s`, :t:`associated type`'s :t:`[bound]s` or :t:`trait`'s
 :t:`[supertrait]s`.
 
-:dp:`fls_i3z9ueoe99zd`
-A :t:`constant argument` is a :t:`generic argument` that supplies the
-:t:`value` of a :t:`constant parameter`.
+.. glossary-entry:: constant argument
+   
+   :glossary:
+     :dp:`fls_sz10vgh260xo`
+     A :dt:`constant argument` is a :t:`generic argument` that supplies the
+     :t:`value` of a :t:`constant parameter`.
+     
+     :dp:`fls_dz9x6gf3yzc6`
+     See :s:`ConstantArgument`.
+   :chapter:
+     :dp:`fls_i3z9ueoe99zd`
+     A :t:`constant argument` is a :t:`generic argument` that supplies the
+     :t:`value` of a :t:`constant parameter`.
 
 :dp:`fls_al4dhmqodvwc`
 A :t:`constant argument` may only appear as a single segment

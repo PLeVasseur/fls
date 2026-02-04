@@ -154,6 +154,13 @@ relevant to the topic:
 :dp:`fls_oxzjqxgejx9t`
 The syntax representation of a :t:`construct`.
 
+.. glossary-entry:: construct
+   
+   :glossary:
+     :dp:`fls_10tvzeo8xex0`
+     A :dt:`construct` is a piece of program text that is an instance of a
+     :t:`syntactic category`.
+
 .. rubric:: Legality Rules
 
 :dp:`fls_gmx688d6ek1o`

@@ -79,9 +79,19 @@ Constants
 
 .. rubric:: Legality Rules
 
-:dp:`fls_5o5iu4j8in4l`
-A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
-the :t:`value`.
+.. glossary-entry:: constant
+   
+   :glossary:
+     :dp:`fls_p8rjw2qok85b`
+     A :dt:`constant` is an immutable :t:`value` whose uses are substituted by the
+     :t:`value`.
+     
+     :dp:`fls_hlouedpdg1zd`
+     See :s:`ConstantDeclaration`.
+   :chapter:
+     :dp:`fls_5o5iu4j8in4l`
+     A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
+     the :t:`value`.
 
 :dp:`fls_3mhj0kkupwuz`
 An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
@@ -95,9 +105,19 @@ The :t:`type specification` of a :t:`constant` shall have ``'static``
 The :t:`type` of a :t:`constant` shall implement the :std:`core::marker::Sized`
 :t:`trait`.
 
-:dp:`fls_ndmfqxjpvsqy`
-A :t:`constant initializer` is a :t:`construct` that provides the :t:`value` of
-its related :t:`constant`.
+.. glossary-entry:: constant initializer
+   
+   :glossary:
+     :dp:`fls_2ge48v1kmw8`
+     A :dt:`constant initializer` is a :t:`construct` that provides the :t:`value`
+     of its related :t:`constant`.
+     
+     :dp:`fls_h86eg26z19r2`
+     See :s:`ConstantInitializer`.
+   :chapter:
+     :dp:`fls_ndmfqxjpvsqy`
+     A :t:`constant initializer` is a :t:`construct` that provides the :t:`value` of
+     its related :t:`constant`.
 
 :dp:`fls_6rxwbbhf5tc5`
 A :t:`constant` shall have a :t:`constant initializer`, unless it is an
@@ -266,9 +286,16 @@ Constant Promotion
 
 .. rubric:: Legality Rules
 
-:dp:`fls_udn9lyf3m0z6`
-:t:`Constant promotion` is the process of converting a :t:`value expression`
-into a :t:`constant`.
+.. glossary-entry:: constant promotion
+   
+   :glossary:
+     :dp:`fls_ku2md8lnei12`
+     :dt:`Constant promotion` is the process of converting a :t:`value expression`
+     into a :t:`constant`.
+   :chapter:
+     :dp:`fls_udn9lyf3m0z6`
+     :t:`Constant promotion` is the process of converting a :t:`value expression`
+     into a :t:`constant`.
 
 :dp:`fls_yvkdcs4pmxjf`
 :t:`Constant promotion` is possible only when

@@ -170,11 +170,18 @@ Constant Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1ji7368ieg0b`
-A :t:`constant expression` is an :t:`expression` that can be evaluated
-statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
-long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
-involve :t:`[type]s` that require :t:`destruction`:
+.. glossary-entry:: constant expression
+   
+   :glossary:
+     :dp:`fls_rmn8w4rh3juf`
+     A :dt:`constant expression` is an :t:`expression` that can be evaluated
+     statically.
+   :chapter:
+     :dp:`fls_1ji7368ieg0b`
+     A :t:`constant expression` is an :t:`expression` that can be evaluated
+     statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
+     long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
+     involve :t:`[type]s` that require :t:`destruction`:
 
 * :dp:`fls_y6ore0iwx7e0`
   :t:`[Arithmetic expression]s` of :t:`[scalar type]s`,
@@ -295,10 +302,17 @@ It is a static error if the :t:`size operand` of an
 :t:`array repetition constructor` or an :t:`array type` depends on
 :t:`[generic parameter]s`.
 
-:dp:`fls_kjhma680hz3g`
-A :t:`constant context` is a :t:`construct` that requires a
-:t:`constant expression`. The following :t:`[construct]s` are
-:t:`[constant context]s`:
+.. glossary-entry:: constant context
+   
+   :glossary:
+     :dp:`fls_9j6mc4i1t73z`
+     A :dt:`constant context` is a :t:`construct` that requires a
+     :t:`constant expression`.
+   :chapter:
+     :dp:`fls_kjhma680hz3g`
+     A :t:`constant context` is a :t:`construct` that requires a
+     :t:`constant expression`. The following :t:`[construct]s` are
+     :t:`[constant context]s`:
 
 * :dp:`fls_ljc6jq5ksbcs`
   The :t:`constant initializer` of an :t:`associated constant` or a
@@ -833,10 +847,18 @@ Const Blocks
 
 .. rubric:: Legality Rules
 
-:dp:`fls_0lcunL4bo8ka`
-A :t:`const block expression` is a :t:`block expression` that is specified
-with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
-statically.
+.. glossary-entry:: const block expression
+   
+   :glossary:
+     :dp:`fls_5ApoJzRSTZGH`
+     A :dt:`const block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
+     statically.
+   :chapter:
+     :dp:`fls_0lcunL4bo8ka`
+     A :t:`const block expression` is a :t:`block expression` that is specified
+     with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
+     statically.
 
 :dp:`fls_veEGzEbpT4ny`
 An :t:`const block expression` denotes a new :t:`control flow boundary`.
@@ -2766,10 +2788,21 @@ Compound Assignment Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3bu3g8o5nopc`
-A :t:`compound assignment expression` is an expression that first computes
-a :t:`value` from two :t:`[operand]s` and then assigns the value to an
-:t:`assigned operand`.
+.. glossary-entry:: compound assignment expression
+   
+   :glossary:
+     :dp:`fls_mkxpk2jhe5s0`
+     A :dt:`compound assignment expression` is an expression that first computes
+     a :t:`value` from two :t:`[operand]s` and then assigns the value to an
+     :t:`assigned operand`.
+     
+     :dp:`fls_55abuw8symub`
+     See :s:`CompoundAssignmentExpression`.
+   :chapter:
+     :dp:`fls_3bu3g8o5nopc`
+     A :t:`compound assignment expression` is an expression that first computes
+     a :t:`value` from two :t:`[operand]s` and then assigns the value to an
+     :t:`assigned operand`.
 
 .. glossary-entry:: bit and assignment expression
    
@@ -3436,9 +3469,16 @@ Struct Expressions
 A :t:`struct expression` is an :t:`expression` that constructs an
 :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
-:dp:`fls_4z91ymz3ciup`
-A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
-whose value is being constructed by a :t:`struct expression`.
+.. glossary-entry:: constructee
+   
+   :glossary:
+     :dp:`fls_Twbu94uGW4Cb`
+     A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct` or :t:`union`
+     whose value is being constructed by a :t:`struct expression`.
+   :chapter:
+     :dp:`fls_4z91ymz3ciup`
+     A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
+     whose value is being constructed by a :t:`struct expression`.
 
 .. glossary-entry:: base initializer
    
@@ -3964,9 +4004,19 @@ Field Access Expressions
 A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
-:dp:`fls_s2vpn4ihenpe`
-A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
-:t:`field` is selected in a :t:`field access expression`.
+.. glossary-entry:: container operand
+   
+   :glossary:
+     :dp:`fls_stjmobac6wyd`
+     A :dt:`container operand` is an :t:`operand` that indicates the :t:`value`
+     whose :t:`field` is selected in a :t:`field access expression`.
+     
+     :dp:`fls_hgm1ssicc8j4`
+     See :s:`ContainerOperand`.
+   :chapter:
+     :dp:`fls_s2vpn4ihenpe`
+     A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
+     :t:`field` is selected in a :t:`field access expression`.
 
 :dp:`fls_yeuayil6uxzx`
 A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
@@ -4681,6 +4731,16 @@ Continue Expressions
 
    ContinueExpression ::=
        $$continue$$ LabelIndication?
+
+.. glossary-entry:: continue expression
+   
+   :glossary:
+     :dp:`fls_waxam3m9plfj`
+     A :dt:`continue expression` is an :t:`expression` that first terminates and
+     then restarts a :t:`loop expression`.
+     
+     :dp:`fls_smwcz2xw9o1f`
+     See :s:`ContinueExpression`.
 
 .. rubric:: Legality Rules
 

@@ -176,8 +176,14 @@ that encompasses of its :t:`[function qualifier]s`, :t:`name`,
 :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
 :t:`where clause`.
 
-:dp:`fls_2049qu3ji5x7`
-A :t:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
+.. glossary-entry:: constant function
+   
+   :glossary:
+     :dp:`fls_4glkwg11p5ml`
+     A :dt:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
+   :chapter:
+     :dp:`fls_2049qu3ji5x7`
+     A :t:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
 
 :dp:`fls_7mlanuh5mvpn`
 The :t:`function body` of a :t:`constant function` shall be a
