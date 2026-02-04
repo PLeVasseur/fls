@@ -409,10 +409,20 @@ or the previous :t:`path segment` of the :t:`path` shall also be expressed as
      A :t:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
      ``::``.
 
-:dp:`fls_n77icl6idazp`
-A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
-:t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
-above.
+.. glossary-entry:: simple path
+   
+   :glossary:
+     :dp:`fls_db91duoug4eb`
+     A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
+     :t:`[identifier]s` or certain :t:`[keyword]s`.
+     
+     :dp:`fls_cm7ysyfrdwom`
+     See :s:`SimplePath`.
+   :chapter:
+     :dp:`fls_n77icl6idazp`
+     A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
+     :t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
+     above.
 
 :dp:`fls_YnUsdSM4x9eq`
 A :dt:`path prefix` is a :t:`path` with its last :t:`path segment` and
@@ -1293,10 +1303,20 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
      :dp:`fls_8inznqig2ibr`
      See :s:`Renaming`.
 
-:dp:`fls_2bkcn83smy2y`
-A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
-it refers to into scope, optionally with a different
-:t:`name` than they are declared with by using a :t:`renaming`.
+.. glossary-entry:: simple import
+   
+   :glossary:
+     :dp:`fls_jrlzpoauui9g`
+     A :dt:`simple import` is a :t:`use import` that binds a :t:`simple path` to a
+     local :t:`name` by using an optional :t:`renaming`.
+     
+     :dp:`fls_ta5t4h25unsw`
+     See :s:`SimpleImport`.
+   :chapter:
+     :dp:`fls_2bkcn83smy2y`
+     A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
+     it refers to into scope, optionally with a different
+     :t:`name` than they are declared with by using a :t:`renaming`.
 
 .. glossary-entry:: glob import
    
@@ -1438,11 +1458,19 @@ Shadowing
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ob0riinmitkl`
-:t:`Shadowing` is a property of :t:`[name]s`. A :t:`name` is said to be
-:t:`shadowed` when another :t:`name` with the same characters is introduced
-in the same :t:`scope` within the same :t:`namespace`, effectively hiding it.
-A :t:`name` cannot be referred to by any means once it is :t:`shadowed`.
+.. glossary-entry:: shadowing
+   
+   :glossary:
+     :dp:`fls_li3NXOPEH9cL`
+     :dt:`Shadowing` is a property of :t:`[name]s`. A :t:`name` is said to be
+     :dt:`shadowed` when another :t:`name` with the same characters is introduced
+     in the same :t:`scope` within the same :t:`namespace`, effectively hiding it.
+   :chapter:
+     :dp:`fls_ob0riinmitkl`
+     :t:`Shadowing` is a property of :t:`[name]s`. A :t:`name` is said to be
+     :t:`shadowed` when another :t:`name` with the same characters is introduced
+     in the same :t:`scope` within the same :t:`namespace`, effectively hiding it.
+     A :t:`name` cannot be referred to by any means once it is :t:`shadowed`.
 
 :dp:`fls_fslg89a70e3n`
 No :t:`name` shall be :t:`shadowed` except for

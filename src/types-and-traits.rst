@@ -492,6 +492,13 @@ domain of whole numbers:
 :t:`Type` :c:`usize` has the same number of bits as the platform's
 :t:`pointer type`, and is at least 16-bits wide.
 
+.. glossary-entry:: signed integer type
+   
+   :glossary:
+     :dp:`fls_vcronf7l2bhy`
+     A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+     negative whole numbers, zero, and positive whole numbers.
+
 :dp:`fls_p2shoji3xg5a`
 :t:`[Signed integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
@@ -573,6 +580,12 @@ domain of whole numbers:
 
 Sequence Types
 --------------
+
+.. glossary-entry:: sequence type
+   
+   :glossary:
+     :dp:`fls_lk1oslxh8h9p`
+     A :dt:`sequence type` represents a sequence of elements.
 
 .. _fls_uj0kpjwyld60:
 
@@ -1427,9 +1440,16 @@ Reference Types
      :dp:`fls_twhq24s8kchh`
      A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
-:dp:`fls_w4NbA7WhZfR2`
-A :t:`shared reference type` is a :t:`reference type` not subject to
-:t:`keyword` ``mut``.
+.. glossary-entry:: shared reference type
+   
+   :glossary:
+     :dp:`fls_8z9wb3eu5yp1`
+     A :dt:`shared reference type` is a :t:`reference type` not subject to
+     :t:`keyword` ``mut``.
+   :chapter:
+     :dp:`fls_w4NbA7WhZfR2`
+     A :t:`shared reference type` is a :t:`reference type` not subject to
+     :t:`keyword` ``mut``.
 
 :dp:`fls_ie0avzljmxfm`
 A :t:`shared reference type` prevents the direct mutation of a referenced
@@ -1441,6 +1461,12 @@ A :t:`shared reference type` implements the :std:`core::marker::Copy`
 
 :dp:`fls_csdjfwczlzfd`
 Releasing a :t:`shared reference` has no effect on the :t:`value` it refers to.
+
+.. glossary-entry:: shared reference
+   
+   :glossary:
+     :dp:`fls_cspa4c5mscnw`
+     A :dt:`shared reference` is a :t:`value` of a :t:`shared reference type`.
 
 .. glossary-entry:: mutable reference type
    

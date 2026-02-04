@@ -1194,6 +1194,13 @@ Borrow Expression
      An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
      :t:`keyword` ``mut``.
 
+.. glossary-entry:: shared borrow
+   
+   :glossary:
+     :dp:`fls_gmbskxin90zi`
+     A :dt:`shared borrow` is a :t:`borrow` produced by evaluating an
+     :t:`immutable borrow expression`.
+
 .. glossary-entry:: mutable borrow expression
    
    :glossary:
@@ -2095,9 +2102,19 @@ The :t:`type` of a :t:`bit xor expression` is :t:`associated type`
 The :t:`value` of a :t:`bit xor expression` is the result of
 ``core::ops::BitXor::bitxor(left_operand, right_operand)``.
 
-:dp:`fls_caxn774ij8lk`
-A :t:`shift left expression` is a :t:`bit expression` that uses bit shift left
-arithmetic.
+.. glossary-entry:: shift left expression
+   
+   :glossary:
+     :dp:`fls_phiv6k4emauc`
+     A :dt:`shift left expression` is a :t:`bit expression` that uses bit shift left
+     arithmetic.
+     
+     :dp:`fls_56lu9kenzig9`
+     See :s:`ShiftLeftExpression`.
+   :chapter:
+     :dp:`fls_caxn774ij8lk`
+     A :t:`shift left expression` is a :t:`bit expression` that uses bit shift left
+     arithmetic.
 
 :dp:`fls_1f4pc612f2a8`
 The :t:`type` of the :t:`left operand` of a :t:`shift left expression` shall
@@ -2112,9 +2129,19 @@ The :t:`type` of a :t:`shift left expression` is :t:`associated type`
 The :t:`value` of a :t:`shift left expression` is the result of
 ``core::ops::Shl::shl(left_operand, right_operand)``.
 
-:dp:`fls_t709sl4co3al`
-A :t:`shift right expression` is a :t:`bit expression` that uses bit shift right
-arithmetic.
+.. glossary-entry:: shift right expression
+   
+   :glossary:
+     :dp:`fls_j6itily0u0k9`
+     A :dt:`shift right expression` is a :t:`bit expression` that uses bit shift
+     right arithmetic.
+     
+     :dp:`fls_ex1mopil8w1p`
+     See :s:`ShiftRightExpression`.
+   :chapter:
+     :dp:`fls_t709sl4co3al`
+     A :t:`shift right expression` is a :t:`bit expression` that uses bit shift right
+     arithmetic.
 
 :dp:`fls_onutb0b9p9zj`
 The :t:`type` of the :t:`left operand` of a :t:`shift right expression` shall
@@ -3268,13 +3295,45 @@ Compound Assignment Expressions
      A :t:`remainder assignment expression` is a :t:`compound assignment expression`
      that uses remainder division.
 
-:dp:`fls_oy9ur11k78t`
-A :t:`shift left assignment expression` is a :t:`compound assignment expression`
-that uses bit shift left arithmetic.
+.. glossary-entry:: shift left assignment
+   
+   :glossary:
+     :dp:`fls_6adWrtvab6Tw`
+     For :dt:`shift left assignment`, see :t:`shift left assignment expression`.
 
-:dp:`fls_s7rey2bndfei`
-A :t:`shift right assignment expression` is a
-:t:`compound assignment expression` that uses bit shift right arithmetic.
+.. glossary-entry:: shift left assignment expression
+   
+   :glossary:
+     :dp:`fls_j15ke2p8cjfp`
+     A :dt:`shift left assignment expression` is a
+     :t:`compound assignment expression` that uses bit shift left arithmetic.
+     
+     :dp:`fls_ozu74fsakomn`
+     See :s:`ShiftLeftAssignmentExpression`.
+   :chapter:
+     :dp:`fls_oy9ur11k78t`
+     A :t:`shift left assignment expression` is a :t:`compound assignment expression`
+     that uses bit shift left arithmetic.
+
+.. glossary-entry:: shift right assignment
+   
+   :glossary:
+     :dp:`fls_XuwcHjwHdyA8`
+     For :dt:`shift right assignment`, see :t:`shift right assignment expression`.
+
+.. glossary-entry:: shift right assignment expression
+   
+   :glossary:
+     :dp:`fls_1jpnp7hatlmu`
+     A :dt:`shift right assignment expression` is a
+     :t:`compound assignment expression` that uses bit shift right arithmetic.
+     
+     :dp:`fls_naqzlebew1uf`
+     See :s:`ShiftRightAssignmentExpression`.
+   :chapter:
+     :dp:`fls_s7rey2bndfei`
+     A :t:`shift right assignment expression` is a
+     :t:`compound assignment expression` that uses bit shift right arithmetic.
 
 :dp:`fls_7l7v7vigw3fu`
 A :t:`subtraction assignment expression` is a
@@ -4041,9 +4100,19 @@ The :t:`type` of a :t:`named initializer` and the :t:`type` of the matched
 The :t:`value` of a :t:`named initializer` is the :t:`value` of its
 :t:`expression`.
 
-:dp:`fls_57t368kema7h`
-A :t:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
-of a :t:`field` in a :t:`struct expression`.
+.. glossary-entry:: shorthand initializer
+   
+   :glossary:
+     :dp:`fls_bgxxg48snck1`
+     A :dt:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
+     of a :t:`field` in a :t:`struct expression`.
+     
+     :dp:`fls_qc08ydgmqudi`
+     See :s:`ShorthandInitializer`.
+   :chapter:
+     :dp:`fls_57t368kema7h`
+     A :t:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
+     of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_sm2hx8sh4agb`
 A :t:`shorthand initializer` is equivalent to a :t:`named initializer` where

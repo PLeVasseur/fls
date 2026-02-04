@@ -200,9 +200,16 @@ The text of a :t:`source file` is divided into :t:`[line]s`.
 :dp:`fls_go25sisi5fdp`
 The representation of an end of line is tool-defined.
 
-:dp:`fls_a6t53o8h1vdk`
-A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
-element]s`. A :t:`whitespace string` is a :t:`separator`.
+.. glossary-entry:: separator
+   
+   :glossary:
+     :dp:`fls_128xny4qfcj5`
+     A :dt:`separator` is a character or a string that separates adjacent
+     :t:`[lexical element]s`.
+   :chapter:
+     :dp:`fls_a6t53o8h1vdk`
+     A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
+     element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 .. glossary-entry:: punctuator
    
@@ -730,9 +737,19 @@ except characters 0x0D (carriage return), 0x22 (quotation mark), and 0x5C
 
 .. rubric:: Legality Rules
 
-:dp:`fls_moe3zfx39ox2`
-A :t:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
-:s:`[AsciiCharacter]s`.
+.. glossary-entry:: simple byte string literal
+   
+   :glossary:
+     :dp:`fls_XpbU4Up0Aza8`
+     A :dt:`simple byte string literal` is a :t:`byte string literal` that consists
+     of multiple :s:`[AsciiCharacter]s`.
+     
+     :dp:`fls_OfI70zK68TnQ`
+     See :s:`SimpleByteStringLiteral`.
+   :chapter:
+     :dp:`fls_moe3zfx39ox2`
+     A :t:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
+     :s:`[AsciiCharacter]s`.
 
 :dp:`fls_vffxb6arj9jf`
 The :t:`type` of a :t:`simple byte string literal` of size ``N`` is ``&'static [u8;
@@ -845,10 +862,21 @@ Simple C String Literals
      | StringContinuation
      | UnicodeEscape
 
-:dp:`fls_fnwQHo7twAom`
-A :t:`simple c string literal` is any :t:`Unicode` character except characters
-0x0D (carriage return), 0x22 (quotation mark), 0x5C (reverse solidus) and 0x00
-(null byte).
+.. glossary-entry:: simple c string literal
+   
+   :glossary:
+     :dp:`fls_qoHXrmds9SgI`
+     A :dt:`simple c string literal` is any :t:`Unicode` character except characters
+     0x0D (carriage return), 0x22 (quotation mark), 0x5C (reverse solidus) and 0x00
+     (null byte).
+     
+     :dp:`fls_ggm5FNUqg9EY`
+     See :s:`SimpleCStringLiteral`.
+   :chapter:
+     :dp:`fls_fnwQHo7twAom`
+     A :t:`simple c string literal` is any :t:`Unicode` character except characters
+     0x0D (carriage return), 0x22 (quotation mark), 0x5C (reverse solidus) and 0x00
+     (null byte).
 
 .. rubric:: Legality Rules
 

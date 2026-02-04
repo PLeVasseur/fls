@@ -1139,10 +1139,21 @@ its :t:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
 The :t:`type` of a :t:`matched named deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
-:dp:`fls_9wfizujx0szd`
-A :t:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
-of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
-:t:`binding`.
+.. glossary-entry:: shorthand deconstructor
+   
+   :glossary:
+     :dp:`fls_22yxrde244w8`
+     A :dt:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
+     of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
+     :t:`binding`.
+     
+     :dp:`fls_rlo4237bgbwt`
+     See :s:`ShorthandDeconstructor`.
+   :chapter:
+     :dp:`fls_9wfizujx0szd`
+     A :t:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
+     of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
+     :t:`binding`.
 
 :dp:`fls_jTh9Hur0qsIb`
 A :t:`shorthand deconstructor` with :t:`keyword` ``mut`` yields a

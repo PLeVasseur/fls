@@ -43,9 +43,16 @@ The Rust programming language provides the :std:`core::marker::Send` and
 :std:`core::marker::Sync` :t:`[trait]s` for preventing data races at the
 :t:`type` level.
 
-:dp:`fls_2jujsujpjp3w`
-A :t:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
-:t:`trait`.
+.. glossary-entry:: send type
+   
+   :glossary:
+     :dp:`fls_qfkng98dw6yy`
+     A :dt:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
+     :t:`trait`.
+   :chapter:
+     :dp:`fls_2jujsujpjp3w`
+     A :t:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
+     :t:`trait`.
 
 :dp:`fls_cax6fe4em23k`
 An :t:`abstract data type` automatically implements the
