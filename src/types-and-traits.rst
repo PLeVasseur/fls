@@ -659,6 +659,12 @@ An array type in the context of a let statement:
 Slice Types
 ~~~~~~~~~~~
 
+.. glossary-entry:: slice
+   
+   :glossary:
+     :dp:`fls_p1sv01ml2ark`
+     A :dt:`slice` is a :t:`value` of a :t:`slice type`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -668,9 +674,19 @@ Slice Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ftvua2hlvr08`
-A :t:`slice type` is a :t:`sequence type` that provides a view into a sequence
-of elements.
+.. glossary-entry:: slice type
+   
+   :glossary:
+     :dp:`fls_bvpszep1w90g`
+     A :dt:`slice type` is a :t:`sequence type` that provides a view into a sequence
+     of elements.
+     
+     :dp:`fls_y7gscwf29htg`
+     See :s:`SliceTypeSpecification`.
+   :chapter:
+     :dp:`fls_ftvua2hlvr08`
+     A :t:`slice type` is a :t:`sequence type` that provides a view into a sequence
+     of elements.
 
 :dp:`fls_acgtczhk8ci0`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -695,9 +711,16 @@ Str Type
 
 .. rubric:: Legality Rules
 
-:dp:`fls_wlnoq1qoq2kr`
-:c:`Str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
-bytes.
+.. glossary-entry:: str
+   
+   :glossary:
+     :dp:`fls_6977zxb0resa`
+     :dc:`str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit
+     unsigned bytes.
+   :chapter:
+     :dp:`fls_wlnoq1qoq2kr`
+     :c:`Str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
+     bytes.
 
 :dp:`fls_1xa6fas6laha`
 :t:`Type` :c:`str` is a :t:`dynamically sized type`.
@@ -1904,11 +1927,19 @@ All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
      and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
      address that is a multiple of ``N``.
 
-:dp:`fls_1pbwigq6f3ha`
-The :t:`size` of a :t:`type` is the offset in bytes between successive elements
-in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
-including any padding for :t:`alignment`. :t:`Size` is a multiple of the
-:t:`alignment`.
+.. glossary-entry:: size
+   
+   :glossary:
+     :dp:`fls_3obnilqhkjux`
+     The :dt:`size` of a :t:`value` is the offset in bytes between successive
+     elements in an :t:`array type` with the same :t:`element type`, including any
+     padding for :t:`alignment`.
+   :chapter:
+     :dp:`fls_1pbwigq6f3ha`
+     The :t:`size` of a :t:`type` is the offset in bytes between successive elements
+     in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
+     including any padding for :t:`alignment`. :t:`Size` is a multiple of the
+     :t:`alignment`.
 
 :dp:`fls_bk3nm2n47afu`
 The :t:`size` of :t:`[scalar type]s` is as follows:
@@ -2626,6 +2657,12 @@ occur when:
   The source :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``T``
   and the target :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``U``,
   where ``U`` is a :t:`supertrait` of ``T``.
+
+.. glossary-entry:: sized type
+   
+   :glossary:
+     :dp:`fls_pwcgsRCNSwKn`
+     A :dt:`sized type` is a :t:`type` with statically known size.
 
 :dp:`fls_iiiu2q7pym4p`
 An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
@@ -4093,9 +4130,16 @@ Static Lifetime Elision
 
 .. rubric:: Legality Rules
 
-:dp:`fls_l4RDXaFwnQZ6`
-:t:`Static lifetime elision` is a form of :t:`lifetime elision` that applies to
-the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
+.. glossary-entry:: static lifetime elision
+   
+   :glossary:
+     :dp:`fls_NbVewjYRnQPF`
+     :dt:`Static lifetime elision` is a form of :t:`lifetime elision` that applies
+     to :t:`[constant]s` and :t:`[static]s`.
+   :chapter:
+     :dp:`fls_l4RDXaFwnQZ6`
+     :t:`Static lifetime elision` is a form of :t:`lifetime elision` that applies to
+     the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
 
 :dp:`fls_8irr97rZWfSC`
 An :t:`elided` :t:`lifetime` of a :t:`reference type` or :t:`path` in the

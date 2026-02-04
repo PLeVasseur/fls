@@ -942,9 +942,19 @@ Slice Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_qqiu594hki8g`
-A :t:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed size
-and :t:`[slice]s` of dynamic size.
+.. glossary-entry:: slice pattern
+   
+   :glossary:
+     :dp:`fls_7613qu4igwiw`
+     A :dt:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed
+     size and :t:`[slice]s` of dynamic size.
+     
+     :dp:`fls_3qey00280x27`
+     See :s:`SlicePattern`.
+   :chapter:
+     :dp:`fls_qqiu594hki8g`
+     A :t:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed size
+     and :t:`[slice]s` of dynamic size.
 
 :dp:`fls_h6x9xlxi7y5n`
 A :t:`slice pattern` is an :t:`irrefutable pattern` when it refers to:

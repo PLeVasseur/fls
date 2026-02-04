@@ -189,9 +189,19 @@ Statics
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ibrmiwfypldh`
-A :t:`static` is a :t:`value` that is associated with a specific memory
-location.
+.. glossary-entry:: static
+   
+   :glossary:
+     :dp:`fls_srx4v1e20yxa`
+     A :dt:`static` is a :t:`value` that is associated with a specific memory
+     location.
+     
+     :dp:`fls_1b7gpk8e98pw`
+     See :s:`StaticDeclaration`.
+   :chapter:
+     :dp:`fls_ibrmiwfypldh`
+     A :t:`static` is a :t:`value` that is associated with a specific memory
+     location.
 
 :dp:`fls_mt94jvoot9dx`
 A :t:`static` defined within a :t:`generic function` exists once in the
@@ -234,9 +244,19 @@ Access to a :t:`mutable static` shall require :t:`unsafe context`.
 The type of an :t:`immutable static` shall implement the
 :std:`core::marker::Sync` :t:`trait`.
 
-:dp:`fls_t17h5h6a6v4c`
-A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
-its related :t:`static`.
+.. glossary-entry:: static initializer
+   
+   :glossary:
+     :dp:`fls_6jjbfni87tax`
+     A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
+     its related :t:`static`.
+     
+     :dp:`fls_igbl5uv0dlhl`
+     See :s:`StaticInitializer`.
+   :chapter:
+     :dp:`fls_t17h5h6a6v4c`
+     A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
+     its related :t:`static`.
 
 :dp:`fls_yq0hpy4jx2qb`
 A :t:`static` shall have a :t:`static initializer`, unless it is an

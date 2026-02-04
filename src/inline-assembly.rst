@@ -853,9 +853,19 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
      An :t:`input-output register expression` is a :t:`construct` that specifies
      both an :t:`input register expression` and an :t:`output register expression`.
 
-:dp:`fls_aniw4ehsn2kb`
-A :t:`simple register expression` is either an :t:`expression` or an
-:t:`underscore expression`.
+.. glossary-entry:: simple register expression
+   
+   :glossary:
+     :dp:`fls_4Yp4R7gXucL2`
+     A :dt:`simple register expression` is either an :t:`expression` or an
+     :t:`underscore expression`.
+     
+     :dp:`fls_kKaqHDxPTTUC`
+     See :s:`SimpleRegisterExpression`.
+   :chapter:
+     :dp:`fls_aniw4ehsn2kb`
+     A :t:`simple register expression` is either an :t:`expression` or an
+     :t:`underscore expression`.
 
 .. glossary-entry:: register expression
    

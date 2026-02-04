@@ -1422,9 +1422,19 @@ new line).
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ycy5ee6orjx`
-A :t:`simple string literal` is a :t:`string literal` where the characters are
-:t:`Unicode` characters.
+.. glossary-entry:: simple string literal
+   
+   :glossary:
+     :dp:`fls_p6qyyptz8w8w`
+     A :dt:`simple string literal` is a :t:`string literal` where the characters are
+     :t:`Unicode` characters.
+     
+     :dp:`fls_osj0c4dmr6e0`
+     See :s:`SimpleStringLiteral`.
+   :chapter:
+     :dp:`fls_ycy5ee6orjx`
+     A :t:`simple string literal` is a :t:`string literal` where the characters are
+     :t:`Unicode` characters.
 
 :dp:`fls_6nt5kls21xes`
 The :t:`type` of a :t:`simple string literal` is ``&'static str``.
@@ -1843,8 +1853,17 @@ Strict Keywords
 
 .. rubric:: Legality Rules
 
-:dp:`fls_bsh7qsyvox21`
-A :t:`strict keyword` is a :t:`keyword` that always holds its special meaning.
+.. glossary-entry:: strict keyword
+   
+   :glossary:
+     :dp:`fls_hza9spr6behn`
+     A :dt:`strict keyword` is a :t:`keyword` that always holds its special meaning.
+     
+     :dp:`fls_67pzayd9qzzs`
+     See :s:`StrictKeyword`.
+   :chapter:
+     :dp:`fls_bsh7qsyvox21`
+     A :t:`strict keyword` is a :t:`keyword` that always holds its special meaning.
 
 .. _fls_cbsgp6k0qa82:
 

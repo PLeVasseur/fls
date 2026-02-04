@@ -34,10 +34,20 @@ Source Files
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4vicosdeaqmp`
-A :t:`source file` contains the program text consisting of :t:`[inner
-attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
-:t:`source file` is tool defined.
+.. glossary-entry:: source file
+   
+   :glossary:
+     :dp:`fls_nh737q4mn27u`
+     A :dt:`source file` contains the program text of :t:`[inner attribute]s`,
+     :t:`[inner doc comment]s`, and :t:`[item]s`.
+     
+     :dp:`fls_zgh1m5357ex1`
+     See :s:`SourceFile`.
+   :chapter:
+     :dp:`fls_4vicosdeaqmp`
+     A :t:`source file` contains the program text consisting of :t:`[inner
+     attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
+     :t:`source file` is tool defined.
 
 :dp:`fls_ann3cha1xpek`
 A :s:`Shebang` does not have an effect on the compilation.

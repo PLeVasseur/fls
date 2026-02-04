@@ -8,6 +8,15 @@
 Statements
 ==========
 
+.. glossary-entry:: statement
+   
+   :glossary:
+     :dp:`fls_faijgwg4lhp9`
+     A :dt:`statement` is a component of a block expression.
+     
+     :dp:`fls_th7edvxml3mn`
+     See :s:`Statement`.
+
 .. rubric:: Syntax
 
 .. syntax::

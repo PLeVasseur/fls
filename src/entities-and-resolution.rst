@@ -233,9 +233,19 @@ A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
      to a :t:`simple path public modifier` where the :t:`simple path` denotes
      :t:`keyword` ``self``.
 
-:dp:`fls_yymgpyi67dty`
-A :t:`simple path public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`public visibility` within the provided :t:`simple path` only.
+.. glossary-entry:: simple path public modifier
+   
+   :glossary:
+     :dp:`fls_mby9r0jm6uyv`
+     A :dt:`simple path public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the provided :t:`simple path` only.
+     
+     :dp:`fls_mud4hw74kuh6`
+     See :s:`SimplePathPublicModifier`.
+   :chapter:
+     :dp:`fls_yymgpyi67dty`
+     A :t:`simple path public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the provided :t:`simple path` only.
 
 :dp:`fls_hc121mxknq03`
 The :t:`simple path` of a :t:`simple path public modifier` shall start
@@ -247,9 +257,19 @@ The :t:`simple path` of a :t:`simple path public modifier` shall resolve to
 an ancestor :t:`module` of the current :t:`module` or the current :t:`module`
 itself.
 
-:dp:`fls_np8aghofjqhm`
-A :t:`simple public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`public visibility`.
+.. glossary-entry:: simple public modifier
+   
+   :glossary:
+     :dp:`fls_ce1ounn1g68`
+     A :dt:`simple public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility`.
+     
+     :dp:`fls_rd68vm2f2qy5`
+     See :s:`SelfPublicModifier`.
+   :chapter:
+     :dp:`fls_np8aghofjqhm`
+     A :t:`simple public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility`.
 
 :dp:`fls_quzvhzpr0124`
 A :t:`super public modifier` is a :t:`visibility modifier` that grants a
@@ -444,9 +464,16 @@ be part of the :s:`UseImportContent` of a :t:`nesting import` as long as the
 :dp:`fls_kv5bpq8rf1j9`
 A :t:`simple path` is subject to :t:`simple path resolution`.
 
-:dp:`fls_chtj3hcfe3ap`
-A :t:`single segment path` is a :t:`path` consisting of exactly one
-:t:`path segment`.
+.. glossary-entry:: single segment path
+   
+   :glossary:
+     :dp:`fls_Hun5BCZsqd6k`
+     A :dt:`single segment path` is a :t:`path` consisting of exactly one
+     :t:`path segment`.
+   :chapter:
+     :dp:`fls_chtj3hcfe3ap`
+     A :t:`single segment path` is a :t:`path` consisting of exactly one
+     :t:`path segment`.
 
 .. glossary-entry:: multi segment path
    
@@ -1263,9 +1290,19 @@ A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
 :t:`use import` resides.
 
-:dp:`fls_sxo1jb25pl8a`
-A :t:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
-or a :t:`nesting import`.
+.. glossary-entry:: simple path prefix
+   
+   :glossary:
+     :dp:`fls_ijc2yHQuIltY`
+     A :dt:`simple path prefix` is the leading :t:`simple path` of a
+     :t:`glob import` or a :t:`nesting import`.
+     
+     :dp:`fls_ImHceyHhK6OZ`
+     See :s:`SimplePathPrefix`.
+   :chapter:
+     :dp:`fls_sxo1jb25pl8a`
+     A :t:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
+     or a :t:`nesting import`.
 
 :dp:`fls_WAA4WmohGu6T`
 An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
@@ -1985,9 +2022,16 @@ Simple Path Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_uml24jw5jo7a`
-:t:`Simple path resolution` is a kind of :t:`path resolution` that applies to
-a :t:`simple path`.
+.. glossary-entry:: simple path resolution
+   
+   :glossary:
+     :dp:`fls_CQlepoN6PmKq`
+     :dt:`Simple path resolution` is a kind of :t:`path resolution` that applies to
+     a :t:`simple path`.
+   :chapter:
+     :dp:`fls_uml24jw5jo7a`
+     :t:`Simple path resolution` is a kind of :t:`path resolution` that applies to
+     a :t:`simple path`.
 
 :dp:`fls_59wd7loxst43`
 The :t:`namespace context` of :t:`simple path resolution` is determined as

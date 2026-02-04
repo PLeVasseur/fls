@@ -3700,9 +3700,19 @@ Array Expressions
      A :t:`repeat operand` is an :t:`operand` that specifies the element being
      repeated in an :t:`array repetition constructor`.
 
-:dp:`fls_2l9objtb23zn`
-A :t:`size operand` is an :t:`operand` that specifies the size of an :t:`array`
-or an :t:`array type`.
+.. glossary-entry:: size operand
+   
+   :glossary:
+     :dp:`fls_srajsqi5i3py`
+     A :dt:`size operand` is an :t:`operand` that specifies the size of an
+     :t:`array` or an :t:`array type`.
+     
+     :dp:`fls_228ioayvdguv`
+     See :s:`SizeOperand`.
+   :chapter:
+     :dp:`fls_2l9objtb23zn`
+     A :t:`size operand` is an :t:`operand` that specifies the size of an :t:`array`
+     or an :t:`array type`.
 
 :dp:`fls_9gmnjvs83d8o`
 The :t:`size operand` shall be a :t:`constant expression`.
