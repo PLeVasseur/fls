@@ -133,6 +133,13 @@ The value of a :t:`constant` is determined by evaluating its
 
 .. rubric:: Dynamic Semantics
 
+.. glossary-entry:: elaboration
+   
+   :glossary:
+     :dp:`fls_xoahzmwu1std`
+     :dt:`Elaboration` is the process by which a :t:`declaration` achieves its
+     runtime effects.
+
 :dp:`fls_xezt9hl069h4`
 The :t:`elaboration` of a :t:`constant` evaluates its :t:`constant initializer`.
 

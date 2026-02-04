@@ -510,6 +510,16 @@ Array Types
      An :t:`array type` is a :t:`sequence type` that represents a fixed sequence
      of elements.
 
+.. glossary-entry:: element type
+   
+   :glossary:
+     :dp:`fls_3bndijf8g9os`
+     An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
+     a :t:`slice type`.
+     
+     :dp:`fls_pvyl887dn016`
+     See :s:`ElementType`.
+
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
 
@@ -646,6 +656,12 @@ Abstract Data Types
 Enum Types
 ~~~~~~~~~~
 
+.. glossary-entry:: enum
+   
+   :glossary:
+     :dp:`fls_9o0ig19xh2f5`
+     An :dt:`enum` is an :t:`item` that declares an :t:`enum type`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -669,16 +685,55 @@ Enum Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_gbdd37seqoab`
-An :t:`enum type` is an :t:`abstract data type` that contains
-:t:`[enum variant]s`.
+.. glossary-entry:: enum type
+   
+   :glossary:
+     :dp:`fls_idwrgo87ub3i`
+     An :dt:`enum type` is an :t:`abstract data type` that contains
+     :t:`[enum variant]s`.
+     
+     :dp:`fls_o6ih6n1z1566`
+     See :s:`EnumDeclaration`.
+   :chapter:
+     :dp:`fls_gbdd37seqoab`
+     An :t:`enum type` is an :t:`abstract data type` that contains
+     :t:`[enum variant]s`.
 
 :dp:`fls_il9a1olqmu38`
 A :t:`zero-variant enum type` has no :t:`[value]s`.
 
-:dp:`fls_wQTFwl88VujQ`
-An :t:`enum variant` is a :t:`construct` that declares one of the
-possible variations of an :t:`enum`.
+.. glossary-entry:: enum variant
+   
+   :glossary:
+     :dp:`fls_9jq4keg9y94u`
+     An :dt:`enum variant` is a :t:`construct` that declares one of the
+     possible variations of an :t:`enum`.
+     
+     :dp:`fls_tj2s55onen6b`
+     See :s:`EnumVariant`.
+   :chapter:
+     :dp:`fls_wQTFwl88VujQ`
+     An :t:`enum variant` is a :t:`construct` that declares one of the
+     possible variations of an :t:`enum`.
+
+.. glossary-entry:: enum field
+   
+   :glossary:
+     :dp:`fls_J8udq05QGiEj`
+     An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
+
+.. glossary-entry:: enum value
+   
+   :glossary:
+     :dp:`fls_QdBTdVLB2xHk`
+     An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
+
+.. glossary-entry:: enum variant value
+   
+   :glossary:
+     :dp:`fls_VQRqNPFFWmDp`
+     An :dt:`enum variant value` is the :t:`enum value` of the corresponding
+     :t:`enum` of the :t:`enum variant`.
 
 :dp:`fls_g5qle7xzaoif`
 The :t:`name` of an :t:`enum variant` shall be unique within the related
@@ -1468,8 +1523,15 @@ Type Layout
 :dp:`fls_kdbq02iguzgl`
 All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
 
-:dp:`fls_26Xgem831Nqg`
-A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
+.. glossary-entry:: dynamically sized type
+   
+   :glossary:
+     :dp:`fls_eeyxu730z2pw`
+     A :dt:`dynamically sized type` is a :t:`type` that does not implement the
+     :std:`core::marker::Sized` :t:`trait`.
+   :chapter:
+     :dp:`fls_26Xgem831Nqg`
+     A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
 
 :dp:`fls_ozYgHEHFTT5c`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
@@ -3442,6 +3504,20 @@ An :dt:`output lifetime` is one of the following :t:`[lifetime]s`:
   Any :t:`lifetime` related to the :t:`[return type]s` of the
   :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and :std:`core::ops::FnOnce`
   :t:`[trait]s`.
+
+.. glossary-entry:: elided lifetime
+   
+   :glossary:
+     :dp:`fls_9q28407ev0a6`
+     An :dt:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`
+     that has been explicitly omitted from a :t:`function signature` or an
+     :t:`implementation`.
+
+.. glossary-entry:: elided
+   
+   :glossary:
+     :dp:`fls_lo3c3n9wy6qz`
+     For :dt:`elided`, see :t:`elided lifetime`.
 
 :dp:`fls_g56br27hq2zj`
 :t:`Lifetime elision` proceeds as follows:

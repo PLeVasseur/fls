@@ -22,9 +22,16 @@ Entities
 
 .. rubric:: Legality Rules
 
-:dp:`fls_x7j6wcigqt7u`
-An :t:`entity` is a :t:`construct` that can be referred to within program text,
-usually via a :t:`field access expression` or a :t:`path`.
+.. glossary-entry:: entity
+   
+   :glossary:
+     :dp:`fls_mdbck557k8sy`
+     An :dt:`entity` is a :t:`construct` that can be referred to within program
+     text, usually via a :t:`field access expression` or a :t:`path`.
+   :chapter:
+     :dp:`fls_x7j6wcigqt7u`
+     An :t:`entity` is a :t:`construct` that can be referred to within program text,
+     usually via a :t:`field access expression` or a :t:`path`.
 
 :dp:`fls_40d2g0hvq2il`
 A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.

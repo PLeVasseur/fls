@@ -463,6 +463,13 @@ An :t:`uninitialized` :t:`variable` is not :t:`dropped`.
 #. :dp:`fls_ag249y74jg6c`
    Otherwise, :t:`dropping` has no effect.
 
+.. glossary-entry:: dropping
+   
+   :glossary:
+     :dp:`fls_k4mguykh8ey`
+     :dt:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
+     related :t:`type`.
+
 .. rubric:: Examples
 
 .. code-block:: rust

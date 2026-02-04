@@ -113,9 +113,22 @@ A :t:`subject let expression` is an :t:`expression` that controls
 
 .. rubric:: Dynamic Semantics
 
-:dp:`fls_1223lwh4nq49`
-:t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
-effects.
+.. glossary-entry:: evaluation
+   
+   :glossary:
+     :dp:`fls_8zmtio6razl1`
+     :dt:`Evaluation` is the process by which an :t:`expression` achieves its
+     runtime effects.
+   :chapter:
+     :dp:`fls_1223lwh4nq49`
+     :t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
+     effects.
+
+.. glossary-entry:: evaluated
+   
+   :glossary:
+     :dp:`fls_769tm6hn9g5e`
+     See :t:`evaluation`.
 
 .. _fls_isyftqu120l:
 
@@ -1270,10 +1283,21 @@ Error Propagation Expression
 
 .. rubric:: Legality Rules
 
-:dp:`fls_8q59wbumrt5s`
-An :t:`error propagation expression` is an :t:`expression` that either evaluates
-to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
-flow boundary.
+.. glossary-entry:: error propagation expression
+   
+   :glossary:
+     :dp:`fls_5kebgodxtqqt`
+     An :dt:`error propagation expression` is an :t:`expression` that either
+     evaluates to a :t:`value` of its :t:`operand` or returns a value to the next
+     control flow boundary.
+     
+     :dp:`fls_agyqvyda3rcj`
+     See :s:`ErrorPropagationExpression`.
+   :chapter:
+     :dp:`fls_8q59wbumrt5s`
+     An :t:`error propagation expression` is an :t:`expression` that either evaluates
+     to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
+     flow boundary.
 
 :dp:`fls_mq2h4seoxah`
 An :t:`error propagation expression` shall appear within a :t:`control flow
@@ -2065,8 +2089,17 @@ A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
 :dp:`fls_9s4re3ujnfis`
 The :t:`type` of a :t:`comparison expression` is :t:`type` :c:`bool`.
 
-:dp:`fls_ruyho6cu7rxg`
-An :t:`equals expression` is a :t:`comparison expression` that tests equality.
+.. glossary-entry:: equals expression
+   
+   :glossary:
+     :dp:`fls_mn1g2hijtd6f`
+     An :dt:`equals expression` is a :t:`comparison expression` that tests equality.
+     
+     :dp:`fls_j32l4do0xw4d`
+     See :s:`EqualsExpression`.
+   :chapter:
+     :dp:`fls_ruyho6cu7rxg`
+     An :t:`equals expression` is a :t:`comparison expression` that tests equality.
 
 :dp:`fls_8echqk9po1cf`
 The :t:`type` of the :t:`left operand` of an :t:`equals expression` shall
@@ -5021,9 +5054,19 @@ An :t:`if expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on the :t:`value` of
 its :t:`subject expression`.
 
-:dp:`fls_5azwlk7hav1k`
-An :t:`else expression` is an :t:`expression` that represents either a
-:t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
+.. glossary-entry:: else expression
+   
+   :glossary:
+     :dp:`fls_inp7luoqkjc5`
+     An :dt:`else expression` is an :t:`expression` that represents either a
+     :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
+     
+     :dp:`fls_2jniy6bkq1hn`
+     See :s:`ElseExpression`.
+   :chapter:
+     :dp:`fls_5azwlk7hav1k`
+     An :t:`else expression` is an :t:`expression` that represents either a
+     :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
 
 :dp:`fls_r7gzxo16esri`
 The :t:`type` of the :t:`subject expression` of an :t:`if expression` shall be

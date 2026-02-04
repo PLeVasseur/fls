@@ -259,6 +259,16 @@ both the effects of each construct and the composition rules for constructs.
 The context-free syntax of Rust is described using a simple variant of the
 Backus-Naur form. In particular:
 
+.. glossary-entry:: escaped character
+   
+   :glossary:
+     :dp:`fls_7yvnbakmo7y5`
+     An :dt:`escaped character` is the textual representation for a character with
+     special meaning. An escaped character consists of character 0x5C (reverse
+     solidus), followed by the single character encoding of the special meaning
+     character. For example, ``\t`` is the escaped character for 0x09 (horizontal
+     tabulation).
+
 * :dp:`fls_98fm7z04lq9`
   A ``monospaced`` font is used to denote Rust syntax.
 

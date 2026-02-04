@@ -27,9 +27,16 @@ An :t:`expression statement` is an :t:`expression` whose result is ignored.
 :dp:`fls_kdxe1ukmgl1`
 An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
-:dp:`fls_fftdnwe22xrb`
-An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
-(semicolon).
+.. glossary-entry:: empty statement
+   
+   :glossary:
+     :dp:`fls_irw5gwuvj3nn`
+     An :dt:`empty statement` is a :t:`statement` expressed as character 0x3B
+     (semicolon).
+   :chapter:
+     :dp:`fls_fftdnwe22xrb`
+     An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
+     (semicolon).
 
 :dp:`fls_or125cqtxg9j`
 A :t:`macro statement` is a :t:`statement` expressed as a
