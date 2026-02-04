@@ -92,6 +92,16 @@ Associated Items
      An :dt:`incomplete associated type` is an :t:`associated type` without an
      :t:`initialization type`.
 
+.. glossary-entry:: initialization type
+   
+   :glossary:
+     :dp:`fls_crn87nne7k38`
+     An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
+     :t:`name` for.
+     
+     :dp:`fls_3r85y1lh1oxo`
+     See :s:`InitializationType`.
+
 :dp:`fls_w8nu8suy7t5`
 An :t:`associated type` shall not be used in the :t:`path expression` of a
 :t:`struct expression`.

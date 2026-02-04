@@ -84,9 +84,19 @@ for the :t:`implementing type`.
      :t:`[associated item]s`, :t:`[inner attribute]s`, and
      :t:`[inner doc comment]s` of an :t:`implementation`.
 
-:dp:`fls_v0n0bna40dqr`
-An :t:`inherent implementation` is an :t:`implementation` that adds direct
-functionality.
+.. glossary-entry:: inherent implementation
+   
+   :glossary:
+     :dp:`fls_6fpicw8ss4h3`
+     An :dt:`inherent implementation` is an :t:`implementation` that adds direct
+     functionality.
+     
+     :dp:`fls_s8zjk7hms1o0`
+     See :s:`InherentImplementation`.
+   :chapter:
+     :dp:`fls_v0n0bna40dqr`
+     An :t:`inherent implementation` is an :t:`implementation` that adds direct
+     functionality.
 
 :dp:`fls_797etpdk5dyb`
 :t:`[Inherent implementation]s` of the same :t:`implementing type` shall be
@@ -261,9 +271,16 @@ Implementation Conformance
 
 .. rubric:: Legality Rules
 
-:dp:`fls_YyUSuAYG4lX6`
-A :t:`trait implementation` exhibits :t:`implementation conformance` when it
-satisfies the constraints of its :t:`implemented trait`.
+.. glossary-entry:: implementation conformance
+   
+   :glossary:
+     :dp:`fls_Gpq4EP1SsYJR`
+     :dt:`Implementation conformance` measures the compatibility between a
+     :t:`trait implementation` and the :t:`implemented trait`.
+   :chapter:
+     :dp:`fls_YyUSuAYG4lX6`
+     A :t:`trait implementation` exhibits :t:`implementation conformance` when it
+     satisfies the constraints of its :t:`implemented trait`.
 
 :dp:`fls_v31idwjau90d`
 An :t:`associated trait constant` is conformant with an :t:`associated constant`

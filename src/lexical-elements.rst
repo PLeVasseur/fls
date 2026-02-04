@@ -955,8 +955,17 @@ Integer Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_vkk2krfn93ry`
-An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
+.. glossary-entry:: integer literal
+   
+   :glossary:
+     :dp:`fls_23a1fjpf15qv`
+     An :dt:`integer literal` is a :t:`numeric literal` that denotes a whole number.
+     
+     :dp:`fls_6qpj0nr0jpjr`
+     See :s:`IntegerLiteral`.
+   :chapter:
+     :dp:`fls_vkk2krfn93ry`
+     An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 .. glossary-entry:: binary literal
    
@@ -997,9 +1006,19 @@ An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 :dp:`fls_4v7awnutbpoe`
 An :t:`octal literal` is an :t:`integer literal` in base 8.
 
-:dp:`fls_f1e29aj0sqvl`
-An :t:`integer suffix` is a component of an :t:`integer literal` that specifies
-an explicit :t:`integer type`.
+.. glossary-entry:: integer suffix
+   
+   :glossary:
+     :dp:`fls_qazh8f8rs528`
+     An :dt:`integer suffix` is a component of an :t:`integer literal` that
+     specifies an explicit :t:`integer type`.
+     
+     :dp:`fls_jqagv350kw2m`
+     See ``IntegerSuffix.``
+   :chapter:
+     :dp:`fls_f1e29aj0sqvl`
+     An :t:`integer suffix` is a component of an :t:`integer literal` that specifies
+     an explicit :t:`integer type`.
 
 :dp:`fls_u83mffscqm6`
 A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
@@ -1463,17 +1482,44 @@ Comments
 :dp:`fls_nayisy85kyq2`
 A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
-:dp:`fls_k3hj30hjkdhw`
-An :t:`inner block doc` is a :t:`block comment` that applies to an enclosing
-:t:`non-[comment]` :t:`construct`.
+.. glossary-entry:: inner block doc
+   
+   :glossary:
+     :dp:`fls_f4nqkybpwj1a`
+     An :dt:`inner block doc` is a :t:`block comment` that applies to an enclosing
+     :t:`non-[comment]` :t:`construct`.
+     
+     :dp:`fls_lmpaznk198ga`
+     See :s:`InnerBlockDoc`.
+   :chapter:
+     :dp:`fls_k3hj30hjkdhw`
+     An :t:`inner block doc` is a :t:`block comment` that applies to an enclosing
+     :t:`non-[comment]` :t:`construct`.
 
-:dp:`fls_tspijl68lduc`
-An :t:`inner line doc` is a :t:`line comment` that applies to an enclosing
-:t:`non-[comment]` :t:`construct`.
+.. glossary-entry:: inner line doc
+   
+   :glossary:
+     :dp:`fls_vtwavwjhgvlz`
+     An :dt:`inner line doc` is a :t:`line comment` that applies to an enclosing
+     :t:`non-[comment]` :t:`construct`.
+     
+     :dp:`fls_8cnikewkqs7`
+     See :s:`InnerLineDoc`.
+   :chapter:
+     :dp:`fls_tspijl68lduc`
+     An :t:`inner line doc` is a :t:`line comment` that applies to an enclosing
+     :t:`non-[comment]` :t:`construct`.
 
-:dp:`fls_KZp0yiFLTqxb`
-An :t:`inner doc comment` is either an :t:`inner block doc` or an
-:t:`inner line doc`.
+.. glossary-entry:: inner doc comment
+   
+   :glossary:
+     :dp:`fls_6KunKwZf9QaF`
+     An :dt:`inner doc comment` is either an :t:`inner block doc` or an
+     :t:`inner line doc`.
+   :chapter:
+     :dp:`fls_KZp0yiFLTqxb`
+     An :t:`inner doc comment` is either an :t:`inner block doc` or an
+     :t:`inner line doc`.
 
 :dp:`fls_63gzofa9ktic`
 An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent

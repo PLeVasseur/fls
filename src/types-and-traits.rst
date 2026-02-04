@@ -431,6 +431,13 @@ Integer Types
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: integer type
+   
+   :glossary:
+     :dp:`fls_nhfqdhf26ym3`
+     An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
+     numbers.
+
 :dp:`fls_cokwseo3nnr`
 :t:`[Unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
@@ -2688,9 +2695,16 @@ in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
      A :t:`global type variable` is a :t:`type variable` that can refer to any
      :t:`type`.
 
-:dp:`fls_7ov36fpd9mwe`
-An :t:`integer type variable` is a :t:`type variable` that can refer only to
-:t:`[integer type]s`.
+.. glossary-entry:: integer type variable
+   
+   :glossary:
+     :dp:`fls_e3ed1tyrjsy4`
+     An :dt:`integer type variable` is a :t:`type variable` that can refer only to
+     :t:`[integer type]s`.
+   :chapter:
+     :dp:`fls_7ov36fpd9mwe`
+     An :t:`integer type variable` is a :t:`type variable` that can refer only to
+     :t:`[integer type]s`.
 
 .. glossary-entry:: floating-point type variable
    

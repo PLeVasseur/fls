@@ -76,8 +76,17 @@ A :t:`module` is a container for zero or more :t:`[item]s`.
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
 be consumed by :t:`[macro]s`.
 
-:dp:`fls_qypjjpcf8uwq`
-An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
+.. glossary-entry:: inline module
+   
+   :glossary:
+     :dp:`fls_tbldwtisl9vc`
+     An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
+     
+     :dp:`fls_8bmjz8o3xu60`
+     See :s:`InlineModuleSpecification`.
+   :chapter:
+     :dp:`fls_qypjjpcf8uwq`
+     An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 :dp:`fls_cavwpr1ybk37`
 An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.

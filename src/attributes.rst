@@ -53,9 +53,19 @@ Attributes
      An :t:`attribute` is a general, free-form metadatum that is interpreted based on
      its :t:`name`, convention, language, and tool.
 
-:dp:`fls_yd0ehw5csaur`
-An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
-:t:`item`.
+.. glossary-entry:: inner attribute
+   
+   :glossary:
+     :dp:`fls_l7kxkav42l5d`
+     An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
+     :t:`item`.
+     
+     :dp:`fls_umkk8xwktat1`
+     See :s:`InnerAttribute`.
+   :chapter:
+     :dp:`fls_yd0ehw5csaur`
+     An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
+     :t:`item`.
 
 :dp:`fls_8o6vmzbw1b1j`
 An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent

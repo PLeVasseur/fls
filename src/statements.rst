@@ -81,6 +81,13 @@ Let Statements
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: initialization
+   
+   :glossary:
+     :dp:`fls_xi07ycze6mo0`
+     :dt:`Initialization` is the act of supplying an initial :t:`value` to a
+     :t:`constant`, a :t:`static`, or a :t:`variable`.
+
 :dp:`fls_ct7pp7jnfr86`
 A :t:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
 produced by its :t:`pattern-without-alternation` that are optionally

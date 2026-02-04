@@ -12,9 +12,16 @@ Inline Assembly
 
 .. rubric:: Legality Rules
 
-:dp:`fls_leamdp1r3hez`
-:t:`Inline assembly` is hand-written assembly code that is integrated into a
-Rust program.
+.. glossary-entry:: inline assembly
+   
+   :glossary:
+     :dp:`fls_1MtaLEA7YfSv`
+     :dt:`Inline assembly` is hand-written assembly code that is integrated into a
+     Rust program.
+   :chapter:
+     :dp:`fls_leamdp1r3hez`
+     :t:`Inline assembly` is hand-written assembly code that is integrated into a
+     Rust program.
 
 :dp:`fls_3fg60jblx0xb`
 :t:`Inline assembly` is written as an :t:`assembly code block` that is
@@ -104,10 +111,18 @@ Registers
 A :t:`register` is a hardware component capable of holding data that can be
 read and written.
 
-:dp:`fls_rr8rsy7oilf0`
-An :t:`input register` is a :t:`register` whose :t:`register name` is used in
-a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
-or ``inlateout``.
+.. glossary-entry:: input register
+   
+   :glossary:
+     :dp:`fls_dTvdQaFpncCj`
+     An :dt:`input register` is a :t:`register` whose :t:`register name` is used in
+     a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
+     or ``inlateout``.
+   :chapter:
+     :dp:`fls_rr8rsy7oilf0`
+     An :t:`input register` is a :t:`register` whose :t:`register name` is used in
+     a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
+     or ``inlateout``.
 
 :dp:`fls_5ruu8n6r9mvp`
 An :t:`output register` is a :t:`register` whose :t:`register name` is
@@ -712,9 +727,19 @@ A :t:`register class argument` causes an assembler to select a suitable
      :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
      :t:`register` to an :t:`expression`, or both.
 
-:dp:`fls_fta1gb5tzi3a`
-An :t:`input register expression` is an :t:`expression` that provides the
-initial :t:`value` of a :t:`register`.
+.. glossary-entry:: input register expression
+   
+   :glossary:
+     :dp:`fls_rvbuHSgg2RHt`
+     An :dt:`input register expression` is an :t:`expression` that provides the
+     initial :t:`value` of a :t:`register`.
+     
+     :dp:`fls_NqjRr9khzpl2`
+     See :s:`InputRegisterExpression`.
+   :chapter:
+     :dp:`fls_fta1gb5tzi3a`
+     An :t:`input register expression` is an :t:`expression` that provides the
+     initial :t:`value` of a :t:`register`.
 
 :dp:`fls_sopiivuae0x7`
 An :t:`output register expression` is an :t:`expression` that is assigned the
@@ -723,9 +748,19 @@ An :t:`output register expression` is an :t:`expression` that is assigned the
 :dp:`fls_81Ju1TEqJ48K`
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.
 
-:dp:`fls_kkrcyk96w8x1`
-An :t:`input-output register expression` is a :t:`construct` that specifies
-both an :t:`input register expression` and an :t:`output register expression`.
+.. glossary-entry:: input-output register expression
+   
+   :glossary:
+     :dp:`fls_lLQw3EFl7x5z`
+     An :dt:`input-output register expression` is a :t:`construct` that specifies
+     both an :t:`input register expression` and an :t:`output register expression`.
+     
+     :dp:`fls_FnMGXi2nPgUH`
+     See :s:`InputOutputRegisterExpression`.
+   :chapter:
+     :dp:`fls_kkrcyk96w8x1`
+     An :t:`input-output register expression` is a :t:`construct` that specifies
+     both an :t:`input register expression` and an :t:`output register expression`.
 
 :dp:`fls_aniw4ehsn2kb`
 A :t:`simple register expression` is either an :t:`expression` or an

@@ -2797,6 +2797,13 @@ an :t:`irrefutable pattern`.
 A :t:`destructuring assignment` is equivalent to a :t:`block expression` of the
 following form:
 
+.. glossary-entry:: initialization expression
+   
+   :glossary:
+     :dp:`fls_KUeiSByPUc4w`
+     An :dt:`initialization expression` is either a :t:`constant initializer` or a
+     :t:`static initializer`.
+
 * :dp:`fls_u0iqhbw37xvq`
   The first :t:`statement` is a :t:`let statement` with its :t:`pattern`
   equivalent to the lowered :t:`assignee pattern` and its
@@ -4663,9 +4670,25 @@ Infinite Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_p11qw6mtxlda`
-An :t:`infinite loop expression` is a :t:`loop expression` that continues to
-evaluate its :t:`loop body` indefinitely.
+.. glossary-entry:: infinite loop
+   
+   :glossary:
+     :dp:`fls_xpm53i3rkuu0`
+     For :dt:`infinite loop`, see :t:`infinite loop expression`.
+
+.. glossary-entry:: infinite loop expression
+   
+   :glossary:
+     :dp:`fls_mvplpa4t1f2p`
+     An :dt:`infinite loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` indefinitely.
+     
+     :dp:`fls_2gipk6b62hme`
+     See :s:`InfiniteLoopExpression`.
+   :chapter:
+     :dp:`fls_p11qw6mtxlda`
+     An :t:`infinite loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` indefinitely.
 
 :dp:`fls_b314wjbv0zwe`
 The :t:`type` of an :t:`infinite loop expression` is determined as follows:
