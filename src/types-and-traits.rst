@@ -163,6 +163,13 @@ Type Classification
 Scalar Types
 ------------
 
+.. glossary-entry:: scalar type
+   
+   :glossary:
+     :dp:`fls_GgBqFW2NywoA`
+     A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or
+     a :t:`numeric type`.
+
 .. _fls_tiqp1gxf116z:
 
 Bool Type
@@ -685,6 +692,13 @@ bytes.
 :dp:`fls_yu7r2077n9m7`
 A :t:`value` of :t:`type` :c:`str` shall denote a valid UTF-8 sequence of
 characters.
+
+.. glossary-entry:: safety invariant
+   
+   :glossary:
+     :dp:`fls_wRZfAmTmMGTX`
+     A :dt:`safety invariant` is an invariant that when violated may result in
+     :t:`undefined behavior`.
 
 .. rubric:: Undefined Behavior
 
@@ -1972,6 +1986,12 @@ Type Representation
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: representation
+   
+   :glossary:
+     :dp:`fls_69j7pq2o1iu`
+     See :t:`type representation`.
+
 :dp:`fls_mpqlyi3lgrfv`
 :t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
 :t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
@@ -2056,6 +2076,16 @@ modified further using :t:`attribute` :c:`[repr]`'s :s:`Alignment`
 :t:`[representation modifier]s`. A :t:`representation modifier` shall apply only
 to a :t:`struct type` or a :t:`union type` subject to :t:`C representation` or
 :t:`default representation`.
+
+.. glossary-entry:: representation modifier
+   
+   :glossary:
+     :dp:`fls_BCvXL7HkXqdZ`
+     A :dt:`representation modifier` is a :t:`construct` that modifies the
+     :t:`alignment` of a :t:`type`.
+     
+     :dp:`fls_TAVyjj66UBUo`
+     See :s:`Alignment`.
 
 .. _fls_xc1hof4qbf6p:
 

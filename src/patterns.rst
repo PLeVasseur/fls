@@ -867,9 +867,19 @@ Rest Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_eso51epfofxb`
-A :t:`rest pattern` is a :t:`pattern` that matches zero or more elements that
-have not already been matched.
+.. glossary-entry:: rest pattern
+   
+   :glossary:
+     :dp:`fls_xngp3h1znw9o`
+     A :dt:`rest pattern` is a :t:`pattern` that matches zero or more elements that
+     have not already been matched.
+     
+     :dp:`fls_rnmhg04u0oga`
+     See :s:`RestPattern`.
+   :chapter:
+     :dp:`fls_eso51epfofxb`
+     A :t:`rest pattern` is a :t:`pattern` that matches zero or more elements that
+     have not already been matched.
 
 :dp:`fls_5a75a2y43uev`
 A :t:`rest pattern` shall appear at most once within a :t:`slice pattern`, an

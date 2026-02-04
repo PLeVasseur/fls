@@ -1844,8 +1844,17 @@ Reserved Keywords
 
 .. rubric:: Legality Rules
 
-:dp:`fls_w4b97ewwnql`
-A :t:`reserved keyword` is a :t:`keyword` that is not yet in use.
+.. glossary-entry:: reserved keyword
+   
+   :glossary:
+     :dp:`fls_b67hj7fdbq4s`
+     A :dt:`reserved keyword` is a :t:`keyword` that is not yet in use.
+     
+     :dp:`fls_hp9iqdrkt0cg`
+     See :s:`ReservedKeyword`.
+   :chapter:
+     :dp:`fls_w4b97ewwnql`
+     A :t:`reserved keyword` is a :t:`keyword` that is not yet in use.
 
 .. _fls_9kjpxri0axvg:
 

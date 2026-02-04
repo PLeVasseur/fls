@@ -54,6 +54,12 @@ It documents the current understanding for the purposes of
 compiler validation. As such, given any doubt, it prefers documenting behavior
 of :t:`rustc` over claiming correctness as a specification.
 
+.. glossary-entry:: rustc
+   
+   :glossary:
+     :dp:`fls_zdgbeixirjfm`
+     :dt:`rustc` is a compiler that implements the FLS.
+
 :dp:`fls_dv1qish8svc`
 This document is made available for contribution and review,
 and can be a place of shared understanding. It

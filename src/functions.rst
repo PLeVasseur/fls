@@ -97,9 +97,16 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
      :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
      site of a :t:`call expression` or a :t:`method call expression`.
 
-:dp:`fls_ymeo93t4mz4`
-A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
-``self``.
+.. glossary-entry:: self parameter
+   
+   :glossary:
+     :dp:`fls_ksne48eip15`
+     A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+     ``self``.
+   :chapter:
+     :dp:`fls_ymeo93t4mz4`
+     A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+     ``self``.
 
 :dp:`fls_ijbt4tgnl95n`
 A :t:`function` shall not specify a :t:`self parameter` unless it is an
@@ -167,8 +174,17 @@ A :t:`variadic function` shall specify one of the following :t:`[ABI]s`:
 * :dp:`fls_4B4B5FIqAes9`
   ``extern "win64-unwind"``
 
-:dp:`fls_vljy4mm0zca2`
-A :t:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
+.. glossary-entry:: return type
+   
+   :glossary:
+     :dp:`fls_cwucgbmmhnnm`
+     A :dt:`return type` is the :t:`type` of the result a :t:`function` returns.
+     
+     :dp:`fls_utuprsem6n58`
+     See :s:`ReturnType`.
+   :chapter:
+     :dp:`fls_vljy4mm0zca2`
+     A :t:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
 :dp:`fls_EqJb3Jl3vK8K`
 The :t:`return type` of a :t:`function` is determined as follows:

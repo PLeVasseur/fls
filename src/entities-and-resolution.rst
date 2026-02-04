@@ -217,11 +217,21 @@ A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
      A :t:`crate public modifier` is a :t:`visibility modifier` that grants a
      :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
-:dp:`fls_tnh7o3pb4e22`
-A :t:`self public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
-to a :t:`simple path public modifier` where the :t:`simple path` denotes
-:t:`keyword` ``self``.
+.. glossary-entry:: self public modifier
+   
+   :glossary:
+     :dp:`fls_ln3bzqgctfym`
+     A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`private visibility`.
+     
+     :dp:`fls_21cvbfjpckkt`
+     See :s:`SelfPublicModifier`.
+   :chapter:
+     :dp:`fls_tnh7o3pb4e22`
+     A :t:`self public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
+     to a :t:`simple path public modifier` where the :t:`simple path` denotes
+     :t:`keyword` ``self``.
 
 :dp:`fls_yymgpyi67dty`
 A :t:`simple path public modifier` is a :t:`visibility modifier` that grants a
@@ -599,9 +609,15 @@ Scopes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_5x5xykocwyiy`
-A :t:`scope` is a region of program text where an :t:`entity` can be referred
-to. An :t:`entity` is :t:`in scope` when it can be referred to.
+.. glossary-entry:: scope
+   
+   :glossary:
+     :dp:`fls_fachaj550cq1`
+     A :dt:`scope` is a region of program text where a :t:`name` can be referred to.
+   :chapter:
+     :dp:`fls_5x5xykocwyiy`
+     A :t:`scope` is a region of program text where an :t:`entity` can be referred
+     to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. glossary-entry:: in scope
    
@@ -763,6 +779,14 @@ A :t:`label` is :t:`in scope` within the :t:`block expression` of the related
 A :t:`label` is not :t:`in scope` within nested :t:`[async block]s`,
 :t:`[closure expression]s`, :t:`[constant context]s`, and :t:`[item]s`.
 
+.. glossary-entry:: Self
+   
+   :glossary:
+     :dp:`fls_q6whqbfusswf`
+     :dc:`Self` is either an implicit :t:`type parameter` in :t:`[trait]s` or an
+     implicit :t:`type alias` in :t:`[implementation]s`. :c:`Self` refers to the
+     :t:`type` that implements a :t:`trait`.
+
 .. _fls_kgbi26212eof:
 
 Self Scope
@@ -770,8 +794,14 @@ Self Scope
 
 .. rubric:: Legality Rules
 
-:dp:`fls_kgt81m4f72ne`
-A :t:`Self scope` is a :t:`scope` for :c:`Self`.
+.. glossary-entry:: Self scope
+   
+   :glossary:
+     :dp:`fls_pSvqWGRmFmH0`
+     A :dt:`Self scope` is a :t:`scope` for :c:`Self`.
+   :chapter:
+     :dp:`fls_kgt81m4f72ne`
+     A :t:`Self scope` is a :t:`scope` for :c:`Self`.
 
 :dp:`fls_kxdwq4b136tl`
 :c:`Self` of an :t:`enum type` is :t:`in scope` within the related
@@ -824,11 +854,18 @@ Scope Hierarchy
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4o7vfo6v39l7`
-The :t:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
-by :t:`[scoping construct]s`. An inner :t:`scope` introduced by a nested
-:t:`scoping construct` is the child of an outer :t:`scope` introduced by an
-enclosing :t:`scoping construct`.
+.. glossary-entry:: scope hierarchy
+   
+   :glossary:
+     :dp:`fls_Spcc3L9X939d`
+     The :dt:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
+     by :t:`[scoping construct]s`.
+   :chapter:
+     :dp:`fls_4o7vfo6v39l7`
+     The :t:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
+     by :t:`[scoping construct]s`. An inner :t:`scope` introduced by a nested
+     :t:`scoping construct` is the child of an outer :t:`scope` introduced by an
+     enclosing :t:`scoping construct`.
 
 :dp:`fls_ns4eog3od4kw`
 A :dt:`scoping construct` is a :t:`construct` that introduces :t:`[scope]s`
@@ -1446,10 +1483,17 @@ Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ho4kem1slcxg`
-:t:`Resolution` is the process of finding a unique interpretation for a
-:t:`field access expression`, a :t:`method call expression`, a :t:`call
-expression` or a :t:`path`.
+.. glossary-entry:: resolution
+   
+   :glossary:
+     :dp:`fls_PQjEvLs5cE4y`
+     :dt:`Resolution` is the process of finding a unique interpretation for a
+     :t:`field access expression`, a :t:`method call expression`, or a :t:`path`.
+   :chapter:
+     :dp:`fls_ho4kem1slcxg`
+     :t:`Resolution` is the process of finding a unique interpretation for a
+     :t:`field access expression`, a :t:`method call expression`, a :t:`call
+     expression` or a :t:`path`.
 
 :dp:`fls_7le2vcdbtxbq`
 A :t:`construct` that is being resolved is said to be :t:`under resolution`.

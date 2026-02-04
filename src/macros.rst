@@ -357,10 +357,21 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
      A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
      :t:`macro repetition in transcription`.
 
-:dp:`fls_u86j0zm2jshf`
-A :t:`repetition operator` is a :t:`construct` that indicates the number
-of times a :t:`macro repetition in matching` or a
-:t:`macro repetition in transcription` can be repeated.
+.. glossary-entry:: repetition operator
+   
+   :glossary:
+     :dp:`fls_67907pk7uogl`
+     A :dt:`repetition operator` is a :t:`construct` that indicates the number
+     of times a :t:`macro repetition in matching` or a
+     :t:`macro repetition in transcription` can be repeated.
+     
+     :dp:`fls_hiasmmpr2jks`
+     See :s:`MacroRepetitionOperator`.
+   :chapter:
+     :dp:`fls_u86j0zm2jshf`
+     A :t:`repetition operator` is a :t:`construct` that indicates the number
+     of times a :t:`macro repetition in matching` or a
+     :t:`macro repetition in transcription` can be repeated.
 
 :dp:`fls_h5f8x4jdnvbu`
 The effects of a :t:`repetition operator` are as follows:
@@ -963,10 +974,18 @@ Rule Matching
 
 .. rubric:: Legality Rules
 
-:dp:`fls_77ucvwu6idms`
-:t:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
-to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
-resolved :t:`declarative macro`.
+.. glossary-entry:: rule matching
+   
+   :glossary:
+     :dp:`fls_dux9js5oixjd`
+     :dt:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
+     to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
+     resolved :t:`declarative macro`.
+   :chapter:
+     :dp:`fls_77ucvwu6idms`
+     :t:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
+     to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
+     resolved :t:`declarative macro`.
 
 :dp:`fls_6h1jqhxzku5v`
 :t:`Rule matching` proceeds as follows:

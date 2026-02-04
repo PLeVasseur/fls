@@ -148,9 +148,19 @@ A :ds:`SubjectLetExpression` is any expression in category
      A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
      :t:`binary operator`.
 
-:dp:`fls_qxdpyf4u3hbz`
-A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
-:t:`binary operator`.
+.. glossary-entry:: right operand
+   
+   :glossary:
+     :dp:`fls_e1j9s4odze9b`
+     A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of
+     a :t:`binary operator`.
+     
+     :dp:`fls_hq7x1t5dmdlp`
+     See :s:`RightOperand`.
+   :chapter:
+     :dp:`fls_qxdpyf4u3hbz`
+     A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
+     :t:`binary operator`.
 
 :dp:`fls_2j132xueobfv`
 A :t:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
@@ -4588,9 +4598,16 @@ Field Access Expressions
      :dp:`fls_IDYKXUIL845x`
      See :s:`FieldIndex`.
 
-:dp:`fls_qqrconpa92i3`
-A :t:`selected field` is a :t:`field` that is selected by a
-:t:`field access expression`.
+.. glossary-entry:: selected field
+   
+   :glossary:
+     :dp:`fls_8otlvwlqrd4e`
+     A :dt:`selected field` is a :t:`field` that is selected by a
+     :t:`field access expression`.
+   :chapter:
+     :dp:`fls_qqrconpa92i3`
+     A :t:`selected field` is a :t:`field` that is selected by a
+     :t:`field access expression`.
 
 :dp:`fls_fovs9il2h9xg`
 The :t:`type` of a :t:`field access expression` is the :t:`type` of the
@@ -6140,10 +6157,20 @@ Return Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_u7jk4j8gkho`
-A :t:`return expression` is an :t:`expression` that optionally yields a
-:t:`value` and causes control flow to return to the end of the enclosing
-:t:`control flow boundary`.
+.. glossary-entry:: return expression
+   
+   :glossary:
+     :dp:`fls_vnupfc6s0s7b`
+     A :dt:`return expression` is an :t:`expression` that optionally yields a
+     :t:`value` and causes control flow to return to the caller.
+     
+     :dp:`fls_phd8zrsyuzu7`
+     See :s:`ReturnExpression`.
+   :chapter:
+     :dp:`fls_u7jk4j8gkho`
+     A :t:`return expression` is an :t:`expression` that optionally yields a
+     :t:`value` and causes control flow to return to the end of the enclosing
+     :t:`control flow boundary`.
 
 :dp:`fls_5v3j5ghhw8j8`
 A :t:`return expression` shall appear within a :t:`control flow boundary`.
