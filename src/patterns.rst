@@ -98,8 +98,15 @@ Refutability
 :t:`Refutability` is a property of :t:`[pattern]s` that expresses the ability to
 match all possible values of a :t:`type`.
 
-:dp:`fls_9fjspnefoyvz`
-An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+.. glossary-entry:: irrefutable pattern
+   
+   :glossary:
+     :dp:`fls_y421hdrbs6ak`
+     An :dt:`irrefutable pattern` is a :t:`pattern` that always matches the
+     :t:`value` it is being matched against.
+   :chapter:
+     :dp:`fls_9fjspnefoyvz`
+     An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 :dp:`fls_uq7ftuuq1sig`
 A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
@@ -109,9 +116,16 @@ matching a :t:`value` of its :t:`type`
 A :t:`pattern` that is not an :t:`irrefutable pattern` is a
 :t:`refutable pattern`.
 
-:dp:`fls_l76ycteulo8e`
-An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
-one :t:`value`.
+.. glossary-entry:: irrefutable constant
+   
+   :glossary:
+     :dp:`fls_hd02jah50qzl`
+     An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
+     one :t:`value`.
+   :chapter:
+     :dp:`fls_l76ycteulo8e`
+     An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
+     one :t:`value`.
 
 :dp:`fls_lh0d85tl4qvy`
 A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.

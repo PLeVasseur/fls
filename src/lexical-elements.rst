@@ -1621,8 +1621,17 @@ Keywords
 
 .. rubric:: Legality Rules
 
-:dp:`fls_dti0uu7rz81w`
-A :t:`keyword` is a word in program text that has special meaning.
+.. glossary-entry:: keyword
+   
+   :glossary:
+     :dp:`fls_z3825koc9c1w`
+     A :dt:`keyword` is a word in program text that has special meaning.
+     
+     :dp:`fls_yvnf2mu4pr75`
+     See :s:`Keyword`.
+   :chapter:
+     :dp:`fls_dti0uu7rz81w`
+     A :t:`keyword` is a word in program text that has special meaning.
 
 :dp:`fls_sxg1o4oxql51`
 :t:`[Keyword]s` are case sensitive.

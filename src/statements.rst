@@ -24,8 +24,14 @@ Statements
 :dp:`fls_7zh6ziglo5iy`
 An :t:`expression statement` is an :t:`expression` whose result is ignored.
 
-:dp:`fls_kdxe1ukmgl1`
-An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
+.. glossary-entry:: item statement
+   
+   :glossary:
+     :dp:`fls_r0crucpuhtj`
+     An :dt:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
+   :chapter:
+     :dp:`fls_kdxe1ukmgl1`
+     An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
 .. glossary-entry:: empty statement
    
@@ -88,15 +94,43 @@ Let Statements
      :dt:`Initialization` is the act of supplying an initial :t:`value` to a
      :t:`constant`, a :t:`static`, or a :t:`variable`.
 
-:dp:`fls_ct7pp7jnfr86`
-A :t:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
-produced by its :t:`pattern-without-alternation` that are optionally
-initialized to a :t:`value`.
+.. glossary-entry:: let binding
+   
+   :glossary:
+     :dp:`fls_sw6HrsxsnG2y`
+     A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an :t:`if let expression`, or a :t:`while let loop expression`.
 
-:dp:`fls_SR3dIgR5K0Kq`
-A :t:`let initializer` is a :t:`construct` that provides the :t:`value` of
-the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
-alternatively executes a :t:`block expression`.
+.. glossary-entry:: let statement
+   
+   :glossary:
+     :dp:`fls_yh7hn6jjv3ur`
+     A :dt:`let statement` is a :t:`statement` that introduces new :t:`[variable]s`
+     given by the :t:`[binding]s` produced by its :t:`pattern-without-alternation`
+     that are optionally initialized to a :t:`value`.
+     
+     :dp:`fls_tsem3c6zqmh4`
+     See :s:`LetStatement`.
+   :chapter:
+     :dp:`fls_ct7pp7jnfr86`
+     A :t:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
+     produced by its :t:`pattern-without-alternation` that are optionally
+     initialized to a :t:`value`.
+
+.. glossary-entry:: let initializer
+   
+   :glossary:
+     :dp:`fls_jtTpBZ4ujZRc`
+     A :dt:`let initializer` is a :t:`construct` that provides the :t:`value` of
+     the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
+     alternatively executes a :t:`block expression`.
+     
+     :dp:`fls_GmHsJb6FICfA`
+     See :s:`LetInitializer`.
+   :chapter:
+     :dp:`fls_SR3dIgR5K0Kq`
+     A :t:`let initializer` is a :t:`construct` that provides the :t:`value` of
+     the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
+     alternatively executes a :t:`block expression`.
 
 :dp:`fls_iqar7vvtw22c`
 If a :t:`let statement` lacks a :t:`block expression`, then the :t:`pattern` of

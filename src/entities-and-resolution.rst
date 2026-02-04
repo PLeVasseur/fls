@@ -631,8 +631,14 @@ Item Scope
 
 .. rubric:: Legality Rules
 
-:dp:`fls_p5o243hhe1y3`
-An :t:`item scope` is a :t:`scope` for :t:`[item]s`.
+.. glossary-entry:: item scope
+   
+   :glossary:
+     :dp:`fls_mW7IwWGSjrl2`
+     An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
+   :chapter:
+     :dp:`fls_p5o243hhe1y3`
+     An :t:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 :dp:`fls_huvo0mp2i6fb`
 An :t:`item` declared within the :t:`block expression` of an
@@ -651,8 +657,14 @@ Label Scope
 
 .. rubric:: Legality Rules
 
-:dp:`fls_96kczd4zhpco`
-A :t:`label scope` is a :t:`scope` for :t:`[label]s`.
+.. glossary-entry:: label scope
+   
+   :glossary:
+     :dp:`fls_2H6HkQ102hVS`
+     A :dt:`label scope` is a :t:`scope` for :t:`[label]s`.
+   :chapter:
+     :dp:`fls_96kczd4zhpco`
+     A :t:`label scope` is a :t:`scope` for :t:`[label]s`.
 
 :dp:`fls_8sevg1sa82h4`
 A :t:`label` is :t:`in scope` within the :t:`block expression` of the related

@@ -125,9 +125,19 @@ An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
      :dp:`fls_v0he0zp9ph7a`
      A :dt:`binary operator` is an operator that operates on two :t:`[operand]s`.
 
-:dp:`fls_1r29rtnjlkql`
-A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
-:t:`binary operator`.
+.. glossary-entry:: left operand
+   
+   :glossary:
+     :dp:`fls_m821x5195ac9`
+     A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
+     :t:`binary operator`.
+     
+     :dp:`fls_ghlbsklg7wdb`
+     See :s:`LeftOperand`.
+   :chapter:
+     :dp:`fls_1r29rtnjlkql`
+     A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
+     :t:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
 A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
@@ -2208,9 +2218,19 @@ The :t:`type` of the :t:`left operand` of a
 The :t:`value` of a :t:`greater-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::ge(&left_operand, &right_operand)``.
 
-:dp:`fls_yd4qqi39w248`
-A :t:`less-than expression` is a :t:`comparison expression` that tests for a
-less-than relationship.
+.. glossary-entry:: less-than expression
+   
+   :glossary:
+     :dp:`fls_9ttxqxt9ui4t`
+     A :dt:`less-than expression` is a :t:`comparison expression` that tests for a
+     less-than relationship.
+     
+     :dp:`fls_rhnbdyo2l4kp`
+     See :s:`LessThanExpression`.
+   :chapter:
+     :dp:`fls_yd4qqi39w248`
+     A :t:`less-than expression` is a :t:`comparison expression` that tests for a
+     less-than relationship.
 
 :dp:`fls_ynibdcke3etb`
 The :t:`type` of the :t:`left operand` of a :t:`less-than expression` shall
@@ -2221,9 +2241,19 @@ the :t:`right operand` is the :t:`trait implementation` :t:`type parameter`.
 The :t:`value` of a :t:`less-than expression` is the result of
 ``core::cmp::PartialOrd::lt(&left_operand, &right_operand)``.
 
-:dp:`fls_yxwe1o27u6ns`
-A :t:`less-than-or-equals expression` is a :t:`comparison expression` that tests
-for a less-than-or-equals relationship.
+.. glossary-entry:: less-than-or-equals expression
+   
+   :glossary:
+     :dp:`fls_8pya58ug180j`
+     A :dt:`less-than-or-equals expression` is a :t:`comparison expression` that
+     tests for a less-than-or-equals relationship.
+     
+     :dp:`fls_ft5aeo4ilgwc`
+     See :s:`LessThanOrEqualsExpression`.
+   :chapter:
+     :dp:`fls_yxwe1o27u6ns`
+     A :t:`less-than-or-equals expression` is a :t:`comparison expression` that tests
+     for a less-than-or-equals relationship.
 
 :dp:`fls_6dgfieyxdan0`
 The :t:`type` of the :t:`left operand` of a :t:`less-than-or-equals expression`
@@ -2355,17 +2385,47 @@ Lazy Boolean Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_gpbvus89iy4c`
-A :t:`lazy boolean expression` is an :t:`expression` that performs short circuit
-Boolean arithmetic.
+.. glossary-entry:: lazy boolean expression
+   
+   :glossary:
+     :dp:`fls_jpv7l86sdh6i`
+     A :dt:`lazy boolean expression` is an :t:`expression` that performs short
+     circuit Boolean arithmetic.
+     
+     :dp:`fls_9tu5x810ztbg`
+     See :s:`LazyBooleanExpression`.
+   :chapter:
+     :dp:`fls_gpbvus89iy4c`
+     A :t:`lazy boolean expression` is an :t:`expression` that performs short circuit
+     Boolean arithmetic.
 
-:dp:`fls_40jya46h62yi`
-A :t:`lazy and expression` is a :t:`lazy boolean expression` that uses short
-circuit and arithmetic.
+.. glossary-entry:: lazy and expression
+   
+   :glossary:
+     :dp:`fls_v2e6t73uk6nt`
+     A :dt:`lazy and expression` is a :t:`lazy boolean expression` that uses short
+     circuit and arithmetic.
+     
+     :dp:`fls_rkthjuvems6v`
+     See :s:`LazyAndExpression`.
+   :chapter:
+     :dp:`fls_40jya46h62yi`
+     A :t:`lazy and expression` is a :t:`lazy boolean expression` that uses short
+     circuit and arithmetic.
 
-:dp:`fls_k8u77ow5bb6c`
-A :t:`lazy or expression` is a :t:`lazy boolean expression` that uses short
-circuit or arithmetic.
+.. glossary-entry:: lazy or expression
+   
+   :glossary:
+     :dp:`fls_aln8bbvx9kzm`
+     A :dt:`lazy or expression` is a :t:`lazy boolean expression` that uses short
+     circuit or arithmetic.
+     
+     :dp:`fls_jiv7e3mr86kf`
+     See :s:`LazyOrExpression`.
+   :chapter:
+     :dp:`fls_k8u77ow5bb6c`
+     A :t:`lazy or expression` is a :t:`lazy boolean expression` that uses short
+     circuit or arithmetic.
 
 :dp:`fls_u0gwo0s2l0tn`
 The :t:`[type]s` of the :t:`[operand]s` of a :t:`lazy boolean expression` shall
@@ -4755,9 +4815,19 @@ A :t:`while loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
 true.
 
-:dp:`fls_13hmhzqz82v6`
-An :t:`iteration expression` is an :t:`expression` that provides the criterion
-of a :t:`while loop expression`.
+.. glossary-entry:: iteration expression
+   
+   :glossary:
+     :dp:`fls_suz163n1x1xm`
+     An :dt:`iteration expression` is an :t:`expression` that provides the criterion
+     of a :t:`while loop expression`.
+     
+     :dp:`fls_jw5lj2hgjl8v`
+     See :s:`IterationExpression`.
+   :chapter:
+     :dp:`fls_13hmhzqz82v6`
+     An :t:`iteration expression` is an :t:`expression` that provides the criterion
+     of a :t:`while loop expression`.
 
 :dp:`fls_d7ofrq3777kq`
 The :t:`type` of an :t:`iteration expression` shall be :t:`type` :c:`bool`.
@@ -4871,8 +4941,26 @@ Loop Labels
 
 .. rubric:: Legality Rules
 
-:dp:`fls_tx5u743391h7`
-A :t:`label indication` is a :t:`construct` that indicates a :t:`label`.
+.. glossary-entry:: label
+   
+   :glossary:
+     :dp:`fls_iAAf2rLmgmGQ`
+     A :dt:`label` is the :t:`name` of a :t:`loop expression`.
+     
+     :dp:`fls_HicurdHIiLX2`
+     See :s:`Label`.
+
+.. glossary-entry:: label indication
+   
+   :glossary:
+     :dp:`fls_sso322p7adt0`
+     A :dt:`label indication` is a :t:`construct` that indicates a :t:`label`.
+     
+     :dp:`fls_g6iqfqooz8th`
+     See :s:`LabelIndication`.
+   :chapter:
+     :dp:`fls_tx5u743391h7`
+     A :t:`label indication` is a :t:`construct` that indicates a :t:`label`.
 
 :dp:`fls_7hc8yboeaho0`
 A :t:`label indication` shall indicate a :t:`label` of an enclosing
@@ -5485,9 +5573,19 @@ evaluates an :t:`operand`.
 A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
 
-:dp:`fls_d9gerg12hm2d`
-An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
-:t:`match expression`.
+.. glossary-entry:: intermediate match arm
+   
+   :glossary:
+     :dp:`fls_l6pemxmdllvl`
+     An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
+     :t:`match expression`.
+     
+     :dp:`fls_8713j5lrwqvs`
+     See :s:`IntermediateMatchArm`.
+   :chapter:
+     :dp:`fls_d9gerg12hm2d`
+     An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
+     :t:`match expression`.
 
 .. glossary-entry:: final match arm
    
