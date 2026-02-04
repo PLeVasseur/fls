@@ -1581,9 +1581,23 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
 * :dp:`fls_ergdb18tpx25`
   :t:`Transparent representation`.
 
-:dp:`fls_8s1vddh8vdhy`
-:t:`C representation` lays out a :t:`type` such that the :t:`type` is
-interoperable with the :t:`C` language.
+.. glossary-entry:: C
+   
+   :glossary:
+     :dp:`fls_d4q2ro4nsnop`
+     :dt:`C` is the programming language described in the ISO/IEC 9899:2018
+     International Standard.
+
+.. glossary-entry:: C representation
+   
+   :glossary:
+     :dp:`fls_g9pdb06m5fto`
+     :dt:`C representation` is a :t:`type representation` that lays out :t:`[type]s`
+     such that they are interoperable with the :t:`C` language.
+   :chapter:
+     :dp:`fls_8s1vddh8vdhy`
+     :t:`C representation` lays out a :t:`type` such that the :t:`type` is
+     interoperable with the :t:`C` language.
 
 :dp:`fls_b005bktrkrxy`
 :t:`Default representation` makes no guarantees about the :t:`layout`.
@@ -1636,6 +1650,12 @@ subject to :t:`C representation`, :t:`default representation`, or
 The :t:`discriminant type` of an :t:`enum type` with :t:`C representation` is
 the corresponding :t:`c signed int type` for the target platform's :t:`C`
 :t:`ABI`.
+
+.. glossary-entry:: C signed int type
+   
+   :glossary:
+     :dp:`fls_8QIcvapJehqY`
+     :dt:`C signed int type` is the `signed int` :t:`type` of the :t:`C` language.
 
 :dp:`fls_slhvf3gmqz4h`
 The :t:`discriminant type` of an :t:`enum type` with :t:`default representation`
@@ -2777,6 +2797,12 @@ Traits
 A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
+.. glossary-entry:: built-in trait
+   
+   :glossary:
+     :dp:`fls_IgzD9l8o6R50`
+     A :dt:`built-in trait` is a language-defined :t:`trait`.
+
 :dp:`fls_PiAR1B26SoZV`
 A :t:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
@@ -2972,9 +2998,19 @@ Trait and Lifetime Bounds
 
 .. rubric:: Legality Rules
 
-:dp:`fls_5g508z6c7q5f`
-A :t:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
-set of possible :t:`[generic substitution]s`.
+.. glossary-entry:: bound
+   
+   :glossary:
+     :dp:`fls_q6mxhn1fxjs6`
+     A :dt:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
+     set of possible :t:`[generic substitution]s`.
+     
+     :dp:`fls_rxabhhigp5uy`
+     See :s:`TypeBound`.
+   :chapter:
+     :dp:`fls_5g508z6c7q5f`
+     A :t:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
+     set of possible :t:`[generic substitution]s`.
 
 :dp:`fls_BqLPVaSyyXRG`
 A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a

@@ -590,8 +590,17 @@ return), 0x27 (apostrophe), and 0x5C (reverse solidus).
 
 .. rubric:: Legality Rules
 
-:dp:`fls_q0qwr83frszx`
-A :t:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
+.. glossary-entry:: byte literal
+   
+   :glossary:
+     :dp:`fls_l67oo0u12zjb`
+     A :dt:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
+     
+     :dp:`fls_iu9twvm648dx`
+     See :s:`ByteLiteral`.
+   :chapter:
+     :dp:`fls_q0qwr83frszx`
+     A :t:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
 
 :dp:`fls_fggytrv5jvw0`
 The :t:`type` of a :t:`byte literal` is :c:`u8`.
@@ -619,9 +628,19 @@ Byte String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_t63zfv5JdUhj`
-A :t:`byte string literal` is a :t:`literal` that consists of multiple
-:s:`[AsciiCharacter]s`.
+.. glossary-entry:: byte string literal
+   
+   :glossary:
+     :dp:`fls_my4r1l3ilyt2`
+     A :dt:`byte string literal` is a :t:`literal` that consists of multiple
+     :s:`[AsciiCharacter]s`.
+     
+     :dp:`fls_4yhag19z61bl`
+     See :s:`ByteStringLiteral`.
+   :chapter:
+     :dp:`fls_t63zfv5JdUhj`
+     A :t:`byte string literal` is a :t:`literal` that consists of multiple
+     :s:`[AsciiCharacter]s`.
 
 :dp:`fls_Xd6LnfzMb7t7`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -720,9 +739,19 @@ C String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_VKCW830CzhhN`
-A :t:`c string literal` is a :t:`literal` that consists of multiple characters
-with an implicit 0x00 byte appended to it.
+.. glossary-entry:: c string literal
+   
+   :glossary:
+     :dp:`fls_g3NHtaOhTB7g`
+     A :dt:`c string literal` is a :t:`literal` that consists of multiple characters
+     with an implicit 0x00 byte appended to it.
+     
+     :dp:`fls_FZ6QSpjmVme5`
+     See :s:`CStringLiteral`.
+   :chapter:
+     :dp:`fls_VKCW830CzhhN`
+     A :t:`c string literal` is a :t:`literal` that consists of multiple characters
+     with an implicit 0x00 byte appended to it.
 
 :dp:`fls_XJprzaEn82Xs`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A

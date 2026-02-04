@@ -154,9 +154,19 @@ Identifier Patterns
 An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
-:dp:`fls_vy9uw586wy0d`
-A :t:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
-:t:`identifier pattern`.
+.. glossary-entry:: bound pattern
+   
+   :glossary:
+     :dp:`fls_uusfbosjwyd1`
+     A :dt:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
+     :t:`identifier pattern`.
+     
+     :dp:`fls_oszhit2crxzc`
+     See :s:`BoundPattern`.
+   :chapter:
+     :dp:`fls_vy9uw586wy0d`
+     A :t:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
+     :t:`identifier pattern`.
 
 :dp:`fls_hqwt3fvr063y`
 An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`

@@ -154,12 +154,25 @@ Borrowing
 
 .. rubric:: Legality Rules
 
-:dp:`fls_c02flohk54pc`
-:t:`Borrowing` is the process of temporarily associating a :t:`reference` with a
-:t:`value` without transferring :t:`ownership` permanently.
+.. glossary-entry:: borrowing
+   
+   :glossary:
+     :dp:`fls_2epblwd2slp8`
+     :dt:`Borrowing` is the process of temporarily associating a :t:`reference` with
+     a :t:`value` without transferring :t:`ownership` permanently.
+   :chapter:
+     :dp:`fls_c02flohk54pc`
+     :t:`Borrowing` is the process of temporarily associating a :t:`reference` with a
+     :t:`value` without transferring :t:`ownership` permanently.
 
-:dp:`fls_j9kof0px3l7s`
-A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
+.. glossary-entry:: borrow
+   
+   :glossary:
+     :dp:`fls_2tpbdddvrl2f`
+     A :dt:`borrow` is a :t:`reference` produced by :t:`borrowing`.
+   :chapter:
+     :dp:`fls_j9kof0px3l7s`
+     A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
 :dp:`fls_zepwytjwy049`
 An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
@@ -773,4 +786,3 @@ Dropping proceeds as follows:
    drop_order(Ok([PrintOnDrop("1"), PrintOnDrop("2")]));
 
    drop_order(Err([PrintOnDrop("2"), PrintOnDrop("1")]));
-

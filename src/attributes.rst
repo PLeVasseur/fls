@@ -188,8 +188,17 @@ Built-in Attributes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_92tqo8uas8kd`
-A :t:`built-in attribute` is a language-defined :t:`attribute`.
+.. glossary-entry:: built-in attribute
+   
+   :glossary:
+     :dp:`fls_a40rclur4orm`
+     A :dt:`built-in attribute` is a language-defined :t:`attribute`.
+     
+     :dp:`fls_ooq5g8zffyfb`
+     See :s:`InnerBuiltinAttribute`, :s:`OuterBuiltinAttribute`.
+   :chapter:
+     :dp:`fls_92tqo8uas8kd`
+     A :t:`built-in attribute` is a language-defined :t:`attribute`.
 
 :dp:`fls_bxucstrfcco8`
 The following :t:`[built-in attribute]s` are :dt:`[code generation attribute]s`:

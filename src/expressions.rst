@@ -985,10 +985,21 @@ Borrow Expression
 
 .. rubric:: Legality Rules
 
-:dp:`fls_nnqfkl228hjx`
-A :t:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
-its :t:`operand` and creates a :t:`reference` to the memory location of its
-:t:`operand`.
+.. glossary-entry:: borrow expression
+   
+   :glossary:
+     :dp:`fls_2f55piwg78ru`
+     A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value`
+     of its :t:`operand` and creates a :t:`reference` to the memory location of its
+     operand.
+     
+     :dp:`fls_c3hydbp2exok`
+     See :s:`BorrowExpression`.
+   :chapter:
+     :dp:`fls_nnqfkl228hjx`
+     A :t:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
+     its :t:`operand` and creates a :t:`reference` to the memory location of its
+     :t:`operand`.
 
 :dp:`fls_r7ix8webgqlm`
 An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
@@ -1003,6 +1014,13 @@ When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
 the :t:`borrow expression` produces a :t:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
 state, or simply :t:`borrowed`.
+
+.. glossary-entry:: borrowed
+   
+   :glossary:
+     :dp:`fls_3gnps2s95ck4`
+     A memory location is :dt:`borrowed` when a :t:`reference` pointing to it is
+     :t:`active`.
 
 :dp:`fls_chr03xll75d`
 The :t:`type` of a :t:`borrow expression` is determined as follows:
@@ -3620,9 +3638,19 @@ Call Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fvgfx17ossd9`
-A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
-constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
+.. glossary-entry:: call expression
+   
+   :glossary:
+     :dp:`fls_a9ap0tyk2eou`
+     A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
+     constructs a :t:`tuple struct value` or :t:`tuple enum variant value`.
+     
+     :dp:`fls_aibti9uqrmmd`
+     See :s:`CallExpression`.
+   :chapter:
+     :dp:`fls_fvgfx17ossd9`
+     A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
+     constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 .. glossary-entry:: argument operand
    
@@ -3635,10 +3663,29 @@ constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
      An :t:`argument operand` is an :t:`operand` which is used as an argument in a
      :t:`call expression` or a :t:`method call expression`.
 
-:dp:`fls_7ql1c71eidg8`
-A :t:`call operand` is the :t:`function` being invoked or the
-:t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
-by a :t:`call expression`.
+.. glossary-entry:: call operand
+   
+   :glossary:
+     :dp:`fls_cqnko94y4xbs`
+     A :dt:`call operand` is the :t:`function` being invoked or the
+     :t:`tuple struct value` or :t:`tuple enum variant value` being constructed by a
+     :t:`call expression`.
+     
+     :dp:`fls_w6wu4wi6srjj`
+     See :s:`CallOperand`.
+   :chapter:
+     :dp:`fls_7ql1c71eidg8`
+     A :t:`call operand` is the :t:`function` being invoked or the
+     :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
+     by a :t:`call expression`.
+
+.. glossary-entry:: Call conformance
+   
+   :glossary:
+     :dp:`fls_Jr1gUX7Ju4Oh`
+     :dt:`Call conformance` measures the compatibility between a set of
+     :t:`[argument operand]s` and a set if :t:`[function parameter]s` or
+     :t:`[field]s`.
 
 .. glossary-entry:: adjusted call operand
    
@@ -4436,9 +4483,19 @@ Break Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_i5ko1t2wbgxe`
-A :t:`break expression` is an :t:`expression` that terminates a
-:t:`loop expression` or a :t:`named block expression`.
+.. glossary-entry:: break expression
+   
+   :glossary:
+     :dp:`fls_8ys8hlqgizoa`
+     A :dt:`break expression` is an :t:`expression` that terminates a
+     :t:`loop expression` or a :t:`named block expression`.
+     
+     :dp:`fls_fd1xpst5fki2`
+     See :s:`BreakExpression`.
+   :chapter:
+     :dp:`fls_i5ko1t2wbgxe`
+     A :t:`break expression` is an :t:`expression` that terminates a
+     :t:`loop expression` or a :t:`named block expression`.
 
 :dp:`fls_jiykbp51909f`
 A :t:`break expression` shall appear within a :t:`loop body` or a
@@ -4470,8 +4527,15 @@ with an :t:`infinite loop`.
 :dp:`fls_dnnq1zym8ii0`
 The :t:`type` of a :t:`break expression` is the :t:`never type`.
 
-:dp:`fls_1wdybpfldj7q`
-:t:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
+.. glossary-entry:: break type
+   
+   :glossary:
+     :dp:`fls_jvm1vsqmslxn`
+     :dt:`Break type` is the :t:`type` of the :t:`operand` of a
+     :t:`break expression`.
+   :chapter:
+     :dp:`fls_1wdybpfldj7q`
+     :t:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
 
 :dp:`fls_8yore99adr22`
 The :t:`break type` is determined as follows:
@@ -4484,9 +4548,16 @@ The :t:`break type` is determined as follows:
   If the :t:`break expression` has an :t:`operand`, then the :t:`break type` is
   the :t:`type` of its :t:`operand`.
 
-:dp:`fls_bgd7d5q69q0g`
-:t:`Break value` is the :t:`value` of the :t:`operand` of a
-:t:`break expression`.
+.. glossary-entry:: break value
+   
+   :glossary:
+     :dp:`fls_kpka4jf2qr5l`
+     :dt:`Break value` is the :t:`value` of the :t:`operand` of a
+     :t:`break expression`.
+   :chapter:
+     :dp:`fls_bgd7d5q69q0g`
+     :t:`Break value` is the :t:`value` of the :t:`operand` of a
+     :t:`break expression`.
 
 :dp:`fls_yb8jv4mkmki0`
 The :t:`break value` is determined as follows:
