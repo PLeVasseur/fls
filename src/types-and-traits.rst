@@ -985,6 +985,12 @@ It is a :t:`validity invariant` for a :t:`value` of an :t:`enum type` to have a
 Struct Types
 ~~~~~~~~~~~~
 
+.. glossary-entry:: struct
+   
+   :glossary:
+     :dp:`fls_rufylj7qxs1w`
+     A :dt:`struct` is an :t:`item` that declares a :t:`struct type`.
+
 .. rubric:: Syntax
 
 .. syntax::
@@ -1045,6 +1051,18 @@ Struct Types
      :dp:`fls_SMBIc0JMck1H`
      A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
+.. glossary-entry:: struct field
+   
+   :glossary:
+     :dp:`fls_8Z9YWMnrHXJS`
+     A :dt:`struct field` is a :t:`field` of a :t:`struct type`.
+
+.. glossary-entry:: struct value
+   
+   :glossary:
+     :dp:`fls_YmZfW9kWlbIX`
+     A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
+
 .. rubric:: Legality Rules
 
 .. glossary-entry:: field
@@ -1059,9 +1077,19 @@ Struct Types
      :dp:`fls_xMZsrxMc9Cni`
      A :dt:`field list` is a :s:`RecordStructFieldList` or :s:`TupleStructFieldList`.
 
-:dp:`fls_g1azfj548136`
-A :t:`struct type` is an :t:`abstract data type` that is a product of other
-:t:`[type]s`.
+.. glossary-entry:: struct type
+   
+   :glossary:
+     :dp:`fls_7v4dhh3nl8h9`
+     A :dt:`struct type` is an :t:`abstract data type` that is a product of other
+     :t:`[type]s`.
+     
+     :dp:`fls_dhlww4yrnb2v`
+     See :s:`StructDeclaration`.
+   :chapter:
+     :dp:`fls_g1azfj548136`
+     A :t:`struct type` is an :t:`abstract data type` that is a product of other
+     :t:`[type]s`.
 
 :dp:`fls_r885av95eivp`
 The :t:`name` of a :t:`record struct field` shall be unique within the
@@ -2776,9 +2804,16 @@ Structural Equality
 
 .. rubric:: Legality Rules
 
-:dp:`fls_uVTpA7gbLCYX`
-A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
-for equality by structure.
+.. glossary-entry:: structurally equal
+   
+   :glossary:
+     :dp:`fls_glRZUKhmaWmP`
+     A :t:`type` is :dt:`structurally equal` when its :t:`[value]s` can be compared
+     for equality by structure.
+   :chapter:
+     :dp:`fls_uVTpA7gbLCYX`
+     A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
+     for equality by structure.
 
 :dp:`fls_2DZAP6JJjJ9h`
 The following :t:`[type]s` are :t:`structurally equal`:
@@ -3407,8 +3442,14 @@ Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
      :dp:`fls_AdbbUZZgMEsQ`
      A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
-:dp:`fls_I9JaKZelMiby`
-A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
+.. glossary-entry:: subtrait
+   
+   :glossary:
+     :dp:`fls_wnj95vozis6n`
+     A :dt:`subtrait` is a :t:`trait` with a :t:`supertrait`.
+   :chapter:
+     :dp:`fls_I9JaKZelMiby`
+     A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
 
 :dp:`fls_CYtxPjK3zq2T`
 A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
@@ -3776,9 +3817,22 @@ Subtyping and Variance
 
 .. rubric:: Legality Rules
 
-:dp:`fls_atq2cltx487m`
-:t:`Subtyping` is a property of :t:`[type]s`, allowing one :t:`type` to be used
-where another :t:`type` is expected.
+.. glossary-entry:: subtype
+   
+   :glossary:
+     :dp:`fls_pmkjOWsieQog`
+     A :dt:`subtype` is a :t:`type` with additional constraints.
+
+.. glossary-entry:: subtyping
+   
+   :glossary:
+     :dp:`fls_bo5xzjsdd3lj`
+     :dt:`Subtyping` is a property of :t:`[type]s`, allowing one :t:`type` to be
+     used where another :t:`type` is expected.
+   :chapter:
+     :dp:`fls_atq2cltx487m`
+     :t:`Subtyping` is a property of :t:`[type]s`, allowing one :t:`type` to be used
+     where another :t:`type` is expected.
 
 :dp:`fls_df87d44kgwcv`
 :t:`Variance` is a property of :t:`[lifetime parameter]s` and

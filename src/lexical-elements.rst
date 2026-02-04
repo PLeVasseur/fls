@@ -1130,8 +1130,14 @@ Integer Literals
      An :t:`integer suffix` is a component of an :t:`integer literal` that specifies
      an explicit :t:`integer type`.
 
-:dp:`fls_u83mffscqm6`
-A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
+.. glossary-entry:: suffixed integer
+   
+   :glossary:
+     :dp:`fls_ltzetxu3sq7k`
+     A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
+   :chapter:
+     :dp:`fls_u83mffscqm6`
+     A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 :dp:`fls_g10nuv14q4jn`
 An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
@@ -1264,8 +1270,14 @@ Float Literals
      A :t:`float suffix` is a component of a :t:`float literal` that specifies an
      explicit :t:`floating-point type`.
 
-:dp:`fls_21mhnhplzam7`
-A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
+.. glossary-entry:: suffixed float
+   
+   :glossary:
+     :dp:`fls_7reb4jp0x1wf`
+     A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
+   :chapter:
+     :dp:`fls_21mhnhplzam7`
+     A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 :dp:`fls_drqh80k0sfkb`
 An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
@@ -1387,8 +1399,17 @@ String Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7fuctvtvdi7x`
-A :t:`string literal` is a :t:`literal` that consists of multiple characters.
+.. glossary-entry:: string literal
+   
+   :glossary:
+     :dp:`fls_dphk5br0ag35`
+     A :dt:`string literal` is a :t:`literal` that consists of multiple characters.
+     
+     :dp:`fls_z0t3ae24h5h5`
+     See :s:`StringLiteral`.
+   :chapter:
+     :dp:`fls_7fuctvtvdi7x`
+     A :t:`string literal` is a :t:`literal` that consists of multiple characters.
 
 :dp:`fls_NyiCpU2tzJlQ`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A

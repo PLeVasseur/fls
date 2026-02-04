@@ -89,8 +89,14 @@ Patterns
      A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
      excludes :t:`[range pattern]s`.
 
-:dp:`fls_6xx34zr069bj`
-A :t:`subpattern` is a :t:`pattern` nested within another pattern.
+.. glossary-entry:: subpattern
+   
+   :glossary:
+     :dp:`fls_942ulj9qsdes`
+     A :dt:`subpattern` is a :t:`pattern` nested within another :t:`pattern`.
+   :chapter:
+     :dp:`fls_6xx34zr069bj`
+     A :t:`subpattern` is a :t:`pattern` nested within another pattern.
 
 :dp:`fls_8xzjb0yzftkd`
 A :t:`pattern` has a :t:`type`, with the exception of the :t:`rest pattern` if
@@ -1004,9 +1010,19 @@ Struct Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_vjdkpr3zml51`
-A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
-:t:`struct value`, or a :t:`union value`.
+.. glossary-entry:: struct pattern
+   
+   :glossary:
+     :dp:`fls_xbtoiwegp8gu`
+     A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+     :t:`struct value`, or a :t:`union value`.
+     
+     :dp:`fls_pn8e50ep2fln`
+     See :s:`StructPattern`.
+   :chapter:
+     :dp:`fls_vjdkpr3zml51`
+     A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+     :t:`struct value`, or a :t:`union value`.
 
 .. glossary-entry:: deconstructee
    

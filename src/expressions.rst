@@ -64,13 +64,40 @@ Expressions
    RightOperand ::=
        Operand
 
-:dp:`fls_pwut2jbmk66k`
-A :ds:`SubjectExpression` is any expression in category :s:`Expression`, except
-:s:`StructExpression`.
+.. glossary-entry:: subject expression
+   
+   :glossary:
+     :dp:`fls_xisqke87ert`
+     A :dt:`subject expression` is an :t:`expression` that controls
+     :t:`[for loop]s`, :t:`[if expression]s`, and :t:`[match expression]s`.
+     
+     :dp:`fls_gph5doham4js`
+     See :s:`SubjectExpression`.
+   :chapter:
+     :dp:`fls_pwut2jbmk66k`
+     A :ds:`SubjectExpression` is any expression in category :s:`Expression`, except
+     :s:`StructExpression`.
 
-:dp:`fls_361q9ljc6ybz`
-A :ds:`SubjectLetExpression` is any expression in category
-:s:`SubjectExpression`, except :s:`LazyBooleanExpression`.
+.. glossary-entry:: subject let expression
+   
+   :glossary:
+     :dp:`fls_b3ckv6zgnaeb`
+     A :dt:`subject let expression` is an :t:`expression` that controls
+     :t:`[if let expression]s` and :t:`[while let loop]s`.
+     
+     :dp:`fls_vnzaargh5yok`
+     See :s:`SubjectLetExpression`.
+   :chapter:
+     :dp:`fls_361q9ljc6ybz`
+     A :ds:`SubjectLetExpression` is any expression in category
+     :s:`SubjectExpression`, except :s:`LazyBooleanExpression`.
+
+.. glossary-entry:: subexpression
+   
+   :glossary:
+     :dp:`fls_bNSHwD4Kpfm0`
+     A :dt:`subexpression` is an :t:`expression` nested within another
+     :t:`expression`.
 
 .. rubric:: Legality Rules
 
@@ -1823,9 +1850,19 @@ The :t:`type` of a :t:`remainder expression` is :t:`associated type`
 The :t:`value` of a :t:`remainder expression` is the result of
 ``core::ops::Rem::rem(left_operand, right_operand)``.
 
-:dp:`fls_aalxhbvu8kdi`
-A :t:`subtraction expression` is an :t:`arithmetic expression` that uses
-subtraction.
+.. glossary-entry:: subtraction expression
+   
+   :glossary:
+     :dp:`fls_caamjgpw59id`
+     A :dt:`subtraction expression` is an :t:`arithmetic expression` that uses
+     subtraction.
+     
+     :dp:`fls_mx3olnbntpye`
+     See :s:`SubtractionExpression`.
+   :chapter:
+     :dp:`fls_aalxhbvu8kdi`
+     A :t:`subtraction expression` is an :t:`arithmetic expression` that uses
+     subtraction.
 
 :dp:`fls_fjcv1nm8tlgf`
 The :t:`type` of the :t:`left operand` of a :t:`subtraction expression` shall
@@ -3335,9 +3372,25 @@ Compound Assignment Expressions
      A :t:`shift right assignment expression` is a
      :t:`compound assignment expression` that uses bit shift right arithmetic.
 
-:dp:`fls_7l7v7vigw3fu`
-A :t:`subtraction assignment expression` is a
-:t:`compound assignment expression` that uses subtraction.
+.. glossary-entry:: subtraction assignment
+   
+   :glossary:
+     :dp:`fls_75Eyk2YXO2j4`
+     For :dt:`subtraction assignment`, see :t:`subtraction assignment`.
+
+.. glossary-entry:: subtraction assignment expression
+   
+   :glossary:
+     :dp:`fls_4pb85nl4r7vs`
+     A :dt:`subtraction assignment expression` is a
+     :t:`compound assignment expression` that uses subtraction.
+     
+     :dp:`fls_mye9yj5tc8hr`
+     See :s:`SubtractionAssignmentExpression`.
+   :chapter:
+     :dp:`fls_7l7v7vigw3fu`
+     A :t:`subtraction assignment expression` is a
+     :t:`compound assignment expression` that uses subtraction.
 
 .. glossary-entry:: assigned operand
    
@@ -4019,9 +4072,19 @@ Struct Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ij8rebvupb85`
-A :t:`struct expression` is an :t:`expression` that constructs an
-:t:`enum value`, a :t:`struct value`, or a :t:`union value`.
+.. glossary-entry:: struct expression
+   
+   :glossary:
+     :dp:`fls_m8n9e0sxyb95`
+     A :dt:`struct expression` is an :t:`expression` that constructs an
+     :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
+     
+     :dp:`fls_odm68rhu2j1`
+     See :s:`StructExpression`.
+   :chapter:
+     :dp:`fls_ij8rebvupb85`
+     A :t:`struct expression` is an :t:`expression` that constructs an
+     :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 .. glossary-entry:: constructee
    
