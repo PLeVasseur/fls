@@ -1090,12 +1090,32 @@ Float Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_rzi7oeqokd6e`
-A :t:`float literal` is a :t:`numeric literal` that denotes a fractional number.
+.. glossary-entry:: float literal
+   
+   :glossary:
+     :dp:`fls_53o8dio9vpjh`
+     A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional
+     number.
+     
+     :dp:`fls_hqeaakhsqxok`
+     See :s:`FloatLiteral`.
+   :chapter:
+     :dp:`fls_rzi7oeqokd6e`
+     A :t:`float literal` is a :t:`numeric literal` that denotes a fractional number.
 
-:dp:`fls_2ru1zyrykd37`
-A :t:`float suffix` is a component of a :t:`float literal` that specifies an
-explicit :t:`floating-point type`.
+.. glossary-entry:: float suffix
+   
+   :glossary:
+     :dp:`fls_vka2z7frq9j8`
+     A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
+     explicit :t:`floating-point type`.
+     
+     :dp:`fls_2k1ddqhsgxqk`
+     See :s:`FloatSuffix`.
+   :chapter:
+     :dp:`fls_2ru1zyrykd37`
+     A :t:`float suffix` is a component of a :t:`float literal` that specifies an
+     explicit :t:`floating-point type`.
 
 :dp:`fls_21mhnhplzam7`
 A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.

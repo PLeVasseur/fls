@@ -4128,9 +4128,19 @@ Field Access Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_hr8qvwlhd9ts`
-A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
-of a :t:`value`.
+.. glossary-entry:: field access expression
+   
+   :glossary:
+     :dp:`fls_gdl348a04d15`
+     A :dt:`field access expression` is an :t:`expression` that accesses a
+     :t:`field` of a :t:`value`.
+     
+     :dp:`fls_luetyuwu54d6`
+     See :s:`FieldAccessExpression`.
+   :chapter:
+     :dp:`fls_hr8qvwlhd9ts`
+     A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
+     of a :t:`value`.
 
 .. glossary-entry:: container operand
    
@@ -4146,9 +4156,30 @@ of a :t:`value`.
      A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
      :t:`field` is selected in a :t:`field access expression`.
 
-:dp:`fls_yeuayil6uxzx`
-A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
-accessed in a :t:`field access expression`.
+.. glossary-entry:: field selector
+   
+   :glossary:
+     :dp:`fls_aq1yg9cp1uof`
+     A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
+     accessed in a :t:`field access expression`.
+     
+     :dp:`fls_x8swot8e1j32`
+     See :s:`FieldSelector`.
+   :chapter:
+     :dp:`fls_yeuayil6uxzx`
+     A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
+     accessed in a :t:`field access expression`.
+
+.. glossary-entry:: field index
+   
+   :glossary:
+     :dp:`fls_6061r871qgbj`
+     A :dt:`field index` is the position of a :t:`field` within a
+     :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
+     :t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
+     
+     :dp:`fls_IDYKXUIL845x`
+     See :s:`FieldIndex`.
 
 :dp:`fls_qqrconpa92i3`
 A :t:`selected field` is a :t:`field` that is selected by a
@@ -4441,9 +4472,26 @@ For Loops
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1bh2alh37frz`
-A :t:`for loop expression` is a :t:`loop expression` that continues to evaluate
-its :t:`loop body` as long as its :t:`subject expression` yields a :t:`value`.
+.. glossary-entry:: for loop
+   
+   :glossary:
+     :dp:`fls_gmhh56arsbw8`
+     For :dt:`for loop`, see :t:`for loop expression`.
+
+.. glossary-entry:: for loop expression
+   
+   :glossary:
+     :dp:`fls_f0gp7qxoc4o4`
+     A :dt:`for loop expression` is a :t:`loop expression` that continues to
+     evaluate its :t:`loop body` as long as its :t:`subject expression` yields a
+     :t:`value`.
+     
+     :dp:`fls_yn4d35pvmn87`
+     See :s:`ForLoopExpression`.
+   :chapter:
+     :dp:`fls_1bh2alh37frz`
+     A :t:`for loop expression` is a :t:`loop expression` that continues to evaluate
+     its :t:`loop body` as long as its :t:`subject expression` yields a :t:`value`.
 
 :dp:`fls_fkgbin6ydkm4`
 The :t:`type` of a :t:`subject expression` shall implement the
@@ -4960,6 +5008,13 @@ Range Expressions
 :dp:`fls_bi82rusji8g0`
 A :t:`range expression` is an :t:`expression` that constructs a range.
 
+.. glossary-entry:: full range expression
+   
+   :glossary:
+     :dp:`fls_NIb9UOIRjMqa`
+     A :dt:`full range expression` is a :t:`range expression` that covers the full
+     range of a :t:`type`.
+
 :dp:`fls_msyv4oyk5zp9`
 A :t:`range expression low bound` is an :t:`operand` that specifies the start of
 a range.
@@ -5290,8 +5345,17 @@ and a :t:`match arm body`.
 An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
-:dp:`fls_oj8dg28xw5yp`
-A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+.. glossary-entry:: final match arm
+   
+   :glossary:
+     :dp:`fls_btoz8jioisx9`
+     A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+     
+     :dp:`fls_v7ockjwbeel1`
+     See :s:`FinalMatchArm`.
+   :chapter:
+     :dp:`fls_oj8dg28xw5yp`
+     A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 :dp:`fls_lrdrtedyz28i`
 A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and

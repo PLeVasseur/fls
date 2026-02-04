@@ -10,10 +10,24 @@ FFI
 
 .. rubric:: Legality Rules
 
-:dp:`fls_djlglv2eaihl`
-:t:`Foreign Function Interface` or :t:`FFI` employs :t:`ABI`,
-:t:`[attribute]s`, :t:`[external block]s`, :t:`[external function]s`, linkage,
-and :t:`type` :t:`layout` to interface a Rust program with foreign code.
+.. glossary-entry:: FFI
+   
+   :glossary:
+     :dp:`fls_z363fu89mj1c`
+     For :dt:`FFI`, see :t:`Foreign Function Interface`.
+
+.. glossary-entry:: Foreign Function Interface
+   
+   :glossary:
+     :dp:`fls_240yj1kym1kh`
+     :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
+     :t:`external block`, :t:`[external function]s`, linkage, and :t:`type`
+     :t:`layout` to interface a Rust program with foreign code.
+   :chapter:
+     :dp:`fls_djlglv2eaihl`
+     :t:`Foreign Function Interface` or :t:`FFI` employs :t:`ABI`,
+     :t:`[attribute]s`, :t:`[external block]s`, :t:`[external function]s`, linkage,
+     and :t:`type` :t:`layout` to interface a Rust program with foreign code.
 
 :dp:`fls_k1hiwghzxtfa`
 The following :t:`[attribute]s` affect :t:`FFI`:

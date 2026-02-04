@@ -48,8 +48,17 @@ Functions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_gn1ngtx2tp2s`
-A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+.. glossary-entry:: function
+   
+   :glossary:
+     :dp:`fls_ni14pcm4ap9l`
+     A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+     
+     :dp:`fls_hn01vvw2fx9m`
+     See :s:`FunctionDeclaration`.
+   :chapter:
+     :dp:`fls_gn1ngtx2tp2s`
+     A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.

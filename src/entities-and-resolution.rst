@@ -1309,9 +1309,16 @@ Field Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1nxknwjdp0am`
-:t:`Field resolution` is a form of :t:`resolution` that applies to a
-:t:`field access expression`.
+.. glossary-entry:: field resolution
+   
+   :glossary:
+     :dp:`fls_nL8UuclgxfGL`
+     :dt:`Field resolution` is a form of :t:`resolution` that applies to a
+     :t:`field access expression`.
+   :chapter:
+     :dp:`fls_1nxknwjdp0am`
+     :t:`Field resolution` is a form of :t:`resolution` that applies to a
+     :t:`field access expression`.
 
 :dp:`fls_j1bip4w30q8`
 A :dt:`candidate container type` is the :t:`type` of the :t:`container operand`

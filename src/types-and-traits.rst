@@ -386,6 +386,19 @@ Floating Point Types
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: floating-point type
+   
+   :glossary:
+     :dp:`fls_1w5yjiffah1u`
+     A :dt:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+     fractional numbers.
+
+.. glossary-entry:: floating-point value
+   
+   :glossary:
+     :dp:`fls_rx8cvWPlvel5`
+     A :dt:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
+
 .. glossary-entry:: f32
    
    :glossary:
@@ -533,6 +546,13 @@ Array Types
      
      :dp:`fls_pvyl887dn016`
      See :s:`ElementType`.
+
+.. glossary-entry:: fixed sized type
+   
+   :glossary:
+     :dp:`fls_eadiywl20jo4`
+     A :dt:`fixed sized type` is a :t:`type` that implements the
+     :std:`core::marker::Sized` :t:`trait`.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -878,6 +898,18 @@ Struct Types
        $$struct$$ Name GenericParameterList? WhereClause? $$;$$
 
 .. rubric:: Legality Rules
+
+.. glossary-entry:: field
+   
+   :glossary:
+     :dp:`fls_uAkrgfFTK2YV`
+     A :dt:`field` is an element of an :t:`abstract data type`.
+
+.. glossary-entry:: field list
+   
+   :glossary:
+     :dp:`fls_xMZsrxMc9Cni`
+     A :dt:`field list` is a :s:`RecordStructFieldList` or :s:`TupleStructFieldList`.
 
 :dp:`fls_g1azfj548136`
 A :t:`struct type` is an :t:`abstract data type` that is a product of other
@@ -2543,9 +2575,16 @@ A :t:`global type variable` is a :t:`type variable` that can refer to any
 An :t:`integer type variable` is a :t:`type variable` that can refer only to
 :t:`[integer type]s`.
 
-:dp:`fls_3hv3wxkhjjp1`
-A :t:`floating-point type variable` is a :t:`type variable` that can refer only
-to :t:`[floating-point type]s`.
+.. glossary-entry:: floating-point type variable
+   
+   :glossary:
+     :dp:`fls_ls41emhkrxdi`
+     A :dt:`floating-point type variable` is a :t:`type variable` that can refer
+     only to :t:`[floating-point type]s`.
+   :chapter:
+     :dp:`fls_3hv3wxkhjjp1`
+     A :t:`floating-point type variable` is a :t:`type variable` that can refer only
+     to :t:`[floating-point type]s`.
 
 .. glossary-entry:: diverging type variable
    

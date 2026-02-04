@@ -160,9 +160,19 @@ A :t:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :t:`macro rule` of the :t:`macro matcher` it is declared in.
 
-:dp:`fls_8zypylq60zba`
-A :t:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
-a :t:`metavariable`.
+.. glossary-entry:: fragment specifier
+   
+   :glossary:
+     :dp:`fls_6lhwep7ulpr0`
+     A :dt:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
+     a :t:`metavariable`.
+     
+     :dp:`fls_drfn9yqrihgx`
+     See ``MacroFragmentSpecifier``.
+   :chapter:
+     :dp:`fls_8zypylq60zba`
+     A :t:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
+     a :t:`metavariable`.
 
 :dp:`fls_8o9mcV2KrKac`
 :t:`Fragment specifier` kinds impose the following
