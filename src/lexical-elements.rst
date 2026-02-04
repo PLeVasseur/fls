@@ -1272,9 +1272,19 @@ Boolean Literals
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1lll64ftupjd`
-A :t:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
-logic and Boolean algebra.
+.. glossary-entry:: boolean literal
+   
+   :glossary:
+     :dp:`fls_5mrxdqh474vk`
+     A :dt:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s`
+     of logic and Boolean algebra.
+     
+     :dp:`fls_i13qcchm9vkk`
+     See :s:`BooleanLiteral`.
+   :chapter:
+     :dp:`fls_1lll64ftupjd`
+     A :t:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
+     logic and Boolean algebra.
 
 :dp:`fls_pgngble3ilyx`
 The :t:`type` of a :t:`boolean literal` is :c:`bool`.
@@ -1335,8 +1345,17 @@ Comments
 A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
-:dp:`fls_qsbnl11be35s`
-A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
+.. glossary-entry:: block comment
+   
+   :glossary:
+     :dp:`fls_a0ejcfs7y5uy`
+     A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
+     
+     :dp:`fls_21r4tblk8awi`
+     See :s:`BlockComment`.
+   :chapter:
+     :dp:`fls_qsbnl11be35s`
+     A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 :dp:`fls_nayisy85kyq2`
 A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.

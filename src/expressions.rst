@@ -675,9 +675,19 @@ Block Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_nf65p0l0v0gr`
-A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
-and :t:`[statement]s`.
+.. glossary-entry:: block expression
+   
+   :glossary:
+     :dp:`fls_gvjvzxi2xps4`
+     A :dt:`block expression` is an :t:`expression` that sequences expressions and
+     :t:`[statement]s`.
+     
+     :dp:`fls_h8j9t2xq2i1u`
+     See :s:`BlockExpression`.
+   :chapter:
+     :dp:`fls_nf65p0l0v0gr`
+     A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
+     and :t:`[statement]s`.
 
 :dp:`fls_tn3hj7k2lliu`
 A :t:`tail expression` is the last :t:`expression` within a :t:`block
@@ -1696,12 +1706,32 @@ Bit Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3zd59yuywz6l`
-A :t:`bit expression` is an :t:`expression` that computes a :t:`value` from two
-:t:`[operand]s` using bit arithmetic.
+.. glossary-entry:: bit expression
+   
+   :glossary:
+     :dp:`fls_b3p5xqsfolqo`
+     A :dt:`bit expression` is an :t:`expression` that computes a :t:`value` from
+     two :t:`[operand]s` using bit arithmetic.
+     
+     :dp:`fls_iw1k2cfwfjou`
+     See :s:`BitExpression`.
+   :chapter:
+     :dp:`fls_3zd59yuywz6l`
+     A :t:`bit expression` is an :t:`expression` that computes a :t:`value` from two
+     :t:`[operand]s` using bit arithmetic.
 
-:dp:`fls_f6mmva3lbj1i`
-A :t:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
+.. glossary-entry:: bit and expression
+   
+   :glossary:
+     :dp:`fls_c1g5gljnr9kz`
+     A :dt:`bit and expression` is a :t:`bit expression` that uses bit and
+     arithmetic.
+     
+     :dp:`fls_vbsvu0troqci`
+     See :s:`BitAndExpression`.
+   :chapter:
+     :dp:`fls_f6mmva3lbj1i`
+     A :t:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
 
 :dp:`fls_cmowpfrcelke`
 The :t:`type` of the :t:`left operand` of a :t:`bit and expression` shall
@@ -1716,8 +1746,17 @@ The :t:`type` of a :t:`bit and expression` is :t:`associated type`
 The :t:`value` of a :t:`bit and expression` is the result of
 ``core::ops::BitAnd::bitand(left_operand, right_operand)``.
 
-:dp:`fls_3136k1y6x3cu`
-A :t:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+.. glossary-entry:: bit or expression
+   
+   :glossary:
+     :dp:`fls_183aem60of9o`
+     A :dt:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+     
+     :dp:`fls_ctqsjp653tbt`
+     See :s:`BitOrExpression`.
+   :chapter:
+     :dp:`fls_3136k1y6x3cu`
+     A :t:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
 
 :dp:`fls_oo2ynd8e1ys6`
 The :t:`type` of the :t:`left operand` of a :t:`bit or expression` shall
@@ -1732,9 +1771,19 @@ The :t:`type` of a :t:`bit or expression` is :t:`associated type`
 The :t:`value` of a :t:`bit or expression` is the result of
 ``core::ops::BitOr::bitor(left_operand, right_operand)``.
 
-:dp:`fls_j7ujcuthga1i`
-A :t:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
-arithmetic.
+.. glossary-entry:: bit xor expression
+   
+   :glossary:
+     :dp:`fls_kccsvtzfhbp1`
+     A :dt:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
+     arithmetic.
+     
+     :dp:`fls_6qulwlo43w6m`
+     See :s:`BitXorExpression`.
+   :chapter:
+     :dp:`fls_j7ujcuthga1i`
+     A :t:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
+     arithmetic.
 
 :dp:`fls_fnywefl9nty2`
 The :t:`type` of the :t:`left operand` of a :t:`bit xor expression` shall
@@ -2656,6 +2705,24 @@ Compound Assignment Expressions
      :dp:`fls_hihh97p0rnt8`
      See :s:`AdditionAssignmentExpression`.
 
+.. glossary-entry:: bit and assignment
+   
+   :glossary:
+     :dp:`fls_wIl0K7O6lTXJ`
+     For :dt:`bit and assignment`, see :t:`bit and assignment expression`.
+
+.. glossary-entry:: bit or assignment
+   
+   :glossary:
+     :dp:`fls_21iFIDCu7Pk4`
+     For :dt:`bit or assignment`, see :t:`bit or assignment expression`.
+
+.. glossary-entry:: bit xor assignment
+   
+   :glossary:
+     :dp:`fls_VJpCPVCuszs1`
+     For :dt:`bit xor assignment`, see :t:`bit xor assignment expression`.
+
 .. rubric:: Legality Rules
 
 :dp:`fls_3bu3g8o5nopc`
@@ -2663,17 +2730,47 @@ A :t:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
-:dp:`fls_w2hbhb989yr4`
-A :t:`bit and assignment expression` is a :t:`compound assignment expression`
-that uses bit and arithmetic.
+.. glossary-entry:: bit and assignment expression
+   
+   :glossary:
+     :dp:`fls_dvqotpte0pc2`
+     A :dt:`bit and assignment expression` is a :t:`compound assignment expression`
+     that uses bit and arithmetic.
+     
+     :dp:`fls_ix9ecb5olcx`
+     See :s:`BitAndAssignmentExpression`.
+   :chapter:
+     :dp:`fls_w2hbhb989yr4`
+     A :t:`bit and assignment expression` is a :t:`compound assignment expression`
+     that uses bit and arithmetic.
 
-:dp:`fls_ak4g5112jkl`
-A :t:`bit or assignment expression` is a :t:`compound assignment expression`
-that uses bit or arithmetic.
+.. glossary-entry:: bit or assignment expression
+   
+   :glossary:
+     :dp:`fls_tu1owkfk0lu0`
+     A :dt:`bit or assignment expression` is a :t:`compound assignment expression`
+     that uses bit or arithmetic.
+     
+     :dp:`fls_utjcsfz8up88`
+     See :s:`BitOrAssignmentExpression`.
+   :chapter:
+     :dp:`fls_ak4g5112jkl`
+     A :t:`bit or assignment expression` is a :t:`compound assignment expression`
+     that uses bit or arithmetic.
 
-:dp:`fls_lkjwyy78m2vx`
-A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
-that uses bit exclusive or arithmetic.
+.. glossary-entry:: bit xor assignment expression
+   
+   :glossary:
+     :dp:`fls_ma980ujltab2`
+     A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
+     that uses bit exclusive or arithmetic.
+     
+     :dp:`fls_lcrd0birf0un`
+     See :s:`BitXorAssignmentExpression`.
+   :chapter:
+     :dp:`fls_lkjwyy78m2vx`
+     A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
+     that uses bit exclusive or arithmetic.
 
 :dp:`fls_pkzj0uigfcgm`
 A :t:`division assignment expression` is a :t:`compound assignment expression`

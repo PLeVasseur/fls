@@ -1219,15 +1219,39 @@ Binding Modes
    Binding ::=
        Name
 
+.. glossary-entry:: binding mode
+   
+   :glossary:
+     :dp:`fls_e3uvvvvyzq8h`
+     :dt:`Binding mode` is the mechanism by which a matched :t:`value` is bound to a
+     :t:`binding` of a :t:`pattern`.
+
 .. rubric:: Legality Rules
 
-:dp:`fls_7xby6d1903kw`
-A :t:`binding pattern` is either an :t:`identifier pattern` or a
-:t:`shorthand deconstructor`.
+.. glossary-entry:: binding pattern
+   
+   :glossary:
+     :dp:`fls_ancqgz8pybbe`
+     A :dt:`binding pattern` is either an :t:`identifier pattern` or a
+     :t:`shorthand deconstructor`.
+   :chapter:
+     :dp:`fls_7xby6d1903kw`
+     A :t:`binding pattern` is either an :t:`identifier pattern` or a
+     :t:`shorthand deconstructor`.
 
-:dp:`fls_vnh9wfrvumdz`
-A :t:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
-:t:`name`.
+.. glossary-entry:: binding
+   
+   :glossary:
+     :dp:`fls_89qi3unjvwd7`
+     A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
+     :t:`name`.
+     
+     :dp:`fls_lujdci4bphek`
+     See :s:`Binding`.
+   :chapter:
+     :dp:`fls_vnh9wfrvumdz`
+     A :t:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
+     :t:`name`.
 
 :dp:`fls_RViC5UEZPQUV`
 A :t:`binding` with :t:`binding mode` :dt:`by value` binds the matched

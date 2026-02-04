@@ -164,9 +164,16 @@ Bool Type
 
 .. rubric:: Legality Rules
 
-:dp:`fls_h5994su1yft3`
-:c:`Bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
-logic and Boolean algebra.
+.. glossary-entry:: bool
+   
+   :glossary:
+     :dp:`fls_wtmaf5amvleh`
+     :dc:`bool` is a :t:`type` whose :t:`[value]s` denote the truth values of logic
+     and Boolean algebra.
+   :chapter:
+     :dp:`fls_h5994su1yft3`
+     :c:`Bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
+     logic and Boolean algebra.
 
 :dp:`fls_v8atmrwz6wzk`
 :t:`Type` :c:`bool` appears in the :t:`language prelude` under the name

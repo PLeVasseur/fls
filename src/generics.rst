@@ -363,13 +363,27 @@ A :s:`LifetimeArgument` shall precede :s:`[BindingArgument]s`,
 :s:`[ConstantArgument]s`, and :s:`[TypeArgument]s` in a
 :s:`GenericArgumentList`.
 
-:dp:`fls_9pda3ja0ihks`
-A :t:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
-of an :t:`associated trait type`.
+.. glossary-entry:: binding argument
+   
+   :glossary:
+     :dp:`fls_9lzcasl4tw7k`
+     A :dt:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
+     of an :t:`associated trait type`.
+   :chapter:
+     :dp:`fls_9pda3ja0ihks`
+     A :t:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
+     of an :t:`associated trait type`.
 
-:dp:`fls_mcUMWsYcxzmZ`
-A :t:`binding bound argument` is a :t:`generic argument` that further imposes
-:t:`[bound]s` on an :t:`associated trait type`.
+.. glossary-entry:: binding bound argument
+   
+   :glossary:
+     :dp:`fls_D3i3n4RIReCA`
+     A :dt:`binding bound argument` is a :t:`generic argument` that further imposes
+     :t:`[bound]s` on an :t:`associated trait type`.
+   :chapter:
+     :dp:`fls_mcUMWsYcxzmZ`
+     A :t:`binding bound argument` is a :t:`generic argument` that further imposes
+     :t:`[bound]s` on an :t:`associated trait type`.
 
 :dp:`fls_dxMfAI4EZVS5`
 A :t:`binding bound argument` shall only be used within the confines of a
