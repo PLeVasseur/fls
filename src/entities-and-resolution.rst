@@ -33,8 +33,17 @@ Entities
      An :t:`entity` is a :t:`construct` that can be referred to within program text,
      usually via a :t:`field access expression` or a :t:`path`.
 
-:dp:`fls_40d2g0hvq2il`
-A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
+.. glossary-entry:: name
+   
+   :glossary:
+     :dp:`fls_jjpzrs38vs3y`
+     A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
+     
+     :dp:`fls_yrzevg5kd4bi`
+     See :s:`Name`.
+   :chapter:
+     :dp:`fls_40d2g0hvq2il`
+     A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 .. glossary-entry:: declaration
    
@@ -890,10 +899,18 @@ Namespaces
 
 .. rubric:: Legality Rules
 
-:dp:`fls_1d4jm61qnt4l`
-A :t:`namespace` is a logical grouping of :t:`[name]s` such that the occurrence
-of a :t:`name` in one :t:`namespace` does not conflict with an occurrence of
-the same :t:`name` in another :t:`namespace`.
+.. glossary-entry:: namespace
+   
+   :glossary:
+     :dp:`fls_er8lcvnEqxa5`
+     A :dt:`namespace` is a logical grouping of :t:`[name]s` such that the
+     occurrence of a :t:`name` in one :t:`namespace` does not conflict with an
+     occurrence of the same :t:`name` in another :t:`namespace`.
+   :chapter:
+     :dp:`fls_1d4jm61qnt4l`
+     A :t:`namespace` is a logical grouping of :t:`[name]s` such that the occurrence
+     of a :t:`name` in one :t:`namespace` does not conflict with an occurrence of
+     the same :t:`name` in another :t:`namespace`.
 
 :dp:`fls_avsua7bho205`
 :t:`[Name]s` are segregated into one of five :t:`[namespace]s` based on the
@@ -1418,6 +1435,16 @@ the characters of a :t:`named field selector`.
       of the :t:`field access expression`, then the :t:`field access expression`
       resolves to that :t:`candidate indexed field` and :t:`field resolution`
       stops.
+
+.. glossary-entry:: named field selector
+   
+   :glossary:
+     :dp:`fls_cczpgxqdyh1e`
+     A :dt:`named field selector` is a :t:`field selector` where the selected
+     :t:`field` is indicated by an :t:`identifier`.
+     
+     :dp:`fls_hpw0n89ez5nw`
+     See :s:`NamedFieldSelector`.
 
 :dp:`fls_p6hgoqo0kcx`
 :t:`Field resolution` of a :t:`field access expression` with a

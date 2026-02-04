@@ -616,6 +616,13 @@ then
 * :dp:`fls_7dii7lee457t`
   Otherwise, for an :t:`output register`, the upper bits are ignored.
 
+.. glossary-entry:: NaN-boxing
+   
+   :glossary:
+     :dp:`fls_s956sJGwOa6z`
+     :dt:`NaN-boxing` is a technique for encoding :t:`[value]s` using the low order
+     bits of the mantissa of a 64-bit IEEE floating-point ``NaN``.
+
 :dp:`fls_ujhjocg1361b`
 If a :t:`register argument` has :t:`direction modifier` ``inout`` and an
 :t:`input-output register expression`, then the :t:`input register expression`
@@ -676,9 +683,16 @@ and output of a :t:`register`, and optionally binds the configuration to an
 :dp:`fls_6bv3s8be5xif`
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
 
-:dp:`fls_uddjvkz4g899`
-A :t:`named register argument` is a :t:`register argument` whose configuration
-is bound to an :t:`identifier`.
+.. glossary-entry:: named register argument
+   
+   :glossary:
+     :dp:`fls_QBWHppNO8FPk`
+     A :dt:`named register argument` is a :t:`register argument` whose configuration
+     is bound to an :t:`identifier`.
+   :chapter:
+     :dp:`fls_uddjvkz4g899`
+     A :t:`named register argument` is a :t:`register argument` whose configuration
+     is bound to an :t:`identifier`.
 
 :dp:`fls_sqs5to20p0te`
 A :t:`positional register argument` is a :t:`register argument` whose

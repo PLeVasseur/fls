@@ -195,9 +195,15 @@ The :t:`type` of a :t:`static` shall implement the :std:`core::marker::Sized`
 :dp:`fls_WRpcVF1fLEpr`
 A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`external static` in an :t:`unsafe external block`.
 
-:dp:`fls_doi4z6u55bi7`
-A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
-:t:`value` can be modified.
+.. glossary-entry:: mutable static
+   
+   :glossary:
+     :dp:`fls_3ss4bokujaby`
+     A :dt:`mutable static` is a :t:`static` whose :t:`value` can be modified.
+   :chapter:
+     :dp:`fls_doi4z6u55bi7`
+     A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+     :t:`value` can be modified.
 
 :dp:`fls_74hp208pto22`
 Access to a :t:`mutable static` shall require :t:`unsafe context`.
@@ -292,6 +298,12 @@ stack.
      :dp:`fls_sdg35i92taip`
      An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
      modified.
+
+.. glossary-entry:: mutable variable
+   
+   :glossary:
+     :dp:`fls_kjjv9jvdpf2o`
+     A :dt:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
 
 :dp:`fls_vgi0gh5zmoiu`
 The following :t:`[construct]s` are :t:`[variable]s`:

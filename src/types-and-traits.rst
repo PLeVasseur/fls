@@ -1279,9 +1279,16 @@ Raw Pointer Types
 :dp:`fls_rpbhr0xukbx9`
 A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 
-:dp:`fls_bYWfGDAQcWfA`
-A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
-:t:`keyword` ``mut``.
+.. glossary-entry:: mutable raw pointer type
+   
+   :glossary:
+     :dp:`fls_86SFxSDRcC06`
+     A :dt:`mutable raw pointer type` is a :t:`raw pointer type` subject to
+     :t:`keyword` ``mut``.
+   :chapter:
+     :dp:`fls_bYWfGDAQcWfA`
+     A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
+     :t:`keyword` ``mut``.
 
 .. glossary-entry:: immutable raw pointer type
    
@@ -1341,9 +1348,16 @@ A :t:`shared reference type` implements the :std:`core::marker::Copy`
 :dp:`fls_csdjfwczlzfd`
 Releasing a :t:`shared reference` has no effect on the :t:`value` it refers to.
 
-:dp:`fls_GUZuiST7ucib`
-A :t:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
-``mut``.
+.. glossary-entry:: mutable reference type
+   
+   :glossary:
+     :dp:`fls_q06p9tclwaaw`
+     A :dt:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
+     ``mut``.
+   :chapter:
+     :dp:`fls_GUZuiST7ucib`
+     A :t:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
+     ``mut``.
 
 :dp:`fls_vaas9kns4zo6`
 A :t:`mutable reference type` allows the direct mutation of a referenced

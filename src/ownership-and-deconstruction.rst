@@ -128,9 +128,16 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
      An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
      prevents the mutation of its :t:`referent`.
 
-:dp:`fls_fckoj1jh5mrc`
-A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
-allows the mutation of its :t:`referent`.
+.. glossary-entry:: mutable reference
+   
+   :glossary:
+     :dp:`fls_wujjrhm1d338`
+     A :dt:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
+     allows the mutation of its :t:`referent`.
+   :chapter:
+     :dp:`fls_fckoj1jh5mrc`
+     A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
+     allows the mutation of its :t:`referent`.
 
 :dp:`fls_hqxsuyn285he`
 The :t:`referent` of an :t:`immutable reference` shall be mutated only when the
@@ -228,8 +235,14 @@ if required.
      An :t:`immutable borrow` is an :t:`immutable reference` produced by
      :t:`borrowing`.
 
-:dp:`fls_pu19i4sj6yg0`
-A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
+.. glossary-entry:: mutable borrow
+   
+   :glossary:
+     :dp:`fls_5knwbyz4fd9z`
+     A :dt:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
+   :chapter:
+     :dp:`fls_pu19i4sj6yg0`
+     A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
 
 :dp:`fls_kxws4zmaahj6`
 :t:`Borrowing` a :t:`field` of a :t:`union type` borrows all remaining

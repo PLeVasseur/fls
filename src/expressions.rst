@@ -499,10 +499,17 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
 * :dp:`fls_gv4M0DE3OMwk`
   A :t:`temporary`.
 
-:dp:`fls_ku38h562vfyl`
-A :t:`mutable place expression` is a :t:`place expression` whose memory
-location can be modified. The following :t:`[place expression]s` are
-:t:`[mutable place expression]s`:
+.. glossary-entry:: mutable place expression
+   
+   :glossary:
+     :dp:`fls_kq877s3vij70`
+     A :dt:`mutable place expression` is a :t:`place expression` whose memory
+     location can be modified.
+   :chapter:
+     :dp:`fls_ku38h562vfyl`
+     A :t:`mutable place expression` is a :t:`place expression` whose memory
+     location can be modified. The following :t:`[place expression]s` are
+     :t:`[mutable place expression]s`:
 
 * :dp:`fls_1tq2o2huda9l`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` implements the
@@ -599,10 +606,17 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
      An :dt:`immutable place expression context` is a :t:`place expression context`
      whose memory location cannot be modified.
 
-:dp:`fls_wxGAOWEVT77u`
-A :t:`mutable place expression context` is a :t:`place expression context` that
-may evaluate its :t:`operand` as a mutable memory location. The following
-:t:`[construct]s` are :t:`[mutable place expression context]s`:
+.. glossary-entry:: mutable place expression context
+   
+   :glossary:
+     :dp:`fls_2ixH8LWGHi3k`
+     A :dt:`mutable place expression context` is a :t:`place expression context`
+     that may evaluate its :t:`operand` as a mutable memory location.
+   :chapter:
+     :dp:`fls_wxGAOWEVT77u`
+     A :t:`mutable place expression context` is a :t:`place expression context` that
+     may evaluate its :t:`operand` as a mutable memory location. The following
+     :t:`[construct]s` are :t:`[mutable place expression context]s`:
 
 * :dp:`fls_qytgkbhqr5ln`
   The :t:`indexed operand` of an :t:`index expression` if evaluated in a
@@ -980,8 +994,14 @@ Named Blocks
 
 .. rubric:: Legality Rules
 
-:dp:`fls_J8wJNfcSAYrS`
-A :t:`named block expression` is a :t:`block expression` with a :t:`label`.
+.. glossary-entry:: named block expression
+   
+   :glossary:
+     :dp:`fls_ivFb8uAMVY3Q`
+     A :dt:`named block expression` is a :t:`block expression` with a :t:`label`.
+   :chapter:
+     :dp:`fls_J8wJNfcSAYrS`
+     A :t:`named block expression` is a :t:`block expression` with a :t:`label`.
 
 :dp:`fls_B4NBv2jfZLuy`
 The :t:`type` of the :t:`named block expression` is the :t:`type` of its
@@ -1117,9 +1137,16 @@ Borrow Expression
      An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
      :t:`keyword` ``mut``.
 
-:dp:`fls_50j167r4v61b`
-A :t:`mutable borrow expression` is a :t:`borrow expression` that has
-:t:`keyword` ``mut``.
+.. glossary-entry:: mutable borrow expression
+   
+   :glossary:
+     :dp:`fls_80kcc4y21hu6`
+     A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
+     :t:`keyword` ``mut``.
+   :chapter:
+     :dp:`fls_50j167r4v61b`
+     A :t:`mutable borrow expression` is a :t:`borrow expression` that has
+     :t:`keyword` ``mut``.
 
 :dp:`fls_ya77l2zgtilp`
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
@@ -1448,8 +1475,17 @@ Negation Expression
 
 .. rubric:: Legality Rules
 
-:dp:`fls_pfa81kv2mru8`
-A :t:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+.. glossary-entry:: negation expression
+   
+   :glossary:
+     :dp:`fls_pmn6cjamdt0a`
+     A :dt:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+     
+     :dp:`fls_o1f35ud4klvv`
+     See :s:`NegationExpression`.
+   :chapter:
+     :dp:`fls_pfa81kv2mru8`
+     A :t:`negation expression` is an :t:`expression` that negates its :t:`operand`.
 
 :dp:`fls_plcut8vzdwox`
 The :t:`type` of the :t:`operand` of a :t:`negation expression` with a
@@ -3856,9 +3892,19 @@ The :t:`type` of the :t:`operand` of an :t:`indexed initializer` and the
 The :t:`value` of an :t:`indexed initializer` is the :t:`value` of its
 :t:`operand`.
 
-:dp:`fls_lwyq3vyc91rn`
-A :t:`named initializer` is a :t:`construct` that specifies the name and
-initial :t:`value` of a :t:`field` in a :t:`struct expression`.
+.. glossary-entry:: named initializer
+   
+   :glossary:
+     :dp:`fls_xwvz8i4jim7a`
+     A :dt:`named initializer` is a :t:`construct` that specifies the name and
+     initial :t:`value` of a :t:`field` in a :t:`struct expression`.
+     
+     :dp:`fls_aueznbw3lohl`
+     See :s:`NamedInitializer`.
+   :chapter:
+     :dp:`fls_lwyq3vyc91rn`
+     A :t:`named initializer` is a :t:`construct` that specifies the name and
+     initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_qed1pps827dv`
 A :t:`named initializer` matches a :t:`field` of the :t:`constructee` when
@@ -4713,10 +4759,16 @@ The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
      An :t:`anonymous loop expression` is a :t:`loop expression` without a
      :t:`label`.
 
-:dp:`fls_phpoq9ho8f1v`
-A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
-
-.. rubric:: Dynamic Semantics
+.. glossary-entry:: named loop expression
+   
+   :glossary:
+     :dp:`fls_440dr5qix3ns`
+     A :dt:`named loop expression` is a :t:`loop expression` with a :t:`label`.
+   :chapter:
+     :dp:`fls_phpoq9ho8f1v`
+     A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
+     
+     .. rubric:: Dynamic Semantics
 
 :dp:`fls_aw6qczl4zpko`
 A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no

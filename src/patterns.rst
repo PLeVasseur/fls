@@ -196,6 +196,12 @@ Identifier Patterns
 An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
 with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 
+.. glossary-entry:: mutable binding
+   
+   :glossary:
+     :dp:`fls_v2pGKVaQjtcl`
+     A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
+
 :dp:`fls_joIQdDn44oIT`
 An :t:`identifier pattern` with :t:`keyword` ``ref`` is a
 :t:`reference identifier pattern`.
@@ -928,9 +934,19 @@ when its :t:`field index` and the position of the :t:`field` in the
 The :t:`type` of a :t:`matched indexed deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
-:dp:`fls_46u4ddj0yf93`
-A :t:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
-a :t:`field`.
+.. glossary-entry:: named deconstructor
+   
+   :glossary:
+     :dp:`fls_g3k1hy3j4qn9`
+     A :dt:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
+     a :t:`field`.
+     
+     :dp:`fls_ujreg07979g8`
+     See :s:`NamedDeconstructor`.
+   :chapter:
+     :dp:`fls_46u4ddj0yf93`
+     A :t:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
+     a :t:`field`.
 
 :dp:`fls_qu3dvfdq6oy7`
 A :t:`named deconstructor` matches a :t:`field` of the :t:`deconstructee` when
