@@ -70,9 +70,19 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
 
 .. rubric:: Legality Rules
 
-:dp:`fls_w44hav7mw3ao`
-A :t:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
-of syntactic transformation :t:`[macro rule]s`.
+.. glossary-entry:: declarative macro
+   
+   :glossary:
+     :dp:`fls_pe12lfffaoqt`
+     A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a
+     set of syntactic transformation rules.
+     
+     :dp:`fls_1te2kfi9lt6c`
+     See :s:`MacroRulesDeclaration`.
+   :chapter:
+     :dp:`fls_w44hav7mw3ao`
+     A :t:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
+     of syntactic transformation :t:`[macro rule]s`.
 
 :dp:`fls_dw1nq4r9ghhd`
 A :t:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
@@ -1089,11 +1099,22 @@ within them, which aims to eliminate the syntactic interference between a
 :dp:`fls_3axjf28xb1nt`
 :t:`Hygiene` is categorized as follows:
 
-* :dp:`fls_dz2mvodl818d`
-  :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
-  site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
-  the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
-  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
+*
+  .. glossary-entry:: definition site hygiene
+     
+     :glossary:
+       :dp:`fls_2Y1Dpw5ZEqT3`
+       :dt:`Definition site hygiene` is a type of :t:`hygiene` which resolves to the
+       :s:`MacroRulesDeclaration` site. :t:`[Identifier]s` with
+       :t:`definition site hygiene` cannot reference the environment of the
+       :s:`MacroRulesDeclaration`, cannot be referenced by the environment of a
+       :s:`MacroInvocation`, and are considered :t:`hygienic`.
+     :chapter:
+       * :dp:`fls_dz2mvodl818d`
+         :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+         site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
+         the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
+         environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
 
 *
   .. glossary-entry:: call site hygiene

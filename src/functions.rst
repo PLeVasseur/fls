@@ -159,6 +159,14 @@ A :t:`function` shall have a :t:`function body` unless it is an
 :dp:`fls_bHwy8FLzEUi3`
 A :t:`function body` denotes a :t:`control flow boundary`.
 
+.. glossary-entry:: control flow boundary
+   
+   :glossary:
+     :dp:`fls_SmipZJDp02ij`
+     A :dt:`control flow boundary` is a :t:`construct` that limits control flow from
+     returning beyond the :t:`construct`, and acts as the target of control flow
+     returning operations.
+
 .. glossary-entry:: async control flow boundary
    
    :glossary:

@@ -109,14 +109,29 @@ Crates
 
 .. rubric:: Legality Rules
 
-:dp:`fls_qwghk79ok5h0`
-A :t:`crate` is a unit of compilation and linking that contains a tree of
-nested :t:`[module]s`.
+.. glossary-entry:: crate
+   
+   :glossary:
+     :dp:`fls_qplsjzb2uyim`
+     A :dt:`crate` is a unit of compilation and linking that contains a tree of
+     nested :t:`[module]s`.
+   :chapter:
+     :dp:`fls_qwghk79ok5h0`
+     A :t:`crate` is a unit of compilation and linking that contains a tree of
+     nested :t:`[module]s`.
 
-:dp:`fls_unxalgMqIr3v`
-The :t:`crate type` of a :t:`crate` is the value of the :t:`attribute`
-``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
-the tool compiling the :t:`crate`.
+.. glossary-entry:: crate type
+   
+   :glossary:
+     :dp:`fls_eaxsgPMFNH7f`
+     The :dt:`crate type` of a :t:`crate` is the value of the :t:`attribute`
+     ``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
+     the tool compiling the :t:`crate`.
+   :chapter:
+     :dp:`fls_unxalgMqIr3v`
+     The :t:`crate type` of a :t:`crate` is the value of the :t:`attribute`
+     ``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
+     the tool compiling the :t:`crate`.
 
 :dp:`fls_e7jGvXvTsFpC`
 The :t:`crate type` of a :t:`crate` if not specified is ``bin``.
@@ -177,11 +192,29 @@ Crate Imports
 
 .. rubric:: Legality Rules
 
-:dp:`fls_d0pa807s5d5h`
-A :t:`crate import` specifies a required dependency on an external :t:`crate`.
+.. glossary-entry:: crate import
+   
+   :glossary:
+     :dp:`fls_y91ja1a87g7a`
+     A :dt:`crate import` specifies a dependency on an external :t:`crate`.
+     
+     :dp:`fls_nmdxagg39hz6`
+     See :s:`ExternalCrateImport`.
+   :chapter:
+     :dp:`fls_d0pa807s5d5h`
+     A :t:`crate import` specifies a required dependency on an external :t:`crate`.
 
-:dp:`fls_vfam3wzeAiah`
-A :t:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+.. glossary-entry:: crate indication
+   
+   :glossary:
+     :dp:`fls_XUSFUErxQRRA`
+     A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+     
+     :dp:`fls_s1eFklbzjLxQ`
+     See :s:`CrateIndication`.
+   :chapter:
+     :dp:`fls_vfam3wzeAiah`
+     A :t:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
 
 :dp:`fls_ft860vkz0lkc`
 A :t:`crate import` binds an external :t:`crate` to its :t:`crate indication`.
@@ -209,9 +242,22 @@ Compilation Roots
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fhiqvgdamq5`
-A :t:`crate root module` is the root of the nested :t:`module` tree of a
-:t:`crate`.
+.. glossary-entry:: crate root
+   
+   :glossary:
+     :dp:`fls_yxcgiuybqqy8`
+     A :dt:`crate root` is an entry point into a :t:`crate`.
+
+.. glossary-entry:: crate root module
+   
+   :glossary:
+     :dp:`fls_oo4nmqv78wno`
+     A :dt:`crate root module` is the root of the nested :t:`module` tree of a
+     :t:`crate`.
+   :chapter:
+     :dp:`fls_fhiqvgdamq5`
+     A :t:`crate root module` is the root of the nested :t:`module` tree of a
+     :t:`crate`.
 
 :dp:`fls_tk8tl2e0a34`
 A tool can define a :t:`crate root module` for a single :t:`crate`.

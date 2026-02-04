@@ -29,9 +29,16 @@ usually via a :t:`field access expression` or a :t:`path`.
 :dp:`fls_40d2g0hvq2il`
 A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
-:dp:`fls_lcca91wjwnpx`
-A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
-:t:`entity`.
+.. glossary-entry:: declaration
+   
+   :glossary:
+     :dp:`fls_kct7ducpli6k`
+     A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
+     :t:`entity`.
+   :chapter:
+     :dp:`fls_lcca91wjwnpx`
+     A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
+     :t:`entity`.
 
 :dp:`fls_94l2d7ti0hjw`
 An :t:`explicitly declared entity` is an :t:`entity` that has a
@@ -150,9 +157,19 @@ descendant :t:`[module]s`.
 :dp:`fls_t7i4n19qdgn4`
 A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
-:dp:`fls_aa4f3rvir9lm`
-A :t:`crate public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`public visibility` within the current :t:`crate` only.
+.. glossary-entry:: crate public modifier
+   
+   :glossary:
+     :dp:`fls_dj7fmrqhbhsv`
+     A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the current :t:`crate` only.
+     
+     :dp:`fls_wjfupeyeczp0`
+     See :s:`CratePublicModifier`.
+   :chapter:
+     :dp:`fls_aa4f3rvir9lm`
+     A :t:`crate public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
 :dp:`fls_tnh7o3pb4e22`
 A :t:`self public modifier` is a :t:`visibility modifier` that grants a
@@ -1240,9 +1257,16 @@ expression` or a :t:`path`.
 :dp:`fls_7le2vcdbtxbq`
 A :t:`construct` that is being resolved is said to be :t:`under resolution`.
 
-:dp:`fls_x3alg07yd7hx`
-A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that
-implements the :std:`core::ops::Deref` :t:`trait`.
+.. glossary-entry:: dereference type
+   
+   :glossary:
+     :dp:`fls_HfuUQ7IaoI5j`
+     A :dt:`dereference type` is either a :t:`reference type` or a :t:`type` that
+     implements the :std:`core::ops::Deref` :t:`trait`.
+   :chapter:
+     :dp:`fls_x3alg07yd7hx`
+     A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that
+     implements the :std:`core::ops::Deref` :t:`trait`.
 
 :dp:`fls_4hulwazdu20i`
 A :t:`dereference type chain` is a sequence of :t:`[dereference type]s`. A

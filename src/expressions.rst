@@ -1154,9 +1154,26 @@ Dereference Expression
 
 .. rubric:: Legality Rules
 
-:dp:`fls_f6wktzofzdn1`
-A :t:`dereference expression` is an :t:`expression` that obtains the pointed-to
-memory location of its :t:`operand`.
+.. glossary-entry:: dereference expression
+   
+   :glossary:
+     :dp:`fls_3cuyhbh2llei`
+     A :dt:`dereference expression` is an :t:`expression` that obtains the
+     pointed-to memory location of its :t:`operand`.
+     
+     :dp:`fls_hx0jwahdb1nf`
+     See :s:`DereferenceExpression`.
+   :chapter:
+     :dp:`fls_f6wktzofzdn1`
+     A :t:`dereference expression` is an :t:`expression` that obtains the pointed-to
+     memory location of its :t:`operand`.
+
+.. glossary-entry:: dereference
+   
+   :glossary:
+     :dp:`fls_hk97pb1qt04y`
+     A :dt:`dereference` is the memory location produced by evaluating a
+     :t:`dereference expression`.
 
 :dp:`fls_aeh5pzpcjveq`
 When the :t:`operand` of a :t:`dereference expression` is of a :t:`pointer
@@ -1208,6 +1225,14 @@ The :t:`value` of a :t:`dereference expression` is determined as follows:
 
 :dp:`fls_72bpdsxxbgeq`
 The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
+
+.. glossary-entry:: dangling
+   
+   :glossary:
+     :dp:`fls_lq2urzh7bzxx`
+     A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
+     :c:`null` or not all of the bytes at the referred memory location are part of
+     the same allocation.
 
 .. rubric:: Undefined Behavior
 

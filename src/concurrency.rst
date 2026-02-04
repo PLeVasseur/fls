@@ -14,12 +14,19 @@ without :t:`[data race]s`, whose rules are presented in this chapter.
 
 .. rubric:: Legality Rules
 
-:dp:`fls_tx4b8r6i93n4`
-A :t:`data race` is a scenario where two or more threads access a shared memory
-location concurrently without any synchronization, where one of the accesses is
-a modification.
-
-.. rubric:: Undefined Behavior
+.. glossary-entry:: data race
+   
+   :glossary:
+     :dp:`fls_v2s1b57e3r7n`
+     A :dt:`data race` is a scenario where two or more threads access a shared
+     memory location concurrently.
+   :chapter:
+     :dp:`fls_tx4b8r6i93n4`
+     A :t:`data race` is a scenario where two or more threads access a shared memory
+     location concurrently without any synchronization, where one of the accesses is
+     a modification.
+     
+     .. rubric:: Undefined Behavior
 
 :dp:`fls_isypweqewe78`
 It is undefined behavior if two or more threads engage in a :t:`data race`.

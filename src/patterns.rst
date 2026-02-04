@@ -757,9 +757,19 @@ Struct Patterns
 A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
-:dp:`fls_6o3x101wo478`
-A :t:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
-deconstructed by a :t:`struct pattern`.
+.. glossary-entry:: deconstructee
+   
+   :glossary:
+     :dp:`fls_QsvWOdoFWtUO`
+     A :dt:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is
+     being deconstructed by a :t:`struct pattern`.
+     
+     :dp:`fls_TkFjmV7AR7lp`
+     See :s:`Deconstructee`.
+   :chapter:
+     :dp:`fls_6o3x101wo478`
+     A :t:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
+     deconstructed by a :t:`struct pattern`.
 
 :dp:`fls_k9zih9s0oe5h`
 A :t:`struct pattern` is interpreted based on the :t:`deconstructee`. It is a

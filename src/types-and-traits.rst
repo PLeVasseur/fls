@@ -1612,8 +1612,15 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
      :t:`C representation` lays out a :t:`type` such that the :t:`type` is
      interoperable with the :t:`C` language.
 
-:dp:`fls_b005bktrkrxy`
-:t:`Default representation` makes no guarantees about the :t:`layout`.
+.. glossary-entry:: default representation
+   
+   :glossary:
+     :dp:`fls_e85fsp10acnh`
+     :dt:`Default representation` is a :t:`type representation` that does not make
+     any guarantees about :t:`layout`.
+   :chapter:
+     :dp:`fls_b005bktrkrxy`
+     :t:`Default representation` makes no guarantees about the :t:`layout`.
 
 :dp:`fls_7plbkqlmed0r`
 :t:`Primitive representation` is the :t:`type representation` of individual

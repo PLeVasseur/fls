@@ -276,9 +276,16 @@ Passing Conventions
 A :t:`passing convention` is the mechanism that defines how a :t:`value` is
 transferred between :t:`[place]s`.
 
-:dp:`fls_h2pgsij1rbms`
-A :t:`copy type` is a :t:`type` that implements the :std:`core::marker::Copy`
-:t:`trait`.
+.. glossary-entry:: copy type
+   
+   :glossary:
+     :dp:`fls_j7r33ecacyh`
+     A :dt:`copy type` is a :t:`type` that implements the
+     :std:`core::marker::Copy` :t:`trait`.
+   :chapter:
+     :dp:`fls_h2pgsij1rbms`
+     A :t:`copy type` is a :t:`type` that implements the :std:`core::marker::Copy`
+     :t:`trait`.
 
 :dp:`fls_yx2knbby70fy`
 A :t:`value` of a :t:`copy type` is :t:`passed <passing convention>`
