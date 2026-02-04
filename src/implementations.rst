@@ -36,9 +36,19 @@ Implementations
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ivxpoxggy7s6`
-An :t:`implementation` is an :t:`item` that supplements an
-:t:`implementing type` by extending its functionality.
+.. glossary-entry:: implementation
+   
+   :glossary:
+     :dp:`fls_pjulppit1r6`
+     An :dt:`implementation` is an :t:`item` that supplements an
+     :t:`implementing type` by extending its functionality.
+     
+     :dp:`fls_z4ij5skptoay`
+     See :s:`Implementation`.
+   :chapter:
+     :dp:`fls_ivxpoxggy7s6`
+     An :t:`implementation` is an :t:`item` that supplements an
+     :t:`implementing type` by extending its functionality.
 
 :dp:`fls_yopmjbnw8tbl`
 An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
@@ -48,10 +58,21 @@ an :t:`implementation` are associated with.
 Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
 for the :t:`implementing type`.
 
-:dp:`fls_Mcpdzzcw43M7`
-An :t:`implementation body` is a :t:`construct` that encapsulates the
-:t:`[associated item]s`, :t:`[inner attribute]s`, and
-:t:`[inner doc comment]s` of an :t:`implementation`.
+.. glossary-entry:: implementation body
+   
+   :glossary:
+     :dp:`fls_1iS30Nv9myEd`
+     An :dt:`implementation body` is a :t:`construct` that encapsulates the
+     :t:`[associated item]s`, :t:`[inner attribute]s`, and
+     :t:`[inner doc comment]s` of an :t:`implementation`.
+     
+     :dp:`fls_u75iHi53PnNP`
+     See :s:`ImplementationBody`.
+   :chapter:
+     :dp:`fls_Mcpdzzcw43M7`
+     An :t:`implementation body` is a :t:`construct` that encapsulates the
+     :t:`[associated item]s`, :t:`[inner attribute]s`, and
+     :t:`[inner doc comment]s` of an :t:`implementation`.
 
 :dp:`fls_v0n0bna40dqr`
 An :t:`inherent implementation` is an :t:`implementation` that adds direct
@@ -135,9 +156,16 @@ Implementation Coherence
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fv1l4yjuut7p`
-A :t:`trait implementation` exhibits :t:`implementation coherence` when it is
-valid and does not overlap with another :t:`trait implementation`.
+.. glossary-entry:: implementation coherence
+   
+   :glossary:
+     :dp:`fls_hAmKcuYT9hHi`
+     A :t:`trait implementation` exhibits :dt:`implementation coherence` when it is
+     valid and does not overlap with another :t:`trait implementation`.
+   :chapter:
+     :dp:`fls_fv1l4yjuut7p`
+     A :t:`trait implementation` exhibits :t:`implementation coherence` when it is
+     valid and does not overlap with another :t:`trait implementation`.
 
 :dp:`fls_swdusjwzgksx`
 Two :t:`[trait implementation]s` of the same :t:`implemented trait` overlap when

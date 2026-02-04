@@ -150,9 +150,19 @@ Identifier Patterns
 
 .. rubric:: Legality Rules
 
-:dp:`fls_uljdw9rf7ies`
-An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
-matches to a :t:`binding`.
+.. glossary-entry:: identifier pattern
+   
+   :glossary:
+     :dp:`fls_f2va67gvpqe0`
+     An :dt:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
+     matches to a :t:`binding`.
+     
+     :dp:`fls_nxa1gvqgitgk`
+     See :s:`IdentifierPattern`.
+   :chapter:
+     :dp:`fls_uljdw9rf7ies`
+     An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
+     matches to a :t:`binding`.
 
 .. glossary-entry:: bound pattern
    

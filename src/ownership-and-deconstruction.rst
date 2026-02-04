@@ -117,9 +117,16 @@ a :t:`reference` to it is :t:`active`.
 A :t:`referent` shall not be modified while a :t:`reference` to it is
 :t:`active`.
 
-:dp:`fls_wcf5mxrzbujn`
-An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
-prevents the mutation of its :t:`referent`.
+.. glossary-entry:: immutable reference
+   
+   :glossary:
+     :dp:`fls_u9kne5zfmhoe`
+     An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`,
+     and prevents the mutation of its :t:`referent`.
+   :chapter:
+     :dp:`fls_wcf5mxrzbujn`
+     An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
+     prevents the mutation of its :t:`referent`.
 
 :dp:`fls_fckoj1jh5mrc`
 A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
@@ -203,9 +210,16 @@ program text. An :t:`implicit borrow` occurs in the following contexts:
 An :t:`implicit borrow` may be an :t:`immutable borrow` or a :t:`mutable borrow`
 if required.
 
-:dp:`fls_hyl4bdjbuzbw`
-An :t:`immutable borrow` is an :t:`immutable reference` produced by
-:t:`borrowing`.
+.. glossary-entry:: immutable borrow
+   
+   :glossary:
+     :dp:`fls_p0abqkiuk7y9`
+     An :dt:`immutable borrow` is an :t:`immutable reference` produced by
+     :t:`borrowing`.
+   :chapter:
+     :dp:`fls_hyl4bdjbuzbw`
+     An :t:`immutable borrow` is an :t:`immutable reference` produced by
+     :t:`borrowing`.
 
 :dp:`fls_pu19i4sj6yg0`
 A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.

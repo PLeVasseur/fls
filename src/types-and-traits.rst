@@ -518,6 +518,20 @@ domain of whole numbers:
      :dc:`i32` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
      :sup:`31`) to 2\ :sup:`31` - 1, all inclusive.
 
+.. glossary-entry:: i64
+   
+   :glossary:
+     :dp:`fls_4bpatxp8yelv`
+     :dc:`i64` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+     :sup:`63`) to 2\ :sup:`63` - 1, all inclusive.
+
+.. glossary-entry:: i128
+   
+   :glossary:
+     :dp:`fls_p75kpbtonb8z`
+     :dc:`i128` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+     :sup:`127`) to 2\ :sup:`127` - 1, all inclusive.
+
 :dp:`fls_t9oyfmgqka6u`
 :t:`Type` :c:`isize` has the same number of bits as the platform's
 :t:`pointer type`, and is at least 16-bits wide.
@@ -1242,9 +1256,16 @@ A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``mut``.
 
-:dp:`fls_8uWfFAsZeRCs`
-An :t:`immutable raw pointer type` is a :t:`raw pointer type` subject to
-:t:`keyword` ``const``.
+.. glossary-entry:: immutable raw pointer type
+   
+   :glossary:
+     :dp:`fls_2GzYItDXvMhB`
+     An :dt:`immutable raw pointer type` is a :t:`raw pointer type` subject to
+     :t:`keyword` ``const``.
+   :chapter:
+     :dp:`fls_8uWfFAsZeRCs`
+     An :t:`immutable raw pointer type` is a :t:`raw pointer type` subject to
+     :t:`keyword` ``const``.
 
 :dp:`fls_hrum767l6dte`
 Comparing two :t:`[value]s` of :t:`[raw pointer type]s` compares the addresses
@@ -1350,9 +1371,19 @@ Impl Trait Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_a6zlvyxpgsew`
-An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
-:t:`type` is known at compile time.
+.. glossary-entry:: impl trait type
+   
+   :glossary:
+     :dp:`fls_rdctgmnfncnd`
+     An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
+     :t:`type` is known at compile time.
+     
+     :dp:`fls_704soar15v8v`
+     See :s:`ImplTraitTypeSpecification`, :s:`ImplTraitTypeSpecificationOneBound`.
+   :chapter:
+     :dp:`fls_a6zlvyxpgsew`
+     An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
+     :t:`type` is known at compile time.
 
 :dp:`fls_ieyqx5vzas2m`
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
@@ -3827,10 +3858,18 @@ Impl Header Lifetime Elision
 
 .. rubric:: Legality Rules
 
-:dp:`fls_FUdsmzN0T8XP`
-:t:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
-applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
-:t:`implementation`.
+.. glossary-entry:: impl header lifetime elision
+   
+   :glossary:
+     :dp:`fls_PvYGu85UAyFb`
+     :dt:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
+     applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
+     :t:`implementation`.
+   :chapter:
+     :dp:`fls_FUdsmzN0T8XP`
+     :t:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
+     applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
+     :t:`implementation`.
 
 :dp:`fls_3p5BdLn3JbKz`
 The :t:`impl header lifetime elision` rules are as follows:

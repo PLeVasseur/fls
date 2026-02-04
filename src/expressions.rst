@@ -528,10 +528,17 @@ location can be modified. The following :t:`[place expression]s` are
 * :dp:`fls_dcm3yr3y9y0a`
   A :t:`temporary`.
 
-:dp:`fls_cPEMHZtPkctX`
-An :t:`immutable place expression` is a :t:`place expression` whose memory
-location cannot be modified. All :t:`[place expression]s` that are not
-:t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
+.. glossary-entry:: immutable place expression
+   
+   :glossary:
+     :dp:`fls_MXBEZjzBxw5Z`
+     An :dt:`immutable place expression` is a :t:`place expression` whose memory
+     location cannot be modified.
+   :chapter:
+     :dp:`fls_cPEMHZtPkctX`
+     An :t:`immutable place expression` is a :t:`place expression` whose memory
+     location cannot be modified. All :t:`[place expression]s` that are not
+     :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
 :dp:`fls_4vxi1ji93dxb`
 A :t:`place expression context` is a :t:`construct` that may evaluate its
@@ -574,6 +581,13 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
 
 * :dp:`fls_JBfZuFDQg3mU`
   The :t:`base initializer` of a :t:`struct expression`.
+
+.. glossary-entry:: immutable place expression context
+   
+   :glossary:
+     :dp:`fls_UvrQ49dSoQGc`
+     An :dt:`immutable place expression context` is a :t:`place expression context`
+     whose memory location cannot be modified.
 
 :dp:`fls_wxGAOWEVT77u`
 A :t:`mutable place expression context` is a :t:`place expression context` that
@@ -1073,9 +1087,16 @@ Borrow Expression
      its :t:`operand` and creates a :t:`reference` to the memory location of its
      :t:`operand`.
 
-:dp:`fls_r7ix8webgqlm`
-An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
-:t:`keyword` ``mut``.
+.. glossary-entry:: immutable borrow expression
+   
+   :glossary:
+     :dp:`fls_dojod5pg4r7l`
+     An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
+     :t:`keyword` ``mut``.
+   :chapter:
+     :dp:`fls_r7ix8webgqlm`
+     An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
+     :t:`keyword` ``mut``.
 
 :dp:`fls_50j167r4v61b`
 A :t:`mutable borrow expression` is a :t:`borrow expression` that has
@@ -5154,10 +5175,21 @@ If Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2i4fbxbbvpf1`
-An :t:`if expression` is an :t:`expression` that evaluates either a
-:t:`block expression` or an :t:`else expression` depending on the :t:`value` of
-its :t:`subject expression`.
+.. glossary-entry:: if expression
+   
+   :glossary:
+     :dp:`fls_rk0661mtdvsi`
+     An :dt:`if expression` is an :t:`expression` that evaluates either a
+     :t:`block expression` or an :t:`else expression` depending on the :t:`value`
+     of its :t:`subject expression`.
+     
+     :dp:`fls_gdsufx2ns8bl`
+     See :s:`IfExpression`.
+   :chapter:
+     :dp:`fls_2i4fbxbbvpf1`
+     An :t:`if expression` is an :t:`expression` that evaluates either a
+     :t:`block expression` or an :t:`else expression` depending on the :t:`value` of
+     its :t:`subject expression`.
 
 .. glossary-entry:: else expression
    
@@ -5247,10 +5279,21 @@ If Let Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_dsrjup2umr9`
-An :t:`if let expression` is an :t:`expression` that evaluates either a
-:t:`block expression` or an :t:`else expression` depending on whether its
-:t:`pattern` can be matched against its :t:`subject let expression`.
+.. glossary-entry:: if let expression
+   
+   :glossary:
+     :dp:`fls_ky6ng7jy1g6z`
+     An :dt:`if let expression` is an :t:`expression` that evaluates either a
+     :t:`block expression` or an :t:`else expression` depending on whether its
+     :t:`pattern` can be matched against its :t:`subject let expression`.
+     
+     :dp:`fls_kczg3c6n3psu`
+     See :s:`IfLetExpression`.
+   :chapter:
+     :dp:`fls_dsrjup2umr9`
+     An :t:`if let expression` is an :t:`expression` that evaluates either a
+     :t:`block expression` or an :t:`else expression` depending on whether its
+     :t:`pattern` can be matched against its :t:`subject let expression`.
 
 :dp:`fls_okVOYzTT6fBK`
 The :t:`expected type` of the :t:`pattern` is the :t:`type` of the :t:`subject let expression`.

@@ -474,8 +474,17 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xsdmun5uqy4c`
-An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
+.. glossary-entry:: identifier
+   
+   :glossary:
+     :dp:`fls_14zc5bcm9d8o`
+     An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
+     
+     :dp:`fls_oddu2wzhczvq`
+     See :s:`Identifier`.
+   :chapter:
+     :dp:`fls_xsdmun5uqy4c`
+     An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 :dp:`fls_ktnf6zkrdy45`
 A :t:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
