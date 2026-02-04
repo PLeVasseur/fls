@@ -2250,9 +2250,16 @@ Type Path Resolution
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2zuncql8ir5k`
-:t:`Type path resolution` is a form of :t:`path resolution` that applies to
-a :t:`type path`.
+.. glossary-entry:: type path resolution
+   
+   :glossary:
+     :dp:`fls_Xv6JbfdIyvA3`
+     :dt:`Type path resolution` is a form of :t:`path resolution` that applies to
+     a :t:`type path`.
+   :chapter:
+     :dp:`fls_2zuncql8ir5k`
+     :t:`Type path resolution` is a form of :t:`path resolution` that applies to
+     a :t:`type path`.
 
 :dp:`fls_bv5cj918dqqe`
 The :t:`namespace context` of :t:`type path resolution` is the

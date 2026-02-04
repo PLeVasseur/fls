@@ -520,6 +520,41 @@ domain of whole numbers:
      - 0
      - 2\ :sup:`128` - 1
 
+.. glossary-entry:: u8
+   
+   :glossary:
+     :dp:`fls_umf9zfeghy6`
+     :dc:`u8` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+     2\ :sup:`8` - 1, all inclusive.
+
+.. glossary-entry:: u16
+   
+   :glossary:
+     :dp:`fls_8vi7bm2895y0`
+     :dc:`u16` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+     2\ :sup:`16` - 1, all inclusive.
+
+.. glossary-entry:: u32
+   
+   :glossary:
+     :dp:`fls_pw90erui8vkk`
+     :dc:`u32` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+     2\ :sup:`32` - 1, all inclusive.
+
+.. glossary-entry:: u64
+   
+   :glossary:
+     :dp:`fls_pbcmhznqft9m`
+     :dc:`u64` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+     2\ :sup:`64` - 1, all inclusive.
+
+.. glossary-entry:: u128
+   
+   :glossary:
+     :dp:`fls_8yv891ur2av5`
+     :dc:`u128` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+     2\ :sup:`128` - 1, all inclusive.
+
 :dp:`fls_75lntwhg20l`
 :t:`Type` :c:`usize` has the same number of bits as the platform's
 :t:`pointer type`, and is at least 16-bits wide.
@@ -929,6 +964,12 @@ A :t:`zero-variant enum type` has no :t:`[value]s`.
      A :dt:`tuple enum variant` is an :t:`enum variant` with a
      :s:`TupleStructFieldList`.
 
+.. glossary-entry:: unit enum variant
+   
+   :glossary:
+     :dp:`fls_y6fI5L3Tghie`
+     A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+
 .. glossary-entry:: enum field
    
    :glossary:
@@ -1148,6 +1189,28 @@ Struct Types
      :dp:`fls_xz1p4pss2Ocn`
      A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 
+.. glossary-entry:: unit struct
+   
+   :glossary:
+     :dp:`fls_9t7fu8fcak6k`
+     A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+     
+     :dp:`fls_mSuiysAVczPx`
+     See :s:`UnitStructDeclaration`.
+
+.. glossary-entry:: unit struct constant
+   
+   :glossary:
+     :dp:`fls_lLGn4JqddeAg`:
+     A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
+     :t:`unit struct`.
+
+.. glossary-entry:: unit struct type
+   
+   :glossary:
+     :dp:`fls_oIzmvACNeQpE`
+     A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
+
 .. glossary-entry:: struct field
    
    :glossary:
@@ -1240,9 +1303,30 @@ Union Types
      :dp:`fls_x3oibk39dvem`
      A :dt:`union` is an :t:`item` that declares a :t:`union type`.
 
-:dp:`fls_nskmnzq95yqm`
-A :t:`union type` is an :t:`abstract data type` that is a sum of other
-:t:`[type]s`.
+.. glossary-entry:: union type
+   
+   :glossary:
+     :dp:`fls_af2sscrep7mc`
+     A :dt:`union type` is an :t:`abstract data type` similar to a :t:`C`-like union.
+     
+     :dp:`fls_fgvjogfz8ink`
+     See :s:`UnionDeclaration`.
+   :chapter:
+     :dp:`fls_nskmnzq95yqm`
+     A :t:`union type` is an :t:`abstract data type` that is a sum of other
+     :t:`[type]s`.
+
+.. glossary-entry:: union field
+   
+   :glossary:
+     :dp:`fls_6t2fbnlndz8y`
+     A :dt:`union field` is a :t:`field` of a :t:`union type`.
+
+.. glossary-entry:: union value
+   
+   :glossary:
+     :dp:`fls_9BPrxky3a4nE`
+     A :dt:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_I5fN5Fmo5CyK`
 A :t:`union` without any :t:`[union field]s` is rejected, but may still be consumed by
@@ -2227,11 +2311,18 @@ Type Representation
      :dp:`fls_69j7pq2o1iu`
      See :t:`type representation`.
 
-:dp:`fls_mpqlyi3lgrfv`
-:t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
-:t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
-between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
-does not change the :t:`layout` of the :t:`[field]s` themselves.
+.. glossary-entry:: type representation
+   
+   :glossary:
+     :dp:`fls_rv80nyxwj2z8`
+     :dt:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
+     :t:`[abstract data type]s`.
+   :chapter:
+     :dp:`fls_mpqlyi3lgrfv`
+     :t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
+     :t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
+     between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
+     does not change the :t:`layout` of the :t:`[field]s` themselves.
 
 :dp:`fls_9dhnanv21y9z`
 :t:`Type representation` is classified into:
@@ -2527,11 +2618,20 @@ Type Unification
 
 .. rubric:: Legality Rules
 
-:dp:`fls_ryvdhkgm7vzj`
-:t:`Type unification` is the process by which :t:`type inference` propagates
-known :t:`[type]s` across the :t:`type inference root` and assigns concrete
-:t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
-for compatibility between two :t:`[type]s` during :t:`method resolution`.
+.. glossary-entry:: type unification
+   
+   :glossary:
+     :dp:`fls_3vyodut341b5`
+     :dt:`Type unification` is the process by which :t:`type inference` propagates
+     known :t:`[type]s` across the :t:`type inference root` and assigns concrete
+     :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
+     for compatibility between two :t:`[type]s` during :t:`method resolution`.
+   :chapter:
+     :dp:`fls_ryvdhkgm7vzj`
+     :t:`Type unification` is the process by which :t:`type inference` propagates
+     known :t:`[type]s` across the :t:`type inference root` and assigns concrete
+     :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
+     for compatibility between two :t:`[type]s` during :t:`method resolution`.
 
 .. glossary-entry:: unify
    
@@ -2557,8 +2657,14 @@ for compatibility between two :t:`[type]s` during :t:`method resolution`.
      :dp:`fls_tqRwIe6z3a4j`
      A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
 
-:dp:`fls_aie0tr62vhw5`
-Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
+.. glossary-entry:: unifiable types
+   
+   :glossary:
+     :dp:`fls_jsbggfitv9xk`
+     Two :t:`[type]s` that :t:`unify` are said to be :dt:`[unifiable type]s`.
+   :chapter:
+     :dp:`fls_aie0tr62vhw5`
+     Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
 
 :dp:`fls_3U7Ue6Xzuv9M`
 :t:`Type unification` is a symmetric operation. If :t:`type` ``A`` unifies
@@ -2757,14 +2863,21 @@ Type Coercion
 
 .. rubric:: Legality Rules
 
-:dp:`fls_w5pjcj9qmgbv`
-:t:`Type coercion` is an implicit operation that changes the :t:`type` of a
-:t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
-explicit using a :t:`type cast expression`.
-
-:dp:`fls_5v0n2a32bk95`
-A :t:`type coercion` takes place at a :t:`coercion site` or within a
-:t:`coercion-propagating expression`.
+.. glossary-entry:: type coercion
+   
+   :glossary:
+     :dp:`fls_mt36qehtqova`
+     :dt:`Type coercion` is an implicit operation that changes the :t:`type` of
+     a :t:`value`.
+   :chapter:
+     :dp:`fls_w5pjcj9qmgbv`
+     :t:`Type coercion` is an implicit operation that changes the :t:`type` of a
+     :t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
+     explicit using a :t:`type cast expression`.
+     
+     :dp:`fls_5v0n2a32bk95`
+     A :t:`type coercion` takes place at a :t:`coercion site` or within a
+     :t:`coercion-propagating expression`.
 
 :dp:`fls_j3kbaf43sgpj`
 The following :t:`[construct]s` constitute a :dt:`coercion site`:
@@ -3086,9 +3199,16 @@ Type Inference
 
 .. rubric:: Legality Rules
 
-:dp:`fls_h8sedxew0d4u`
-:t:`Type inference` is the process of automatically determining the :t:`type` of
-:t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
+.. glossary-entry:: type inference
+   
+   :glossary:
+     :dp:`fls_ky8epvf9834e`
+     :dt:`Type inference` is the process of deducing the expected :t:`type` of an
+     arbitrary :t:`value`.
+   :chapter:
+     :dp:`fls_h8sedxew0d4u`
+     :t:`Type inference` is the process of automatically determining the :t:`type` of
+     :t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
 .. glossary-entry:: type inference root
    

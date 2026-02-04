@@ -6781,6 +6781,14 @@ A :t:`captured` :t:`capture target` with :t:`capture mode`
 :t:`unique immutable reference` to the :t:`capture target` and passes the
 :t:`mutable reference` into the :t:`capturing environment`.
 
+.. glossary-entry:: unique immutable reference
+   
+   :glossary:
+     :dp:`fls_eXrivAmNxzmv`
+     A :dt:`unique immutable reference` is an :t:`immutable reference` produced by
+     :t:`capturing` what is asserted to be the only live :t:`reference` to a
+     :t:`value` while the :t:`reference` exists.
+
 :dp:`fls_t695ps4lfh6z`
 The :t:`capture mode` is determined based on the use of the :t:`capture target`
 within the :t:`capturing expression`, as follows:
