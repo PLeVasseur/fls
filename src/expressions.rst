@@ -5577,9 +5577,19 @@ Await Expressions
      An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
      suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
-:dp:`fls_vhchgab59jvd`
-A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
-an :t:`await expression`.
+.. glossary-entry:: future operand
+   
+   :glossary:
+     :dp:`fls_fold1inh5jev`
+     A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
+     an :t:`await expression`.
+     
+     :dp:`fls_tbfpowv90u5w`
+     See :s:`FutureOperand`.
+   :chapter:
+     :dp:`fls_vhchgab59jvd`
+     A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
+     an :t:`await expression`.
 
 :dp:`fls_k9pncajmhgk1`
 An :t:`await expression` shall appear within an

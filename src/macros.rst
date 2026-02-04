@@ -351,9 +351,16 @@ Function-like Macros
 
 .. rubric:: Legality Rules
 
-:dp:`fls_utd3zqczix`
-A :t:`function-like macro` is a :t:`procedural macro` that consumes a stream of
-:t:`[token]s` and produces a stream of :t:`[token]s`.
+.. glossary-entry:: function-like macro
+   
+   :glossary:
+     :dp:`fls_psnab9cuq4bu`
+     A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream
+     of :t:`[token]s` and produces a stream of tokens, and is invoked directly.
+   :chapter:
+     :dp:`fls_utd3zqczix`
+     A :t:`function-like macro` is a :t:`procedural macro` that consumes a stream of
+     :t:`[token]s` and produces a stream of :t:`[token]s`.
 
 :dp:`fls_ojr30lf6jfx0`
 The :t:`macro implementation function` of a :t:`function-like macro` shall be

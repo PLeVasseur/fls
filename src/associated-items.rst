@@ -79,9 +79,16 @@ An :t:`associated type` shall not be used in the :t:`path expression` of a
 An :t:`associated type` with a :s:`TypeBoundList` shall appear only as an
 :t:`associated trait type`.
 
-:dp:`fls_PeD0DzjK57be`
-A :t:`generic associated type` is an :t:`associated type` with
-:t:`[generic parameter]s`.
+.. glossary-entry:: generic associated type
+   
+   :glossary:
+     :dp:`fls_O4wckPZPmree`
+     A :dt:`generic associated type` is an :t:`associated type` with
+     :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_PeD0DzjK57be`
+     A :t:`generic associated type` is an :t:`associated type` with
+     :t:`[generic parameter]s`.
 
 :dp:`fls_3foYUch29ZtF`
 A :t:`lifetime parameter` of a :t:`generic associated type` requires a

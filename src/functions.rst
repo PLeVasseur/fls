@@ -63,18 +63,39 @@ Functions
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.
 
-:dp:`fls_87jnkimc15gi`
-A :t:`function qualifier` is a :t:`construct` that determines the role of
-a :t:`function`.
+.. glossary-entry:: function qualifier
+   
+   :glossary:
+     :dp:`fls_8cux22275v8r`
+     A :dt:`function qualifier` is a :t:`construct` that determines the role of
+     a :t:`function`.
+     
+     :dp:`fls_3td9tztnj2jq`
+     See :s:`FunctionQualifierList`.
+   :chapter:
+     :dp:`fls_87jnkimc15gi`
+     A :t:`function qualifier` is a :t:`construct` that determines the role of
+     a :t:`function`.
 
 :dp:`fls_nwywh1vjt6rr`
 A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
 :t:`keyword` ``const``.
 
-:dp:`fls_uwuthzfgslif`
-A :t:`function parameter` is a :t:`construct` that yields a set of
-:t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
-site of a :t:`call expression` or a :t:`method call expression`.
+.. glossary-entry:: function parameter
+   
+   :glossary:
+     :dp:`fls_2feq1ky9pla1`
+     A :dt:`function parameter` is a :t:`construct` that yields a set of
+     :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
+     site of a :t:`call expression` or a :t:`method call expression`.
+     
+     :dp:`fls_4tf20svi3rjx`
+     See :s:`FunctionParameter`.
+   :chapter:
+     :dp:`fls_uwuthzfgslif`
+     A :t:`function parameter` is a :t:`construct` that yields a set of
+     :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
+     site of a :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_ymeo93t4mz4`
 A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
@@ -158,8 +179,17 @@ The :t:`return type` of a :t:`function` is determined as follows:
 * :dp:`fls_J8X8ahnJLrMo`
   Otherwise the :t:`return type` is the :t:`unit type`.
 
-:dp:`fls_927nfm5mkbsp`
-A :t:`function body` is the :t:`block expression` of a :t:`function`.
+.. glossary-entry:: function body
+   
+   :glossary:
+     :dp:`fls_y5ha4123alik`
+     A :dt:`function body` is the :t:`block expression` of a :t:`function`.
+     
+     :dp:`fls_r0g0i730x6x4`
+     See :s:`FunctionBody`.
+   :chapter:
+     :dp:`fls_927nfm5mkbsp`
+     A :t:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an
@@ -187,11 +217,20 @@ A :t:`function body` denotes a :t:`control flow boundary`.
 A :t:`function body` of an :t:`async function` denotes an
 :t:`async control flow boundary`.
 
-:dp:`fls_owdlsaaygtho`
-A :t:`function signature` is a unique identification of a :t:`function`
-that encompasses of its :t:`[function qualifier]s`, :t:`name`,
-:t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
-:t:`where clause`.
+.. glossary-entry:: function signature
+   
+   :glossary:
+     :dp:`fls_ndld48kg6o8d`
+     A :dt:`function signature` is a unique identification of a :t:`function`
+     that encompasses of its :t:`[function qualifier]s`, :t:`name`,
+     :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
+     :t:`where clause`.
+   :chapter:
+     :dp:`fls_owdlsaaygtho`
+     A :t:`function signature` is a unique identification of a :t:`function`
+     that encompasses of its :t:`[function qualifier]s`, :t:`name`,
+     :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
+     :t:`where clause`.
 
 .. glossary-entry:: constant function
    

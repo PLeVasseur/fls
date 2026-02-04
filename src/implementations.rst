@@ -163,10 +163,18 @@ Given :t:`trait implementation`
     :t:`type` may appear in the :t:`non-[local type]s` and
     :t:`non-[fundamental]` :t:`[type]s` of ``T0, T1, .., TN``.
 
-:dp:`fls_UkQhjEWSJpDq`
-A :t:`trait` or :t:`type` is :t:`fundamental` when its
-:t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
-is always treated as if it was a :t:`local trait` or a :t:`local type`.
+.. glossary-entry:: fundamental
+   
+   :glossary:
+     :dp:`fls_e0dRD4NTE0UP`
+     A :t:`trait` or :t:`type` is :dt:`fundamental` when its
+     :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
+     is always treated as if it was a :t:`local trait` or a :t:`local type`.
+   :chapter:
+     :dp:`fls_UkQhjEWSJpDq`
+     A :t:`trait` or :t:`type` is :t:`fundamental` when its
+     :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
+     is always treated as if it was a :t:`local trait` or a :t:`local type`.
 
 :dp:`fls_fSybUG40hA5r`
 The following :t:`[type]s` are :t:`fundamental`:
@@ -267,4 +275,3 @@ A :t:`trait implementation` is conformant with an :t:`implemented trait` when:
 
 :dp:`fls_8yq1g7nzv9px`
 A :t:`trait implementation` shall be conformant.
-

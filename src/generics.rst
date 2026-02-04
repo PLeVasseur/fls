@@ -46,24 +46,54 @@ Generic Parameters
 
 .. rubric:: Legality Rules
 
-:dp:`fls_sye3d17l9bf5`
-A :t:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
-or a :t:`type`, whose :t:`constant`, :t:`lifetime`, or :t:`type` is supplied
-statically by a :t:`generic argument`.
+.. glossary-entry:: generic parameter
+   
+   :glossary:
+     :dp:`fls_61e6br8jy1v2`
+     A :dt:`generic parameter` is a placeholder for a :t:`constant`, a
+     :t:`lifetime`, or a :t:`type` whose :t:`value` is supplied statically by a
+     :t:`generic argument`.
+     
+     :dp:`fls_jvxpoob39632`
+     See :s:`GenericParameterList`.
+   :chapter:
+     :dp:`fls_sye3d17l9bf5`
+     A :t:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
+     or a :t:`type`, whose :t:`constant`, :t:`lifetime`, or :t:`type` is supplied
+     statically by a :t:`generic argument`.
 
 :dp:`fls_dalqke3rznrb`
 All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
 :s:`[ConstantParameter]s` and :s:`[TypeParameter]s`.
 
-:dp:`fls_pi6eukz7kc99`
-A :t:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic enum
+   
+   :glossary:
+     :dp:`fls_pnu8w26uexaq`
+     A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_pi6eukz7kc99`
+     A :t:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 
-:dp:`fls_ixmgqupxvf73`
-A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic function
+   
+   :glossary:
+     :dp:`fls_rfkbc967d48h`
+     A :dt:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_ixmgqupxvf73`
+     A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
-:dp:`fls_z311nxou9yi3`
-A :t:`generic implementation` is an :t:`implementation` with
-:t:`[generic parameter]s`.
+.. glossary-entry:: generic implementation
+   
+   :glossary:
+     :dp:`fls_jic937ujpnar`
+     A :dt:`generic implementation` is an :t:`implementation` with
+     :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_z311nxou9yi3`
+     A :t:`generic implementation` is an :t:`implementation` with
+     :t:`[generic parameter]s`.
 
 :dp:`fls_wmcp0n36jlbr`
 A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
@@ -375,9 +405,19 @@ Generic Arguments
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3x6qd8vt5uus`
-A :t:`generic argument` supplies a static input for an
-:t:`associated trait type` or a :t:`generic parameter`.
+.. glossary-entry:: generic argument
+   
+   :glossary:
+     :dp:`fls_meimxi20p51a`
+     A :dt:`generic argument` supplies a static input for an
+     :t:`associated trait type` or a :t:`generic parameter`.
+     
+     :dp:`fls_8bvdmdgbu17l`
+     See :s:`GenericArgumentList`.
+   :chapter:
+     :dp:`fls_3x6qd8vt5uus`
+     A :t:`generic argument` supplies a static input for an
+     :t:`associated trait type` or a :t:`generic parameter`.
 
 :dp:`fls_ky39fb2vcom6`
 A :s:`BindingArgument` shall follow :s:`[ConstantArgument]s`,
@@ -476,9 +516,16 @@ Generic Conformance
 
 .. rubric:: Legality Rules
 
-:dp:`fls_CBWyxBJeYeb2`
-:t:`Generic conformance` measures the compatibility between a set of
-:t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
+.. glossary-entry:: generic conformance
+   
+   :glossary:
+     :dp:`fls_PfvELNsNySLT`
+     :dt:`Generic conformance` measures the compatibility between a set of
+     :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
+   :chapter:
+     :dp:`fls_CBWyxBJeYeb2`
+     :t:`Generic conformance` measures the compatibility between a set of
+     :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
 
 :dp:`fls_ltch5eivxgaa`
 A :t:`binding argument` is conformant with an :t:`associated type` when the

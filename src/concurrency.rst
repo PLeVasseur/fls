@@ -150,10 +150,18 @@ Asynchronous Computation
 The Rust programming language provides asynchronous computation through
 :t:`module` :std:`core::task` and the :std:`core::future::Future` :t:`trait`.
 
-:dp:`fls_fte085hi1yqj`
-A :t:`future` represents a :t:`value` of a :t:`type` that implements the
-:std:`core::future::Future` :t:`trait` which may not have finished computing
-yet.
+.. glossary-entry:: future
+   
+   :glossary:
+     :dp:`fls_pvigospl4n3g`
+     A :dt:`future` represents a :t:`value` of a :t:`type` that implements the
+     :std:`core::future::Future` :t:`trait` which may not have finished computing
+     yet.
+   :chapter:
+     :dp:`fls_fte085hi1yqj`
+     A :t:`future` represents a :t:`value` of a :t:`type` that implements the
+     :std:`core::future::Future` :t:`trait` which may not have finished computing
+     yet.
 
 :dp:`fls_7muubin2wn1v`
 The computed :t:`value` of a :t:`future` is obtained by using an

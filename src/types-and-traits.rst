@@ -1008,6 +1008,13 @@ The :t:`type` of a :t:`union field` shall be either:
 Function Types
 --------------
 
+.. glossary-entry:: function type
+   
+   :glossary:
+     :dp:`fls_4e19116glgtv`
+     A :dt:`function type` is either a :t:`closure type` or a
+     :t:`function item type`.
+
 .. _fls_xd2oxlebhs14:
 
 Closure Types
@@ -1068,9 +1075,16 @@ Function Item Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_t24iojx7yc23`
-A :t:`function item type` is a unique anonymous :t:`function type` that
-identifies a :t:`function`.
+.. glossary-entry:: function item type
+   
+   :glossary:
+     :dp:`fls_rfvfo8x42dh8`
+     A :dt:`function item type` is a unique anonymous :t:`function type` that
+     identifies a :t:`function`.
+   :chapter:
+     :dp:`fls_t24iojx7yc23`
+     A :t:`function item type` is a unique anonymous :t:`function type` that
+     identifies a :t:`function`.
 
 .. glossary-entry:: external function item type
    
@@ -1128,11 +1142,31 @@ Function Pointer Types
    FunctionPointerTypeParameter ::=
        OuterAttributeOrDoc* (IdentifierOrUnderscore $$:$$)? TypeSpecification
 
+.. glossary-entry:: function pointer type parameter
+   
+   :glossary:
+     :dp:`fls_nF1k90JJWq2K`
+     A :dt:`function pointer type parameter` is a :t:`function parameter` of a
+     :t:`function pointer type`.
+     
+     :dp:`fls_vvy6qogy0xnb`
+     See :s:`FunctionPointerTypeParameter`.
+
 .. rubric:: Legality Rules
 
-:dp:`fls_v2wrytr3t04h`
-A :t:`function pointer type` is an :t:`indirection type` that refers to a
-:t:`function`.
+.. glossary-entry:: function pointer type
+   
+   :glossary:
+     :dp:`fls_lcawg25xhblx`
+     A :dt:`function pointer type` is an :t:`indirection type` that refers to a
+     :t:`function`.
+     
+     :dp:`fls_t50umpk5abjy`
+     See :s:`FunctionPointerTypeSpecification`.
+   :chapter:
+     :dp:`fls_v2wrytr3t04h`
+     A :t:`function pointer type` is an :t:`indirection type` that refers to a
+     :t:`function`.
 
 :dp:`fls_5dd7icjcl3nt`
 An :t:`unsafe function pointer type` is a function pointer type subject to
@@ -3534,11 +3568,20 @@ Function Lifetime Elision
 
 .. rubric:: Legality Rules
 
-:dp:`fls_lAdIRCFFlydD`
-:t:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
-to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
-that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
-:std:`core::ops::FnOnce` :t:`[trait]s`.
+.. glossary-entry:: function lifetime elision
+   
+   :glossary:
+     :dp:`fls_tZMmRHua1S8K`
+     :dt:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
+     to :t:`[function]s`, :t:`[function pointer type parameter]s` and :t:`[path]s`
+     resolving to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
+     :std:`core::ops::FnOnce` :t:`[trait]s`.
+   :chapter:
+     :dp:`fls_lAdIRCFFlydD`
+     :t:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
+     to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
+     that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
+     :std:`core::ops::FnOnce` :t:`[trait]s`.
 
 :dp:`fls_dpudys82dhdc`
 An :dt:`input lifetime` is one of the following :t:`[lifetime]s`:
