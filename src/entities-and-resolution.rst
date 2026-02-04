@@ -1247,6 +1247,15 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
    :t:`import path prefix`. Repeat this step with the :t:`nesting import` as
    the current :t:`use import`.
 
+.. glossary-entry:: renaming
+   
+   :glossary:
+     :dp:`fls_cp8u9kq44o8a`
+     A :dt:`renaming` provides an alternative :t:`name` for an existing name.
+     
+     :dp:`fls_8inznqig2ibr`
+     See :s:`Renaming`.
+
 :dp:`fls_2bkcn83smy2y`
 A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different

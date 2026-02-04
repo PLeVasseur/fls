@@ -1779,9 +1779,19 @@ The :t:`type` of a :t:`multiplication expression` is :t:`associated type`
 The :t:`value` of a :t:`multiplication expression` is the result of
 ``core::ops::Mul::mul(left_operand, right_operand)``.
 
-:dp:`fls_3de9ulyzuoa`
-A :t:`remainder expression` is an :t:`arithmetic expression` that uses remainder
-division.
+.. glossary-entry:: remainder expression
+   
+   :glossary:
+     :dp:`fls_l6muwnclm1do`
+     A :dt:`remainder expression` is an :t:`arithmetic expression` that uses
+     remainder division.
+     
+     :dp:`fls_h98qlby2uiru`
+     See :s:`RemainderExpression`.
+   :chapter:
+     :dp:`fls_3de9ulyzuoa`
+     A :t:`remainder expression` is an :t:`arithmetic expression` that uses remainder
+     division.
 
 :dp:`fls_8fbhreyynhid`
 The :t:`type` of the :t:`left operand` of a :t:`remainder expression` shall
@@ -3228,9 +3238,25 @@ Compound Assignment Expressions
      A :t:`multiplication assignment expression` is a
      :t:`compound assignment expression` that uses multiplication.
 
-:dp:`fls_fbp5dojti27r`
-A :t:`remainder assignment expression` is a :t:`compound assignment expression`
-that uses remainder division.
+.. glossary-entry:: remainder assignment
+   
+   :glossary:
+     :dp:`fls_58eDC2XtQcaR`
+     For :dt:`remainder assignment`, see :t:`remainder assignment expression`.
+
+.. glossary-entry:: remainder assignment expression
+   
+   :glossary:
+     :dp:`fls_en7ytqvefw7j`
+     A :dt:`remainder assignment expression` is a
+     :t:`compound assignment expression` that uses remainder division.
+     
+     :dp:`fls_rkk80quk8uzc`
+     See :s:`RemainderAssignmentExpression`.
+   :chapter:
+     :dp:`fls_fbp5dojti27r`
+     A :t:`remainder assignment expression` is a :t:`compound assignment expression`
+     that uses remainder division.
 
 :dp:`fls_oy9ur11k78t`
 A :t:`shift left assignment expression` is a :t:`compound assignment expression`
@@ -3591,9 +3617,19 @@ Array Expressions
      An :t:`array repetition constructor` is an :t:`array expression` that specifies
      how many times an element is repeated in the :t:`array` being constructed.
 
-:dp:`fls_3y69y9ga4at7`
-A :t:`repeat operand` is an :t:`operand` that specifies the element being
-repeated in an :t:`array repetition constructor`.
+.. glossary-entry:: repeat operand
+   
+   :glossary:
+     :dp:`fls_ol2y1og2jwss`
+     A :dt:`repeat operand` is an :t:`operand` that specifies the element being
+     repeated in an :t:`array repetition constructor`.
+     
+     :dp:`fls_r4acyux78txu`
+     See :s:`RepeatOperand`.
+   :chapter:
+     :dp:`fls_3y69y9ga4at7`
+     A :t:`repeat operand` is an :t:`operand` that specifies the element being
+     repeated in an :t:`array repetition constructor`.
 
 :dp:`fls_2l9objtb23zn`
 A :t:`size operand` is an :t:`operand` that specifies the size of an :t:`array`

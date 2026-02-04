@@ -107,9 +107,16 @@ Registers
 
 .. rubric:: Legality Rules
 
-:dp:`fls_w5a6rybvptn6`
-A :t:`register` is a hardware component capable of holding data that can be
-read and written.
+.. glossary-entry:: register
+   
+   :glossary:
+     :dp:`fls_fVdSybu8DW8w`
+     A :dt:`register` is a hardware component capable of holding data that can be
+     read and written.
+   :chapter:
+     :dp:`fls_w5a6rybvptn6`
+     A :t:`register` is a hardware component capable of holding data that can be
+     read and written.
 
 .. glossary-entry:: input register
    
@@ -142,10 +149,21 @@ A :t:`register` that is not specified as an :t:`output register` shall have the
 same :t:`value` upon exit from an :t:`assembly code block` as it did upon entry
 into the :t:`assembly code block`.
 
-:dp:`fls_vesfzh8h6qzu`
-A :t:`register name` is either the :t:`explicit register name` of a
-:t:`register`, or the :t:`register class name` of the :t:`register class` a
-:t:`register` belongs to.
+.. glossary-entry:: register name
+   
+   :glossary:
+     :dp:`fls_U5r8Ypnjah5E`
+     A :dt:`register name` is either the :t:`explicit register name` of a
+     :t:`register`, or the :t:`register class name` of the :t:`register class` a
+     :t:`register` belongs to.
+     
+     :dp:`fls_WeyiFrnGgWPn`
+     See :s:`RegisterName`.
+   :chapter:
+     :dp:`fls_vesfzh8h6qzu`
+     A :t:`register name` is either the :t:`explicit register name` of a
+     :t:`register`, or the :t:`register class name` of the :t:`register class` a
+     :t:`register` belongs to.
 
 .. glossary-entry:: explicit register name
    
@@ -475,12 +493,28 @@ Register Classes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7gxb7ztpuofj`
-A :t:`register class` represents a set of :t:`[register]s`.
+.. glossary-entry:: register class
+   
+   :glossary:
+     :dp:`fls_2H0OYS733VJl`
+     A :dt:`register class` represents a set of :t:`[register]s`.
+   :chapter:
+     :dp:`fls_7gxb7ztpuofj`
+     A :t:`register class` represents a set of :t:`[register]s`.
 
-:dp:`fls_on0i2cpk254y`
-A :t:`register class name` is a target-specific string that identifies a
-:t:`register class`.
+.. glossary-entry:: register class name
+   
+   :glossary:
+     :dp:`fls_QsSFoL0UyRRB`
+     A :dt:`register class name` is a target-specific string that identifies a
+     :t:`register class`.
+     
+     :dp:`fls_Y1ZpiFAV2c1A`
+     See :s:`RegisterClassName`.
+   :chapter:
+     :dp:`fls_on0i2cpk254y`
+     A :t:`register class name` is a target-specific string that identifies a
+     :t:`register class`.
 
 :dp:`fls_40ksem5g5xx9`
 :t:`[Register]s` are organized into :t:`[register class]es` as follows:
@@ -683,10 +717,21 @@ Register Arguments
 
 .. rubric:: Legality Rules
 
-:dp:`fls_455dmnp4cxqv`
-A :t:`register argument` is a :t:`construct` that configures the input
-and output of a :t:`register`, and optionally binds the configuration to an
-:t:`identifier`.
+.. glossary-entry:: register argument
+   
+   :glossary:
+     :dp:`fls_rNoFdCKbVmRC`
+     A :dt:`register argument` is a :t:`construct` that configures the input
+     and output of a :t:`register`, and optionally binds the configuration to an
+     :t:`identifier`.
+     
+     :dp:`fls_aof7O9XREo2S`
+     See :s:`RegisterArgument`.
+   :chapter:
+     :dp:`fls_455dmnp4cxqv`
+     A :t:`register argument` is a :t:`construct` that configures the input
+     and output of a :t:`register`, and optionally binds the configuration to an
+     :t:`identifier`.
 
 :dp:`fls_6bv3s8be5xif`
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
@@ -732,13 +777,20 @@ A :t:`named register argument` shall appear after a
 An :t:`explicit register argument` shall appear after a
 :t:`named register argument`.
 
-:dp:`fls_9hhtcey2d4t6`
-A :t:`register class argument` is a :t:`register argument` that uses a
-:t:`register class name`.
-
-:dp:`fls_8aynifgq02gt`
-A :t:`register class argument` causes an assembler to select a suitable
-:t:`register` from the related :t:`register class`.
+.. glossary-entry:: register class argument
+   
+   :glossary:
+     :dp:`fls_ksLXAyPLx9IL`
+     A :dt:`register class argument` is a :t:`register argument` that uses a
+     :t:`register class name`.
+   :chapter:
+     :dp:`fls_9hhtcey2d4t6`
+     A :t:`register class argument` is a :t:`register argument` that uses a
+     :t:`register class name`.
+     
+     :dp:`fls_8aynifgq02gt`
+     A :t:`register class argument` causes an assembler to select a suitable
+     :t:`register` from the related :t:`register class`.
 
 .. glossary-entry:: direction modifier
    
@@ -805,8 +857,18 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
 A :t:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
-:dp:`fls_j9XOoXDmN5Dq`
-A :t:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
+.. glossary-entry:: register expression
+   
+   :glossary:
+     :dp:`fls_2cVy6XfOQ4QG`
+     A :dt:`register expression` is either an :t:`input-output register expression`
+     or a :t:`simple register expression`.
+     
+     :dp:`fls_YEzo09cqWUUy`
+     See :s:`RegisterExpression`.
+   :chapter:
+     :dp:`fls_j9XOoXDmN5Dq`
+     A :t:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
 
 :dp:`fls_jU8zg4k8dFsY`
 The :t:`type` of a :t:`const register expression` shall be an :t:`integer type`.
@@ -1122,10 +1184,18 @@ A tool is not required to guarantee that two :t:`[assembly code block]s`
 appear in the same declarative order in the final assembly output, or appear
 contiguously in successive addresses.
 
-:dp:`fls_xugsn2ghh73c`
-A :t:`register parameter` is a substring delimited by characters 0x7B (left
-curly bracket) and 0x7D (right curly bracket) that is substituted with a
-:t:`register argument` in an :t:`assembly instruction`.
+.. glossary-entry:: register parameter
+   
+   :glossary:
+     :dp:`fls_JicHMIj5dlxJ`
+     A :dt:`register parameter` is a substring delimited by characters 0x7B (left
+     curly bracket) and 0x7D (right curly bracket) that is substituted with a
+     :t:`register argument` in an :t:`assembly instruction`.
+   :chapter:
+     :dp:`fls_xugsn2ghh73c`
+     A :t:`register parameter` is a substring delimited by characters 0x7B (left
+     curly bracket) and 0x7D (right curly bracket) that is substituted with a
+     :t:`register argument` in an :t:`assembly instruction`.
 
 :dp:`fls_opnxq5kyw9jo`
 On x86 architectures, direction flag ``DF`` in :t:`register` ``EFLAGS`` shall
@@ -1150,10 +1220,18 @@ Register Parameter Modifiers
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2xilifichdqu`
-A :t:`register parameter modifier` is a substring that starts with character
-0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
-the related :t:`register parameter`.
+.. glossary-entry:: register parameter modifier
+   
+   :glossary:
+     :dp:`fls_8BdOnxHZS0Qi`
+     A :dt:`register parameter modifier` is a substring that starts with character
+     0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
+     the related :t:`register parameter`.
+   :chapter:
+     :dp:`fls_2xilifichdqu`
+     A :t:`register parameter modifier` is a substring that starts with character
+     0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
+     the related :t:`register parameter`.
 
 :dp:`fls_o3fx9397ib74`
 The effects of a :t:`register parameter modifier` depends on the architecture

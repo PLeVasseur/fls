@@ -146,13 +146,26 @@ match all possible values of a :t:`type`.
      :dp:`fls_9fjspnefoyvz`
      An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
-:dp:`fls_uq7ftuuq1sig`
-A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
-matching a :t:`value` of its :t:`type`
+.. glossary-entry:: refutable pattern
+   
+   :glossary:
+     :dp:`fls_re7qz78koman`
+     A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not
+     matching the :t:`value` it is being matched against.
+   :chapter:
+     :dp:`fls_uq7ftuuq1sig`
+     A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
+     matching a :t:`value` of its :t:`type`
+     
+     :dp:`fls_mnbyt7jfYAZ9`
+     A :t:`pattern` that is not an :t:`irrefutable pattern` is a
+     :t:`refutable pattern`.
 
-:dp:`fls_mnbyt7jfYAZ9`
-A :t:`pattern` that is not an :t:`irrefutable pattern` is a
-:t:`refutable pattern`.
+.. glossary-entry:: refutable type
+   
+   :glossary:
+     :dp:`fls_l2yz6jeehm52`
+     A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. glossary-entry:: irrefutable constant
    
@@ -165,8 +178,14 @@ A :t:`pattern` that is not an :t:`irrefutable pattern` is a
      An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
      one :t:`value`.
 
-:dp:`fls_lh0d85tl4qvy`
-A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+.. glossary-entry:: refutable constant
+   
+   :glossary:
+     :dp:`fls_mc6hsomq08uu`
+     A :dt:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+   :chapter:
+     :dp:`fls_lh0d85tl4qvy`
+     A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
 
 .. rubric:: Examples
 
