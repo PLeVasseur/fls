@@ -271,11 +271,21 @@ itself.
      A :t:`simple public modifier` is a :t:`visibility modifier` that grants a
      :t:`name` :t:`public visibility`.
 
-:dp:`fls_quzvhzpr0124`
-A :t:`super public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`public visibility` within the parent :t:`module` only. A
-:t:`super public modifier` is equivalent to a :t:`simple path public modifier`
-where the :t:`simple path` denotes :t:`keyword` ``super``.
+.. glossary-entry:: super public modifier
+   
+   :glossary:
+     :dp:`fls_vry5mhs3a5wv`
+     A :dt:`super public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the parent :t:`module` only.
+     
+     :dp:`fls_4a1s9bcrk5oy`
+     See :s:`SuperPublicModifier`.
+   :chapter:
+     :dp:`fls_quzvhzpr0124`
+     A :t:`super public modifier` is a :t:`visibility modifier` that grants a
+     :t:`name` :t:`public visibility` within the parent :t:`module` only. A
+     :t:`super public modifier` is equivalent to a :t:`simple path public modifier`
+     where the :t:`simple path` denotes :t:`keyword` ``super``.
 
 :dp:`fls_utgjx6l5zwfl`
 An external :t:`item`, a :t:`field`, or an :t:`item` that appears without a
@@ -870,8 +880,14 @@ Textual Macro Scope
 
 .. rubric:: Legality Rules
 
-:dp:`fls_xkh8cqubhxad`
-A :t:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
+.. glossary-entry:: textual macro scope
+   
+   :glossary:
+     :dp:`fls_xyeYk6vrmlWp`
+     A :dt:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
+   :chapter:
+     :dp:`fls_xkh8cqubhxad`
+     A :t:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
 
 :dp:`fls_iec3otx863yp`
 A :t:`declarative macro` is :t:`in scope` after the related :t:`macro`

@@ -265,6 +265,13 @@ both the effects of each construct and the composition rules for constructs.
 The context-free syntax of Rust is described using a simple variant of the
 Backus-Naur form. In particular:
 
+.. glossary-entry:: syntactic category
+   
+   :glossary:
+     :dp:`fls_f981e3m7kq50`
+     A :dt:`syntactic category` is a nonterminal in the Backus-Naur Form grammar
+     definition of the Rust programming language.
+
 .. glossary-entry:: escaped character
    
    :glossary:

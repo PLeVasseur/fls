@@ -875,9 +875,16 @@ Block Expressions
      A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
      and :t:`[statement]s`.
 
-:dp:`fls_tn3hj7k2lliu`
-A :t:`tail expression` is the last :t:`expression` within a :t:`block
-expression`.
+.. glossary-entry:: tail expression
+   
+   :glossary:
+     :dp:`fls_6k873f1knasi`
+     A :dt:`tail expression` is the last :t:`expression` within a
+     :t:`block expression`.
+   :chapter:
+     :dp:`fls_tn3hj7k2lliu`
+     A :t:`tail expression` is the last :t:`expression` within a :t:`block
+     expression`.
 
 :dp:`fls_DfCne8YWevLE`
 When the remaining :t:`[lexical element]s` of a :s:`StatementList` match either
@@ -5051,9 +5058,16 @@ The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
      
      .. rubric:: Dynamic Semantics
 
-:dp:`fls_aw6qczl4zpko`
-A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no
-longer evaluated.
+.. glossary-entry:: terminated
+   
+   :glossary:
+     :dp:`fls_med1l8vheb83`
+     A :t:`loop expression` is :dt:`terminated` when its :t:`block expression` is no
+     longer evaluated.
+   :chapter:
+     :dp:`fls_aw6qczl4zpko`
+     A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no
+     longer evaluated.
 
 .. _fls_onfyolkcbeh3:
 

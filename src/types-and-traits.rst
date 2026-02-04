@@ -170,6 +170,13 @@ Scalar Types
      A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or
      a :t:`numeric type`.
 
+.. glossary-entry:: textual type
+   
+   :glossary:
+     :dp:`fls_lv1pdtzf6f58`
+     A :dt:`textual type` is a :t:`type` class that includes type :c:`char` and type
+     :c:`str`.
+
 .. _fls_tiqp1gxf116z:
 
 Bool Type
@@ -1668,9 +1675,20 @@ Trait Object Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_sgrvona1nb6h`
-A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
-:t:`type` is not known at compile time.
+.. glossary-entry:: trait object type
+   
+   :glossary:
+     :dp:`fls_lo2fzzdwxy1l`
+     A :dt:`trait object type` is a :t:`type` that implements a :t:`trait`, where
+     the :t:`type` is not known at compile time.
+     
+     :dp:`fls_d632mc5c8qwt`
+     See :s:`TraitObjectTypeSpecification`,
+     :s:`TraitObjectTypeSpecificationOneBound`.
+   :chapter:
+     :dp:`fls_sgrvona1nb6h`
+     A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
+     :t:`type` is not known at compile time.
 
 .. glossary-entry:: principal trait
    
@@ -1926,6 +1944,19 @@ All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
    :chapter:
      :dp:`fls_26Xgem831Nqg`
      A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
+
+.. glossary-entry:: thin pointer
+   
+   :glossary:
+     :dp:`fls_i2j0u4v5o1bs`
+     A :dt:`thin pointer` is a :t:`value` of a :t:`thin pointer type`.
+
+.. glossary-entry:: thin pointer type
+   
+   :glossary:
+     :dp:`fls_33rka3kyxgrk`
+     A :dt:`thin pointer type` is an :t:`indirection type` that refers to a
+     :t:`fixed sized type`.
 
 .. glossary-entry:: fat pointer
    
@@ -3414,9 +3445,19 @@ Traits
 
 .. rubric:: Legality Rules
 
-:dp:`fls_tani6lesan9u`
-A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
-implement.
+.. glossary-entry:: trait
+   
+   :glossary:
+     :dp:`fls_mf4x9g70o5z6`
+     A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
+     implement.
+     
+     :dp:`fls_ypjhwvuyrns`
+     See :s:`TraitDeclaration`.
+   :chapter:
+     :dp:`fls_tani6lesan9u`
+     A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
+     implement.
 
 .. glossary-entry:: built-in trait
    
@@ -3424,10 +3465,21 @@ implement.
      :dp:`fls_IgzD9l8o6R50`
      A :dt:`built-in trait` is a language-defined :t:`trait`.
 
-:dp:`fls_PiAR1B26SoZV`
-A :t:`trait body` is a :t:`construct` that encapsulates the
-:t:`[associated item]s`, :t:`[inner attribute]s`, and
-:t:`[inner doc comment]s` of a :t:`trait`.
+.. glossary-entry:: trait body
+   
+   :glossary:
+     :dp:`fls_u221Me58aZmY`
+     A :dt:`trait body` is a :t:`construct` that encapsulates the
+     :t:`[associated item]s`, :t:`[inner attribute]s`, and
+     :t:`[inner doc comment]s` of a :t:`trait`.
+     
+     :dp:`fls_dITFx04TB4h0`
+     See :s:`TraitBody`.
+   :chapter:
+     :dp:`fls_PiAR1B26SoZV`
+     A :t:`trait body` is a :t:`construct` that encapsulates the
+     :t:`[associated item]s`, :t:`[inner attribute]s`, and
+     :t:`[inner doc comment]s` of a :t:`trait`.
 
 :dp:`fls_Y28596CVBzDG`
 Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
@@ -3451,9 +3503,16 @@ Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
      :dp:`fls_I9JaKZelMiby`
      A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
 
-:dp:`fls_CYtxPjK3zq2T`
-A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
-implement.
+.. glossary-entry:: supertrait
+   
+   :glossary:
+     :dp:`fls_s4chur1wutwh`
+     A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must
+     additionally implement.
+   :chapter:
+     :dp:`fls_CYtxPjK3zq2T`
+     A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
+     implement.
 
 :dp:`fls_ytn5cdonytyn`
 A :t:`subtrait` shall not be its own :t:`supertrait`.
@@ -3677,9 +3736,19 @@ A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
      A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
      :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
-:dp:`fls_knut10hoz6wc`
-A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
-:t:`[trait]s` of :t:`[generic parameter]s`.
+.. glossary-entry:: trait bound
+   
+   :glossary:
+     :dp:`fls_95zx8unuxxpq`
+     A :dt:`trait bound` is a :t:`bound` that imposes a constraint on the
+     :t:`[trait]s` of :t:`[generic parameter]s`.
+     
+     :dp:`fls_bkbym8v4t6oh`
+     See :s:`TraitBound`.
+   :chapter:
+     :dp:`fls_knut10hoz6wc`
+     A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
+     :t:`[trait]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_sf6zg0ez9hbb`
 A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
@@ -4230,9 +4299,16 @@ Trait Object Lifetime Elision
 
 .. rubric:: Legality Rules
 
-:dp:`fls_fuBYWRrgxlbQ`
-:t:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
-applies to :t:`[trait object type]s`.
+.. glossary-entry:: trait object lifetime elision
+   
+   :glossary:
+     :dp:`fls_rALP9b6qjlp9`
+     :dt:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
+     applies to :t:`[trait object type]s`.
+   :chapter:
+     :dp:`fls_fuBYWRrgxlbQ`
+     :t:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
+     applies to :t:`[trait object type]s`.
 
 :dp:`fls_URl9CeIVsiWs`
 An :t:`elided` :t:`lifetime` of a :t:`trait object type` is inferred as follows:

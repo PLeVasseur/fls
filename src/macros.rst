@@ -31,8 +31,15 @@ Macros
        :t:`[Procedural macro]s` define augmented :t:`[function]s` that operate on and
        return a stream of :t:`[lexical element]s`.
 
-:dp:`fls_rnty1c8l5495`
-:t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
+.. glossary-entry:: tokens
+   
+   :glossary:
+     :dp:`fls_v23kqvyvscd7`
+     :dt:`[Token]s` are a subset of :t:`[lexical element]s` consumed by
+     :t:`[macro]s`.
+   :chapter:
+     :dp:`fls_rnty1c8l5495`
+     :t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
 
 .. _fls_xa7lp0zg1ol2:
 
@@ -718,9 +725,19 @@ A :ds:`NonDelimitedToken` is any :t:`lexical element` in category
      :t:`function-like macro` that is expanded statically and replaced with the
      result of the :t:`macro`.
 
-:dp:`fls_6v06zvi1ctub`
-A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used
-as a :t:`statement`.
+.. glossary-entry:: terminated macro invocation
+   
+   :glossary:
+     :dp:`fls_542es82wfzco`
+     A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
+     as a :t:`statement`.
+     
+     :dp:`fls_tcvfi2zgdm58`
+     See :s:`TerminatedMacroInvocation`.
+   :chapter:
+     :dp:`fls_6v06zvi1ctub`
+     A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used
+     as a :t:`statement`.
 
 .. rubric:: Examples
 
@@ -1015,10 +1032,18 @@ Token Matching
 
 .. rubric:: Legality Rules
 
-:dp:`fls_k6a24sbon5v9`
-:t:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
-to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
-belongs to a resolved :t:`declarative macro`.
+.. glossary-entry:: token matching
+   
+   :glossary:
+     :dp:`fls_a19q6lhvakcm`
+     :dt:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
+     to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
+     belongs to a resolved :t:`declarative macro`.
+   :chapter:
+     :dp:`fls_k6a24sbon5v9`
+     :t:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
+     to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
+     belongs to a resolved :t:`declarative macro`.
 
 :dp:`fls_6uuxv91xgmfz`
 :t:`Token matching` proceeds as follows:

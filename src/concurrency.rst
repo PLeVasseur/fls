@@ -63,9 +63,16 @@ An :t:`abstract data type` automatically implements the
 A :t:`send type` shall have :t:`[value]s` that are safe to transfer across
 thread boundaries.
 
-:dp:`fls_dekskhk4g895`
-A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
-:t:`trait`.
+.. glossary-entry:: sync type
+   
+   :glossary:
+     :dp:`fls_rpc0c8qx3nbo`
+     A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
+     :t:`trait`.
+   :chapter:
+     :dp:`fls_dekskhk4g895`
+     A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
+     :t:`trait`.
 
 :dp:`fls_y0iqr5ibnbfe`
 An :t:`abstract data type` automatically implements the

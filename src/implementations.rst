@@ -102,9 +102,19 @@ for the :t:`implementing type`.
 :t:`[Inherent implementation]s` of the same :t:`implementing type` shall be
 defined within the same :t:`crate`.
 
-:dp:`fls_ry3an0mwb63g`
-A :t:`trait implementation` is an :t:`implementation` that adds functionality
-specified by a :t:`trait`.
+.. glossary-entry:: trait implementation
+   
+   :glossary:
+     :dp:`fls_5v7kbg144pr8`
+     A :dt:`trait implementation` is an :t:`implementation` that adds functionality
+     specified by a :t:`trait`.
+     
+     :dp:`fls_rytylyyxh27f`
+     See :s:`TraitImplementation`.
+   :chapter:
+     :dp:`fls_ry3an0mwb63g`
+     A :t:`trait implementation` is an :t:`implementation` that adds functionality
+     specified by a :t:`trait`.
 
 :dp:`fls_8pwr7ibvhmhu`
 An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to

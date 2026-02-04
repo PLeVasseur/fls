@@ -304,9 +304,16 @@ Temporaries
 
 .. rubric:: Legality Rules
 
-:dp:`fls_awpw61yofckz`
-A :t:`temporary` is an anonymous :t:`variable` produced by some intermediate
-computation.
+.. glossary-entry:: temporary
+   
+   :glossary:
+     :dp:`fls_fathkxu9kxvw`
+     A :dt:`temporary` is an anonymous :t:`variable` produced by some intermediate
+     computation.
+   :chapter:
+     :dp:`fls_awpw61yofckz`
+     A :t:`temporary` is an anonymous :t:`variable` produced by some intermediate
+     computation.
 
 .. _fls_gho955gmob73:
 
