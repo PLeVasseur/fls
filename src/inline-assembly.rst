@@ -679,10 +679,21 @@ A :t:`register class argument` is a :t:`register argument` that uses a
 A :t:`register class argument` causes an assembler to select a suitable
 :t:`register` from the related :t:`register class`.
 
-:dp:`fls_5a3vfresnv5z`
-A :t:`direction modifier` is a :t:`construct` that indicates whether a
-:t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
-:t:`register` to an :t:`expression`, or both.
+.. glossary-entry:: direction modifier
+   
+   :glossary:
+     :dp:`fls_8DY7xPVX4nXx`
+     A :dt:`direction modifier` is a :t:`construct` that indicates whether a
+     :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
+     :t:`register` to an :t:`expression`, or both.
+     
+     :dp:`fls_lRKEzY3fQ3B2`
+     See :s:`DirectionModifier`.
+   :chapter:
+     :dp:`fls_5a3vfresnv5z`
+     A :t:`direction modifier` is a :t:`construct` that indicates whether a
+     :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
+     :t:`register` to an :t:`expression`, or both.
 
 :dp:`fls_fta1gb5tzi3a`
 An :t:`input register expression` is an :t:`expression` that provides the

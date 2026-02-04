@@ -375,9 +375,16 @@ Destruction
 
 .. rubric:: Legality Rules
 
-:dp:`fls_e7ucq87s806d`
-:t:`Destruction` is the process of recovering resources associated with a
-:t:`value` as it goes out of scope.
+.. glossary-entry:: destruction
+   
+   :glossary:
+     :dp:`fls_58i2nfhxze3j`
+     :dt:`Destruction` is the process of recovering resources associated with a
+     :t:`value` as it goes out of scope.
+   :chapter:
+     :dp:`fls_e7ucq87s806d`
+     :t:`Destruction` is the process of recovering resources associated with a
+     :t:`value` as it goes out of scope.
 
 .. _fls_u2mzjgiwbkz0:
 
@@ -386,13 +393,27 @@ Destructors
 
 .. rubric:: Legality Rules
 
-:dp:`fls_9m0gszdle0qb`
-A :t:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
-:t:`trait` or contains a :t:`field` that has a :t:`drop type`.
+.. glossary-entry:: drop type
+   
+   :glossary:
+     :dp:`fls_ot3e31kwixil`
+     A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
+     :t:`trait` or contains a :t:`field` that has a :t:`destructor`.
+   :chapter:
+     :dp:`fls_9m0gszdle0qb`
+     A :t:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
+     :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
-:dp:`fls_4nkzidytpi6`
-A :t:`destructor` is a :t:`function` that is invoked immediately before the
-:t:`destruction` of a :t:`value` of a :t:`drop type`.
+.. glossary-entry:: destructor
+   
+   :glossary:
+     :dp:`fls_79pp7o1xooja`
+     A :dt:`destructor` is a :t:`function` that is invoked immediately before the
+     :t:`destruction` of a :t:`value` of a :t:`drop type`.
+   :chapter:
+     :dp:`fls_4nkzidytpi6`
+     A :t:`destructor` is a :t:`function` that is invoked immediately before the
+     :t:`destruction` of a :t:`value` of a :t:`drop type`.
 
 :dp:`fls_wzuwapjqtyyy`
 :t:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
@@ -477,15 +498,28 @@ Drop Scopes
 
 .. rubric:: Legality Rules
 
-:dp:`fls_7uav7vkcv4pz`
-A :t:`drop scope` is a region of program text that governs the :t:`dropping` of
-:t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
-associated with that :t:`drop scope` are :t:`dropped` based on a
-:t:`drop order`.
+.. glossary-entry:: drop scope
+   
+   :glossary:
+     :dp:`fls_6bu8x0g9q0er`
+     A :dt:`drop scope` is a region of program text that governs the :t:`dropping`
+     of :t:`[value]s`.
+   :chapter:
+     :dp:`fls_7uav7vkcv4pz`
+     A :t:`drop scope` is a region of program text that governs the :t:`dropping` of
+     :t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
+     associated with that :t:`drop scope` are :t:`dropped` based on a
+     :t:`drop order`.
 
-:dp:`fls_txvxrn6wbyql`
-A :t:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
-following :t:`[construct]s` are :t:`[drop construct]s`:
+.. glossary-entry:: drop construct
+   
+   :glossary:
+     :dp:`fls_odg2asgj28m`
+     A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`.
+   :chapter:
+     :dp:`fls_txvxrn6wbyql`
+     A :t:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
+     following :t:`[construct]s` are :t:`[drop construct]s`:
 
 * :dp:`fls_n6y6brm6pghr`
   :t:`[Expression]s`,
@@ -608,10 +642,18 @@ Drop Scope Extension
 
 .. rubric:: Legality Rules
 
-:dp:`fls_kflqez2mtbit`
-:t:`Drop scope extension` is the process of extending a :t:`drop scope`
-associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
-:t:`temporary`.
+.. glossary-entry:: drop scope extension
+   
+   :glossary:
+     :dp:`fls_pmdh8kkrwkd0`
+     :dt:`Drop scope extension` is the process of extending a :t:`drop scope`
+     associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
+     :t:`temporary`.
+   :chapter:
+     :dp:`fls_kflqez2mtbit`
+     :t:`Drop scope extension` is the process of extending a :t:`drop scope`
+     associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
+     :t:`temporary`.
 
 :dp:`fls_xjw82bujm148`
 An :dt:`extending pattern` is either
@@ -706,9 +748,16 @@ Drop Order
 
 .. rubric:: Legality Rules
 
-:dp:`fls_n6o1xzjiz8cv`
-:t:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
-:t:`drop scope` is left.
+.. glossary-entry:: drop order
+   
+   :glossary:
+     :dp:`fls_qddkiabu6swt`
+     :dt:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
+     :t:`drop scope` is left.
+   :chapter:
+     :dp:`fls_n6o1xzjiz8cv`
+     :t:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
+     :t:`drop scope` is left.
 
 :dp:`fls_jwofws3022ar`
 When a :t:`drop scope` is left, all :t:`[value]s` associated with that

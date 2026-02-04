@@ -381,9 +381,16 @@ Diverging Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_oth9vFtcb9l4`
-A :t:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
-program flow to diverge from the normal :t:`evaluation` order.
+.. glossary-entry:: diverging expression
+   
+   :glossary:
+     :dp:`fls_fLlNzmB34cj9`
+     A :dt:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
+     program flow to diverge from the normal :t:`evaluation` order.
+   :chapter:
+     :dp:`fls_oth9vFtcb9l4`
+     A :t:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
+     program flow to diverge from the normal :t:`evaluation` order.
 
 :dp:`fls_cmBVodJMjZi7`
 :t:`[Diverging expression]s` are:
@@ -1534,8 +1541,17 @@ The :t:`type` of an :t:`addition expression` is :t:`associated type`
 The :t:`value` of an :t:`addition expression` is the result of
 ``core::ops::Add::add(left_operand, right_operand)``.
 
-:dp:`fls_dstca76y08ge`
-A :t:`division expression` is an :t:`arithmetic expression` that uses division.
+.. glossary-entry:: division expression
+   
+   :glossary:
+     :dp:`fls_du05yp205f4y`
+     A :dt:`division expression` is an :t:`arithmetic expression` that uses division.
+     
+     :dp:`fls_d3vwk4autyd`
+     See :s:`DivisionExpression`.
+   :chapter:
+     :dp:`fls_dstca76y08ge`
+     A :t:`division expression` is an :t:`arithmetic expression` that uses division.
 
 :dp:`fls_f1puss9t4btz`
 The :t:`type` of the :t:`left operand` of a :t:`division expression` shall
@@ -2623,10 +2639,18 @@ Destructuring Assignment
 
 .. rubric:: Legality Rules
 
-:dp:`fls_2eheo4yo2orm`
-A :t:`destructuring assignment` is an :t:`assignment expression` where
-the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
-expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
+.. glossary-entry:: destructuring assignment
+   
+   :glossary:
+     :dp:`fls_7jienn9uzn5k`
+     A :dt:`destructuring assignment` is an :t:`assignment expression` where
+     the :t:`assignee operand` is either an :t:`array expression`, a
+     :t:`struct expression`, or a :t:`tuple expression`.
+   :chapter:
+     :dp:`fls_2eheo4yo2orm`
+     A :t:`destructuring assignment` is an :t:`assignment expression` where
+     the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
+     expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
 
 :dp:`fls_z8c3b9s9de3x`
 The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
@@ -2871,9 +2895,25 @@ Compound Assignment Expressions
      A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
      that uses bit exclusive or arithmetic.
 
-:dp:`fls_pkzj0uigfcgm`
-A :t:`division assignment expression` is a :t:`compound assignment expression`
-that uses division.
+.. glossary-entry:: division assignment
+   
+   :glossary:
+     :dp:`fls_kvQskrzE1y97`
+     For :dt:`division assignment`, see :t:`division assignment expression`.
+
+.. glossary-entry:: division assignment expression
+   
+   :glossary:
+     :dp:`fls_lzuz5fkveikk`
+     A :dt:`division assignment expression` is a :t:`compound assignment expression`
+     that uses division.
+     
+     :dp:`fls_cdxt76aqwtkq`
+     See :s:`DivisionAssignmentExpression`.
+   :chapter:
+     :dp:`fls_pkzj0uigfcgm`
+     A :t:`division assignment expression` is a :t:`compound assignment expression`
+     that uses division.
 
 :dp:`fls_ndlv3k9uclz2`
 A :t:`multiplication assignment expression` is a

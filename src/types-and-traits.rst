@@ -684,8 +684,23 @@ possible variations of an :t:`enum`.
 The :t:`name` of an :t:`enum variant` shall be unique within the related
 :s:`EnumDeclaration`.
 
-:dp:`fls_t4yeovFm83Wo`
-A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+.. glossary-entry:: discriminant
+   
+   :glossary:
+     :dp:`fls_dfegy9y6awx`
+     A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+   :chapter:
+     :dp:`fls_t4yeovFm83Wo`
+     A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+
+.. glossary-entry:: discriminant initializer
+   
+   :glossary:
+     :dp:`fls_o7hihgcqmnyc`
+     A :dt:`discriminant initializer` provides the :t:`value` of a :t:`discriminant`.
+     
+     :dp:`fls_g5obc23vigng`
+     See :s:`DiscriminantInitializer`.
 
 :dp:`fls_hp5frc752dam`
 A :t:`discriminant initializer` shall be specified only when all :t:`[enum
@@ -1666,10 +1681,16 @@ The :t:`size` and :t:`alignment` of an :t:`enum type` without :t:`[field]s`
 subject to :t:`C representation`, :t:`default representation`, or
 :t:`primitive representation` are those of its :t:`discriminant`.
 
-:dp:`fls_s9c0a0lg6c0p`
-The :t:`discriminant type` of an :t:`enum type` with :t:`C representation` is
-the corresponding :t:`c signed int type` for the target platform's :t:`C`
-:t:`ABI`.
+.. glossary-entry:: discriminant type
+   
+   :glossary:
+     :dp:`fls_t4yeovFm83Wo`
+     A :dt:`discriminant type` is the :t:`type` of a :t:`discriminant`.
+   :chapter:
+     :dp:`fls_s9c0a0lg6c0p`
+     The :t:`discriminant type` of an :t:`enum type` with :t:`C representation` is
+     the corresponding :t:`c signed int type` for the target platform's :t:`C`
+     :t:`ABI`.
 
 .. glossary-entry:: C signed int type
    
@@ -2431,9 +2452,16 @@ An :t:`integer type variable` is a :t:`type variable` that can refer only to
 A :t:`floating-point type variable` is a :t:`type variable` that can refer only
 to :t:`[floating-point type]s`.
 
-:dp:`fls_bXQ63GYYDuMp`
-A :t:`diverging type variable` is a :t:`type variable` that can refer to any
-:t:`type` and originates from a :t:`diverging expression`.
+.. glossary-entry:: diverging type variable
+   
+   :glossary:
+     :dp:`fls_sxyL7yOp3H9s`
+     A :dt:`diverging type variable` is a :t:`type variable` that can refer to any
+     :t:`type` and originates from a :t:`diverging expression`.
+   :chapter:
+     :dp:`fls_bXQ63GYYDuMp`
+     A :t:`diverging type variable` is a :t:`type variable` that can refer to any
+     :t:`type` and originates from a :t:`diverging expression`.
 
 :dp:`fls_JryXiKBIFvF3`
 A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to

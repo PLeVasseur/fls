@@ -393,10 +393,18 @@ Derive Macros
 
 .. rubric:: Legality Rules
 
-:dp:`fls_e5x92q2rq8a0`
-A :t:`derive macro` is a :t:`procedural macro` that consumes a stream of
-:t:`[token]s` and produces a stream of :t:`[token]s`. :t:`[Derive macro]s` are
-used to construct new syntax for :t:`[abstract data type]s`.
+.. glossary-entry:: derive macro
+   
+   :glossary:
+     :dp:`fls_jrrjhl9hocrm`
+     A :dt:`derive macro` is a :t:`procedural macro` that consumes a stream of
+     :t:`[token]s` and produces a stream of tokens, and is invoked via attribute
+     :c:`derive`.
+   :chapter:
+     :dp:`fls_e5x92q2rq8a0`
+     A :t:`derive macro` is a :t:`procedural macro` that consumes a stream of
+     :t:`[token]s` and produces a stream of :t:`[token]s`. :t:`[Derive macro]s` are
+     used to construct new syntax for :t:`[abstract data type]s`.
 
 :dp:`fls_ldw75sy5uj7p`
 The :t:`macro implementation function` of a :t:`derive macro` shall be subject

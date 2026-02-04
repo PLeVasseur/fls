@@ -1268,10 +1268,16 @@ A :t:`construct` that is being resolved is said to be :t:`under resolution`.
      A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that
      implements the :std:`core::ops::Deref` :t:`trait`.
 
-:dp:`fls_4hulwazdu20i`
-A :t:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
-:t:`dereference type chain` starts with an initial :t:`dereference type`. From
-then on, the :t:`dereference type chain` continues as follows:
+.. glossary-entry:: dereference type chain
+   
+   :glossary:
+     :dp:`fls_kIzoAEf069HE`
+     A :dt:`dereference type chain` is a sequence of :t:`[dereference type]s`.
+   :chapter:
+     :dp:`fls_4hulwazdu20i`
+     A :t:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
+     :t:`dereference type chain` starts with an initial :t:`dereference type`. From
+     then on, the :t:`dereference type chain` continues as follows:
 
 * :dp:`fls_ptocwx5p25lj`
   If the previous :t:`dereference type` is a :t:`reference type`, then the

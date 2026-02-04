@@ -1449,10 +1449,18 @@ An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
 An :t:`outer doc comment` is either an :t:`outer block doc` or an
 :t:`outer line doc`.
 
-:dp:`fls_7n6d3jx61ose`
-A :t:`doc comment` is a :t:`comment` class that includes :t:`[inner block
-doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`, and :t:`[outer line
-doc]s`.
+.. glossary-entry:: doc comment
+   
+   :glossary:
+     :dp:`fls_wkc1w2xk7ebh`
+     A :dt:`doc comment` is a :t:`comment` class that includes
+     :t:`[inner block doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`,
+     and :t:`[outer line doc]s`.
+   :chapter:
+     :dp:`fls_7n6d3jx61ose`
+     A :t:`doc comment` is a :t:`comment` class that includes :t:`[inner block
+     doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`, and :t:`[outer line
+     doc]s`.
 
 :dp:`fls_6fxcs17n4kw`
 Character 0x0D (carriage return) shall not appear in a :t:`comment`.
