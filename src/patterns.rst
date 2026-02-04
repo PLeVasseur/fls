@@ -489,9 +489,19 @@ Range Patterns
 A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
-:dp:`fls_jhchm7dy927k`
-A :t:`half-open range pattern` is a :t:`range pattern` with only a
-:t:`range pattern low bound`.
+.. glossary-entry:: half-open range pattern
+   
+   :glossary:
+     :dp:`fls_tymjispfgp7u`
+     A :dt:`half-open range pattern` is a :t:`range pattern` with only a
+     :t:`range pattern low bound`.
+     
+     :dp:`fls_evm3nxwswk00`
+     See :s:`HalfOpenRangePattern`.
+   :chapter:
+     :dp:`fls_jhchm7dy927k`
+     A :t:`half-open range pattern` is a :t:`range pattern` with only a
+     :t:`range pattern low bound`.
 
 :dp:`fls_q86j23iiqv8w`
 An :t:`inclusive range pattern` is a :t:`range pattern` with both a

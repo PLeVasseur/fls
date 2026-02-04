@@ -497,6 +497,27 @@ domain of whole numbers:
      - \- (2\ :sup:`127`)
      - 2\ :sup:`127` - 1
 
+.. glossary-entry:: i8
+   
+   :glossary:
+     :dp:`fls_1y9ulxnz8qba`
+     :dc:`i8` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+     :sup:`7`) to 2\ :sup:`7` - 1, all inclusive.
+
+.. glossary-entry:: i16
+   
+   :glossary:
+     :dp:`fls_ci9jl55wxwdg`
+     :dc:`i16` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+     :sup:`15`) to 2\ :sup:`15` - 1, all inclusive.
+
+.. glossary-entry:: i32
+   
+   :glossary:
+     :dp:`fls_yh8wzhhso4xc`
+     :dc:`i32` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+     :sup:`31`) to 2\ :sup:`31` - 1, all inclusive.
+
 :dp:`fls_t9oyfmgqka6u`
 :t:`Type` :c:`isize` has the same number of bits as the platform's
 :t:`pointer type`, and is at least 16-bits wide.
@@ -1497,6 +1518,13 @@ Type Parameters
 :dp:`fls_dCIIVXGhXDlO`
 A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
 to be substituted by :t:`generic substitution`.
+
+.. glossary-entry:: generic substitution
+   
+   :glossary:
+     :dp:`fls_Led1Nxfcd70K`
+     A :dt:`generic substitution` is the replacement of a :t:`generic parameter`
+     with a :t:`generic argument`.
 
 .. rubric:: Examples
 
@@ -2601,9 +2629,16 @@ depending on the :t:`type inference root` as follows:
 A :t:`type variable` is a placeholder used during :t:`type inference` to stand
 in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
-:dp:`fls_gDalJm1XS0mi`
-A :t:`global type variable` is a :t:`type variable` that can refer to any
-:t:`type`.
+.. glossary-entry:: global type variable
+   
+   :glossary:
+     :dp:`fls_pvt4nayq006s`
+     A :dt:`global type variable` is a :t:`type variable` that can refer to any
+     :t:`type`.
+   :chapter:
+     :dp:`fls_gDalJm1XS0mi`
+     A :t:`global type variable` is a :t:`type variable` that can refer to any
+     :t:`type`.
 
 :dp:`fls_7ov36fpd9mwe`
 An :t:`integer type variable` is a :t:`type variable` that can refer only to
@@ -3244,10 +3279,20 @@ A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
 A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
 :s:`[TypeParameter]s`.
 
-:dp:`fls_vujl3fblz6x2`
-A :t:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
-list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
-:s:`ForGenericParameterList`.
+.. glossary-entry:: higher-ranked trait bound
+   
+   :glossary:
+     :dp:`fls_lpyc4omcthv`
+     A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
+     list of :t:`[bound]s` for all possible :t:`[lifetime]s`.
+     
+     :dp:`fls_m3nrsdvxxg6j`
+     See :s:`ForGenericParameterList`.
+   :chapter:
+     :dp:`fls_vujl3fblz6x2`
+     A :t:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
+     list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
+     :s:`ForGenericParameterList`.
 
 :dp:`fls_AzuZmR9DXSQh`
 An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
@@ -3346,6 +3391,12 @@ where another :t:`type` is expected.
 :t:`[type parameter]s` that describes the circumstances under which a
 :t:`generic type` is a :t:`subtype` of an instantiation of itself with
 different :t:`[generic argument]s`.
+
+.. glossary-entry:: generic type
+   
+   :glossary:
+     :dp:`fls_Zn2pIsMZoTry`
+     A :dt:`generic type` is a :t:`type` with a :t:`generic parameter`.
 
 :dp:`fls_7ex941yysuhq`
 A :t:`type` is its own :t:`subtype`.

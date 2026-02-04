@@ -1121,6 +1121,20 @@ within them, which aims to eliminate the syntactic interference between a
 
 .. rubric:: Legality Rules
 
+.. glossary-entry:: hygiene
+   
+   :glossary:
+     :dp:`fls_AQg0MqAQZqkz`
+     :dt:`Hygiene` is a property of :t:`[macro]s` and :t:`[identifier]s`` that
+     appear within them, which aims to eliminate the syntactic interference between
+     a :t:`macro` and its environment.
+
+.. glossary-entry:: hygienic
+   
+   :glossary:
+     :dp:`fls_hiDddAkNH5Ms`
+     An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
+
 :dp:`fls_3axjf28xb1nt`
 :t:`Hygiene` is categorized as follows:
 

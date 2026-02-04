@@ -95,17 +95,41 @@ All :s:`[LifetimeParameter]s` in a :s:`GenericParameterList` shall precede all
      A :t:`generic implementation` is an :t:`implementation` with
      :t:`[generic parameter]s`.
 
-:dp:`fls_wmcp0n36jlbr`
-A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic struct
+   
+   :glossary:
+     :dp:`fls_mcb2mlklith8`
+     A :dt:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_wmcp0n36jlbr`
+     A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
 
-:dp:`fls_h42kg56vsefx`
-A :t:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic trait
+   
+   :glossary:
+     :dp:`fls_h515f11akr91`
+     A :dt:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_h42kg56vsefx`
+     A :t:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
 
-:dp:`fls_372h3oevejih`
-A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic type alias
+   
+   :glossary:
+     :dp:`fls_zgxsqq4vu7e3`
+     A :dt:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_372h3oevejih`
+     A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 
-:dp:`fls_u8mqct93yimd`
-A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
+.. glossary-entry:: generic union
+   
+   :glossary:
+     :dp:`fls_93rxr0yjx1e7`
+     A :dt:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_u8mqct93yimd`
+     A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 .. glossary-entry:: constant parameter
    

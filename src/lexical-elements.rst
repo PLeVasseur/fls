@@ -973,8 +973,17 @@ An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
      :dp:`fls_rn8xfd66yvst`
      A :t:`decimal literal` is an :t:`integer literal` in base 10.
 
-:dp:`fls_2268lchxkzjp`
-A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
+.. glossary-entry:: hexadecimal literal
+   
+   :glossary:
+     :dp:`fls_8b6njsi8g68i`
+     A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
+     
+     :dp:`fls_vssa4z5wcgaa`
+     See :s:`HexadecimalLiteral`.
+   :chapter:
+     :dp:`fls_2268lchxkzjp`
+     A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 :dp:`fls_4v7awnutbpoe`
 An :t:`octal literal` is an :t:`integer literal` in base 8.

@@ -340,9 +340,16 @@ If a :t:`path segment` is expressed as :t:`keyword` ``super``, then the
 or the previous :t:`path segment` of the :t:`path` shall also be expressed as
 :t:`keyword` ``super``.
 
-:dp:`fls_7kb6ltajgiou`
-A :t:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
-``::``.
+.. glossary-entry:: global path
+   
+   :glossary:
+     :dp:`fls_msg8jw9momfw`
+     A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
+     ``::``.
+   :chapter:
+     :dp:`fls_7kb6ltajgiou`
+     A :t:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
+     ``::``.
 
 :dp:`fls_n77icl6idazp`
 A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
@@ -552,8 +559,14 @@ Generic Parameter Scope
 
 .. rubric:: Legality Rules
 
-:dp:`fls_amoh8r4gghyj`
-A :t:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
+.. glossary-entry:: generic parameter scope
+   
+   :glossary:
+     :dp:`fls_e2tICijmLkj4`
+     A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
+   :chapter:
+     :dp:`fls_amoh8r4gghyj`
+     A :t:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
@@ -1098,10 +1111,20 @@ A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
 :t:`name` than they are declared with by using a :t:`renaming`.
 
-:dp:`fls_v3a6y2ze44v2`
-A :t:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
-exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
-into :t:`scope`.
+.. glossary-entry:: glob import
+   
+   :glossary:
+     :dp:`fls_90qsib7g8e9j`
+     A :dt:`glob import` is a :t:`use import` that brings all :t:`[name]s` with
+     :t:`public visibility` prefixed by its :t:`path` prefix into :t:`scope`.
+     
+     :dp:`fls_n4plc55cij0j`
+     See :s:`GlobImport`.
+   :chapter:
+     :dp:`fls_v3a6y2ze44v2`
+     A :t:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
+     exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
+     into :t:`scope`.
 
 :dp:`fls_JHU0ersYB6eL`
 An :t:`import path prefix` shall resolve to a :t:`module` or :t:`enum`.
