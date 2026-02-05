@@ -10,7 +10,6 @@ from pathlib import Path
 import re
 import sys
 
-
 DP_RE = re.compile(r":dp:`(?P<id>[^`]+)`")
 GLOSSARY_DP_RE = re.compile(r"^fls_[A-Za-z0-9]+$")
 
@@ -90,9 +89,12 @@ def main() -> int:
     repo_root = Path(args.repo_root).resolve()
     glossary_path = repo_root / args.glossary
 
-    needs_static = not has_manual_lines(
-        args.glossary_line, args.glossary_text_file, args.glossary_stdin
-    ) or args.glossary_dp is None
+    needs_static = (
+        not has_manual_lines(
+            args.glossary_line, args.glossary_text_file, args.glossary_stdin
+        )
+        or args.glossary_dp is None
+    )
     static_entries = None
     if needs_static:
         if not glossary_path.is_file():
@@ -150,7 +152,9 @@ def resolve_block_lines(
     return trim_trailing_blanks(entry.body_lines)
 
 
-def has_manual_lines(line_args: list[str], text_file: str | None, stdin_flag: bool) -> bool:
+def has_manual_lines(
+    line_args: list[str], text_file: str | None, stdin_flag: bool
+) -> bool:
     return bool(line_args) or bool(text_file) or stdin_flag
 
 
@@ -173,7 +177,10 @@ def resolve_glossary_dp(
         return glossary_dp
 
     if static_entries is None:
-        print("error: --glossary-dp is required without a static glossary", file=sys.stderr)
+        print(
+            "error: --glossary-dp is required without a static glossary",
+            file=sys.stderr,
+        )
         raise SystemExit(1)
     entry = static_entries.get(term)
     if entry is None:
@@ -317,7 +324,7 @@ def parse_glossary_static(path: Path) -> dict[str, GlossaryStaticEntry]:
     glossary_dps: set[str] = set()
     for pos, header in enumerate(headers):
         next_start = headers[pos + 1].start if pos + 1 < len(headers) else len(lines)
-        body_lines = trim_trailing_blanks(lines[header.header_end:next_start])
+        body_lines = trim_trailing_blanks(lines[header.header_end : next_start])
         if header.term in entries:
             print(f"error: duplicate term in glossary: {header.term}", file=sys.stderr)
             raise SystemExit(1)

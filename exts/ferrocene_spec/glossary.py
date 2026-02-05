@@ -143,14 +143,18 @@ class GlossaryIncludeDirective(SphinxDirective):
         lines = text.splitlines()
         start_after = self.options.get("start-after")
         if start_after:
-            lines = lines_after_marker(lines, start_after, resolved, self.get_location())
+            lines = lines_after_marker(
+                lines, start_after, resolved, self.get_location()
+            )
 
         viewlist = StringList()
         for offset, content in enumerate(lines):
             viewlist.append(content, str(resolved), offset + 1)
 
         container = nodes.container()
-        self.state.nested_parse(viewlist, self.content_offset, container, match_titles=True)
+        self.state.nested_parse(
+            viewlist, self.content_offset, container, match_titles=True
+        )
         return list(container.children)
 
 
@@ -349,7 +353,9 @@ def trim_trailing_blanks(lines: list[str]) -> list[str]:
     return trimmed
 
 
-def render_glossary_entry(term: str, glossary_dp: str, body_lines: list[str]) -> list[str]:
+def render_glossary_entry(
+    term: str, glossary_dp: str, body_lines: list[str]
+) -> list[str]:
     heading = "^" * len(term)
     body = list(body_lines)
     if not body or body[-1].strip() != "":

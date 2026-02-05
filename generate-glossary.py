@@ -73,7 +73,11 @@ def main() -> int:
         block = glossary_ext.select_glossary_block(entry)
         if block is None:
             if entry.chapter_lines is not None and not entry.propagate:
-                warn(entry.source, entry.line, f"glossary-entry for {entry.term} not exported")
+                warn(
+                    entry.source,
+                    entry.line,
+                    f"glossary-entry for {entry.term} not exported",
+                )
             continue
 
         if entry.glossary_dp is None:

@@ -114,7 +114,9 @@ def start_glossary_watcher(root, tags, stamp_path, stop_event):
                 run_generate_glossary(root, tags)
                 stamp_path.touch()
             except subprocess.CalledProcessError:
-                print("warning: glossary generator failed during serve", file=sys.stderr)
+                print(
+                    "warning: glossary generator failed during serve", file=sys.stderr
+                )
 
     thread = threading.Thread(target=watcher, daemon=True)
     thread.start()

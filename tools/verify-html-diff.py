@@ -95,8 +95,7 @@ def ensure_generated_glossary(repo_root: Path) -> bool:
         run(["./generate-glossary.py"], repo_root)
     except subprocess.CalledProcessError as exc:
         print(
-            "error: generate-glossary.py failed "
-            f"with exit code {exc.returncode}",
+            "error: generate-glossary.py failed " f"with exit code {exc.returncode}",
             file=sys.stderr,
         )
         return False
@@ -161,7 +160,10 @@ def compare_paragraph_ids(left: Path, right: Path) -> dict[str, object]:
     left_data = normalize_paragraph_ids(left)
     right_data = normalize_paragraph_ids(right)
     if left_data == right_data:
-        return {"equal": True, "message": "paragraph-ids.json: normalized content matches"}
+        return {
+            "equal": True,
+            "message": "paragraph-ids.json: normalized content matches",
+        }
     return {"equal": False, "message": "paragraph-ids.json: normalized content differs"}
 
 

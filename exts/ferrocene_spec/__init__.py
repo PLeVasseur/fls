@@ -1,7 +1,14 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # SPDX-FileCopyrightText: The Ferrocene Developers
 
-from . import definitions, glossary, informational, syntax_directive, std_role, paragraph_ids
+from . import (
+    definitions,
+    glossary,
+    informational,
+    syntax_directive,
+    std_role,
+    paragraph_ids,
+)
 from . import items_with_rubric, sphinx_fixes
 from sphinx.domains import Domain
 
