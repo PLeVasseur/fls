@@ -12,11 +12,16 @@ import sys
 from sphinx.application import Sphinx
 
 ROOT = Path(__file__).resolve().parent
-sys.path.append(str(ROOT / "exts"))
-
-from ferrocene_spec import glossary as glossary_ext
-
 GLOSSARY_ANCHOR = ".. _fls_bc2qwbfibrcs:"
+
+
+def load_glossary_ext():
+    exts_path = str(ROOT / "exts")
+    if exts_path not in sys.path:
+        sys.path.append(exts_path)
+    from ferrocene_spec import glossary as glossary_ext
+
+    return glossary_ext
 
 
 @dataclass
@@ -62,10 +67,11 @@ def main() -> int:
     if "use_generated_glossary" in tags:
         write_lines(output_path, prelude.lines, prelude.trailing_newline)
 
+    glossary_ext = load_glossary_ext()
     app = build_sphinx_app(src_dir, ROOT, tags)
     entries = list(glossary_ext.get_storage(app.env).values())
 
-    exported: list[tuple[glossary_ext.GlossaryEntryData, list[str]]] = []
+    exported = []
     glossary_dp_index: dict[str, str] = {}
     errors: list[str] = []
 
@@ -87,7 +93,8 @@ def main() -> int:
         existing = glossary_dp_index.get(entry.glossary_dp)
         if existing is not None:
             errors.append(
-                f"duplicate :glossary-dp: {entry.glossary_dp} for {entry.term} and {existing}"
+                "duplicate :glossary-dp: "
+                f"{entry.glossary_dp} for {entry.term} and {existing}"
             )
             continue
 
