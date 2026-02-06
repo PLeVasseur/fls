@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rust-lang.github.io/fls/schemas/paragraph-ids-rich.schema.json",
+  "title": "FLS paragraph ids rich export",
+  "type": "object",
+  "required": [
+    "documents",
+    "sections",
+    "definitions",
+    "definition_references"
+  ],
+  "properties": {
+    "documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/document"
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "definitions": {
+      "type": "object",
+      "required": ["paragraph", "term", "syntax", "code_term"],
+      "properties": {
+        "paragraph": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/definitionItem"
+          }
+        },
+        "term": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/definitionItem"
+          }
+        },
+        "syntax": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/definitionItem"
+          }
+        },
+        "code_term": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/definitionItem"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "definition_references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/definitionReference"
+      }
+    }
+  },
+  "$defs": {
+    "document": {
+      "type": "object",
+      "required": ["title", "link", "sections", "informational"],
+      "properties": {
+        "title": {"type": "string"},
+        "link": {"type": "string"},
+        "sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentSection"
+          }
+        },
+        "informational": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "documentSection": {
+      "type": "object",
+      "required": [
+        "id",
+        "number",
+        "title",
+        "link",
+        "paragraphs",
+        "informational"
+      ],
+      "properties": {
+        "id": {"type": "string"},
+        "number": {"type": "string"},
+        "title": {"type": "string"},
+        "link": {"type": "string"},
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/paragraph"
+          }
+        },
+        "informational": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "paragraph": {
+      "type": "object",
+      "required": [
+        "id",
+        "number",
+        "link",
+        "checksum",
+        "plaintext",
+        "document",
+        "section_id",
+        "markup_checksum",
+        "role_inventory",
+        "literal_inventory",
+        "list_structure"
+      ],
+      "properties": {
+        "id": {"type": "string"},
+        "number": {"type": "string"},
+        "link": {"type": "string"},
+        "checksum": {"type": "string"},
+        "plaintext": {"type": "string"},
+        "document": {"type": "string"},
+        "section_id": {"type": "string"},
+        "markup_checksum": {"type": "string"},
+        "role_inventory": {
+          "type": "object",
+          "required": ["dt", "t", "ds", "s", "std"],
+          "properties": {
+            "dt": {"type": "integer", "minimum": 0},
+            "t": {"type": "integer", "minimum": 0},
+            "ds": {"type": "integer", "minimum": 0},
+            "s": {"type": "integer", "minimum": 0},
+            "std": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": false
+        },
+        "literal_inventory": {
+          "type": "object",
+          "required": ["inline_count", "inline_hash", "block_count", "block_hash"],
+          "properties": {
+            "inline_count": {"type": "integer", "minimum": 0},
+            "inline_hash": {"type": "string"},
+            "block_count": {"type": "integer", "minimum": 0},
+            "block_hash": {"type": "string"}
+          },
+          "additionalProperties": false
+        },
+        "list_structure": {
+          "type": "object",
+          "required": ["depth", "item_count", "ordered"],
+          "properties": {
+            "depth": {"type": "integer", "minimum": 0},
+            "item_count": {"type": "integer", "minimum": 0},
+            "ordered": {"type": "boolean"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "required": ["id", "document", "anchor", "title"],
+      "properties": {
+        "id": {"type": "string"},
+        "document": {"type": "string"},
+        "anchor": {"type": "string"},
+        "title": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "definitionItem": {
+      "type": "object",
+      "required": ["id", "document", "anchor"],
+      "properties": {
+        "id": {"type": "string"},
+        "document": {"type": "string"},
+        "anchor": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "definitionReference": {
+      "type": "object",
+      "required": ["document", "paragraph_id", "kind", "type", "text"],
+      "properties": {
+        "document": {"type": "string"},
+        "paragraph_id": {
+          "type": ["string", "null"]
+        },
+        "kind": {"type": "string"},
+        "type": {"enum": ["definition", "reference"]},
+        "id": {"type": "string"},
+        "target": {"type": "string"},
+        "text": {"type": "string"}
+      },
+      "oneOf": [
+        {"required": ["id"]},
+        {"required": ["target"]}
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

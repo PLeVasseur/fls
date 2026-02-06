@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: The Rust Project Contributors
 
 import os
+import sys
 from pathlib import Path
 import argparse
 import subprocess
@@ -13,7 +14,24 @@ import shutil
 EXTRA_WATCH_DIRS = ["exts", "themes"]
 
 
-def build_docs(root, builder, clear, serve, debug):
+def run_changelog_assistant(root, update, require_tags):
+    command = [sys.executable, str(root / "tools" / "changelog_assistant.py")]
+    command.append("--update" if update else "--check")
+    if require_tags:
+        command.append("--require-tags")
+    subprocess.run(command, check=True)
+
+
+def build_docs(
+    root,
+    builder,
+    clear,
+    serve,
+    debug,
+    check_changelog,
+    update_changelog,
+    changelog_require_tags,
+):
     dest = root / "build"
     output_dir = dest / builder
 
@@ -45,6 +63,14 @@ def build_docs(root, builder, clear, serve, debug):
     commit = current_git_commit(root)
     if commit is not None:
         args += ["-D", f"html_theme_options.commit={commit}"]
+
+    should_run_changelog = check_changelog or update_changelog or (serve and not update_changelog)
+    if should_run_changelog:
+        run_changelog_assistant(
+            root,
+            update=update_changelog,
+            require_tags=changelog_require_tags,
+        )
 
     try:
         subprocess.run(
@@ -142,10 +168,32 @@ def main(root):
         help="Debug mode for the extensions, showing exceptions",
         action="store_true",
     )
+    parser.add_argument(
+        "--check-changelog",
+        help="run changelog assistant in check mode",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--update-changelog",
+        help="run changelog assistant in update mode",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--changelog-require-tags",
+        help="fail changelog check when entries miss Change tags",
+        action="store_true",
+    )
     args = parser.parse_args()
 
     rendered = build_docs(
-        root, "xml" if args.xml else "html", args.clear, args.serve, args.debug
+        root,
+        "xml" if args.xml else "html",
+        args.clear,
+        args.serve,
+        args.debug,
+        args.check_changelog,
+        args.update_changelog,
+        args.changelog_require_tags,
     )
 
     if args.check_links:

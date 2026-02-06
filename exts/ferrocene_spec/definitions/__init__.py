@@ -9,6 +9,25 @@ from sphinx.roles import SphinxRole
 from sphinx.transforms import SphinxTransform
 import sphinx
 
+
+def _get_definition_locations_storage(env):
+    if not hasattr(env, "spec_definition_locations"):
+        env.spec_definition_locations = {}
+    return env.spec_definition_locations
+
+
+def _paragraph_id_for_node(node):
+    paragraph = node
+    while paragraph is not None and not isinstance(paragraph, nodes.paragraph):
+        paragraph = paragraph.parent
+    if paragraph is None:
+        return None
+
+    for candidate in paragraph.findall(DefIdNode):
+        if candidate["def_kind"] == paragraphs.NAME:
+            return candidate["def_id"]
+    return None
+
 KINDS = [
     paragraphs,
     syntax,
@@ -86,6 +105,10 @@ class DefinitionsCollector(EnvironmentCollector):
                 if item.document == docname:
                     del storage[item.id]
 
+        definition_locations = _get_definition_locations_storage(env)
+        if docname in definition_locations:
+            del definition_locations[docname]
+
     def merge_other(self, app, env, docnames, other):
         """
         Merge the collected informations from two environments into one.
@@ -101,6 +124,12 @@ class DefinitionsCollector(EnvironmentCollector):
             for item in other_storage.values():
                 if item.document in docnames:
                     storage[item.id] = item
+
+        other_locations = _get_definition_locations_storage(other)
+        locations = _get_definition_locations_storage(env)
+        for docname, records in other_locations.items():
+            if docname in docnames:
+                locations[docname] = records
 
     def process_doc(self, app, document):
         """
@@ -118,6 +147,32 @@ class DefinitionsCollector(EnvironmentCollector):
             )
             for item in kind.collect_items_in_document(app, nodes):
                 storage[item.id] = item
+
+        records = []
+
+        for node in document.findall(DefIdNode):
+            records.append(
+                {
+                    "kind": node["def_kind"],
+                    "type": "definition",
+                    "id": node["def_id"],
+                    "text": node["def_text"],
+                    "paragraph_id": _paragraph_id_for_node(node),
+                }
+            )
+
+        for node in document.findall(DefRefNode):
+            records.append(
+                {
+                    "kind": node["ref_kind"],
+                    "type": "reference",
+                    "target": node["ref_target"],
+                    "text": node["ref_text"],
+                    "paragraph_id": _paragraph_id_for_node(node),
+                }
+            )
+
+        _get_definition_locations_storage(app.env)[app.env.docname] = records
 
 
 class DefinitionsTransform(SphinxTransform):
