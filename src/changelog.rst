@@ -36,6 +36,9 @@ Language changes in Rust 1.93.0
 
 - `Stabilize asm_cfg <https://github.com/rust-lang/rust/pull/147736>`_
 - `During const-evaluation, support copying pointers byte-by-byte <https://github.com/rust-lang/rust/pull/148259>`_
+
+  - No change: FLS enumerates constant-expression forms but does not specify the byte-level const-eval memory model or pointer provenance, so this interpreter fix does not map to a narrowly specified rule without a broader const-eval specification.
+
 - `LUB coercions now correctly handle function item types, and functions with differing safeties <https://github.com/rust-lang/rust/pull/148602>`_
 - `Allow const items that contain mutable references to static (which is *very* unsafe, but not *always* UB) <https://github.com/rust-lang/rust/pull/148746>`_
 
