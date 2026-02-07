@@ -541,6 +541,9 @@ Safe :t:`[function]s` that are annotated with :c:`[target_feature]s`
 can only be called without an :t:`unsafe block` by a caller that is within a function
 that enables all the :c:`[target_feature]s` that the callee enables.
 
+:dp:`fls_ReYuWzijQ1aL`
+A safe :t:`[function]` that is annotated with :c:`[target_feature]s` shall only be coerced to a :t:`function pointer type` that lacks :t:`keyword` ``unsafe`` at a :t:`coercion site` within a :t:`function` that enables all the :c:`[target_feature]s` that the source enables; otherwise it may only be coerced to an :t:`unsafe function pointer type`.
+
 :dp:`fls_agpkz1v3c281`
 :t:`Attribute` :dc:`target_feature` enables target architecture features for its
 related :t:`function`.

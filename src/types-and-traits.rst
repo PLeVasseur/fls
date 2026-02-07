@@ -2050,6 +2050,9 @@ occur when:
   and the target :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``U``,
   where ``U`` is a :t:`supertrait` of ``T``.
 
+:dp:`fls_yhtOWsxAcccM`
+A :t:`function signature` is a :t:`subtype` of another :t:`function signature` when they are identical except that the subtype lacks :t:`keyword` ``unsafe`` where the supertype uses :t:`keyword` ``unsafe`` in its :t:`function qualifier` list.
+
 :dp:`fls_iiiu2q7pym4p`
 An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
 into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
@@ -2147,6 +2150,9 @@ obtained as follows:
       combination of those :t:`[type]s`, and a :t:`function pointer type` exists
       that both ``TC`` and ``U`` can coerce to, make that
       :t:`function pointer type` be target :t:`type` ``U``.
+
+   #. :dp:`fls_rRegjSIudDM1`
+      When applying the previous step, select a :t:`function pointer type` without :t:`keyword` ``unsafe`` only when each source :t:`type` can coerce to a :t:`function pointer type` without :t:`keyword` ``unsafe`` at the :t:`coercion site`; otherwise select an :t:`unsafe function pointer type`.
 
    #. :dp:`fls_bWHQIL4DSN4S`
       Otherwise, no coercion is performed.
