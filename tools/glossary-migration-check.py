@@ -25,6 +25,7 @@ EXCLUDED_CHAPTER_DOCS = {"glossary.rst", "index.rst", "changelog.rst"}
 
 DT_RE = re.compile(r":dt:`([^`]+)`")
 DC_RE = re.compile(r":dc:`([^`]+)`")
+T_RE = re.compile(r":t:`([^`]+)`")
 DP_LINE_RE = re.compile(r"^:dp:`[^`]+`\s*$")
 ROLE_WITH_TARGET_RE = re.compile(r":[a-z]+:`([^`<]+)<[^`>]+>`")
 ROLE_RE = re.compile(r":[a-z]+:`([^`]+)`")
@@ -164,7 +165,18 @@ def collect_glossary_terms() -> list[dict]:
         if dt_matches:
             _, target = parse_target_from_text(dt_matches[0])
         else:
-            _, target = parse_target_from_text(title)
+            target = None
+            for line in section_lines:
+                for match in T_RE.finditer(line):
+                    display, candidate_target = parse_target_from_text(match.group(1).strip())
+                    if display.casefold() == title.casefold():
+                        target = candidate_target
+                        break
+                if target is not None:
+                    break
+
+            if target is None:
+                _, target = parse_target_from_text(title)
 
         terms.append(
             {
@@ -485,18 +497,29 @@ def run_checks(phase: int, strict: bool, report_path: Path | None) -> int:
         )
 
         term_storage = getattr(app.env, "spec_items_term", {})
+        code_term_storage = getattr(app.env, "spec_items_code_terms", {})
         validation = []
         glossary_owned = []
         unresolved = []
         for item in glossary_terms:
             term_id = item["term_id"]
             target = term_storage.get(term_id)
+            target_kind = "term"
+            if target is None:
+                target = code_term_storage.get(term_id)
+                target_kind = "code-term" if target is not None else "term"
+
             target_doc = target.document if target else None
-            target_anchor = f"term_{term_id}"
+            target_anchor = (
+                f"codeterm_{term_id}"
+                if target is not None and target_kind == "code-term"
+                else f"term_{term_id}"
+            )
             validation.append(
                 {
                     "term": item["term"],
                     "term_id": term_id,
+                    "target_kind": target_kind,
                     "target_doc": target_doc,
                     "target_anchor": target_anchor,
                 }

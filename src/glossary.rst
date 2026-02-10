@@ -17,7 +17,7 @@ ABI
 ^^^
 
 :dp:`fls_4ko8qcah0f9k`
-For :dt:`ABI`, see :t:`Application Binary Interface`.
+For :t:`ABI`, see :t:`Application Binary Interface`.
 
 .. _fls_zOdDwoObYHC0:
 
@@ -25,7 +25,7 @@ ABI clobber
 ^^^^^^^^^^^
 
 :dp:`fls_OVX4RFcWKfP9`
-An :dt:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
+An :t:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
 indicates that the :t:`[value]s` of selected :t:`[register]s` might be
 overwritten during the :t:`execution` of an :t:`assembly code block`.
 
@@ -38,7 +38,7 @@ ABI kind
 ^^^^^^^^
 
 :dp:`fls_qo9itrt0n3h8`
-The :dt:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
+The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
 
 :dp:`fls_rd4kpubxygie`
 See :s:`AbiKind`.
@@ -49,7 +49,7 @@ abort
 ^^^^^
 
 :dp:`fls_u4o7tda3ilv0`
-:dt:`Abort` is the immediate termination of a program.
+:t:`Abort` is the immediate termination of a program.
 
 .. _fls_g40une2uudez:
 
@@ -57,7 +57,7 @@ abstract data type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_64drmro2fcfo`
-An :dt:`abstract data type` is a collection of other :t:`[type]s`.
+An :t:`abstract data type` is a collection of other :t:`[type]s`.
 
 .. _fls_5fu0ncvnjyna:
 
@@ -65,7 +65,7 @@ active attribute
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_r8rzj8mtxtp1`
-An :dt:`active attribute` is an :t:`attribute` that is removed from the
+An :t:`active attribute` is an :t:`attribute` that is removed from the
 :t:`item` it decorates.
 
 .. _fls_xqZapSv9tM1F:
@@ -74,7 +74,7 @@ addition assignment
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_FVgKeCXlmuPe`
-For :dt:`addition assignment`, see :t:`addition assignment expression`.
+For :t:`addition assignment`, see :t:`addition assignment expression`.
 
 .. _fls_iw30dqjaeqle:
 
@@ -82,7 +82,7 @@ addition assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_w83tf9m7vu67`
-An :dt:`addition assignment expression` is a
+An :t:`addition assignment expression` is a
 :t:`compound assignment expression` that uses addition.
 
 :dp:`fls_hihh97p0rnt8`
@@ -94,7 +94,7 @@ addition expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ylfdtuajmi0t`
-An :dt:`addition expression` is an :t:`arithmetic expression` that uses
+An :t:`addition expression` is an :t:`arithmetic expression` that uses
 addition.
 
 :dp:`fls_5bgx5dyi817x`
@@ -106,7 +106,7 @@ adjusted call operand
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mchqbc64iu0u`
-An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
+An :t:`adjusted call operand` is the :t:`call operand` after any implicit
 adjustments required by :t:`call resolution`.
 
 .. _fls_j775guurkgo4:
@@ -115,7 +115,7 @@ alignment
 ^^^^^^^^^
 
 :dp:`fls_c0hbatn5o8x3`
-The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
+The :t:`alignment` of a :t:`value` specifies which addresses are valid for
 storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
 and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
@@ -126,7 +126,7 @@ all configuration predicate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_IyMZWiTnkYPv`
-An :dt:`all configuration predicate` is a :t:`configuration predicate` that
+An :t:`all configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ALL.
 
 :dp:`fls_0fEw9Bx8xX8q`
@@ -138,7 +138,7 @@ anonymous loop expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_csss2a8yk52k`
-An :dt:`anonymous loop expression` is a :t:`loop expression` without a
+An :t:`anonymous loop expression` is a :t:`loop expression` without a
 :t:`label`.
 
 .. _fls_dgxkklxcrrl0:
@@ -147,7 +147,7 @@ anonymous return type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_z6t6lbwwztuf`
-An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
+An :t:`anonymous return type` is an :t:`impl trait type` ascribed to a
 :t:`function` :t:`return type`.
 
 .. _fls_8oepaq6ang93:
@@ -156,7 +156,7 @@ anonymous type parameter
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_brqaq0736o09`
-An :dt:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
+An :t:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
 :t:`function parameter`.
 
 .. _fls_jrzM6C5B6AMt:
@@ -165,7 +165,7 @@ any configuration predicate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_0nWHML8eoozG`
-An :dt:`any configuration predicate` is a :t:`configuration predicate` that
+An :t:`any configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ANY.
 
 :dp:`fls_xhhXonDldWQY`
@@ -177,7 +177,7 @@ Application Binary Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ew4babc9467c`
-An :dt:`Application Binary Interface` is a set of conventions that dictate how
+An :t:`Application Binary Interface` is a set of conventions that dictate how
 data and computation cross language boundaries.
 
 :dp:`fls_8dgmmsp34lgc`
@@ -189,7 +189,7 @@ argument operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_ljuwr88k92vp`
-An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
+An :t:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 .. _fls_kf81ozijral2:
@@ -198,7 +198,7 @@ arithmetic expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_u3z2r1fw89xo`
-An :dt:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
+An :t:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
 from two :t:`[operand]s` using arithmetic.
 
 :dp:`fls_in59ccg4g3we`
@@ -210,7 +210,7 @@ arithmetic operator
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Qf7DckakqvRq`
-An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
+An :t:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
 
 .. _fls_vZ1H57x9OFSZ:
 
@@ -218,7 +218,7 @@ arithmetic overflow
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_jbytOQvIddAl`
-An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
+An :t:`arithmetic overflow` occurs when an :t:`operator expression` computes a
 :t:`value` of a :t:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
@@ -230,7 +230,7 @@ arity
 ^^^^^
 
 :dp:`fls_dl2gkip00bua`
-The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
+The :t:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
 :s:`TupleFieldList`.
 
 .. _fls_bn1regeucxqi:
@@ -239,7 +239,7 @@ array
 ^^^^^
 
 :dp:`fls_metry7a5prpt`
-An :dt:`array` is a :t:`value` of an :t:`array type`.
+An :t:`array` is a :t:`value` of an :t:`array type`.
 
 .. _fls_2d9fee2o9:
 
@@ -247,7 +247,7 @@ array element constructor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_cmx9ls5zoazp`
-An :dt:`array element constructor` is an :t:`array expression` that lists all
+An :t:`array element constructor` is an :t:`array expression` that lists all
 elements of the :t:`array` being constructed.
 
 :dp:`fls_9bwte7cmszl1`
@@ -259,7 +259,7 @@ array expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_pyjkjbvqarto`
-An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
+An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
 
 :dp:`fls_vua1xy4y9irp`
 See :s:`ArrayExpression`.
@@ -270,7 +270,7 @@ array repetition constructor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_st1kw8mor2zk`
-An :dt:`array repetition constructor` is an :t:`array expression` that
+An :t:`array repetition constructor` is an :t:`array expression` that
 specifies how many times an element is repeated in the :t:`array` being
 constructed.
 
@@ -283,7 +283,7 @@ array type
 ^^^^^^^^^^
 
 :dp:`fls_muddb5qxdc4k`
-An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence of
+An :t:`array type` is a :t:`sequence type` that represents a fixed sequence of
 elements.
 
 :dp:`fls_wre34hexlv6s`
@@ -295,7 +295,7 @@ assembly code block
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_d1ojwFwKpvm3`
-An :dt:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+An :t:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
 
 :dp:`fls_gXVUuW6iyNhZ`
 See :s:`AssemblyCodeBlock`.
@@ -306,7 +306,7 @@ assembly directive
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_FP2KbO6c3cpq`
-An :dt:`assembly directive` is a request to the assembler to perform a
+An :t:`assembly directive` is a request to the assembler to perform a
 particular action or change a setting.
 
 .. _fls_HliSgbSzPO2r:
@@ -315,7 +315,7 @@ assembly instruction
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_VLu28hOvCy2o`
-An :dt:`assembly instruction` is a :t:`string literal` that represents a
+An :t:`assembly instruction` is a :t:`string literal` that represents a
 low-level assembly operation or an :t:`assembly directive`.
 
 :dp:`fls_EYHuB5cCldbm`
@@ -327,7 +327,7 @@ assembly option
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_F5I3okDKIYnE`
-An :dt:`assembly option` is used to specify a characteristic of or a restriction
+An :t:`assembly option` is used to specify a characteristic of or a restriction
 on the related :t:`assembly code block`.
 
 :dp:`fls_31NQgPGb73Hy`
@@ -339,7 +339,7 @@ assigned operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_g714mnh7s7fx`
-An :dt:`assigned operand` is the target :t:`operand` of a
+An :t:`assigned operand` is the target :t:`operand` of a
 :t:`compound assignment expression`.
 
 :dp:`fls_z0amfuj9vsqe`
@@ -351,7 +351,7 @@ assignee expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wpmcexvbynbu`
-An :dt:`assignee expression` is an :t:`expression` that appears as the
+An :t:`assignee expression` is an :t:`expression` that appears as the
 :t:`left operand` of an :t:`assignment expression`. The following
 :t:`[expression]s` are :t:`[assignee expression]s`:
 
@@ -361,7 +361,7 @@ assignee operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_4tgf0wu2mr3l`
-An :dt:`assignee operand` is the target :t:`operand` of an
+An :t:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
 
 :dp:`fls_df0j0vnnq20a`
@@ -381,7 +381,7 @@ assignment expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6jkc6a6me3zr`
-An :dt:`assignment expression` is an :t:`expression` that assigns the
+An :t:`assignment expression` is an :t:`expression` that assigns the
 :t:`value` of a :t:`value operand` to an :t:`assignee operand`.
 
 :dp:`fls_njw68i3bp9qq`
@@ -393,7 +393,7 @@ associated constant
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hi9qa0k2nujb`
-An :dt:`associated constant` is a :t:`constant` that appears as an
+An :t:`associated constant` is a :t:`constant` that appears as an
 :t:`associated item`.
 
 .. _fls_vxiitesidcc2:
@@ -402,7 +402,7 @@ associated function
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_zcy5pat39bq7`
-An :dt:`associated function` is a :t:`function` that appears as an
+An :t:`associated function` is a :t:`function` that appears as an
 :t:`associated item`.
 
 .. _fls_9mcx6h6irrlx:
@@ -411,7 +411,7 @@ associated implementation constant
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rfaxcrrrb5q9`
-An :dt:`associated implementation constant` is an :t:`associated constant` that
+An :t:`associated implementation constant` is an :t:`associated constant` that
 appears within an :t:`implementation`.
 
 .. _fls_n85fwe75ku60:
@@ -420,7 +420,7 @@ associated implementation function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7xbmvl3jrc27`
-An :dt:`associated implementation function` is an :t:`associated function` that
+An :t:`associated implementation function` is an :t:`associated function` that
 appears within an :t:`implementation`.
 
 .. _fls_c0hekhwpznyq:
@@ -429,7 +429,7 @@ associated implementation type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6g5t81gx9ayx`
-An :dt:`associated implementation type` is an :t:`associated type` that appears
+An :t:`associated implementation type` is an :t:`associated type` that appears
 within an :t:`implementation`.
 
 .. _fls_f3ferow5ugp:
@@ -438,7 +438,7 @@ associated item
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_o5ysjk7l91ni`
-An :dt:`associated item` is an :t:`item` that appears within an
+An :t:`associated item` is an :t:`item` that appears within an
 :t:`implementation` or a :t:`trait`.
 
 :dp:`fls_44vtqu7tvhi2`
@@ -450,7 +450,7 @@ associated trait constant
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xhhsej8db74y`
-An :dt:`associated trait constant` is an :t:`associated constant` that appears
+An :t:`associated trait constant` is an :t:`associated constant` that appears
 within a :t:`trait`.
 
 .. _fls_4h7s8u1zumnq:
@@ -459,7 +459,7 @@ associated trait function
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_r927r0pdkb6h`
-An :dt:`associated trait function` is an :t:`associated function` that appears
+An :t:`associated trait function` is an :t:`associated function` that appears
 within a :t:`trait`.
 
 .. _fls_fufF4UmzLg5G:
@@ -468,7 +468,7 @@ associated trait implementation function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_bzdXloUGlVSC`
-An :dt:`associated trait implementation function` is an :t:`associated function`
+An :t:`associated trait implementation function` is an :t:`associated function`
 that appears within a :t:`trait implementation`.
 
 .. _fls_47xtji9Pk8Lw:
@@ -477,7 +477,7 @@ associated trait implementation item
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_PaENehzTVgfB`
-An :dt:`associated trait implementation item` is an :t:`associated item` that
+An :t:`associated trait implementation item` is an :t:`associated item` that
 appears within a :t:`trait implementation`.
 
 .. _fls_J946yIcmlAyV:
@@ -486,7 +486,7 @@ associated trait item
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_IlRrVLm05GTf`
-An :dt:`associated trait item` is an :t:`associated item` that appears
+An :t:`associated trait item` is an :t:`associated item` that appears
 within a :t:`trait`.
 
 .. _fls_azz308k3ra99:
@@ -495,7 +495,7 @@ associated trait type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dndsgkiq9r7i`
-An :dt:`associated trait type` is an :t:`associated type` that appears within
+An :t:`associated trait type` is an :t:`associated type` that appears within
 a :t:`trait`.
 
 .. _fls_zfs68g3yk0uw:
@@ -504,7 +504,7 @@ associated type
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_rs0n72c2d8f`
-An :dt:`associated type` is a :t:`type alias` that appears as an
+An :t:`associated type` is a :t:`type alias` that appears as an
 :t:`associated item`.
 
 .. _fls_zOe783MlE9i9:
@@ -513,7 +513,7 @@ associated type projection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_4moFUY6epk0v`
-An :dt:`associated type projection` is a :t:`qualified type path` of the form
+An :t:`associated type projection` is a :t:`qualified type path` of the form
 ``<type as trait>::associated_type``, where ``type`` is a :t:`type`, ``trait``
 is a :t:`qualifying trait`, and ``associated type`` is an :t:`associated type`.
 
@@ -523,7 +523,7 @@ associativity
 ^^^^^^^^^^^^^
 
 :dp:`fls_7i7o23mi2i33`
-:dt:`Associativity` is the order by which :t:`[operand]s` are evaluated within
+:t:`Associativity` is the order by which :t:`[operand]s` are evaluated within
 a single :t:`expression`.
 
 .. _fls_9speqyus5ku3:
@@ -532,7 +532,7 @@ async block
 ^^^^^^^^^^^
 
 :dp:`fls_pf6lrmcjywoj`
-For :dt:`async block`, see :t:`async block expression`.
+For :t:`async block`, see :t:`async block expression`.
 
 .. _fls_n5m58be9jnjj:
 
@@ -540,7 +540,7 @@ async block expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_p6nvfs7bfoxd`
-An :dt:`async block expression` is a :t:`block expression` that is specified
+An :t:`async block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``async`` and encapsulates behavior which is executed in
 an asynchronous manner.
 
@@ -553,7 +553,7 @@ async closure expression
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_SxydbQPPX9Jw`
-An :dt:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
 
 :dp:`fls_JZsDFMg85a3u`
 See :s:`ClosureExpression`.
@@ -564,7 +564,7 @@ async closure type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_IT28HJaF8rnm`
-An :dt:`async closure type` is the :t:`closure type` defined by an
+An :t:`async closure type` is the :t:`closure type` defined by an
 :t:`async closure expression`.
 
 
@@ -574,7 +574,7 @@ async control flow boundary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_EXoGOkCRsfKK`
-An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
+An :t:`async control flow boundary` is a :t:`control flow boundary` introduced
 by an :t:`async block expression`, :t:`async function`, or
 :t:`async closure expression`.
 
@@ -584,7 +584,7 @@ async function
 ^^^^^^^^^^^^^^
 
 :dp:`fls_gv9wl1cbaw1g`
-An :dt:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
+An :t:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
 :t:`async function` of the form
 
 .. _fls_yikjq8yn3nnh:
@@ -601,7 +601,7 @@ atomic type
 ^^^^^^^^^^^
 
 :dp:`fls_cycpv4fopgx2`
-An :dt:`atomic type` is a :t:`type` defined in :t:`module`
+An :t:`atomic type` is a :t:`type` defined in :t:`module`
 :std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
 communication between threads.
 
@@ -611,7 +611,7 @@ attribute
 ^^^^^^^^^
 
 :dp:`fls_o74rfpe6zo6a`
-An :dt:`attribute` is a general, free-form metadatum that is interpreted based on
+An :t:`attribute` is a general, free-form metadatum that is interpreted based on
 its :t:`name`, convention, language, and tool.
 
 .. _fls_SsMRqkHLDAgG:
@@ -620,7 +620,7 @@ attribute content
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_sn0GvVmM3o38`
-An :dt:`attribute content` is a :t:`construct` that provides the content of
+An :t:`attribute content` is a :t:`construct` that provides the content of
 an :t:`attribute`.
 
 :dp:`fls_YwyrWC8fcmRm`
@@ -632,7 +632,7 @@ attribute macro
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_mtqr4d817ikn`
-An :dt:`attribute macro` is a :t:`procedural macro` that consumes two streams
+An :t:`attribute macro` is a :t:`procedural macro` that consumes two streams
 of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
 new :t:`outer attribute` that can be attached to :t:`[item]s`.
 :t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
@@ -644,7 +644,7 @@ auto trait
 ^^^^^^^^^^
 
 :dp:`fls_d84nTOR4pZq5`
-An :dt:`auto trait` is a :t:`trait` that is implicitly and automatically
+An :t:`auto trait` is a :t:`trait` that is implicitly and automatically
 implemented by a :t:`type` when the types of its constituent :t:`[field]s`
 implement the :t:`trait`.
 
@@ -654,7 +654,7 @@ await expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_psbc3b8pec47`
-An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
+An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
 suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_29gkp9bpo1hi`
@@ -666,7 +666,7 @@ base initializer
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_dnuwn2tnvtgy`
-A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
 a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
@@ -679,7 +679,7 @@ basic assignment
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_byq9e2jf8r22`
-A :dt:`basic assignment` is an :t:`assignment expression` that is not a
+A :t:`basic assignment` is an :t:`assignment expression` that is not a
 :t:`destructuring assignment`.
 
 .. _fls_kahj3y4rvmvb:
@@ -688,7 +688,7 @@ binary crate
 ^^^^^^^^^^^^
 
 :dp:`fls_8gfe7hajxkd7`
-A :dt:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
+A :t:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
 
 .. _fls_or4o65fyt28y:
 
@@ -696,7 +696,7 @@ binary literal
 ^^^^^^^^^^^^^^
 
 :dp:`fls_hy54uj6u3nqw`
-A :dt:`binary literal` is an :t:`integer literal` in base 2.
+A :t:`binary literal` is an :t:`integer literal` in base 2.
 
 :dp:`fls_693r7vs2s7o7`
 See :s:`BinaryLiteral`.
@@ -707,7 +707,7 @@ binary operator
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_v0he0zp9ph7a`
-A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
+A :t:`binary operator` is an operator that combines a :t:`left operand` and a
 :t:`right operand`.
 
 .. _fls_jrelzibadg7b:
@@ -716,7 +716,7 @@ binding
 ^^^^^^^
 
 :dp:`fls_89qi3unjvwd7`
-A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
+A :t:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
 :t:`name`.
 
 :dp:`fls_lujdci4bphek`
@@ -728,7 +728,7 @@ binding argument
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_9lzcasl4tw7k`
-A :dt:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
+A :t:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
 of an :t:`associated trait type`.
 
 .. _fls_t2cit5QOte8U:
@@ -737,7 +737,7 @@ binding bound argument
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_D3i3n4RIReCA`
-A :dt:`binding bound argument` is a :t:`generic argument` that further imposes
+A :t:`binding bound argument` is a :t:`generic argument` that further imposes
 :t:`[bound]s` on an :t:`associated trait type`.
 
 .. _fls_bv1k866tai6j:
@@ -746,7 +746,7 @@ binding mode
 ^^^^^^^^^^^^
 
 :dp:`fls_e3uvvvvyzq8h`
-A :dt:`binding mode` describes whether a :t:`binding` captures a matched
+A :t:`binding mode` describes whether a :t:`binding` captures a matched
 :t:`value` by value, by reference, or by mutable reference.
 
 .. _fls_1nw19qc14zg6:
@@ -755,7 +755,7 @@ binding pattern
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_ancqgz8pybbe`
-A :dt:`binding pattern` is either an :t:`identifier pattern` or a
+A :t:`binding pattern` is either an :t:`identifier pattern` or a
 :t:`shorthand deconstructor`.
 
 .. _fls_5ep4xSGZwtoL:
@@ -764,7 +764,7 @@ binding scope
 ^^^^^^^^^^^^^
 
 :dp:`fls_6qPYH5NJ8usI`
-A :dt:`binding scope` is a :t:`scope` for :t:`[binding]s`.
+A :t:`binding scope` is a :t:`scope` for :t:`[binding]s`.
 
 .. _fls_clut5DWMQin8:
 
@@ -772,7 +772,7 @@ bit and assignment
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wIl0K7O6lTXJ`
-For :dt:`bit and assignment`, see :t:`bit and assignment expression`.
+For :t:`bit and assignment`, see :t:`bit and assignment expression`.
 
 .. _fls_y72vyr2tmdyb:
 
@@ -780,7 +780,7 @@ bit and assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dvqotpte0pc2`
-A :dt:`bit and assignment expression` is a :t:`compound assignment expression`
+A :t:`bit and assignment expression` is a :t:`compound assignment expression`
 that uses bit and arithmetic.
 
 :dp:`fls_ix9ecb5olcx`
@@ -792,7 +792,7 @@ bit and expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_c1g5gljnr9kz`
-A :dt:`bit and expression` is a :t:`bit expression` that uses bit and
+A :t:`bit and expression` is a :t:`bit expression` that uses bit and
 arithmetic.
 
 :dp:`fls_vbsvu0troqci`
@@ -804,7 +804,7 @@ bit expression
 ^^^^^^^^^^^^^^
 
 :dp:`fls_b3p5xqsfolqo`
-A :dt:`bit expression` is an :t:`expression` that computes a :t:`value` from
+A :t:`bit expression` is an :t:`expression` that computes a :t:`value` from
 two :t:`[operand]s` using bit arithmetic.
 
 :dp:`fls_iw1k2cfwfjou`
@@ -816,7 +816,7 @@ bit or assignment
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_21iFIDCu7Pk4`
-For :dt:`bit or assignment`, see :t:`bit or assignment expression`.
+For :t:`bit or assignment`, see :t:`bit or assignment expression`.
 
 .. _fls_ehorb0lul906:
 
@@ -824,7 +824,7 @@ bit or assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tu1owkfk0lu0`
-A :dt:`bit or assignment expression` is a :t:`compound assignment expression`
+A :t:`bit or assignment expression` is a :t:`compound assignment expression`
 that uses bit or arithmetic.
 
 :dp:`fls_utjcsfz8up88`
@@ -836,7 +836,7 @@ bit or expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_183aem60of9o`
-A :dt:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+A :t:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
 
 :dp:`fls_ctqsjp653tbt`
 See :s:`BitOrExpression`.
@@ -847,7 +847,7 @@ bit xor assignment
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_VJpCPVCuszs1`
-For :dt:`bit xor assignment`, see :t:`bit xor assignment expression`.
+For :t:`bit xor assignment`, see :t:`bit xor assignment expression`.
 
 .. _fls_u3fcq7jjyxux:
 
@@ -855,7 +855,7 @@ bit xor assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ma980ujltab2`
-A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
+A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
 that uses bit exclusive or arithmetic.
 
 :dp:`fls_lcrd0birf0un`
@@ -867,7 +867,7 @@ bit xor expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kccsvtzfhbp1`
-A :dt:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
+A :t:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
 arithmetic.
 
 :dp:`fls_6qulwlo43w6m`
@@ -879,7 +879,7 @@ block comment
 ^^^^^^^^^^^^^
 
 :dp:`fls_a0ejcfs7y5uy`
-A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
+A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 :dp:`fls_21r4tblk8awi`
 See :s:`BlockComment`.
@@ -890,7 +890,7 @@ block expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_gvjvzxi2xps4`
-A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
+A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
 and :t:`[statement]s`.
 
 :dp:`fls_h8j9t2xq2i1u`
@@ -911,7 +911,7 @@ boolean literal
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_5mrxdqh474vk`
-A :dt:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s`
+A :t:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s`
 of logic and Boolean algebra.
 
 :dp:`fls_i13qcchm9vkk`
@@ -923,7 +923,7 @@ borrow
 ^^^^^^
 
 :dp:`fls_2tpbdddvrl2f`
-A :dt:`borrow` is a :t:`reference` produced by :t:`borrowing`.
+A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
 .. _fls_u0hymkjwyur7:
 
@@ -931,7 +931,7 @@ borrow expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2f55piwg78ru`
-A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
+A :t:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
 its :t:`operand` and creates a :t:`reference` to the memory location of its
 :t:`operand`.
 
@@ -944,7 +944,7 @@ borrowed
 ^^^^^^^^
 
 :dp:`fls_3gnps2s95ck4`
-A :t:`value` is :dt:`borrowed` when it is associated with an active
+A :t:`value` is :t:`borrowed` when it is associated with an active
 :t:`borrow`.
 
 .. _fls_95c5cbc2jvpc:
@@ -953,7 +953,7 @@ borrowing
 ^^^^^^^^^
 
 :dp:`fls_2epblwd2slp8`
-:dt:`Borrowing` is the process of temporarily associating a :t:`reference` with
+:t:`Borrowing` is the process of temporarily associating a :t:`reference` with
 a :t:`value` without transferring :t:`ownership` permanently.
 
 .. _fls_ehfvcdpo3l4a:
@@ -962,7 +962,7 @@ bound
 ^^^^^
 
 :dp:`fls_q6mxhn1fxjs6`
-A :dt:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
+A :t:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
 set of possible :t:`[generic substitution]s`.
 
 :dp:`fls_rxabhhigp5uy`
@@ -974,7 +974,7 @@ bound pattern
 ^^^^^^^^^^^^^
 
 :dp:`fls_uusfbosjwyd1`
-A :dt:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
+A :t:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
 :t:`identifier pattern`.
 
 :dp:`fls_oszhit2crxzc`
@@ -986,7 +986,7 @@ break expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_8ys8hlqgizoa`
-A :dt:`break expression` is an :t:`expression` that terminates a
+A :t:`break expression` is an :t:`expression` that terminates a
 :t:`loop expression` or a :t:`named block expression`.
 
 :dp:`fls_fd1xpst5fki2`
@@ -998,7 +998,7 @@ break type
 ^^^^^^^^^^
 
 :dp:`fls_jvm1vsqmslxn`
-:dt:`Break type` is the :t:`type` of the :t:`operand` of a
+:t:`Break type` is the :t:`type` of the :t:`operand` of a
 :t:`break expression`.
 
 .. _fls_owtptuvleeb:
@@ -1007,7 +1007,7 @@ break value
 ^^^^^^^^^^^
 
 :dp:`fls_kpka4jf2qr5l`
-:dt:`Break value` is the :t:`value` of the :t:`operand` of a
+:t:`Break value` is the :t:`value` of the :t:`operand` of a
 :t:`break expression`.
 
 .. _fls_82ev7wknxqmk:
@@ -1016,7 +1016,7 @@ built-in attribute
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_a40rclur4orm`
-A :dt:`built-in attribute` is a language-defined :t:`attribute`.
+A :t:`built-in attribute` is a language-defined :t:`attribute`.
 
 :dp:`fls_ooq5g8zffyfb`
 See :s:`InnerBuiltinAttribute`, :s:`OuterBuiltinAttribute`.
@@ -1027,7 +1027,7 @@ built-in trait
 ^^^^^^^^^^^^^^
 
 :dp:`fls_IgzD9l8o6R50`
-A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
+A :t:`built-in trait` is a language-defined :t:`trait` with special meaning to
 the compiler.
 
 .. _fls_e8rokiw23i9t:
@@ -1036,7 +1036,7 @@ byte literal
 ^^^^^^^^^^^^
 
 :dp:`fls_l67oo0u12zjb`
-A :dt:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
+A :t:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
 
 :dp:`fls_iu9twvm648dx`
 See :s:`ByteLiteral`.
@@ -1047,7 +1047,7 @@ byte string literal
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_my4r1l3ilyt2`
-A :dt:`byte string literal` is a :t:`literal` that consists of multiple
+A :t:`byte string literal` is a :t:`literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
 
 :dp:`fls_4yhag19z61bl`
@@ -1059,7 +1059,7 @@ C
 ^
 
 :dp:`fls_d4q2ro4nsnop`
-In this specification, :dt:`C` refers to the C programming language used for
+In this specification, :t:`C` refers to the C programming language used for
 foreign function interfaces.
 
 .. _fls_wenn1wdsicfz:
@@ -1068,7 +1068,7 @@ C representation
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_g9pdb06m5fto`
-:dt:`C representation` lays out a :t:`type` such that the :t:`type` is
+:t:`C representation` lays out a :t:`type` such that the :t:`type` is
 interoperable with the :t:`C` language.
 
 .. _fls_fls_J0xUy4Mcxoe6:
@@ -1077,7 +1077,7 @@ C signed int type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8QIcvapJehqY`
-:dt:`C signed int type` is the `signed int` :t:`type` of the :t:`C` language.
+:t:`C signed int type` is the `signed int` :t:`type` of the :t:`C` language.
 
 .. _fls_roz4WXH5JZFj:
 
@@ -1085,7 +1085,7 @@ c string literal
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_g3NHtaOhTB7g`
-A :dt:`c string literal` is a :t:`literal` that consists of multiple characters
+A :t:`c string literal` is a :t:`literal` that consists of multiple characters
 with an implicit 0x00 byte appended to it.
 
 :dp:`fls_FZ6QSpjmVme5`
@@ -1097,7 +1097,7 @@ Call conformance
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_Jr1gUX7Ju4Oh`
-A :dt:`call conformance` is the requirement that a :t:`call expression` uses
+A :t:`call conformance` is the requirement that a :t:`call expression` uses
 the :t:`ABI` of the invoked :t:`function`.
 
 .. _fls_xeo59ol6uh5i:
@@ -1106,7 +1106,7 @@ call expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_a9ap0tyk2eou`
-A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
+A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_aibti9uqrmmd`
@@ -1118,7 +1118,7 @@ call operand
 ^^^^^^^^^^^^
 
 :dp:`fls_cqnko94y4xbs`
-A :dt:`call operand` is the :t:`function` being invoked or the
+A :t:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
 
@@ -1131,7 +1131,7 @@ call resolution
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_fS1ZjGGypvbn`
-:dt:`call resolution` is a form of :t:`resolution` that applies to a
+:t:`call resolution` is a form of :t:`resolution` that applies to a
 :t:`call expression`.
 
 
@@ -1142,7 +1142,7 @@ call site hygiene
 
 :dp:`fls_YTQmXotFOXWU`
 * :dp:`fls_puqhytfzfsg6`
-  :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
+  :t:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
   of the :s:`MacroRulesDeclaration`, can reference the environment of the
   :s:`MacroInvocation`, and are considered :t:`unhygienic`.
@@ -1153,7 +1153,7 @@ callee type
 ^^^^^^^^^^^
 
 :dp:`fls_o21myf6wnnn6`
-A :dt:`callee type` is either a :t:`function item type`, a
+A :t:`callee type` is either a :t:`function item type`, a
 :t:`function pointer type`, a :t:`tuple enum variant`, a
 :t:`tuple struct type`, or a :t:`type` that implements any of the
 :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
@@ -1165,7 +1165,7 @@ capture mode
 ^^^^^^^^^^^^
 
 :dp:`fls_beer0d7wva1d`
-:dt:`capture mode` is the mechanism by which a :t:`capture target` is captured.
+:t:`capture mode` is the mechanism by which a :t:`capture target` is captured.
 
 .. _fls_c6qwfwsyizya:
 
@@ -1173,7 +1173,7 @@ capture target
 ^^^^^^^^^^^^^^
 
 :dp:`fls_xmhcp4x8wblz`
-A :dt:`capture target` is either a :t:`variable` or a :t:`field` of a
+A :t:`capture target` is either a :t:`variable` or a :t:`field` of a
 :t:`variable`.
 
 .. _fls_kvu447p6j61k:
@@ -1182,7 +1182,7 @@ capturing
 ^^^^^^^^^
 
 :dp:`fls_4achbk2ewyyb`
-:dt:`capturing` is the process of saving the :t:`[capture target]s` of a
+:t:`capturing` is the process of saving the :t:`[capture target]s` of a
 :t:`[capturing expression]'s` :t:`capturing environment`.
 
 .. _fls_yfk2xfifltxy:
@@ -1191,7 +1191,7 @@ capturing environment
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7br4azaay3wu`
-The :dt:`capturing environment` of a :t:`capturing expression` consists of the
+The :t:`capturing environment` of a :t:`capturing expression` consists of the
 :t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
 .. _fls_cl3lpsfgt5eb:
@@ -1200,7 +1200,7 @@ capturing expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_awtny282gtud`
-A :dt:`capturing expression` is either an :t:`async block expression` or a
+A :t:`capturing expression` is either an :t:`async block expression` or a
 :t:`closure expression`.
 
 .. _fls_pcaygpx7db24:
@@ -1209,7 +1209,7 @@ cast
 ^^^^
 
 :dp:`fls_e5hvszhcrtmj`
-A :dt:`cast` is the process of changing the :t:`type` of an :t:`expression`.
+A :t:`cast` is the process of changing the :t:`type` of an :t:`expression`.
 
 .. _fls_xl2zlpw070dy:
 
@@ -1225,7 +1225,7 @@ character literal
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8oah1cf8p0lb`
-A :dt:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
+A :t:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
 character.
 
 :dp:`fls_sup0h5mvibzs`
@@ -1237,7 +1237,7 @@ closure body
 ^^^^^^^^^^^^
 
 :dp:`fls_vgnycw6dykwo`
-A :dt:`closure body` is a :t:`construct` that represents the executable portion
+A :t:`closure body` is a :t:`construct` that represents the executable portion
 of a :t:`closure expression`.
 
 :dp:`fls_zefhg4auut8d`
@@ -1249,7 +1249,7 @@ closure expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_x87rhn9ikz00`
-A :dt:`closure expression` is an :t:`expression` that defines a
+A :t:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
 :dp:`fls_psd18dkzplf6`
@@ -1261,7 +1261,7 @@ closure parameter
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_yQBZHBLhPswn`
-A :dt:`closure parameter` is a :t:`construct` that yields a set of
+A :t:`closure parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
 
@@ -1274,7 +1274,7 @@ closure type
 ^^^^^^^^^^^^
 
 :dp:`fls_wp4kues3nbvn`
-A :dt:`closure type` is a unique anonymous :t:`function type` that encapsulates
+A :t:`closure type` is a unique anonymous :t:`function type` that encapsulates
 all :t:`[capture target]s` of a :t:`closure expression`.
 
 .. _fls_aqovhozevngd:
@@ -1283,7 +1283,7 @@ code point
 ^^^^^^^^^^
 
 :dp:`fls_6xw8jtiomc2n`
-In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
+In :t:`Unicode`, a :t:`code point` is a numeric :t:`value` that maps to a
 character.
 
 .. _fls_2moavfyeit0m:
@@ -1292,7 +1292,7 @@ comment
 ^^^^^^^
 
 :dp:`fls_3xhoz9f7xy1t`
-A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
+A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
 :dp:`fls_pi32rhfqghma`
@@ -1304,7 +1304,7 @@ comparison expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_394p7gdruvk7`
-A :dt:`comparison expression` is an :t:`expression` that compares the
+A :t:`comparison expression` is an :t:`expression` that compares the
 :t:`[value]s` of two :t:`[operand]s`.
 
 :dp:`fls_1jk0s7389mt0`
@@ -1316,7 +1316,7 @@ compilation root
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_stwsfyvov2fx`
-A :dt:`compilation root` is an input to a compilation performed by a tool. A
+A :t:`compilation root` is an input to a compilation performed by a tool. A
 :t:`crate root module` is a :t:`compilation root`.
 
 .. _fls_pTMrfPXETibe:
@@ -1325,7 +1325,7 @@ compound assignment
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lGV9QvCmYGcH`
-For :dt:`compound assignment`, see :t:`compound assignment expression`.
+For :t:`compound assignment`, see :t:`compound assignment expression`.
 
 .. _fls_iktiir89xbo2:
 
@@ -1333,7 +1333,7 @@ compound assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mkxpk2jhe5s0`
-A :dt:`compound assignment expression` is an expression that first computes
+A :t:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
@@ -1346,7 +1346,7 @@ concrete type
 ^^^^^^^^^^^^^
 
 :dp:`fls_l0lr3ybgccjc`
-A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
+A :t:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
 :t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
 
 .. _fls_lmacvq89lj2j:
@@ -1355,7 +1355,7 @@ conditional compilation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xymops69eer3`
-:dt:`conditional compilation` is the process of compiling
+:t:`conditional compilation` is the process of compiling
 :t:`conditionally-compiled source code`.
 
 .. _fls_bqq013n2cy4t:
@@ -1364,7 +1364,7 @@ conditionally-compiled source code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hs4lnrdxpj2g`
-:dt:`conditionally-compiled source code` is source code that may or may
+:t:`conditionally-compiled source code` is source code that may or may
 not be considered a part of a Rust program depending on
 :t:`[configuration predicate]s`.
 
@@ -1374,7 +1374,7 @@ configuration predicate
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_TyKIUQMxO9Si`
-A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
+A :t:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 :dp:`fls_99ioki0M64fD`
@@ -1386,7 +1386,7 @@ const block expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_5ApoJzRSTZGH`
-A :dt:`const block expression` is a :t:`block expression` that is specified
+A :t:`const block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
 statically.
 
@@ -1396,7 +1396,7 @@ constant
 ^^^^^^^^
 
 :dp:`fls_p8rjw2qok85b`
-A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
+A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
 the :t:`value`.
 
 :dp:`fls_hlouedpdg1zd`
@@ -1408,7 +1408,7 @@ constant argument
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_sz10vgh260xo`
-A :dt:`constant argument` is a :t:`generic argument` that supplies the
+A :t:`constant argument` is a :t:`generic argument` that supplies the
 :t:`value` of a :t:`constant parameter`.
 
 :dp:`fls_dz9x6gf3yzc6`
@@ -1420,7 +1420,7 @@ constant context
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_9j6mc4i1t73z`
-A :dt:`constant context` is a :t:`construct` that requires a
+A :t:`constant context` is a :t:`construct` that requires a
 :t:`constant expression`. The following :t:`[construct]s` are
 :t:`[constant context]s`:
 
@@ -1430,7 +1430,7 @@ constant expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rmn8w4rh3juf`
-A :dt:`constant expression` is an :t:`expression` that can be evaluated
+A :t:`constant expression` is an :t:`expression` that can be evaluated
 statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
 long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
 involve :t:`[type]s` that require :t:`destruction`:
@@ -1441,7 +1441,7 @@ constant function
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_4glkwg11p5ml`
-A :dt:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
+A :t:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
 
 .. _fls_mf022jo05ziu:
 
@@ -1449,7 +1449,7 @@ constant initializer
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2ge48v1kmw8`
-A :dt:`constant initializer` is a :t:`construct` that provides the :t:`value`
+A :t:`constant initializer` is a :t:`construct` that provides the :t:`value`
 of its related :t:`constant`.
 
 :dp:`fls_h86eg26z19r2`
@@ -1461,7 +1461,7 @@ constant parameter
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_z7e491m3dx4u`
-A :dt:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
+A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
 
 :dp:`fls_9093wziwxk1g`
 See :s:`ConstantParameter`.
@@ -1472,7 +1472,7 @@ constant parameter initializer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_OXD2YaOkfjcI`
-A :dt:`constant parameter initializer` is a :t:`construct` that provides the
+A :t:`constant parameter initializer` is a :t:`construct` that provides the
 default :t:`value` of its related :t:`constant parameter`.
 
 :dp:`fls_CMsyUCxGm8Xs`
@@ -1484,7 +1484,7 @@ constant promotion
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ku2md8lnei12`
-:dt:`constant promotion` is the process of converting a :t:`value expression`
+:t:`constant promotion` is the process of converting a :t:`value expression`
 into a :t:`constant`.
 
 .. _fls_x4niicvxxv9k:
@@ -1493,7 +1493,7 @@ constrain
 ^^^^^^^^^
 
 :dp:`fls_fna0ch8ucyhv`
-A :t:`generic parameter` is said to :dt:`constrain` an :t:`implementation` if the
+A :t:`generic parameter` is said to :t:`constrain` an :t:`implementation` if the
 :t:`generic parameter` appears at least once in one of the following:
 
 .. _fls_4305i29nt5d6:
@@ -1502,7 +1502,7 @@ construct
 ^^^^^^^^^
 
 :dp:`fls_10tvzeo8xex0`
-A :dt:`construct` is a syntactic element of a Rust program defined by this
+A :t:`construct` is a syntactic element of a Rust program defined by this
 specification.
 
 .. _fls_fBGjoTVhYvUe:
@@ -1511,7 +1511,7 @@ constructee
 ^^^^^^^^^^^
 
 :dp:`fls_Twbu94uGW4Cb`
-A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
+A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 .. _fls_39s6od9hj4g6:
@@ -1520,7 +1520,7 @@ container operand
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_stjmobac6wyd`
-A :dt:`container operand` is an :t:`operand` that indicates the :t:`value`
+A :t:`container operand` is an :t:`operand` that indicates the :t:`value`
 whose :t:`field` is selected in a :t:`field access expression`.
 
 :dp:`fls_hgm1ssicc8j4`
@@ -1532,7 +1532,7 @@ continue expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_waxam3m9plfj`
-A :dt:`continue expression` is an :t:`expression` that restarts evaluation of
+A :t:`continue expression` is an :t:`expression` that restarts evaluation of
 an enclosing :t:`loop expression`.
 
 :dp:`fls_smwcz2xw9o1f`
@@ -1544,7 +1544,7 @@ control flow boundary
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_SmipZJDp02ij`
-A :dt:`control flow boundary` is a :t:`construct` that provides the target of
+A :t:`control flow boundary` is a :t:`construct` that provides the target of
 a :t:`return expression` and bounds its control flow transfer.
 
 .. _fls_lnwxm6ffy15w:
@@ -1553,7 +1553,7 @@ copy type
 ^^^^^^^^^
 
 :dp:`fls_j7r33ecacyh`
-A :dt:`copy type` is a :t:`type` that implements the
+A :t:`copy type` is a :t:`type` that implements the
 :std:`core::marker::Copy` :t:`trait`.
 
 .. _fls_kf8yukhxudw8:
@@ -1562,7 +1562,7 @@ crate
 ^^^^^
 
 :dp:`fls_qplsjzb2uyim`
-A :dt:`crate` is a unit of compilation and linking that contains a tree of
+A :t:`crate` is a unit of compilation and linking that contains a tree of
 nested :t:`[module]s`.
 
 .. _fls_xwbmmcbbowtu:
@@ -1571,7 +1571,7 @@ crate import
 ^^^^^^^^^^^^
 
 :dp:`fls_y91ja1a87g7a`
-A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
+A :t:`crate import` specifies a required dependency on an external :t:`crate`.
 
 :dp:`fls_nmdxagg39hz6`
 See :s:`ExternalCrateImport`.
@@ -1582,7 +1582,7 @@ crate indication
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_XUSFUErxQRRA`
-A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+A :t:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
 
 :dp:`fls_s1eFklbzjLxQ`
 See :s:`CrateIndication`.
@@ -1593,7 +1593,7 @@ crate public modifier
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dj7fmrqhbhsv`
-A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
+A :t:`crate public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the current :t:`crate` only.
 
 :dp:`fls_wjfupeyeczp0`
@@ -1605,7 +1605,7 @@ crate root
 ^^^^^^^^^^
 
 :dp:`fls_yxcgiuybqqy8`
-A :dt:`crate root` is the :t:`crate root module` of a :t:`crate`.
+A :t:`crate root` is the :t:`crate root module` of a :t:`crate`.
 
 .. _fls_iucxone5ta26:
 
@@ -1613,7 +1613,7 @@ crate root module
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_oo4nmqv78wno`
-A :dt:`crate root module` is the root of the nested :t:`module` tree of a
+A :t:`crate root module` is the root of the nested :t:`module` tree of a
 :t:`crate`.
 
 .. _fls_lVpE4uFDsXH4:
@@ -1631,7 +1631,7 @@ dangling
 ^^^^^^^^
 
 :dp:`fls_lq2urzh7bzxx`
-A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
+A :t:`value` of an :t:`indirection type` is :t:`dangling` if it is either
 :c:`null` or not all of the bytes at the referred memory location are part of
 the same allocation.
 
@@ -1641,7 +1641,7 @@ data race
 ^^^^^^^^^
 
 :dp:`fls_v2s1b57e3r7n`
-A :dt:`data race` is a scenario where two or more threads access a shared memory
+A :t:`data race` is a scenario where two or more threads access a shared memory
 location concurrently without any synchronization, where one of the accesses is
 a modification.
 
@@ -1651,7 +1651,7 @@ decimal literal
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_lwv823lih69m`
-A :dt:`decimal literal` is an :t:`integer literal` in base 10.
+A :t:`decimal literal` is an :t:`integer literal` in base 10.
 
 :dp:`fls_pxiba4se64y4`
 See :s:`DecimalLiteral`.
@@ -1662,7 +1662,7 @@ declaration
 ^^^^^^^^^^^
 
 :dp:`fls_kct7ducpli6k`
-A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
+A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
 :t:`entity`.
 
 .. _fls_5944xn0lz8e:
@@ -1671,7 +1671,7 @@ declarative macro
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pe12lfffaoqt`
-A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
+A :t:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
 of syntactic transformation :t:`[macro rule]s`.
 
 :dp:`fls_1te2kfi9lt6c`
@@ -1683,7 +1683,7 @@ deconstructee
 ^^^^^^^^^^^^^
 
 :dp:`fls_QsvWOdoFWtUO`
-A :dt:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is
+A :t:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is
 being deconstructed by a :t:`struct pattern`.
 
 :dp:`fls_TkFjmV7AR7lp`
@@ -1695,7 +1695,7 @@ default representation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_e85fsp10acnh`
-:dt:`Default representation` makes no guarantees about the :t:`layout`.
+:t:`Default representation` makes no guarantees about the :t:`layout`.
 
 .. _fls_FrfnICpg81sr:
 
@@ -1704,7 +1704,7 @@ definition site hygiene
 
 :dp:`fls_2Y1Dpw5ZEqT3`
 * :dp:`fls_dz2mvodl818d`
-  :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+  :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
   environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
@@ -1715,7 +1715,7 @@ dereference
 ^^^^^^^^^^^
 
 :dp:`fls_hk97pb1qt04y`
-A :dt:`dereference` is the memory location produced by evaluating a
+A :t:`dereference` is the memory location produced by evaluating a
 :t:`dereference expression`.
 
 .. _fls_o588wfq878rm:
@@ -1724,7 +1724,7 @@ dereference expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_3cuyhbh2llei`
-A :dt:`dereference expression` is an :t:`expression` that obtains the
+A :t:`dereference expression` is an :t:`expression` that obtains the
 pointed-to memory location of its :t:`operand`.
 
 :dp:`fls_hx0jwahdb1nf`
@@ -1736,7 +1736,7 @@ dereference type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_HfuUQ7IaoI5j`
-A :dt:`dereference type` is either a :t:`reference type` or a :t:`type` that
+A :t:`dereference type` is either a :t:`reference type` or a :t:`type` that
 implements the :std:`core::ops::Deref` :t:`trait`.
 
 .. _fls_T380NdEsFxIp:
@@ -1745,7 +1745,7 @@ dereference type chain
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kIzoAEf069HE`
-A :dt:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
+A :t:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
 :t:`dereference type chain` starts with an initial :t:`dereference type`. From
 then on, the :t:`dereference type chain` continues as follows:
 
@@ -1755,7 +1755,7 @@ derive macro
 ^^^^^^^^^^^^
 
 :dp:`fls_jrrjhl9hocrm`
-A :dt:`derive macro` is a :t:`procedural macro` that consumes a stream of
+A :t:`derive macro` is a :t:`procedural macro` that consumes a stream of
 :t:`[token]s` and produces a stream of :t:`[token]s`. :t:`[Derive macro]s` are
 used to construct new syntax for :t:`[abstract data type]s`.
 
@@ -1765,7 +1765,7 @@ destruction
 ^^^^^^^^^^^
 
 :dp:`fls_58i2nfhxze3j`
-:dt:`Destruction` is the process of recovering resources associated with a
+:t:`Destruction` is the process of recovering resources associated with a
 :t:`value` as it goes out of scope.
 
 .. _fls_kwxpy451gtc:
@@ -1774,7 +1774,7 @@ destructor
 ^^^^^^^^^^
 
 :dp:`fls_79pp7o1xooja`
-A :dt:`destructor` is a :t:`function` that is invoked immediately before the
+A :t:`destructor` is a :t:`function` that is invoked immediately before the
 :t:`destruction` of a :t:`value` of a :t:`drop type`.
 
 .. _fls_2fuu3zr9rn2q:
@@ -1783,7 +1783,7 @@ destructuring assignment
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7jienn9uzn5k`
-A :dt:`destructuring assignment` is an :t:`assignment expression` where
+A :t:`destructuring assignment` is an :t:`assignment expression` where
 the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
 expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
 
@@ -1793,7 +1793,7 @@ direction modifier
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8DY7xPVX4nXx`
-A :dt:`direction modifier` is a :t:`construct` that indicates whether a
+A :t:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
 :t:`register` to an :t:`expression`, or both.
 
@@ -1806,7 +1806,7 @@ discriminant
 ^^^^^^^^^^^^
 
 :dp:`fls_dfegy9y6awx`
-A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
 
 .. _fls_xayj37ocbqjn:
 
@@ -1814,7 +1814,7 @@ discriminant initializer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_o7hihgcqmnyc`
-A :dt:`discriminant initializer` provides the :t:`value` of a :t:`discriminant`.
+A :t:`discriminant initializer` provides the :t:`value` of a :t:`discriminant`.
 
 :dp:`fls_g5obc23vigng`
 See :s:`DiscriminantInitializer`.
@@ -1825,7 +1825,7 @@ discriminant type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_t4yeovFm83Wo`
-A :dt:`discriminant type` is the :t:`type` of a :t:`discriminant`.
+A :t:`discriminant type` is the :t:`type` of a :t:`discriminant`.
 
 .. _fls_gDFsAj1Bvx7A:
 
@@ -1833,7 +1833,7 @@ diverging expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_fLlNzmB34cj9`
-A :dt:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
+A :t:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
 program flow to diverge from the normal :t:`evaluation` order.
 
 .. _fls_9DuaIn6cRbXf:
@@ -1842,7 +1842,7 @@ diverging type variable
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_sxyL7yOp3H9s`
-A :dt:`diverging type variable` is a :t:`type variable` that can refer to any
+A :t:`diverging type variable` is a :t:`type variable` that can refer to any
 :t:`type` and originates from a :t:`diverging expression`.
 
 .. _fls_0lpT9Ncj7S9X:
@@ -1851,7 +1851,7 @@ division assignment
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kvQskrzE1y97`
-For :dt:`division assignment`, see :t:`division assignment expression`.
+For :t:`division assignment`, see :t:`division assignment expression`.
 
 .. _fls_ccv27fji08ou:
 
@@ -1859,7 +1859,7 @@ division assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lzuz5fkveikk`
-A :dt:`division assignment expression` is a :t:`compound assignment expression`
+A :t:`division assignment expression` is a :t:`compound assignment expression`
 that uses division.
 
 :dp:`fls_cdxt76aqwtkq`
@@ -1871,7 +1871,7 @@ division expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_du05yp205f4y`
-A :dt:`division expression` is an :t:`arithmetic expression` that uses division.
+A :t:`division expression` is an :t:`arithmetic expression` that uses division.
 
 :dp:`fls_d3vwk4autyd`
 See :s:`DivisionExpression`.
@@ -1882,7 +1882,7 @@ doc comment
 ^^^^^^^^^^^
 
 :dp:`fls_wkc1w2xk7ebh`
-A :dt:`doc comment` is a :t:`comment` class that includes
+A :t:`doc comment` is a :t:`comment` class that includes
 :t:`[inner block doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`,
 and :t:`[outer line doc]s`.
 
@@ -1892,7 +1892,7 @@ drop construct
 ^^^^^^^^^^^^^^
 
 :dp:`fls_odg2asgj28m`
-A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
+A :t:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
 following :t:`[construct]s` are :t:`[drop construct]s`:
 
 .. _fls_j12e358828h:
@@ -1901,7 +1901,7 @@ drop order
 ^^^^^^^^^^
 
 :dp:`fls_qddkiabu6swt`
-:dt:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
+:t:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
 :t:`drop scope` is left.
 
 .. _fls_foszri7hdym0:
@@ -1910,7 +1910,7 @@ drop scope
 ^^^^^^^^^^
 
 :dp:`fls_6bu8x0g9q0er`
-A :dt:`drop scope` is a region of program text that governs the :t:`dropping` of
+A :t:`drop scope` is a region of program text that governs the :t:`dropping` of
 :t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
 associated with that :t:`drop scope` are :t:`dropped` based on a
 :t:`drop order`.
@@ -1921,7 +1921,7 @@ drop scope extension
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pmdh8kkrwkd0`
-:dt:`Drop scope extension` is the process of extending a :t:`drop scope`
+:t:`Drop scope extension` is the process of extending a :t:`drop scope`
 associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
 :t:`temporary`.
 
@@ -1931,7 +1931,7 @@ drop type
 ^^^^^^^^^
 
 :dp:`fls_ot3e31kwixil`
-A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
+A :t:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
 :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 .. _fls_68cl4paduzx2:
@@ -1940,7 +1940,7 @@ dropping
 ^^^^^^^^
 
 :dp:`fls_k4mguykh8ey`
-:dt:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
+:t:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
 related :t:`type`.
 
 .. _fls_6uovyjjzh6km:
@@ -1949,7 +1949,7 @@ dynamically sized type
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eeyxu730z2pw`
-A :dt:`dynamically sized type` is a :t:`type` that does not implement the
+A :t:`dynamically sized type` is a :t:`type` that does not implement the
 :std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_2sja3okj27ne:
@@ -1958,7 +1958,7 @@ elaboration
 ^^^^^^^^^^^
 
 :dp:`fls_xoahzmwu1std`
-:dt:`Elaboration` is the process by which a :t:`declaration` achieves its
+:t:`Elaboration` is the process by which a :t:`declaration` achieves its
 runtime effects.
 
 .. _fls_bxm4njfo2h58:
@@ -1967,7 +1967,7 @@ element type
 ^^^^^^^^^^^^
 
 :dp:`fls_3bndijf8g9os`
-An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
+An :t:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
 
 :dp:`fls_pvyl887dn016`
@@ -1979,7 +1979,7 @@ elided
 ^^^^^^
 
 :dp:`fls_lo3c3n9wy6qz`
-For :dt:`elided`, see :t:`elided lifetime`.
+For :t:`elided`, see :t:`elided lifetime`.
 
 .. _fls_l2181y5566ck:
 
@@ -1987,7 +1987,7 @@ elided lifetime
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_9q28407ev0a6`
-An :dt:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`
+An :t:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`
 that has been explicitly omitted from a :t:`function signature` or an
 :t:`implementation`.
 
@@ -1997,7 +1997,7 @@ else expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_inp7luoqkjc5`
-An :dt:`else expression` is an :t:`expression` that represents either a
+An :t:`else expression` is an :t:`expression` that represents either a
 :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
 
 :dp:`fls_2jniy6bkq1hn`
@@ -2009,7 +2009,7 @@ empty statement
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_irw5gwuvj3nn`
-An :dt:`empty statement` is a :t:`statement` expressed as character 0x3B
+An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
 (semicolon).
 
 .. _fls_1qu1t74ga8aa:
@@ -2018,7 +2018,7 @@ entity
 ^^^^^^
 
 :dp:`fls_mdbck557k8sy`
-An :dt:`entity` is a :t:`construct` that can be referred to within program
+An :t:`entity` is a :t:`construct` that can be referred to within program
 text, usually via a :t:`field access expression` or a :t:`path`.
 
 .. _fls_xnhj9fqlfs2p:
@@ -2027,7 +2027,7 @@ enum
 ^^^^
 
 :dp:`fls_9o0ig19xh2f5`
-An :dt:`enum` is an :t:`item` that declares an :t:`enum type`.
+An :t:`enum` is an :t:`item` that declares an :t:`enum type`.
 
 .. _fls_zrRydWZgm03k:
 
@@ -2035,7 +2035,7 @@ enum field
 ^^^^^^^^^^
 
 :dp:`fls_J8udq05QGiEj`
-An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
+An :t:`enum field` is a :t:`field` of an :t:`enum variant`.
 
 .. _fls_grlluqa4ucp3:
 
@@ -2043,7 +2043,7 @@ enum type
 ^^^^^^^^^
 
 :dp:`fls_idwrgo87ub3i`
-An :dt:`enum type` is an :t:`abstract data type` that contains
+An :t:`enum type` is an :t:`abstract data type` that contains
 :t:`[enum variant]s`.
 
 :dp:`fls_o6ih6n1z1566`
@@ -2055,7 +2055,7 @@ enum value
 ^^^^^^^^^^
 
 :dp:`fls_QdBTdVLB2xHk`
-An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
+An :t:`enum value` is a :t:`value` of an :t:`enum type`.
 
 .. _fls_klwlx5jixwud:
 
@@ -2063,7 +2063,7 @@ enum variant
 ^^^^^^^^^^^^
 
 :dp:`fls_9jq4keg9y94u`
-An :dt:`enum variant` is a :t:`construct` that declares one of the
+An :t:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
 
 :dp:`fls_tj2s55onen6b`
@@ -2075,7 +2075,7 @@ enum variant value
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_VQRqNPFFWmDp`
-An :dt:`enum variant value` is the :t:`enum value` of the corresponding
+An :t:`enum variant value` is the :t:`enum value` of the corresponding
 :t:`enum` of the :t:`enum variant`.
 
 .. _fls_alifv570nx7q:
@@ -2084,7 +2084,7 @@ equals expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mn1g2hijtd6f`
-An :dt:`equals expression` is a :t:`comparison expression` that tests equality.
+An :t:`equals expression` is a :t:`comparison expression` that tests equality.
 
 :dp:`fls_j32l4do0xw4d`
 See :s:`EqualsExpression`.
@@ -2095,7 +2095,7 @@ error propagation expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_5kebgodxtqqt`
-An :dt:`error propagation expression` is an :t:`expression` that either evaluates
+An :t:`error propagation expression` is an :t:`expression` that either evaluates
 to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
 flow boundary.
 
@@ -2108,7 +2108,7 @@ escaped character
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7yvnbakmo7y5`
-An :dt:`escaped character` is the textual representation for a character with
+An :t:`escaped character` is the textual representation for a character with
 special meaning. An escaped character consists of character 0x5C (reverse
 solidus), followed by the single character encoding of the special meaning
 character. For example, ``\t`` is the escaped character for 0x09 (horizontal
@@ -2128,7 +2128,7 @@ evaluation
 ^^^^^^^^^^
 
 :dp:`fls_8zmtio6razl1`
-:dt:`Evaluation` is the process by which an :t:`expression` achieves its
+:t:`Evaluation` is the process by which an :t:`expression` achieves its
 runtime effects.
 
 .. _fls_EJSzYb4IxvtR:
@@ -2137,7 +2137,7 @@ exclusive range pattern
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_qxsV6ZxFfDHm`
-An :dt:`exclusive range pattern` is a :t:`range pattern` with both a
+An :t:`exclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_kHIWYUPhxikM`
@@ -2157,7 +2157,7 @@ execution
 ^^^^^^^^^
 
 :dp:`fls_e5jbii84hd5g`
-:dt:`Execution` is the process by which a :t:`statement` achieves its runtime
+:t:`Execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
 .. _fls_B1qkkSvc69J4:
@@ -2166,7 +2166,7 @@ explicit register argument
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2o6S1WGDrMh3`
-An :dt:`explicit register argument` is a :t:`register argument` that uses an
+An :t:`explicit register argument` is a :t:`register argument` that uses an
 :t:`explicit register name`.
 
 .. _fls_uc7PnSbVVd9X:
@@ -2175,7 +2175,7 @@ explicit register name
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_UcMk6RRLrkB5`
-An :dt:`explicit register name` is a target-specific string that identifies
+An :t:`explicit register name` is a target-specific string that identifies
 a :t:`register`.
 
 :dp:`fls_Z3WDh75VpSUU`
@@ -2187,7 +2187,7 @@ explicitly declared entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_shpNJ0JCSCwa`
-An :dt:`explicitly declared entity` is an :t:`entity` that has a
+An :t:`explicitly declared entity` is an :t:`entity` that has a
 :t:`declaration`. The following :t:`entities <entity>` are
 :t:`explicitly declared entities <explicitly declared entity>`:
 
@@ -2197,7 +2197,7 @@ exported function
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QotMF1iaEYod`
-An :dt:`exported function` is a :t:`function` subject to :t:`attribute`
+An :t:`exported function` is a :t:`function` subject to :t:`attribute`
 :c:`no_mangle`.
 
 .. _fls_zkq5ZkJwsyoD:
@@ -2206,7 +2206,7 @@ exported static
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_aolCSvb349ZU`
-An :dt:`exported static` is a :t:`static` subject to :t:`attribute`
+An :t:`exported static` is a :t:`static` subject to :t:`attribute`
 :c:`no_mangle`.
 
 .. _fls_q8ofwncggngd:
@@ -2215,7 +2215,7 @@ expression
 ^^^^^^^^^^
 
 :dp:`fls_f7iuwgbs1lql`
-An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may
+An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may
 have side effects at run-time.
 
 :dp:`fls_8l9hru1x586q`
@@ -2227,7 +2227,7 @@ expression statement
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ds0pspiqk4am`
-An :dt:`expression statement` is an :t:`expression` whose result is ignored.
+An :t:`expression statement` is an :t:`expression` whose result is ignored.
 
 :dp:`fls_41jt1h3audzv`
 See :s:`ExpressionStatement`.
@@ -2238,7 +2238,7 @@ expression-with-block
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ujlm50le5dnj`
-An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
+An :t:`expression-with-block` is an :t:`expression` whose structure involves a
 :t:`block expression`.
 
 :dp:`fls_iwheys965ml3`
@@ -2250,7 +2250,7 @@ expression-without-block
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xfh9xmsphzqb`
-An :dt:`expression-without-block` is an :t:`expression` whose structure does
+An :t:`expression-without-block` is an :t:`expression` whose structure does
 not involve a :t:`block expression`.
 
 :dp:`fls_miaphjnikd51`
@@ -2262,7 +2262,7 @@ external block
 ^^^^^^^^^^^^^^
 
 :dp:`fls_z2ebcp7kjpuy`
-An :dt:`external block` is a :t:`construct` that provides the declarations of
+An :t:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
 :dp:`fls_dm2wz1th2haz`
@@ -2274,7 +2274,7 @@ external function
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ngz5fqwrf86e`
-An :dt:`external function` is an unchecked import of a foreign :t:`function`.
+An :t:`external function` is an unchecked import of a foreign :t:`function`.
 
 .. _fls_ug2kags0o6is:
 
@@ -2282,7 +2282,7 @@ external function item type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dwlovqly44dj`
-An :dt:`external function item type` is a :t:`function item type` where the
+An :t:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
 
 .. _fls_c89migfc2m6e:
@@ -2291,7 +2291,7 @@ external static
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_bqq6cncstzeg`
-An :dt:`external static` is an import of a foreign :t:`variable`.
+An :t:`external static` is an import of a foreign :t:`variable`.
 
 .. _fls_4w6garmjhrd9:
 
@@ -2317,7 +2317,7 @@ fat pointer
 ^^^^^^^^^^^
 
 :dp:`fls_knbc2jv5c5ds`
-A :dt:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
+A :t:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
 
 .. _fls_trvkbidlsss8:
 
@@ -2325,7 +2325,7 @@ fat pointer type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_l8ew6udd79hh`
-A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+A :t:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
 
 .. _fls_qi21fdknzez6:
 
@@ -2333,7 +2333,7 @@ FFI
 ^^^
 
 :dp:`fls_z363fu89mj1c`
-For :dt:`FFI`, see :t:`Foreign Function Interface`.
+For :t:`FFI`, see :t:`Foreign Function Interface`.
 
 .. _fls_7gCAbHnGEIl6:
 
@@ -2341,7 +2341,7 @@ field
 ^^^^^
 
 :dp:`fls_uAkrgfFTK2YV`
-A :dt:`field` is an element of an :t:`abstract data type`.
+A :t:`field` is an element of an :t:`abstract data type`.
 
 .. _fls_yipl7ajrbs6y:
 
@@ -2349,7 +2349,7 @@ field access expression
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_gdl348a04d15`
-A :dt:`field access expression` is an :t:`expression` that accesses a
+A :t:`field access expression` is an :t:`expression` that accesses a
 :t:`field` of a :t:`value`.
 
 :dp:`fls_luetyuwu54d6`
@@ -2361,7 +2361,7 @@ field index
 ^^^^^^^^^^^
 
 :dp:`fls_6061r871qgbj`
-A :dt:`field index` is the position of a :t:`field` within a
+A :t:`field index` is the position of a :t:`field` within a
 :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
 :t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
 
@@ -2374,7 +2374,7 @@ field list
 ^^^^^^^^^^
 
 :dp:`fls_xMZsrxMc9Cni`
-A :dt:`field list` is a :s:`RecordStructFieldList` or a
+A :t:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
 .. _fls_BlZwxp6H62sS:
@@ -2383,7 +2383,7 @@ field resolution
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_nL8UuclgxfGL`
-:dt:`Field resolution` is a form of :t:`resolution` that applies to a
+:t:`Field resolution` is a form of :t:`resolution` that applies to a
 :t:`field access expression`.
 
 .. _fls_kqbata8slp1y:
@@ -2392,7 +2392,7 @@ field selector
 ^^^^^^^^^^^^^^
 
 :dp:`fls_aq1yg9cp1uof`
-A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
+A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
 accessed in a :t:`field access expression`.
 
 :dp:`fls_x8swot8e1j32`
@@ -2404,7 +2404,7 @@ final match arm
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_btoz8jioisx9`
-A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 :dp:`fls_v7ockjwbeel1`
 See :s:`FinalMatchArm`.
@@ -2415,7 +2415,7 @@ fixed sized type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_eadiywl20jo4`
-A :dt:`fixed sized type` is a :t:`type` that implements the
+A :t:`fixed sized type` is a :t:`type` that implements the
 :std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_achdyw3nbme3:
@@ -2424,7 +2424,7 @@ float literal
 ^^^^^^^^^^^^^
 
 :dp:`fls_53o8dio9vpjh`
-A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional
+A :t:`float literal` is a :t:`numeric literal` that denotes a fractional
 number.
 
 :dp:`fls_hqeaakhsqxok`
@@ -2436,7 +2436,7 @@ float suffix
 ^^^^^^^^^^^^
 
 :dp:`fls_vka2z7frq9j8`
-A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
+A :t:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
 
 :dp:`fls_2k1ddqhsgxqk`
@@ -2448,7 +2448,7 @@ floating-point type
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_1w5yjiffah1u`
-A :dt:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+A :t:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
 fractional numbers.
 
 .. _fls_8ih3gh6hoy78:
@@ -2457,7 +2457,7 @@ floating-point type variable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ls41emhkrxdi`
-A :dt:`floating-point type variable` is a :t:`type variable` that can refer
+A :t:`floating-point type variable` is a :t:`type variable` that can refer
 only to :t:`[floating-point type]s`.
 
 .. _fls_nE6SWuVH7X68:
@@ -2466,7 +2466,7 @@ floating-point value
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rx8cvWPlvel5`
-A :dt:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
+A :t:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
 
 .. _fls_dwnvkq8n94h1:
 
@@ -2474,7 +2474,7 @@ for loop
 ^^^^^^^^
 
 :dp:`fls_gmhh56arsbw8`
-For :dt:`for loop`, see :t:`for loop expression`.
+For :t:`for loop`, see :t:`for loop expression`.
 
 .. _fls_vfkqbovqbw86:
 
@@ -2482,7 +2482,7 @@ for loop expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_f0gp7qxoc4o4`
-A :dt:`for loop expression` is a :t:`loop expression` that continues to
+A :t:`for loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`subject expression` yields a
 :t:`value`.
 
@@ -2495,7 +2495,7 @@ Foreign Function Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_240yj1kym1kh`
-A :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
+A :t:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
 :t:`[external block]s`, :t:`[external function]s`, linkage, and :t:`type`
 :t:`layout` to interface a Rust program with foreign code.
 
@@ -2505,7 +2505,7 @@ fragment specifier
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6lhwep7ulpr0`
-A :dt:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
+A :t:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
 a :t:`metavariable`.
 
 :dp:`fls_drfn9yqrihgx`
@@ -2517,7 +2517,7 @@ full range expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NIb9UOIRjMqa`
-A :dt:`full range expression` is a :t:`range expression` that covers the whole
+A :t:`full range expression` is a :t:`range expression` that covers the whole
 range of a :t:`type`.
 
 .. _fls_yllg093syzdi:
@@ -2526,7 +2526,7 @@ function
 ^^^^^^^^
 
 :dp:`fls_ni14pcm4ap9l`
-A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
 :dp:`fls_hn01vvw2fx9m`
 See :s:`FunctionDeclaration`.
@@ -2537,7 +2537,7 @@ function body
 ^^^^^^^^^^^^^
 
 :dp:`fls_y5ha4123alik`
-A :dt:`function body` is the :t:`block expression` of a :t:`function`.
+A :t:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_r0g0i730x6x4`
 See :s:`FunctionBody`.
@@ -2548,7 +2548,7 @@ function item type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rfvfo8x42dh8`
-A :dt:`function item type` is a unique anonymous :t:`function type` that
+A :t:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
 .. _fls_WMaE58yv1joW:
@@ -2557,7 +2557,7 @@ function lifetime elision
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tZMmRHua1S8K`
-:dt:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
+:t:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
 to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
 that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
 :std:`core::ops::FnOnce` :t:`[trait]s`.
@@ -2568,7 +2568,7 @@ function parameter
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2feq1ky9pla1`
-A :dt:`function parameter` is a :t:`construct` that yields a set of
+A :t:`function parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
 
@@ -2581,7 +2581,7 @@ function pointer type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lcawg25xhblx`
-A :dt:`function pointer type` is an :t:`indirection type` that refers to a
+A :t:`function pointer type` is an :t:`indirection type` that refers to a
 :t:`function`.
 
 :dp:`fls_t50umpk5abjy`
@@ -2593,7 +2593,7 @@ function pointer type parameter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_nF1k90JJWq2K`
-A :dt:`function pointer type parameter` is a :t:`function parameter` of a
+A :t:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
 
 :dp:`fls_vvy6qogy0xnb`
@@ -2605,7 +2605,7 @@ function qualifier
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8cux22275v8r`
-A :dt:`function qualifier` is a :t:`construct` that determines the role of
+A :t:`function qualifier` is a :t:`construct` that determines the role of
 a :t:`function`.
 
 :dp:`fls_3td9tztnj2jq`
@@ -2617,7 +2617,7 @@ function signature
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ndld48kg6o8d`
-A :dt:`function signature` is a unique identification of a :t:`function`
+A :t:`function signature` is a unique identification of a :t:`function`
 that encompasses of its :t:`[function qualifier]s`, :t:`name`,
 :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
 :t:`where clause`.
@@ -2628,7 +2628,7 @@ function type
 ^^^^^^^^^^^^^
 
 :dp:`fls_4e19116glgtv`
-A :dt:`function type` is either a :t:`closure type` or a
+A :t:`function type` is either a :t:`closure type` or a
 :t:`function item type`.
 
 .. _fls_gzybxk1gosm6:
@@ -2637,7 +2637,7 @@ function-like macro
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_psnab9cuq4bu`
-A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream of
+A :t:`function-like macro` is a :t:`procedural macro` that consumes a stream of
 :t:`[token]s` and produces a stream of :t:`[token]s`.
 
 .. _fls_OFMoUA3eFtuC:
@@ -2646,7 +2646,7 @@ fundamental
 ^^^^^^^^^^^
 
 :dp:`fls_e0dRD4NTE0UP`
-A :t:`trait` or :t:`type` is :dt:`fundamental` when its
+A :t:`trait` or :t:`type` is :t:`fundamental` when its
 :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
 is always treated as if it was a :t:`local trait` or a :t:`local type`.
 
@@ -2656,7 +2656,7 @@ future
 ^^^^^^
 
 :dp:`fls_pvigospl4n3g`
-A :dt:`future` represents a :t:`value` of a :t:`type` that implements the
+A :t:`future` represents a :t:`value` of a :t:`type` that implements the
 :std:`core::future::Future` :t:`trait` which may not have finished computing
 yet.
 
@@ -2666,7 +2666,7 @@ future operand
 ^^^^^^^^^^^^^^
 
 :dp:`fls_fold1inh5jev`
-A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
+A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
 an :t:`await expression`.
 
 :dp:`fls_tbfpowv90u5w`
@@ -2678,7 +2678,7 @@ generic argument
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_meimxi20p51a`
-A :dt:`generic argument` supplies a static input for an
+A :t:`generic argument` supplies a static input for an
 :t:`associated trait type` or a :t:`generic parameter`.
 
 :dp:`fls_8bvdmdgbu17l`
@@ -2690,7 +2690,7 @@ generic associated type
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_O4wckPZPmree`
-A :dt:`generic associated type` is an :t:`associated type` with
+A :t:`generic associated type` is an :t:`associated type` with
 :t:`[generic parameter]s`.
 
 .. _fls_3uFg0NK5fYQ6:
@@ -2699,7 +2699,7 @@ generic conformance
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_PfvELNsNySLT`
-:dt:`Generic conformance` measures the compatibility between a set of
+:t:`Generic conformance` measures the compatibility between a set of
 :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
 
 .. _fls_3tj3i83eoi36:
@@ -2708,7 +2708,7 @@ generic enum
 ^^^^^^^^^^^^
 
 :dp:`fls_pnu8w26uexaq`
-A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
+A :t:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 
 .. _fls_votx8gvy5utg:
 
@@ -2716,7 +2716,7 @@ generic function
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_rfkbc967d48h`
-A :dt:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
+A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 .. _fls_1xjbrp376niw:
 
@@ -2724,7 +2724,7 @@ generic implementation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_jic937ujpnar`
-A :dt:`generic implementation` is an :t:`implementation` with
+A :t:`generic implementation` is an :t:`implementation` with
 :t:`[generic parameter]s`.
 
 .. _fls_s2syghgn74e2:
@@ -2733,7 +2733,7 @@ generic parameter
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_61e6br8jy1v2`
-A :dt:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
+A :t:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
 or a :t:`type`, whose :t:`constant`, :t:`lifetime`, or :t:`type` is supplied
 statically by a :t:`generic argument`.
 
@@ -2746,7 +2746,7 @@ generic parameter scope
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_e2tICijmLkj4`
-A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
+A :t:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
 .. _fls_cgtu4v2vxvh:
 
@@ -2754,7 +2754,7 @@ generic struct
 ^^^^^^^^^^^^^^
 
 :dp:`fls_mcb2mlklith8`
-A :dt:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
+A :t:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
 
 .. _fls_VBEBshUrAOKE:
 
@@ -2762,7 +2762,7 @@ generic substitution
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Led1Nxfcd70K`
-A :dt:`generic substitution` is the replacement of a :t:`generic parameter`
+A :t:`generic substitution` is the replacement of a :t:`generic parameter`
 with a :t:`generic argument`.
 
 .. _fls_hppo1v3ia4wu:
@@ -2771,7 +2771,7 @@ generic trait
 ^^^^^^^^^^^^^
 
 :dp:`fls_h515f11akr91`
-A :dt:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
+A :t:`generic trait` is a :t:`trait` with :t:`[generic parameter]s`.
 
 .. _fls_3Ss6jDgtF1of:
 
@@ -2779,7 +2779,7 @@ generic type
 ^^^^^^^^^^^^
 
 :dp:`fls_Zn2pIsMZoTry`
-A :dt:`generic type` is a :t:`type` with a :t:`generic parameter`.
+A :t:`generic type` is a :t:`type` with a :t:`generic parameter`.
 
 .. _fls_18ow0q8at1pi:
 
@@ -2787,7 +2787,7 @@ generic type alias
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_zgxsqq4vu7e3`
-A :dt:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
+A :t:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 
 .. _fls_xn9mla1vm6iv:
 
@@ -2795,7 +2795,7 @@ generic union
 ^^^^^^^^^^^^^
 
 :dp:`fls_93rxr0yjx1e7`
-A :dt:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
+A :t:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 .. _fls_euukteybsbi:
 
@@ -2803,7 +2803,7 @@ glob import
 ^^^^^^^^^^^
 
 :dp:`fls_90qsib7g8e9j`
-A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
+A :t:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
 exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
 into :t:`scope`.
 
@@ -2816,7 +2816,7 @@ global path
 ^^^^^^^^^^^
 
 :dp:`fls_msg8jw9momfw`
-A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
+A :t:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 ``::``.
 
 .. _fls_hy1clqvaewnp:
@@ -2825,7 +2825,7 @@ global type variable
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pvt4nayq006s`
-A :dt:`global type variable` is a :t:`type variable` that can refer to any
+A :t:`global type variable` is a :t:`type variable` that can refer to any
 :t:`type`.
 
 .. _fls_g4n20dy3utzy:
@@ -2834,7 +2834,7 @@ greater-than expression
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_j7x5qii6rhwj`
-A :dt:`greater-than expression` is a :t:`comparison expression` that tests for
+A :t:`greater-than expression` is a :t:`comparison expression` that tests for
 a greater-than relationship.
 
 :dp:`fls_yni50ba3ufvs`
@@ -2846,7 +2846,7 @@ greater-than-or-equals expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wvspqc2otn6v`
-A :dt:`greater-than-or-equals expression` is a :t:`comparison expression` that
+A :t:`greater-than-or-equals expression` is a :t:`comparison expression` that
 tests for a greater-than-or-equals relationship.
 
 :dp:`fls_9azbvj9xux6y`
@@ -2858,7 +2858,7 @@ half-open range pattern
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tymjispfgp7u`
-A :dt:`half-open range pattern` is a :t:`range pattern` with only a
+A :t:`half-open range pattern` is a :t:`range pattern` with only a
 :t:`range pattern low bound`.
 
 :dp:`fls_evm3nxwswk00`
@@ -2870,7 +2870,7 @@ hexadecimal literal
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8b6njsi8g68i`
-A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
+A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 :dp:`fls_vssa4z5wcgaa`
 See :s:`HexadecimalLiteral`.
@@ -2881,7 +2881,7 @@ higher-ranked trait bound
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lpyc4omcthv`
-A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
+A :t:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
 list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
 
@@ -2894,7 +2894,7 @@ hygiene
 ^^^^^^^
 
 :dp:`fls_AQg0MqAQZqkz`
-The :dt:`hygiene` of :t:`[macro]s` and :t:`[identifier]s` that appear within
+The :t:`hygiene` of :t:`[macro]s` and :t:`[identifier]s` that appear within
 them is a property that aims to eliminate the syntactic interference between a
 :t:`macro` and its environment.
 
@@ -2904,7 +2904,7 @@ hygienic
 ^^^^^^^^
 
 :dp:`fls_hiDddAkNH5Ms`
-An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
+An :t:`identifier` is :t:`hygienic` when it has :t:`definition site hygiene`.
 
 .. _fls_obiv2a6ywfhh:
 
@@ -2957,7 +2957,7 @@ identifier
 ^^^^^^^^^^
 
 :dp:`fls_14zc5bcm9d8o`
-An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
+An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 :dp:`fls_oddu2wzhczvq`
 See :s:`Identifier`.
@@ -2968,7 +2968,7 @@ identifier pattern
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_f2va67gvpqe0`
-An :dt:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
+An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
 :dp:`fls_nxa1gvqgitgk`
@@ -2980,7 +2980,7 @@ if expression
 ^^^^^^^^^^^^^
 
 :dp:`fls_rk0661mtdvsi`
-An :dt:`if expression` is an :t:`expression` that evaluates either a
+An :t:`if expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on the :t:`value`
 of its :t:`subject expression`.
 
@@ -2993,7 +2993,7 @@ if let expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ky6ng7jy1g6z`
-An :dt:`if let expression` is an :t:`expression` that evaluates either a
+An :t:`if let expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on whether its
 :t:`pattern` can be matched against its :t:`subject let expression`.
 
@@ -3006,7 +3006,7 @@ immutable
 ^^^^^^^^^
 
 :dp:`fls_sttdfynyqr5h`
-A :t:`value` is :dt:`immutable` when it cannot be modified.
+A :t:`value` is :t:`immutable` when it cannot be modified.
 
 .. _fls_utucrvtzjhoc:
 
@@ -3014,7 +3014,7 @@ immutable borrow
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_p0abqkiuk7y9`
-An :dt:`immutable borrow` is an :t:`immutable reference` produced by
+An :t:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
 
 .. _fls_pqunxp6io1n9:
@@ -3023,7 +3023,7 @@ immutable borrow expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dojod5pg4r7l`
-An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
+An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
 :t:`keyword` ``mut``.
 
 .. _fls_TXQzFM77s4uj:
@@ -3032,7 +3032,7 @@ immutable place expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_MXBEZjzBxw5Z`
-An :dt:`immutable place expression` is a :t:`place expression` whose memory
+An :t:`immutable place expression` is a :t:`place expression` whose memory
 location cannot be modified. All :t:`[place expression]s` that are not
 :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
@@ -3043,7 +3043,7 @@ immutable place expression context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_UvrQ49dSoQGc`
-An :dt:`immutable place expression context` is a :t:`place expression context`
+An :t:`immutable place expression context` is a :t:`place expression context`
 that may evaluate its :t:`operand` as an immutable memory location. All
 :t:`[place expression context]s` that are not
 :t:`[mutable place expression context]s` are
@@ -3055,7 +3055,7 @@ immutable raw pointer type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2GzYItDXvMhB`
-An :dt:`immutable raw pointer type` is a :t:`raw pointer type` subject to
+An :t:`immutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``const``.
 
 .. _fls_bhx0l676dmgc:
@@ -3064,7 +3064,7 @@ immutable reference
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_u9kne5zfmhoe`
-An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`,
+An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`,
 and prevents the mutation of its :t:`referent`.
 
 .. _fls_my7jjwi0ncen:
@@ -3073,7 +3073,7 @@ immutable static
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_eonlhz79ur3d`
-An :dt:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
+An :t:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
 
 .. _fls_8xrhfwgep3nk:
 
@@ -3081,7 +3081,7 @@ immutable variable
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_sdg35i92taip`
-An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
+An :t:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
 modified.
 
 .. _fls_L9XTxPSujx4v:
@@ -3090,7 +3090,7 @@ impl header lifetime elision
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_PvYGu85UAyFb`
-:dt:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
+:t:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
 applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
 :t:`implementation`.
 
@@ -3100,7 +3100,7 @@ impl trait type
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_rdctgmnfncnd`
-An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
+An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is known at compile time.
 
 :dp:`fls_704soar15v8v`
@@ -3112,7 +3112,7 @@ implementation
 ^^^^^^^^^^^^^^
 
 :dp:`fls_pjulppit1r6`
-An :dt:`implementation` is an :t:`item` that supplements an
+An :t:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
 :dp:`fls_z4ij5skptoay`
@@ -3124,7 +3124,7 @@ implementation body
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_1iS30Nv9myEd`
-An :dt:`implementation body` is a :t:`construct` that encapsulates the
+An :t:`implementation body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of an :t:`implementation`.
 
@@ -3137,7 +3137,7 @@ implementation coherence
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hAmKcuYT9hHi`
-A :t:`trait implementation` exhibits :dt:`implementation coherence` when it is
+A :t:`trait implementation` exhibits :t:`implementation coherence` when it is
 valid and does not overlap with another :t:`trait implementation`.
 
 .. _fls_SBkTVa8bzGDx:
@@ -3146,7 +3146,7 @@ implementation conformance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Gpq4EP1SsYJR`
-A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
+A :t:`trait implementation` exhibits :t:`implementation conformance` when it
 satisfies the constraints of its :t:`implemented trait`.
 
 .. _fls_c0xxvivt8t1u:
@@ -3155,7 +3155,7 @@ implemented trait
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7twlizi3v8cb`
-An :dt:`implemented trait` is a :t:`trait` whose functionality has been
+An :t:`implemented trait` is a :t:`trait` whose functionality has been
 implemented by an :t:`implementing type`.
 
 :dp:`fls_2brvfx5wmvkf`
@@ -3167,7 +3167,7 @@ implementing type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_vs5ia3uupdcc`
-An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
 an :t:`implementation` are associated with.
 
 :dp:`fls_9ixcwh6to74g`
@@ -3179,7 +3179,7 @@ implicit borrow
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_q2v9ejpcvtwg`
-An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
 program text. An :t:`implicit borrow` occurs in the following contexts:
 
 .. _fls_i3iB9xP8h8Ci:
@@ -3188,7 +3188,7 @@ implicitly declared entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_VQs1jd4Nx3qR`
-An :dt:`implicitly declared entity` is an :t:`entity` that lacks an explicit
+An :t:`implicitly declared entity` is an :t:`entity` that lacks an explicit
 :t:`declaration`. The following :t:`entities <entity>` are
 :t:`implicitly declared entities <implicitly declared entity>`:
 
@@ -3198,7 +3198,7 @@ implied bound
 ^^^^^^^^^^^^^
 
 :dp:`fls_t77d8xwG1l9Q`
-An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
+An :t:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
 is the byproduct of relations between :t:`[lifetime parameter]s` and
 :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
 :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
@@ -3209,8 +3209,8 @@ in scope
 ^^^^^^^^
 
 :dp:`fls_sy380geqvf2l`
-A :dt:`scope` is a region of program text where an :t:`entity` can be referred
-to. An :t:`entity` is :dt:`in scope` when it can be referred to.
+A :t:`scope` is a region of program text where an :t:`entity` can be referred
+to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. _fls_nscfxu6huw6q:
 
@@ -3218,7 +3218,7 @@ inclusive range pattern
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_olfeuvwkosse`
-An :dt:`inclusive range pattern` is a :t:`range pattern` with both a
+An :t:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_9bdxsn6nasjr`
@@ -3230,7 +3230,7 @@ incomplete associated constant
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_bq48gl84bul0`
-An :dt:`incomplete associated constant` is an :t:`associated constant` without
+An :t:`incomplete associated constant` is an :t:`associated constant` without
 a :t:`constant initializer`.
 
 .. _fls_ga2n4nbm1pkk:
@@ -3239,7 +3239,7 @@ incomplete associated function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_iboondra204w`
-An :dt:`incomplete associated function` is an :t:`associated function` without
+An :t:`incomplete associated function` is an :t:`associated function` without
 a :t:`function body`.
 
 .. _fls_n99acc2tr9qm:
@@ -3248,7 +3248,7 @@ incomplete associated type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tka0gth8rc9x`
-An :dt:`incomplete associated type` is an :t:`associated type` without an
+An :t:`incomplete associated type` is an :t:`associated type` without an
 :t:`initialization type`.
 
 .. _fls_6tysvlg2ifr3:
@@ -3257,7 +3257,7 @@ index expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_1f7e9q8n431n`
-An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
+An :t:`index expression` is an :t:`expression` that indexes into a :t:`value`
 of an :t:`indexable type`.
 
 :dp:`fls_xm2er7vuo07g`
@@ -3269,7 +3269,7 @@ indexable type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_AdVGyKZFvvUS`
-An :dt:`indexable type` is a :t:`type` that implements the
+An :t:`indexable type` is a :t:`type` that implements the
 :std:`core::ops::Index` :t:`trait`.
 
 .. _fls_qs654p61ivpx:
@@ -3278,7 +3278,7 @@ indexed deconstructor
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_q7eta38vw0ig`
-An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
+An :t:`indexed deconstructor` is a :t:`construct` that matches the position of
 a :t:`field`.
 
 :dp:`fls_gryv4audvann`
@@ -3290,7 +3290,7 @@ indexed field selector
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_u6mh5yediub`
-An :dt:`indexed field selector` is a :t:`field selector` where the selected
+An :t:`indexed field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an index.
 
 :dp:`fls_wbbyf2szc8a7`
@@ -3302,7 +3302,7 @@ indexed initializer
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_oonqolgqyrq1`
-An :dt:`indexed initializer` is a :t:`construct` that specifies the index and
+An :t:`indexed initializer` is a :t:`construct` that specifies the index and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_werlw98l3ra0`
@@ -3314,7 +3314,7 @@ indexed operand
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_dvmm47wnl33e`
-An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value`
+An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
 being indexed into by an :t:`index expression`.
 
 :dp:`fls_je8eh3a02riq`
@@ -3326,7 +3326,7 @@ indexing operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_ipw4tfrserbu`
-An :dt:`indexing operand` is an :t:`operand` which specifies the index of an
+An :t:`indexing operand` is an :t:`operand` which specifies the index of an
 :t:`index expression`.
 
 :dp:`fls_t2j8vzlrlvb0`
@@ -3338,7 +3338,7 @@ indirection type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_8so1phpdjyk8`
-An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
+An :t:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
 locations.
 
 .. _fls_gccnknktzp7g:
@@ -3347,7 +3347,7 @@ inert attribute
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_o4e3tyjz7l1h`
-An :dt:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
+An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
 it decorates.
 
 .. _fls_z5593p7wfab:
@@ -3356,7 +3356,7 @@ inferred type
 ^^^^^^^^^^^^^
 
 :dp:`fls_9xgfexeqr4ed`
-An :dt:`inferred type` is a placeholder for a :t:`type` deduced by
+An :t:`inferred type` is a placeholder for a :t:`type` deduced by
 :t:`type inference`.
 
 :dp:`fls_z2p8378sd93z`
@@ -3368,7 +3368,7 @@ infinite loop
 ^^^^^^^^^^^^^
 
 :dp:`fls_xpm53i3rkuu0`
-For :dt:`infinite loop`, see :t:`infinite loop expression`.
+For :t:`infinite loop`, see :t:`infinite loop expression`.
 
 .. _fls_o2eei5aqgds6:
 
@@ -3376,7 +3376,7 @@ infinite loop expression
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mvplpa4t1f2p`
-An :dt:`infinite loop expression` is a :t:`loop expression` that continues to
+An :t:`infinite loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` indefinitely.
 
 :dp:`fls_2gipk6b62hme`
@@ -3388,7 +3388,7 @@ inherent implementation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6fpicw8ss4h3`
-An :dt:`inherent implementation` is an :t:`implementation` that adds direct
+An :t:`inherent implementation` is an :t:`implementation` that adds direct
 functionality.
 
 :dp:`fls_s8zjk7hms1o0`
@@ -3400,7 +3400,7 @@ initialization
 ^^^^^^^^^^^^^^
 
 :dp:`fls_xi07ycze6mo0`
-:dt:`Initialization` is the act of supplying an initial :t:`value` to a
+:t:`Initialization` is the act of supplying an initial :t:`value` to a
 :t:`constant`, a :t:`static`, or a :t:`variable`.
 
 .. _fls_ctusGvpQvJue:
@@ -3409,7 +3409,7 @@ initialization expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_KUeiSByPUc4w`
-An :dt:`initialization expression` is either a :t:`constant initializer` or a
+An :t:`initialization expression` is either a :t:`constant initializer` or a
 :t:`static initializer`.
 
 .. _fls_pd30dl2envjn:
@@ -3418,7 +3418,7 @@ initialization type
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_crn87nne7k38`
-An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
+An :t:`initialization type` is the :t:`type` a :t:`type alias` defines a
 :t:`name` for.
 
 :dp:`fls_3r85y1lh1oxo`
@@ -3430,7 +3430,7 @@ inline assembly
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_1MtaLEA7YfSv`
-:dt:`Inline assembly` is hand-written assembly code that is integrated into a
+:t:`Inline assembly` is hand-written assembly code that is integrated into a
 Rust program.
 
 .. _fls_c54lmkluwbwr:
@@ -3439,7 +3439,7 @@ inline module
 ^^^^^^^^^^^^^
 
 :dp:`fls_tbldwtisl9vc`
-An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
+An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 :dp:`fls_8bmjz8o3xu60`
 See :s:`InlineModuleSpecification`.
@@ -3450,7 +3450,7 @@ inner attribute
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_l7kxkav42l5d`
-An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
+An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
 :t:`item`.
 
 :dp:`fls_umkk8xwktat1`
@@ -3462,7 +3462,7 @@ inner block doc
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_f4nqkybpwj1a`
-An :dt:`inner block doc` is a :t:`block comment` that applies to an enclosing
+An :t:`inner block doc` is a :t:`block comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_lmpaznk198ga`
@@ -3474,7 +3474,7 @@ inner doc comment
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6KunKwZf9QaF`
-An :dt:`inner doc comment` is either an :t:`inner block doc` or an
+An :t:`inner doc comment` is either an :t:`inner block doc` or an
 :t:`inner line doc`.
 
 .. _fls_xgm53126q9c4:
@@ -3483,7 +3483,7 @@ inner line doc
 ^^^^^^^^^^^^^^
 
 :dp:`fls_vtwavwjhgvlz`
-An :dt:`inner line doc` is a :t:`line comment` that applies to an enclosing
+An :t:`inner line doc` is a :t:`line comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_8cnikewkqs7`
@@ -3495,7 +3495,7 @@ input register
 ^^^^^^^^^^^^^^
 
 :dp:`fls_dTvdQaFpncCj`
-An :dt:`input register` is a :t:`register` whose :t:`register name` is used in
+An :t:`input register` is a :t:`register` whose :t:`register name` is used in
 a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
 or ``inlateout``.
 
@@ -3505,7 +3505,7 @@ input register expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rvbuHSgg2RHt`
-An :dt:`input register expression` is an :t:`expression` that provides the
+An :t:`input register expression` is an :t:`expression` that provides the
 initial :t:`value` of a :t:`register`.
 
 :dp:`fls_NqjRr9khzpl2`
@@ -3517,7 +3517,7 @@ input-output register expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lLQw3EFl7x5z`
-An :dt:`input-output register expression` is a :t:`construct` that specifies
+An :t:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
 :dp:`fls_FnMGXi2nPgUH`
@@ -3529,7 +3529,7 @@ integer literal
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_23a1fjpf15qv`
-An :dt:`integer literal` is a :t:`numeric literal` that denotes a whole number.
+An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 :dp:`fls_6qpj0nr0jpjr`
 See :s:`IntegerLiteral`.
@@ -3540,7 +3540,7 @@ integer suffix
 ^^^^^^^^^^^^^^
 
 :dp:`fls_qazh8f8rs528`
-An :dt:`integer suffix` is a component of an :t:`integer literal` that
+An :t:`integer suffix` is a component of an :t:`integer literal` that
 specifies an explicit :t:`integer type`.
 
 :dp:`fls_jqagv350kw2m`
@@ -3552,7 +3552,7 @@ integer type
 ^^^^^^^^^^^^
 
 :dp:`fls_nhfqdhf26ym3`
-An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
+An :t:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
 numbers.
 
 .. _fls_ctuvilpb30gq:
@@ -3561,7 +3561,7 @@ integer type variable
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_e3ed1tyrjsy4`
-An :dt:`integer type variable` is a :t:`type variable` that can refer only to
+An :t:`integer type variable` is a :t:`type variable` that can refer only to
 :t:`[integer type]s`.
 
 .. _fls_mb3xnplwdw9l:
@@ -3570,7 +3570,7 @@ interior mutability
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_e0173dd09znl`
-:dt:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
+:t:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
 be modified through :t:`[immutable reference]s`.
 
 .. _fls_7rj914fhginh:
@@ -3579,7 +3579,7 @@ intermediate match arm
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_l6pemxmdllvl`
-An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
+An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
 :dp:`fls_8713j5lrwqvs`
@@ -3591,7 +3591,7 @@ irrefutable constant
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hd02jah50qzl`
-An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
+An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
 
@@ -3601,7 +3601,7 @@ irrefutable pattern
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_y421hdrbs6ak`
-An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 .. _fls_vt44bvhm4duk:
 
@@ -3618,7 +3618,7 @@ item
 ^^^^
 
 :dp:`fls_2ghaujiqkhyy`
-An :dt:`item` is the most basic semantic element in program text. An :t:`item`
+An :t:`item` is the most basic semantic element in program text. An :t:`item`
 defines the compile- and run-time semantics of a program.
 
 :dp:`fls_xd997kd2i73a`
@@ -3630,7 +3630,7 @@ item scope
 ^^^^^^^^^^
 
 :dp:`fls_mW7IwWGSjrl2`
-An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
+An :t:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 .. _fls_yaurxo4ogfsh:
 
@@ -3638,7 +3638,7 @@ item statement
 ^^^^^^^^^^^^^^
 
 :dp:`fls_r0crucpuhtj`
-An :dt:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
+An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
 .. _fls_orde7iunolyx:
 
@@ -3646,7 +3646,7 @@ iteration expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_suz163n1x1xm`
-An :dt:`iteration expression` is an :t:`expression` that provides the criterion
+An :t:`iteration expression` is an :t:`expression` that provides the criterion
 of a :t:`while loop expression`.
 
 :dp:`fls_jw5lj2hgjl8v`
@@ -3658,7 +3658,7 @@ keyword
 ^^^^^^^
 
 :dp:`fls_z3825koc9c1w`
-A :dt:`keyword` is a word in program text that has special meaning.
+A :t:`keyword` is a word in program text that has special meaning.
 
 :dp:`fls_yvnf2mu4pr75`
 See :s:`Keyword`.
@@ -3669,7 +3669,7 @@ label
 ^^^^^
 
 :dp:`fls_iAAf2rLmgmGQ`
-A :dt:`label` is the :t:`name` of a :t:`loop expression`.
+A :t:`label` is the :t:`name` of a :t:`loop expression`.
 
 :dp:`fls_HicurdHIiLX2`
 See :s:`Label`.
@@ -3680,7 +3680,7 @@ label indication
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_sso322p7adt0`
-A :dt:`label indication` is a :t:`construct` that indicates a :t:`label`.
+A :t:`label indication` is a :t:`construct` that indicates a :t:`label`.
 
 :dp:`fls_g6iqfqooz8th`
 See :s:`LabelIndication`.
@@ -3691,7 +3691,7 @@ label scope
 ^^^^^^^^^^^
 
 :dp:`fls_2H6HkQ102hVS`
-A :dt:`label scope` is a :t:`scope` for :t:`[label]s`.
+A :t:`label scope` is a :t:`scope` for :t:`[label]s`.
 
 .. _fls_w5gslebevlya:
 
@@ -3699,7 +3699,7 @@ layout
 ^^^^^^
 
 :dp:`fls_qk602dmhc0d6`
-A :dt:`layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
+A :t:`layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
 of :t:`[field]s` in a :t:`type`.
 
 .. _fls_bputdgkeezfs:
@@ -3708,7 +3708,7 @@ lazy and expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_v2e6t73uk6nt`
-A :dt:`lazy and expression` is a :t:`lazy boolean expression` that uses short
+A :t:`lazy and expression` is a :t:`lazy boolean expression` that uses short
 circuit and arithmetic.
 
 :dp:`fls_rkthjuvems6v`
@@ -3720,7 +3720,7 @@ lazy boolean expression
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_jpv7l86sdh6i`
-A :dt:`lazy boolean expression` is an :t:`expression` that performs short
+A :t:`lazy boolean expression` is an :t:`expression` that performs short
 circuit Boolean arithmetic.
 
 :dp:`fls_9tu5x810ztbg`
@@ -3732,7 +3732,7 @@ lazy or expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_aln8bbvx9kzm`
-A :dt:`lazy or expression` is a :t:`lazy boolean expression` that uses short
+A :t:`lazy or expression` is a :t:`lazy boolean expression` that uses short
 circuit or arithmetic.
 
 :dp:`fls_jiv7e3mr86kf`
@@ -3744,7 +3744,7 @@ left operand
 ^^^^^^^^^^^^
 
 :dp:`fls_m821x5195ac9`
-A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
+A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_ghlbsklg7wdb`
@@ -3756,7 +3756,7 @@ less-than expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_9ttxqxt9ui4t`
-A :dt:`less-than expression` is a :t:`comparison expression` that tests for a
+A :t:`less-than expression` is a :t:`comparison expression` that tests for a
 less-than relationship.
 
 :dp:`fls_rhnbdyo2l4kp`
@@ -3768,7 +3768,7 @@ less-than-or-equals expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8pya58ug180j`
-A :dt:`less-than-or-equals expression` is a :t:`comparison expression` that
+A :t:`less-than-or-equals expression` is a :t:`comparison expression` that
 tests for a less-than-or-equals relationship.
 
 :dp:`fls_ft5aeo4ilgwc`
@@ -3781,7 +3781,7 @@ let binding
 ^^^^^^^^^^^
 
 :dp:`fls_sw6HrsxsnG2y`
-A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an :t:`if let expression`, or a :t:`while let loop expression`.
+A :t:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an :t:`if let expression`, or a :t:`while let loop expression`.
 
 .. _fls_hqj80jHcxEBB:
 
@@ -3789,7 +3789,7 @@ let initializer
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_jtTpBZ4ujZRc`
-A :dt:`let initializer` is a :t:`construct` that provides the :t:`value` of
+A :t:`let initializer` is a :t:`construct` that provides the :t:`value` of
 the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
 alternatively executes a :t:`block expression`.
 
@@ -3802,7 +3802,7 @@ let statement
 ^^^^^^^^^^^^^
 
 :dp:`fls_yh7hn6jjv3ur`
-A :dt:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
+A :t:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
 produced by its :t:`pattern-without-alternation` that are optionally
 initialized to a :t:`value`.
 
@@ -3815,7 +3815,7 @@ lexical element
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_nrxnbkatn63n`
-A :dt:`lexical element` is the most basic syntactic element in program
+A :t:`lexical element` is the most basic syntactic element in program
 text.
 
 .. _fls_r1sk7vdgckym:
@@ -3824,7 +3824,7 @@ library crate
 ^^^^^^^^^^^^^
 
 :dp:`fls_3m8lg4mdc2x0`
-A :dt:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
+A :t:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
 ``staticlib``, ``dylib``, or ``cdylib``.
 
 .. _fls_vdhaa61g6kah:
@@ -3833,7 +3833,7 @@ lifetime
 ^^^^^^^^
 
 :dp:`fls_il3n0w4m084b`
-A :dt:`lifetime` specifies the expected longevity of a :t:`value`.
+A :t:`lifetime` specifies the expected longevity of a :t:`value`.
 
 :dp:`fls_2nywjifee7q`
 See :s:`Lifetime`.
@@ -3844,7 +3844,7 @@ lifetime argument
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_oaf87yjb3xjs`
-A :dt:`lifetime argument` is a :t:`generic argument` that supplies the
+A :t:`lifetime argument` is a :t:`generic argument` that supplies the
 :t:`lifetime` of a :t:`lifetime parameter`.
 
 :dp:`fls_la8lbv14zj28`
@@ -3856,7 +3856,7 @@ lifetime bound
 ^^^^^^^^^^^^^^
 
 :dp:`fls_u6xfs8fg558`
-A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
+A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
 :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_ivcjmp54hdej`
@@ -3868,7 +3868,7 @@ lifetime bound predicate
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_AHftLKgSP9Xk`
-A :dt:`lifetime bound predicate` is a :t:`construct` that specifies
+A :t:`lifetime bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 :dp:`fls_8WIod9Rm5IXa`
@@ -3880,7 +3880,7 @@ lifetime elision
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_dq5wkd61ry3l`
-:dt:`Lifetime elision` is a set of rules that automatically insert
+:t:`Lifetime elision` is a set of rules that automatically insert
 :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
 elided in the source code.
 
@@ -3890,7 +3890,7 @@ lifetime parameter
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7g0iu68nrsd4`
-A :dt:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
+A :t:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
 
 :dp:`fls_z1wl2uiwip98`
 See :s:`LifetimeParameter`.
@@ -3901,7 +3901,7 @@ lifetime variable
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ucZnCBWxXl6n`
-A :dt:`lifetime variable` is a placeholder used during :t:`type inference` to
+A :t:`lifetime variable` is a placeholder used during :t:`type inference` to
 stand in for an undetermined :t:`lifetime` of a :t:`type`.
 
 
@@ -3911,7 +3911,7 @@ line
 ^^^^
 
 :dp:`fls_oqf2439j3y7b`
-A :dt:`line` is a sequence of zero or more characters followed by an end of
+A :t:`line` is a sequence of zero or more characters followed by an end of
 line.
 
 .. _fls_k5ycqijslkxh:
@@ -3920,7 +3920,7 @@ line comment
 ^^^^^^^^^^^^
 
 :dp:`fls_3e7asah7lkqj`
-A :dt:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
 :dp:`fls_8j5j777dv2jm`
 See :s:`LineComment`.
@@ -3931,7 +3931,7 @@ literal
 ^^^^^^^
 
 :dp:`fls_ckbyt11pku9j`
-A :dt:`literal` is a fixed :t:`value` in program text.
+A :t:`literal` is a fixed :t:`value` in program text.
 
 :dp:`fls_h1g46cevrqjv`
 See :s:`Literal`.
@@ -3942,7 +3942,7 @@ literal expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_otaauusc24v5`
-A :dt:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
+A :t:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
 
 :dp:`fls_7po7zobtlhzn`
 See :s:`LiteralExpression`.
@@ -3953,7 +3953,7 @@ literal pattern
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_5s9b4bza13xf`
-A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
+A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 :dp:`fls_o7q7wfjulc24`
 See :s:`LiteralPattern`.
@@ -3964,7 +3964,7 @@ local trait
 ^^^^^^^^^^^
 
 :dp:`fls_I9JaKZelMiby`
-A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
+A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 .. _fls_cexgUIGUUKS4:
 
@@ -3972,7 +3972,7 @@ local type
 ^^^^^^^^^^
 
 :dp:`fls_HvGPB3CsN4Ah`
-A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 .. _fls_lkxiws55xhpq:
 
@@ -3980,7 +3980,7 @@ local variable
 ^^^^^^^^^^^^^^
 
 :dp:`fls_3inlcyi6444u`
-For :dt:`local variable`, see :t:`variable`.
+For :t:`local variable`, see :t:`variable`.
 
 .. _fls_kdqa8zs8tk6g:
 
@@ -3988,7 +3988,7 @@ loop
 ^^^^
 
 :dp:`fls_omjnvxva07z2`
-For :dt:`loop`, see :t:`loop expression`.
+For :t:`loop`, see :t:`loop expression`.
 
 .. _fls_5vt0Ph5BfDnU:
 
@@ -3996,7 +3996,7 @@ loop body
 ^^^^^^^^^
 
 :dp:`fls_fRWcWPeKgx9g`
-A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 
 :dp:`fls_vWuR2TET712r`
 See :s:`LoopBody`.
@@ -4007,7 +4007,7 @@ loop expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_2yypq3m1kquj`
-A :dt:`loop expression` is an :t:`expression` that evaluates a
+A :t:`loop expression` is an :t:`expression` that evaluates a
 :t:`block expression` continuously as long as some criterion holds true.
 
 :dp:`fls_o2dyznhq7rez`
@@ -4019,7 +4019,7 @@ macro
 ^^^^^
 
 :dp:`fls_bt16qi8g2js5`
-A :dt:`macro` is a custom definition that extends Rust by defining callable
+A :t:`macro` is a custom definition that extends Rust by defining callable
 syntactic transformations. The effects of a :t:`macro` are realized through
 :t:`[macro invocation]s` or :t:`attribute` use. :t:`[Macro]s` come in two
 distinct forms:
@@ -4030,7 +4030,7 @@ macro expansion
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_t383uo1l4h8x`
-:dt:`Macro expansion` is the process of statically executing a
+:t:`Macro expansion` is the process of statically executing a
 :t:`macro invocation` and replacing it with the produced output of the
 :t:`macro invocation`.
 
@@ -4040,7 +4040,7 @@ macro implementation function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xy4t1suhrn46`
-A :dt:`macro implementation function` is the :t:`function` that encapsulates
+A :t:`macro implementation function` is the :t:`function` that encapsulates
 the syntactic transformations of a :t:`procedural macro`.
 
 .. _fls_20x9eqa7xeui:
@@ -4049,7 +4049,7 @@ macro invocation
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_5qtwcp5ns5vz`
-A :dt:`macro invocation` is a call of a :t:`declarative macro` or
+A :t:`macro invocation` is a call of a :t:`declarative macro` or
 :t:`function-like macro` that is expanded statically and replaced with the
 result of the :t:`macro`.
 
@@ -4062,7 +4062,7 @@ macro match
 ^^^^^^^^^^^
 
 :dp:`fls_q0ve6nd287ta`
-A :dt:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
+A :t:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
 
 :dp:`fls_dww6sqbj2vin`
 See :s:`MacroMatch`.
@@ -4073,7 +4073,7 @@ macro matcher
 ^^^^^^^^^^^^^
 
 :dp:`fls_sqncf88chnsy`
-A :dt:`macro matcher` is a :t:`construct` that describes a syntactic pattern
+A :t:`macro matcher` is a :t:`construct` that describes a syntactic pattern
 that a :t:`macro` must match.
 
 :dp:`fls_ioyegc6ggd7o`
@@ -4085,7 +4085,7 @@ macro matching
 ^^^^^^^^^^^^^^
 
 :dp:`fls_RrDmFXuZrhFT`
-:dt:`Macro matching` is the process of performing :t:`rule matching` and
+:t:`Macro matching` is the process of performing :t:`rule matching` and
 :t:`token matching`.
 
 .. _fls_kddW7EirSn0g:
@@ -4094,7 +4094,7 @@ macro repetition
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_sDomcFWIeUAT`
-A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
+A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription`.
 
 .. _fls_a5j2hztrjfv5:
@@ -4103,7 +4103,7 @@ macro repetition in matching
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wio0e9qzstjh`
-A :dt:`macro repetition in matching` allows for a syntactic pattern to be
+A :t:`macro repetition in matching` allows for a syntactic pattern to be
 matched zero or multiple times during :t:`macro matching`.
 
 :dp:`fls_potk1y850zer`
@@ -4115,7 +4115,7 @@ macro repetition in transcription
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ex9vd3w0t4wo`
-A :dt:`macro repetition in transcription` allows for a syntactic pattern to be
+A :t:`macro repetition in transcription` allows for a syntactic pattern to be
 transcribed zero or multiple times during :t:`macro transcription`.
 
 :dp:`fls_5wdiqbwgr9nt`
@@ -4127,7 +4127,7 @@ macro rule
 ^^^^^^^^^^
 
 :dp:`fls_7gfdqggs33id`
-A :dt:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher`
+A :t:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher`
 and a :t:`macro transcriber`.
 
 :dp:`fls_qv68aj43mz5m`
@@ -4139,7 +4139,7 @@ macro statement
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_yhh9k9epv3g6`
-A :dt:`macro statement` is a :t:`statement` expressed as a
+A :t:`macro statement` is a :t:`statement` expressed as a
 :t:`terminated macro invocation`.
 
 .. _fls_76o6rjh6lrqd:
@@ -4148,7 +4148,7 @@ macro transcriber
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ug79qf3p693h`
-A :dt:`macro transcriber` is a :t:`construct` that describes the replacement
+A :t:`macro transcriber` is a :t:`construct` that describes the replacement
 syntax of a :t:`macro`.
 
 :dp:`fls_myubuihvjl4s`
@@ -4160,7 +4160,7 @@ macro transcription
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_nouiggbpipg`
-:dt:`Macro transcription` is the process of producing the expansion of a
+:t:`Macro transcription` is the process of producing the expansion of a
 :t:`declarative macro`.
 
 .. _fls_MJ1YWiOpxAa8:
@@ -4169,7 +4169,7 @@ main function signature
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QijObGZEIykU`
-A :dt:`main function signature` is the :t:`function signature` required for the
+A :t:`main function signature` is the :t:`function signature` required for the
 :t:`program entry point` function named ``main``.
 
 .. _fls_fizf1byuspv2:
@@ -4178,7 +4178,7 @@ match arm
 ^^^^^^^^^
 
 :dp:`fls_z5qsy5z2zak3`
-A :dt:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
+A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
 
 .. _fls_q7lcdtxuy1ac:
@@ -4187,7 +4187,7 @@ match arm body
 ^^^^^^^^^^^^^^
 
 :dp:`fls_33e7oefx0xqm`
-A :dt:`match arm body` is the :t:`operand` of a :t:`match arm`.
+A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
 
 .. _fls_aa1x6ajl4zid:
 
@@ -4195,7 +4195,7 @@ match arm guard
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_uhn07jmvv9ea`
-A :dt:`match arm guard` is a :t:`construct` that provides additional filtering
+A :t:`match arm guard` is a :t:`construct` that provides additional filtering
 to a :t:`match arm matcher`.
 
 :dp:`fls_ykf70vbng54n`
@@ -4207,7 +4207,7 @@ match arm matcher
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_paz9358w4cpu`
-A :dt:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern`
+A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern`
 and a :t:`match arm guard`.
 
 :dp:`fls_j7i2bjvzz1tx`
@@ -4219,7 +4219,7 @@ match expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_2ohrphptjny6`
-A :dt:`match expression` is an :t:`expression` that tries to match one of
+A :t:`match expression` is an :t:`expression` that tries to match one of
 its multiple :t:`[pattern]s` against its :t:`subject expression` and if it
 succeeds, evaluates an :t:`operand`.
 
@@ -4232,7 +4232,7 @@ metavariable
 ^^^^^^^^^^^^
 
 :dp:`fls_fu1esz5i9mt`
-A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+A :t:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
 
 :dp:`fls_k4xaw93z8x33`
 See :s:`MacroMetavariable`.
@@ -4243,7 +4243,7 @@ metavariable indication
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_r1FxbWffC9Wt`
-A :dt:`metavariable indication` is a :t:`construct` that indicates a
+A :t:`metavariable indication` is a :t:`construct` that indicates a
 :t:`metavariable`.
 
 :dp:`fls_bcMO2a0e0gXJ`
@@ -4255,7 +4255,7 @@ method
 ^^^^^^
 
 :dp:`fls_n4opbiofu9q6`
-A :dt:`method` is an :t:`associated function` with a :t:`self parameter`.
+A :t:`method` is an :t:`associated function` with a :t:`self parameter`.
 
 .. _fls_l4wel2551cw9:
 
@@ -4263,7 +4263,7 @@ method call expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_367sod24edts`
-A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
+A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
 of a :t:`variable`.
 
 :dp:`fls_ohhcvxcaqv11`
@@ -4275,7 +4275,7 @@ method operand
 ^^^^^^^^^^^^^^
 
 :dp:`fls_VLLAFjAxCfkE`
-A :dt:`method operand` is an :t:`operand` that denotes the :t:`method` being
+A :t:`method operand` is an :t:`operand` that denotes the :t:`method` being
 invoked by a :t:`method call expression`.
 
 :dp:`fls_Pkgr4fJQZpJ6`
@@ -4287,7 +4287,7 @@ method resolution
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_LbW4z6OTuD1l`
-:dt:`Method resolution` is a kind of :t:`resolution` that applies to a
+:t:`Method resolution` is a kind of :t:`resolution` that applies to a
 :t:`method call expression`.
 
 .. _fls_2FFRdj5cO0ks:
@@ -4297,7 +4297,7 @@ mixed site hygiene
 
 :dp:`fls_hjJpNmKiZxlT`
 * :dp:`fls_uyvnq88y9gk3`
-  :dt:`mixed site hygiene` is a hygiene category that resolves to a
+  :t:`mixed site hygiene` is a hygiene category that resolves to a
   :s:`MacroRulesDeclaration` site for :t:`[label]s`, :t:`[variable]s`, and the
   ``$crate`` :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise,
   and is considered :t:`partially hygienic`.
@@ -4308,7 +4308,7 @@ modifying operand
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_9wt2l5gg06pb`
-A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
+A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
 is used in the calculation of a :t:`compound assignment expression`.
 
 :dp:`fls_qnwbrwdnv7n0`
@@ -4320,7 +4320,7 @@ module
 ^^^^^^
 
 :dp:`fls_ujlsg58bskl5`
-A :dt:`module` is a container for zero or more :t:`[item]s`.
+A :t:`module` is a container for zero or more :t:`[item]s`.
 
 :dp:`fls_os60q6vvm71c`
 See :s:`ModuleDeclaration`.
@@ -4331,7 +4331,7 @@ move type
 ^^^^^^^^^
 
 :dp:`fls_ri37ez31gai8`
-A :dt:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
+A :t:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
 :t:`trait` and is not a :t:`copy type`.
 
 .. _fls_iw2vYgmLhlsg:
@@ -4340,7 +4340,7 @@ multi segment path
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_T4Xd6W6EqPSb`
-A :dt:`multi segment path` is a :t:`path` consisting of more than one
+A :t:`multi segment path` is a :t:`path` consisting of more than one
 :t:`path segment`.
 
 .. _fls_lpSCLhnaxeCg:
@@ -4349,7 +4349,7 @@ multiplication assignment
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_llUb5VHKjwW4`
-For :dt:`multiplication assignment`, see
+For :t:`multiplication assignment`, see
 :t:`multiplication assignment expression`.
 
 .. _fls_yo4k6lk0tizn:
@@ -4358,7 +4358,7 @@ multiplication assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eo9gx05n5ru3`
-A :dt:`multiplication assignment expression` is a
+A :t:`multiplication assignment expression` is a
 :t:`compound assignment expression` that uses multiplication.
 
 :dp:`fls_b0dc5lec1mdc`
@@ -4370,7 +4370,7 @@ multiplication expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_324qh8wz474b`
-A :dt:`multiplication expression` is an :t:`arithmetic expression` that uses
+A :t:`multiplication expression` is an :t:`arithmetic expression` that uses
 multiplication.
 
 :dp:`fls_34bkl5i75q5`
@@ -4382,7 +4382,7 @@ mutability
 ^^^^^^^^^^
 
 :dp:`fls_lBrXj9lo4s6o`
-:dt:`mutability` determines whether a :t:`construct` can modify a :t:`value`.
+:t:`mutability` determines whether a :t:`construct` can modify a :t:`value`.
 
 .. _fls_wvejcadmzt5p:
 
@@ -4390,7 +4390,7 @@ mutable
 ^^^^^^^
 
 :dp:`fls_dqm58deu1orn`
-A :t:`value` is :dt:`mutable` when it can be modified.
+A :t:`value` is :t:`mutable` when it can be modified.
 
 .. _fls_TEVPHHiCMByO:
 
@@ -4398,7 +4398,7 @@ mutable assignee expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_0RSlFbwrB3gp`
-A :dt:`mutable assignee expression` is an :t:`assignee expression` whose
+A :t:`mutable assignee expression` is an :t:`assignee expression` whose
 :t:`value` can be modified.
 
 .. _fls_ntaA0NtJ9z5h:
@@ -4407,7 +4407,7 @@ mutable binding
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_v2pGKVaQjtcl`
-A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
+A :t:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
 
 .. _fls_iku91jwdtdr1:
 
@@ -4415,7 +4415,7 @@ mutable borrow
 ^^^^^^^^^^^^^^
 
 :dp:`fls_5knwbyz4fd9z`
-A :dt:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
+A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
 
 .. _fls_kw3oiotr98tt:
 
@@ -4423,7 +4423,7 @@ mutable borrow expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_80kcc4y21hu6`
-A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
+A :t:`mutable borrow expression` is a :t:`borrow expression` that has
 :t:`keyword` ``mut``.
 
 .. _fls_7eyza445ew53:
@@ -4432,7 +4432,7 @@ mutable place expression
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kq877s3vij70`
-A :dt:`mutable place expression` is a :t:`place expression` whose memory
+A :t:`mutable place expression` is a :t:`place expression` whose memory
 location can be modified. The following :t:`[place expression]s` are
 :t:`[mutable place expression]s`:
 
@@ -4442,7 +4442,7 @@ mutable place expression context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2ixH8LWGHi3k`
-A :dt:`mutable place expression context` is a :t:`place expression context` that
+A :t:`mutable place expression context` is a :t:`place expression context` that
 may evaluate its :t:`operand` as a mutable memory location. The following
 :t:`[construct]s` are :t:`[mutable place expression context]s`:
 
@@ -4452,7 +4452,7 @@ mutable raw pointer type
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_86SFxSDRcC06`
-A :dt:`mutable raw pointer type` is a :t:`raw pointer type` subject to
+A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``mut``.
 
 .. _fls_jtzj092hyjkz:
@@ -4461,7 +4461,7 @@ mutable reference
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wujjrhm1d338`
-A :dt:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
+A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
 allows the mutation of its :t:`referent`.
 
 .. _fls_8iq0wcczl465:
@@ -4470,7 +4470,7 @@ mutable reference type
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_q06p9tclwaaw`
-A :dt:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
+A :t:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
 ``mut``.
 
 .. _fls_omgyj7yxwgua:
@@ -4479,7 +4479,7 @@ mutable static
 ^^^^^^^^^^^^^^
 
 :dp:`fls_3ss4bokujaby`
-A :dt:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
 :t:`value` can be modified.
 
 .. _fls_n7h4xr40xwgb:
@@ -4488,7 +4488,7 @@ mutable variable
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_kjjv9jvdpf2o`
-A :dt:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
+A :t:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
 
 .. _fls_kad7fzn94x4d:
 
@@ -4496,7 +4496,7 @@ name
 ^^^^
 
 :dp:`fls_jjpzrs38vs3y`
-A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
+A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_yrzevg5kd4bi`
 See :s:`Name`.
@@ -4507,7 +4507,7 @@ named block expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ivFb8uAMVY3Q`
-A :dt:`named block expression` is a :t:`block expression` with a :t:`label`.
+A :t:`named block expression` is a :t:`block expression` with a :t:`label`.
 
 .. _fls_dgs9y3nan69v:
 
@@ -4515,7 +4515,7 @@ named deconstructor
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_g3k1hy3j4qn9`
-A :dt:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
+A :t:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
 a :t:`field`.
 
 :dp:`fls_ujreg07979g8`
@@ -4527,7 +4527,7 @@ named field selector
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_cczpgxqdyh1e`
-A :dt:`named field selector` is a :t:`field selector` where the selected
+A :t:`named field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an :t:`identifier`.
 
 :dp:`fls_hpw0n89ez5nw`
@@ -4539,7 +4539,7 @@ named initializer
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xwvz8i4jim7a`
-A :dt:`named initializer` is a :t:`construct` that specifies the name and
+A :t:`named initializer` is a :t:`construct` that specifies the name and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_aueznbw3lohl`
@@ -4551,7 +4551,7 @@ named loop expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_440dr5qix3ns`
-A :dt:`named loop expression` is a :t:`loop expression` with a :t:`label`.
+A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
 
 .. _fls_WT1ZdxTZwUUE:
 
@@ -4559,7 +4559,7 @@ named register argument
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QBWHppNO8FPk`
-A :dt:`named register argument` is a :t:`register argument` whose configuration
+A :t:`named register argument` is a :t:`register argument` whose configuration
 is bound to an :t:`identifier`.
 
 .. _fls_GesmsWSVhv3f:
@@ -4568,7 +4568,7 @@ namespace
 ^^^^^^^^^
 
 :dp:`fls_er8lcvnEqxa5`
-A :dt:`namespace` is a logical grouping of :t:`[name]s` such that the
+A :t:`namespace` is a logical grouping of :t:`[name]s` such that the
 occurrence of a :t:`name` in one :t:`namespace` does not conflict with an
 occurrence of the same :t:`name` in another :t:`namespace`.
 
@@ -4578,7 +4578,7 @@ NaN-boxing
 ^^^^^^^^^^
 
 :dp:`fls_s956sJGwOa6z`
-:dt:`NaN-boxing` is a technique for encoding :t:`[value]s` using the low order
+:t:`NaN-boxing` is a technique for encoding :t:`[value]s` using the low order
 bits of the mantissa of a 64-bit IEEE floating-point ``NaN``.
 
 .. _fls_3sp4twvfvb32:
@@ -4587,7 +4587,7 @@ negation expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pmn6cjamdt0a`
-A :dt:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+A :t:`negation expression` is an :t:`expression` that negates its :t:`operand`.
 
 :dp:`fls_o1f35ud4klvv`
 See :s:`NegationExpression`.
@@ -4598,7 +4598,7 @@ nesting import
 ^^^^^^^^^^^^^^
 
 :dp:`fls_nhkqkdqo32xs`
-A :dt:`nesting import` is a :t:`use import` that provides a common
+A :t:`nesting import` is a :t:`use import` that provides a common
 :t:`simple path prefix` for its nested :t:`[use import]s`.
 
 :dp:`fls_z4d611glen13`
@@ -4610,7 +4610,7 @@ never type
 ^^^^^^^^^^
 
 :dp:`fls_m9v5j6detob4`
-The :dt:`never type` is a :t:`type` that represents the result of a computation
+The :t:`never type` is a :t:`type` that represents the result of a computation
 that never completes.
 
 :dp:`fls_k5z1vjxepnfj`
@@ -4622,7 +4622,7 @@ non-reference pattern
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tejled5izyue`
-A :dt:`non-reference pattern` is any :t:`pattern` except
+A :t:`non-reference pattern` is any :t:`pattern` except
 :t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
 and :t:`[underscore pattern]s`.
 
@@ -4632,7 +4632,7 @@ not configuration predicate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_BVMlBterkFYq`
-A :dt:`not configuration predicate` is a :t:`configuration predicate` that
+A :t:`not configuration predicate` is a :t:`configuration predicate` that
 negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
 
 :dp:`fls_9j9AaNcv0VNA`
@@ -4644,7 +4644,7 @@ not-equals expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2hmynl94uusk`
-A :dt:`not-equals expression` is a :t:`comparison expression` that tests for
+A :t:`not-equals expression` is a :t:`comparison expression` that tests for
 inequality.
 
 :dp:`fls_5d6vvr9m35n2`
@@ -4664,7 +4664,7 @@ numeric literal
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_978ndaqdv4r`
-A :dt:`numeric literal` is a :t:`literal` that denotes a number.
+A :t:`numeric literal` is a :t:`literal` that denotes a number.
 
 :dp:`fls_swue4tma9fmf`
 See :s:`NumericLiteral`.
@@ -4675,7 +4675,7 @@ numeric literal pattern
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_azqQ3JxD5Lt7`
-A :dt:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
+A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
 literal`.
 
 :dp:`fls_QYDZm7pKy1nW`
@@ -4687,7 +4687,7 @@ numeric type
 ^^^^^^^^^^^^
 
 :dp:`fls_cpdsj94l57af`
-A :dt:`numeric type` is a :t:`type` whose :t:`[value]s` denote numbers.
+A :t:`numeric type` is a :t:`type` whose :t:`[value]s` denote numbers.
 
 .. _fls_a226qzrb4iq9:
 
@@ -4695,7 +4695,7 @@ object safe
 ^^^^^^^^^^^
 
 :dp:`fls_oa2jiklr5nl2`
-A :t:`trait` is :dt:`object safe` when:
+A :t:`trait` is :t:`object safe` when:
 
 .. _fls_vomlqv7i1fc4:
 
@@ -4703,7 +4703,7 @@ object safety
 ^^^^^^^^^^^^^
 
 :dp:`fls_vqmng1l9ab8a`
-:dt:`Object safety` is the process of determining whether a :t:`trait` can be
+:t:`Object safety` is the process of determining whether a :t:`trait` can be
 used as a :t:`trait object type`.
 
 .. _fls_bo889w63y7oi:
@@ -4712,7 +4712,7 @@ obsolete range pattern
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ave42vwb45zb`
-An :dt:`obsolete range pattern` is a :t:`range pattern` that uses obsolete
+An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete
 syntax to express an :t:`inclusive range pattern`.
 
 :dp:`fls_ta0wa8ta9ol4`
@@ -4724,7 +4724,7 @@ octal literal
 ^^^^^^^^^^^^^
 
 :dp:`fls_pf4341vnqiin`
-An :dt:`octal literal` is an :t:`integer literal` in base 8.
+An :t:`octal literal` is an :t:`integer literal` in base 8.
 
 :dp:`fls_8u0n6xu0mizm`
 See ``OctalLiteral.``
@@ -4735,7 +4735,7 @@ operand
 ^^^^^^^
 
 :dp:`fls_3mnn1au9ob6q`
-An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
+An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 :dp:`fls_8299xfhdsd1`
 See :s:`Operand`.
@@ -4746,7 +4746,7 @@ operator expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6ev01xwcfow1`
-An :dt:`operator expression` is an :t:`expression` that involves an operator.
+An :t:`operator expression` is an :t:`expression` that involves an operator.
 
 :dp:`fls_qdszbyeuo7w1`
 See :s:`OperatorExpression`.
@@ -4757,7 +4757,7 @@ opt-out trait bound
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wS4EzN0N1GDP`
-An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
+An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
 that nullifies an implicitly added :t:`trait bound`.
 
 
@@ -4767,7 +4767,7 @@ or-pattern
 ^^^^^^^^^^
 
 :dp:`fls_LnPDQW3bnNUw`
-An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
+An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 :dp:`fls_urIJ5JNHLhm6`
 See :s:`Pattern`.
@@ -4778,7 +4778,7 @@ outer attribute
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_gffxnbilsqly`
-An :dt:`outer attribute` is an :t:`attribute` that applies to a subsequent
+An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
 :dp:`fls_ty6ihy6x3kf`
@@ -4790,7 +4790,7 @@ outer block doc
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_531ggn1f8f6u`
-An :dt:`outer block doc` is a :t:`block comment` that applies to a subsequent
+An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_ddy9a66tpytp`
@@ -4802,7 +4802,7 @@ outer doc comment
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mgSEUNUPcPBs`
-An :dt:`outer doc comment` is either an :t:`outer block doc` or an
+An :t:`outer doc comment` is either an :t:`outer block doc` or an
 :t:`outer line doc`.
 
 .. _fls_eqjbv8sovvfl:
@@ -4811,7 +4811,7 @@ outer line doc
 ^^^^^^^^^^^^^^
 
 :dp:`fls_m3u30fu8uac3`
-An :dt:`outer line doc` is a :t:`line comment` that applies to a subsequent
+An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_1ppwidw7szk5`
@@ -4823,7 +4823,7 @@ outline module
 ^^^^^^^^^^^^^^
 
 :dp:`fls_xhe5gmr0r9zn`
-An :dt:`outline module` is a :t:`module` with an
+An :t:`outline module` is a :t:`module` with an
 :s:`OutlineModuleSpecification`.
 
 :dp:`fls_wu5wqylzx9ke`
@@ -4835,7 +4835,7 @@ outlives bound
 ^^^^^^^^^^^^^^
 
 :dp:`fls_J5dt34II7Pm6`
-An :dt:`outlives bound` is a :t:`trait bound` which requires that a
+An :t:`outlives bound` is a :t:`trait bound` which requires that a
 :t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
 
 .. _fls_XsGnaA47Nen0:
@@ -4844,7 +4844,7 @@ output register
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_4METI8qE9JiY`
-An :dt:`output register` is a :t:`register` whose :t:`register name` is
+An :t:`output register` is a :t:`register` whose :t:`register name` is
 used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
 ``lateout``, ``inout``, or ``inlateout``.
 
@@ -4854,7 +4854,7 @@ output register expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_w95YRZ4JjBxl`
-An :dt:`output register expression` is an :t:`expression` that is assigned the
+An :t:`output register expression` is an :t:`expression` that is assigned the
 :t:`value` of a :t:`register`.
 
 :dp:`fls_8B3ldFZVy7PA`
@@ -4866,7 +4866,7 @@ overlap
 ^^^^^^^
 
 :dp:`fls_itkz9y19923k`
-Two :t:`[value]s` :dt:`overlap` when
+Two :t:`[value]s` :t:`overlap` when
 
 .. _fls_ke52l9lsvyu2:
 
@@ -4874,7 +4874,7 @@ owner
 ^^^^^
 
 :dp:`fls_7vwwhberexeb`
-An :dt:`owner` is a :t:`variable` that holds a :t:`value`.
+An :t:`owner` is a :t:`variable` that holds a :t:`value`.
 
 .. _fls_1gmetz8qtr0l:
 
@@ -4882,7 +4882,7 @@ ownership
 ^^^^^^^^^
 
 :dp:`fls_tu4zt8twucsz`
-:dt:`Ownership` is a property of :t:`[value]s` that is central to the resource
+:t:`Ownership` is a property of :t:`[value]s` that is central to the resource
 management model of Rust.
 
 .. _fls_wzpivxkhpln:
@@ -4891,7 +4891,7 @@ panic
 ^^^^^
 
 :dp:`fls_t3kpbnmohtp6`
-A :dt:`panic` is an abnormal program state caused by invoking :t:`macro`
+A :t:`panic` is an abnormal program state caused by invoking :t:`macro`
 :std:`core::panic`.
 
 .. _fls_fl56jfxbj0f:
@@ -4900,7 +4900,7 @@ parenthesized expression
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_yu1x2rr7cewa`
-A :dt:`parenthesized expression` is an :t:`expression` that groups other
+A :t:`parenthesized expression` is an :t:`expression` that groups other
 :t:`[expression]s`.
 
 :dp:`fls_p9exa6fpplfu`
@@ -4912,7 +4912,7 @@ parenthesized pattern
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7j12dwsx9ghg`
-A :dt:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
+A :t:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
 its :t:`[subpattern]s`.
 
 :dp:`fls_rwt31e8m694i`
@@ -4924,7 +4924,7 @@ parenthesized type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pamypc7t7l5n`
-A :dt:`parenthesized type` is a :t:`type` that disambiguates the interpretation
+A :t:`parenthesized type` is a :t:`type` that disambiguates the interpretation
 of :t:`[lexical element]s`.
 
 :dp:`fls_lovkvqoni3xs`
@@ -4936,7 +4936,7 @@ partially hygienic
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Qh8V0Y08dNoa`
-An :t:`identifier` is :dt:`partially hygienic` when it has
+An :t:`identifier` is :t:`partially hygienic` when it has
 :t:`mixed site hygiene`.
 
 .. _fls_wqbd5lxki2al:
@@ -4945,7 +4945,7 @@ passing convention
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eqgsg8j9btic`
-A :dt:`passing convention` is the mechanism that defines how a :t:`value` is
+A :t:`passing convention` is the mechanism that defines how a :t:`value` is
 transferred between :t:`[place]s`.
 
 .. _fls_9zl72vtkgkuo:
@@ -4954,7 +4954,7 @@ path
 ^^^^
 
 :dp:`fls_u3jyud6mhy1f`
-A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
+A :t:`path` is a sequence of :t:`[path segment]s` logically separated by
 :t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
 .. _fls_1xdj34py8zc3:
@@ -4963,7 +4963,7 @@ path expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_4ik66nmvx5hn`
-A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
+A :t:`path expression` is an :t:`expression` that denotes a :t:`path`.
 
 :dp:`fls_3qjpjqm0legc`
 See :s:`PathExpression`.
@@ -4974,7 +4974,7 @@ path expression resolution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_WYcEVyc3SHuK`
-:dt:`Path expression resolution` is a form of :t:`path resolution` that applies
+:t:`Path expression resolution` is a form of :t:`path resolution` that applies
 to a :t:`unqualified path expression`.
 
 .. _fls_ptikwcw3b20l:
@@ -4983,7 +4983,7 @@ path pattern
 ^^^^^^^^^^^^
 
 :dp:`fls_vacvk3t26ctg`
-A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
+A :t:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a
 :t:`path`.
 
@@ -4996,7 +4996,7 @@ path resolution
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_uy9Ai9vwTkjB`
-:dt:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
+:t:`Path resolution` is a form of :t:`resolution` that applies to a :t:`path`.
 
 .. _fls_xb54s9cs7h08:
 
@@ -5004,7 +5004,7 @@ path segment
 ^^^^^^^^^^^^
 
 :dp:`fls_gsumebjc2bsp`
-A :dt:`path segment` is an element of a :t:`path`.
+A :t:`path segment` is an element of a :t:`path`.
 
 :dp:`fls_m067uq7fo66i`
 See :s:`PathSegment`, :s:`SimplePathSegment`, :s:`TypePathSegment`.
@@ -5015,7 +5015,7 @@ pattern
 ^^^^^^^
 
 :dp:`fls_9wwt9k1xlm6n`
-A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
+A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
 the criteria of the :t:`pattern`.
 
 :dp:`fls_9va04w9jgdyp`
@@ -5035,7 +5035,7 @@ pattern-without-alternation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_brussjs3wo6r`
-A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
 :dp:`fls_fmysn3eezr54`
 See :s:`PatternWithoutAlternation`.
@@ -5046,7 +5046,7 @@ pattern-without-range
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_LSEOvAwUM7g6`
-A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
+A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
 
 :dp:`fls_Rj8ir4k0K811`
@@ -5058,7 +5058,7 @@ place
 ^^^^^
 
 :dp:`fls_uCTiUBWHMPY9`
-A :dt:`place` is a location where a :t:`value` resides.
+A :t:`place` is a location where a :t:`value` resides.
 
 .. _fls_7x6jhh0sz2f:
 
@@ -5066,7 +5066,7 @@ place expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_z6mgu2mk142r`
-A :dt:`place expression` is an :t:`expression` that represents a memory
+A :t:`place expression` is an :t:`expression` that represents a memory
 location. The following :t:`[expression]s` are :t:`[place expression]s`:
 
 .. _fls_tshbqttxdox1:
@@ -5075,7 +5075,7 @@ place expression context
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_fqcx8suiy5k`
-A :dt:`place expression context` is a :t:`construct` that may evaluate its
+A :t:`place expression context` is a :t:`construct` that may evaluate its
 :t:`operand` as a memory location.
 
 .. _fls_dr6wbsqjd2qm:
@@ -5084,7 +5084,7 @@ plane
 ^^^^^
 
 :dp:`fls_x1wbguoqdsf9`
-In :t:`Unicode`, a :dt:`plane` is a continuous group of 65,536
+In :t:`Unicode`, a :t:`plane` is a continuous group of 65,536
 :t:`[code point]s`.
 
 .. _fls_HnJEHyUiTpb1:
@@ -5093,7 +5093,7 @@ pointer
 ^^^^^^^
 
 :dp:`fls_DRjhMWo9mjoF`
-A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
+A :t:`pointer` is a :t:`value` of a :t:`pointer type`.
 
 .. _fls_o5o1ssqqD7Jg:
 
@@ -5101,7 +5101,7 @@ pointer type
 ^^^^^^^^^^^^
 
 :dp:`fls_F2dUxEa4nheL`
-A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
+A :t:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
 
 .. _fls_Q0r8JkqAP6Of:
 
@@ -5109,7 +5109,7 @@ positional register argument
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_GJd6i52P3KM3`
-A :dt:`positional register argument` is a :t:`register argument` whose
+A :t:`positional register argument` is a :t:`register argument` whose
 configuration is not bound to an :t:`identifier`.
 
 .. _fls_ukvdoqo68y5b:
@@ -5118,7 +5118,7 @@ precedence
 ^^^^^^^^^^
 
 :dp:`fls_sz93844rqc4r`
-:dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
+:t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
 presence of other :t:`[expression]s`.
 
 .. _fls_8Gn72FJBarfb:
@@ -5127,7 +5127,7 @@ prelude
 ^^^^^^^
 
 :dp:`fls_D0PJioOZjKNN`
-A :dt:`prelude` is a collection of :t:`entities <entity>` that are
+A :t:`prelude` is a collection of :t:`entities <entity>` that are
 automatically brought :t:`in scope` of every :t:`module` in a :t:`crate`.
 
 .. _fls_AWySDxPgypiw:
@@ -5136,7 +5136,7 @@ prelude entity
 ^^^^^^^^^^^^^^
 
 :dp:`fls_2lU7RUjzFlsz`
-A :dt:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
+A :t:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
 
 .. _fls_FYn5JqPOhiIs:
 
@@ -5144,7 +5144,7 @@ prelude name
 ^^^^^^^^^^^^
 
 :dp:`fls_6Jk7fUAK122A`
-A :dt:`prelude name` is a :t:`name` of a :t:`prelude entity`.
+A :t:`prelude name` is a :t:`name` of a :t:`prelude entity`.
 
 .. _fls_fikexts17v7a:
 
@@ -5152,7 +5152,7 @@ primitive representation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_bydly1rt63pf`
-:dt:`Primitive representation` is the :t:`type representation` of individual
+:t:`Primitive representation` is the :t:`type representation` of individual
 :t:`[integer type]s`. :t:`Primitive representation` applies only to an
 :t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
 combine :t:`C representation` and :t:`primitive representation`.
@@ -5163,7 +5163,7 @@ principal trait
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_YtYOHoPaMPFX`
-The :dt:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
+The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
 .. _fls_v1u1mevpj0kj:
 
@@ -5171,7 +5171,7 @@ private visibility
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_duop22hyaweq`
-:dt:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
+:t:`Private visibility` is a kind of :t:`visibility` that allows a :t:`name`
 to be referred to only by the current :t:`module` of the :t:`entity`, and its
 descendant :t:`[module]s`.
 
@@ -5183,7 +5183,7 @@ proc-macro crate
 .. _fls_AjjdLZWiL9Tq:
 
 :dp:`fls_DfTszT1PjV7o`
-A :dt:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
+A :t:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
 
 .. _fls_sp5wdsxwmxf:
 
@@ -5191,7 +5191,7 @@ procedural macro
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_u4utpx4zgund`
-A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
+A :t:`procedural macro` is a :t:`macro` that encapsulates syntactic
 transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
@@ -5201,7 +5201,7 @@ program entry point
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_9m37hN9zgEQf`
-A :dt:`program entry point` is a :t:`function` that is invoked at the start of
+A :t:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
 .. _fls_v2rjlovqsdyr:
@@ -5210,7 +5210,7 @@ public visibility
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6cfxqtl921ko`
-:dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
+:t:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
 to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
 :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
@@ -5220,7 +5220,7 @@ punctuator
 ^^^^^^^^^^
 
 :dp:`fls_gwqgi0b7jxmu`
-A :dt:`punctuator` is a character or a sequence of characters in category
+A :t:`punctuator` is a character or a sequence of characters in category
 :s:`Punctuation`.
 
 .. _fls_sgwvmnoio1ql:
@@ -5229,7 +5229,7 @@ pure identifier
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_6pez8fyiew0k`
-A :dt:`pure identifier` is an :t:`identifier` that does not include
+A :t:`pure identifier` is an :t:`identifier` that does not include
 :t:`[weak keyword]s`.
 
 .. _fls_O6CFtnpN3UEE:
@@ -5238,7 +5238,7 @@ qualified path expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_wKAS6FxqGmTf`
-A :dt:`qualified path expression` is a :t:`path expression` that resolves
+A :t:`qualified path expression` is a :t:`path expression` that resolves
 through a :t:`qualified type`.
 
 :dp:`fls_MXxJn64eJpC5`
@@ -5250,7 +5250,7 @@ qualified type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_e7YyZXOFo6ei`
-A :dt:`qualified type` is a :t:`type` that is restricted to a set of
+A :t:`qualified type` is a :t:`type` that is restricted to a set of
 :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
 :t:`qualifying trait`.
 
@@ -5263,7 +5263,7 @@ qualified type path
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_S0QT9ib38i8E`
-A :dt:`qualified type path` is a :t:`type path` that resolves through a
+A :t:`qualified type path` is a :t:`type path` that resolves through a
 :t:`qualified type`.
 
 :dp:`fls_RR8fFLD7Rxlt`
@@ -5275,7 +5275,7 @@ qualifying trait
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_zKY1dWBMrqXZ`
-A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
 :t:`qualified type`.
 
 :dp:`fls_z6OeUWBnec90`
@@ -5287,7 +5287,7 @@ range expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_bffrbucfwu7`
-A :dt:`range expression` is an :t:`expression` that constructs a range.
+A :t:`range expression` is an :t:`expression` that constructs a range.
 
 :dp:`fls_1jk43yvxa8ks`
 See :s:`RangeExpression`.
@@ -5298,7 +5298,7 @@ range expression high bound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_c70pj8w15nmc`
-A :dt:`range expression high bound` is an :t:`operand` that specifies the end
+A :t:`range expression high bound` is an :t:`operand` that specifies the end
 of a range.
 
 :dp:`fls_yxem0ckicxav`
@@ -5310,7 +5310,7 @@ range expression low bound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_t10o1p950u00`
-A :dt:`range expression low bound` is an :t:`operand` that specifies the start
+A :t:`range expression low bound` is an :t:`operand` that specifies the start
 of a range.
 
 :dp:`fls_vmb2z7oh6gzm`
@@ -5322,7 +5322,7 @@ range pattern
 ^^^^^^^^^^^^^
 
 :dp:`fls_vf42zdyq23lc`
-A :dt:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
+A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
 :dp:`fls_r36uf3y2denr`
@@ -5334,7 +5334,7 @@ range pattern bound
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_l9xq96bjs4o2`
-A :dt:`range pattern bound` is a constraint on the range of a
+A :t:`range pattern bound` is a constraint on the range of a
 :t:`range pattern`.
 
 :dp:`fls_80736cs3axo4`
@@ -5346,7 +5346,7 @@ range pattern high bound
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_arp7y7yme7yp`
-A :dt:`range pattern high bound` is a :t:`range pattern bound` that specifies
+A :t:`range pattern high bound` is a :t:`range pattern bound` that specifies
 the end of a range.
 
 :dp:`fls_dnwqcswftw71`
@@ -5358,7 +5358,7 @@ range pattern low bound
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rt7q0msh3op4`
-A :dt:`range pattern low bound` is a :t:`range pattern bound` that specifies
+A :t:`range pattern low bound` is a :t:`range pattern bound` that specifies
 the start of a range.
 
 :dp:`fls_j695o93wsu3i`
@@ -5370,7 +5370,7 @@ range-from expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6enyv2oa4abq`
-A :dt:`range-from expression` is a :t:`range expression` that specifies an
+A :t:`range-from expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound`.
 
 :dp:`fls_e1smn0b478ik`
@@ -5382,7 +5382,7 @@ range-from-to expression
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_nzf6y64jz83f`
-A :dt:`range-from-to expression` is a :t:`range expression` that specifies an
+A :t:`range-from-to expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an excluded
 :t:`range expression high bound`.
 
@@ -5395,7 +5395,7 @@ range-full expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6mchm7kb7i41`
-For :dt:`range-full expression`, see :t:`full range expression`.
+For :t:`range-full expression`, see :t:`full range expression`.
 
 :dp:`fls_u7kd8w5g2icd`
 See :s:`RangeFullExpression`.
@@ -5406,7 +5406,7 @@ range-inclusive expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_9vja0wev84a7`
-A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an
+A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an included
 :t:`range expression high bound`.
 
@@ -5419,7 +5419,7 @@ range-to expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_urnfp1j9d5v4`
-A :dt:`range-to expression` is a :t:`range expression` that specifies an
+A :t:`range-to expression` is a :t:`range expression` that specifies an
 excluded :t:`range expression high bound`.
 
 :dp:`fls_lft9cd7h8cfv`
@@ -5431,7 +5431,7 @@ range-to-inclusive expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_t4fjanjvkd69`
-A :dt:`range-to-inclusive expression` is a :t:`range expression` that specifies
+A :t:`range-to-inclusive expression` is a :t:`range expression` that specifies
 an included :t:`range expression high bound`.
 
 :dp:`fls_krei7lc6lo8q`
@@ -5443,7 +5443,7 @@ raw borrow expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Fe39wLb0vvEg`
-A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+A :t:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
 
 :dp:`fls_I71jq8BGyLqi`
 See :s:`RawBorrowExpression`.
@@ -5454,7 +5454,7 @@ raw byte string literal
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8v5k3wemy4tl`
-A :dt:`raw byte string literal` is a :t:`simple byte string literal` that does
+A :t:`raw byte string literal` is a :t:`simple byte string literal` that does
 not recognize :t:`[escaped character]s`.
 
 :dp:`fls_5x71i3ay3na2`
@@ -5466,7 +5466,7 @@ raw c string literal
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_qhWBzqoYZL0e`
-A :dt:`raw c string literal` is a :t:`simple c string literal` that does not
+A :t:`raw c string literal` is a :t:`simple c string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_WpFJyq6q4k6E`
@@ -5478,7 +5478,7 @@ raw pointer
 ^^^^^^^^^^^
 
 :dp:`fls_rbdilcmt2cns`
-A :dt:`raw pointer` is a pointer of a :t:`raw pointer type`.
+A :t:`raw pointer` is a pointer of a :t:`raw pointer type`.
 
 .. _fls_9los8hwh60z0:
 
@@ -5486,7 +5486,7 @@ raw pointer type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_wspawcoqxfbh`
-A :dt:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 
 :dp:`fls_ctksliaxhzo9`
 See :s:`RawPointerTypeSpecification`.
@@ -5497,7 +5497,7 @@ raw string literal
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_48t4v316951j`
-A :dt:`raw string literal` is a :t:`simple string literal` that does not
+A :t:`raw string literal` is a :t:`simple string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_26ol7lrnux94`
@@ -5509,7 +5509,7 @@ reachable control flow path
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_IxrvzuBg8j3E`
-A :dt:`reachable control flow path` is a control flow path that can be
+A :t:`reachable control flow path` is a control flow path that can be
 taken by the execution of a program between two given points in the program.
 
 .. _fls_nfb3ciarl50w:
@@ -5518,7 +5518,7 @@ receiver operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_odbg4bizvqxq`
-A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_4rme1x6romeg`
@@ -5530,7 +5530,7 @@ receiver type
 ^^^^^^^^^^^^^
 
 :dp:`fls_vgQmMlpFas5t`
-A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
+A :t:`receiver type` is the :t:`type` of the :t:`receiver operand`
 of a :t:`method call expression`.
 
 .. _fls_nG6ikjLsCW7m:
@@ -5539,7 +5539,7 @@ record enum variant
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NWyvPQmOIjo2`
-A :dt:`record enum variant` is an :t:`enum variant` with a
+A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 .. _fls_jdd6h8pdp30x:
@@ -5548,7 +5548,7 @@ record struct
 ^^^^^^^^^^^^^
 
 :dp:`fls_qyd7kqnpjs2`
-A :dt:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+A :t:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
 
 :dp:`fls_rqs5rdnhkwnx`
 See :s:`RecordStructDeclaration`.
@@ -5559,7 +5559,7 @@ record struct field
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lb0t10evec6z`
-A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+A :t:`record struct field` is a :t:`field` of a :t:`record struct type`.
 
 :dp:`fls_bjwmhxf3ae14`
 See :s:`RecordStructField`.
@@ -5570,7 +5570,7 @@ record struct pattern
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_q7njznxhmmw`
-A :dt:`record struct pattern` is a :t:`pattern` that matches a
+A :t:`record struct pattern` is a :t:`pattern` that matches a
 :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_viwieu1p3hds`
@@ -5582,7 +5582,7 @@ record struct type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mgrz3o51gbis`
-A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
+A :t:`record struct type` is the :t:`type` of a :t:`record struct`.
 
 .. _fls_cPs5C1chWmce:
 
@@ -5590,7 +5590,7 @@ record struct value
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_SMBIc0JMck1H`
-A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
+A :t:`record struct value` is a :t:`value` of a :t:`record struct type`.
 
 .. _fls_94fkxohlnq9i:
 
@@ -5598,7 +5598,7 @@ recursive type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_2t8qom6dhcjb`
-A :dt:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
+A :t:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
 the containing :t:`type`, either directly or by referring to another :t:`type`
 which refers back to the original :t:`recursive type`.
 
@@ -5608,7 +5608,7 @@ reference
 ^^^^^^^^^
 
 :dp:`fls_s82y4hsuytiq`
-A :dt:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
 can be obtained explicitly by using a :t:`borrow expression` or implicitly in
 certain scenarios.
 
@@ -5618,7 +5618,7 @@ reference identifier pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_jQs6oJ4RFBPN`
-A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
+A :t:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
 .. _fls_kiy6b1wbn0a3:
@@ -5627,7 +5627,7 @@ reference pattern
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ebshqnhmwgow`
-A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer`
+A :t:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer`
 that is being matched.
 
 :dp:`fls_rghv5drrqxs1`
@@ -5639,7 +5639,7 @@ reference type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_l3knopsdlyf2`
-A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
+A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
 :dp:`fls_jzjatdpxqt9u`
 See :s:`ReferenceTypeSpecification`.
@@ -5650,7 +5650,7 @@ referent
 ^^^^^^^^
 
 :dp:`fls_78ipj8avpwzl`
-A :dt:`referent` is the :t:`value` pointed-to by a :t:`reference`.
+A :t:`referent` is the :t:`value` pointed-to by a :t:`reference`.
 
 .. _fls_bkwy183h9ygt:
 
@@ -5658,7 +5658,7 @@ refutability
 ^^^^^^^^^^^^
 
 :dp:`fls_gzjrfx19fg40`
-:dt:`refutability` is a property of :t:`[pattern]s` that expresses the ability to
+:t:`refutability` is a property of :t:`[pattern]s` that expresses the ability to
 match all possible values of a :t:`type`.
 
 .. _fls_v99joc4m6cup:
@@ -5667,7 +5667,7 @@ refutable constant
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mc6hsomq08uu`
-A :dt:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
 
 .. _fls_srdcx5oi4dcp:
 
@@ -5675,7 +5675,7 @@ refutable pattern
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_re7qz78koman`
-A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not
+A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
 matching the :t:`value` it is being matched against.
 
 .. _fls_dkq1h6p9yaar:
@@ -5684,7 +5684,7 @@ refutable type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_l2yz6jeehm52`
-A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
+A :t:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. _fls_T84qaJMZzMbb:
 
@@ -5692,7 +5692,7 @@ register
 ^^^^^^^^
 
 :dp:`fls_fVdSybu8DW8w`
-A :dt:`register` is a hardware component capable of holding data that can be
+A :t:`register` is a hardware component capable of holding data that can be
 read and written.
 
 .. _fls_ISWWmgKjfYwt:
@@ -5701,7 +5701,7 @@ register argument
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rNoFdCKbVmRC`
-A :dt:`register argument` is a :t:`construct` that configures the input
+A :t:`register argument` is a :t:`construct` that configures the input
 and output of a :t:`register`, and optionally binds the configuration to an
 :t:`identifier`.
 
@@ -5714,7 +5714,7 @@ register class
 ^^^^^^^^^^^^^^
 
 :dp:`fls_2H0OYS733VJl`
-A :dt:`register class` represents a set of :t:`[register]s`.
+A :t:`register class` represents a set of :t:`[register]s`.
 
 .. _fls_8gC17CgCS9n1:
 
@@ -5722,7 +5722,7 @@ register class argument
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ksLXAyPLx9IL`
-A :dt:`register class argument` is a :t:`register argument` that uses a
+A :t:`register class argument` is a :t:`register argument` that uses a
 :t:`register class name`.
 
 .. _fls_xZTkANlRsKRt:
@@ -5731,7 +5731,7 @@ register class name
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QsSFoL0UyRRB`
-A :dt:`register class name` is a target-specific string that identifies a
+A :t:`register class name` is a target-specific string that identifies a
 :t:`register class`.
 
 :dp:`fls_Y1ZpiFAV2c1A`
@@ -5743,7 +5743,7 @@ register expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2cVy6XfOQ4QG`
-A :dt:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
+A :t:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
 
 :dp:`fls_YEzo09cqWUUy`
 See :s:`RegisterExpression`.
@@ -5754,7 +5754,7 @@ register name
 ^^^^^^^^^^^^^
 
 :dp:`fls_U5r8Ypnjah5E`
-A :dt:`register name` is either the :t:`explicit register name` of a
+A :t:`register name` is either the :t:`explicit register name` of a
 :t:`register`, or the :t:`register class name` of the :t:`register class` a
 :t:`register` belongs to.
 
@@ -5767,7 +5767,7 @@ register parameter
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_JicHMIj5dlxJ`
-A :dt:`register parameter` is a substring delimited by characters 0x7B (left
+A :t:`register parameter` is a substring delimited by characters 0x7B (left
 curly bracket) and 0x7D (right curly bracket) that is substituted with a
 :t:`register argument` in an :t:`assembly instruction`.
 
@@ -5777,7 +5777,7 @@ register parameter modifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8BdOnxHZS0Qi`
-A :dt:`register parameter modifier` is a substring that starts with character
+A :t:`register parameter modifier` is a substring that starts with character
 0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
 the related :t:`register parameter`.
 
@@ -5787,7 +5787,7 @@ remainder assignment
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_58eDC2XtQcaR`
-For :dt:`remainder assignment`, see :t:`remainder assignment expression`.
+For :t:`remainder assignment`, see :t:`remainder assignment expression`.
 
 .. _fls_mio7pagghcks:
 
@@ -5795,7 +5795,7 @@ remainder assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_en7ytqvefw7j`
-A :dt:`remainder assignment expression` is a
+A :t:`remainder assignment expression` is a
 :t:`compound assignment expression` that uses remainder division.
 
 :dp:`fls_rkk80quk8uzc`
@@ -5807,7 +5807,7 @@ remainder expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_l6muwnclm1do`
-A :dt:`remainder expression` is an :t:`arithmetic expression` that uses
+A :t:`remainder expression` is an :t:`arithmetic expression` that uses
 remainder division.
 
 :dp:`fls_h98qlby2uiru`
@@ -5819,7 +5819,7 @@ renaming
 ^^^^^^^^
 
 :dp:`fls_cp8u9kq44o8a`
-A :dt:`renaming` provides an alternative :t:`name` for an existing name.
+A :t:`renaming` provides an alternative :t:`name` for an existing name.
 
 :dp:`fls_8inznqig2ibr`
 See :s:`Renaming`.
@@ -5830,7 +5830,7 @@ repeat operand
 ^^^^^^^^^^^^^^
 
 :dp:`fls_ol2y1og2jwss`
-A :dt:`repeat operand` is an :t:`operand` that specifies the element being
+A :t:`repeat operand` is an :t:`operand` that specifies the element being
 repeated in an :t:`array repetition constructor`.
 
 :dp:`fls_r4acyux78txu`
@@ -5842,7 +5842,7 @@ repetition operator
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_67907pk7uogl`
-A :dt:`repetition operator` is a :t:`construct` that indicates the number
+A :t:`repetition operator` is a :t:`construct` that indicates the number
 of times a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription` can be repeated.
 
@@ -5863,7 +5863,7 @@ representation modifier
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_BCvXL7HkXqdZ`
-A :dt:`representation modifier` is a :t:`construct` that modifies the
+A :t:`representation modifier` is a :t:`construct` that modifies the
 :t:`alignment` of a :t:`type`.
 
 :dp:`fls_TAVyjj66UBUo`
@@ -5875,7 +5875,7 @@ reserved keyword
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_b67hj7fdbq4s`
-A :dt:`reserved keyword` is a :t:`keyword` that is not yet in use.
+A :t:`reserved keyword` is a :t:`keyword` that is not yet in use.
 
 :dp:`fls_hp9iqdrkt0cg`
 See :s:`ReservedKeyword`.
@@ -5886,7 +5886,7 @@ resolution
 ^^^^^^^^^^
 
 :dp:`fls_PQjEvLs5cE4y`
-:dt:`resolution` is the process of finding a unique interpretation for a
+:t:`resolution` is the process of finding a unique interpretation for a
 :t:`field access expression`, a :t:`method call expression`, a :t:`call
 expression` or a :t:`path`.
 
@@ -5896,7 +5896,7 @@ rest pattern
 ^^^^^^^^^^^^
 
 :dp:`fls_xngp3h1znw9o`
-A :dt:`rest pattern` is a :t:`pattern` that matches zero or more elements that
+A :t:`rest pattern` is a :t:`pattern` that matches zero or more elements that
 have not already been matched.
 
 :dp:`fls_rnmhg04u0oga`
@@ -5908,7 +5908,7 @@ return expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_vnupfc6s0s7b`
-A :dt:`return expression` is an :t:`expression` that optionally yields a
+A :t:`return expression` is an :t:`expression` that optionally yields a
 :t:`value` and causes control flow to return to the end of the enclosing
 :t:`control flow boundary`.
 
@@ -5921,7 +5921,7 @@ return type
 ^^^^^^^^^^^
 
 :dp:`fls_cwucgbmmhnnm`
-A :dt:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
+A :t:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
 :dp:`fls_utuprsem6n58`
 See :s:`ReturnType`.
@@ -5932,7 +5932,7 @@ right operand
 ^^^^^^^^^^^^^
 
 :dp:`fls_e1j9s4odze9b`
-A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of
+A :t:`right operand` is an :t:`operand` that appears on the right-hand side of
 a :t:`binary operator`.
 
 :dp:`fls_hq7x1t5dmdlp`
@@ -5944,7 +5944,7 @@ rule matching
 ^^^^^^^^^^^^^
 
 :dp:`fls_dux9js5oixjd`
-:dt:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
+:t:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
 resolved :t:`declarative macro`.
 
@@ -5954,7 +5954,7 @@ rustc
 ^^^^^
 
 :dp:`fls_zdgbeixirjfm`
-:dt:`rustc` is a compiler that implements the FLS.
+:t:`rustc` is a compiler that implements the FLS.
 
 .. _fls_Q4MRIo7cWv5K:
 
@@ -5962,7 +5962,7 @@ safety invariant
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_wRZfAmTmMGTX`
-A :dt:`safety invariant` is an invariant that when violated may result in
+A :t:`safety invariant` is an invariant that when violated may result in
 :t:`undefined behavior`.
 
 .. _fls_XeMNghZZOBqL:
@@ -5971,7 +5971,7 @@ scalar type
 ^^^^^^^^^^^
 
 :dp:`fls_GgBqFW2NywoA`
-A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or
+A :t:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or
 a :t:`numeric type`.
 
 .. _fls_fj8mdxi967px:
@@ -5980,8 +5980,8 @@ scope
 ^^^^^
 
 :dp:`fls_fachaj550cq1`
-A :dt:`scope` is a region of program text where an :t:`entity` can be referred
-to. An :t:`entity` is :dt:`in scope` when it can be referred to.
+A :t:`scope` is a region of program text where an :t:`entity` can be referred
+to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. _fls_xZUiNkBN5e00:
 
@@ -5989,7 +5989,7 @@ scope hierarchy
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_Spcc3L9X939d`
-The :dt:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
+The :t:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
 by :t:`[scoping construct]s`. An inner :t:`scope` introduced by a nested
 :t:`scoping construct` is the child of an outer :t:`scope` introduced by an
 enclosing :t:`scoping construct`.
@@ -6000,7 +6000,7 @@ selected field
 ^^^^^^^^^^^^^^
 
 :dp:`fls_8otlvwlqrd4e`
-A :dt:`selected field` is a :t:`field` that is selected by a
+A :t:`selected field` is a :t:`field` that is selected by a
 :t:`field access expression`.
 
 .. _fls_9o2hcy6t7dac:
@@ -6019,7 +6019,7 @@ self parameter
 ^^^^^^^^^^^^^^
 
 :dp:`fls_ksne48eip15`
-A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
 ``self``.
 
 .. _fls_jq213cesxhyp:
@@ -6028,7 +6028,7 @@ self public modifier
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ln3bzqgctfym`
-A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
+A :t:`self public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
 to a :t:`simple path public modifier` where the :t:`simple path` denotes
 :t:`keyword` ``self``.
@@ -6042,7 +6042,7 @@ Self scope
 ^^^^^^^^^^
 
 :dp:`fls_pSvqWGRmFmH0`
-A :dt:`Self scope` is a :t:`scope` for :c:`Self`.
+A :t:`Self scope` is a :t:`scope` for :c:`Self`.
 
 .. _fls_8spw41g0dbqw:
 
@@ -6050,7 +6050,7 @@ send type
 ^^^^^^^^^
 
 :dp:`fls_qfkng98dw6yy`
-A :dt:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
+A :t:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
 :t:`trait`.
 
 .. _fls_at8q1svh3isg:
@@ -6059,7 +6059,7 @@ separator
 ^^^^^^^^^
 
 :dp:`fls_128xny4qfcj5`
-A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
+A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 .. _fls_rtgis2k7by2r:
@@ -6068,7 +6068,7 @@ sequence type
 ^^^^^^^^^^^^^
 
 :dp:`fls_lk1oslxh8h9p`
-A :dt:`sequence type` is a :t:`type` that represents a sequence of elements.
+A :t:`sequence type` is a :t:`type` that represents a sequence of elements.
 
 .. _fls_HUklMSWzx8Mg:
 
@@ -6076,7 +6076,7 @@ shadowing
 ^^^^^^^^^
 
 :dp:`fls_li3NXOPEH9cL`
-:dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
+:t:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
 another :t:`name` with the same characters is introduced in the same
 :t:`scope` within the same :t:`namespace`, effectively hiding it.
 
@@ -6086,7 +6086,7 @@ shared borrow
 ^^^^^^^^^^^^^
 
 :dp:`fls_gmbskxin90zi`
-A :dt:`shared borrow` is a :t:`borrow` produced by evaluating an
+A :t:`shared borrow` is a :t:`borrow` produced by evaluating an
 :t:`immutable borrow expression`.
 
 .. _fls_18xazs7sp4:
@@ -6095,7 +6095,7 @@ shared reference
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_cspa4c5mscnw`
-A :dt:`shared reference` is a :t:`value` of a :t:`shared reference type`.
+A :t:`shared reference` is a :t:`value` of a :t:`shared reference type`.
 
 .. _fls_antrblstppyf:
 
@@ -6103,7 +6103,7 @@ shared reference type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_8z9wb3eu5yp1`
-A :dt:`shared reference type` is a :t:`reference type` not subject to
+A :t:`shared reference type` is a :t:`reference type` not subject to
 :t:`keyword` ``mut``.
 
 .. _fls_o8EVuKgr0Y98:
@@ -6112,7 +6112,7 @@ shift left assignment
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6adWrtvab6Tw`
-For :dt:`shift left assignment`, see :t:`shift left assignment expression`.
+For :t:`shift left assignment`, see :t:`shift left assignment expression`.
 
 .. _fls_29n0oe4d7lwa:
 
@@ -6120,7 +6120,7 @@ shift left assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_j15ke2p8cjfp`
-A :dt:`shift left assignment expression` is a
+A :t:`shift left assignment expression` is a
 :t:`compound assignment expression` that uses bit shift left arithmetic.
 
 :dp:`fls_ozu74fsakomn`
@@ -6132,7 +6132,7 @@ shift left expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_phiv6k4emauc`
-A :dt:`shift left expression` is a :t:`bit expression` that uses bit shift left
+A :t:`shift left expression` is a :t:`bit expression` that uses bit shift left
 arithmetic.
 
 :dp:`fls_56lu9kenzig9`
@@ -6144,7 +6144,7 @@ shift right assignment
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_XuwcHjwHdyA8`
-For :dt:`shift right assignment`, see :t:`shift right assignment expression`.
+For :t:`shift right assignment`, see :t:`shift right assignment expression`.
 
 .. _fls_cqfzbsasnd1t:
 
@@ -6152,7 +6152,7 @@ shift right assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_1jpnp7hatlmu`
-A :dt:`shift right assignment expression` is a
+A :t:`shift right assignment expression` is a
 :t:`compound assignment expression` that uses bit shift right arithmetic.
 
 :dp:`fls_naqzlebew1uf`
@@ -6164,7 +6164,7 @@ shift right expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_j6itily0u0k9`
-A :dt:`shift right expression` is a :t:`bit expression` that uses bit shift
+A :t:`shift right expression` is a :t:`bit expression` that uses bit shift
 right arithmetic.
 
 :dp:`fls_ex1mopil8w1p`
@@ -6176,7 +6176,7 @@ shorthand deconstructor
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_22yxrde244w8`
-A :dt:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
+A :t:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
 of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
 :t:`binding`.
 
@@ -6189,7 +6189,7 @@ shorthand initializer
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_bgxxg48snck1`
-A :dt:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
+A :t:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
 of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_qc08ydgmqudi`
@@ -6201,7 +6201,7 @@ signed integer type
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_vcronf7l2bhy`
-A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+A :t:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
 signed whole numbers.
 
 .. _fls_4GvXiDfcPlRD:
@@ -6210,7 +6210,7 @@ simple byte string literal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_XpbU4Up0Aza8`
-A :dt:`simple byte string literal` is a :t:`byte string literal` that consists
+A :t:`simple byte string literal` is a :t:`byte string literal` that consists
 of multiple :s:`[AsciiCharacter]s`.
 
 :dp:`fls_OfI70zK68TnQ`
@@ -6222,7 +6222,7 @@ simple c string literal
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_qoHXrmds9SgI`
-A :dt:`simple c string literal` is a :t:`c string literal` where the characters are
+A :t:`simple c string literal` is a :t:`c string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_ggm5FNUqg9EY`
@@ -6234,7 +6234,7 @@ simple import
 ^^^^^^^^^^^^^
 
 :dp:`fls_jrlzpoauui9g`
-A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
+A :t:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
 :t:`name` than they are declared with by using a :t:`renaming`.
 
@@ -6247,7 +6247,7 @@ simple path
 ^^^^^^^^^^^
 
 :dp:`fls_db91duoug4eb`
-A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
+A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
 :t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
 above.
 
@@ -6260,7 +6260,7 @@ simple path prefix
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ijc2yHQuIltY`
-A :dt:`simple path prefix` is the leading :t:`simple path` of a
+A :t:`simple path prefix` is the leading :t:`simple path` of a
 :t:`glob import` or a :t:`nesting import`.
 
 :dp:`fls_ImHceyHhK6OZ`
@@ -6272,7 +6272,7 @@ simple path public modifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mby9r0jm6uyv`
-A :dt:`simple path public modifier` is a :t:`visibility modifier` that grants a
+A :t:`simple path public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the provided :t:`simple path` only.
 
 :dp:`fls_mud4hw74kuh6`
@@ -6284,7 +6284,7 @@ simple path resolution
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_CQlepoN6PmKq`
-:dt:`simple path resolution` is a kind of :t:`path resolution` that applies to
+:t:`simple path resolution` is a kind of :t:`path resolution` that applies to
 a :t:`simple path`.
 
 .. _fls_k5uqt5oj7wvl:
@@ -6293,7 +6293,7 @@ simple public modifier
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ce1ounn1g68`
-A :dt:`simple public modifier` is a :t:`visibility modifier` that grants a
+A :t:`simple public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility`.
 
 :dp:`fls_rd68vm2f2qy5`
@@ -6305,7 +6305,7 @@ simple register expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_4Yp4R7gXucL2`
-A :dt:`simple register expression` is either an :t:`expression` or an
+A :t:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
 :dp:`fls_kKaqHDxPTTUC`
@@ -6317,7 +6317,7 @@ simple string literal
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_p6qyyptz8w8w`
-A :dt:`simple string literal` is a :t:`string literal` where the characters are
+A :t:`simple string literal` is a :t:`string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_osj0c4dmr6e0`
@@ -6329,7 +6329,7 @@ single segment path
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Hun5BCZsqd6k`
-A :dt:`single segment path` is a :t:`path` consisting of exactly one
+A :t:`single segment path` is a :t:`path` consisting of exactly one
 :t:`path segment`.
 
 .. _fls_oy5xy5pm1enx:
@@ -6338,7 +6338,7 @@ size
 ^^^^
 
 :dp:`fls_3obnilqhkjux`
-The :dt:`size` of a :t:`type` is the offset in bytes between successive elements
+The :t:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
@@ -6349,7 +6349,7 @@ size operand
 ^^^^^^^^^^^^
 
 :dp:`fls_srajsqi5i3py`
-A :dt:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
+A :t:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
 that specifies the length of an :t:`array type`.
 
 :dp:`fls_228ioayvdguv`
@@ -6361,7 +6361,7 @@ sized type
 ^^^^^^^^^^
 
 :dp:`fls_pwcgsRCNSwKn`
-A :dt:`sized type` is a :t:`type` that implements the
+A :t:`sized type` is a :t:`type` that implements the
 :std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_srkftses9sxn:
@@ -6370,7 +6370,7 @@ slice
 ^^^^^
 
 :dp:`fls_p1sv01ml2ark`
-A :dt:`slice` is a :t:`value` of a :t:`slice type`.
+A :t:`slice` is a :t:`value` of a :t:`slice type`.
 
 .. _fls_1s3a31o9zx1a:
 
@@ -6378,7 +6378,7 @@ slice pattern
 ^^^^^^^^^^^^^
 
 :dp:`fls_7613qu4igwiw`
-A :dt:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed
+A :t:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed
 size and :t:`[slice]s` of dynamic size.
 
 :dp:`fls_3qey00280x27`
@@ -6390,7 +6390,7 @@ slice type
 ^^^^^^^^^^
 
 :dp:`fls_bvpszep1w90g`
-A :dt:`slice type` is a :t:`sequence type` that provides a view into a sequence
+A :t:`slice type` is a :t:`sequence type` that provides a view into a sequence
 of elements.
 
 :dp:`fls_y7gscwf29htg`
@@ -6402,7 +6402,7 @@ source file
 ^^^^^^^^^^^
 
 :dp:`fls_nh737q4mn27u`
-A :dt:`source file` contains the program text consisting of :t:`[inner
+A :t:`source file` contains the program text consisting of :t:`[inner
 attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
 :t:`source file` is tool defined.
 
@@ -6415,7 +6415,7 @@ statement
 ^^^^^^^^^
 
 :dp:`fls_faijgwg4lhp9`
-A :dt:`statement` is a :t:`construct` described by :s:`Statement`.
+A :t:`statement` is a :t:`construct` described by :s:`Statement`.
 
 :dp:`fls_th7edvxml3mn`
 See :s:`Statement`.
@@ -6426,7 +6426,7 @@ static
 ^^^^^^
 
 :dp:`fls_srx4v1e20yxa`
-A :dt:`static` is a :t:`value` that is associated with a specific memory
+A :t:`static` is a :t:`value` that is associated with a specific memory
 location.
 
 :dp:`fls_1b7gpk8e98pw`
@@ -6438,7 +6438,7 @@ static initializer
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6jjbfni87tax`
-A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
+A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`static`.
 
 :dp:`fls_igbl5uv0dlhl`
@@ -6450,7 +6450,7 @@ static lifetime elision
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NbVewjYRnQPF`
-:dt:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
+:t:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
 the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
 
 .. _fls_1ricdj86o457:
@@ -6468,7 +6468,7 @@ strict keyword
 ^^^^^^^^^^^^^^
 
 :dp:`fls_hza9spr6behn`
-A :dt:`strict keyword` is a :t:`keyword` that always holds its special meaning.
+A :t:`strict keyword` is a :t:`keyword` that always holds its special meaning.
 
 :dp:`fls_67pzayd9qzzs`
 See :s:`StrictKeyword`.
@@ -6479,7 +6479,7 @@ string literal
 ^^^^^^^^^^^^^^
 
 :dp:`fls_dphk5br0ag35`
-A :dt:`string literal` is a :t:`literal` that consists of multiple characters.
+A :t:`string literal` is a :t:`literal` that consists of multiple characters.
 
 :dp:`fls_z0t3ae24h5h5`
 See :s:`StringLiteral`.
@@ -6490,7 +6490,7 @@ struct
 ^^^^^^
 
 :dp:`fls_rufylj7qxs1w`
-A :dt:`struct` is an :t:`abstract data type` declared with a
+A :t:`struct` is an :t:`abstract data type` declared with a
 :s:`StructDeclaration`.
 
 .. _fls_dxfyejkbiz3p:
@@ -6499,7 +6499,7 @@ struct expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_m8n9e0sxyb95`
-A :dt:`struct expression` is an :t:`expression` that constructs an
+A :t:`struct expression` is an :t:`expression` that constructs an
 :t:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_odm68rhu2j1`
@@ -6511,7 +6511,7 @@ struct field
 ^^^^^^^^^^^^
 
 :dp:`fls_8Z9YWMnrHXJS`
-A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
+A :t:`struct field` is a :t:`field` declared in a :t:`struct type`.
 
 .. _fls_ook43xes5t34:
 
@@ -6519,7 +6519,7 @@ struct pattern
 ^^^^^^^^^^^^^^
 
 :dp:`fls_xbtoiwegp8gu`
-A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_pn8e50ep2fln`
@@ -6531,7 +6531,7 @@ struct type
 ^^^^^^^^^^^
 
 :dp:`fls_7v4dhh3nl8h9`
-A :dt:`struct type` is an :t:`abstract data type` that is a product of other
+A :t:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
 
 :dp:`fls_dhlww4yrnb2v`
@@ -6544,7 +6544,7 @@ struct value
 ^^^^^^^^^^^^
 
 :dp:`fls_YmZfW9kWlbIX`
-A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
+A :t:`struct value` is a :t:`value` of a :t:`struct type`.
 
 .. _fls_P7920ALJisrH:
 
@@ -6552,7 +6552,7 @@ structurally equal
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_glRZUKhmaWmP`
-A :t:`type` is :dt:`structurally equal` when its :t:`[value]s` can be compared
+A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
 for equality by structure.
 
 .. _fls_feZ3iDff05Cb:
@@ -6561,7 +6561,7 @@ subexpression
 ^^^^^^^^^^^^^
 
 :dp:`fls_bNSHwD4Kpfm0`
-A :dt:`subexpression` is an :t:`expression` nested within another
+A :t:`subexpression` is an :t:`expression` nested within another
 :t:`expression`.
 
 .. _fls_wee9stfk0abp:
@@ -6570,7 +6570,7 @@ subject expression
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xisqke87ert`
-A :dt:`subject expression` is an :t:`expression` that controls
+A :t:`subject expression` is an :t:`expression` that controls
 :t:`[for loop]s`, :t:`[if expression]s`, and :t:`[match expression]s`.
 
 :dp:`fls_gph5doham4js`
@@ -6582,7 +6582,7 @@ subject let expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_b3ckv6zgnaeb`
-A :dt:`subject let expression` is an :t:`expression` that controls
+A :t:`subject let expression` is an :t:`expression` that controls
 :t:`[if let expression]s` and :t:`[while let loop]s`.
 
 :dp:`fls_vnzaargh5yok`
@@ -6594,7 +6594,7 @@ subpattern
 ^^^^^^^^^^
 
 :dp:`fls_942ulj9qsdes`
-A :dt:`subpattern` is a :t:`pattern` nested within another pattern.
+A :t:`subpattern` is a :t:`pattern` nested within another pattern.
 
 .. _fls_0hf1gNf90qKr:
 
@@ -6602,7 +6602,7 @@ subtraction assignment
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_75Eyk2YXO2j4`
-For :dt:`subtraction assignment`, see :t:`subtraction assignment`.
+For :t:`subtraction assignment`, see :t:`subtraction assignment`.
 
 .. _fls_a4iu72zn4h0:
 
@@ -6610,7 +6610,7 @@ subtraction assignment expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_4pb85nl4r7vs`
-A :dt:`subtraction assignment expression` is a
+A :t:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
 
 :dp:`fls_mye9yj5tc8hr`
@@ -6622,7 +6622,7 @@ subtraction expression
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_caamjgpw59id`
-A :dt:`subtraction expression` is an :t:`arithmetic expression` that uses
+A :t:`subtraction expression` is an :t:`arithmetic expression` that uses
 subtraction.
 
 :dp:`fls_mx3olnbntpye`
@@ -6634,7 +6634,7 @@ subtrait
 ^^^^^^^^
 
 :dp:`fls_wnj95vozis6n`
-A :dt:`subtrait` is a :t:`trait` with a :t:`supertrait`.
+A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
 
 .. _fls_pu4zqJ1tGrfH:
 
@@ -6642,7 +6642,7 @@ subtype
 ^^^^^^^
 
 :dp:`fls_pmkjOWsieQog`
-A :dt:`subtype` is a :t:`type` that may be used in place of another :t:`type`
+A :t:`subtype` is a :t:`type` that may be used in place of another :t:`type`
 according to :t:`subtyping`.
 
 .. _fls_f5dxz8pvs1kz:
@@ -6651,7 +6651,7 @@ subtyping
 ^^^^^^^^^
 
 :dp:`fls_bo5xzjsdd3lj`
-:dt:`subtyping` is the relation that determines when one :t:`type` may be used
+:t:`subtyping` is the relation that determines when one :t:`type` may be used
 in place of another.
 
 .. _fls_qar9v52smi9j:
@@ -6660,7 +6660,7 @@ suffixed float
 ^^^^^^^^^^^^^^
 
 :dp:`fls_7reb4jp0x1wf`
-A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
+A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 .. _fls_bmbu11ycjpor:
 
@@ -6668,7 +6668,7 @@ suffixed integer
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_ltzetxu3sq7k`
-A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
+A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 .. _fls_12bluakt0jnj:
 
@@ -6676,7 +6676,7 @@ super public modifier
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_vry5mhs3a5wv`
-A :dt:`super public modifier` is a :t:`visibility modifier` that grants a
+A :t:`super public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`public visibility` within the parent :t:`module` only. A
 :t:`super public modifier` is equivalent to a :t:`simple path public modifier`
 where the :t:`simple path` denotes :t:`keyword` ``super``.
@@ -6690,7 +6690,7 @@ supertrait
 ^^^^^^^^^^
 
 :dp:`fls_s4chur1wutwh`
-A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must
+A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must
 additionally implement.
 
 .. _fls_r4eoz3ohvpdi:
@@ -6699,7 +6699,7 @@ sync type
 ^^^^^^^^^
 
 :dp:`fls_rpc0c8qx3nbo`
-A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
+A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 :t:`trait`.
 
 .. _fls_44djv0wocacs:
@@ -6709,7 +6709,7 @@ syntactic category
 
 :dp:`fls_f981e3m7kq50`
 * :dp:`fls_ceb5a8t6cakr`
-  A :dt:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
+  A :t:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
 .. _fls_psd2ll10ixs:
 
@@ -6717,7 +6717,7 @@ tail expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_6k873f1knasi`
-A :dt:`tail expression` is the last :t:`expression` within a
+A :t:`tail expression` is the last :t:`expression` within a
 :t:`block expression`.
 
 .. _fls_4omay4i65dwz:
@@ -6726,7 +6726,7 @@ temporary
 ^^^^^^^^^
 
 :dp:`fls_fathkxu9kxvw`
-A :dt:`temporary` is an anonymous :t:`variable` produced by some intermediate
+A :t:`temporary` is an anonymous :t:`variable` produced by some intermediate
 computation.
 
 .. _fls_ihv02usuziw8:
@@ -6735,7 +6735,7 @@ terminated
 ^^^^^^^^^^
 
 :dp:`fls_med1l8vheb83`
-A :t:`loop expression` is :dt:`terminated` when its :t:`block expression` is no
+A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no
 longer evaluated.
 
 .. _fls_ef03n3ehz372:
@@ -6744,7 +6744,7 @@ terminated macro invocation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_542es82wfzco`
-A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
+A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used
 as a :t:`statement`.
 
 :dp:`fls_tcvfi2zgdm58`
@@ -6756,7 +6756,7 @@ textual macro scope
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xyeYk6vrmlWp`
-A :dt:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
+A :t:`textual macro scope` is a :t:`scope` for :t:`[declarative macro]s`.
 
 .. _fls_mdcbhy96hrau:
 
@@ -6764,7 +6764,7 @@ textual type
 ^^^^^^^^^^^^
 
 :dp:`fls_lv1pdtzf6f58`
-A :dt:`textual type` is a :t:`type` class that includes type :c:`char` and type
+A :t:`textual type` is a :t:`type` class that includes type :c:`char` and type
 :c:`str`.
 
 .. _fls_lfsgf6u142yb:
@@ -6773,7 +6773,7 @@ thin pointer
 ^^^^^^^^^^^^
 
 :dp:`fls_i2j0u4v5o1bs`
-A :dt:`thin pointer` is a :t:`value` of a :t:`thin pointer type`.
+A :t:`thin pointer` is a :t:`value` of a :t:`thin pointer type`.
 
 .. _fls_7ksqpi9j8ba9:
 
@@ -6781,7 +6781,7 @@ thin pointer type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_33rka3kyxgrk`
-A :dt:`thin pointer type` is an :t:`indirection type` that refers to a
+A :t:`thin pointer type` is an :t:`indirection type` that refers to a
 :t:`fixed sized type`.
 
 .. _fls_tzoko74t5t6n:
@@ -6790,7 +6790,7 @@ token matching
 ^^^^^^^^^^^^^^
 
 :dp:`fls_a19q6lhvakcm`
-:dt:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
+:t:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
 belongs to a resolved :t:`declarative macro`.
 
@@ -6800,7 +6800,7 @@ tokens
 ^^^^^^
 
 :dp:`fls_v23kqvyvscd7`
-:dt:`[Token]s` are a subset of :t:`[lexical element]s` consumed by
+:t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by
 :t:`[macro]s`.
 
 .. _fls_cad25qns4164:
@@ -6809,7 +6809,7 @@ trait
 ^^^^^
 
 :dp:`fls_mf4x9g70o5z6`
-A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
 :dp:`fls_ypjhwvuyrns`
@@ -6821,7 +6821,7 @@ trait body
 ^^^^^^^^^^
 
 :dp:`fls_u221Me58aZmY`
-A :dt:`trait body` is a :t:`construct` that encapsulates the
+A :t:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of a :t:`trait`.
 
@@ -6834,7 +6834,7 @@ trait bound
 ^^^^^^^^^^^
 
 :dp:`fls_95zx8unuxxpq`
-A :dt:`trait bound` is a :t:`bound` that imposes a constraint on the
+A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
 :t:`[trait]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_bkbym8v4t6oh`
@@ -6846,7 +6846,7 @@ trait implementation
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_5v7kbg144pr8`
-A :dt:`trait implementation` is an :t:`implementation` that adds functionality
+A :t:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_rytylyyxh27f`
@@ -6858,7 +6858,7 @@ trait object lifetime elision
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rALP9b6qjlp9`
-:dt:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
+:t:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
 applies to :t:`[trait object type]s`.
 
 .. _fls_7qtbro7ipndr:
@@ -6867,7 +6867,7 @@ trait object type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lo2fzzdwxy1l`
-A :dt:`trait object type` is a :t:`type` that implements a :t:`trait`, where
+A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where
 the :t:`type` is not known at compile time.
 
 :dp:`fls_d632mc5c8qwt`
@@ -6880,7 +6880,7 @@ trait type
 ^^^^^^^^^^
 
 :dp:`fls_JQsQnQ0dTHlS`
-A :dt:`trait type` is either an :t:`impl trait type` or a
+A :t:`trait type` is either an :t:`impl trait type` or a
 :t:`trait object type`.
 
 .. _fls_sl62718i1kkn:
@@ -6889,7 +6889,7 @@ transparent representation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hb3e72rhzpnv`
-:dt:`Transparent representation` applies only to an :t:`enum type` with a
+:t:`Transparent representation` applies only to an :t:`enum type` with a
 single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
 :t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
 of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
@@ -6900,7 +6900,7 @@ trivial predicate
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_db5njwrjolhs`
-A :dt:`trivial predicate` is a :t:`where clause predicate` that does not use
+A :t:`trivial predicate` is a :t:`where clause predicate` that does not use
 the :t:`[generic parameter]s` or :t:`[higher-ranked trait bound]s` of the related
 :t:`construct`.
 
@@ -6910,7 +6910,7 @@ tuple
 ^^^^^
 
 :dp:`fls_yhcfqz6p0059`
-A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
+A :t:`tuple` is a :t:`value` of a :t:`tuple type`.
 
 .. _fls_1XEHpJOK9DKB:
 
@@ -6918,7 +6918,7 @@ tuple enum variant
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eduQhUYBEkVx`
-A :dt:`tuple enum variant` is an :t:`enum variant` with a
+A :t:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 .. _fls_sP7uHoLxGfRO:
@@ -6927,7 +6927,7 @@ tuple enum variant value
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ORURxipGqNrZ`
-A :dt:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
+A :t:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
 .. _fls_udl6ujjg1jae:
 
@@ -6935,7 +6935,7 @@ tuple expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_x7m4u1dx4eli`
-A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
+A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
 :dp:`fls_qawnvcddgyxx`
 See :s:`TupleExpression`.
@@ -6946,7 +6946,7 @@ tuple field
 ^^^^^^^^^^^
 
 :dp:`fls_8rq1gbzij5tk`
-A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
+A :t:`tuple field` is a :t:`field` of a :t:`tuple type`.
 
 .. _fls_zfvvbf7ncrhj:
 
@@ -6954,7 +6954,7 @@ tuple initializer
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_94hg6re11zl5`
-A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
+A :t:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
 :t:`tuple field` in a :t:`tuple expression`.
 
 .. _fls_7f2sx37kg4ca:
@@ -6963,7 +6963,7 @@ tuple pattern
 ^^^^^^^^^^^^^
 
 :dp:`fls_al2q3vh1rg6e`
-A :dt:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which
+A :t:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which
 satisfies all criteria defined by its :t:`[subpattern]s`.
 
 :dp:`fls_bevmt5t0238j`
@@ -6975,7 +6975,7 @@ tuple struct
 ^^^^^^^^^^^^
 
 :dp:`fls_pdcpmapiq491`
-A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
 :dp:`fls_1tj4p05m4wdf`
 See :s:`TupleStructDeclaration`.
@@ -6986,7 +6986,7 @@ tuple struct call expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_DQaCUkskfXzk`
-A :dt:`tuple struct call expression` is a :t:`call expression` where the
+A :t:`tuple struct call expression` is a :t:`call expression` where the
 :t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
 
 .. _fls_xx4slbg8s63e:
@@ -6995,7 +6995,7 @@ tuple struct field
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ndeb1a2hm9d8`
-A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
+A :t:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
 
 :dp:`fls_v4eq8xg608d5`
 See :s:`TupleStructField`.
@@ -7006,7 +7006,7 @@ tuple struct pattern
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_gu1mfurivnfz`
-A :dt:`tuple struct pattern` is a :t:`pattern` that matches a
+A :t:`tuple struct pattern` is a :t:`pattern` that matches a
 :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_3jx5683mdm10`
@@ -7018,7 +7018,7 @@ tuple struct type
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hhikx5ajx3bl`
-A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+A :t:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
 
 .. _fls_x4ALCJKhVDZF:
 
@@ -7026,7 +7026,7 @@ tuple struct value
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xz1p4pss2Ocn`
-A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
+A :t:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 
 .. _fls_k4yz7i2pf9wp:
 
@@ -7034,7 +7034,7 @@ tuple type
 ^^^^^^^^^^
 
 :dp:`fls_q0ulqfvnxwni`
-A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
+A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
 
 :dp:`fls_rkugxsau1w78`
@@ -7046,7 +7046,7 @@ type
 ^^^^
 
 :dp:`fls_nhlh7vvgsbwo`
-A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
+A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
 .. _fls_vaklivoy2ix2:
@@ -7055,7 +7055,7 @@ type alias
 ^^^^^^^^^^
 
 :dp:`fls_8pcsxodv1xp5`
-A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 
 :dp:`fls_qfzskp1t3h5w`
 See :s:`TypeAliasDeclaration`.
@@ -7066,7 +7066,7 @@ type argument
 ^^^^^^^^^^^^^
 
 :dp:`fls_152lk7hrtd11`
-A :dt:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
+A :t:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
 a :t:`type parameter`.
 
 :dp:`fls_91tqk65qiygf`
@@ -7078,7 +7078,7 @@ type ascription
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_pm5jytclqn7y`
-A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
+A :t:`type ascription` specifies the :t:`type` of a :t:`construct`.
 
 :dp:`fls_c3xtiputfxea`
 See :s:`TypeAscription`.
@@ -7089,7 +7089,7 @@ type bound predicate
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_j6WKoybB4cep`
-A :dt:`type bound predicate` is a :t:`construct` that specifies
+A :t:`type bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
 
 :dp:`fls_oMlPNgoDjnoW`
@@ -7101,7 +7101,7 @@ type cast expression
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_j6zo3rir1x76`
-A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type`
+A :t:`type cast expression` is an :t:`expression` that changes the :t:`type`
 of an :t:`operand`.
 
 :dp:`fls_dvh1xy9w74ch`
@@ -7113,7 +7113,7 @@ type coercion
 ^^^^^^^^^^^^^
 
 :dp:`fls_mt36qehtqova`
-:dt:`Type coercion` is an implicit operation that changes the :t:`type` of a
+:t:`Type coercion` is an implicit operation that changes the :t:`type` of a
 :t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
 explicit using a :t:`type cast expression`.
 
@@ -7123,7 +7123,7 @@ type inference
 ^^^^^^^^^^^^^^
 
 :dp:`fls_ky8epvf9834e`
-:dt:`Type inference` is the process of automatically determining the :t:`type` of
+:t:`Type inference` is the process of automatically determining the :t:`type` of
 :t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
 .. _fls_0jri0m3F1fAT:
@@ -7132,7 +7132,7 @@ type inference root
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hLI7lCixs48z`
-A :dt:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
+A :t:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
 and :t:`[pattern]s` are subject to :t:`type inference` independently of those
 found in other :t:`[type inference root]s`.
 
@@ -7142,7 +7142,7 @@ type parameter
 ^^^^^^^^^^^^^^
 
 :dp:`fls_5t6510wkb67x`
-A :dt:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
 :dp:`fls_vquy0tsvd93x`
 See :s:`TypeParameter`.
@@ -7153,7 +7153,7 @@ type parameter initializer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Xpz47JLNsOXI`
-A :dt:`type parameter initializer` is a :t:`construct` that provides the
+A :t:`type parameter initializer` is a :t:`construct` that provides the
 default :t:`value` of its related :t:`type parameter`.
 
 :dp:`fls_6Ap26AcSadP8`
@@ -7165,7 +7165,7 @@ type parameter type
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_EuHHxwHd0RHV`
-A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
+A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
 to be substituted by :t:`generic substitution`.
 
 .. _fls_QDCiXh7uSj9r:
@@ -7174,7 +7174,7 @@ type path
 ^^^^^^^^^
 
 :dp:`fls_UBR5czHrMTrx`
-A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
+A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 :dp:`fls_7CbNAZYSZayW`
 See :s:`TypePath`.
@@ -7185,7 +7185,7 @@ type path resolution
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Xv6JbfdIyvA3`
-:dt:`Type path resolution` is a form of :t:`path resolution` that applies to
+:t:`Type path resolution` is a form of :t:`path resolution` that applies to
 a :t:`type path`.
 
 .. _fls_u1zkh2m8p92:
@@ -7194,7 +7194,7 @@ type representation
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_rv80nyxwj2z8`
-:dt:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
+:t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
 :t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
 between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
 does not change the :t:`layout` of the :t:`[field]s` themselves.
@@ -7205,7 +7205,7 @@ type specification
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tdjhjg9zhnv5`
-A :dt:`type specification` describes the structure of a :t:`type`.
+A :t:`type specification` describes the structure of a :t:`type`.
 
 :dp:`fls_a3sqjp1l8po6`
 See :s:`TypeSpecification`.
@@ -7216,7 +7216,7 @@ type unification
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_3vyodut341b5`
-:dt:`Type unification` is the process by which :t:`type inference` propagates
+:t:`Type unification` is the process by which :t:`type inference` propagates
 known :t:`[type]s` across the :t:`type inference root` and assigns concrete
 :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
 for compatibility between two :t:`[type]s` during :t:`method resolution`.
@@ -7227,7 +7227,7 @@ type variable
 ^^^^^^^^^^^^^
 
 :dp:`fls_j9eusnwze4rz`
-A :dt:`type variable` is a placeholder used during :t:`type inference` to stand
+A :t:`type variable` is a placeholder used during :t:`type inference` to stand
 in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
 .. _fls_44uvj9l7q98z:
@@ -7281,7 +7281,7 @@ unary operator
 ^^^^^^^^^^^^^^
 
 :dp:`fls_p6mk2zrwgwem`
-A :dt:`unary operator` is an operator that operates on one :t:`operand`.
+A :t:`unary operator` is an operator that operates on one :t:`operand`.
 
 .. _fls_WuLL4SvSKavZ:
 
@@ -7289,7 +7289,7 @@ undefined behavior
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_WpwmltUMQGZa`
-:dt:`Undefined behavior` is a situation that results in an unbounded error.
+:t:`Undefined behavior` is a situation that results in an unbounded error.
 
 .. _fls_X6XjWwYeTnVR:
 
@@ -7297,7 +7297,7 @@ under resolution
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_BppwXSVUWtEu`
-A :t:`construct` that is being resolved is said to be :dt:`under resolution`.
+A :t:`construct` that is being resolved is said to be :t:`under resolution`.
 
 .. _fls_57kis2vnt3cv:
 
@@ -7305,7 +7305,7 @@ underscore expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ukl1sefb99gj`
-An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+An :t:`underscore expression` is an :t:`expression` that acts as a placeholder
 in a :t:`destructuring assignment`.
 
 :dp:`fls_qbo267kdjcgs`
@@ -7317,7 +7317,7 @@ underscore pattern
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_f6yroesif1q4`
-An :dt:`underscore pattern` is a :t:`pattern` that matches any single
+An :t:`underscore pattern` is a :t:`pattern` that matches any single
 :t:`value`.
 
 :dp:`fls_bktuchv7o4dd`
@@ -7329,7 +7329,7 @@ unhygienic
 ^^^^^^^^^^
 
 :dp:`fls_0t4lFZLkNieR`
-An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
+An :t:`identifier` is :t:`unhygienic` when it has :t:`call site hygiene`.
 
 .. _fls_kafgmevvzl5t:
 
@@ -7337,7 +7337,7 @@ Unicode
 ^^^^^^^
 
 :dp:`fls_y7gwku7pe1f4`
-:dt:`Unicode` is the universal character encoding standard for written
+:t:`Unicode` is the universal character encoding standard for written
 characters and text described in the Unicode Standard by the Unicode
 Consortium.
 
@@ -7347,7 +7347,7 @@ unifiable
 ^^^^^^^^^
 
 :dp:`fls_01BNTCL4u8Gn`
-For :dt:`unifiable`, see :t:`unify`.
+For :t:`unifiable`, see :t:`unify`.
 
 .. _fls_u03p4rvz1jhs:
 
@@ -7355,7 +7355,7 @@ unifiable types
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_jsbggfitv9xk`
-Two types that :t:`unify` are said to be :dt:`[unifiable type]s`.
+Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
 
 .. _fls_9RfuDiI6qrzZ:
 
@@ -7363,7 +7363,7 @@ unified type
 ^^^^^^^^^^^^
 
 :dp:`fls_tqRwIe6z3a4j`
-A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
+A :t:`unified type` is a :t:`type` produced by :t:`type unification`.
 
 .. _fls_da6ssnmmsevo:
 
@@ -7371,7 +7371,7 @@ unify
 ^^^^^
 
 :dp:`fls_mango4gffb9e`
-A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
+A :t:`type` is said to :t:`unify` with another :t:`type` when the domains,
 ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
 
@@ -7381,7 +7381,7 @@ union
 ^^^^^
 
 :dp:`fls_x3oibk39dvem`
-A :dt:`union` is an :t:`item` that declares a :t:`union type`.
+A :t:`union` is an :t:`item` that declares a :t:`union type`.
 
 .. _fls_71xvazpwi8p0:
 
@@ -7389,7 +7389,7 @@ union field
 ^^^^^^^^^^^
 
 :dp:`fls_6t2fbnlndz8y`
-A :dt:`union field` is a :t:`field` of a :t:`union type`.
+A :t:`union field` is a :t:`field` of a :t:`union type`.
 
 .. _fls_nrgyga1rztb3:
 
@@ -7397,7 +7397,7 @@ union type
 ^^^^^^^^^^
 
 :dp:`fls_af2sscrep7mc`
-A :dt:`union type` is an :t:`abstract data type` that is a sum of other
+A :t:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
 
 :dp:`fls_fgvjogfz8ink`
@@ -7409,7 +7409,7 @@ union value
 ^^^^^^^^^^^
 
 :dp:`fls_9BPrxky3a4nE`
-A :dt:`union value` is a :t:`value` of a :t:`union type`.
+A :t:`union value` is a :t:`value` of a :t:`union type`.
 
 .. _fls_Is9hWLC6Q0g5:
 
@@ -7417,7 +7417,7 @@ unique immutable reference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_eXrivAmNxzmv`
-A :dt:`unique immutable reference` is an :t:`immutable reference` produced by
+A :t:`unique immutable reference` is an :t:`immutable reference` produced by
 :t:`capturing` what is asserted to be the only live :t:`reference` to a
 :t:`value` while the :t:`reference` exists.
 
@@ -7427,7 +7427,7 @@ unit enum variant
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_y6fI5L3Tghie`
-A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+A :t:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 .. _fls_f3hmx9qya258:
 
@@ -7435,7 +7435,7 @@ unit struct
 ^^^^^^^^^^^
 
 :dp:`fls_9t7fu8fcak6k`
-A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+A :t:`unit struct` is a :t:`struct` without a :t:`field list`.
 
 :dp:`fls_mSuiysAVczPx`
 See :s:`UnitStructDeclaration`.
@@ -7446,7 +7446,7 @@ unit struct constant
 ^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_lLGn4JqddeAg`
-A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
+A :t:`unit struct constant` is a :t:`constant` implicitly created by a
 :t:`unit struct`.
 
 .. _fls_6j2wnOmBILJa:
@@ -7455,7 +7455,7 @@ unit struct type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_oIzmvACNeQpE`
-A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
+A :t:`unit struct type` is the :t:`type` of a :t:`unit struct`.
 
 .. _fls_CXp8fgPrBVUe:
 
@@ -7463,7 +7463,7 @@ unit struct value
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Kr9nGIjx3N4R`
-A :dt:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
+A :t:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
 
 .. _fls_wmn9mcqae88q:
 
@@ -7471,7 +7471,7 @@ unit tuple
 ^^^^^^^^^^
 
 :dp:`fls_vo1jw6rmu4yy`
-A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
+A :t:`unit tuple` is a :t:`value` of the :t:`unit type`.
 
 .. _fls_t32yfzmpid5a:
 
@@ -7479,7 +7479,7 @@ unit type
 ^^^^^^^^^
 
 :dp:`fls_jtdtv3q2ls05`
-The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
+The :t:`unit type` is a :t:`tuple type` of zero :t:`arity`.
 
 .. _fls_vxt0ifseehv9:
 
@@ -7487,7 +7487,7 @@ unit value
 ^^^^^^^^^^
 
 :dp:`fls_ycdv4nvsdyx`
-The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
+The :t:`unit value` is the :t:`value` of a :t:`unit type`.
 
 .. _fls_u78ng1tleh0w:
 
@@ -7495,7 +7495,7 @@ unnamed constant
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_ufj01cxxsv1w`
-An :dt:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
+An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
 line).
 
 .. _fls_r8567aozbyxl:
@@ -7504,7 +7504,7 @@ unnamed lifetime
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_4iy6zpq66mit`
-An :dt:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
+An :t:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
 
 .. _fls_cDVmvrVhUBmr:
 
@@ -7512,7 +7512,7 @@ unqualified path expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_9xKgP8uVsOaR`
-An :dt:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
+An :t:`unqualified path expression` is a :t:`path expression`  without a :t:`qualified type`.
 
 .. _fls_6349nvapfj9d:
 
@@ -7520,7 +7520,7 @@ unsafe block
 ^^^^^^^^^^^^
 
 :dp:`fls_8tkolhmd6xfp`
-For :dt:`unsafe block`, see :t:`unsafe block expression`.
+For :t:`unsafe block`, see :t:`unsafe block expression`.
 
 .. _fls_u8sdp2fxz9pn:
 
@@ -7528,7 +7528,7 @@ unsafe block expression
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_et2h89jyivhs`
-An :dt:`unsafe block expression` is a :t:`block expression` that is specified
+An :t:`unsafe block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``unsafe``.
 
 :dp:`fls_c94rudunhp5b`
@@ -7540,7 +7540,7 @@ unsafe context
 ^^^^^^^^^^^^^^
 
 :dp:`fls_qn1s845ejbu0`
-An :dt:`unsafe context` is either an :t:`unsafe block` or an
+An :t:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 .. _fls_pre02nas9dad:
@@ -7549,7 +7549,7 @@ unsafe external block
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pkfgas34msas`
-An :dt:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
+An :t:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
 
 .. _fls_ua64pv82skaw:
 
@@ -7557,7 +7557,7 @@ unsafe function
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_2ht13dgtxi1o`
-An :dt:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
+An :t:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
 
 .. _fls_y1iruf62p856:
 
@@ -7565,7 +7565,7 @@ unsafe function item type
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_r91tuwi55nu7`
-An :dt:`unsafe function item type` is a :t:`function item type` where the
+An :t:`unsafe function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`unsafe function`.
 
 .. _fls_bokqlokua059:
@@ -7574,7 +7574,7 @@ unsafe function pointer type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_tiluwa2v4l6d`
-An :dt:`unsafe function pointer type` is a function pointer type subject to
+An :t:`unsafe function pointer type` is a function pointer type subject to
 :t:`keyword` ``unsafe``.
 
 .. _fls_e2wyfbem6vwn:
@@ -7583,7 +7583,7 @@ unsafe operation
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_34h60ubicgsj`
-An :dt:`unsafe operation` is an operation that may result in
+An :t:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.
 
 .. _fls_4f6mppoenj3b:
@@ -7592,7 +7592,7 @@ unsafe Rust
 ^^^^^^^^^^^
 
 :dp:`fls_30asi010yf1a`
-For :dt:`unsafe Rust`, see :t:`[unsafe operation]s`.
+For :t:`unsafe Rust`, see :t:`[unsafe operation]s`.
 
 .. _fls_38ae1t48h9cb:
 
@@ -7600,7 +7600,7 @@ unsafe trait
 ^^^^^^^^^^^^
 
 :dp:`fls_w6zlsf2ye457`
-An :dt:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
+An :t:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
 
 .. _fls_h62dfjfyqcbn:
 
@@ -7608,7 +7608,7 @@ unsafe trait implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kqwcv076dzie`
-An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
+An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
 .. _fls_pst7yov6vnr9:
@@ -7617,7 +7617,7 @@ unsafety
 ^^^^^^^^
 
 :dp:`fls_742ycx5181n`
-:dt:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
+:t:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
 implementation]s` in program text.
 
 .. _fls_4jc74lz245z3:
@@ -7626,7 +7626,7 @@ unsigned integer type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dxnf79qemlg6`
-An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`values <value>`
+An :t:`unsigned integer type` is an :t:`integer type` whose :t:`values <value>`
 denote zero and positive whole numbers.
 
 .. _fls_pjup0piqlxe3:
@@ -7635,7 +7635,7 @@ unsized coercion
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_olt5qhyvhmtq`
-An :dt:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
+An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
 into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
 target :t:`type` is allowed to occur when:
 
@@ -7645,7 +7645,7 @@ unsized type
 ^^^^^^^^^^^^
 
 :dp:`fls_M9NpzBH8Wf4z`
-An :dt:`unsized type` is a :t:`type` that does not implement the
+An :t:`unsized type` is a :t:`type` that does not implement the
 :std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_4ph9cact2scc:
@@ -7654,7 +7654,7 @@ unsuffixed float
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_7wp6y0xeqqve`
-An :dt:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
+An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
 
 .. _fls_d18nctsj8wu5:
 
@@ -7662,7 +7662,7 @@ unsuffixed integer
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_t419z3zder0q`
-An :dt:`unsuffixed integer` is an :t:`integer literal` without an
+An :t:`unsuffixed integer` is an :t:`integer literal` without an
 :t:`integer suffix`.
 
 .. _fls_Z8qvOkP4Zfj5:
@@ -7671,7 +7671,7 @@ use capture
 ^^^^^^^^^^^
 
 :dp:`fls_eZyPXG27Zwcg`
-An :dt:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
+An :t:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
 
 :dp:`fls_Z8qvOkP4Zfj5`
 See :s:`UseCaptures`.
@@ -7682,7 +7682,7 @@ use import
 ^^^^^^^^^^
 
 :dp:`fls_uccv9zthh5vt`
-A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
+A :t:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
 :t:`use import` resides.
 
@@ -7704,7 +7704,7 @@ validity invariant
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_3ebC3l839ajF`
-A :dt:`validity invariant` is an invariant that when violated results in
+A :t:`validity invariant` is an invariant that when violated results in
 immediate :t:`undefined behavior`.
 
 .. _fls_tg866bc926ms:
@@ -7713,7 +7713,7 @@ value
 ^^^^^
 
 :dp:`fls_h8jn338b51yu`
-A :dt:`value` is either a :t:`literal` or the result of a computation, that may
+A :t:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
 
 .. _fls_h03noz6jzpyl:
@@ -7722,7 +7722,7 @@ value expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_mn6tcuz5j3p`
-A :dt:`value expression` is an :t:`expression` that represents a :t:`value`.
+A :t:`value expression` is an :t:`expression` that represents a :t:`value`.
 All :t:`[expression]s` that are not :t:`[place expression]s` are
 :t:`[value expression]s`.
 
@@ -7732,7 +7732,7 @@ value expression context
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NGGZEbmoLRbD`
-A :dt:`value expression context` is an expression context that is not a
+A :t:`value expression context` is an expression context that is not a
 :t:`place expression context`.
 
 .. _fls_a5xof9jlpc2e:
@@ -7741,7 +7741,7 @@ value operand
 ^^^^^^^^^^^^^
 
 :dp:`fls_x4seemjknk2z`
-A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
 assigned to an :t:`assignee operand` by an :t:`assignment expression`.
 
 :dp:`fls_cl4fakfkpscp`
@@ -7753,7 +7753,7 @@ variable
 ^^^^^^^^
 
 :dp:`fls_9ab12k4vwsio`
-A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
+A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
 
 .. _fls_RIe80XOF8VlA:
@@ -7762,7 +7762,7 @@ variadic part
 ^^^^^^^^^^^^^
 
 :dp:`fls_ePnTyLoqJ1i7`
-A :dt:`variadic part` indicates the presence of :t:`C`-like optional
+A :t:`variadic part` indicates the presence of :t:`C`-like optional
 parameters.
 
 :dp:`fls_z9D86gBFbKB5`
@@ -7774,7 +7774,7 @@ variance
 ^^^^^^^^
 
 :dp:`fls_il0krrsf09f8`
-:dt:`Variance` is a property of :t:`[lifetime parameter]s` and
+:t:`Variance` is a property of :t:`[lifetime parameter]s` and
 :t:`[type parameter]s` that describes the circumstances under which a
 :t:`generic type` is a :t:`subtype` of an instantiation of itself with
 different :t:`[generic argument]s`.
@@ -7785,7 +7785,7 @@ visibility
 ^^^^^^^^^^
 
 :dp:`fls_sadmsqhptlho`
-:dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
+:t:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
 which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 .. _fls_xqjk8avt7t51:
@@ -7794,7 +7794,7 @@ visibility modifier
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ze7befho4jhs`
-A :dt:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
+A :t:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 .. _fls_dLlUt8PrXAls:
 
@@ -7802,7 +7802,7 @@ visible emptiness
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_shXDYqnUy2Pb`
-:dt:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
+:t:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
 
 .. _fls_EnT5zRuwviWM:
 
@@ -7810,7 +7810,7 @@ visible empty enum variant
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_MQiPWNwdk95I`
-A :dt:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
+A :t:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
 
 .. _fls_HYWQ0lJS3TET:
 
@@ -7818,7 +7818,7 @@ visible empty type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_OLVD0u9w68Gl`
-A :dt:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
+A :t:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
 
 .. _fls_iplp3gvfbcpw:
 
@@ -7826,7 +7826,7 @@ weak keyword
 ^^^^^^^^^^^^
 
 :dp:`fls_4hiznltf5wlu`
-A :dt:`weak keyword` is a :t:`keyword` whose special meaning depends on the
+A :t:`weak keyword` is a :t:`keyword` whose special meaning depends on the
 context.
 
 :dp:`fls_psah573fsrig`
@@ -7838,7 +7838,7 @@ where clause
 ^^^^^^^^^^^^
 
 :dp:`fls_prljyrhontzn`
-A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+A :t:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
 :t:`[lifetime parameter]s` and :t:`[type]s` that have
 to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
@@ -7851,7 +7851,7 @@ where clause predicate
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_0LACQVmZpDQF`
-A :dt:`where clause predicate` is either a :t:`lifetime bound predicate` or a
+A :t:`where clause predicate` is either a :t:`lifetime bound predicate` or a
 :t:`type bound predicate`.
 
 :dp:`fls_Jk7V1SOKE4Gm`
@@ -7863,7 +7863,7 @@ while let loop
 ^^^^^^^^^^^^^^
 
 :dp:`fls_ovutw52qtx71`
-For :dt:`while let loop`, see :t:`while let loop expression`.
+For :t:`while let loop`, see :t:`while let loop expression`.
 
 .. _fls_gme4odk59x6d:
 
@@ -7871,7 +7871,7 @@ while let loop expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_g35gn7n88acp`
-A :dt:`while let loop expression` is a :t:`loop expression` that continues to
+A :t:`while let loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`subject let expression` yields a
 :t:`value` that can be matched against its :t:`pattern`.
 
@@ -7884,7 +7884,7 @@ while loop
 ^^^^^^^^^^
 
 :dp:`fls_ug9cxoml9ged`
-For :dt:`while loop`, see :t:`while loop expression`.
+For :t:`while loop`, see :t:`while loop expression`.
 
 .. _fls_1qxi3h3qmgso:
 
@@ -7892,7 +7892,7 @@ while loop expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_fq0zyup4djyh`
-A :dt:`while loop expression` is a :t:`loop expression` that continues to
+A :t:`while loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
 true.
 
@@ -7905,7 +7905,7 @@ whitespace string
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_nljkmadklwdp`
-A :dt:`whitespace string` is a string that consists of one or more
+A :t:`whitespace string` is a string that consists of one or more
 :t:`[whitespace character]s`.
 
 .. _fls_a5lrxgucl3be:
@@ -7914,7 +7914,7 @@ zero-sized type
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_rmd6pearrhr8`
-A :dt:`zero-sized type` is a :t:`fixed sized type` with :t:`size` zero.
+A :t:`zero-sized type` is a :t:`fixed sized type` with :t:`size` zero.
 
 .. _fls_pix563lfbpm:
 
@@ -7922,5 +7922,5 @@ zero-variant enum type
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_84gqz3vwi5mj`
-A :dt:`zero-variant enum type` is an :t:`enum type` without any
+A :t:`zero-variant enum type` is an :t:`enum type` without any
 :t:`[enum variant]s`.
