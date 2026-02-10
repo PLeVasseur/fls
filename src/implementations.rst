@@ -37,11 +37,11 @@ Implementations
 .. rubric:: Legality Rules
 
 :dp:`fls_ivxpoxggy7s6`
-An :t:`implementation` is an :t:`item` that supplements an
+An :dt:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
 :dp:`fls_yopmjbnw8tbl`
-An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
 an :t:`implementation` are associated with.
 
 :dp:`fls_eIHc8Y9fBtr0`
@@ -49,12 +49,12 @@ Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
 for the :t:`implementing type`.
 
 :dp:`fls_Mcpdzzcw43M7`
-An :t:`implementation body` is a :t:`construct` that encapsulates the
+An :dt:`implementation body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of an :t:`implementation`.
 
 :dp:`fls_v0n0bna40dqr`
-An :t:`inherent implementation` is an :t:`implementation` that adds direct
+An :dt:`inherent implementation` is an :t:`implementation` that adds direct
 functionality.
 
 :dp:`fls_797etpdk5dyb`
@@ -62,15 +62,15 @@ functionality.
 defined within the same :t:`crate`.
 
 :dp:`fls_ry3an0mwb63g`
-A :t:`trait implementation` is an :t:`implementation` that adds functionality
+A :dt:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_8pwr7ibvhmhu`
-An :t:`unsafe trait implementation` is a :t:`trait implementation` subject to
+An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_47x0ep8of8wr`
-An :t:`implemented trait` is a :t:`trait` whose functionality has been
+An :dt:`implemented trait` is a :t:`trait` whose functionality has been
 implemented by an :t:`implementing type`.
 
 :dp:`fls_agitlryvyc16`
@@ -136,7 +136,7 @@ Implementation Coherence
 .. rubric:: Legality Rules
 
 :dp:`fls_fv1l4yjuut7p`
-A :t:`trait implementation` exhibits :t:`implementation coherence` when it is
+A :t:`trait implementation` exhibits :dt:`implementation coherence` when it is
 valid and does not overlap with another :t:`trait implementation`.
 
 :dp:`fls_swdusjwzgksx`
@@ -164,7 +164,7 @@ Given :t:`trait implementation`
     :t:`non-[fundamental]` :t:`[type]s` of ``T0, T1, .., TN``.
 
 :dp:`fls_UkQhjEWSJpDq`
-A :t:`trait` or :t:`type` is :t:`fundamental` when its
+A :t:`trait` or :t:`type` is :dt:`fundamental` when its
 :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
 is always treated as if it was a :t:`local trait` or a :t:`local type`.
 
@@ -206,7 +206,7 @@ Implementation Conformance
 .. rubric:: Legality Rules
 
 :dp:`fls_YyUSuAYG4lX6`
-A :t:`trait implementation` exhibits :t:`implementation conformance` when it
+A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
 satisfies the constraints of its :t:`implemented trait`.
 
 :dp:`fls_v31idwjau90d`
@@ -267,4 +267,3 @@ A :t:`trait implementation` is conformant with an :t:`implemented trait` when:
 
 :dp:`fls_8yq1g7nzv9px`
 A :t:`trait implementation` shall be conformant.
-

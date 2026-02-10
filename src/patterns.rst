@@ -38,21 +38,21 @@ Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_imegtsi224ts`
-A :t:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
+A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
 the criteria of the :t:`pattern`.
 
 :dp:`fls_VQMmveZUfNTn`
-An :t:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
+An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 :dp:`fls_mp6i4blzexnu`
-A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
 :dp:`fls_JJ1fJa1SsaWh`
-A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
+A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
 
 :dp:`fls_6xx34zr069bj`
-A :t:`subpattern` is a :t:`pattern` nested within another pattern.
+A :dt:`subpattern` is a :t:`pattern` nested within another pattern.
 
 :dp:`fls_8xzjb0yzftkd`
 A :t:`pattern` has a :t:`type`, with the exception of the :t:`rest pattern` if
@@ -95,26 +95,29 @@ Refutability
 .. rubric:: Legality Rules
 
 :dp:`fls_9ntc4qmjmo90`
-:t:`Refutability` is a property of :t:`[pattern]s` that expresses the ability to
+:dt:`refutability` is a property of :t:`[pattern]s` that expresses the ability to
 match all possible values of a :t:`type`.
 
 :dp:`fls_9fjspnefoyvz`
-An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 :dp:`fls_uq7ftuuq1sig`
-A :t:`refutable pattern` is a :t:`pattern` that has a possibility of not
-matching a :t:`value` of its :t:`type`
+A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not
+matching the :t:`value` it is being matched against.
 
 :dp:`fls_mnbyt7jfYAZ9`
 A :t:`pattern` that is not an :t:`irrefutable pattern` is a
 :t:`refutable pattern`.
 
 :dp:`fls_l76ycteulo8e`
-An :t:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
+An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
 :dp:`fls_lh0d85tl4qvy`
-A :t:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+A :dt:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+
+:dp:`fls_m5a5si8b9s7x`
+A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. rubric:: Examples
 
@@ -151,11 +154,11 @@ Identifier Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_uljdw9rf7ies`
-An :t:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
+An :dt:`identifier pattern` is a :t:`pattern` that binds the :t:`value` it
 matches to a :t:`binding`.
 
 :dp:`fls_vy9uw586wy0d`
-A :t:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
+A :dt:`bound pattern` is a :t:`pattern` that imposes a constraint on a related
 :t:`identifier pattern`.
 
 :dp:`fls_hqwt3fvr063y`
@@ -163,8 +166,8 @@ An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
 with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 
 :dp:`fls_joIQdDn44oIT`
-An :t:`identifier pattern` with :t:`keyword` ``ref`` is a
-:t:`reference identifier pattern`.
+A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
+:t:`keyword` ``ref``.
 
 :dp:`fls_24c95c56tugl`
 The :t:`identifier pattern` enters its :t:`binding` into :t:`binding scope` in
@@ -272,10 +275,10 @@ Literal Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_pah15qa54irs`
-A :t:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
+A :dt:`literal pattern` is a :t:`pattern` that matches a :t:`literal`.
 
 :dp:`fls_COQKJC0dvtNO`
-A :t:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
+A :dt:`numeric literal pattern` is a :t:`pattern` that matches a :t:`numeric
 literal`.
 
 :dp:`fls_JP8YSbxSN0Ym`
@@ -315,7 +318,7 @@ Parenthesized Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_kvqzmt7my5dh`
-A :t:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
+A :dt:`parenthesized pattern` is a :t:`pattern` that controls the precedence of
 its :t:`[subpattern]s`.
 
 :dp:`fls_mrjhpiq5refe`
@@ -362,7 +365,7 @@ Path Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_1crq0mexo5r1`
-A :t:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
+A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
 :dp:`fls_xz5otkhogn31`
@@ -476,34 +479,34 @@ Range Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_okupyoav13rm`
-A :t:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
+A :dt:`range pattern` is a :t:`pattern` that matches :t:`[value]s` which fall
 within a range.
 
 :dp:`fls_jhchm7dy927k`
-A :t:`half-open range pattern` is a :t:`range pattern` with only a
+A :dt:`half-open range pattern` is a :t:`range pattern` with only a
 :t:`range pattern low bound`.
 
 :dp:`fls_q86j23iiqv8w`
-An :t:`inclusive range pattern` is a :t:`range pattern` with both a
+An :dt:`inclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_3PyquOKjA7SI`
-An :t:`exclusive range pattern` is a :t:`range pattern` with both a
+An :dt:`exclusive range pattern` is a :t:`range pattern` with both a
 :t:`range pattern low bound` and a :t:`range pattern high bound`.
 
 :dp:`fls_akf9x5r6e0ta`
-An :t:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
+An :dt:`obsolete range pattern` is a :t:`range pattern` that uses obsolete syntax
 to express an :t:`inclusive range pattern`.
 
 :dp:`fls_vrpr6ttpfpal`
-A :t:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
+A :dt:`range pattern bound` is a constraint on the range of a :t:`range pattern`.
 
 :dp:`fls_nk48gregn3me`
-A :t:`range pattern low bound` is a :t:`range pattern bound` that specifies the
+A :dt:`range pattern low bound` is a :t:`range pattern bound` that specifies the
 start of a range.
 
 :dp:`fls_83v1xqbebs58`
-A :t:`range pattern high bound` is a :t:`range pattern bound` that specifies the
+A :dt:`range pattern high bound` is a :t:`range pattern bound` that specifies the
 end of a range.
 
 :dp:`fls_2hpuccwh2xml`
@@ -578,7 +581,7 @@ Reference Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_fhahcc1mz2qh`
-A :t:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
+A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
 is being matched.
 
 :dp:`fls_x0bmzl1315gq`
@@ -627,7 +630,7 @@ Rest Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_eso51epfofxb`
-A :t:`rest pattern` is a :t:`pattern` that matches zero or more elements that
+A :dt:`rest pattern` is a :t:`pattern` that matches zero or more elements that
 have not already been matched.
 
 :dp:`fls_5a75a2y43uev`
@@ -692,7 +695,7 @@ Slice Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_qqiu594hki8g`
-A :t:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed size
+A :dt:`slice pattern` is a :t:`pattern` that matches :t:`[array]s` of fixed size
 and :t:`[slice]s` of dynamic size.
 
 :dp:`fls_h6x9xlxi7y5n`
@@ -744,11 +747,11 @@ Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_vjdkpr3zml51`
-A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_6o3x101wo478`
-A :t:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
+A :dt:`deconstructee` indicates the :t:`enum variant` or :t:`type` that is being
 deconstructed by a :t:`struct pattern`.
 
 :dp:`fls_k9zih9s0oe5h`
@@ -814,7 +817,7 @@ Record Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_g6dytd6aq62d`
-A :t:`record struct pattern` is a :t:`pattern` that matches a
+A :dt:`record struct pattern` is a :t:`pattern` that matches a
 :t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`
@@ -822,7 +825,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 :t:`enum variant`, a :t:`struct type`, or a :t:`union type`.
 
 :dp:`fls_mnh35ehva8tx`
-An :t:`indexed deconstructor` is a :t:`construct` that matches the position of
+An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
 a :t:`field`.
 
 :dp:`fls_p2rjnlbvifaa`
@@ -836,7 +839,7 @@ The :t:`type` of a :t:`matched indexed deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 :dp:`fls_46u4ddj0yf93`
-A :t:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
+A :dt:`named deconstructor` is a :t:`construct` that matches the :t:`name` of
 a :t:`field`.
 
 :dp:`fls_qu3dvfdq6oy7`
@@ -849,7 +852,7 @@ The :t:`type` of a :t:`matched named deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 :dp:`fls_9wfizujx0szd`
-A :t:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
+A :dt:`shorthand deconstructor` is a :t:`construct` that matches the :t:`name`
 of a :t:`field` and binds the :t:`value` of the matched :t:`field` to a
 :t:`binding`.
 
@@ -1026,8 +1029,8 @@ Tuple Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_ks6y1syab2bp`
-A :t:`tuple struct pattern` is a :t:`pattern` that matches a
-:t:`tuple enum variant value`, or a :t:`tuple struct value`.
+A :dt:`tuple struct pattern` is a :t:`pattern` that matches a
+:t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_t1mrijw16k9a`
 The :t:`deconstructee` of a :t:`tuple struct pattern` shall resolve to a
@@ -1108,7 +1111,7 @@ Tuple Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_e2manugp4e0b`
-A :t:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which satisfies
+A :dt:`tuple pattern` is a :t:`pattern` that matches a :t:`tuple` which satisfies
 all criteria defined by its :t:`[subpattern]s`.
 
 :dp:`fls_xk8udu4k61kj`
@@ -1188,7 +1191,7 @@ Underscore Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_dreny9e0ei6r`
-An :t:`underscore pattern` is a :t:`pattern` that matches any single :t:`value`.
+An :dt:`underscore pattern` is a :t:`pattern` that matches any single :t:`value`.
 
 :dp:`fls_42fye1v0th8l`
 An :t:`underscore pattern` is an :t:`irrefutable pattern`.
@@ -1222,12 +1225,19 @@ Binding Modes
 .. rubric:: Legality Rules
 
 :dp:`fls_7xby6d1903kw`
-A :t:`binding pattern` is either an :t:`identifier pattern` or a
+A :dt:`binding pattern` is either an :t:`identifier pattern` or a
 :t:`shorthand deconstructor`.
 
 :dp:`fls_vnh9wfrvumdz`
-A :t:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
+A :dt:`binding` of a :t:`binding pattern` binds a matched :t:`value` to a
 :t:`name`.
+
+:dp:`fls_7kYDVf4rLQK5`
+A :dt:`mutable binding` is a :t:`binding` whose :t:`value` can be modified.
+
+:dp:`fls_u8Yzdc7Xrksg`
+A :dt:`binding mode` describes whether a :t:`binding` captures a matched
+:t:`value` by value, by reference, or by mutable reference.
 
 :dp:`fls_RViC5UEZPQUV`
 A :t:`binding` with :t:`binding mode` :dt:`by value` binds the matched
@@ -1243,7 +1253,7 @@ A :t:`binding` with :t:`binding mode` :dt:`by mutable reference` binds a
 :t:`mutable reference` to the matched :t:`value` to the :t:`name`.
 
 :dp:`fls_dqe75i8h2fie`
-A :t:`non-reference pattern` is any :t:`pattern` except
+A :dt:`non-reference pattern` is any :t:`pattern` except
 :t:`non-[binding pattern]s`, :t:`[path pattern]s`, :t:`[reference pattern]s`,
 and :t:`[underscore pattern]s`.
 

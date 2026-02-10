@@ -10,14 +10,27 @@ Unsafety
 
 .. rubric:: Legality Rules
 
+:dp:`fls_r1m7v4k2t9pa`
+:dt:`Undefined behavior` is a situation that results in an unbounded error.
+
 :dp:`fls_8kqo952gjhaf`
-:t:`Unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
+:dt:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
 implementation]s` in program text.
 
+:dp:`fls_9k2m4p7q1v6n`
+A :dt:`safety invariant` is an invariant that when violated may result in
+:t:`undefined behavior`.
+
+:dp:`fls_M4Q4vAJmapq8`
+A :dt:`validity invariant` is an invariant that when violated results in
+immediate :t:`undefined behavior`.
+
 :dp:`fls_ovn9czwnwxue`
-An :t:`unsafe operation` is an operation that may result in
+An :dt:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.
-:t:`[Unsafe operation]s` are referred to as :t:`unsafe Rust`.
+
+:dp:`fls_1m8v4k2t9qpa`
+For :dt:`unsafe Rust`, see :t:`[unsafe operation]s`.
 
 :dp:`fls_pfhmcafsjyf7`
 The :t:`[unsafe operation]s` are:
@@ -41,9 +54,8 @@ The :t:`[unsafe operation]s` are:
   Calling :t:`macro` :std:`core::arch::asm`.
 
 :dp:`fls_jb6krd90tjmc`
-An :t:`unsafe context` is either an :t:`unsafe block` or an
+An :dt:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 :dp:`fls_ybnpe7ppq1vh`
 An :t:`unsafe operation` shall be used only within an :t:`unsafe context`.
-

@@ -50,6 +50,5 @@ an :t:`item`.
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_hil5f7y4xdhe`
-:t:`Elaboration` is the process by which a :t:`declaration` achieves its runtime
+:dt:`Elaboration` is the process by which a :t:`declaration` achieves its runtime
 effects.
-

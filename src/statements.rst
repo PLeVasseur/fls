@@ -21,25 +21,31 @@ Statements
 
 .. rubric:: Legality Rules
 
+:dp:`fls_5t8n2p7c0m1d`
+A :dt:`statement` is a :t:`construct` described by :s:`Statement`.
+
 :dp:`fls_7zh6ziglo5iy`
-An :t:`expression statement` is an :t:`expression` whose result is ignored.
+An :dt:`expression statement` is an :t:`expression` whose result is ignored.
 
 :dp:`fls_kdxe1ukmgl1`
-An :t:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
+An :dt:`item statement` is a :t:`statement` that is expressed as an :t:`item`.
 
 :dp:`fls_fftdnwe22xrb`
-An :t:`empty statement` is a :t:`statement` expressed as character 0x3B
+An :dt:`empty statement` is a :t:`statement` expressed as character 0x3B
 (semicolon).
 
 :dp:`fls_or125cqtxg9j`
-A :t:`macro statement` is a :t:`statement` expressed as a
+A :dt:`macro statement` is a :t:`statement` expressed as a
 :t:`terminated macro invocation`.
 
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_estqu395zxgk`
-:t:`Execution` is the process by which a :t:`statement` achieves its runtime
+:dt:`Execution` is the process by which a :t:`statement` achieves its runtime
 effects.
+
+:dp:`fls_h5c8k2n9p4d1`
+For :dt:`executed`, see :t:`execution`.
 
 :dp:`fls_dl763ssb54q1`
 The :t:`execution` of an :t:`empty statement` has no effect.
@@ -62,12 +68,16 @@ Let Statements
 .. rubric:: Legality Rules
 
 :dp:`fls_ct7pp7jnfr86`
-A :t:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
+A :dt:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
 produced by its :t:`pattern-without-alternation` that are optionally
 initialized to a :t:`value`.
 
+:dp:`fls_PptD5p96AyBk`
+A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an
+:t:`if let expression`, or a :t:`while let loop expression`.
+
 :dp:`fls_SR3dIgR5K0Kq`
-A :t:`let initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`let initializer` is a :t:`construct` that provides the :t:`value` of
 the :t:`[binding]s` of the :t:`let statement` using an :t:`expression`, or
 alternatively executes a :t:`block expression`.
 

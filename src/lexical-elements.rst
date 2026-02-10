@@ -25,6 +25,19 @@ Character Set
 The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
+:dp:`fls_m2v7k1p9t4qa`
+:dt:`Unicode` is the universal character encoding standard for written
+characters and text described in the Unicode Standard by the Unicode
+Consortium.
+
+:dp:`fls_4h2v3pk7qz6n`
+In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
+character.
+
+:dp:`fls_6n9y0qb5t2mc`
+In :t:`Unicode`, a :dt:`plane` is a continuous group of 65,536
+:t:`[code point]s`.
+
 .. rubric:: Syntax
 
 :dp:`fls_vfx8byq5zo8t`
@@ -69,7 +82,7 @@ A :dt:`whitespace character` is one of the following characters:
   0x2029 (paragraph separator)
 
 :dp:`fls_7eifv4ksunu1`
-A :t:`whitespace string` is a string that consists of one or more
+A :dt:`whitespace string` is a string that consists of one or more
 :t:`[whitespace character]s`.
 
 :dp:`fls_PIDKEm8GiLNL`
@@ -160,21 +173,25 @@ element]s`. The meaning of a program depends only on the particular sequence of
 :t:`[lexical element]s`, excluding :t:`non-[doc comment]s`.
 
 :dp:`fls_a1zylpqha73x`
-A :t:`lexical element` is the most basic syntactic element in program text.
+A :dt:`lexical element` is the most basic syntactic element in program text.
 
 :dp:`fls_jy6wifn5r2bu`
 The text of a :t:`source file` is divided into :t:`[line]s`.
 
 :dp:`fls_efdfq9nhpmp5`
-A :t:`line` is a sequence of zero or more characters followed by an end of
+A :dt:`line` is a sequence of zero or more characters followed by an end of
 line.
 
 :dp:`fls_go25sisi5fdp`
 The representation of an end of line is tool-defined.
 
 :dp:`fls_a6t53o8h1vdk`
-A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
+A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
+
+:dp:`fls_Ag1xnfxiNYTB`
+A :dt:`punctuator` is a character or a sequence of characters in category
+:s:`Punctuation`.
 
 :dp:`fls_8fv63w6f4udl`
 A :dt:`simple punctuator` is one of the following special characters:
@@ -468,10 +485,10 @@ except ``crate``, ``self``, ``Self``, and ``super``.
 .. rubric:: Legality Rules
 
 :dp:`fls_xsdmun5uqy4c`
-An :t:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
+An :dt:`identifier` is a :t:`lexical element` that refers to a :t:`name`.
 
 :dp:`fls_ktnf6zkrdy45`
-A :t:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
+A :dt:`pure identifier` is an :t:`identifier` that does not include :t:`[weak
 keyword]s`.
 
 :dp:`fls_jpecw46eh061`
@@ -555,7 +572,7 @@ Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_s76un78zyd0j`
-A :t:`literal` is a fixed :t:`value` in program text.
+A :dt:`literal` is a fixed :t:`value` in program text.
 
 .. _fls_2ifjqwnw03ms:
 
@@ -591,7 +608,7 @@ return), 0x27 (apostrophe), and 0x5C (reverse solidus).
 .. rubric:: Legality Rules
 
 :dp:`fls_q0qwr83frszx`
-A :t:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
+A :dt:`byte literal` is a :t:`literal` that denotes a fixed byte :t:`value`.
 
 :dp:`fls_fggytrv5jvw0`
 The :t:`type` of a :t:`byte literal` is :c:`u8`.
@@ -620,7 +637,7 @@ Byte String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_t63zfv5JdUhj`
-A :t:`byte string literal` is a :t:`literal` that consists of multiple
+A :dt:`byte string literal` is a :t:`literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
 
 :dp:`fls_Xd6LnfzMb7t7`
@@ -652,7 +669,7 @@ except characters 0x0D (carriage return), 0x22 (quotation mark), and 0x5C
 .. rubric:: Legality Rules
 
 :dp:`fls_moe3zfx39ox2`
-A :t:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
+A :dt:`simple byte string literal` is a :t:`byte string literal` that consists of multiple
 :s:`[AsciiCharacter]s`.
 
 :dp:`fls_vffxb6arj9jf`
@@ -690,7 +707,7 @@ Raw Byte String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_yyw7nv651580`
-A :t:`raw byte string literal` is a :t:`simple byte string literal` that does not
+A :dt:`raw byte string literal` is a :t:`simple byte string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_5ybq0euwya42`
@@ -721,7 +738,7 @@ C String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_VKCW830CzhhN`
-A :t:`c string literal` is a :t:`literal` that consists of multiple characters
+A :dt:`c string literal` is a :t:`literal` that consists of multiple characters
 with an implicit 0x00 byte appended to it.
 
 :dp:`fls_XJprzaEn82Xs`
@@ -754,7 +771,7 @@ A :t:`simple c string literal` is any :t:`Unicode` character except characters
 .. rubric:: Legality Rules
 
 :dp:`fls_nPI7j0siGP8G`
-A :t:`simple c string literal` is a :t:`c string literal` where the characters are
+A :dt:`simple c string literal` is a :t:`c string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_Ae7LM4Wg0NA7`
@@ -797,7 +814,7 @@ Raw C String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_gLrei65i8Uzq`
-A :t:`raw c string literal` is a :t:`simple c string literal` that does not
+A :dt:`raw c string literal` is a :t:`simple c string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_9nJHsg9dCi66`
@@ -828,7 +845,7 @@ Numeric Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_fqpqnku27v99`
-A :t:`numeric literal` is a :t:`literal` that denotes a number.
+A :dt:`numeric literal` is a :t:`literal` that denotes a number.
 
 .. _fls_2ed4axpsy9u0:
 
@@ -911,29 +928,29 @@ Integer Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_vkk2krfn93ry`
-An :t:`integer literal` is a :t:`numeric literal` that denotes a whole number.
+An :dt:`integer literal` is a :t:`numeric literal` that denotes a whole number.
 
 :dp:`fls_nxqncu5yq4eu`
-A :t:`binary literal` is an :t:`integer literal` in base 2.
+A :dt:`binary literal` is an :t:`integer literal` in base 2.
 
 :dp:`fls_rn8xfd66yvst`
-A :t:`decimal literal` is an :t:`integer literal` in base 10.
+A :dt:`decimal literal` is an :t:`integer literal` in base 10.
 
 :dp:`fls_2268lchxkzjp`
-A :t:`hexadecimal literal` is an :t:`integer literal` in base 16.
+A :dt:`hexadecimal literal` is an :t:`integer literal` in base 16.
 
 :dp:`fls_4v7awnutbpoe`
-An :t:`octal literal` is an :t:`integer literal` in base 8.
+An :dt:`octal literal` is an :t:`integer literal` in base 8.
 
 :dp:`fls_f1e29aj0sqvl`
-An :t:`integer suffix` is a component of an :t:`integer literal` that specifies
+An :dt:`integer suffix` is a component of an :t:`integer literal` that specifies
 an explicit :t:`integer type`.
 
 :dp:`fls_u83mffscqm6`
-A :t:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
+A :dt:`suffixed integer` is an :t:`integer literal` with an :t:`integer suffix`.
 
 :dp:`fls_g10nuv14q4jn`
-An :t:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
+An :dt:`unsuffixed integer` is an :t:`integer literal` without an :t:`integer
 suffix`.
 
 :dp:`fls_hpkkvuj1z1ez`
@@ -1037,17 +1054,17 @@ Float Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_rzi7oeqokd6e`
-A :t:`float literal` is a :t:`numeric literal` that denotes a fractional number.
+A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional number.
 
 :dp:`fls_2ru1zyrykd37`
-A :t:`float suffix` is a component of a :t:`float literal` that specifies an
+A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
 
 :dp:`fls_21mhnhplzam7`
-A :t:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
+A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.
 
 :dp:`fls_drqh80k0sfkb`
-An :t:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
+An :dt:`unsuffixed float` is a :t:`float literal` without a :t:`float suffix`.
 
 :dp:`fls_cbs7j9pjpusw`
 The :t:`type` of a :t:`suffixed float` is determined by the :t:`float suffix`
@@ -1111,6 +1128,13 @@ Character Literals
      | $$\\$$
      | $$\x$$ OctalDigit HexadecimalDigit
 
+:dp:`fls_TXk2yFGh8at5`
+An :dt:`escaped character` is the textual representation for a character with
+special meaning. An escaped character consists of character 0x5C (reverse
+solidus), followed by the single character encoding of the special meaning
+character. For example, ``\t`` is the escaped character for 0x09 (horizontal
+tabulation).
+
 :dp:`fls_j9q9ton57rvl`
 A :ds:`CharacterLiteralCharacter` is any :t:`Unicode` character except
 characters 0x09 (horizontal tabulation), 0x0A (new line), 0x0D (carriage
@@ -1126,7 +1150,7 @@ the range of U+D800 and U+DFFF, inclusive.
 .. rubric:: Legality Rules
 
 :dp:`fls_vag2oy4q7d4n`
-A :t:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
+A :dt:`character literal` is a :t:`literal` that denotes a fixed :t:`Unicode`
 character.
 
 :dp:`fls_n8z6p6g564r2`
@@ -1157,7 +1181,7 @@ String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_7fuctvtvdi7x`
-A :t:`string literal` is a :t:`literal` that consists of multiple characters.
+A :dt:`string literal` is a :t:`literal` that consists of multiple characters.
 
 :dp:`fls_NyiCpU2tzJlQ`
 The character sequence 0x0D 0x0A (carriage return, new line) is replaced by 0x0A
@@ -1192,7 +1216,7 @@ new line).
 .. rubric:: Legality Rules
 
 :dp:`fls_ycy5ee6orjx`
-A :t:`simple string literal` is a :t:`string literal` where the characters are
+A :dt:`simple string literal` is a :t:`string literal` where the characters are
 :t:`Unicode` characters.
 
 :dp:`fls_6nt5kls21xes`
@@ -1234,7 +1258,7 @@ Raw String Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_36suwhbwmq1t`
-A :t:`raw string literal` is a :t:`simple string literal` that does not
+A :dt:`raw string literal` is a :t:`simple string literal` that does not
 recognize :t:`[escaped character]s`.
 
 :dp:`fls_ms43w1towz40`
@@ -1264,7 +1288,7 @@ Boolean Literals
 .. rubric:: Legality Rules
 
 :dp:`fls_1lll64ftupjd`
-A :t:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
+A :dt:`boolean literal` is a :t:`literal` that denotes the truth :t:`[value]s` of
 logic and Boolean algebra.
 
 :dp:`fls_pgngble3ilyx`
@@ -1323,41 +1347,41 @@ Comments
 .. rubric:: Legality Rules
 
 :dp:`fls_8obn3dtzpe5f`
-A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
+A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
 :dp:`fls_qsbnl11be35s`
-A :t:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
+A :dt:`block comment` is a :t:`comment` that spans one or more :t:`[line]s`.
 
 :dp:`fls_nayisy85kyq2`
-A :t:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
+A :dt:`line comment` is a :t:`comment` that spans exactly one :t:`line`.
 
 :dp:`fls_k3hj30hjkdhw`
-An :t:`inner block doc` is a :t:`block comment` that applies to an enclosing
+An :dt:`inner block doc` is a :t:`block comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_tspijl68lduc`
-An :t:`inner line doc` is a :t:`line comment` that applies to an enclosing
+An :dt:`inner line doc` is a :t:`line comment` that applies to an enclosing
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_KZp0yiFLTqxb`
-An :t:`inner doc comment` is either an :t:`inner block doc` or an
+An :dt:`inner doc comment` is either an :t:`inner block doc` or an
 :t:`inner line doc`.
 
 :dp:`fls_63gzofa9ktic`
-An :t:`outer block doc` is a :t:`block comment` that applies to a subsequent
+An :dt:`outer block doc` is a :t:`block comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_scko7crha0um`
-An :t:`outer line doc` is a :t:`line comment` that applies to a subsequent
+An :dt:`outer line doc` is a :t:`line comment` that applies to a subsequent
 :t:`non-[comment]` :t:`construct`.
 
 :dp:`fls_RYVL9KgaxKvl`
-An :t:`outer doc comment` is either an :t:`outer block doc` or an
+An :dt:`outer doc comment` is either an :t:`outer block doc` or an
 :t:`outer line doc`.
 
 :dp:`fls_7n6d3jx61ose`
-A :t:`doc comment` is a :t:`comment` class that includes :t:`[inner block
+A :dt:`doc comment` is a :t:`comment` class that includes :t:`[inner block
 doc]s`, :t:`[inner line doc]s`, :t:`[outer block doc]s`, and :t:`[outer line
 doc]s`.
 
@@ -1437,7 +1461,7 @@ Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_dti0uu7rz81w`
-A :t:`keyword` is a word in program text that has special meaning.
+A :dt:`keyword` is a word in program text that has special meaning.
 
 :dp:`fls_sxg1o4oxql51`
 :t:`[Keyword]s` are case sensitive.
@@ -1494,7 +1518,7 @@ Strict Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_bsh7qsyvox21`
-A :t:`strict keyword` is a :t:`keyword` that always holds its special meaning.
+A :dt:`strict keyword` is a :t:`keyword` that always holds its special meaning.
 
 .. _fls_cbsgp6k0qa82:
 
@@ -1523,7 +1547,7 @@ Reserved Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_w4b97ewwnql`
-A :t:`reserved keyword` is a :t:`keyword` that is not yet in use.
+A :dt:`reserved keyword` is a :t:`keyword` that is not yet in use.
 
 .. _fls_9kjpxri0axvg:
 
@@ -1543,7 +1567,7 @@ Weak Keywords
 .. rubric:: Legality Rules
 
 :dp:`fls_bv87t1gvj7bz`
-A :t:`weak keyword` is a :t:`keyword` whose special meaning depends on the
+A :dt:`weak keyword` is a :t:`keyword` whose special meaning depends on the
 context.
 
 :dp:`fls_bl55g03jmayf`
@@ -1560,4 +1584,3 @@ Word ``union`` acts as a :t:`keyword` only when used in the context of a
 
 :dp:`fls_g0JEluWqBpNc`
 Word ``safe`` acts as a :t:`keyword` only when used as a qualifier of :s:`FunctionDeclaration` or :s:`StaticDeclaration` in the context of a :s:`ExternalBlock`.
-

@@ -11,8 +11,21 @@ Values
 .. rubric:: Legality Rules
 
 :dp:`fls_buyaqara7am4`
-A :t:`value` is either a :t:`literal` or the result of a computation, that may
+A :dt:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
+
+:dp:`fls_RJDPClYE8a9x`
+:dt:`mutability` determines whether a :t:`construct` can modify a :t:`value`.
+
+:dp:`fls_CEBZEvtmIRGv`
+A :t:`value` is :dt:`immutable` when it cannot be modified.
+
+:dp:`fls_U9CPQq4fs7IK`
+A :t:`value` is :dt:`mutable` when it can be modified.
+
+:dp:`fls_8rAyM4S3x1ap`
+:dt:`Initialization` is the act of supplying an initial :t:`value` to a
+:t:`constant`, a :t:`static`, or a :t:`variable`.
 
 :dp:`fls_CUJyMj0Sj8NS`
 An :dt:`allocated object` is a :t:`value` stored at some memory address.
@@ -26,7 +39,7 @@ An :t:`[allocated object]s` :dt:`memory size` is the number of bytes the object
 spans in memory from its :t:`base address`.
 
 :dp:`fls_rixdyyc525xp`
-Two :t:`[value]s` :t:`overlap` when
+Two :t:`[value]s` :dt:`overlap` when
 
 * :dp:`fls_m6ctqq70vcxr`
   Both :t:`[value]s` are the same, or
@@ -41,6 +54,14 @@ Two :t:`[value]s` :t:`overlap` when
 
 * :dp:`fls_eoak5mdl6ma`
   Both :t:`[value]s` are elements of the same :t:`array`.
+
+:dp:`fls_EuVKkSlbLq4q`
+A :dc:`null` :t:`value` denotes the address ``0``.
+
+:dp:`fls_649WudgnmRKE`
+A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
+:c:`null` or not all of the bytes at the referred memory location are part of
+the same allocation.
 
 .. rubric:: Undefined Behavior
 
@@ -80,11 +101,11 @@ Constants
 .. rubric:: Legality Rules
 
 :dp:`fls_5o5iu4j8in4l`
-A :t:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
+A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
 the :t:`value`.
 
 :dp:`fls_3mhj0kkupwuz`
-An :t:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
+An :dt:`unnamed constant` is a :t:`constant` declared with character 0x5F (low
 line).
 
 :dp:`fls_ka4y2yd100dx`
@@ -96,7 +117,7 @@ The :t:`type` of a :t:`constant` shall implement the :std:`core::marker::Sized`
 :t:`trait`.
 
 :dp:`fls_ndmfqxjpvsqy`
-A :t:`constant initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`constant initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`constant`.
 
 :dp:`fls_6rxwbbhf5tc5`
@@ -144,7 +165,7 @@ Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_ibrmiwfypldh`
-A :t:`static` is a :t:`value` that is associated with a specific memory
+A :dt:`static` is a :t:`value` that is associated with a specific memory
 location.
 
 :dp:`fls_mt94jvoot9dx`
@@ -163,21 +184,21 @@ The :t:`type` of a :t:`static` shall implement the :std:`core::marker::Sized`
 A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`external static` in an :t:`unsafe external block`.
 
 :dp:`fls_doi4z6u55bi7`
-A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+A :dt:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
 :t:`value` can be modified.
 
 :dp:`fls_74hp208pto22`
 Access to a :t:`mutable static` shall require :t:`unsafe context`.
 
 :dp:`fls_jfde2vg6mtww`
-An :t:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
+An :dt:`immutable static` is a :t:`static` whose :t:`value` cannot be modified.
 
 :dp:`fls_k4tyqb1j6zjo`
 The type of an :t:`immutable static` shall implement the
 :std:`core::marker::Sync` :t:`trait`.
 
 :dp:`fls_t17h5h6a6v4c`
-A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`static`.
 
 :dp:`fls_yq0hpy4jx2qb`
@@ -227,7 +248,7 @@ Temporaries
 .. rubric:: Legality Rules
 
 :dp:`fls_awpw61yofckz`
-A :t:`temporary` is an anonymous :t:`variable` produced by some intermediate
+A :dt:`temporary` is an anonymous :t:`variable` produced by some intermediate
 computation.
 
 .. _fls_gho955gmob73:
@@ -238,8 +259,18 @@ Variables
 .. rubric:: Legality Rules
 
 :dp:`fls_hl5tnd9yy252`
-A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
+A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
+
+:dp:`fls_DaACqyLYORne`
+A :dt:`local variable` is a :t:`variable`.
+
+:dp:`fls_5rIFH1wsroHb`
+An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
+modified.
+
+:dp:`fls_kBX7Qa4S2VnM`
+A :dt:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
 
 :dp:`fls_vgi0gh5zmoiu`
 The following :t:`[construct]s` are :t:`[variable]s`:
@@ -249,6 +280,10 @@ The following :t:`[construct]s` are :t:`[variable]s`:
 
 * :dp:`fls_3p0sb9ppmg3w`
   A :t:`temporary`.
+
+:dp:`fls_b4nq5tk5j1p9`
+A :dt:`reachable control flow path` is a control flow path that can be
+taken by the execution of a program between two given points in the program.
 
 :dp:`fls_r9km9f969bu8`
 A :t:`variable` shall be used only after it has been initialized through all
@@ -267,7 +302,7 @@ Constant Promotion
 .. rubric:: Legality Rules
 
 :dp:`fls_udn9lyf3m0z6`
-:t:`Constant promotion` is the process of converting a :t:`value expression`
+:dt:`constant promotion` is the process of converting a :t:`value expression`
 into a :t:`constant`.
 
 :dp:`fls_yvkdcs4pmxjf`
