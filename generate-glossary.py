@@ -11,7 +11,6 @@ from pathlib import Path
 import re
 import sys
 
-
 ROOT = Path(__file__).resolve().parent
 SRC_DIR = ROOT / "src"
 EXCLUDED_DOCS = {"glossary.rst", "index.rst", "changelog.rst"}
@@ -20,11 +19,20 @@ DC_RE = re.compile(r":dc:`([^`]+)`")
 SPLIT_NUMBERS = re.compile(r"([0-9]+)")
 
 
-exts_path = str(ROOT / "exts")
-if exts_path not in sys.path:
-    sys.path.append(exts_path)
+def load_definitions_module():
+    exts_path = str(ROOT / "exts")
+    if exts_path not in sys.path:
+        sys.path.append(exts_path)
 
-from ferrocene_spec.definitions import id_from_text, parse_target_from_text
+    from ferrocene_spec.definitions import (  # pylint: disable=import-outside-toplevel
+        id_from_text,
+        parse_target_from_text,
+    )
+
+    return id_from_text, parse_target_from_text
+
+
+id_from_text, parse_target_from_text = load_definitions_module()
 
 
 @dataclass
@@ -66,7 +74,9 @@ def strip_dp_line(lines: list[str]) -> list[str]:
     return lines
 
 
-def replace_first_role(lines: list[str], source_role: str, target_role: str) -> list[str]:
+def replace_first_role(
+    lines: list[str], source_role: str, target_role: str
+) -> list[str]:
     needle = f":{source_role}:`"
     replacement = f":{target_role}:`"
     updated = list(lines)
@@ -91,6 +101,15 @@ def deterministic_id(prefix: str, kind: str, term_id: str) -> str:
     return f"fls_{digest[:12]}"
 
 
+def body_starts_with_list_item_dp(body_lines: list[str]) -> bool:
+    for line in body_lines:
+        stripped = line.lstrip()
+        if not stripped:
+            continue
+        return bool(re.match(r"(\*|\-|#\.)\s+:dp:`", stripped))
+    return False
+
+
 def collect_entries(src: Path) -> list[GlossaryEntry]:
     entries: dict[tuple[str, str], GlossaryEntry] = {}
 
@@ -101,8 +120,12 @@ def collect_entries(src: Path) -> list[GlossaryEntry]:
         lines = path.read_text(encoding="utf-8").splitlines()
         for index, line in enumerate(lines):
             matches = []
-            matches.extend(("term", match.group(1).strip()) for match in DT_RE.finditer(line))
-            matches.extend(("code", match.group(1).strip()) for match in DC_RE.finditer(line))
+            matches.extend(
+                ("term", match.group(1).strip()) for match in DT_RE.finditer(line)
+            )
+            matches.extend(
+                ("code", match.group(1).strip()) for match in DC_RE.finditer(line)
+            )
             if not matches:
                 continue
 
@@ -138,7 +161,9 @@ def collect_entries(src: Path) -> list[GlossaryEntry]:
                     source_line=index + 1,
                 )
 
-    return sorted(entries.values(), key=lambda item: (natural_sort_key(item.term), item.term))
+    return sorted(
+        entries.values(), key=lambda item: (natural_sort_key(item.term), item.term)
+    )
 
 
 def render_entries(entries: list[GlossaryEntry]) -> list[str]:
@@ -146,8 +171,12 @@ def render_entries(entries: list[GlossaryEntry]) -> list[str]:
 
     for entry in entries:
         section_id = deterministic_id("section", entry.kind, entry.term_id)
-        paragraph_id = deterministic_id("paragraph", entry.kind, entry.term_id)
         heading = "^" * len(entry.term)
+
+        body_lines = list(entry.body_lines)
+        if not body_starts_with_list_item_dp(body_lines):
+            paragraph_id = deterministic_id("paragraph", entry.kind, entry.term_id)
+            body_lines = [f":dp:`{paragraph_id}`", *body_lines]
 
         output.extend(
             [
@@ -156,8 +185,7 @@ def render_entries(entries: list[GlossaryEntry]) -> list[str]:
                 entry.term,
                 heading,
                 "",
-                f":dp:`{paragraph_id}`",
-                *entry.body_lines,
+                *body_lines,
                 "",
             ]
         )

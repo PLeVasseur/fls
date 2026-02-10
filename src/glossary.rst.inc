@@ -89,7 +89,6 @@ An :t:`addition expression` is an :t:`arithmetic expression` that uses addition.
 address-to-pointer cast
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_657be21989fb`
 * :dp:`fls_59mpteeczzo`
   An :t:`operand` of :t:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
@@ -1141,7 +1140,6 @@ call resolution
 call site hygiene
 ^^^^^^^^^^^^^^^^^
 
-:dp:`fls_3c4e891de8d1`
 * :dp:`fls_puqhytfzfsg6`
   :t:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
@@ -1733,7 +1731,6 @@ an enclosing :t:`loop expression`.
 Contravariant
 ^^^^^^^^^^^^^
 
-:dp:`fls_377b856bdf5f`
 * :dp:`fls_3rfs58i2kg6l`
   :t:`Contravariant` over ``T``, when ``T`` being a :t:`subtype` of ``U``
   implies that ``F<U>`` is a :t:`subtype` of ``F<T>``, or
@@ -1771,7 +1768,6 @@ The :t:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
 Covariant
 ^^^^^^^^^
 
-:dp:`fls_87489d4a2eda`
 * :dp:`fls_wpm0p0gtctvi`
   :t:`Covariant` over ``T``, when ``T`` being a :t:`subtype` of ``U`` implies
   that ``F<T>`` is a :t:`subtype` of ``F<U>``, or
@@ -1923,7 +1919,6 @@ Default representation
 Definition site hygiene
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_6c9e3d66f8cc`
 * :dp:`fls_dz2mvodl818d`
   :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
@@ -2292,7 +2287,6 @@ An :t:`enum` is an :t:`item` that declares an :t:`enum type`.
 enum cast
 ^^^^^^^^^
 
-:dp:`fls_d581bc687e1d`
 * :dp:`fls_le6bchl25ewz`
   An :t:`operand` of an :t:`enum type` and a target :t:`integer type`
   perform :t:`enum cast`. An :t:`enum cast` converts the :t:`operand` to its
@@ -2535,7 +2529,6 @@ An :t:`extending pattern` is either
 extern C ABI
 ^^^^^^^^^^^^
 
-:dp:`fls_2f0a22f646b6`
 * :dp:`fls_x7ct9k82fpgn`
   ``extern "C"`` - The default :t:`ABI` of :t:`C` code, referred to as
   :t:`extern C ABI`.
@@ -2922,7 +2915,6 @@ A :t:`function-like macro` is a :t:`procedural macro` that consumes a stream of
 function-pointer-to-address cast
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_ed4446846d34`
 * :dp:`fls_bhw2j9wjpf2x`
   An :t:`operand` of a :t:`function pointer type` and a target :t:`integer type`
   perform :t:`function-pointer-to-address cast`. A
@@ -2936,7 +2928,6 @@ function-pointer-to-address cast
 function-pointer-to-pointer cast
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_da8ebf1f2fe9`
 * :dp:`fls_133j6xw8k4qe`
   An :t:`operand` of a :t:`function pointer type` and a :t:`target type`
   ``*const V`` or ``*mut V`` where ``V`` implements the
@@ -3873,7 +3864,6 @@ An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
 Invariant
 ^^^^^^^^^
 
-:dp:`fls_93cccb6064e8`
 * :dp:`fls_kbo3e3bosr0m`
   :t:`Invariant` over ``T``.
 
@@ -4752,7 +4742,6 @@ Method resolution trait implementation candidate lookup
 mixed site hygiene
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_01ee773a3bf3`
 * :dp:`fls_uyvnq88y9gk3`
   :t:`mixed site hygiene` is a hygiene category that resolves to a
   :s:`MacroRulesDeclaration` site for :t:`[label]s`, :t:`[variable]s`, and the
@@ -5687,7 +5676,6 @@ A :t:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations
 pointer-to-address cast
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_0432a63e3f6b`
 * :dp:`fls_i4zsbbmfa2fl`
   An :t:`operand` of :t:`type` ``*const T`` or ``*mut T`` where ``T`` implements
   the :std:`core::marker::Sized` :t:`trait` and a target :t:`integer type`
@@ -5763,7 +5751,6 @@ combine :t:`C representation` and :t:`primitive representation`.
 primitive-to-integer cast
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_92efaf881a11`
 * :dp:`fls_pcromhosmnf0`
   An operand of :t:`type` :c:`bool` or :t:`type` :c:`char` and a
   target :t:`integer type` perform :t:`primitive-to-integer cast`. A
@@ -6549,7 +6536,6 @@ The following :t:`[built-in attribute]s` are :t:`[runtime attribute]s`:
 Rust ABI
 ^^^^^^^^
 
-:dp:`fls_0f3a0f8a74d5`
 * :dp:`fls_a2d8ltpgtvn6`
   ``extern "Rust"`` - The default :t:`ABI` of a Rust program, referred to as
   :t:`Rust ABI`.
@@ -7285,7 +7271,6 @@ A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 syntactic category
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_9818729b458b`
 * :dp:`fls_ceb5a8t6cakr`
   A :t:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
@@ -7863,7 +7848,6 @@ u8
 u8-to-char cast
 ^^^^^^^^^^^^^^^
 
-:dp:`fls_025ad4730086`
 * :dp:`fls_qk5trk8wkvxb`
   An :t:`operand` of :t:`type` :c:`u8` and a target :t:`type` :c:`char` performs
   :t:`u8-to-char cast`. A :t:`u8-to-char cast` converts an :t:`operand` of
