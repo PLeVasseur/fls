@@ -1140,7 +1140,6 @@ call resolution
 call site hygiene
 ^^^^^^^^^^^^^^^^^
 
-:dp:`fls_YTQmXotFOXWU`
 * :dp:`fls_puqhytfzfsg6`
   :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
@@ -1702,7 +1701,6 @@ default representation
 definition site hygiene
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_2Y1Dpw5ZEqT3`
 * :dp:`fls_dz2mvodl818d`
   :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
@@ -3209,7 +3207,7 @@ in scope
 ^^^^^^^^
 
 :dp:`fls_sy380geqvf2l`
-A :dt:`scope` is a region of program text where an :t:`entity` can be referred
+A :t:`scope` is a region of program text where an :t:`entity` can be referred
 to. An :t:`entity` is :dt:`in scope` when it can be referred to.
 
 .. _fls_nscfxu6huw6q:
@@ -4295,7 +4293,6 @@ method resolution
 mixed site hygiene
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_hjJpNmKiZxlT`
 * :dp:`fls_uyvnq88y9gk3`
   :dt:`mixed site hygiene` is a hygiene category that resolves to a
   :s:`MacroRulesDeclaration` site for :t:`[label]s`, :t:`[variable]s`, and the
@@ -5981,7 +5978,7 @@ scope
 
 :dp:`fls_fachaj550cq1`
 A :dt:`scope` is a region of program text where an :t:`entity` can be referred
-to. An :t:`entity` is :dt:`in scope` when it can be referred to.
+to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. _fls_xZUiNkBN5e00:
 
@@ -6707,7 +6704,6 @@ A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 syntactic category
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_f981e3m7kq50`
 * :dp:`fls_ceb5a8t6cakr`
   A :dt:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
