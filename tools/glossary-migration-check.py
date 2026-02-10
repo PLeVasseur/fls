@@ -181,7 +181,9 @@ def collect_glossary_terms() -> list[dict]:
             target = None
             for line in section_lines:
                 for match in T_RE.finditer(line):
-                    display, candidate_target = parse_target_from_text(match.group(1).strip())
+                    display, candidate_target = parse_target_from_text(
+                        match.group(1).strip()
+                    )
                     if display.casefold() == title.casefold():
                         target = candidate_target
                         break
