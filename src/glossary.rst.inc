@@ -1,3 +1,7 @@
+.. SPDX-License-Identifier: MIT OR Apache-2.0
+   SPDX-FileCopyrightText: The Ferrocene Developers
+   SPDX-FileCopyrightText: The Rust Project Contributors
+
 .. _fls_6b549afeb5fb:
 
 ABI

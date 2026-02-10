@@ -17,6 +17,13 @@ EXCLUDED_DOCS = {"glossary.rst", "index.rst", "changelog.rst"}
 DT_RE = re.compile(r":dt:`([^`]+)`")
 DC_RE = re.compile(r":dc:`([^`]+)`")
 SPLIT_NUMBERS = re.compile(r"([0-9]+)")
+SPDX_LICENSE_KEY = "SPDX-License" "-Identifier"
+SPDX_COPYRIGHT_KEY = "SPDX-FileCopyright" "Text"
+SPDX_HEADER = [
+    f".. {SPDX_LICENSE_KEY}: MIT OR Apache-2.0",
+    f"   {SPDX_COPYRIGHT_KEY}: The Ferrocene Developers",
+    f"   {SPDX_COPYRIGHT_KEY}: The Rust Project Contributors",
+]
 
 
 def load_definitions_module():
@@ -203,9 +210,10 @@ def main() -> int:
 
     entries = collect_entries(src)
     rendered = render_entries(entries)
+    output_lines = [*SPDX_HEADER, "", *rendered]
 
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text("\n".join(rendered) + "\n", encoding="utf-8")
+    output.write_text("\n".join(output_lines) + "\n", encoding="utf-8")
 
     return 0
 
