@@ -60,9 +60,7 @@ lint_alphabetical_section_titles = ["glossary"]
 
 lint_no_paragraph_ids = ["index", "changelog"]
 
-lint_glossary_migration_phase = int(
-    os.environ.get("FLS_GLOSSARY_MIGRATION_PHASE", "0")
-)
+lint_glossary_migration_phase = int(os.environ.get("FLS_GLOSSARY_MIGRATION_PHASE", "0"))
 lint_glossary_migration_strict = (
     os.environ.get("FLS_GLOSSARY_MIGRATION_STRICT", "0") == "1"
 )

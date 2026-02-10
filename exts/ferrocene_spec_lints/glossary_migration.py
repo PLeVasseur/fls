@@ -6,7 +6,6 @@ from __future__ import annotations
 from pathlib import Path
 import re
 
-
 DISALLOWED_DIRECTIVES = (".. glossary-entry::", ".. glossary-include::")
 GLOSSARY_DOC = "glossary.rst"
 DT_ROLE_RE = re.compile(r":dt:`")
@@ -59,12 +58,10 @@ def check(app, raise_error):
     root = Path(app.confdir).resolve().parent
 
     for violation in find_disallowed_directives(root):
-        raise_error(
-            f"disallowed directive '{violation['directive']}' in {violation['file']}:{violation['line']}"
-        )
+        location = f"{violation['file']}:{violation['line']}"
+        raise_error(f"disallowed directive '{violation['directive']}' in {location}")
 
     if phase >= 3:
         for violation in find_glossary_dt_lines(root):
-            raise_error(
-                f":dt: role remains in glossary source at {violation['file']}:{violation['line']}"
-            )
+            location = f"{violation['file']}:{violation['line']}"
+            raise_error(f":dt: role remains in glossary source at {location}")

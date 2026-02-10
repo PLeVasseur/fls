@@ -16,7 +16,6 @@ import sys
 
 from sphinx.application import Sphinx
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = ROOT / "src"
 GLOSSARY_PATH = SRC_DIR / "glossary.rst"
@@ -31,12 +30,26 @@ ROLE_RE = re.compile(r":[a-z]+:`([^`]+)`")
 FOR_SEE_RE = re.compile(r"^For\b.*\bsee\b", flags=re.IGNORECASE)
 
 
-exts_path = str(ROOT / "exts")
-if exts_path not in sys.path:
-    sys.path.append(exts_path)
+def load_ferrocene_modules():
+    exts_path = str(ROOT / "exts")
+    if exts_path not in sys.path:
+        sys.path.append(exts_path)
 
-from ferrocene_spec.definitions import DefIdNode, id_from_text, parse_target_from_text
-from ferrocene_spec_lints import glossary_migration
+    from ferrocene_spec.definitions import (  # pylint: disable=import-outside-toplevel
+        DefIdNode,
+        id_from_text,
+        parse_target_from_text,
+    )
+    from ferrocene_spec_lints import (  # pylint: disable=import-outside-toplevel
+        glossary_migration,
+    )
+
+    return DefIdNode, id_from_text, parse_target_from_text, glossary_migration
+
+
+DefIdNode, id_from_text, parse_target_from_text, glossary_migration = (
+    load_ferrocene_modules()
+)
 
 
 @dataclass
