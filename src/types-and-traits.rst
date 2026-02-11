@@ -168,7 +168,7 @@ Scalar Types
 ------------
 
 :dp:`fls_5y8tfx2kgj0c`
-A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or a
+A :t:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or a
 :t:`numeric type`.
 
 .. _fls_tiqp1gxf116z:
@@ -428,7 +428,7 @@ An :t:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
 numbers.
 
 :dp:`fls_3g2cxq6r7nkp`
-A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+A :t:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
 signed whole numbers.
 
 :dp:`fls_k9n8q1rm2v3a`
@@ -923,7 +923,7 @@ A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
 
 :dp:`fls_r3g6b8q1bphw`
-A :dt:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+A :t:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
 
 :dp:`fls_5b2q0xj9k7ry`
 A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
@@ -959,7 +959,7 @@ A :dt:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
 A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 
 :dp:`fls_0r4qz8k5n1mp`
-A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
+A :t:`struct value` is a :t:`value` of a :t:`struct type`.
 
 :dp:`fls_3QSa0wGQtbHh`
 A :t:`field index` is the position of a :t:`field` within a
@@ -2274,7 +2274,7 @@ The following :t:`[expression]s` constitute a
 occur when:
 
 * :dp:`fls_z00wtlna6grk`
-  The source :t:`type` is a :t:`subtype` of the target :t:`type`.
+  The source :t:`type` is a :dt:`subtype` of the target :t:`type`.
 
 * :dp:`fls_rfjdh79k0wou`
   The source :t:`type` ``T`` coerces to intermediate :t:`type` ``W``, and
@@ -2443,7 +2443,7 @@ Structural Equality
 .. rubric:: Legality Rules
 
 :dp:`fls_uVTpA7gbLCYX`
-A :t:`type` is :dt:`structurally equal` when its :t:`[value]s` can be compared
+A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
 for equality by structure.
 
 :dp:`fls_2DZAP6JJjJ9h`
@@ -3448,7 +3448,7 @@ a :t:`tuple type` is determined as follows:
 in place of another.
 
 :dp:`fls_1q7k3n9m5v2b`
-A :dt:`subtype` is a :t:`type` that may be used in place of another :t:`type`
+A :t:`subtype` is a :t:`type` that may be used in place of another :t:`type`
 according to :t:`subtyping`.
 
 :dp:`fls_WD6uyTCziRac`

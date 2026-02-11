@@ -94,7 +94,7 @@ References
 .. rubric:: Legality Rules
 
 :dp:`fls_7x9pi2o7pee7`
-A :dt:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
 can be obtained explicitly by using a :t:`borrow expression` or implicitly in
 certain scenarios.
 
@@ -619,7 +619,7 @@ associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
 An :dt:`extending pattern` is either
 
 * :dp:`fls_965wt48ooqyw`
-  A :t:`reference identifier pattern`, or
+  A :dt:`reference identifier pattern`, or
 
 * :dp:`fls_r8nt0zp8dnyp`
   A :t:`slice pattern`, a :t:`struct pattern`, :t:`tuple pattern` or a

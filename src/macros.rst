@@ -893,7 +893,7 @@ bound to that :t:`metavariable`.
 
 :dp:`fls_ghqjk6xj85ng`
 Repetition in a :t:`macro matcher` is matched based on how many times the
-:t:`pattern` appears consecutively optionally separated by a :t:`separator` in
+:t:`pattern` appears consecutively optionally separated by a :dt:`separator` in
 the :s:`TokenTree` of the :t:`macro invocation`, as follows:
 
 * :dp:`fls_lzwl4en5wcw0`

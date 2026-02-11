@@ -52,7 +52,7 @@ A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
 
 :dp:`fls_6xx34zr069bj`
-A :dt:`subpattern` is a :t:`pattern` nested within another pattern.
+A :t:`subpattern` is a :t:`pattern` nested within another pattern.
 
 :dp:`fls_8xzjb0yzftkd`
 A :t:`pattern` has a :t:`type`, with the exception of the :t:`rest pattern` if
@@ -114,10 +114,10 @@ An :dt:`irrefutable constant` is a :t:`constant` of a :t:`type` that has at most
 one :t:`value`.
 
 :dp:`fls_lh0d85tl4qvy`
-A :dt:`refutable constant` is a :t:`constant` of a :t:`refutable type`.
+A :dt:`refutable constant` is a :t:`constant` of a :dt:`refutable type`.
 
 :dp:`fls_m5a5si8b9s7x`
-A :dt:`refutable type` is a :t:`type` that has more than one :t:`value`.
+A :t:`refutable type` is a :t:`type` that has more than one :t:`value`.
 
 .. rubric:: Examples
 
@@ -166,7 +166,7 @@ An :t:`identifier pattern` yields a :t:`binding`. An :t:`identifier pattern`
 with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 
 :dp:`fls_joIQdDn44oIT`
-A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
+A :t:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
 :dp:`fls_r2m9k6t1v4pa`
@@ -391,7 +391,7 @@ When a :t:`path pattern` refers to an :t:`associated constant` or a
 :dp:`fls_zCswsyuitexI`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
 :t:`constant`, the :t:`type` of the :t:`associated constant` or :t:`constant`
-shall be :t:`structurally equal`.
+shall be :dt:`structurally equal`.
 
 :dp:`fls_wJ9f906BlBvg`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
@@ -762,7 +762,7 @@ Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_vjdkpr3zml51`
-A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_6o3x101wo478`
@@ -1052,7 +1052,7 @@ The :t:`deconstructee` of a :t:`tuple struct pattern` shall resolve to a
 :t:`tuple enum variant` or a :t:`tuple struct type`.
 
 :dp:`fls_ryfcrqrkp28y`
-A :t:`subpattern` of a :t:`tuple struct pattern` matches a :t:`field` of the
+A :dt:`subpattern` of a :t:`tuple struct pattern` matches a :t:`field` of the
 :t:`deconstructee` when its position and the position of the :t:`field` in
 the :t:`deconstructee` are the same. Such a :t:`subpattern` is a
 :dt:`matched tuple struct subpattern`.

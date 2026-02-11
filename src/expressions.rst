@@ -98,7 +98,7 @@ A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
 :dt:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
-A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of a
+A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_yOW2wnLPzlPy`
@@ -325,7 +325,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :t:`static initializer` of a :t:`static`.
+  The :dt:`static initializer` of a :dt:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -519,7 +519,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The :t:`subject expression` of a :t:`match expression`,
 
 * :dp:`fls_JBfZuFDQg3mU`
-  The :t:`base initializer` of a :t:`struct expression`.
+  The :t:`base initializer` of a :dt:`struct expression`.
 
 :dp:`fls_wxGAOWEVT77u`
 A :dt:`mutable place expression context` is a :t:`place expression context` that
@@ -1009,7 +1009,7 @@ A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 
 :dp:`fls_ya77l2zgtilp`
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
-the :t:`borrow expression` produces a :t:`reference` to the memory location
+the :t:`borrow expression` produces a :dt:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
 state, or simply :dt:`borrowed`.
 
@@ -1449,7 +1449,7 @@ An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
 implement the :std:`core::ops::Add` :t:`trait` with the :t:`type` of the
-:t:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
+:dt:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
 
 :dp:`fls_vk17mfv47wk9`
 The :t:`type` of an :t:`addition expression` is :t:`associated type`
@@ -1857,7 +1857,7 @@ The :t:`evaluation` of a :t:`shift right expression` proceeds as follows:
    :t:`shift right expression` evaluates to the value of the left :t:`operand`
    whose bits are shifted right by the number of positions the right
    :t:`operand` evaluates to. If the type of the left :t:`operand` is any
-   :t:`signed integer type` and is negative, then vacated bits are filled
+   :dt:`signed integer type` and is negative, then vacated bits are filled
    with ones. Otherwise, vacated bits are filled with zeros. ``lhs >> rhs``
    evaluates to :math:`\mathrm{lhs} / 2^ \mathrm{rhs}`, casted to the type of
    the left :t:`operand`. If the value of the right :t:`operand` is negative,
@@ -2490,7 +2490,7 @@ The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
   a :t:`bound pattern`.
 
 * :dp:`fls_hj6srmzbobid`
-  A :t:`struct expression` corresponds to a :t:`struct pattern` with all the
+  A :t:`struct expression` corresponds to a :dt:`struct pattern` with all the
   :t:`[subexpression]s` lowered to their corresponding :t:`[pattern]s`.
 
 * :dp:`fls_uydzlfc4hjbx`
@@ -3252,8 +3252,8 @@ Struct Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ij8rebvupb85`
-A :dt:`struct expression` is an :t:`expression` that constructs an
-:dt:`enum value`, a :t:`struct value`, or a :t:`union value`.
+A :t:`struct expression` is an :t:`expression` that constructs an
+:dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
 
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
@@ -3335,7 +3335,7 @@ The :t:`value` of a :t:`struct expression` is the :t:`enum value`,
 :t:`struct value`, or :t:`union value` in construction.
 
 :dp:`fls_ccqomsereni2`
-If the :t:`constructee` is a :dt:`record enum variant` or a :t:`record struct`,
+If the :t:`constructee` is a :dt:`record enum variant` or a :dt:`record struct`,
 then
 
 * :dp:`fls_pivpdyr4seez`
@@ -3627,7 +3627,7 @@ A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
-A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
@@ -5336,7 +5336,7 @@ Arithmetic Overflow
 
 :dp:`fls_oFIRXBPXu6Zv`
 An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
-:t:`value` of a :t:`scalar type` that lies outside of the range of valid
+:t:`value` of a :dt:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
 the operation.

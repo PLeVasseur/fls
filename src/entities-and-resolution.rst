@@ -170,7 +170,7 @@ A :dt:`crate public modifier` is a :t:`visibility modifier` that grants a
 :dp:`fls_tnh7o3pb4e22`
 A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
 :t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
-to a :t:`simple path public modifier` where the :t:`simple path` denotes
+to a :t:`simple path public modifier` where the :dt:`simple path` denotes
 :t:`keyword` ``self``.
 
 :dp:`fls_yymgpyi67dty`
@@ -327,7 +327,7 @@ A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 ``::``.
 
 :dp:`fls_n77icl6idazp`
-A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
+A :t:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
 :t:`[identifier]s` or certain :t:`[keyword]s` with special meaning in program text as defined in the syntax rules
 above.
 
@@ -339,7 +339,7 @@ A :dt:`path prefix` is a :t:`path` with its last :t:`path segment` and
 If a :t:`simple path` appears in a :t:`use import` and starts with a
 :t:`path segment` expressed as either :t:`keyword` ``crate``, :t:`keyword`
 ``$crate``, :t:`keyword` ``self``, or :t:`keyword` ``super``, then the
-:t:`path` shall be the :t:`simple path prefix` of a :t:`glob import` or a
+:t:`path` shall be the :dt:`simple path prefix` of a :t:`glob import` or a
 :t:`nesting import`, or the :t:`simple path` of a :t:`simple import`.
 
 :dp:`fls_cw006jhlboa`
@@ -1036,11 +1036,12 @@ Use Imports
 
 :dp:`fls_lyw4t098sxrj`
 A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
-:t:`block expression` of an :t:`expression-with-block` or :t:`module` where the
+:t:`scope` of the :t:`block expression` of an :t:`expression-with-block` or
+:t:`module` where the
 :t:`use import` resides.
 
 :dp:`fls_sxo1jb25pl8a`
-A :dt:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
+A :t:`simple path prefix` is the leading :t:`simple path` of a :t:`glob import`
 or a :t:`nesting import`.
 
 :dp:`fls_WAA4WmohGu6T`
@@ -1366,7 +1367,7 @@ Method Resolution
 :t:`method call expression`.
 
 :dp:`fls_mbdS0xiNlj92`
-A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
+A :dt:`receiver type` is the :t:`type` of the :dt:`receiver operand`
 of a :t:`method call expression`.
 
 :dp:`fls_z80ylmlu1f3q`

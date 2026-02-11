@@ -186,7 +186,7 @@ line.
 The representation of an end of line is tool-defined.
 
 :dp:`fls_a6t53o8h1vdk`
-A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
+A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 :dp:`fls_Ag1xnfxiNYTB`
