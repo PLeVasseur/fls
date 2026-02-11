@@ -1208,7 +1208,8 @@ cast
 ^^^^
 
 :dp:`fls_e5hvszhcrtmj`
-A :t:`cast` is the process of changing the :t:`type` of an :t:`expression`.
+A :t:`cast` or :t:`casting` is the process of changing the :t:`type` of an
+:t:`expression`.
 
 .. _fls_xl2zlpw070dy:
 
