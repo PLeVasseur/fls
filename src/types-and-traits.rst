@@ -769,7 +769,7 @@ A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 :dp:`fls_YERnNZiSdCRn`
-A :dt:`field list` is a :s:`RecordStructFieldList` or a
+A :t:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_h2m9k6p4r7vd`

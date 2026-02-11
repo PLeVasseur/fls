@@ -655,7 +655,7 @@ A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :t:`variable`.
 
 :dp:`fls_4q6m9t1w7zpa`
-A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+A :t:`unit struct` is a :t:`struct` without a :t:`field list`.
 
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
@@ -3267,7 +3267,7 @@ A :t:`struct expression` is an :t:`expression` that constructs an
 :dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
 
 :dp:`fls_q7v2m9t4k1pa`
-A :dt:`union value` is a :t:`value` of a :t:`union type`.
+A :t:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
@@ -3762,7 +3762,7 @@ A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_jb6krd90tjmc`
-An :dt:`unsafe context` is either an :t:`unsafe block` or an
+An :t:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 :dp:`fls_s2vpn4ihenpe`

@@ -756,7 +756,7 @@ The :t:`declaration` of a :t:`function` introduces a :t:`binding scope` and a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_9k9hourczbv7`
-The :dt:`type specification` of a :t:`function pointer type` introduces a
+The :t:`type specification` of a :t:`function pointer type` introduces a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_p6wiuhkeypzs`
@@ -970,7 +970,7 @@ The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
 
 :dp:`fls_atvnwly4w8g2`
 An :dt:`external prelude` is a :t:`prelude` that brings :t:`in scope` of the
-:dt:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
+:t:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
 using external :dt:`[crate import]s` or supplied by a tool. If the external
 :t:`crate import` uses a :t:`renaming`, then the :t:`identifier` of the
 :t:`renaming` is instead added to the :t:`external prelude`. The core
@@ -1281,7 +1281,7 @@ Field Resolution
 :t:`field access expression`.
 
 :dp:`fls_j1bip4w30q8`
-A :dt:`candidate container type` is the :t:`type` of the :dt:`container operand`
+A :dt:`candidate container type` is the :t:`type` of the :t:`container operand`
 of a :t:`field access expression` :t:`under resolution`.
 
 :dp:`fls_jrk3gzqvqr8e`
@@ -1369,7 +1369,7 @@ Method Resolution
 :t:`method call expression`.
 
 :dp:`fls_mbdS0xiNlj92`
-A :dt:`receiver type` is the :t:`type` of the :dt:`receiver operand`
+A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
 of a :t:`method call expression`.
 
 :dp:`fls_z80ylmlu1f3q`

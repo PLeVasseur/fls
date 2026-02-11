@@ -871,7 +871,7 @@ Attribute ``naked``
 .. rubric:: Undefined Behavior
 
 :dp:`fls_0tYMAQY1V55p`
-It is a :dt:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
+It is a :t:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
 
 :dp:`fls_wGbJrz4OpKKb`
 It is a :t:`safety invariant` for the :t:`function body` to :t:`diverge <diverging expression>`.
@@ -1708,7 +1708,7 @@ Attribute ``type_length_limit``
 :dp:`fls_61vt1r8g51nh`
 :t:`Attribute` :dc:`type_length_limit` sets the maximum number of
 :t:`[generic substitution]s` for :t:`[type parameter]s` when constructing a
-:dt:`concrete type`.
+:t:`concrete type`.
 
 .. rubric:: Examples
 
