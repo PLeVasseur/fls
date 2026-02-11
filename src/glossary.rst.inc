@@ -1357,7 +1357,17 @@ cast
 ^^^^
 
 :dp:`fls_15788abb6083`
-A :t:`cast` is the process of changing the :t:`type` of an :t:`expression`.
+A :t:`cast` or :t:`casting` is the process of changing the :t:`type` of an
+:t:`expression`.
+
+.. _fls_5ae2106f6d81:
+
+casting
+^^^^^^^
+
+:dp:`fls_ff2e3c7c3f1f`
+A :t:`cast` or :t:`casting` is the process of changing the :t:`type` of an
+:t:`expression`.
 
 .. _fls_2e155bd7b82c:
 
@@ -5040,6 +5050,15 @@ namespace context
 A :t:`namespace context` is a set of :t:`[namespace]s` where the :t:`[name]s`
 of :t:`candidate selected entities <candidate selected entity>` reside.
 
+.. _fls_f38268edc8dc:
+
+namespace qualifier
+^^^^^^^^^^^^^^^^^^^
+
+:dp:`fls_35ed27e56e97`
+A :t:`path` is a sequence of :t:`[path segment]s` logically separated by
+:t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
+
 .. _fls_9f6abd9949b0:
 
 NaN-boxing
@@ -6682,14 +6701,24 @@ sequence type
 :dp:`fls_4747f3da90e8`
 A :t:`sequence type` is a :t:`type` that represents a sequence of elements.
 
+.. _fls_202f5573eb5a:
+
+shadowed
+^^^^^^^^
+
+:dp:`fls_7e07c2a00204`
+:t:`shadowing` is a property of :t:`[name]s`. A :t:`name` is :t:`shadowed`
+when another :t:`name` with the same characters is introduced in the same
+:t:`scope` within the same :t:`namespace`, effectively hiding it.
+
 .. _fls_8eedc64a4e88:
 
 shadowing
 ^^^^^^^^^
 
 :dp:`fls_a0bc5753d03a`
-:t:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
-another :t:`name` with the same characters is introduced in the same
+:t:`shadowing` is a property of :t:`[name]s`. A :t:`name` is :t:`shadowed`
+when another :t:`name` with the same characters is introduced in the same
 :t:`scope` within the same :t:`namespace`, effectively hiding it.
 
 .. _fls_814770e9ee35:
