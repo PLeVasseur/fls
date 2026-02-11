@@ -38,8 +38,8 @@ defines the compile- and run-time semantics of a program.
 A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_6n2v9m1k4c0p`
-:dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
-another :t:`name` with the same characters is introduced in the same
+:dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is :dt:`shadowed`
+when another :t:`name` with the same characters is introduced in the same
 :t:`scope` within the same :t:`namespace`, effectively hiding it.
 
 :dp:`fls_lcca91wjwnpx`
@@ -299,7 +299,7 @@ Paths
 
 :dp:`fls_klcltwcwrw6i`
 A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
-:t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
+:dt:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
 :dp:`fls_y1z7kougmahd`
 A :dt:`path segment` is an element of a :t:`path`.
