@@ -179,7 +179,7 @@ A :dt:`simple path public modifier` is a :t:`visibility modifier` that grants a
 
 :dp:`fls_hc121mxknq03`
 The :t:`simple path` of a :t:`simple path public modifier` shall start
-with a :t:`path segment` expressed by either :t:`keyword` ``crate``,
+with a :t:`path segment` (an element of a :t:`path`) expressed by either :t:`keyword` ``crate``,
 :t:`keyword` ``self``, or :t:`keyword` ``super``.
 
 :dp:`fls_icztzxjpm1du`
@@ -328,7 +328,7 @@ A :dt:`global path` is a :t:`path` that starts with :t:`namespace qualifier`
 
 :dp:`fls_n77icl6idazp`
 A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
-:t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
+:t:`[identifier]s` or certain :t:`[keyword]s` with special meaning in program text as defined in the syntax rules
 above.
 
 :dp:`fls_YnUsdSM4x9eq`
@@ -361,7 +361,7 @@ A :dt:`multi segment path` is a :t:`path` consisting of more than one
 
 :dp:`fls_nRgjCLYZL3iX`
 An :dt:`unqualified path expression` is a :t:`path expression` without a
-:t:`qualified type`.
+:t:`qualified type` (a :t:`type` restricted by a :t:`qualifying trait`).
 
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.

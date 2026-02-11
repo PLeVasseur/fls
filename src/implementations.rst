@@ -149,14 +149,15 @@ Given :t:`trait implementation`
 :t:`trait implementation` is considered valid when
 
 * :dp:`fls_3tbm20k2ixol`
-  ``Trait`` is :dt:`fundamental` or a :t:`local trait`, or
+  ``Trait`` is :dt:`fundamental` or a :t:`local trait` (a :t:`trait` defined in
+  the current :t:`crate`), or
 
 * :dp:`fls_lscc9ileg3gm`
   All of
 
   * :dp:`fls_9klwbsh3vlxu`
     At least one of :t:`[type]s` ``T0, T1, .., TN`` is :T:`fundamental` or a
-    :t:`local type`, and
+    :t:`local type` (a :t:`type` defined in the current :t:`crate`), and
 
   * :dp:`fls_9gmc1tcscq9v`
     No :t:`type parameter` of ``P1, P2, .., PN`` that is not used in another

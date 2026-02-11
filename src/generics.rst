@@ -188,7 +188,7 @@ An :t:`inferred constant` can be surrounded by an arbitrary number of ``()``
 
 :dp:`fls_hidfwkwr2r73`
 A :t:`type parameter` has an implicit :std:`core::marker::Sized` :t:`bound`,
-unless an :t:`opt-out trait bound` for the :std:`core::marker::Sized` :t:`trait`
+unless an :dt:`opt-out trait bound` for the :std:`core::marker::Sized` :t:`trait`
 is present.
 
 :dp:`fls_yaYedRNaxhTe`

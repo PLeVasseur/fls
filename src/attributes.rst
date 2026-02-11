@@ -1855,7 +1855,8 @@ Attribute ``proc_macro``
 
 :dp:`fls_u48dtmh97g`
 :t:`Attribute` :c:`proc_macro` shall apply to public :t:`[function]s` in the
-:t:`crate root module` of a :t:`proc-macro crate`.
+:t:`crate root module` of a :t:`proc-macro crate` (a :t:`crate` whose
+:t:`crate type` is ``proc-macro``).
 
 :dp:`fls_t4ez0zg1m569`
 :t:`Attribute` :dc:`proc_macro` turns the related :t:`function` into a
@@ -2015,7 +2016,8 @@ shall apply to the :t:`crate root module` or to :t:`[module]s`.
 
 :dp:`fls_cmrqxc5oax4r`
 The :t:`outer attribute` version of :t:`attribute` :c:`no_implicit_prelude`
-shall apply to :t:`[module]s`.
+shall apply to :t:`[module]s`, because an :t:`outer attribute` applies to a
+subsequent :t:`item`.
 
 :dp:`fls_c7v2hbdb7g2d`
 :t:`Attribute` :dc:`no_implicit_prelude` prevents the import of the

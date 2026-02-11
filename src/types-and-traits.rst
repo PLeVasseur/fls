@@ -3236,7 +3236,7 @@ list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
 
 :dp:`fls_AzuZmR9DXSQh`
-An :dt:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
+An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
 that nullifies an implicitly added :t:`trait bound`.
 
 :dp:`fls_1Sm2Yq1Ow76f`

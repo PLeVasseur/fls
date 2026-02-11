@@ -321,7 +321,8 @@ into a :t:`constant`.
 
 :dp:`fls_m690b8qg9d9r`
 :t:`Constant promotion` is always possible for :t:`expression` ``&mut []``,
-promoting the produced :t:`mutable borrow` to have ``'static`` :t:`lifetime`.
+promoting the produced :t:`mutable borrow` (a :t:`mutable reference` produced
+by :t:`borrowing`) to have ``'static`` :t:`lifetime`.
 
 :dp:`fls_uf0sg25awre6`
 :t:`Constant promotion` proceeds as follows:

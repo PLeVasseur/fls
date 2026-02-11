@@ -131,7 +131,7 @@ A :t:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
 :dp:`fls_OyFwBtDGVimT`
 A :t:`binary crate` that is not subject to :t:`attribute` ``no_main`` shall have
 a :t:`function` in scope of its :t:`crate root module` under the :t:`name`
-``main`` with a :t:`main function signature`.
+``main`` with a :dt:`main function signature`.
 
 :dp:`fls_jQqXxPyND1ds`
 The :t:`function` in scope of a :t:`binary crate`'s :t:`crate root module` under
@@ -263,7 +263,7 @@ A :dt:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
 :dp:`fls_sbGnkm8Ephiu`
-A :dt:`main function signature` is the :t:`function signature` required for the
+A :t:`main function signature` is the :t:`function signature` required for the
 :t:`program entry point` function named ``main``.
 
 * :dp:`fls_o4fxok23134r`

@@ -21,7 +21,8 @@ Rust program.
 wrapped inside a :t:`macro invocation` of
 :t:`macro` :std:`core::arch::asm`,
 :t:`macro` :std:`core::arch::global_asm`, or
-:t:`macro` :std:`core::arch::naked_asm`.
+:t:`macro` :std:`core::arch::naked_asm`; these :t:`[macro]s` apply compile-time
+syntactic transformations.
 
 :dp:`fls_helnk2iz8qhp`
 :t:`Inline assembly` is available on the following architectures:

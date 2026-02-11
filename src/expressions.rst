@@ -103,7 +103,7 @@ A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of 
 
 :dp:`fls_yOW2wnLPzlPy`
 A :t:`binary operator` is an operator that combines a :t:`left operand` and a
-:t:`right operand`.
+:t:`right operand`; the :t:`left operand` is the first operand in evaluation order.
 
 :dp:`fls_m8v2k1p7t4qa`
 A :dt:`unary operator` is an operator that operates on one :t:`operand`.
@@ -444,11 +444,13 @@ location can be modified. The following :t:`[place expression]s` are
 
 * :dp:`fls_6b4rwkrc1ap6`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` is a
-  :t:`mutable raw pointer type`,
+  :t:`mutable raw pointer type` (a :t:`raw pointer type` subject to
+  :t:`keyword` ``mut``),
 
 * :dp:`fls_s4bhrpykzmm7`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` is a
-  :t:`mutable reference type`,
+  :t:`mutable reference type` (a :t:`reference type` subject to :t:`keyword`
+  ``mut``),
 
 * :dp:`fls_xm0gm2q27x2e`
   A :t:`field access expression` where the :t:`container operand` is a
@@ -879,7 +881,8 @@ Named Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_J8wJNfcSAYrS`
-A :dt:`named block expression` is a :t:`block expression` with a :t:`label`.
+A :dt:`named block expression` is a :t:`block expression` with a :t:`label`,
+which names the block for :t:`break expression` control flow.
 
 :dp:`fls_B4NBv2jfZLuy`
 The :t:`type` of the :t:`named block expression` is the :t:`type` of its
@@ -1062,7 +1065,7 @@ Raw Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_TS6DvMon5h27`
-A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :dt:`borrow`.
+A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :dt:`borrow`; this :t:`raw pointer` is a pointer of a :t:`raw pointer type`.
 
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
@@ -1566,7 +1569,7 @@ The :t:`evaluation` of a :t:`division expression` proceeds as follows:
 
    #. :dp:`fls_Q9dhNiICGIfr`
       If unsigned integer division is performed and the :t:`right operand` is
-      0, then the operation results in a :t:`panic`.
+      0, then the operation results in a :t:`panic`, an abnormal program state.
 
    #. :dp:`fls_albbLSTYtmyq`
       If two's complement division is performed and the :t:`right operand` is 0
@@ -2444,7 +2447,8 @@ The :t:`evaluation` of a :t:`basic assignment` proceeds as follows:
 
 #. :dp:`fls_hc01gtvlxba`
    The :t:`value` of the :t:`value operand` is :t:`passed <passing convention>`
-   into the :t:`place` of the :t:`assignee operand`.
+   into the :t:`place` of the :t:`assignee operand`, following the move or copy
+   rules that define the :t:`passing convention`.
 
 .. rubric:: Examples
 
@@ -3959,7 +3963,8 @@ A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_1MTa81vtePN8`
-A :dt:`label` is the :t:`name` of a :t:`loop expression`.
+A :dt:`label` is the :t:`name` of a :t:`loop expression` or a
+:t:`named block expression`.
 
 :dp:`fls_eg93m93gvwal`
 An :dt:`anonymous loop expression` is a :t:`loop expression` without a

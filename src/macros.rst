@@ -732,7 +732,8 @@ Macro Expansion
 #. :dp:`fls_my93neopj9x0`
    The returned :std:`proc_macro::TokenStream` of the
    :t:`macro implementation function` call is appended to the enclosing
-   :t:`block expression` or :t:`module` where the related :s:`EnumDeclaration`,
+   :t:`block expression` or :t:`module` (a container of :t:`[item]s`) where the
+   related :s:`EnumDeclaration`,
    :s:`StructDeclaration`, or :s:`UnionDeclaration` resides. It is a static
    error if the output :std:`proc_macro::TokenStream` does not constitute zero
    or more :t:`[item]s`.
@@ -862,7 +863,8 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   :t:`Fragment specifier` **meta** requires an :dt:`attribute content`.
 
 * :dp:`fls_iorqt9q4ie9j`
-  :t:`Fragment specifier` **pat** requires a :t:`pattern`.
+  :t:`Fragment specifier` **pat** requires a :t:`pattern` that matches the
+  accepted :t:`value` shape.
 
 * :dp:`fls_2zjed913qpvi`
   :t:`Fragment specifier` **pat_param** requires a
