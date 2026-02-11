@@ -33,7 +33,7 @@ Initialization
 .. rubric:: Legality Rules
 
 :dp:`fls_drfzu02bo7oe`
-:t:`Initialization` is the act of supplying an initial :t:`value` to a
+:dt:`Initialization` is the act of supplying an initial :t:`value` to a
 :t:`variable`.
 
 :dp:`fls_wnhci8phdu4m`
@@ -125,7 +125,7 @@ prevents the mutation of its :t:`referent`.
 A :dt:`shared reference` is a :t:`value` of a :t:`shared reference type`.
 
 :dp:`fls_fckoj1jh5mrc`
-A :dt:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
+A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
 allows the mutation of its :t:`referent`.
 
 :dp:`fls_hqxsuyn285he`
@@ -623,7 +623,7 @@ An :dt:`extending pattern` is either
   an :t:`extending pattern`.
 
 :dp:`fls_3ycn4u1fe9h`
-If the :t:`pattern-without-alternation` of a :t:`let statement` is an
+If the :dt:`pattern-without-alternation` of a :t:`let statement` is an
 :t:`extending pattern`, then the :t:`drop scope` of the :t:`expression` of
 the :t:`let statement` is extended to the :t:`drop scope` of the
 :t:`block expression` that contains the :t:`let statement`.

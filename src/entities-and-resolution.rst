@@ -31,11 +31,11 @@ An :dt:`entity` is a :t:`construct` that can be referred to within program text,
 usually via a :t:`field access expression` or a :t:`path`.
 
 :dp:`fls_ogrs6SwlsaKg`
-An :dt:`item` is the most basic semantic element in program text. An :t:`item`
+An :t:`item` is the most basic semantic element in program text. An :t:`item`
 defines the compile- and run-time semantics of a program.
 
 :dp:`fls_40d2g0hvq2il`
-A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
+A :t:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_6n2v9m1k4c0p`
 :dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is :dt:`shadowed`
@@ -148,7 +148,7 @@ Visibility
 
 :dp:`fls_7kpepal8ghuj`
 :dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
-which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
+which :t:`[module]s` can refer to the :dt:`name` of the :t:`field` or :t:`item`.
 
 :dp:`fls_qo0itr5il1kk`
 :dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`

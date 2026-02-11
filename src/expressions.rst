@@ -87,7 +87,7 @@ An :t:`expression-without-block` is an :t:`expression` whose structure does not
 involve a :t:`block expression`.
 
 :dp:`fls_gwgttltgjma4`
-An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
+An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 :dp:`fls_2y7n8m4q1v9c`
 A :dt:`subexpression` is an :t:`expression` nested within another
@@ -463,10 +463,10 @@ location can be modified. The following :t:`[place expression]s` are
   :t:`mutable place expression`,
 
 * :dp:`fls_ilaqmj3hc5uv`
-  A :t:`path expression` that resolves to a :t:`mutable static`,
+  A :t:`path expression` that resolves to a :dt:`mutable static`,
 
 * :dp:`fls_m0gbw9myylv2`
-  A :t:`path expression` that resolves to a :t:`mutable variable` that is not
+  A :t:`path expression` that resolves to a :dt:`mutable variable` that is not
   currently borrowed,
 
 * :dp:`fls_dcm3yr3y9y0a`
@@ -2238,10 +2238,10 @@ A :t:`type cast expression` with the following characteristics performs a
   address is truncated.
 
 * :dp:`fls_59mpteeczzo`
-  An :t:`operand` of :t:`integer type` and :t:`target type` ``*const V`` or
+  An :dt:`operand` of :t:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
   perform :t:`address-to-pointer cast`. An :dt:`address-to-pointer cast`
-  produces a :t:`pointer` that interprets the integer as a machine address.
+  produces a :dt:`pointer` that interprets the integer as a machine address.
 
 * :dp:`fls_8ccwlliqw9jx`
   An :t:`operand` of :t:`type` ``&mut [T; N]`` and a :t:`target type`
@@ -3101,7 +3101,7 @@ then
   :t:`associated type` :std:`core::ops::Index::Output`.
 
 :dp:`fls_y3sduoma6q9v`
-If the :t:`indexed operand` is :t:`mutable` and the :t:`index expression` is
+If the :t:`indexed operand` is :dt:`mutable` and the :t:`index expression` is
 evaluated in a :t:`mutable place expression context`, then
 
 * :dp:`fls_ld7lbvqms5i6`
@@ -3605,7 +3605,7 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_b7i26954j1hc`
-A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
+A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
@@ -4813,7 +4813,7 @@ a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are
-:t:`immutable` in the :t:`match arm guard`.
+:dt:`immutable` in the :t:`match arm guard`.
 
 :dp:`fls_knv1affr2o8t`
 The :t:`type` of the :t:`subject expression` and the :t:`[type]s` of all
@@ -5262,7 +5262,7 @@ A :t:`captured` :t:`capture target` with :t:`capture mode`
 
 :dp:`fls_xTNFfkxHm5yy`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by mutable reference capture` binds a :t:`mutable reference` to the
+:dt:`by mutable reference capture` binds a :dt:`mutable reference` to the
 :t:`capture target` and passes the :t:`mutable reference` into the
 :t:`capturing environment`.
 

@@ -495,7 +495,7 @@ empty.
 :dp:`fls_knjsslplv5ri`
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
-all :t:`[outer attribute]s` that apply to that :t:`item`.
+all :t:`[outer attribute]s` that apply to that :dt:`item`.
 
 .. rubric:: Examples
 
@@ -649,7 +649,7 @@ Macro Expansion
 
    #. :dp:`fls_tu6kmwm4v9nj`
       If the :t:`macro invocation` appears as part of a
-      :t:`pattern-without-range`, the output is required to constitute a
+      :dt:`pattern-without-range`, the output is required to constitute a
       :t:`[pattern]`.
 
    #. :dp:`fls_3zn4dz19nyvq`

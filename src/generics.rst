@@ -62,11 +62,11 @@ A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 A :dt:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 :dp:`fls_z311nxou9yi3`
-A :dt:`generic implementation` is an :t:`implementation` with
+A :dt:`generic implementation` is an :dt:`implementation` with
 :t:`[generic parameter]s`.
 
 :dp:`fls_0GhOR32Z4j7M`
-A :dt:`generic type` is a :t:`type` with a :t:`generic parameter`.
+A :t:`generic type` is a :t:`type` with a :t:`generic parameter`.
 
 :dp:`fls_wmcp0n36jlbr`
 A :dt:`generic struct` is a :t:`struct` with :t:`[generic parameter]s`.
@@ -95,7 +95,7 @@ It is a static error to use a :t:`generic parameter` in the
 :t:`discriminant initializer` of an :t:`enum variant`.
 
 :dp:`fls_s0nrjwqg2wox`
-A :dt:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
+A :t:`lifetime parameter` is a :t:`generic parameter` for a :t:`lifetime`.
 
 :dp:`fls_2grtygcj8o3`
 A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
@@ -357,7 +357,7 @@ A :dt:`generic argument` supplies a static input for an
 :t:`associated trait type` or a :t:`generic parameter`.
 
 :dp:`fls_8j3ARLPm65vI`
-A :dt:`generic substitution` is the replacement of a :t:`generic parameter`
+A :t:`generic substitution` is the replacement of a :t:`generic parameter`
 with a :t:`generic argument`.
 
 :dp:`fls_ky39fb2vcom6`

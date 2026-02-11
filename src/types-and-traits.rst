@@ -1172,7 +1172,7 @@ locations.
 A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
 
 :dp:`fls_TGJQnwS4v9nZ`
-A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
+A :t:`pointer` is a :t:`value` of a :t:`pointer type`.
 
 :dp:`fls_b7m2q9t4v1cx`
 A :dt:`thin pointer type` is an :t:`indirection type` that refers to a
@@ -1542,7 +1542,7 @@ Type Parameters
 
 :dp:`fls_dCIIVXGhXDlO`
 A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
-to be substituted by :t:`generic substitution`.
+to be substituted by :dt:`generic substitution`.
 
 .. rubric:: Examples
 
@@ -2194,7 +2194,7 @@ A :t:`raw pointer type` is unifiable only with another :t:`raw pointer type`
 when:
 
 * :dp:`fls_x9933rjecrna`
-  The :t:`mutability` is the same, and
+  The :dt:`mutability` is the same, and
 
 * :dp:`fls_mizmcykgdisb`
   The :t:`[target type]s` are unifiable.
@@ -3257,7 +3257,7 @@ that nullifies an implicitly added :t:`trait bound`.
 
 :dp:`fls_1Sm2Yq1Ow76f`
 An :dt:`outlives bound` is a :t:`trait bound` which requires that a
-:t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
+:dt:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
 
 :dp:`fls_tx4uspewnk7w`
 :t:`Outlives bound` ``'a: 'b`` indicates that ``'a`` outlives ``'b``.
@@ -3346,7 +3346,7 @@ where another :t:`type` is expected.
 :dp:`fls_df87d44kgwcv`
 :dt:`Variance` is a property of :t:`[lifetime parameter]s` and
 :t:`[type parameter]s` that describes the circumstances under which a
-:t:`generic type` is a :t:`subtype` of an instantiation of itself with
+:dt:`generic type` is a :t:`subtype` of an instantiation of itself with
 different :t:`[generic argument]s`.
 
 :dp:`fls_7ex941yysuhq`
@@ -3614,8 +3614,8 @@ A :dt:`self input lifetime` is an :t:`input lifetime` of a :t:`self parameter`
 that is a :t:`lifetime` of a :t:`reference type` whose referent is :c:`Self`.
 
 * :dp:`fls_ks8wlufmhz6d`
-  Any :t:`lifetime` related to an :t:`implementing type` and an
-  :t:`implemented trait` of an :t:`implementation`.
+  Any :t:`lifetime` related to an :dt:`implementing type` and an
+  :dt:`implemented trait` of an :dt:`implementation`.
 
 :dp:`fls_hsg9kfyvh35m`
 An :dt:`output lifetime` is one of the following :t:`[lifetime]s`:

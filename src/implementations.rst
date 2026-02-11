@@ -37,11 +37,11 @@ Implementations
 .. rubric:: Legality Rules
 
 :dp:`fls_ivxpoxggy7s6`
-An :dt:`implementation` is an :t:`item` that supplements an
+An :t:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
 :dp:`fls_yopmjbnw8tbl`
-An :dt:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
+An :t:`implementing type` is the :t:`type` that the :t:`[associated item]s` of
 an :t:`implementation` are associated with.
 
 :dp:`fls_eIHc8Y9fBtr0`
@@ -70,7 +70,7 @@ An :dt:`unsafe trait implementation` is a :t:`trait implementation` subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_47x0ep8of8wr`
-An :dt:`implemented trait` is a :t:`trait` whose functionality has been
+An :t:`implemented trait` is a :t:`trait` whose functionality has been
 implemented by an :t:`implementing type`.
 
 :dp:`fls_agitlryvyc16`
@@ -207,7 +207,7 @@ Implementation Conformance
 
 :dp:`fls_YyUSuAYG4lX6`
 A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
-satisfies the constraints of its :t:`implemented trait`.
+satisfies the constraints of its :dt:`implemented trait`.
 
 :dp:`fls_v31idwjau90d`
 An :dt:`associated trait constant` is conformant with an :t:`associated constant`
