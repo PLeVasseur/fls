@@ -2237,7 +2237,7 @@ The following :t:`[expression]s` constitute a
   Each :t:`operand` of a :t:`tuple expression`.
 
 :dp:`fls_4rhjpdu4zfqj`
-A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
+A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
 :dp:`fls_h8dkehit8rza`
@@ -2519,7 +2519,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   A :t:`constant argument`.
 
 * :dp:`fls_htLp5J5ObgNh`
-  The :dt:`expression` of a :t:`constant initializer`.
+  The :t:`expression` of a :t:`constant initializer`.
 
 * :dp:`fls_cPlCLGCcl7EK`
   The :t:`expression` of a :t:`static initializer`.

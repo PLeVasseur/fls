@@ -148,7 +148,7 @@ Visibility
 
 :dp:`fls_7kpepal8ghuj`
 :dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
-which :t:`[module]s` can refer to the :dt:`name` of the :t:`field` or :t:`item`.
+which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
 
 :dp:`fls_qo0itr5il1kk`
 :dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
@@ -524,7 +524,7 @@ A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 :dp:`fls_3nqb7p5ifvio`
 A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
 :t:`[lifetime parameter]s` and :t:`[type]s` that have
-to hold for the :dt:`construct` subject to the :t:`where clause` to be valid.
+to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
@@ -1534,7 +1534,7 @@ Path Resolution
 :t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
 
 :dp:`fls_p23q1ob2qitz`
-A :t:`path segment` shall resolve to exactly one :dt:`entity`.
+A :t:`path segment` shall resolve to exactly one :t:`entity`.
 
 :dp:`fls_e9rv8dfa0arl`
 A :dt:`candidate direct entity` is an :t:`entity` that is visible from the
@@ -1755,7 +1755,7 @@ in left-to-right order, as follows:
 
   * :dp:`fls_qbmp0blpoxx9`
     If the previous :t:`[path segment]'s` :t:`resolution context` is a
-    :dt:`trait` or a :t:`type`, then perform
+    :t:`trait` or a :t:`type`, then perform
     :t:`path expression resolution implementation candidate lookup` for the
     current :t:`path segment` and that :t:`trait` or :t:`type`.
 

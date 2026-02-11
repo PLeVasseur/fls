@@ -70,7 +70,7 @@ Modules
 .. rubric:: Legality Rules
 
 :dp:`fls_odd1hj3y1mgu`
-A :dt:`module` is a container for zero or more :t:`[item]s`.
+A :t:`module` is a container for zero or more :t:`[item]s`.
 
 :dp:`fls_whgv72emrm47`
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
