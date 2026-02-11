@@ -2176,7 +2176,7 @@ Attribute ``windows_subsystem``
 
 :dp:`fls_7mzjahvdzpy5`
 :t:`Attribute` :c:`windows_subsystem` shall apply to the :t:`crate root module`
-of a :dt:`binary crate`.
+of a :t:`binary crate`.
 
 :dp:`fls_t3c0t3lcnebk`
 :t:`Attribute` :dc:`windows_subsystem` specifies the subsystem on Windows.

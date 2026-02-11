@@ -649,7 +649,7 @@ Macro Expansion
 
    #. :dp:`fls_tu6kmwm4v9nj`
       If the :t:`macro invocation` appears as part of a
-      :dt:`pattern-without-range`, the output is required to constitute a
+      :t:`pattern-without-range`, the output is required to constitute a
       :t:`[pattern]`.
 
    #. :dp:`fls_3zn4dz19nyvq`

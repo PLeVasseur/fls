@@ -1173,7 +1173,7 @@ A :dt:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
 
 :dp:`fls_B0SMXRqQMS1E`
-A :dt:`variadic part` indicates the presence of :dt:`C`-like optional
+A :dt:`variadic part` indicates the presence of :t:`C`-like optional
 parameters.
 
 :dp:`fls_hbn1l42xmr3h`

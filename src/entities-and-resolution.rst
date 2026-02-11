@@ -370,14 +370,14 @@ A :t:`path expression` is subject to :t:`path expression resolution`.
 A :t:`type path` is subject to :t:`type path resolution`.
 
 :dp:`fls_e65q3iz50j6a`
-A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
 :t:`qualified type`.
 
 :dp:`fls_Ai1jN5a8h3Dz`
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
 
 :dp:`fls_ybv0tdu7dnj5`
-A :dt:`qualified type` is a :t:`type` that is restricted to a set of
+A :t:`qualified type` is a :t:`type` that is restricted to a set of
 :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
 :t:`qualifying trait`.
 
@@ -550,7 +550,7 @@ A :t:`generic parameter` of a :t:`trait` is :t:`in scope` within the related
 :t:`trait body` and :t:`where clause`.
 
 :dp:`fls_PiAR1B26SoZV`
-A :dt:`trait body` is a :t:`construct` that encapsulates the
+A :t:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of a :t:`trait`.
 
