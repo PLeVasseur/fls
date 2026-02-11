@@ -1489,7 +1489,7 @@ Type Parameters
 
 :dp:`fls_dCIIVXGhXDlO`
 A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
-to be substituted by :dt:`generic substitution`.
+to be substituted by :t:`generic substitution`.
 
 .. rubric:: Examples
 
@@ -3106,7 +3106,7 @@ A :t:`trait` is :dt:`object safe` when:
   :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
 
 :dp:`fls_lj7492aq7fzo`
-An :dt:`associated function` is a :t:`function` that appears as an
+An :t:`associated function` is a :t:`function` that appears as an
 :t:`associated item`.
 
 :dp:`fls_uixekv82g2e5`

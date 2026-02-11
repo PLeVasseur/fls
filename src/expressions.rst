@@ -316,7 +316,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The default :t:`value` of a :t:`constant parameter`,
 
 * :dp:`fls_66m2hwkju0vv`
-  The :dt:`discriminant initializer` of an :t:`enum variant`,
+  The :t:`discriminant initializer` of an :t:`enum variant`,
 
 * :dp:`fls_fsn32kmwg65u`
   The :t:`size operand` of an :t:`array repetition constructor`,
@@ -1454,7 +1454,7 @@ An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression
 An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
 
 :dp:`fls_ry3an0mwb63g`
-A :dt:`trait implementation` is an :t:`implementation` that adds functionality
+A :t:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_8imzo7agyx0k`
@@ -2505,7 +2505,7 @@ The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
   a :t:`bound pattern`.
 
 * :dp:`fls_hj6srmzbobid`
-  A :t:`struct expression` corresponds to a :dt:`struct pattern` with all the
+  A :t:`struct expression` corresponds to a :t:`struct pattern` with all the
   :t:`[subexpression]s` lowered to their corresponding :t:`[pattern]s`.
 
 * :dp:`fls_uydzlfc4hjbx`
@@ -3126,7 +3126,7 @@ then
   :t:`associated type` :std:`core::ops::Index::Output`.
 
 :dp:`fls_y3sduoma6q9v`
-If the :t:`indexed operand` is :dt:`mutable` and the :t:`index expression` is
+If the :t:`indexed operand` is :t:`mutable` and the :t:`index expression` is
 evaluated in a :t:`mutable place expression context`, then
 
 * :dp:`fls_ld7lbvqms5i6`
@@ -3488,7 +3488,7 @@ A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :dt:`tuple enum variant value` or a :dt:`tuple struct value`.
 
 :dp:`fls_v1q7n3t5c9xz`
-A :dt:`tuple enum variant` is an :t:`enum variant` with a
+A :t:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_q1m7v9b3k5ha`
@@ -3537,7 +3537,7 @@ The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
 
 :dp:`fls_8ljrgdept7s8`
 A :t:`call expression` whose :t:`callee type` is either an
-:dt:`external function item type`, an :t:`unsafe function item type`, or an
+:t:`external function item type`, an :t:`unsafe function item type`, or an
 :t:`unsafe function pointer type` shall require :t:`unsafe context`.
 
 :dp:`fls_7p6zrjbpj0kl`

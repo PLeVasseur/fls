@@ -290,7 +290,7 @@ Backus-Naur form. In particular:
 
 * :dp:`fls_1dz634xp8xp5`
   A character preceded by ``\`` (bold reverse solidus) is used to denote an
-  :dt:`escaped character`, for example:
+  :t:`escaped character`, for example:
 
 .. syntax::
 
