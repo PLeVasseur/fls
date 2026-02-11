@@ -126,7 +126,7 @@ A :t:`crate` may be subject to multiple :t:`[crate type]s`, treating each type
 as a separate :t:`crate`.
 
 :dp:`fls_9ub6ks8qrang`
-A :dt:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
+A :t:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
 
 :dp:`fls_OyFwBtDGVimT`
 A :t:`binary crate` that is not subject to :t:`attribute` ``no_main`` shall have
@@ -233,7 +233,7 @@ not be considered a part of a Rust program depending on
 :t:`[configuration predicate]s`.
 
 :dp:`fls_a0u9nnaf6drz`
-:dt:`conditional compilation` is the process of compiling
+:t:`conditional compilation` is the process of compiling
 :t:`conditionally-compiled source code`.
 
 :dp:`fls_pf1v89h7pjhh`

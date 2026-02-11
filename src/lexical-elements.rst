@@ -276,7 +276,7 @@ punctuator` or two adjacent :t:`[simple punctuator]s`.
 Each of the special characters listed for single character :t:`punctuator`
 is a :t:`simple punctuator` except if this character is used as a character
 of a :t:`compound punctuator`, or a character of a :t:`character literal`, a
-:t:`comment`, a :t:`numeric literal`, or a :t:`string literal`.
+:dt:`comment`, a :t:`numeric literal`, or a :t:`string literal`.
 
 :dp:`fls_bo3xh8r60ji1`
 The following names are used when referring to :t:`[punctuator]s`:
@@ -1347,7 +1347,7 @@ Comments
 .. rubric:: Legality Rules
 
 :dp:`fls_8obn3dtzpe5f`
-A :dt:`comment` is a :t:`lexical element` that acts as an annotation or an
+A :t:`comment` is a :t:`lexical element` that acts as an annotation or an
 explanation in program text.
 
 :dp:`fls_qsbnl11be35s`

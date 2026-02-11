@@ -25,11 +25,11 @@ Associated Items
 .. rubric:: Legality Rules
 
 :dp:`fls_ckzd25qd213t`
-An :dt:`associated item` is an :t:`item` that appears within an
+An :t:`associated item` is an :t:`item` that appears within an
 :t:`implementation` or a :t:`trait`.
 
 :dp:`fls_8cz4rdrklaj4`
-An :dt:`associated type` is a :t:`type alias` that appears as an
+An :t:`associated type` is a :t:`type alias` that appears as an
 :t:`associated item`.
 
 :dp:`fls_nNisRZ6p4T6u`
@@ -104,7 +104,7 @@ An :t:`associated trait constant` is an :t:`associated constant` that appears
 within a :t:`trait`.
 
 :dp:`fls_b6nns7oqvdpm`
-An :dt:`associated trait function` is an :t:`associated function` that appears
+An :t:`associated trait function` is an :t:`associated function` that appears
 within a :t:`trait`.
 
 :dp:`fls_2TRwCz38kuRz`

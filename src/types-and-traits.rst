@@ -60,7 +60,7 @@ A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 :dp:`fls_cTF1sJ9I2XJd`
-A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
+A :t:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
 :t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
 
 .. _fls_963gsjp2jas2:
@@ -1037,7 +1037,7 @@ The :t:`name` of a :t:`union field` shall be unique within the related
 The :t:`type` of a :t:`union field` shall be either:
 
 * :dp:`fls_hLTnHnZuaHve`
-  A :t:`copy type`, or
+  A :dt:`copy type`, or
 
 * :dp:`fls_JWgSckDtN13c`
   A :t:`mutable reference type`, or
@@ -2965,7 +2965,7 @@ The :t:`type inference` rules for :t:`[expression]s` are as follows:
     :t:`expected type` implements :std:`core::ops::FnOnce` or a :t:`trait` that
     has :std:`core::ops::FnOnce` as one of its :t:`[supertrait]s`, derive the
     closure signature from the parameters and return :t:`type` of the
-    :std:`core::ops::FnOnce` :t:`bound` or :t:`supertrait`.
+    :std:`core::ops::FnOnce` :dt:`bound` or :t:`supertrait`.
 
   * :dp:`fls_U46IXItEKMCB`
     Otherwise, the closure signature remains undeduced. No outside type
@@ -3211,7 +3211,7 @@ Trait and Lifetime Bounds
 .. rubric:: Legality Rules
 
 :dp:`fls_5g508z6c7q5f`
-A :dt:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
+A :t:`bound` imposes a constraint on a :t:`generic parameter` by limiting the
 set of possible :t:`[generic substitution]s`.
 
 :dp:`fls_BqLPVaSyyXRG`

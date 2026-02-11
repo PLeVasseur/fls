@@ -95,14 +95,14 @@ A :dt:`subexpression` is an :t:`expression` nested within another
 
 :dp:`fls_1r29rtnjlkql`
 A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
-:t:`binary operator`.
+:dt:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
 A :dt:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
 
 :dp:`fls_yOW2wnLPzlPy`
-A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
+A :t:`binary operator` is an operator that combines a :t:`left operand` and a
 :t:`right operand`.
 
 :dp:`fls_m8v2k1p7t4qa`
@@ -306,11 +306,11 @@ A :dt:`constant context` is a :t:`construct` that requires a
 :t:`[constant context]s`:
 
 * :dp:`fls_ljc6jq5ksbcs`
-  The :t:`constant initializer` of an :t:`associated constant` or a
-  :t:`constant`,
+  The :dt:`constant initializer` of an :t:`associated constant` or a
+  :dt:`constant`,
 
 * :dp:`fls_3of516eo0kkx`
-  The :t:`constant argument` for a :t:`constant parameter`,
+  The :dt:`constant argument` for a :t:`constant parameter`,
 
 * :dp:`fls_yiks5bvojncc`
   The default :t:`value` of a :t:`constant parameter`,
@@ -790,7 +790,7 @@ a :t:`return expression` and bounds its control flow transfer.
 
 :dp:`fls_sRfEgIkgKhlk`
 An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
-by an :t:`async block expression`, :t:`async function`, or
+by an :t:`async block expression`, :dt:`async function`, or
 :t:`async closure expression`.
 
 :dp:`fls_oisws5qykedi`
@@ -1062,7 +1062,7 @@ Raw Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_TS6DvMon5h27`
-A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :dt:`borrow`.
 
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
@@ -1159,7 +1159,7 @@ The :t:`type` of a :t:`dereference expression` is determined as follows:
   ``*const T``, then the :t:`type` is ``T``.
 
 * :dp:`fls_y9bc691kkh6v`
-  Otherwise the :t:`type` is :t:`associated type`
+  Otherwise the :t:`type` is :dt:`associated type`
   :std:`core::ops::Deref::Target`.
 
 :dp:`fls_gw49nukfveib`
@@ -5096,14 +5096,14 @@ Expression Precedence
 
 :dp:`fls_cwt7afsbgs7w`
 Certain :t:`[expression]s` are subject to :t:`precedence` and
-:t:`associativity`.
+:dt:`associativity`.
 
 :dp:`fls_ya23jjg5wjl`
 :dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
 presence of other :t:`[expression]s`.
 
 :dp:`fls_bezkcuwp5qol`
-:dt:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
+:t:`Associativity` is the order by which :t:`[operand]s` are evaluated within a
 single :t:`expression`.
 
 :dp:`fls_48br7odx6nke`

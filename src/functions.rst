@@ -180,7 +180,7 @@ The :t:`function body` of a :t:`constant function` shall be a
 A :t:`constant function` shall be callable from a :t:`constant context`.
 
 :dp:`fls_m3jiunibqj81`
-An :dt:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
+An :t:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
 :t:`async function` of the form
 
 .. code-block:: rust

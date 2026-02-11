@@ -44,7 +44,7 @@ Attributes
 .. rubric:: Legality Rules
 
 :dp:`fls_rnzxj1t0hehl`
-An :dt:`attribute` is a general, free-form metadatum that is interpreted based on
+An :t:`attribute` is a general, free-form metadatum that is interpreted based on
 its :t:`name`, convention, language, and tool.
 
 :dp:`fls_yd0ehw5csaur`
@@ -925,7 +925,7 @@ Attribute ``cfg``
 .. rubric:: Legality Rules
 
 :dp:`fls_xrjp7xw9jutz`
-:t:`Attribute` :dc:`cfg` enables :t:`conditional compilation`.
+:dt:`Attribute` :dc:`cfg` enables :dt:`conditional compilation`.
 
 :dp:`fls_l96kyix5xsof`
 A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
@@ -1708,7 +1708,7 @@ Attribute ``type_length_limit``
 :dp:`fls_61vt1r8g51nh`
 :t:`Attribute` :dc:`type_length_limit` sets the maximum number of
 :t:`[generic substitution]s` for :t:`[type parameter]s` when constructing a
-:t:`concrete type`.
+:dt:`concrete type`.
 
 .. rubric:: Examples
 
@@ -2174,7 +2174,7 @@ Attribute ``windows_subsystem``
 
 :dp:`fls_7mzjahvdzpy5`
 :t:`Attribute` :c:`windows_subsystem` shall apply to the :t:`crate root module`
-of a :t:`binary crate`.
+of a :dt:`binary crate`.
 
 :dp:`fls_t3c0t3lcnebk`
 :t:`Attribute` :dc:`windows_subsystem` specifies the subsystem on Windows.

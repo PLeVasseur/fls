@@ -221,7 +221,7 @@ of an :t:`implemented trait` when
   :t:`subtype` of the :t:`type` of the :t:`associated trait constant`.
 
 :dp:`fls_qmhduwunxww0`
-An :t:`associated trait function` is conformant with an :t:`associated function`
+An :dt:`associated trait function` is conformant with an :t:`associated function`
 of an :t:`implemented trait` when
 
 * :dp:`fls_2500ivh0cc3y`

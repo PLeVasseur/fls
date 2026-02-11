@@ -166,7 +166,7 @@ Borrowing
 :t:`value` without transferring :t:`ownership` permanently.
 
 :dp:`fls_j9kof0px3l7s`
-A :dt:`borrow` is a :t:`reference` produced by :t:`borrowing`.
+A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
 :dp:`fls_yL6cMahJUIqO`
 A :t:`value` is :t:`borrowed` when it is associated with an active
@@ -279,7 +279,7 @@ A :dt:`passing convention` is the mechanism that defines how a :t:`value` is
 transferred between :t:`[place]s`.
 
 :dp:`fls_h2pgsij1rbms`
-A :dt:`copy type` is a :t:`type` that implements the :std:`core::marker::Copy`
+A :t:`copy type` is a :t:`type` that implements the :std:`core::marker::Copy`
 :t:`trait`.
 
 :dp:`fls_yx2knbby70fy`

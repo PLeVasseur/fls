@@ -637,7 +637,7 @@ Macro Expansion
    :t:`macro invocation` resides. The expected expansion syntax is as follows:
 
    #. :dp:`fls_y20pmwo3v3uu`
-      If the :t:`macro invocation` appears as part of an :t:`associated item`,
+      If the :t:`macro invocation` appears as part of an :dt:`associated item`,
       an :t:`item` within an :t:`external block`, or another
       :t:`macro invocation`, the output is required to constitute zero or more
       :t:`[item]s`.
