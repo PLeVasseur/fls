@@ -79,7 +79,7 @@ An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
-An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
+An :t:`expression-with-block` is an :t:`expression` whose structure involves a
 :t:`block expression`.
 
 :dp:`fls_p15oeage4j0e`
@@ -119,7 +119,7 @@ A :dt:`subject let expression` is an :t:`expression` that controls
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_1223lwh4nq49`
-:dt:`Evaluation` is the process by which an :t:`expression` achieves its runtime
+:t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
 
 :dp:`fls_47a9kz2nq5l8`
@@ -316,7 +316,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The default :t:`value` of a :t:`constant parameter`,
 
 * :dp:`fls_66m2hwkju0vv`
-  The :t:`discriminant initializer` of an :t:`enum variant`,
+  The :dt:`discriminant initializer` of an :t:`enum variant`,
 
 * :dp:`fls_fsn32kmwg65u`
   The :t:`size operand` of an :t:`array repetition constructor`,
@@ -2003,7 +2003,7 @@ The :t:`value` of a :t:`not-equals expression` is the result of
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_ydt9zvh0h5ex`
-The :t:`evaluation` of an :t:`equals expression` proceeds as follows:
+The :dt:`evaluation` of an :t:`equals expression` proceeds as follows:
 
 #. :dp:`fls_4vbrc31r0o60`
    The :t:`left operand` is evaluated.
@@ -2207,7 +2207,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
 * :dp:`fls_le6bchl25ewz`
   An :t:`operand` of an :t:`enum type` and a target :t:`integer type`
   perform :t:`enum cast`. An :dt:`enum cast` converts the :t:`operand` to its
-  :t:`discriminant`, followed by a :t:`numeric cast`.
+  :dt:`discriminant`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_pcromhosmnf0`
   An operand of :t:`type` :c:`bool` or :t:`type` :c:`char` and a
@@ -2998,7 +2998,7 @@ The :t:`type` of the :t:`size operand` shall be :t:`type` :c:`usize`.
 
 :dp:`fls_wmsekin1gd2y`
 The :t:`type` of an :t:`array expression` is ``[T; N]``, where ``T`` is the
-:t:`element type` and ``N`` is the size of the array. The :t:`size` of an
+:dt:`element type` and ``N`` is the size of the array. The :t:`size` of an
 :t:`array` is determined as follows:
 
 * :dp:`fls_2gto5kp9bjw8`
@@ -3249,7 +3249,7 @@ Struct Expressions
 
 :dp:`fls_ij8rebvupb85`
 A :dt:`struct expression` is an :t:`expression` that constructs an
-:t:`enum value`, a :t:`struct value`, or a :t:`union value`.
+:dt:`enum value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
@@ -3505,7 +3505,7 @@ The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
 
 :dp:`fls_8ljrgdept7s8`
 A :t:`call expression` whose :t:`callee type` is either an
-:t:`external function item type`, an :t:`unsafe function item type`, or an
+:dt:`external function item type`, an :t:`unsafe function item type`, or an
 :t:`unsafe function pointer type` shall require :t:`unsafe context`.
 
 :dp:`fls_7p6zrjbpj0kl`
@@ -4617,11 +4617,11 @@ If Expressions
 
 :dp:`fls_2i4fbxbbvpf1`
 An :dt:`if expression` is an :t:`expression` that evaluates either a
-:t:`block expression` or an :t:`else expression` depending on the :t:`value` of
+:t:`block expression` or an :dt:`else expression` depending on the :t:`value` of
 its :t:`subject expression`.
 
 :dp:`fls_5azwlk7hav1k`
-An :dt:`else expression` is an :t:`expression` that represents either a
+An :t:`else expression` is an :t:`expression` that represents either a
 :t:`block expression`, an :t:`if expression`, or an :t:`if let expression`.
 
 :dp:`fls_r7gzxo16esri`

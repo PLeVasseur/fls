@@ -225,7 +225,7 @@ External Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_v24ino4hix3m`
-An :dt:`external function` is an unchecked import of a foreign :t:`function`.
+An :t:`external function` is an unchecked import of a foreign :t:`function`.
 
 :dp:`fls_l88r9fj82650`
 An :t:`external function` shall be invoked from an :t:`unsafe context` unless it is defined in an :t:`unsafe external block` and subject to :s:`ItemSafety` with keyword ``safe``.

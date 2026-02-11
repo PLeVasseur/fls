@@ -212,7 +212,7 @@ its interactions with its external environment. The following are defined as
 external interactions:
 
 * :dp:`fls_gu3331rmv2ho`
-  Any call to an :t:`external function`,
+  Any call to an :dt:`external function`,
 
 * :dp:`fls_AR8ZIYlDRSNs`
   Any interaction with an :t:`external static`,
@@ -290,7 +290,7 @@ Backus-Naur form. In particular:
 
 * :dp:`fls_1dz634xp8xp5`
   A character preceded by ``\`` (bold reverse solidus) is used to denote an
-  :t:`escaped character`, for example:
+  :dt:`escaped character`, for example:
 
 .. syntax::
 

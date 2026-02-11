@@ -106,7 +106,7 @@ read and written.
 
 :dp:`fls_rr8rsy7oilf0`
 An :dt:`input register` is a :t:`register` whose :t:`register name` is used in
-a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
+a :t:`register argument` subject to :dt:`direction modifier` ``in``, ``inout``,
 or ``inlateout``.
 
 :dp:`fls_5ruu8n6r9mvp`
@@ -684,7 +684,7 @@ A :t:`register class argument` causes an assembler to select a suitable
 :t:`register` from the related :t:`register class`.
 
 :dp:`fls_5a3vfresnv5z`
-A :dt:`direction modifier` is a :t:`construct` that indicates whether a
+A :t:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register argument` initializes a :t:`register`, assigns the :t:`value` of a
 :t:`register` to an :t:`expression`, or both.
 

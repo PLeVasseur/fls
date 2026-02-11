@@ -575,7 +575,7 @@ An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
 
 :dp:`fls_mRbOQQQPbVyU`
-An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
+An :t:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
 
 :dp:`fls_4sd5dgy2unq7`
@@ -763,7 +763,7 @@ An :dt:`enum type` is an :t:`abstract data type` that contains
 :t:`[enum variant]s`.
 
 :dp:`fls_v4QIqcZGsG6C`
-An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
+An :t:`enum value` is a :t:`value` of an :t:`enum type`.
 
 :dp:`fls_KTzAGty3T5fF`
 An :t:`enum variant value` is the :t:`enum value` of the corresponding
@@ -796,10 +796,10 @@ The :t:`name` of an :t:`enum variant` shall be unique within the related
 :s:`EnumDeclaration`.
 
 :dp:`fls_t4yeovFm83Wo`
-A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
 
 :dp:`fls_IhqHv2D1nuXj`
-A :dt:`discriminant initializer` provides the :t:`value` of a
+A :t:`discriminant initializer` provides the :t:`value` of a
 :t:`discriminant`.
 
 :dp:`fls_hp5frc752dam`
@@ -1130,7 +1130,7 @@ A :dt:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
 :dp:`fls_sas3ahcshnrh`
-An :dt:`external function item type` is a :t:`function item type` where the
+An :t:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
 
 :dp:`fls_liwnzwu1el1i`

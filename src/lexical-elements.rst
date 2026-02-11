@@ -1129,7 +1129,7 @@ Character Literals
      | $$\x$$ OctalDigit HexadecimalDigit
 
 :dp:`fls_TXk2yFGh8at5`
-An :dt:`escaped character` is the textual representation for a character with
+An :t:`escaped character` is the textual representation for a character with
 special meaning. An escaped character consists of character 0x5C (reverse
 solidus), followed by the single character encoding of the special meaning
 character. For example, ``\t`` is the escaped character for 0x09 (horizontal

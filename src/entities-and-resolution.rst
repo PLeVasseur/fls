@@ -27,7 +27,7 @@ A :t:`construct` is a syntactic element of a Rust program defined by this
 specification.
 
 :dp:`fls_x7j6wcigqt7u`
-An :dt:`entity` is a :t:`construct` that can be referred to within program text,
+An :t:`entity` is a :t:`construct` that can be referred to within program text,
 usually via a :t:`field access expression` or a :t:`path`.
 
 :dp:`fls_ogrs6SwlsaKg`
@@ -43,7 +43,7 @@ when another :t:`name` with the same characters is introduced in the same
 :t:`scope` within the same :t:`namespace`, effectively hiding it.
 
 :dp:`fls_lcca91wjwnpx`
-A :dt:`declaration` is a :t:`construct` that introduces a :t:`name` for an
+A :t:`declaration` is a :t:`construct` that introduces a :t:`name` for an
 :t:`entity`.
 
 :dp:`fls_94l2d7ti0hjw`
@@ -584,7 +584,7 @@ An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 :dp:`fls_huvo0mp2i6fb`
 An :t:`item` declared within the :t:`block expression` of an
-:t:`expression-with-block` is :t:`in scope` within the related
+:dt:`expression-with-block` is :t:`in scope` within the related
 :t:`block expression`.
 
 :dp:`fls_x8r0oppuc1t6`
@@ -692,7 +692,7 @@ into the :t:`scope hierarchy`. The following :t:`[construct]s` are
   :t:`[Declarative macro]s`,
 
 * :dp:`fls_jz7hgkvocc9r`
-  :t:`Enum type` :t:`[declaration]s`,
+  :t:`Enum type` :dt:`[declaration]s`,
 
 * :dp:`fls_p4g8sxba7at9`
   :t:`Function` :t:`[declaration]s`,
@@ -968,8 +968,8 @@ The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
 
 :dp:`fls_atvnwly4w8g2`
 An :dt:`external prelude` is a :t:`prelude` that brings :t:`in scope` of the
-:t:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
-using external :t:`[crate import]s` or supplied by a tool. If the external
+:dt:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
+using external :dt:`[crate import]s` or supplied by a tool. If the external
 :t:`crate import` uses a :t:`renaming`, then the :t:`identifier` of the
 :t:`renaming` is instead added to the :t:`external prelude`. The core
 :t:`crate` is always added to the :t:`external prelude` unless the :t:`crate
@@ -1527,7 +1527,7 @@ Path Resolution
 :t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
 
 :dp:`fls_p23q1ob2qitz`
-A :t:`path segment` shall resolve to exactly one :t:`entity`.
+A :t:`path segment` shall resolve to exactly one :dt:`entity`.
 
 :dp:`fls_e9rv8dfa0arl`
 A :dt:`candidate direct entity` is an :t:`entity` that is visible from the

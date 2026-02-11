@@ -131,7 +131,7 @@ The value of a :t:`constant` is determined by evaluating its
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_xezt9hl069h4`
-The :t:`elaboration` of a :t:`constant` evaluates its :t:`constant initializer`.
+The :dt:`elaboration` of a :t:`constant` evaluates its :t:`constant initializer`.
 
 :dp:`fls_ndobth7s92if`
 A :t:`path` that refers to a :t:`constant` is replaced with the :t:`value` of
@@ -304,7 +304,7 @@ into a :t:`constant`.
   The :t:`value expression` is a :t:`constant expression`, and
 
 * :dp:`fls_tms5r9f5ogcb`
-  The :t:`type` of the :t:`value expression` does not have a :t:`destructor`,
+  The :t:`type` of the :t:`value expression` does not have a :dt:`destructor`,
   and
 
 * :dp:`fls_bysv5r7iuf5j`

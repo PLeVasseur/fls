@@ -824,7 +824,7 @@ It is undefined behavior when :t:`attribute` :c:`track_caller` applies to an
 
 :dp:`fls_ddg0u5lej74x`
 It is undefined behavior when :t:`attribute` :c:`track_caller` is applied to
-an :t:`exported function` but the :t:`external function` it links to is missing
+an :dt:`exported function` but the :t:`external function` it links to is missing
 the :t:`attribute`.
 
 .. rubric:: Examples
@@ -1488,7 +1488,7 @@ or :t:`static`.
 be publicly exported from the produced library or object file.
 
 :dp:`fls_VKuSiswPMll7`
-An :dt:`exported function` is a :t:`function` subject to :t:`attribute`
+An :t:`exported function` is a :t:`function` subject to :t:`attribute`
 :c:`no_mangle`.
 
 :dp:`fls_I029Rvr5BX5P`

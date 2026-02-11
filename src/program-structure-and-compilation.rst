@@ -110,7 +110,7 @@ Crates
 .. rubric:: Legality Rules
 
 :dp:`fls_qwghk79ok5h0`
-A :dt:`crate` is a unit of compilation and linking that contains a tree of
+A :t:`crate` is a unit of compilation and linking that contains a tree of
 nested :t:`[module]s`.
 
 :dp:`fls_unxalgMqIr3v`
@@ -172,7 +172,7 @@ Crate Imports
 .. rubric:: Legality Rules
 
 :dp:`fls_d0pa807s5d5h`
-A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
+A :t:`crate import` specifies a required dependency on an external :t:`crate`.
 
 :dp:`fls_vfam3wzeAiah`
 A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
@@ -207,7 +207,7 @@ Compilation Roots
 .. rubric:: Legality Rules
 
 :dp:`fls_fhiqvgdamq5`
-A :dt:`crate root module` is the root of the nested :t:`module` tree of a
+A :t:`crate root module` is the root of the nested :t:`module` tree of a
 :t:`crate`.
 
 :dp:`fls_1NrcosNZJu5V`
