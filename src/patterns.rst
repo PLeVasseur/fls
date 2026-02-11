@@ -391,7 +391,7 @@ When a :t:`path pattern` refers to an :t:`associated constant` or a
 :dp:`fls_zCswsyuitexI`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
 :t:`constant`, the :t:`type` of the :t:`associated constant` or :t:`constant`
-shall be :dt:`structurally equal`.
+shall be :t:`structurally equal`.
 
 :dp:`fls_wJ9f906BlBvg`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
@@ -833,7 +833,7 @@ Record Struct Patterns
 
 :dp:`fls_g6dytd6aq62d`
 A :dt:`record struct pattern` is a :t:`pattern` that matches a
-:dt:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
+:t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an

@@ -539,7 +539,7 @@ within the related :t:`type specification`.
 
 :dp:`fls_pmo939jw9m1m`
 A :t:`generic parameter` of an :t:`implementation` is :t:`in scope` within the
-related :dt:`implementation body` and :t:`where clause`.
+related :t:`implementation body` and :t:`where clause`.
 
 :dp:`fls_67dtv1z3arbl`
 A :t:`generic parameter` of a :t:`struct type` is :t:`in scope` within the

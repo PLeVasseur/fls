@@ -2534,7 +2534,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   The :t:`expression` of a :t:`constant argument`.
 
 * :dp:`fls_Sowatt1V988J`
-  A :dt:`function body`.
+  A :t:`function body`.
 
 * :dp:`fls_A1NVYkepoaMk`
   The :t:`size operand` of an :t:`array expression` or an :t:`array type`.

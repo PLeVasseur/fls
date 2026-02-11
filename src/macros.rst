@@ -860,7 +860,7 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   (hyphen-minus), followed by a :t:`literal expression`.
 
 * :dp:`fls_wtol98rrqka5`
-  :t:`Fragment specifier` **meta** requires an :dt:`attribute content`.
+  :t:`Fragment specifier` **meta** requires an :t:`attribute content`.
 
 * :dp:`fls_iorqt9q4ie9j`
   :t:`Fragment specifier` **pat** requires a :t:`pattern` that matches the

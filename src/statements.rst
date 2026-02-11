@@ -48,7 +48,7 @@ effects.
 For :dt:`executed`, see :t:`execution`.
 
 :dp:`fls_dl763ssb54q1`
-The :dt:`execution` of an :t:`empty statement` has no effect.
+The :t:`execution` of an :t:`empty statement` has no effect.
 
 .. _fls_yivm43r5wnp1:
 
@@ -83,7 +83,7 @@ alternatively executes a :t:`block expression`.
 
 :dp:`fls_iqar7vvtw22c`
 If a :t:`let statement` lacks a :t:`block expression`, then the :t:`pattern` of
-the :t:`let statement` shall be an :dt:`irrefutable pattern`.
+the :t:`let statement` shall be an :t:`irrefutable pattern`.
 
 :dp:`fls_1s1UikGU5YQb`
 If a :t:`let statement` has a :t:`block expression`, then the :s:`Expression` of

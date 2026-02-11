@@ -325,7 +325,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :dt:`static initializer` of a :dt:`static`.
+  The :dt:`static initializer` of a :t:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -468,7 +468,7 @@ location can be modified. The following :t:`[place expression]s` are
   A :t:`path expression` that resolves to a :dt:`mutable static`,
 
 * :dp:`fls_m0gbw9myylv2`
-  A :t:`path expression` that resolves to a :dt:`mutable variable` that is not
+  A :t:`path expression` that resolves to a :t:`mutable variable` that is not
   currently borrowed,
 
 * :dp:`fls_dcm3yr3y9y0a`
@@ -1018,7 +1018,7 @@ A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
 the :t:`borrow expression` produces a :t:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
-state, or simply :dt:`borrowed`.
+state, or simply :t:`borrowed`.
 
 :dp:`fls_chr03xll75d`
 The :t:`type` of a :t:`borrow expression` is determined as follows:
@@ -1193,7 +1193,7 @@ The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
 
 :dp:`fls_9wgldua1u8yt`
 It is undefined behavior to dereference a :t:`raw pointer` that is either
-:dt:`dangling` or unaligned.
+:t:`dangling` or unaligned.
 
 .. rubric:: Examples
 
@@ -1868,7 +1868,7 @@ The :t:`evaluation` of a :t:`shift right expression` proceeds as follows:
    :t:`shift right expression` evaluates to the value of the left :t:`operand`
    whose bits are shifted right by the number of positions the right
    :t:`operand` evaluates to. If the type of the left :t:`operand` is any
-   :dt:`signed integer type` and is negative, then vacated bits are filled
+   :t:`signed integer type` and is negative, then vacated bits are filled
    with ones. Otherwise, vacated bits are filled with zeros. ``lhs >> rhs``
    evaluates to :math:`\mathrm{lhs} / 2^ \mathrm{rhs}`, casted to the type of
    the left :t:`operand`. If the value of the right :t:`operand` is negative,
@@ -2017,7 +2017,7 @@ The :t:`value` of a :t:`not-equals expression` is the result of
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_ydt9zvh0h5ex`
-The :dt:`evaluation` of an :t:`equals expression` proceeds as follows:
+The :t:`evaluation` of an :t:`equals expression` proceeds as follows:
 
 #. :dp:`fls_4vbrc31r0o60`
    The :t:`left operand` is evaluated.
@@ -2221,7 +2221,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
 * :dp:`fls_le6bchl25ewz`
   An :t:`operand` of an :t:`enum type` and a target :t:`integer type`
   perform :t:`enum cast`. An :dt:`enum cast` converts the :t:`operand` to its
-  :dt:`discriminant`, followed by a :t:`numeric cast`.
+  :t:`discriminant`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_pcromhosmnf0`
   An operand of :t:`type` :c:`bool` or :t:`type` :c:`char` and a
@@ -2262,7 +2262,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
   An :dt:`operand` of :dt:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
   perform :t:`address-to-pointer cast`. An :dt:`address-to-pointer cast`
-  produces a :dt:`pointer` that interprets the integer as a machine address.
+  produces a :t:`pointer` that interprets the integer as a machine address.
 
 * :dp:`fls_8ccwlliqw9jx`
   An :t:`operand` of :t:`type` ``&mut [T; N]`` and a :t:`target type`
@@ -3013,7 +3013,7 @@ The :t:`type` of the :t:`size operand` shall be :t:`type` :c:`usize`.
 
 :dp:`fls_wmsekin1gd2y`
 The :t:`type` of an :t:`array expression` is ``[T; N]``, where ``T`` is the
-:dt:`element type` and ``N`` is the size of the array. The :t:`size` of an
+:t:`element type` and ``N`` is the size of the array. The :t:`size` of an
 :t:`array` is determined as follows:
 
 * :dp:`fls_2gto5kp9bjw8`
@@ -3289,7 +3289,7 @@ initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
-when the :dt:`field index` of the :t:`indexed initializer` resolves to a valid
+when the :t:`field index` of the :t:`indexed initializer` resolves to a valid
 position of a :t:`field` in the :t:`constructee`. Such an
 :t:`indexed initializer` is a :dt:`matched indexed initializer`.
 
@@ -3349,7 +3349,7 @@ The :t:`value` of a :t:`struct expression` is the :t:`enum value`,
 :t:`struct value`, or :t:`union value` in construction.
 
 :dp:`fls_ccqomsereni2`
-If the :t:`constructee` is a :dt:`record enum variant` or a :dt:`record struct`,
+If the :t:`constructee` is a :t:`record enum variant` or a :dt:`record struct`,
 then
 
 * :dp:`fls_pivpdyr4seez`
@@ -4864,7 +4864,7 @@ a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are
-:dt:`immutable` in the :t:`match arm guard`.
+:t:`immutable` in the :t:`match arm guard`.
 
 :dp:`fls_knv1affr2o8t`
 The :t:`type` of the :t:`subject expression` and the :t:`[type]s` of all
