@@ -75,7 +75,7 @@ A :ds:`SubjectLetExpression` is any expression in category
 .. rubric:: Legality Rules
 
 :dp:`fls_h5o6tgul4yor`
-An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
@@ -83,7 +83,7 @@ An :dt:`expression-with-block` is an :t:`expression` whose structure involves a
 :t:`block expression`.
 
 :dp:`fls_p15oeage4j0e`
-An :dt:`expression-without-block` is an :t:`expression` whose structure does not
+An :t:`expression-without-block` is an :t:`expression` whose structure does not
 involve a :t:`block expression`.
 
 :dp:`fls_gwgttltgjma4`
@@ -197,7 +197,7 @@ involve :t:`[type]s` that require :t:`destruction`:
   :t:`[Block expression]s`,
 
 * :dp:`fls_490a1b74fut6`
-  :t:`[Call expression]s` where the callee is a :t:`constant function`,
+  :t:`[Call expression]s` where the callee is a :dt:`constant function`,
 
 * :dp:`fls_8nyu6phm1nji`
   :t:`[Closure expression]s` that do not :t:`capture <capturing>`,
@@ -1005,7 +1005,7 @@ A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
 the :t:`borrow expression` produces a :t:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
-state, or simply :t:`borrowed`.
+state, or simply :dt:`borrowed`.
 
 :dp:`fls_chr03xll75d`
 The :t:`type` of a :t:`borrow expression` is determined as follows:
@@ -1180,7 +1180,7 @@ The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
 
 :dp:`fls_9wgldua1u8yt`
 It is undefined behavior to dereference a :t:`raw pointer` that is either
-:t:`dangling` or unaligned.
+:dt:`dangling` or unaligned.
 
 .. rubric:: Examples
 
@@ -2217,7 +2217,7 @@ A :t:`type cast expression` with the following characteristics performs a
 
   * :dp:`fls_eb00s8fxlvjb`
     Convert an :t:`operand` of :t:`type` :c:`char` to the :t:`value` of the
-    corresponding :t:`code point`, followed by a :t:`numeric cast`.
+    corresponding :dt:`code point`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_qk5trk8wkvxb`
   An :t:`operand` of :t:`type` :c:`u8` and a target :t:`type` :c:`char` performs
@@ -3261,7 +3261,7 @@ initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
-when the :t:`field index` of the :t:`indexed initializer` resolves to a valid
+when the :dt:`field index` of the :t:`indexed initializer` resolves to a valid
 position of a :t:`field` in the :t:`constructee`. Such an
 :t:`indexed initializer` is a :dt:`matched indexed initializer`.
 
@@ -3716,7 +3716,7 @@ A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_s2vpn4ihenpe`
-A :dt:`container operand` is an :t:`operand` that indicates the :t:`value` whose
+A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
 :dp:`fls_yeuayil6uxzx`

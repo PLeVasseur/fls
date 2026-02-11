@@ -49,7 +49,7 @@ Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_gn1ngtx2tp2s`
-A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.
@@ -150,7 +150,7 @@ The :t:`return type` of a :t:`function` is determined as follows:
   Otherwise the :t:`return type` is the :t:`unit type`.
 
 :dp:`fls_927nfm5mkbsp`
-A :dt:`function body` is the :t:`block expression` of a :t:`function`.
+A :t:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an
@@ -164,13 +164,13 @@ A :t:`function body` of an :t:`async function` denotes an
 :t:`async control flow boundary`.
 
 :dp:`fls_owdlsaaygtho`
-A :dt:`function signature` is a unique identification of a :t:`function`
+A :t:`function signature` is a unique identification of a :t:`function`
 that encompasses of its :t:`[function qualifier]s`, :t:`name`,
 :t:`[generic parameter]s`, :t:`[function parameter]s`, :t:`return type`, and
 :t:`where clause`.
 
 :dp:`fls_2049qu3ji5x7`
-A :dt:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
+A :t:`constant function` is a :t:`function` subject to :t:`keyword` ``const``.
 
 :dp:`fls_7mlanuh5mvpn`
 The :t:`function body` of a :t:`constant function` shall be a

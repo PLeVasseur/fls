@@ -165,7 +165,7 @@ Borrowing
 A :dt:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
 :dp:`fls_yL6cMahJUIqO`
-A :t:`value` is :dt:`borrowed` when it is associated with an active
+A :t:`value` is :t:`borrowed` when it is associated with an active
 :t:`borrow`.
 
 :dp:`fls_zepwytjwy049`

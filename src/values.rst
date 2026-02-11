@@ -59,7 +59,7 @@ Two :t:`[value]s` :dt:`overlap` when
 A :dc:`null` :t:`value` denotes the address ``0``.
 
 :dp:`fls_649WudgnmRKE`
-A :t:`value` of an :t:`indirection type` is :dt:`dangling` if it is either
+A :t:`value` of an :t:`indirection type` is :t:`dangling` if it is either
 :c:`null` or not all of the bytes at the referred memory location are part of
 the same allocation.
 

@@ -309,7 +309,7 @@ Procedural Macros
 
 :dp:`fls_ejbddhggstd2`
 A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
-transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
+transformations in a :dt:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
 :dp:`fls_pcce9gmjpxba`
@@ -644,7 +644,7 @@ Macro Expansion
 
    #. :dp:`fls_nsh2vwx8oiw`
       If the :t:`macro invocation` appears as part of an
-      :t:`expression-without-block`, the output is required to constitute an
+      :dt:`expression-without-block`, the output is required to constitute an
       :t:`expression`.
 
    #. :dp:`fls_tu6kmwm4v9nj`
@@ -859,7 +859,7 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   (hyphen-minus), followed by a :t:`literal expression`.
 
 * :dp:`fls_wtol98rrqka5`
-  :t:`Fragment specifier` **meta** requires an :t:`attribute content`.
+  :t:`Fragment specifier` **meta** requires an :dt:`attribute content`.
 
 * :dp:`fls_iorqt9q4ie9j`
   :t:`Fragment specifier` **pat** requires a :t:`pattern`.
@@ -1123,4 +1123,3 @@ Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 :dp:`fls_7eqqk2cj0clr`
 The :t:`metavariable` ``$crate`` in a :t:`declarative macro`'s expansion refers
 to the crate the :t:`declarative macro` was declared in.
-

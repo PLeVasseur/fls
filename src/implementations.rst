@@ -210,7 +210,7 @@ A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
 satisfies the constraints of its :t:`implemented trait`.
 
 :dp:`fls_v31idwjau90d`
-An :t:`associated trait constant` is conformant with an :t:`associated constant`
+An :dt:`associated trait constant` is conformant with an :t:`associated constant`
 of an :t:`implemented trait` when
 
 * :dp:`fls_k3wfh5japmyw`

@@ -112,7 +112,7 @@ An :dt:`associated trait implementation item` is an :t:`associated item` that
 appears within a :t:`trait implementation`.
 
 :dp:`fls_x564isbhobym`
-An :dt:`associated trait constant` is an :t:`associated constant` that appears
+An :t:`associated trait constant` is an :t:`associated constant` that appears
 within a :t:`trait`.
 
 :dp:`fls_b6nns7oqvdpm`

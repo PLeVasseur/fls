@@ -705,7 +705,7 @@ A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
 The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
 
 :dp:`fls_ivWBnhfOZUrW`
-The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
+The :t:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
 :s:`TupleFieldList`.
 
 :dp:`fls_s9a36zsrfqew`
@@ -730,7 +730,7 @@ Abstract Data Types
 An :dt:`abstract data type` is a collection of other :t:`[type]s`.
 
 :dp:`fls_74bRiJktNHvk`
-A :dt:`field` is an element of an :t:`abstract data type`.
+A :t:`field` is an element of an :t:`abstract data type`.
 
 .. _fls_szibmtfv117b:
 
@@ -771,7 +771,7 @@ An :dt:`enum type` is an :t:`abstract data type` that contains
 An :dt:`enum value` is a :t:`value` of an :t:`enum type`.
 
 :dp:`fls_KTzAGty3T5fF`
-An :dt:`enum variant value` is the :t:`enum value` of the corresponding
+An :t:`enum variant value` is the :t:`enum value` of the corresponding
 :t:`enum` of the :t:`enum variant`.
 
 :dp:`fls_il9a1olqmu38`
@@ -974,7 +974,7 @@ A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 A :dt:`struct value` is a :t:`value` of a :t:`struct type`.
 
 :dp:`fls_3QSa0wGQtbHh`
-A :dt:`field index` is the position of a :t:`field` within a
+A :t:`field index` is the position of a :t:`field` within a
 :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
 :t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
 
@@ -1222,7 +1222,7 @@ An :dt:`unsafe function pointer type` is a function pointer type subject to
 :t:`keyword` ``unsafe``.
 
 :dp:`fls_B0SMXRqQMS1E`
-A :dt:`variadic part` indicates the presence of :t:`C`-like optional
+A :dt:`variadic part` indicates the presence of :dt:`C`-like optional
 parameters.
 
 :dp:`fls_hbn1l42xmr3h`
@@ -1658,7 +1658,7 @@ Type Layout
 .. rubric:: Legality Rules
 
 :dp:`fls_kdbq02iguzgl`
-All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
+All :t:`[value]s` have an :dt:`alignment` and a :t:`size`.
 
 :dp:`fls_5kz6p0m2v9nd`
 A :dt:`sized type` is a :t:`type` that implements the
@@ -1685,7 +1685,7 @@ A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type sp
 A :dt:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
 
 :dp:`fls_muxfn9soi47l`
-The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
+The :t:`alignment` of a :t:`value` specifies which addresses are valid for
 storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
 and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
@@ -2055,7 +2055,7 @@ Two :t:`[type]s` are :dt:`unifiable` when they :t:`unify`.
 A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
 
 :dp:`fls_aie0tr62vhw5`
-Two types that :t:`unify` are said to be :dt:`[unifiable type]s`.
+Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
 
 :dp:`fls_3U7Ue6Xzuv9M`
 :t:`Type unification` is a symmetric operation. If :t:`type` ``A`` unifies
@@ -2332,7 +2332,7 @@ occur when:
 
 * :dp:`fls_ulcdetwp6x96`
   The source :t:`type` is a :t:`function item type`, the target :t:`type` is
-  a :t:`function pointer type` and the source's :t:`function signature` is a :t:`subtype` of the target's :t:`function signature`.
+  a :t:`function pointer type` and the source's :dt:`function signature` is a :t:`subtype` of the target's :t:`function signature`.
 
 * :dp:`fls_2uv1r0gni1fk`
   The source :t:`type` is a non-capturing :t:`closure type`, the target
@@ -2567,7 +2567,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   A :t:`constant argument`.
 
 * :dp:`fls_htLp5J5ObgNh`
-  The :t:`expression` of a :t:`constant initializer`.
+  The :dt:`expression` of a :t:`constant initializer`.
 
 * :dp:`fls_cPlCLGCcl7EK`
   The :t:`expression` of a :t:`static initializer`.
@@ -2582,7 +2582,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   The :t:`expression` of a :t:`constant argument`.
 
 * :dp:`fls_Sowatt1V988J`
-  A :t:`function body`.
+  A :dt:`function body`.
 
 * :dp:`fls_A1NVYkepoaMk`
   The :t:`size operand` of an :t:`array expression` or an :t:`array type`.

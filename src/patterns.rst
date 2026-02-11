@@ -85,7 +85,7 @@ restrictions:
 
 * :dp:`fls_kv533rntni1x`
   Any two :t:`[binding]s` with the same name in the two :t:`[pattern-without-alternation]s` shall have
-  :t:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
+  :dt:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
 
 .. _fls_uh76pw6ykd57:
 
@@ -818,7 +818,7 @@ Record Struct Patterns
 
 :dp:`fls_g6dytd6aq62d`
 A :dt:`record struct pattern` is a :t:`pattern` that matches a
-:t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
+:dt:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
@@ -826,7 +826,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 
 :dp:`fls_mnh35ehva8tx`
 An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
-a :t:`field`.
+a :dt:`field`.
 
 :dp:`fls_p2rjnlbvifaa`
 An :t:`indexed deconstructor` matches a :t:`field` of the :t:`deconstructee`
@@ -1056,7 +1056,7 @@ The position of a :t:`subpattern` is determined as follows:
   * :dp:`fls_w369n8lmwr7g`
     If the :t:`subpattern` succeeds the :s:`RecordStructRestPattern`, then its
     position is the position within the :s:`PatternList` list in right-to-left
-    order, starting from the :t:`arity` of the :t:`deconstructee` minus one.
+    order, starting from the :dt:`arity` of the :t:`deconstructee` minus one.
 
 * :dp:`fls_4is6h95jj3gd`
   Otherwise the position is the position within the :s:`PatternList` in

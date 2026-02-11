@@ -62,7 +62,7 @@ data and computation cross language boundaries.
 An :dt:`ABI` is an :t:`Application Binary Interface`.
 
 :dp:`fls_EcG0AVDg8TUj`
-In this specification, :dt:`C` refers to the C programming language used for
+In this specification, :t:`C` refers to the C programming language used for
 foreign function interfaces.
 
 :dp:`fls_2w0xi6rxw3uz`

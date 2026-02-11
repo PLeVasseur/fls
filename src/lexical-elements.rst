@@ -31,7 +31,7 @@ characters and text described in the Unicode Standard by the Unicode
 Consortium.
 
 :dp:`fls_4h2v3pk7qz6n`
-In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
+In :t:`Unicode`, a :t:`code point` is a numeric :t:`value` that maps to a
 character.
 
 :dp:`fls_6n9y0qb5t2mc`

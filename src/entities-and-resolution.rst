@@ -23,7 +23,7 @@ Entities
 .. rubric:: Legality Rules
 
 :dp:`fls_t1kEzrZaE1Af`
-A :dt:`construct` is a syntactic element of a Rust program defined by this
+A :t:`construct` is a syntactic element of a Rust program defined by this
 specification.
 
 :dp:`fls_x7j6wcigqt7u`
@@ -1273,7 +1273,7 @@ Field Resolution
 :t:`field access expression`.
 
 :dp:`fls_j1bip4w30q8`
-A :dt:`candidate container type` is the :t:`type` of the :t:`container operand`
+A :dt:`candidate container type` is the :t:`type` of the :dt:`container operand`
 of a :t:`field access expression` :t:`under resolution`.
 
 :dp:`fls_jrk3gzqvqr8e`
