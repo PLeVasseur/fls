@@ -106,7 +106,8 @@ adjusted call operand
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_mchqbc64iu0u`
-An :dt:`adjusted call operand` is a :t:`call operand` adjusted with inserted :t:`[borrow expression]s` and :t:`[dereference expression]s`.
+An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
+adjustments required by :t:`call resolution`.
 
 .. _fls_j775guurkgo4:
 
@@ -115,7 +116,9 @@ alignment
 
 :dp:`fls_c0hbatn5o8x3`
 The :dt:`alignment` of a :t:`value` specifies which addresses are valid for
-storing the value.
+storing the :t:`value`. :t:`Alignment` is measured in bytes, is at least one,
+and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
+address that is a multiple of ``N``.
 
 .. _fls_jZKpckU1t2lR:
 
@@ -145,7 +148,7 @@ anonymous return type
 
 :dp:`fls_z6t6lbwwztuf`
 An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
-:t:`function` return type.
+:t:`function` :t:`return type`.
 
 .. _fls_8oepaq6ang93:
 
@@ -174,7 +177,7 @@ Application Binary Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ew4babc9467c`
-:dt:`Application Binary Interface` is a set of conventions that dictate how
+An :dt:`Application Binary Interface` is a set of conventions that dictate how
 data and computation cross language boundaries.
 
 :dp:`fls_8dgmmsp34lgc`
@@ -207,7 +210,7 @@ arithmetic operator
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Qf7DckakqvRq`
-An :dt:`arithmetic operator` is the operator of an :t:`arithmetic expression`.
+An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
 
 .. _fls_vZ1H57x9OFSZ:
 
@@ -215,9 +218,11 @@ arithmetic overflow
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_jbytOQvIddAl`
-An :dt:`arithmetic overflow` occurs if an :t:`arithmetic expression` or a
-:t:`negation expression` computes a :t:`value` of a :t:`scalar type` that lies
-outside of the range of valid :t:`[value]s` for the :t:`scalar type`.
+An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
+:t:`value` of a :t:`scalar type` that lies outside of the range of valid
+:t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
+:t:`operator expression` lies outside of the range of valid :t:`[value]s` for
+the operation.
 
 .. _fls_9aice4qbiqxf:
 
@@ -225,7 +230,8 @@ arity
 ^^^^^
 
 :dp:`fls_dl2gkip00bua`
-An :dt:`arity` is the number of :t:`[tuple field]s` in a :t:`tuple type`.
+The :dt:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
+:s:`TupleFieldList`.
 
 .. _fls_bn1regeucxqi:
 
@@ -346,7 +352,8 @@ assignee expression
 
 :dp:`fls_wpmcexvbynbu`
 An :dt:`assignee expression` is an :t:`expression` that appears as the
-:t:`left operand` of an :t:`assignment expression`.
+:t:`left operand` of an :t:`assignment expression`. The following
+:t:`[expression]s` are :t:`[assignee expression]s`:
 
 .. _fls_3hs9hqsthil1:
 
@@ -557,8 +564,8 @@ async closure type
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_IT28HJaF8rnm`
-An :dt:`async closure type` is a unique anonymous :t:`function type` that encapsulates
-all :t:`[capture target]s` of a :t:`closure expression` producing a :std:`core::future::Future`.
+An :dt:`async closure type` is the :t:`closure type` defined by an
+:t:`async closure expression`.
 
 
 .. _fls_lYrTaCM1LcXU:
@@ -567,8 +574,9 @@ async control flow boundary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_EXoGOkCRsfKK`
-An :dt:`async control flow boundary` is a :t:`control flow boundary` that
-additionally allows the suspension of execution via :t:`[await expression]s`.
+An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
+by an :t:`async block expression`, :t:`async function`, or
+:t:`async closure expression`.
 
 .. _fls_nlafxy2z1moc:
 
@@ -576,7 +584,8 @@ async function
 ^^^^^^^^^^^^^^
 
 :dp:`fls_gv9wl1cbaw1g`
-An :dt:`async function` is a :t:`function` subject to :t:`keyword` ``async``.
+An :dt:`async function` is a :t:`function` subject to :t:`keyword` ``async``. An
+:t:`async function` of the form
 
 .. _fls_yikjq8yn3nnh:
 
@@ -593,7 +602,8 @@ atomic type
 
 :dp:`fls_cycpv4fopgx2`
 An :dt:`atomic type` is a :t:`type` defined in :t:`module`
-:std:`core::sync::atomic`.
+:std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
+communication between threads.
 
 .. _fls_w1plocebd7kg:
 
@@ -601,8 +611,8 @@ attribute
 ^^^^^^^^^
 
 :dp:`fls_o74rfpe6zo6a`
-An :dt:`attribute` is a general, free-form metadatum that is interpreted based
-on its name, convention, language, and tool.
+An :dt:`attribute` is a general, free-form metadatum that is interpreted based on
+its :t:`name`, convention, language, and tool.
 
 .. _fls_SsMRqkHLDAgG:
 
@@ -623,8 +633,10 @@ attribute macro
 
 :dp:`fls_mtqr4d817ikn`
 An :dt:`attribute macro` is a :t:`procedural macro` that consumes two streams
-of :t:`[token]s` to produce a stream of tokens, and defines a new
-:t:`outer attribute` that can be attached to :t:`[item]s`.
+of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
+new :t:`outer attribute` that can be attached to :t:`[item]s`.
+:t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
+:t:`[item]s`.
 
 .. _fls_24iVIlHhvnVO:
 
@@ -643,7 +655,7 @@ await expression
 
 :dp:`fls_psbc3b8pec47`
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the execution of the future until the future is ready.
+suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_29gkp9bpo1hi`
 See :s:`AwaitExpression`.
@@ -654,8 +666,8 @@ base initializer
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_dnuwn2tnvtgy`
-A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`,
-a :t:`struct value`, or a :t:`union value` to be used as a base for
+A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
 :dp:`fls_mprzem71zlhy`
@@ -695,7 +707,8 @@ binary operator
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_v0he0zp9ph7a`
-A :dt:`binary operator` is an operator that operates on two :t:`[operand]s`.
+A :dt:`binary operator` is an operator that combines a :t:`left operand` and a
+:t:`right operand`.
 
 .. _fls_jrelzibadg7b:
 
@@ -733,8 +746,8 @@ binding mode
 ^^^^^^^^^^^^
 
 :dp:`fls_e3uvvvvyzq8h`
-:dt:`Binding mode` is the mechanism by which a matched :t:`value` is bound to a
-:t:`binding` of a :t:`pattern`.
+A :dt:`binding mode` describes whether a :t:`binding` captures a matched
+:t:`value` by value, by reference, or by mutable reference.
 
 .. _fls_1nw19qc14zg6:
 
@@ -877,8 +890,8 @@ block expression
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_gvjvzxi2xps4`
-A :dt:`block expression` is an :t:`expression` that sequences expressions and
-:t:`[statement]s`.
+A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
+and :t:`[statement]s`.
 
 :dp:`fls_h8j9t2xq2i1u`
 See :s:`BlockExpression`.
@@ -918,9 +931,9 @@ borrow expression
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2f55piwg78ru`
-A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value`
-of its :t:`operand` and creates a :t:`reference` to the memory location of its
-operand.
+A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
+its :t:`operand` and creates a :t:`reference` to the memory location of its
+:t:`operand`.
 
 :dp:`fls_c3hydbp2exok`
 See :s:`BorrowExpression`.
@@ -931,8 +944,8 @@ borrowed
 ^^^^^^^^
 
 :dp:`fls_3gnps2s95ck4`
-A memory location is :dt:`borrowed` when a :t:`reference` pointing to it is
-:t:`active`.
+A :t:`value` is :dt:`borrowed` when it is associated with an active
+:t:`borrow`.
 
 .. _fls_95c5cbc2jvpc:
 
@@ -1014,7 +1027,8 @@ built-in trait
 ^^^^^^^^^^^^^^
 
 :dp:`fls_IgzD9l8o6R50`
-A :dt:`built-in trait` is a language-defined :t:`trait`.
+A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
+the compiler.
 
 .. _fls_e8rokiw23i9t:
 
@@ -1045,8 +1059,8 @@ C
 ^
 
 :dp:`fls_d4q2ro4nsnop`
-:dt:`C` is the programming language described in the ISO/IEC 9899:2018
-International Standard.
+In this specification, :dt:`C` refers to the C programming language used for
+foreign function interfaces.
 
 .. _fls_wenn1wdsicfz:
 
@@ -1054,8 +1068,8 @@ C representation
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_g9pdb06m5fto`
-:dt:`C representation` is a :t:`type representation` that lays out :t:`[type]s`
-such that they are interoperable with the :t:`C` language.
+:dt:`C representation` lays out a :t:`type` such that the :t:`type` is
+interoperable with the :t:`C` language.
 
 .. _fls_fls_J0xUy4Mcxoe6:
 
@@ -1083,9 +1097,8 @@ Call conformance
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_Jr1gUX7Ju4Oh`
-:dt:`Call conformance` measures the compatibility between a set of
-:t:`[argument operand]s` and a set if :t:`[function parameter]s` or
-:t:`[field]s`.
+A :dt:`call conformance` is the requirement that a :t:`call expression` uses
+the :t:`ABI` of the invoked :t:`function`.
 
 .. _fls_xeo59ol6uh5i:
 
@@ -1094,7 +1107,7 @@ call expression
 
 :dp:`fls_a9ap0tyk2eou`
 A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
-constructs a :t:`tuple struct value` or :t:`tuple enum variant value`.
+constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
 
 :dp:`fls_aibti9uqrmmd`
 See :s:`CallExpression`.
@@ -1106,8 +1119,8 @@ call operand
 
 :dp:`fls_cqnko94y4xbs`
 A :dt:`call operand` is the :t:`function` being invoked or the
-:t:`tuple struct value` or :t:`tuple enum variant value` being constructed by a
-:t:`call expression`.
+:t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
+by a :t:`call expression`.
 
 :dp:`fls_w6wu4wi6srjj`
 See :s:`CallOperand`.
@@ -1118,7 +1131,7 @@ call resolution
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_fS1ZjGGypvbn`
-:dt:`Call resolution` is a kind of :t:`resolution` that applies to a
+:dt:`call resolution` is a form of :t:`resolution` that applies to a
 :t:`call expression`.
 
 
@@ -1127,11 +1140,11 @@ call resolution
 call site hygiene
 ^^^^^^^^^^^^^^^^^
 
-:dp:`fls_YTQmXotFOXWU`
-:dt:`Call site hygiene` is a type of :t:`hygiene` which resolves to the
-:s:`MacroInvocation` site. :t:`[Identifier]s` with :t:`call site hygiene` can
-reference the environment of the :s:`MacroRulesDeclaration`, can reference the
-environment of the :s:`MacroInvocation`, and are considered :t:`unhygienic`.
+* :dp:`fls_puqhytfzfsg6`
+  :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
+  :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
+  of the :s:`MacroRulesDeclaration`, can reference the environment of the
+  :s:`MacroInvocation`, and are considered :t:`unhygienic`.
 
 .. _fls_luuc01g4ffog:
 
@@ -1140,9 +1153,10 @@ callee type
 
 :dp:`fls_o21myf6wnnn6`
 A :dt:`callee type` is either a :t:`function item type`, a
-:t:`function pointer type`, a :t:`tuple struct type`, a :t:`tuple enum variant`
-or a :t:`type` that implements any of the :std:`core::ops::Fn`,
-:std:`core::ops::FnMut`, or :std:`core::ops::FnOnce` :t:`[trait]s`.
+:t:`function pointer type`, a :t:`tuple enum variant`, a
+:t:`tuple struct type`, or a :t:`type` that implements any of the
+:std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
+:t:`[trait]s`.
 
 .. _fls_s78gd8yxx2yv:
 
@@ -1150,7 +1164,7 @@ capture mode
 ^^^^^^^^^^^^
 
 :dp:`fls_beer0d7wva1d`
-:dt:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
+:dt:`capture mode` is the mechanism by which a :t:`capture target` is captured.
 
 .. _fls_c6qwfwsyizya:
 
@@ -1158,8 +1172,8 @@ capture target
 ^^^^^^^^^^^^^^
 
 :dp:`fls_xmhcp4x8wblz`
-A :dt:`capture target` is either a :t:`binding` or a :t:`field` of a
-:t:`binding`.
+A :dt:`capture target` is either a :t:`variable` or a :t:`field` of a
+:t:`variable`.
 
 .. _fls_kvu447p6j61k:
 
@@ -1167,7 +1181,7 @@ capturing
 ^^^^^^^^^
 
 :dp:`fls_4achbk2ewyyb`
-:dt:`Capturing` is the process of saving the :t:`[capture target]s` of a
+:dt:`capturing` is the process of saving the :t:`[capture target]s` of a
 :t:`[capturing expression]'s` :t:`capturing environment`.
 
 .. _fls_yfk2xfifltxy:
@@ -1176,8 +1190,8 @@ capturing environment
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_7br4azaay3wu`
-The :dt:`capturing environment` of a :t:`capturing expression` consists of all
-:t:`[capture target]s` that are defined outside the :t:`capturing expression`.
+The :dt:`capturing environment` of a :t:`capturing expression` consists of the
+:t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
 .. _fls_cl3lpsfgt5eb:
 
@@ -1194,7 +1208,7 @@ cast
 ^^^^
 
 :dp:`fls_e5hvszhcrtmj`
-:dt:`Cast` or :dt:`casting` is the process of changing the :t:`type` of an
+A :dt:`cast` or :dt:`casting` is the process of changing the :t:`type` of an
 :t:`expression`.
 
 .. _fls_xl2zlpw070dy:
@@ -1302,7 +1316,8 @@ compilation root
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_stwsfyvov2fx`
-A :dt:`compilation root` is an input to a compilation performed by a tool.
+A :dt:`compilation root` is an input to a compilation performed by a tool. A
+:t:`crate root module` is a :t:`compilation root`.
 
 .. _fls_pTMrfPXETibe:
 
@@ -1331,7 +1346,8 @@ concrete type
 ^^^^^^^^^^^^^
 
 :dp:`fls_l0lr3ybgccjc`
-A :dt:`concrete type` is a :t:`type` described by a :t:`type specification`.
+A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
+:t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
 
 .. _fls_lmacvq89lj2j:
 
@@ -1339,7 +1355,7 @@ conditional compilation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_xymops69eer3`
-:dt:`Conditional compilation` is the process of compiling
+:dt:`conditional compilation` is the process of compiling
 :t:`conditionally-compiled source code`.
 
 .. _fls_bqq013n2cy4t:
@@ -1348,8 +1364,9 @@ conditionally-compiled source code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hs4lnrdxpj2g`
-:dt:`Conditionally-compiled source code` is source code that may or may not be
-considered a part of a Rust program depending on certain conditions.
+:dt:`conditionally-compiled source code` is source code that may or may
+not be considered a part of a Rust program depending on
+:t:`[configuration predicate]s`.
 
 .. _fls_vRjPmHYEVVAf:
 
@@ -1379,8 +1396,8 @@ constant
 ^^^^^^^^
 
 :dp:`fls_p8rjw2qok85b`
-A :dt:`constant` is an immutable :t:`value` whose uses are substituted by the
-:t:`value`.
+A :dt:`constant` is an :t:`immutable` :t:`value expression` whose uses are substituted by
+the :t:`value`.
 
 :dp:`fls_hlouedpdg1zd`
 See :s:`ConstantDeclaration`.
@@ -1404,7 +1421,8 @@ constant context
 
 :dp:`fls_9j6mc4i1t73z`
 A :dt:`constant context` is a :t:`construct` that requires a
-:t:`constant expression`.
+:t:`constant expression`. The following :t:`[construct]s` are
+:t:`[constant context]s`:
 
 .. _fls_iofbib2gavnv:
 
@@ -1413,7 +1431,9 @@ constant expression
 
 :dp:`fls_rmn8w4rh3juf`
 A :dt:`constant expression` is an :t:`expression` that can be evaluated
-statically.
+statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
+long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
+involve :t:`[type]s` that require :t:`destruction`:
 
 .. _fls_6j1wluj8sku8:
 
@@ -1453,7 +1473,7 @@ constant parameter initializer
 
 :dp:`fls_OXD2YaOkfjcI`
 A :dt:`constant parameter initializer` is a :t:`construct` that provides the
-default `:t:`value` of its related :t:`constant parameter`.
+default :t:`value` of its related :t:`constant parameter`.
 
 :dp:`fls_CMsyUCxGm8Xs`
 See :s:`ConstantParameterInitializer`.
@@ -1464,7 +1484,7 @@ constant promotion
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ku2md8lnei12`
-:dt:`Constant promotion` is the process of converting a :t:`value expression`
+:dt:`constant promotion` is the process of converting a :t:`value expression`
 into a :t:`constant`.
 
 .. _fls_x4niicvxxv9k:
@@ -1473,8 +1493,8 @@ constrain
 ^^^^^^^^^
 
 :dp:`fls_fna0ch8ucyhv`
-A :t:`generic parameter` is said to :dt:`constrain` an :t:`implementation` if
-it makes the :t:`[implementation]'s` applicability more narrow.
+A :t:`generic parameter` is said to :dt:`constrain` an :t:`implementation` if the
+:t:`generic parameter` appears at least once in one of the following:
 
 .. _fls_4305i29nt5d6:
 
@@ -1482,8 +1502,8 @@ construct
 ^^^^^^^^^
 
 :dp:`fls_10tvzeo8xex0`
-A :dt:`construct` is a piece of program text that is an instance of a
-:t:`syntactic category`.
+A :dt:`construct` is a syntactic element of a Rust program defined by this
+specification.
 
 .. _fls_fBGjoTVhYvUe:
 
@@ -1491,7 +1511,7 @@ constructee
 ^^^^^^^^^^^
 
 :dp:`fls_Twbu94uGW4Cb`
-A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct` or :t:`union`
+A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 .. _fls_39s6od9hj4g6:
@@ -1512,8 +1532,8 @@ continue expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_waxam3m9plfj`
-A :dt:`continue expression` is an :t:`expression` that first terminates and
-then restarts a :t:`loop expression`.
+A :dt:`continue expression` is an :t:`expression` that restarts evaluation of
+an enclosing :t:`loop expression`.
 
 :dp:`fls_smwcz2xw9o1f`
 See :s:`ContinueExpression`.
@@ -1524,9 +1544,8 @@ control flow boundary
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_SmipZJDp02ij`
-A :dt:`control flow boundary` is a :t:`construct` that limits control flow from
-returning beyond the :t:`construct`, and acts as the target of control flow
-returning operations.
+A :dt:`control flow boundary` is a :t:`construct` that provides the target of
+a :t:`return expression` and bounds its control flow transfer.
 
 .. _fls_lnwxm6ffy15w:
 
@@ -1552,7 +1571,7 @@ crate import
 ^^^^^^^^^^^^
 
 :dp:`fls_y91ja1a87g7a`
-A :dt:`crate import` specifies a dependency on an external :t:`crate`.
+A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
 
 :dp:`fls_nmdxagg39hz6`
 See :s:`ExternalCrateImport`.
@@ -1586,7 +1605,7 @@ crate root
 ^^^^^^^^^^
 
 :dp:`fls_yxcgiuybqqy8`
-A :dt:`crate root` is an entry point into a :t:`crate`.
+A :dt:`crate root` is the :t:`crate root module` of a :t:`crate`.
 
 .. _fls_iucxone5ta26:
 
@@ -1603,9 +1622,8 @@ crate type
 ^^^^^^^^^^
 
 :dp:`fls_eaxsgPMFNH7f`
-The :dt:`crate type` of a :t:`crate` is the value of the :t:`attribute`
-``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
-the tool compiling the :t:`crate`.
+:t:`Attribute` :dc:`crate_type` shall specify the linkage :t:`type` of the
+:t:`crate` it appears in.
 
 .. _fls_76cj65bptdpn:
 
@@ -1623,8 +1641,9 @@ data race
 ^^^^^^^^^
 
 :dp:`fls_v2s1b57e3r7n`
-A :dt:`data race` is a scenario where two or more threads access a shared
-memory location concurrently.
+A :dt:`data race` is a scenario where two or more threads access a shared memory
+location concurrently without any synchronization, where one of the accesses is
+a modification.
 
 .. _fls_128iunbbiuql:
 
@@ -1652,8 +1671,8 @@ declarative macro
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_pe12lfffaoqt`
-A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a
-set of syntactic transformation rules.
+A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
+of syntactic transformation :t:`[macro rule]s`.
 
 :dp:`fls_1te2kfi9lt6c`
 See :s:`MacroRulesDeclaration`.
@@ -1676,20 +1695,18 @@ default representation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_e85fsp10acnh`
-:dt:`Default representation` is a :t:`type representation` that does not make
-any guarantees about :t:`layout`.
+:dt:`Default representation` makes no guarantees about the :t:`layout`.
 
 .. _fls_FrfnICpg81sr:
 
 definition site hygiene
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_2Y1Dpw5ZEqT3`
-:dt:`Definition site hygiene` is a type of :t:`hygiene` which resolves to the
-:s:`MacroRulesDeclaration` site. :t:`[Identifier]s` with
-:t:`definition site hygiene` cannot reference the environment of the
-:s:`MacroRulesDeclaration`, cannot be referenced by the environment of a
-:s:`MacroInvocation`, and are considered :t:`hygienic`.
+* :dp:`fls_dz2mvodl818d`
+  :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+  site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
+  the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
+  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
 
 .. _fls_127n1n5ssk2b:
 
@@ -1727,7 +1744,9 @@ dereference type chain
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_kIzoAEf069HE`
-A :dt:`dereference type chain` is a sequence of :t:`[dereference type]s`.
+A :dt:`dereference type chain` is a sequence of :t:`[dereference type]s`. A
+:t:`dereference type chain` starts with an initial :t:`dereference type`. From
+then on, the :t:`dereference type chain` continues as follows:
 
 .. _fls_7ipdj78o7ln:
 
@@ -1736,8 +1755,8 @@ derive macro
 
 :dp:`fls_jrrjhl9hocrm`
 A :dt:`derive macro` is a :t:`procedural macro` that consumes a stream of
-:t:`[token]s` and produces a stream of tokens, and is invoked via attribute
-:c:`derive`.
+:t:`[token]s` and produces a stream of :t:`[token]s`. :t:`[Derive macro]s` are
+used to construct new syntax for :t:`[abstract data type]s`.
 
 .. _fls_7b3fsp356e9l:
 
@@ -1764,8 +1783,8 @@ destructuring assignment
 
 :dp:`fls_7jienn9uzn5k`
 A :dt:`destructuring assignment` is an :t:`assignment expression` where
-the :t:`assignee operand` is either an :t:`array expression`, a
-:t:`struct expression`, or a :t:`tuple expression`.
+the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
+expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
 
 .. _fls_ugIFZlAzDK6H:
 
@@ -1872,7 +1891,8 @@ drop construct
 ^^^^^^^^^^^^^^
 
 :dp:`fls_odg2asgj28m`
-A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`.
+A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
+following :t:`[construct]s` are :t:`[drop construct]s`:
 
 .. _fls_j12e358828h:
 
@@ -1889,8 +1909,10 @@ drop scope
 ^^^^^^^^^^
 
 :dp:`fls_6bu8x0g9q0er`
-A :dt:`drop scope` is a region of program text that governs the :t:`dropping`
-of :t:`[value]s`.
+A :dt:`drop scope` is a region of program text that governs the :t:`dropping` of
+:t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
+associated with that :t:`drop scope` are :t:`dropped` based on a
+:t:`drop order`.
 
 .. _fls_qp3ksd2lxm8:
 
@@ -1909,7 +1931,7 @@ drop type
 
 :dp:`fls_ot3e31kwixil`
 A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
-:t:`trait` or contains a :t:`field` that has a :t:`destructor`.
+:t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 .. _fls_68cl4paduzx2:
 
@@ -2072,9 +2094,9 @@ error propagation expression
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_5kebgodxtqqt`
-An :dt:`error propagation expression` is an :t:`expression` that either
-evaluates to a :t:`value` of its :t:`operand` or returns a value to the next
-control flow boundary.
+An :dt:`error propagation expression` is an :t:`expression` that either evaluates
+to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
+flow boundary.
 
 :dp:`fls_agyqvyda3rcj`
 See :s:`ErrorPropagationExpression`.
@@ -2165,7 +2187,8 @@ explicitly declared entity
 
 :dp:`fls_shpNJ0JCSCwa`
 An :dt:`explicitly declared entity` is an :t:`entity` that has a
-:t:`declaration`.
+:t:`declaration`. The following :t:`entities <entity>` are
+:t:`explicitly declared entities <explicitly declared entity>`:
 
 .. _fls_5oQllRM7Wjsg:
 
@@ -2173,7 +2196,8 @@ exported function
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QotMF1iaEYod`
-An :dt:`exported function` is an export of a :t:`function`.
+An :dt:`exported function` is a :t:`function` subject to :t:`attribute`
+:c:`no_mangle`.
 
 .. _fls_zkq5ZkJwsyoD:
 
@@ -2181,7 +2205,8 @@ exported static
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_aolCSvb349ZU`
-An :dt:`exported static` is an export of a :t:`static`.
+An :dt:`exported static` is a :t:`static` subject to :t:`attribute`
+:c:`no_mangle`.
 
 .. _fls_q8ofwncggngd:
 
@@ -2237,7 +2262,7 @@ external block
 
 :dp:`fls_z2ebcp7kjpuy`
 An :dt:`external block` is a :t:`construct` that provides the declarations of
-foreign :t:`[function]s` as unchecked imports.
+:t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
 :dp:`fls_dm2wz1th2haz`
 See :s:`ExternalBlock`.
@@ -2348,7 +2373,8 @@ field list
 ^^^^^^^^^^
 
 :dp:`fls_xMZsrxMc9Cni`
-A :dt:`field list` is a :s:`RecordStructFieldList` or :s:`TupleStructFieldList`.
+A :dt:`field list` is a :s:`RecordStructFieldList` or a
+:s:`TupleStructFieldList`.
 
 .. _fls_BlZwxp6H62sS:
 
@@ -2468,8 +2494,8 @@ Foreign Function Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_240yj1kym1kh`
-:dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
-:t:`external block`, :t:`[external function]s`, linkage, and :t:`type`
+A :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
+:t:`[external block]s`, :t:`[external function]s`, linkage, and :t:`type`
 :t:`layout` to interface a Rust program with foreign code.
 
 .. _fls_pi7j0t7h1y86:
@@ -2490,7 +2516,7 @@ full range expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NIb9UOIRjMqa`
-A :dt:`full range expression` is a :t:`range expression` that covers the full
+A :dt:`full range expression` is a :t:`range expression` that covers the whole
 range of a :t:`type`.
 
 .. _fls_yllg093syzdi:
@@ -2531,8 +2557,8 @@ function lifetime elision
 
 :dp:`fls_tZMmRHua1S8K`
 :dt:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
-to :t:`[function]s`, :t:`[function pointer type parameter]s` and :t:`[path]s`
-resolving to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
+to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
+that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
 :std:`core::ops::FnOnce` :t:`[trait]s`.
 
 .. _fls_xn800gcjnln1:
@@ -2610,8 +2636,8 @@ function-like macro
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_psnab9cuq4bu`
-A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream
-of :t:`[token]s` and produces a stream of tokens, and is invoked directly.
+A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream of
+:t:`[token]s` and produces a stream of :t:`[token]s`.
 
 .. _fls_OFMoUA3eFtuC:
 
@@ -2706,9 +2732,9 @@ generic parameter
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_61e6br8jy1v2`
-A :dt:`generic parameter` is a placeholder for a :t:`constant`, a
-:t:`lifetime`, or a :t:`type` whose :t:`value` is supplied statically by a
-:t:`generic argument`.
+A :dt:`generic parameter` is a placeholder for a :t:`constant`, a :t:`lifetime`,
+or a :t:`type`, whose :t:`constant`, :t:`lifetime`, or :t:`type` is supplied
+statically by a :t:`generic argument`.
 
 :dp:`fls_jvxpoob39632`
 See :s:`GenericParameterList`.
@@ -2776,8 +2802,9 @@ glob import
 ^^^^^^^^^^^
 
 :dp:`fls_90qsib7g8e9j`
-A :dt:`glob import` is a :t:`use import` that brings all :t:`[name]s` with
-:t:`public visibility` prefixed by its :t:`path` prefix into :t:`scope`.
+A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
+exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
+into :t:`scope`.
 
 :dp:`fls_n4plc55cij0j`
 See :s:`GlobImport`.
@@ -2854,7 +2881,8 @@ higher-ranked trait bound
 
 :dp:`fls_lpyc4omcthv`
 A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
-list of :t:`[bound]s` for all possible :t:`[lifetime]s`.
+list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
+:s:`ForGenericParameterList`.
 
 :dp:`fls_m3nrsdvxxg6j`
 See :s:`ForGenericParameterList`.
@@ -2865,9 +2893,9 @@ hygiene
 ^^^^^^^
 
 :dp:`fls_AQg0MqAQZqkz`
-:dt:`Hygiene` is a property of :t:`[macro]s` and :t:`[identifier]s`` that
-appear within them, which aims to eliminate the syntactic interference between
-a :t:`macro` and its environment.
+The :dt:`hygiene` of :t:`[macro]s` and :t:`[identifier]s` that appear within
+them is a property that aims to eliminate the syntactic interference between a
+:t:`macro` and its environment.
 
 .. _fls_95h0aWZ7xx6U:
 
@@ -3004,7 +3032,8 @@ immutable place expression
 
 :dp:`fls_MXBEZjzBxw5Z`
 An :dt:`immutable place expression` is a :t:`place expression` whose memory
-location cannot be modified.
+location cannot be modified. All :t:`[place expression]s` that are not
+:t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
 
 .. _fls_O0924m8mSfIa:
@@ -3014,7 +3043,10 @@ immutable place expression context
 
 :dp:`fls_UvrQ49dSoQGc`
 An :dt:`immutable place expression context` is a :t:`place expression context`
-whose memory location cannot be modified.
+that may evaluate its :t:`operand` as an immutable memory location. All
+:t:`[place expression context]s` that are not
+:t:`[mutable place expression context]s` are
+:t:`[immutable place expression context]s`.
 
 .. _fls_RghQKP3lsXEb:
 
@@ -3113,8 +3145,8 @@ implementation conformance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_Gpq4EP1SsYJR`
-:dt:`Implementation conformance` measures the compatibility between a
-:t:`trait implementation` and the :t:`implemented trait`.
+A :t:`trait implementation` exhibits :dt:`implementation conformance` when it
+satisfies the constraints of its :t:`implemented trait`.
 
 .. _fls_c0xxvivt8t1u:
 
@@ -3147,7 +3179,7 @@ implicit borrow
 
 :dp:`fls_q2v9ejpcvtwg`
 An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
-program text.
+program text. An :t:`implicit borrow` occurs in the following contexts:
 
 .. _fls_i3iB9xP8h8Ci:
 
@@ -3156,7 +3188,8 @@ implicitly declared entity
 
 :dp:`fls_VQs1jd4Nx3qR`
 An :dt:`implicitly declared entity` is an :t:`entity` that lacks an explicit
-:t:`declaration`.
+:t:`declaration`. The following :t:`entities <entity>` are
+:t:`implicitly declared entities <implicitly declared entity>`:
 
 .. _fls_43CCrG952l5i:
 
@@ -3164,7 +3197,10 @@ implied bound
 ^^^^^^^^^^^^^
 
 :dp:`fls_t77d8xwG1l9Q`
-An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is the byproduct of relations between :t:`[lifetime parameter]s` and :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
+An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
+is the byproduct of relations between :t:`[lifetime parameter]s` and
+:t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
+:t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
 
 .. _fls_3lo8ygoyxxyf:
 
@@ -3172,7 +3208,8 @@ in scope
 ^^^^^^^^
 
 :dp:`fls_sy380geqvf2l`
-A :t:`name` is :dt:`in scope` when it can be referred to.
+A :t:`scope` is a region of program text where an :t:`entity` can be referred
+to. An :t:`entity` is :dt:`in scope` when it can be referred to.
 
 .. _fls_nscfxu6huw6q:
 
@@ -3220,7 +3257,7 @@ index expression
 
 :dp:`fls_1f7e9q8n431n`
 An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
-of a :t:`type`.
+of an :t:`indexable type`.
 
 :dp:`fls_xm2er7vuo07g`
 See :s:`IndexExpression`.
@@ -3231,7 +3268,7 @@ indexable type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_AdVGyKZFvvUS`
-A :dt:`indexable type` is a :t:`type` that implements the
+An :dt:`indexable type` is a :t:`type` that implements the
 :std:`core::ops::Index` :t:`trait`.
 
 .. _fls_qs654p61ivpx:
@@ -3241,7 +3278,7 @@ indexed deconstructor
 
 :dp:`fls_q7eta38vw0ig`
 An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
-a :t:`tuple field`.
+a :t:`field`.
 
 :dp:`fls_gryv4audvann`
 See :s:`IndexedDeconstructor`.
@@ -3276,9 +3313,8 @@ indexed operand
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_dvmm47wnl33e`
-An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value` of a
-:t:`type` implementing :std:`core::ops::Index` being indexed into by an
-:t:`index expression`.
+An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value`
+being indexed into by an :t:`index expression`.
 
 :dp:`fls_je8eh3a02riq`
 See :s:`IndexedOperand`.
@@ -3289,8 +3325,8 @@ indexing operand
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_ipw4tfrserbu`
-An :dt:`indexing operand` is an :t:`operand` which specifies the index for the
-:t:`indexed operand` being indexed into by an :t:`index expression`.
+An :dt:`indexing operand` is an :t:`operand` which specifies the index of an
+:t:`index expression`.
 
 :dp:`fls_t2j8vzlrlvb0`
 See :s:`IndexingOperand`.
@@ -3564,8 +3600,7 @@ irrefutable pattern
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_y421hdrbs6ak`
-An :dt:`irrefutable pattern` is a :t:`pattern` that always matches the
-:t:`value` it is being matched against.
+An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 .. _fls_vt44bvhm4duk:
 
@@ -3582,7 +3617,7 @@ item
 ^^^^
 
 :dp:`fls_2ghaujiqkhyy`
-An :dt:`item` is the most basic semantic element in program text. An item
+An :dt:`item` is the most basic semantic element in program text. An :t:`item`
 defines the compile- and run-time semantics of a program.
 
 :dp:`fls_xd997kd2i73a`
@@ -3663,7 +3698,7 @@ layout
 ^^^^^^
 
 :dp:`fls_qk602dmhc0d6`
-:dt:`Layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
+A :dt:`layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
 of :t:`[field]s` in a :t:`type`.
 
 .. _fls_bputdgkeezfs:
@@ -3766,9 +3801,9 @@ let statement
 ^^^^^^^^^^^^^
 
 :dp:`fls_yh7hn6jjv3ur`
-A :dt:`let statement` is a :t:`statement` that introduces new :t:`[variable]s`
-given by the :t:`[binding]s` produced by its :t:`pattern-without-alternation`
-that are optionally initialized to a :t:`value`.
+A :dt:`let statement` is a :t:`statement` that introduces new :t:`[binding]s`
+produced by its :t:`pattern-without-alternation` that are optionally
+initialized to a :t:`value`.
 
 :dp:`fls_tsem3c6zqmh4`
 See :s:`LetStatement`.
@@ -3797,7 +3832,7 @@ lifetime
 ^^^^^^^^
 
 :dp:`fls_il3n0w4m084b`
-A :dt:`lifetime` specifies the expected longevity of a :t:`reference`.
+A :dt:`lifetime` specifies the expected longevity of a :t:`value`.
 
 :dp:`fls_2nywjifee7q`
 See :s:`Lifetime`.
@@ -3809,7 +3844,7 @@ lifetime argument
 
 :dp:`fls_oaf87yjb3xjs`
 A :dt:`lifetime argument` is a :t:`generic argument` that supplies the
-:t:`value` of a :t:`lifetime parameter`.
+:t:`lifetime` of a :t:`lifetime parameter`.
 
 :dp:`fls_la8lbv14zj28`
 See :s:`LifetimeArgument`.
@@ -3984,7 +4019,9 @@ macro
 
 :dp:`fls_bt16qi8g2js5`
 A :dt:`macro` is a custom definition that extends Rust by defining callable
-syntactic transformations.
+syntactic transformations. The effects of a :t:`macro` are realized through
+:t:`[macro invocation]s` or :t:`attribute` use. :t:`[Macro]s` come in two
+distinct forms:
 
 .. _fls_td4jm76u9m03:
 
@@ -4131,8 +4168,8 @@ main function signature
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_QijObGZEIykU`
-A :dt:`main function signature` is a :t:`function signature` subject to specific
-restrictions.
+A :dt:`main function signature` is the :t:`function signature` required for the
+:t:`program entry point` function named ``main``.
 
 .. _fls_fizf1byuspv2:
 
@@ -4257,11 +4294,11 @@ method resolution
 mixed site hygiene
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_hjJpNmKiZxlT`
-:dt:`Mixed site hygiene` is a type of :t:`hygiene` which resolves to the
-:s:`MacroRulesDeclaration` site for :t:`[variable]s`, :t:`[label]s`, and the
-``$crate`` :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise,
-and is considered :t:`partially hygienic`.
+* :dp:`fls_uyvnq88y9gk3`
+  :dt:`mixed site hygiene` is a hygiene category that resolves to a
+  :s:`MacroRulesDeclaration` site for :t:`[label]s`, :t:`[variable]s`, and the
+  ``$crate`` :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise,
+  and is considered :t:`partially hygienic`.
 
 .. _fls_5hoe1v960xfi:
 
@@ -4293,7 +4330,7 @@ move type
 
 :dp:`fls_ri37ez31gai8`
 A :dt:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
-:t:`trait` and that is not a :t:`copy type`.
+:t:`trait` and is not a :t:`copy type`.
 
 .. _fls_iw2vYgmLhlsg:
 
@@ -4343,7 +4380,7 @@ mutability
 ^^^^^^^^^^
 
 :dp:`fls_lBrXj9lo4s6o`
-:dt:`Mutability` determines whether a :t:`construct` can modify a :t:`value`.
+:dt:`mutability` determines whether a :t:`construct` can modify a :t:`value`.
 
 .. _fls_wvejcadmzt5p:
 
@@ -4394,7 +4431,8 @@ mutable place expression
 
 :dp:`fls_kq877s3vij70`
 A :dt:`mutable place expression` is a :t:`place expression` whose memory
-location can be modified.
+location can be modified. The following :t:`[place expression]s` are
+:t:`[mutable place expression]s`:
 
 .. _fls_x5BKVLc4KDlK:
 
@@ -4402,8 +4440,9 @@ mutable place expression context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2ixH8LWGHi3k`
-A :dt:`mutable place expression context` is a :t:`place expression context`
-that may evaluate its :t:`operand` as a mutable memory location.
+A :dt:`mutable place expression context` is a :t:`place expression context` that
+may evaluate its :t:`operand` as a mutable memory location. The following
+:t:`[construct]s` are :t:`[mutable place expression context]s`:
 
 .. _fls_wOvlW47jKEWF:
 
@@ -4438,7 +4477,8 @@ mutable static
 ^^^^^^^^^^^^^^
 
 :dp:`fls_3ss4bokujaby`
-A :dt:`mutable static` is a :t:`static` whose :t:`value` can be modified.
+A :dt:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+:t:`value` can be modified.
 
 .. _fls_n7h4xr40xwgb:
 
@@ -4556,8 +4596,8 @@ nesting import
 ^^^^^^^^^^^^^^
 
 :dp:`fls_nhkqkdqo32xs`
-A :dt:`nesting import` is a :t:`use import` that provides a common :t:`path`
-prefix for its nested :t:`[use import]s`.
+A :dt:`nesting import` is a :t:`use import` that provides a common
+:t:`simple path prefix` for its nested :t:`[use import]s`.
 
 :dp:`fls_z4d611glen13`
 See :s:`NestingImport`.
@@ -4653,8 +4693,7 @@ object safe
 ^^^^^^^^^^^
 
 :dp:`fls_oa2jiklr5nl2`
-A :t:`trait` is :dt:`object safe` when it can be used as a
-:t:`trait object type`.
+A :t:`trait` is :dt:`object safe` when:
 
 .. _fls_vomlqv7i1fc4:
 
@@ -4694,7 +4733,7 @@ operand
 ^^^^^^^
 
 :dp:`fls_3mnn1au9ob6q`
-An :dt:`operand` is an :t:`expression` nested within an expression.
+An :dt:`operand` is an :t:`expression` nested within an :t:`expression`.
 
 :dp:`fls_8299xfhdsd1`
 See :s:`Operand`.
@@ -4726,7 +4765,7 @@ or-pattern
 ^^^^^^^^^^
 
 :dp:`fls_LnPDQW3bnNUw`
-An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line, i.e. ``|``).
+An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pattern-without-alternation]s` and or-s them using character 0x7C (vertical line).
 
 :dp:`fls_urIJ5JNHLhm6`
 See :s:`Pattern`.
@@ -4795,7 +4834,7 @@ outlives bound
 
 :dp:`fls_J5dt34II7Pm6`
 An :dt:`outlives bound` is a :t:`trait bound` which requires that a
-:t:`generic parameter` outlives a :t:`lifetime parameter`.
+:t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
 
 .. _fls_XsGnaA47Nen0:
 
@@ -4825,8 +4864,7 @@ overlap
 ^^^^^^^
 
 :dp:`fls_itkz9y19923k`
-Two :t:`[value]s` :dt:`overlap` when their memory locations overlap, or both
-values are elements of the same :t:`array`.
+Two :t:`[value]s` :dt:`overlap` when
 
 .. _fls_ke52l9lsvyu2:
 
@@ -4861,7 +4899,7 @@ parenthesized expression
 
 :dp:`fls_yu1x2rr7cewa`
 A :dt:`parenthesized expression` is an :t:`expression` that groups other
-expressions.
+:t:`[expression]s`.
 
 :dp:`fls_p9exa6fpplfu`
 See :s:`ParenthesizedExpression`.
@@ -4915,7 +4953,7 @@ path
 
 :dp:`fls_u3jyud6mhy1f`
 A :dt:`path` is a sequence of :t:`[path segment]s` logically separated by
-:dt:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
+:t:`namespace qualifier` ``::`` that resolves to an :t:`entity`.
 
 .. _fls_1xdj34py8zc3:
 
@@ -4923,7 +4961,7 @@ path expression
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_4ik66nmvx5hn`
-A :dt:`path expression` is a :t:`path` that acts as an :t:`expression`.
+A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
 
 :dp:`fls_3qjpjqm0legc`
 See :s:`PathExpression`.
@@ -4935,7 +4973,7 @@ path expression resolution
 
 :dp:`fls_WYcEVyc3SHuK`
 :dt:`Path expression resolution` is a form of :t:`path resolution` that applies
-to a :t:`path expression`.
+to a :t:`unqualified path expression`.
 
 .. _fls_ptikwcw3b20l:
 
@@ -4964,7 +5002,7 @@ path segment
 ^^^^^^^^^^^^
 
 :dp:`fls_gsumebjc2bsp`
-A :dt:`path segment` is a constituent of a :t:`path`.
+A :dt:`path segment` is an element of a :t:`path`.
 
 :dp:`fls_m067uq7fo66i`
 See :s:`PathSegment`, :s:`SimplePathSegment`, :s:`TypePathSegment`.
@@ -4975,8 +5013,8 @@ pattern
 ^^^^^^^
 
 :dp:`fls_9wwt9k1xlm6n`
-A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies
-all the criteria of the pattern.
+A :dt:`pattern` is a :t:`construct` that matches a :t:`value` which satisfies all
+the criteria of the :t:`pattern`.
 
 :dp:`fls_9va04w9jgdyp`
 See :s:`Pattern`.
@@ -5027,7 +5065,7 @@ place expression
 
 :dp:`fls_z6mgu2mk142r`
 A :dt:`place expression` is an :t:`expression` that represents a memory
-location.
+location. The following :t:`[expression]s` are :t:`[place expression]s`:
 
 .. _fls_tshbqttxdox1:
 
@@ -5036,7 +5074,7 @@ place expression context
 
 :dp:`fls_fqcx8suiy5k`
 A :dt:`place expression context` is a :t:`construct` that may evaluate its
-operand as a memory location.
+:t:`operand` as a memory location.
 
 .. _fls_dr6wbsqjd2qm:
 
@@ -5061,7 +5099,7 @@ pointer type
 ^^^^^^^^^^^^
 
 :dp:`fls_F2dUxEa4nheL`
-A :dt:`pointer type` is a :t:`type` whose values indicate memory locations.
+A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
 
 .. _fls_Q0r8JkqAP6Of:
 
@@ -5079,7 +5117,7 @@ precedence
 
 :dp:`fls_sz93844rqc4r`
 :dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
-presence of other expressions.
+presence of other :t:`[expression]s`.
 
 .. _fls_8Gn72FJBarfb:
 
@@ -5112,8 +5150,10 @@ primitive representation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_bydly1rt63pf`
-:dt:`Primitive representation` is the :t:`type representation` of
-:t:`[integer type]s`.
+:dt:`Primitive representation` is the :t:`type representation` of individual
+:t:`[integer type]s`. :t:`Primitive representation` applies only to an
+:t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
+combine :t:`C representation` and :t:`primitive representation`.
 
 .. _fls_mk3sa7OvtJvB:
 
@@ -5121,7 +5161,7 @@ principal trait
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_YtYOHoPaMPFX`
-The :dt:`principal trait` of :t:`trait object type` is its first :t:`trait bound`.
+The :dt:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
 .. _fls_v1u1mevpj0kj:
 
@@ -5150,7 +5190,8 @@ procedural macro
 
 :dp:`fls_u4utpx4zgund`
 A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
-transformations in a :t:`function`.
+transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
+streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
 .. _fls_SIFecOZqloyx:
 
@@ -5167,7 +5208,7 @@ public visibility
 ^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6cfxqtl921ko`
-:dt:`Public visibility` is a kind of :t:`visibility` that allows a :t:`name`
+:dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
 to be referred to from arbitrary :t:`module` ``M`` as long as the ancestor
 :t:`[module]s` of the related :t:`entity` can be referred to from ``M``.
 
@@ -5352,8 +5393,7 @@ range-full expression
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_6mchm7kb7i41`
-A :dt:`range-full expression` is a :t:`range expression` that covers the whole
-range of a :t:`type`.
+For :dt:`range-full expression`, see :t:`full range expression`.
 
 :dp:`fls_u7kd8w5g2icd`
 See :s:`RangeFullExpression`.
@@ -5444,8 +5484,7 @@ raw pointer type
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_wspawcoqxfbh`
-A :dt:`raw pointer type` is an :t:`indirection type` without safety and
-liveness guarantees.
+A :dt:`raw pointer type` is an :t:`indirection type` without validity guarantees.
 
 :dp:`fls_ctksliaxhzo9`
 See :s:`RawPointerTypeSpecification`.
@@ -5489,7 +5528,8 @@ receiver type
 ^^^^^^^^^^^^^
 
 :dp:`fls_vgQmMlpFas5t`
-A :dt:`receiver type` is the :t:`type` of a :t:`receiver operand`.
+A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
+of a :t:`method call expression`.
 
 .. _fls_nG6ikjLsCW7m:
 
@@ -5556,8 +5596,9 @@ recursive type
 ^^^^^^^^^^^^^^
 
 :dp:`fls_2t8qom6dhcjb`
-A :dt:`recursive type` is a :t:`type` that may define other types within its
-:t:`type specification`.
+A :dt:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
+the containing :t:`type`, either directly or by referring to another :t:`type`
+which refers back to the original :t:`recursive type`.
 
 .. _fls_onv3cs5tckgo:
 
@@ -5565,7 +5606,9 @@ reference
 ^^^^^^^^^
 
 :dp:`fls_s82y4hsuytiq`
-A :dt:`reference` is a :t:`value` of a :t:`reference type`.
+A :dt:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+can be obtained explicitly by using a :t:`borrow expression` or implicitly in
+certain scenarios.
 
 .. _fls_1XGsXRZIFnqL:
 
@@ -5613,8 +5656,8 @@ refutability
 ^^^^^^^^^^^^
 
 :dp:`fls_gzjrfx19fg40`
-:dt:`Refutability` is a property of :t:`[pattern]s` that expresses the ability
-to match all possible :t:`[value]s` of a :t:`type`.
+:dt:`refutability` is a property of :t:`[pattern]s` that expresses the ability to
+match all possible values of a :t:`type`.
 
 .. _fls_v99joc4m6cup:
 
@@ -5698,8 +5741,7 @@ register expression
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_2cVy6XfOQ4QG`
-A :dt:`register expression` is either an :t:`input-output register expression`
-or a :t:`simple register expression`.
+A :dt:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
 
 :dp:`fls_YEzo09cqWUUy`
 See :s:`RegisterExpression`.
@@ -5842,8 +5884,9 @@ resolution
 ^^^^^^^^^^
 
 :dp:`fls_PQjEvLs5cE4y`
-:dt:`Resolution` is the process of finding a unique interpretation for a
-:t:`field access expression`, a :t:`method call expression`, or a :t:`path`.
+:dt:`resolution` is the process of finding a unique interpretation for a
+:t:`field access expression`, a :t:`method call expression`, a :t:`call
+expression` or a :t:`path`.
 
 .. _fls_uuo1qvrz1i0k:
 
@@ -5864,7 +5907,8 @@ return expression
 
 :dp:`fls_vnupfc6s0s7b`
 A :dt:`return expression` is an :t:`expression` that optionally yields a
-:t:`value` and causes control flow to return to the caller.
+:t:`value` and causes control flow to return to the end of the enclosing
+:t:`control flow boundary`.
 
 :dp:`fls_phd8zrsyuzu7`
 See :s:`ReturnExpression`.
@@ -5875,7 +5919,7 @@ return type
 ^^^^^^^^^^^
 
 :dp:`fls_cwucgbmmhnnm`
-A :dt:`return type` is the :t:`type` of the result a :t:`function` returns.
+A :dt:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
 :dp:`fls_utuprsem6n58`
 See :s:`ReturnType`.
@@ -5934,7 +5978,8 @@ scope
 ^^^^^
 
 :dp:`fls_fachaj550cq1`
-A :dt:`scope` is a region of program text where a :t:`name` can be referred to.
+A :dt:`scope` is a region of program text where an :t:`entity` can be referred
+to. An :t:`entity` is :t:`in scope` when it can be referred to.
 
 .. _fls_xZUiNkBN5e00:
 
@@ -5943,7 +5988,9 @@ scope hierarchy
 
 :dp:`fls_Spcc3L9X939d`
 The :dt:`scope hierarchy` reflects the nesting of :t:`[scope]s` as introduced
-by :t:`[scoping construct]s`.
+by :t:`[scoping construct]s`. An inner :t:`scope` introduced by a nested
+:t:`scoping construct` is the child of an outer :t:`scope` introduced by an
+enclosing :t:`scoping construct`.
 
 .. _fls_rfk06mm3pdxg:
 
@@ -5980,7 +6027,9 @@ self public modifier
 
 :dp:`fls_ln3bzqgctfym`
 A :dt:`self public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`private visibility`.
+:t:`name` :t:`private visibility`. A :t:`self public modifier` is equivalent
+to a :t:`simple path public modifier` where the :t:`simple path` denotes
+:t:`keyword` ``self``.
 
 :dp:`fls_21cvbfjpckkt`
 See :s:`SelfPublicModifier`.
@@ -6008,8 +6057,8 @@ separator
 ^^^^^^^^^
 
 :dp:`fls_128xny4qfcj5`
-A :dt:`separator` is a character or a string that separates adjacent
-:t:`[lexical element]s`.
+A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
+element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 .. _fls_rtgis2k7by2r:
 
@@ -6017,7 +6066,7 @@ sequence type
 ^^^^^^^^^^^^^
 
 :dp:`fls_lk1oslxh8h9p`
-A :dt:`sequence type` represents a sequence of elements.
+A :dt:`sequence type` is a :t:`type` that represents a sequence of elements.
 
 .. _fls_HUklMSWzx8Mg:
 
@@ -6025,9 +6074,9 @@ shadowing
 ^^^^^^^^^
 
 :dp:`fls_li3NXOPEH9cL`
-:dt:`Shadowing` is a property of :t:`[name]s`. A :t:`name` is said to be
-:dt:`shadowed` when another :t:`name` with the same characters is introduced
-in the same :t:`scope` within the same :t:`namespace`, effectively hiding it.
+:dt:`shadowing` is a property of :t:`[name]s`. A :t:`name` is shadowed when
+another :t:`name` with the same characters is introduced in the same
+:t:`scope` within the same :t:`namespace`, effectively hiding it.
 
 .. _fls_c9xwhhg639u5:
 
@@ -6151,7 +6200,7 @@ signed integer type
 
 :dp:`fls_vcronf7l2bhy`
 A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
-negative whole numbers, zero, and positive whole numbers.
+signed whole numbers.
 
 .. _fls_4GvXiDfcPlRD:
 
@@ -6171,9 +6220,8 @@ simple c string literal
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_qoHXrmds9SgI`
-A :dt:`simple c string literal` is any :t:`Unicode` character except characters
-0x0D (carriage return), 0x22 (quotation mark), 0x5C (reverse solidus) and 0x00
-(null byte).
+A :dt:`simple c string literal` is a :t:`c string literal` where the characters are
+:t:`Unicode` characters.
 
 :dp:`fls_ggm5FNUqg9EY`
 See :s:`SimpleCStringLiteral`.
@@ -6184,8 +6232,9 @@ simple import
 ^^^^^^^^^^^^^
 
 :dp:`fls_jrlzpoauui9g`
-A :dt:`simple import` is a :t:`use import` that binds a :t:`simple path` to a
-local :t:`name` by using an optional :t:`renaming`.
+A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
+it refers to into scope, optionally with a different
+:t:`name` than they are declared with by using a :t:`renaming`.
 
 :dp:`fls_ta5t4h25unsw`
 See :s:`SimpleImport`.
@@ -6197,7 +6246,8 @@ simple path
 
 :dp:`fls_db91duoug4eb`
 A :dt:`simple path` is a :t:`path` whose :t:`[path segment]s` consist of either
-:t:`[identifier]s` or certain :t:`[keyword]s`.
+:t:`[identifier]s` or certain :t:`[keyword]s` as defined in the syntax rules
+above.
 
 :dp:`fls_cm7ysyfrdwom`
 See :s:`SimplePath`.
@@ -6232,7 +6282,7 @@ simple path resolution
 ^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_CQlepoN6PmKq`
-:dt:`Simple path resolution` is a kind of :t:`path resolution` that applies to
+:dt:`simple path resolution` is a kind of :t:`path resolution` that applies to
 a :t:`simple path`.
 
 .. _fls_k5uqt5oj7wvl:
@@ -6286,9 +6336,10 @@ size
 ^^^^
 
 :dp:`fls_3obnilqhkjux`
-The :dt:`size` of a :t:`value` is the offset in bytes between successive
-elements in an :t:`array type` with the same :t:`element type`, including any
-padding for :t:`alignment`.
+The :dt:`size` of a :t:`type` is the offset in bytes between successive elements
+in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
+including any padding for :t:`alignment`. :t:`Size` is a multiple of the
+:t:`alignment`.
 
 .. _fls_2y5oyon3y1za:
 
@@ -6296,8 +6347,8 @@ size operand
 ^^^^^^^^^^^^
 
 :dp:`fls_srajsqi5i3py`
-A :dt:`size operand` is an :t:`operand` that specifies the size of an
-:t:`array` or an :t:`array type`.
+A :dt:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
+that specifies the length of an :t:`array type`.
 
 :dp:`fls_228ioayvdguv`
 See :s:`SizeOperand`.
@@ -6308,7 +6359,8 @@ sized type
 ^^^^^^^^^^
 
 :dp:`fls_pwcgsRCNSwKn`
-A :dt:`sized type` is a :t:`type` with statically known size.
+A :dt:`sized type` is a :t:`type` that implements the
+:std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_srkftses9sxn:
 
@@ -6348,8 +6400,9 @@ source file
 ^^^^^^^^^^^
 
 :dp:`fls_nh737q4mn27u`
-A :dt:`source file` contains the program text of :t:`[inner attribute]s`,
-:t:`[inner doc comment]s`, and :t:`[item]s`.
+A :dt:`source file` contains the program text consisting of :t:`[inner
+attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
+:t:`source file` is tool defined.
 
 :dp:`fls_zgh1m5357ex1`
 See :s:`SourceFile`.
@@ -6360,7 +6413,7 @@ statement
 ^^^^^^^^^
 
 :dp:`fls_faijgwg4lhp9`
-A :dt:`statement` is a component of a block expression.
+A :dt:`statement` is a :t:`construct` described by :s:`Statement`.
 
 :dp:`fls_th7edvxml3mn`
 See :s:`Statement`.
@@ -6395,8 +6448,8 @@ static lifetime elision
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_NbVewjYRnQPF`
-:dt:`Static lifetime elision` is a form of :t:`lifetime elision` that applies
-to :t:`[constant]s` and :t:`[static]s`.
+:dt:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
+the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
 
 .. _fls_1ricdj86o457:
 
@@ -6435,7 +6488,8 @@ struct
 ^^^^^^
 
 :dp:`fls_rufylj7qxs1w`
-A :dt:`struct` is an :t:`item` that declares a :t:`struct type`.
+A :dt:`struct` is an :t:`abstract data type` declared with a
+:s:`StructDeclaration`.
 
 .. _fls_dxfyejkbiz3p:
 
@@ -6455,7 +6509,7 @@ struct field
 ^^^^^^^^^^^^
 
 :dp:`fls_8Z9YWMnrHXJS`
-A :dt:`struct field` is a :t:`field` of a :t:`struct type`.
+A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 
 .. _fls_ook43xes5t34:
 
@@ -6538,7 +6592,7 @@ subpattern
 ^^^^^^^^^^
 
 :dp:`fls_942ulj9qsdes`
-A :dt:`subpattern` is a :t:`pattern` nested within another :t:`pattern`.
+A :dt:`subpattern` is a :t:`pattern` nested within another pattern.
 
 .. _fls_0hf1gNf90qKr:
 
@@ -6586,7 +6640,8 @@ subtype
 ^^^^^^^
 
 :dp:`fls_pmkjOWsieQog`
-A :dt:`subtype` is a :t:`type` with additional constraints.
+A :dt:`subtype` is a :t:`type` that may be used in place of another :t:`type`
+according to :t:`subtyping`.
 
 .. _fls_f5dxz8pvs1kz:
 
@@ -6594,8 +6649,8 @@ subtyping
 ^^^^^^^^^
 
 :dp:`fls_bo5xzjsdd3lj`
-:dt:`Subtyping` is a property of :t:`[type]s`, allowing one :t:`type` to be
-used where another :t:`type` is expected.
+:dt:`subtyping` is the relation that determines when one :t:`type` may be used
+in place of another.
 
 .. _fls_qar9v52smi9j:
 
@@ -6620,7 +6675,9 @@ super public modifier
 
 :dp:`fls_vry5mhs3a5wv`
 A :dt:`super public modifier` is a :t:`visibility modifier` that grants a
-:t:`name` :t:`public visibility` within the parent :t:`module` only.
+:t:`name` :t:`public visibility` within the parent :t:`module` only. A
+:t:`super public modifier` is equivalent to a :t:`simple path public modifier`
+where the :t:`simple path` denotes :t:`keyword` ``super``.
 
 :dp:`fls_4a1s9bcrk5oy`
 See :s:`SuperPublicModifier`.
@@ -6648,9 +6705,8 @@ A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 syntactic category
 ^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_f981e3m7kq50`
-A :dt:`syntactic category` is a nonterminal in the Backus-Naur Form grammar
-definition of the Rust programming language.
+* :dp:`fls_ceb5a8t6cakr`
+  A :dt:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
 .. _fls_psd2ll10ixs:
 
@@ -6830,11 +6886,10 @@ transparent representation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hb3e72rhzpnv`
-:dt:`Transparent representation` is a :t:`type representation` that applies
-only to an :t:`enum type` with a single :t:`enum variant` or a :t:`struct type`
-where the :t:`struct type` or :t:`enum variant` has a single :t:`field` of
-non-zero :t:`size` and any number of :t:`[field]s` of :t:`size` zero and
-:t:`alignment` one.
+:dt:`Transparent representation` applies only to an :t:`enum type` with a
+single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
+:t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
+of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
 
 .. _fls_soqkluvirlsd:
 
@@ -7008,8 +7063,8 @@ type argument
 ^^^^^^^^^^^^^
 
 :dp:`fls_152lk7hrtd11`
-A :dt:`type argument` is a :t:`generic argument` that supplies the :t:`value`
-of a :t:`type parameter`.
+A :dt:`type argument` is a :t:`generic argument` that supplies the :t:`type` of
+a :t:`type parameter`.
 
 :dp:`fls_91tqk65qiygf`
 See :s:`TypeArgument`.
@@ -7055,8 +7110,9 @@ type coercion
 ^^^^^^^^^^^^^
 
 :dp:`fls_mt36qehtqova`
-:dt:`Type coercion` is an implicit operation that changes the :t:`type` of
-a :t:`value`.
+:dt:`Type coercion` is an implicit operation that changes the :t:`type` of a
+:t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
+explicit using a :t:`type cast expression`.
 
 .. _fls_7fpvb2gvqng8:
 
@@ -7064,8 +7120,8 @@ type inference
 ^^^^^^^^^^^^^^
 
 :dp:`fls_ky8epvf9834e`
-:dt:`Type inference` is the process of deducing the expected :t:`type` of an
-arbitrary :t:`value`.
+:dt:`Type inference` is the process of automatically determining the :t:`type` of
+:t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
 .. _fls_0jri0m3F1fAT:
 
@@ -7073,9 +7129,9 @@ type inference root
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_hLI7lCixs48z`
-A :dt:`type inference root` is a :t:`construct` whose inner :t:`[expression]s`
-and :t:`[pattern]s` are subject to :t:`type inference` independently of other
-:t:`[type inference root]s`.
+A :dt:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
+and :t:`[pattern]s` are subject to :t:`type inference` independently of those
+found in other :t:`[type inference root]s`.
 
 .. _fls_uv2damik654e:
 
@@ -7136,7 +7192,9 @@ type representation
 
 :dp:`fls_rv80nyxwj2z8`
 :dt:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
-:t:`[abstract data type]s`.
+:t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
+between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
+does not change the :t:`layout` of the :t:`[field]s` themselves.
 
 .. _fls_ukua6gbye6ot:
 
@@ -7220,7 +7278,7 @@ unary operator
 ^^^^^^^^^^^^^^
 
 :dp:`fls_p6mk2zrwgwem`
-A :dt:`unary operator` operates on one :t:`operand`.
+A :dt:`unary operator` is an operator that operates on one :t:`operand`.
 
 .. _fls_WuLL4SvSKavZ:
 
@@ -7277,7 +7335,7 @@ Unicode
 
 :dp:`fls_y7gwku7pe1f4`
 :dt:`Unicode` is the universal character encoding standard for written
-characters and text described in the Unicode® Standard by the Unicode
+characters and text described in the Unicode Standard by the Unicode
 Consortium.
 
 .. _fls_y7m6AentM6Ik:
@@ -7294,7 +7352,7 @@ unifiable types
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_jsbggfitv9xk`
-Two :t:`[type]s` that :t:`unify` are said to be :dt:`[unifiable type]s`.
+Two types that :t:`unify` are said to be :dt:`[unifiable type]s`.
 
 .. _fls_9RfuDiI6qrzZ:
 
@@ -7310,8 +7368,9 @@ unify
 ^^^^^
 
 :dp:`fls_mango4gffb9e`
-A :t:`type` is said to :dt:`unify` with another type when the domains, ranges,
-and structures of both :t:`[type]s` are compatible.
+A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
+ranges, and structures of both :t:`[type]s` are compatible according to the
+rules detailed below.
 
 .. _fls_8qljy9e1jjcb:
 
@@ -7335,7 +7394,8 @@ union type
 ^^^^^^^^^^
 
 :dp:`fls_af2sscrep7mc`
-A :dt:`union type` is an :t:`abstract data type` similar to a :t:`C`-like union.
+A :dt:`union type` is an :t:`abstract data type` that is a sum of other
+:t:`[type]s`.
 
 :dp:`fls_fgvjogfz8ink`
 See :s:`UnionDeclaration`.
@@ -7382,7 +7442,7 @@ See :s:`UnitStructDeclaration`.
 unit struct constant
 ^^^^^^^^^^^^^^^^^^^^
 
-:dp:`fls_lLGn4JqddeAg`:
+:dp:`fls_lLGn4JqddeAg`
 A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
 :t:`unit struct`.
 
@@ -7441,8 +7501,7 @@ unnamed lifetime
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_4iy6zpq66mit`
-An :dt:`unnamed lifetime` is a :t:`lifetime` declared with character 0x5F (low
-line).
+An :dt:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
 
 .. _fls_cDVmvrVhUBmr:
 
@@ -7495,7 +7554,7 @@ unsafe function
 ^^^^^^^^^^^^^^^
 
 :dp:`fls_2ht13dgtxi1o`
-An :dt:`unsafe function` is a :t:`function` subject to :t:`keyword` ``unsafe``.
+An :dt:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
 
 .. _fls_y1iruf62p856:
 
@@ -7523,7 +7582,6 @@ unsafe operation
 :dp:`fls_34h60ubicgsj`
 An :dt:`unsafe operation` is an operation that may result in
 :t:`undefined behavior` that is not diagnosed as a static error.
-:t:`[Unsafe operation]s` are referred to as :t:`unsafe Rust`.
 
 .. _fls_4f6mppoenj3b:
 
@@ -7539,7 +7597,7 @@ unsafe trait
 ^^^^^^^^^^^^
 
 :dp:`fls_w6zlsf2ye457`
-An :dt:`unsafe trait` is a :t:`trait` subject to :t:`keyword` ``unsafe``
+An :dt:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
 
 .. _fls_h62dfjfyqcbn:
 
@@ -7556,7 +7614,8 @@ unsafety
 ^^^^^^^^
 
 :dp:`fls_742ycx5181n`
-:dt:`Unsafety` is the presence of :t:`[unsafe operation]s` in program text.
+:dt:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
+implementation]s` in program text.
 
 .. _fls_4jc74lz245z3:
 
@@ -7564,7 +7623,7 @@ unsigned integer type
 ^^^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_dxnf79qemlg6`
-An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`[value]s`
+An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`values <value>`
 denote zero and positive whole numbers.
 
 .. _fls_pjup0piqlxe3:
@@ -7573,8 +7632,9 @@ unsized coercion
 ^^^^^^^^^^^^^^^^
 
 :dp:`fls_olt5qhyvhmtq`
-An :dt:`unsized coercion` is a :t:`type coercion` that converts a
-:t:`sized type` into an :t:`unsized type`.
+An :dt:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
+into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
+target :t:`type` is allowed to occur when:
 
 .. _fls_KiVgO7I3UUhh:
 
@@ -7582,7 +7642,8 @@ unsized type
 ^^^^^^^^^^^^
 
 :dp:`fls_M9NpzBH8Wf4z`
-An :dt:`unsized type` is a :t:`type` with statically unknown size.
+An :dt:`unsized type` is a :t:`type` that does not implement the
+:std:`core::marker::Sized` :t:`trait`.
 
 .. _fls_4ph9cact2scc:
 
@@ -7607,7 +7668,7 @@ use capture
 ^^^^^^^^^^^
 
 :dp:`fls_eZyPXG27Zwcg`
-An :dt:`use capture` is a :t:`generic parameter` referenced via keyword $$use$$ within an :t:`anonymous return type`.
+An :dt:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
 
 :dp:`fls_Z8qvOkP4Zfj5`
 See :s:`UseCaptures`.
@@ -7659,6 +7720,8 @@ value expression
 
 :dp:`fls_mn6tcuz5j3p`
 A :dt:`value expression` is an :t:`expression` that represents a :t:`value`.
+All :t:`[expression]s` that are not :t:`[place expression]s` are
+:t:`[value expression]s`.
 
 .. _fls_7xiaXXSwy4GP:
 
@@ -7728,8 +7791,7 @@ visibility modifier
 ^^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_ze7befho4jhs`
-A :dt:`visibility modifier` sets the :t:`visibility` of the :t:`name` of an
-:t:`item`.
+A :dt:`visibility modifier` sets the :t:`visibility` of a :t:`name`.
 
 .. _fls_dLlUt8PrXAls:
 
@@ -7774,7 +7836,8 @@ where clause
 
 :dp:`fls_prljyrhontzn`
 A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
-:t:`[lifetime parameter]s` and :t:`[type parameter]s`.
+:t:`[lifetime parameter]s` and :t:`[type]s` that have
+to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
 :dp:`fls_k32hnug33eo9`
 See :s:`WhereClause`.
