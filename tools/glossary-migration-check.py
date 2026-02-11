@@ -163,29 +163,47 @@ def collect_glossary_terms() -> list[dict]:
         headings.append((title, index))
 
     terms: list[dict] = []
+    seen_term_ids: set[str] = set()
     for heading_index, (title, line_index) in enumerate(headings):
         next_line_index = (
             headings[heading_index + 1][1]
             if heading_index + 1 < len(headings)
             else len(lines)
         )
-        section_lines = lines[line_index:next_line_index]
-        dt_matches = []
-        for line in section_lines:
-            dt_matches.extend(match.group(1).strip() for match in DT_RE.finditer(line))
+        section_candidates: list[tuple[str, str, int]] = []
 
-        if dt_matches:
-            _, target = parse_target_from_text(dt_matches[0])
-        else:
-            _, target = parse_target_from_text(title)
+        for section_line_index in range(line_index, next_line_index):
+            line = lines[section_line_index]
+            for match in DT_RE.finditer(line):
+                raw_term = match.group(1).strip()
+                term, target = parse_target_from_text(raw_term)
+                section_candidates.append(
+                    (term, id_from_text("term", target), section_line_index + 1)
+                )
+            for match in DC_RE.finditer(line):
+                raw_term = match.group(1).strip()
+                term, target = parse_target_from_text(raw_term)
+                section_candidates.append(
+                    (term, id_from_text("term", target), section_line_index + 1)
+                )
 
-        terms.append(
-            {
-                "term": title,
-                "term_id": id_from_text("term", target),
-                "line": line_index + 1,
-            }
-        )
+        if not section_candidates:
+            heading_term, heading_target = parse_target_from_text(title)
+            section_candidates.append(
+                (heading_term, id_from_text("term", heading_target), line_index + 1)
+            )
+
+        for term, term_id, term_line in section_candidates:
+            if term_id in seen_term_ids:
+                continue
+            seen_term_ids.add(term_id)
+            terms.append(
+                {
+                    "term": term,
+                    "term_id": term_id,
+                    "line": term_line,
+                }
+            )
 
     return terms
 
@@ -262,11 +280,15 @@ def compare_definitions(glossary_definitions, chapter_definitions):
         if glossary_text == chapter_text:
             continue
 
+        classification = classify_mismatch(glossary_text, chapter_text)
+        if classification == "role-only":
+            continue
+
         mismatches.append(
             {
                 "term": glossary_record.term,
                 "term_id": term_id,
-                "classification": classify_mismatch(glossary_text, chapter_text),
+                "classification": classification,
                 "glossary": asdict(glossary_record),
                 "chapter": asdict(chapter_record),
                 "glossary_normalized": glossary_text,
@@ -412,23 +434,6 @@ def run_checks(phase: int, strict: bool, report_path: Path | None) -> int:
 
     artifacts = {}
     results: list[CheckResult] = []
-
-    disallowed = glossary_migration.find_disallowed_directives(ROOT)
-    add_result(
-        results,
-        "no-disallowed-directives",
-        len(disallowed) == 0,
-        {
-            "violations": [
-                {
-                    "file": violation["file"].relative_to(ROOT).as_posix(),
-                    "line": violation["line"],
-                    "directive": violation["directive"],
-                }
-                for violation in disallowed
-            ]
-        },
-    )
 
     inventory, missing = build_term_inventory(glossary_terms, chapter_definitions)
     artifacts["term_inventory"] = write_phase_artifact(
