@@ -542,7 +542,7 @@ within the related :t:`type specification`.
 
 :dp:`fls_pmo939jw9m1m`
 A :t:`generic parameter` of an :t:`implementation` is :t:`in scope` within the
-related :t:`implementation body` and :t:`where clause`.
+related :dt:`implementation body` and :t:`where clause`.
 
 :dp:`fls_67dtv1z3arbl`
 A :t:`generic parameter` of a :t:`struct type` is :t:`in scope` within the
@@ -1294,6 +1294,10 @@ A :dt:`candidate field` is a :t:`field` of a :t:`candidate container type`
 that is visible from the location of the :t:`field access expression`
 :t:`under resolution`.
 
+:dp:`fls_yeuayil6uxzx`
+A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
+accessed in a :t:`field access expression`.
+
 :dp:`fls_G7nIZNc3Nk4M`
 An :dt:`indexed field selector` is a :t:`field selector` where the selected
 :t:`field` is indicated by an index.
@@ -1437,7 +1441,7 @@ proceeds as follows:
    For each :t:`dereference type` in the :t:`dereference type chain`
 
    #. :dp:`fls_bsf4hy9x7c2e`
-      For each :t:`inherent implementation` in the set of
+      For each :dt:`inherent implementation` in the set of
       :t:`[inherent implementation]s` of the :t:`dereference type` where the
       :t:`implementing type` :t:`unifies <unify>` with the
       :t:`dereference type`

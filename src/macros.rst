@@ -352,7 +352,7 @@ subject to the following restrictions:
   It shall lack :t:`[generic parameter]s`,
 
 * :dp:`fls_etyo9bmzxby6`
-  It shall have a single :t:`function parameter` whose :t:`type specification`
+  It shall have a single :dt:`function parameter` whose :t:`type specification`
   indicates :t:`type` :std:`proc_macro::TokenStream`,
 
 * :dp:`fls_mkl9b38m0sf1`
@@ -1085,7 +1085,7 @@ them is a property that aims to eliminate the syntactic interference between a
   :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
-  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
+  environment of a :s:`MacroInvocation`, and are considered :dt:`hygienic`.
 
 * :dp:`fls_puqhytfzfsg6`
   :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
@@ -1100,7 +1100,7 @@ them is a property that aims to eliminate the syntactic interference between a
   and is considered :t:`partially hygienic`.
 
 :dp:`fls_4bTKuwDSu5FJ`
-An :t:`identifier` is :dt:`hygienic` when it has :t:`definition site hygiene`.
+An :t:`identifier` is :t:`hygienic` when it has :t:`definition site hygiene`.
 
 :dp:`fls_94TOYfoplm4f`
 An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.

@@ -455,7 +455,7 @@ location can be modified. The following :t:`[place expression]s` are
   :t:`mutable place expression`,
 
 * :dp:`fls_bt50fltfqcvn`
-  An :t:`index expression` whose :t:`type` implements the
+  An :dt:`index expression` whose :t:`type` implements the
   :std:`core::ops::IndexMut` :t:`trait`,
 
 * :dp:`fls_Sgfxp186GMvz`
@@ -504,10 +504,10 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The initialization :t:`expression` of a :t:`let statement`,
 
 * :dp:`fls_jLZlxIHr4w2v`
-  The :t:`operand` of an :t:`implicit borrow`,
+  The :t:`operand` of an :dt:`implicit borrow`,
 
 * :dp:`fls_giZ7w1G02JSg`
-  The :t:`indexed operand` of an :t:`index expression`,
+  The :dt:`indexed operand` of an :t:`index expression`,
 
 * :dp:`fls_5yXuTLQOQ3cc`
   The :t:`subject let expression` of an :t:`if let expression` or a
@@ -1536,7 +1536,7 @@ The :t:`evaluation` of an :t:`addition expression` proceeds as follows:
 
 #. :dp:`fls_NcLf4o1dpniS`
    If the :t:`type` of both :t:`[operand]s` is the same :t:`integer type` or
-   :t:`floating-point type`, then the :t:`addition expression` evaluates to the
+   :dt:`floating-point type`, then the :t:`addition expression` evaluates to the
    sum of the :t:`[operand]s`, following the rules of unsigned integer addition
    for :t:`[unsigned integer type]s`, two's complement addition for
    :t:`[signed integer type]s`, or floating-point addition for
@@ -2245,7 +2245,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
   address is truncated.
 
 * :dp:`fls_59mpteeczzo`
-  An :dt:`operand` of :t:`integer type` and :t:`target type` ``*const V`` or
+  An :dt:`operand` of :dt:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
   perform :t:`address-to-pointer cast`. An :dt:`address-to-pointer cast`
   produces a :dt:`pointer` that interprets the integer as a machine address.
@@ -3078,11 +3078,11 @@ An :dt:`indexable type` is a :t:`type` that implements the
 :std:`core::ops::Index` :t:`trait`.
 
 :dp:`fls_42ijvuqqqlvh`
-An :dt:`index expression` is an :t:`expression` that indexes into a :t:`value`
+An :t:`index expression` is an :t:`expression` that indexes into a :t:`value`
 of an :t:`indexable type`.
 
 :dp:`fls_pc0c22asgzvw`
-An :dt:`indexed operand` is an :t:`operand` which indicates the :t:`value`
+An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
 being indexed into by an :t:`index expression`.
 
 :dp:`fls_ff3sgpldn52o`
@@ -3289,7 +3289,7 @@ initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_qed1pps827dv`
 A :t:`named initializer` matches a :t:`field` of the :t:`constructee` when
-its :t:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
+its :dt:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
 :t:`named initializer` is a :dt:`matched named initializer`.
 
 :dp:`fls_b60omrhc7t73`
@@ -3737,10 +3737,6 @@ An :dt:`unsafe context` is either an :t:`unsafe block` or an
 A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
-:dp:`fls_yeuayil6uxzx`
-A :dt:`field selector` is a :t:`construct` that selects the :t:`field` to be
-accessed in a :t:`field access expression`.
-
 :dp:`fls_qqrconpa92i3`
 A :dt:`selected field` is a :t:`field` that is selected by a
 :t:`field access expression`.
@@ -4142,11 +4138,11 @@ A :dt:`while loop` is a :t:`while loop expression`.
 
 :dp:`fls_ajby242tnu7c`
 A :dt:`while loop expression` is a :t:`loop expression` that continues to
-evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
+evaluate its :t:`loop body` as long as its :dt:`iteration expression` holds
 true.
 
 :dp:`fls_13hmhzqz82v6`
-An :dt:`iteration expression` is an :t:`expression` that provides the criterion
+An :t:`iteration expression` is an :t:`expression` that provides the criterion
 of a :t:`while loop expression`.
 
 :dp:`fls_d7ofrq3777kq`
@@ -5027,7 +5023,7 @@ Await Expressions
 
 :dp:`fls_sjz5s71hwm7l`
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
+suspending the :t:`execution` of the :dt:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
@@ -5278,7 +5274,7 @@ the :t:`capturing environment`.
 
 :dp:`fls_aCxt2Ovmb5He`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by immutable reference capture` binds an :t:`immutable reference` to the
+:dt:`by immutable reference capture` binds an :dt:`immutable reference` to the
 :t:`capture target` and passes the :t:`immutable reference` into the
 :t:`capturing environment`.
 

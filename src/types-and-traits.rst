@@ -397,7 +397,7 @@ Floating Point Types
 .. rubric:: Legality Rules
 
 :dp:`fls_xcUkEjuclTjp`
-A :dt:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+A :t:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
 fractional numbers.
 
 :dp:`fls_a5exYaDySck3`
@@ -424,7 +424,7 @@ Integer Types
 .. rubric:: Legality Rules
 
 :dp:`fls_tHog6qQQp5Bo`
-An :dt:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
+An :t:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
 numbers.
 
 :dp:`fls_3g2cxq6r7nkp`
@@ -785,6 +785,10 @@ A :t:`record enum variant` is an :t:`enum variant` with a
 A :dt:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
+:dp:`fls_YERnNZiSdCRn`
+A :dt:`field list` is a :s:`RecordStructFieldList` or a
+:s:`TupleStructFieldList`.
+
 :dp:`fls_h2m9k6p4r7vd`
 A :t:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
@@ -909,10 +913,6 @@ Struct Types
        $$struct$$ Name GenericParameterList? WhereClause? $$;$$
 
 .. rubric:: Legality Rules
-
-:dp:`fls_YERnNZiSdCRn`
-A :dt:`field list` is a :s:`RecordStructFieldList` or a
-:s:`TupleStructFieldList`.
 
 :dp:`fls_9h1rj4lq6vzx`
 A :dt:`struct` is an :t:`abstract data type` declared with a

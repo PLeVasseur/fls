@@ -215,7 +215,7 @@ external interactions:
   Any call to an :dt:`external function`,
 
 * :dp:`fls_AR8ZIYlDRSNs`
-  Any interaction with an :t:`external static`,
+  Any interaction with an :dt:`external static`,
 
 * :dp:`fls_xAYhvEh7WWel`
   Any result returned from a :t:`program entry point`,

@@ -260,7 +260,7 @@ External Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_8ddsytjr4il6`
-An :dt:`external static` is an import of a foreign :t:`variable`.
+An :t:`external static` is an import of a foreign :t:`variable`.
 
 :dp:`fls_H0cg9XMaGz0y`
 An :t:`external static` inherits the :t:`ABI` of its enclosing

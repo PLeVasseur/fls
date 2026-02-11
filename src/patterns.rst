@@ -99,7 +99,7 @@ Refutability
 match all possible values of a :t:`type`.
 
 :dp:`fls_9fjspnefoyvz`
-An :dt:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
 
 :dp:`fls_uq7ftuuq1sig`
 A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not

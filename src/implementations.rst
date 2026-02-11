@@ -49,12 +49,12 @@ Within an :t:`implementation`, the :t:`type` :c:`Self` acts as a :t:`type alias`
 for the :t:`implementing type`.
 
 :dp:`fls_Mcpdzzcw43M7`
-An :dt:`implementation body` is a :t:`construct` that encapsulates the
+An :t:`implementation body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of an :t:`implementation`.
 
 :dp:`fls_v0n0bna40dqr`
-An :dt:`inherent implementation` is an :t:`implementation` that adds direct
+An :t:`inherent implementation` is an :t:`implementation` that adds direct
 functionality.
 
 :dp:`fls_797etpdk5dyb`
@@ -149,7 +149,7 @@ Given :t:`trait implementation`
 :t:`trait implementation` is considered valid when
 
 * :dp:`fls_3tbm20k2ixol`
-  ``Trait`` is :t:`fundamental` or a :t:`local trait`, or
+  ``Trait`` is :dt:`fundamental` or a :t:`local trait`, or
 
 * :dp:`fls_lscc9ileg3gm`
   All of
@@ -164,7 +164,7 @@ Given :t:`trait implementation`
     :t:`non-[fundamental]` :t:`[type]s` of ``T0, T1, .., TN``.
 
 :dp:`fls_UkQhjEWSJpDq`
-A :t:`trait` or :t:`type` is :dt:`fundamental` when its
+A :t:`trait` or :t:`type` is :t:`fundamental` when its
 :t:`implementation coherence` rules are relaxed and the :t:`trait` or :t:`type`
 is always treated as if it was a :t:`local trait` or a :t:`local type`.
 

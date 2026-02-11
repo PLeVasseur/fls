@@ -83,7 +83,7 @@ alternatively executes a :t:`block expression`.
 
 :dp:`fls_iqar7vvtw22c`
 If a :t:`let statement` lacks a :t:`block expression`, then the :t:`pattern` of
-the :t:`let statement` shall be an :t:`irrefutable pattern`.
+the :t:`let statement` shall be an :dt:`irrefutable pattern`.
 
 :dp:`fls_1s1UikGU5YQb`
 If a :t:`let statement` has a :t:`block expression`, then the :s:`Expression` of

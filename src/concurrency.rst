@@ -134,7 +134,7 @@ The Rust programming language provides asynchronous computation through
 :t:`module` :std:`core::task` and the :std:`core::future::Future` :t:`trait`.
 
 :dp:`fls_fte085hi1yqj`
-A :dt:`future` represents a :t:`value` of a :t:`type` that implements the
+A :t:`future` represents a :t:`value` of a :t:`type` that implements the
 :std:`core::future::Future` :t:`trait` which may not have finished computing
 yet.
 
