@@ -169,6 +169,13 @@ with :t:`keyword` ``mut`` yields a :t:`mutable binding`.
 A :dt:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
+:dp:`fls_r2m9k6t1v4pa`
+A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+
+:dp:`fls_6c1v8m4p2tqa`
+A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
+:t:`unit struct`.
+
 :dp:`fls_24c95c56tugl`
 The :t:`identifier pattern` enters its :t:`binding` into :t:`binding scope` in
 the :t:`value namespace` if it does not resolve to a :t:`constant`, a
@@ -368,6 +375,10 @@ Path Patterns
 A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
+:dp:`fls_5y6ae0xqux57`
+An :dt:`associated constant` is a :t:`constant` that appears as an
+:t:`associated item`.
+
 :dp:`fls_xz5otkhogn31`
 A :t:`path pattern` expressed as a :t:`path expression` shall refer to either
 an :t:`associated constant`, or a :t:`constant`.
@@ -397,6 +408,10 @@ to :t:`attribute` :c:`derive` with arguments :std:`core::cmp::Eq` and
 :dp:`fls_bv9psmitxfuw`
 A :t:`path pattern` expressed as a :dt:`qualified path expression` shall refer
 to an :t:`associated constant`.
+
+:dp:`fls_A2W4v53ihTGx`
+A :dt:`visible empty enum variant` is an :t:`enum variant` subject to
+:t:`visible emptiness`.
 
 :dp:`fls_sl47k9oj5p7t`
 A :t:`path pattern` is an :t:`irrefutable pattern` when it refers to:

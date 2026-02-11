@@ -21,14 +21,6 @@ implementation]s` in program text.
 A :t:`safety invariant` is an invariant that when violated may result in
 :t:`undefined behavior`.
 
-:dp:`fls_M4Q4vAJmapq8`
-A :dt:`validity invariant` is an invariant that when violated results in
-immediate :t:`undefined behavior`.
-
-:dp:`fls_ovn9czwnwxue`
-An :dt:`unsafe operation` is an operation that may result in
-:t:`undefined behavior` that is not diagnosed as a static error.
-
 :dp:`fls_1m8v4k2t9qpa`
 For :dt:`unsafe Rust`, see :t:`[unsafe operation]s`.
 
@@ -53,9 +45,9 @@ The :t:`[unsafe operation]s` are:
 * :dp:`fls_s5nfhBFOk8Bu`
   Calling :t:`macro` :std:`core::arch::asm`.
 
-:dp:`fls_jb6krd90tjmc`
-An :dt:`unsafe context` is either an :t:`unsafe block` or an
-:t:`unsafe function`.
+:dp:`fls_7ucwmzqtittv`
+An :dt:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with
+:t:`keyword` ``unsafe``.
 
 :dp:`fls_ybnpe7ppq1vh`
 An :t:`unsafe operation` shall be used only within an :t:`unsafe context`.

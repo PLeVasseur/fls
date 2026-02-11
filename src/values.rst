@@ -10,10 +10,6 @@ Values
 
 .. rubric:: Legality Rules
 
-:dp:`fls_buyaqara7am4`
-A :dt:`value` is either a :t:`literal` or the result of a computation, that may
-be stored in a memory location, and interpreted based on some :t:`type`.
-
 :dp:`fls_RJDPClYE8a9x`
 :t:`Mutability` determines whether a :t:`construct` can modify a :t:`value`.
 
@@ -257,10 +253,6 @@ Variables
 ---------
 
 .. rubric:: Legality Rules
-
-:dp:`fls_hl5tnd9yy252`
-A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
-stack.
 
 :dp:`fls_DaACqyLYORne`
 A :dt:`local variable` is a :t:`variable`.

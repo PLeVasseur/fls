@@ -1591,6 +1591,10 @@ Attribute ``unsafe``
 
 .. rubric:: Legality Rules
 
+:dp:`fls_ovn9czwnwxue`
+An :dt:`unsafe operation` is an operation that may result in
+:t:`undefined behavior` that is not diagnosed as a static error.
+
 :dp:`fls_z5DTDKM9mU3o`
 :t:`Attribute` :dc:`unsafe` is used to indicate that an  :t:`attribute` is :t:`unsafe <unsafe operation>`.
 

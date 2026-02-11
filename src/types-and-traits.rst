@@ -350,6 +350,10 @@ Operation ``a < b`` is equivalent to ``!(a >= b)``.
 :dp:`fls_d09l2rl0161l`
 Operation ``a <= b`` is equivalent to ``a == b | a < b``.
 
+:dp:`fls_M4Q4vAJmapq8`
+A :dt:`validity invariant` is an invariant that when violated results in
+immediate :t:`undefined behavior`.
+
 .. rubric:: Undefined Behavior
 
 :dp:`fls_2sd39mj05mb9`
@@ -570,9 +574,6 @@ Array Types
 An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
 
-:dp:`fls_xmmgSHsTHDtc`
-An :dt:`array` is a :t:`value` of an :t:`array type`.
-
 :dp:`fls_mRbOQQQPbVyU`
 An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
@@ -695,14 +696,8 @@ A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
 :dp:`fls_v7c3y1q9m2bx`
 A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
 
-:dp:`fls_s1m7q5t2v8wn`
-The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
-
 :dp:`fls_h7v2m9q3k1zp`
 A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
-
-:dp:`fls_y6c2p9k4m1ra`
-The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
 
 :dp:`fls_ivWBnhfOZUrW`
 The :t:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
@@ -781,9 +776,6 @@ A :dt:`zero-variant enum type` is an :t:`enum type` without any
 :dp:`fls_wQTFwl88VujQ`
 An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
-
-:dp:`fls_r2m9k6t1v4pa`
-A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_9vlr65nzdwf2`
 A :t:`record enum variant` is an :t:`enum variant` with a
@@ -956,10 +948,6 @@ A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
 
 :dp:`fls_4q6m9t1w7zpa`
 A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
-
-:dp:`fls_6c1v8m4p2tqa`
-A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
-:t:`unit struct`.
 
 :dp:`fls_x2k7m9p1v5qa`
 A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
@@ -1217,10 +1205,6 @@ A :dt:`function pointer type` is an :t:`indirection type` that refers to a
 A :dt:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
 
-:dp:`fls_5dd7icjcl3nt`
-An :dt:`unsafe function pointer type` is a function pointer type subject to
-:t:`keyword` ``unsafe``.
-
 :dp:`fls_B0SMXRqQMS1E`
 A :dt:`variadic part` indicates the presence of :dt:`C`-like optional
 parameters.
@@ -1392,10 +1376,6 @@ An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :dp:`fls_ieyqx5vzas2m`
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
-
-:dp:`fls_3aKZB0ILIkZw`
-An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
-:t:`function` :t:`return type`.
 
 :dp:`fls_0rAmIzljJgWi`
 An :dt:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
@@ -2517,9 +2497,6 @@ Visible Emptiness
 :dp:`fls_GeoneCP5TYwf`
 A :dt:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
 
-:dp:`fls_A2W4v53ihTGx`
-A :dt:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
-
 :dp:`fls_AXOtKdSQR4AF`
 A :t:`type` is subject to :t:`visible emptiness` as follows:
 
@@ -2660,6 +2637,9 @@ Performing :t:`type inference` may introduce a requirement that some :t:`type`
 must implement a :t:`trait`, or that a :t:`type` or :t:`lifetime` must outlive
 some other :t:`lifetime`. Such requirements are referred to as
 :dt:`[obligation]s` and are detailed in the inference rules below.
+
+:dp:`fls_s1m7q5t2v8wn`
+The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
 
 :dp:`fls_9dSltJ6U98Fo`
 If insufficient :t:`type` information is available at the time an
@@ -3161,6 +3141,10 @@ A :t:`trait` is :dt:`object safe` when:
 * :dp:`fls_vmLLL82EQasI`
   Its :t:`[associated type]s` specify a :std:`core::marker::Sized`
   :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
+
+:dp:`fls_lj7492aq7fzo`
+An :dt:`associated function` is a :t:`function` that appears as an
+:t:`associated item`.
 
 :dp:`fls_uixekv82g2e5`
 An :t:`associated function` is :t:`object safe` when it is either an
@@ -3683,6 +3667,10 @@ the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
 An :t:`elided` :t:`lifetime` of a :t:`reference type` or :t:`path` in the
 :t:`type specification` of a :t:`constant` or :t:`static` is inferred to be the
 ``'static'`` lifetime.
+
+:dp:`fls_l3iwn56n1uz8`
+An :dt:`associated implementation constant` is an :t:`associated constant` that
+appears within an :t:`implementation`.
 
 :dp:`fls_37udexenqv3p`
 The :t:`lifetime` of an :t:`associated implementation constant` shall not be

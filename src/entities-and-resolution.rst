@@ -524,6 +524,11 @@ Generic Parameter Scope
 :dp:`fls_amoh8r4gghyj`
 A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
+:dp:`fls_3nqb7p5ifvio`
+A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+:t:`[lifetime parameter]s` and :t:`[type]s` that have
+to hold for the :dt:`construct` subject to the :t:`where clause` to be valid.
+
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
 

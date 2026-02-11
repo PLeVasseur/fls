@@ -723,6 +723,9 @@ The :t:`type` of a :t:`block expression` is determined as follows:
 * :dp:`fls_u0avbm147nyh`
   Otherwise the :t:`type` is the :t:`unit type`.
 
+:dp:`fls_y6c2p9k4m1ra`
+The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
+
 :dp:`fls_1hzup0sf8l7l`
 The :t:`value` of a :t:`block expression` is determined as follows:
 
@@ -2193,6 +2196,10 @@ The ``TypeSpecificationWithoutBounds`` describes the :dt:`target type` of the
 A :t:`type cast expression` with the following characteristics performs a
 :dt:`specialized cast`:
 
+:dp:`fls_buyaqara7am4`
+A :dt:`value` is either a :t:`literal` or the result of a computation, that may
+be stored in a memory location, and interpreted based on some :t:`type`.
+
 * :dp:`fls_4s69s9pcvbn7`
   An :t:`operand` of a :t:`numeric type` and a target :t:`numeric type` perform
   a :t:`numeric cast`.
@@ -2398,10 +2405,6 @@ of a :t:`value operand` to an :t:`assignee operand`.
 :dp:`fls_1m8q0t2y6b9v`
 For :dt:`assignment`, see :t:`assignment expression`.
 
-:dp:`fls_bsjw6f4a3wol`
-An :dt:`assignee operand` is the target :t:`operand` of an
-:t:`assignment expression`.
-
 :dp:`fls_uinh05sslxeo`
 A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
 assigned to an :t:`assignee operand` by an :t:`assignment expression`.
@@ -2460,6 +2463,10 @@ Destructuring Assignment
 A :dt:`destructuring assignment` is an :t:`assignment expression` where
 the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
 expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
+
+:dp:`fls_bsjw6f4a3wol`
+An :dt:`assignee operand` is the target :t:`operand` of an
+:t:`assignment expression`.
 
 :dp:`fls_z8c3b9s9de3x`
 The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
@@ -2615,6 +2622,10 @@ A :dt:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
+:dp:`fls_dvy201zd6oym`
+An :dt:`assigned operand` is the target :t:`operand` of a
+:t:`compound assignment expression`.
+
 :dp:`fls_Z6ch8bZOzgxq`
 A :dt:`compound assignment` is a :t:`compound assignment expression`.
 
@@ -2657,10 +2668,6 @@ A :dt:`shift right assignment expression` is a
 :dp:`fls_7l7v7vigw3fu`
 A :dt:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
-
-:dp:`fls_dvy201zd6oym`
-An :dt:`assigned operand` is the target :t:`operand` of a
-:t:`compound assignment expression`.
 
 :dp:`fls_UDyCznokIYFo`
 An :dt:`addition assignment` is an :t:`addition assignment expression`.
@@ -2953,6 +2960,9 @@ Array Expressions
 
 :dp:`fls_ya9res33oxt6`
 An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
+
+:dp:`fls_xmmgSHsTHDtc`
+An :dt:`array` is a :t:`value` of an :t:`array type`.
 
 :dp:`fls_fwtd3b10veiw`
 An :dt:`array element constructor` is an :t:`array expression` that lists all
@@ -3483,6 +3493,10 @@ A :dt:`callee type` is either a :t:`function item type`, a
 :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
 :t:`[trait]s`.
 
+:dp:`fls_5dd7icjcl3nt`
+An :dt:`unsafe function pointer type` is a :t:`function pointer type` subject to
+:t:`keyword` ``unsafe``.
+
 :dp:`fls_bu6i3mcvnbin`
 The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
 :t:`function`, the :t:`type` of the :t:`tuple enum variant` or the
@@ -3715,6 +3729,10 @@ Field Access Expressions
 A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
+:dp:`fls_jb6krd90tjmc`
+An :dt:`unsafe context` is either an :t:`unsafe block` or an
+:t:`unsafe function`.
+
 :dp:`fls_s2vpn4ihenpe`
 A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
@@ -3834,6 +3852,10 @@ The :dt:`return type` of a :t:`closure type` is determined as follows:
 
 * :dp:`fls_wLVeE6cNG8oa`
   Otherwise the :t:`return type` is the :t:`type` of the :t:`closure body`.
+
+:dp:`fls_3aKZB0ILIkZw`
+An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
+:t:`function` :t:`return type`.
 
 :dp:`fls_DSy7bPKGzyov`
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.

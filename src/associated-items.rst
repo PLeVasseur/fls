@@ -28,14 +28,6 @@ Associated Items
 An :dt:`associated item` is an :t:`item` that appears within an
 :t:`implementation` or a :t:`trait`.
 
-:dp:`fls_5y6ae0xqux57`
-An :dt:`associated constant` is a :t:`constant` that appears as an
-:t:`associated item`.
-
-:dp:`fls_lj7492aq7fzo`
-An :dt:`associated function` is a :t:`function` that appears as an
-:t:`associated item`.
-
 :dp:`fls_8cz4rdrklaj4`
 An :dt:`associated type` is a :t:`type alias` that appears as an
 :t:`associated item`.
@@ -80,10 +72,6 @@ or :c:`Self` and ``'lifetime`` is the :t:`lifetime parameter`, when
 
 * :dp:`fls_AtItgS1UvwiX`
   The intersection of all such uses is not empty.
-
-:dp:`fls_l3iwn56n1uz8`
-An :dt:`associated implementation constant` is an :t:`associated constant` that
-appears within an :t:`implementation`.
 
 :dp:`fls_4ftfefcotb4g`
 An :t:`associated implementation constant` shall have a :t:`constant

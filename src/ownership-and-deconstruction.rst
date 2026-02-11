@@ -36,6 +36,10 @@ Initialization
 :dt:`Initialization` is the act of supplying an initial :t:`value` to a
 :t:`variable`.
 
+:dp:`fls_hl5tnd9yy252`
+A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
+stack.
+
 :dp:`fls_wnhci8phdu4m`
 When a :t:`variable` holds a :t:`value`, the :t:`variable` is considered to be
 :dt:`initialized`.

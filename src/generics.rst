@@ -277,11 +277,6 @@ Where Clauses
 
 .. rubric:: Legality Rules
 
-:dp:`fls_3nqb7p5ifvio`
-A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
-:t:`[lifetime parameter]s` and :t:`[type]s` that have
-to hold for the :dt:`construct` subject to the :t:`where clause` to be valid.
-
 :dp:`fls_fhy4rsmmbvyy`
 A :dt:`where clause predicate` is either a :t:`lifetime bound predicate` or a
 :t:`type bound predicate`.
