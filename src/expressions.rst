@@ -925,6 +925,10 @@ An :dt:`unsafe block` is an :t:`unsafe block expression`.
 An :dt:`unsafe block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``unsafe``.
 
+:dp:`fls_8kqo952gjhaf`
+:dt:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
+implementation]s` in program text.
+
 :dp:`fls_5ucvvja4dzoc`
 An :t:`unsafe block expression` allows :t:`unsafety`.
 
@@ -2415,10 +2419,6 @@ of a :t:`value operand` to an :t:`assignee operand`.
 :dp:`fls_1m8q0t2y6b9v`
 For :dt:`assignment`, see :t:`assignment expression`.
 
-:dp:`fls_uinh05sslxeo`
-A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
-assigned to an :t:`assignee operand` by an :t:`assignment expression`.
-
 :dp:`fls_qengy157fa4a`
 The :t:`type` of an :t:`assignment expression` is the :t:`unit type`.
 
@@ -2482,6 +2482,10 @@ expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
 :dp:`fls_bsjw6f4a3wol`
 An :dt:`assignee operand` is the target :t:`operand` of an
 :t:`assignment expression`.
+
+:dp:`fls_uinh05sslxeo`
+A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+assigned to an :t:`assignee operand` by an :t:`assignment expression`.
 
 :dp:`fls_z8c3b9s9de3x`
 The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
