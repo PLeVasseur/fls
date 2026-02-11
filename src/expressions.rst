@@ -325,7 +325,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :dt:`static initializer` of a :t:`static`.
+  The :t:`static initializer` of a :t:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -465,7 +465,7 @@ location can be modified. The following :t:`[place expression]s` are
   :t:`mutable place expression`,
 
 * :dp:`fls_ilaqmj3hc5uv`
-  A :t:`path expression` that resolves to a :dt:`mutable static`,
+  A :t:`path expression` that resolves to a :t:`mutable static`,
 
 * :dp:`fls_m0gbw9myylv2`
   A :t:`path expression` that resolves to a :t:`mutable variable` that is not
@@ -506,7 +506,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The initialization :t:`expression` of a :t:`let statement`,
 
 * :dp:`fls_jLZlxIHr4w2v`
-  The :t:`operand` of an :dt:`implicit borrow`,
+  The :t:`operand` of an :t:`implicit borrow`,
 
 * :dp:`fls_giZ7w1G02JSg`
   The :dt:`indexed operand` of an :t:`index expression`,
@@ -1169,7 +1169,7 @@ The :t:`type` of a :t:`dereference expression` is determined as follows:
   ``*const T``, then the :t:`type` is ``T``.
 
 * :dp:`fls_y9bc691kkh6v`
-  Otherwise the :t:`type` is :dt:`associated type`
+  Otherwise the :t:`type` is :t:`associated type`
   :std:`core::ops::Deref::Target`.
 
 :dp:`fls_gw49nukfveib`
@@ -1460,7 +1460,7 @@ specified by a :t:`trait`.
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
 implement the :std:`core::ops::Add` :t:`trait` with the :t:`type` of the
-:dt:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
+:dt:`right operand` as the :t:`trait implementation` :t:`type parameter`.
 
 :dp:`fls_vk17mfv47wk9`
 The :t:`type` of an :t:`addition expression` is :t:`associated type`
@@ -3492,7 +3492,7 @@ A :t:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_q1m7v9b3k5ha`
-A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
 :dp:`fls_g6t2n8c5p4xy`
 A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
@@ -3502,7 +3502,7 @@ An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_m8n4t5c1k0pz`
-A :dt:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
+A :t:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
 :t:`function trait` calls.
 
 :dp:`fls_7ql1c71eidg8`
@@ -3991,7 +3991,7 @@ A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_1MTa81vtePN8`
-A :dt:`label` is the :t:`name` of a :t:`loop expression` or a
+A :t:`label` is the :t:`name` of a :t:`loop expression` or a
 :t:`named block expression`.
 
 :dp:`fls_eg93m93gvwal`
@@ -5056,7 +5056,7 @@ Await Expressions
 
 :dp:`fls_sjz5s71hwm7l`
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the :t:`execution` of the :dt:`future` until the :t:`future` is ready.
+suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
@@ -5307,7 +5307,7 @@ the :t:`capturing environment`.
 
 :dp:`fls_aCxt2Ovmb5He`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by immutable reference capture` binds an :dt:`immutable reference` to the
+:dt:`by immutable reference capture` binds an :t:`immutable reference` to the
 :t:`capture target` and passes the :t:`immutable reference` into the
 :t:`capturing environment`.
 
@@ -5364,7 +5364,7 @@ Arithmetic Overflow
 
 :dp:`fls_oFIRXBPXu6Zv`
 An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
-:t:`value` of a :dt:`scalar type` that lies outside of the range of valid
+:t:`value` of a :t:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
 the operation.

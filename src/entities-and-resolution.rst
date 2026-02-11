@@ -1444,7 +1444,7 @@ proceeds as follows:
    For each :t:`dereference type` in the :t:`dereference type chain`
 
    #. :dp:`fls_bsf4hy9x7c2e`
-      For each :dt:`inherent implementation` in the set of
+      For each :t:`inherent implementation` in the set of
       :t:`[inherent implementation]s` of the :t:`dereference type` where the
       :t:`implementing type` :t:`unifies <unify>` with the
       :t:`dereference type`

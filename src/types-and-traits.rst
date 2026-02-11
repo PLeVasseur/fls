@@ -3122,7 +3122,7 @@ A dispatchable :t:`function` is :t:`object safe` when:
 
 * :dp:`fls_k1vc9vd8at92`
   Is a :t:`method` that does not use :c:`Self` in its :t:`function signature`
-  except in the :t:`type` of its :dt:`self parameter` or as the :t:`type` of a
+  except in the :t:`type` of its :t:`self parameter` or as the :t:`type` of a
   :t:`type bound predicate`, and
 
 * :dp:`fls_kqylg31sm5wv`

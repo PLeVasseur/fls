@@ -170,7 +170,7 @@ A :t:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
 :dp:`fls_r2m9k6t1v4pa`
-A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+A :t:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_6c1v8m4p2tqa`
 A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
@@ -1071,7 +1071,7 @@ The position of a :t:`subpattern` is determined as follows:
   * :dp:`fls_w369n8lmwr7g`
     If the :t:`subpattern` succeeds the :s:`RecordStructRestPattern`, then its
     position is the position within the :s:`PatternList` list in right-to-left
-    order, starting from the :dt:`arity` of the :t:`deconstructee` minus one.
+    order, starting from the :t:`arity` of the :t:`deconstructee` minus one.
 
 * :dp:`fls_4is6h95jj3gd`
   Otherwise the position is the position within the :s:`PatternList` in
