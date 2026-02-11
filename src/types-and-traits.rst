@@ -51,7 +51,7 @@ A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
 :dp:`fls_r3g5n7t2k9vq`
-A :dt:`type specification` describes the structure of a :t:`type`.
+A :t:`type specification` describes the structure of a :t:`type`.
 
 :dp:`fls_x4p7m2c9v6qn`
 A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
@@ -578,7 +578,7 @@ An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
 
 :dp:`fls_4sd5dgy2unq7`
-A :dt:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
+A :t:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
 that specifies the length of an :t:`array type`.
 
 :dp:`fls_pkts1p2dnxo`
@@ -786,7 +786,7 @@ possible variations of an :t:`enum`.
 A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_9vlr65nzdwf2`
-A :dt:`record enum variant` is an :t:`enum variant` with a
+A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 :dp:`fls_v1q7n3t5c9xz`
@@ -794,7 +794,7 @@ A :dt:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_h2m9k6p4r7vd`
-A :dt:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
+A :t:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
 :dp:`fls_1PqJYZ5eMNym`
 An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
@@ -949,7 +949,7 @@ A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
 
 :dp:`fls_j9r1c6m3v7kw`
-A :dt:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
+A :t:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 
 :dp:`fls_z4p8t1x6n2qv`
 A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
@@ -1319,7 +1319,7 @@ A :t:`shared reference type` prevents the direct mutation of a referenced
 
 :dp:`fls_15zdiqsm1q3p`
 A :t:`shared reference type` implements the :std:`core::marker::Copy`
-:t:`trait`. Copying a :t:`shared reference` performs a shallow copy.
+:t:`trait`. Copying a :dt:`shared reference` performs a shallow copy.
 
 :dp:`fls_csdjfwczlzfd`
 Releasing a :t:`shared reference` has no effect on the :t:`value` it refers to.
@@ -1691,7 +1691,7 @@ and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
 
 :dp:`fls_1pbwigq6f3ha`
-The :dt:`size` of a :t:`type` is the offset in bytes between successive elements
+The :t:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
@@ -1851,7 +1851,7 @@ of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
 :dp:`fls_qkkc8x2oghst`
 :t:`Type representation` may be specified using :t:`attribute` :c:`[repr]` and
 modified further using :t:`attribute` :c:`[repr]`'s :s:`Alignment`
-:t:`[representation modifier]s`. A :t:`representation modifier` shall apply only
+:dt:`representation modifier`s. A :t:`representation modifier` shall apply only
 to a :t:`struct type` or a :t:`union type` subject to :t:`C representation` or
 :t:`default representation`.
 
@@ -2049,10 +2049,10 @@ ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
 
 :dp:`fls_m4p8k1v7t2qa`
-Two :t:`[type]s` are :dt:`unifiable` when they :t:`unify`.
+Two :t:`[type]s` are :t:`unifiable` when they :t:`unify`.
 
 :dp:`fls_v7k2m9p1t4qa`
-A :dt:`unified type` is a :t:`type` produced by :t:`type unification`.
+A :t:`unified type` is a :t:`type` produced by :t:`type unification`.
 
 :dp:`fls_aie0tr62vhw5`
 Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
@@ -3024,7 +3024,7 @@ Traits
 .. rubric:: Legality Rules
 
 :dp:`fls_tani6lesan9u`
-A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
 :dp:`fls_q9m2v7k1t4pa`
@@ -3160,7 +3160,7 @@ A :t:`trait` is :dt:`object safe` when:
 
 * :dp:`fls_vmLLL82EQasI`
   Its :t:`[associated type]s` specify a :std:`core::marker::Sized`
-  :t:`[trait bound]` for :c:`Self` in a :t:`type bound predicate`.
+  :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
 
 :dp:`fls_uixekv82g2e5`
 An :t:`associated function` is :t:`object safe` when it is either an
@@ -3175,7 +3175,7 @@ A dispatchable :t:`function` is :t:`object safe` when:
 
 * :dp:`fls_k1vc9vd8at92`
   Is a :t:`method` that does not use :c:`Self` in its :t:`function signature`
-  except in the :t:`type` of its :t:`self parameter` or as the :t:`type` of a
+  except in the :t:`type` of its :dt:`self parameter` or as the :t:`type` of a
   :t:`type bound predicate`, and
 
 * :dp:`fls_kqylg31sm5wv`

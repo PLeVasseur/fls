@@ -549,7 +549,7 @@ result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
 A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
-as a :t:`statement`.
+as a :dt:`statement`.
 
 .. rubric:: Examples
 

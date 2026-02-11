@@ -871,7 +871,7 @@ Attribute ``naked``
 .. rubric:: Undefined Behavior
 
 :dp:`fls_0tYMAQY1V55p`
-It is a :t:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
+It is a :dt:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
 
 :dp:`fls_wGbJrz4OpKKb`
 It is a :t:`safety invariant` for the :t:`function body` to :t:`diverge <diverging expression>`.
@@ -1564,7 +1564,7 @@ Attribute ``repr``
 related :t:`type`.
 
 :dp:`fls_8l5b6qxw0c9d`
-A :dt:`representation modifier` is a :t:`construct` that modifies the
+A :t:`representation modifier` is a :t:`construct` that modifies the
 :t:`alignment` of a :t:`type`.
 
 .. rubric:: Examples

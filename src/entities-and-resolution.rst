@@ -391,7 +391,7 @@ A :t:`qualified type` shall resolve to a :t:`type`.
 A :t:`qualified type` shall implement its related :t:`qualifying trait`.
 
 :dp:`fls_7sm3206va03c`
-A :dt:`qualified path expression` is a :t:`path expression` that resolves
+A :t:`qualified path expression` is a :t:`path expression` that resolves
 through a :t:`qualified type`.
 
 :dp:`fls_huynsyx13gsz`
@@ -749,7 +749,7 @@ The :t:`declaration` of a :t:`function` introduces a :t:`binding scope` and a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_9k9hourczbv7`
-The :t:`type specification` of a :t:`function pointer type` introduces a
+The :dt:`type specification` of a :t:`function pointer type` introduces a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_p6wiuhkeypzs`
@@ -1068,7 +1068,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
 :dp:`fls_2bkcn83smy2y`
 A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
-:t:`name` than they are declared with by using a :t:`renaming`.
+:t:`name` than they are declared with by using a :dt:`renaming`.
 
 :dp:`fls_v3a6y2ze44v2`
 A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
@@ -1743,7 +1743,7 @@ in left-to-right order, as follows:
 
   * :dp:`fls_qbmp0blpoxx9`
     If the previous :t:`[path segment]'s` :t:`resolution context` is a
-    :t:`trait` or a :t:`type`, then perform
+    :dt:`trait` or a :t:`type`, then perform
     :t:`path expression resolution implementation candidate lookup` for the
     current :t:`path segment` and that :t:`trait` or :t:`type`.
 

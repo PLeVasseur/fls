@@ -122,7 +122,7 @@ An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`, an
 prevents the mutation of its :t:`referent`.
 
 :dp:`fls_4m2v8k1q9p0s`
-A :dt:`shared reference` is a :t:`value` of a :t:`shared reference type`.
+A :t:`shared reference` is a :t:`value` of a :t:`shared reference type`.
 
 :dp:`fls_fckoj1jh5mrc`
 A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and

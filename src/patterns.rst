@@ -395,7 +395,7 @@ to :t:`attribute` :c:`derive` with arguments :std:`core::cmp::Eq` and
 :std:`core::cmp::PartialEq`.
 
 :dp:`fls_bv9psmitxfuw`
-A :t:`path pattern` expressed as a :t:`qualified path expression` shall refer
+A :t:`path pattern` expressed as a :dt:`qualified path expression` shall refer
 to an :t:`associated constant`.
 
 :dp:`fls_sl47k9oj5p7t`

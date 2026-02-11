@@ -296,7 +296,7 @@ explicitly invokes an :t:`associated trait function` or uses
 :std:`core::ops` :t:`[trait]s`.
 
 :dp:`fls_fmqar6o1bwqk`
-It is a static error if the :t:`size operand` of an
+It is a static error if the :dt:`size operand` of an
 :t:`array repetition constructor` or an :t:`array type` depends on
 :t:`[generic parameter]s`.
 
@@ -431,7 +431,7 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
   :t:`[Path expression]s` that resolve to a :t:`static` or a :t:`variable`.
 
 * :dp:`fls_gv4M0DE3OMwk`
-  A :t:`temporary`.
+  A :dt:`temporary`.
 
 :dp:`fls_ku38h562vfyl`
 A :dt:`mutable place expression` is a :t:`place expression` whose memory
@@ -707,7 +707,7 @@ The :t:`type` of a :t:`block expression` is determined as follows:
 
 * :dp:`fls_ltEygvWDtHXE`
   If the :t:`block expression` contains at least one :t:`break expression` and
-  has a :t:`tail expression`, then the :t:`type` is the :t:`unified type` of
+  has a :t:`tail expression`, then the :t:`type` is the :dt:`unified type` of
   the :t:`[break type]s` of all :t:`[break expression]s` and the :t:`type` of the
   :t:`tail expression`.
 
@@ -1443,7 +1443,7 @@ An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
 implement the :std:`core::ops::Add` :t:`trait` with the :t:`type` of the
-:t:`right operand` as the :t:`trait implementation` :t:`type parameter`.
+:t:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
 
 :dp:`fls_vk17mfv47wk9`
 The :t:`type` of an :t:`addition expression` is :t:`associated type`
@@ -2291,7 +2291,7 @@ The :t:`evaluation` of a :dt:`numeric cast` proceeds as follows:
 
 * :dp:`fls_kc3gwj9x3jnr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
-  of the same :t:`size` has no effect.
+  of the same :dt:`size` has no effect.
 
 * :dp:`fls_76eq3bd6birr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
@@ -2975,7 +2975,7 @@ The :t:`size operand` shall be a :t:`constant expression`.
 
 :dp:`fls_by21pey7k423`
 The :t:`[type]s` of the :t:`[operand]s` of an :t:`array element constructor`
-shall be :t:`unifiable`.
+shall be :dt:`unifiable`.
 
 :dp:`fls_x2xu2pynxy1u`
 If the :t:`size operand` is greater than one, then the :t:`type` of the
@@ -3321,7 +3321,7 @@ The :t:`value` of a :t:`struct expression` is the :t:`enum value`,
 :t:`struct value`, or :t:`union value` in construction.
 
 :dp:`fls_ccqomsereni2`
-If the :t:`constructee` is a :t:`record enum variant` or a :t:`record struct`,
+If the :t:`constructee` is a :dt:`record enum variant` or a :t:`record struct`,
 then
 
 * :dp:`fls_pivpdyr4seez`
@@ -3457,7 +3457,7 @@ Call Expressions
 
 :dp:`fls_fvgfx17ossd9`
 A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
-constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
+constructs a :dt:`tuple enum variant value` or a :dt:`tuple struct value`.
 
 :dp:`fls_jvz5z3eqxb39`
 An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
@@ -3827,7 +3827,7 @@ An :dt:`async closure type` is the :t:`closure type` defined by an
 :t:`async closure expression`.
 
 :dp:`fls_UgJgur0z6d4a`
-The :t:`return type` of a :t:`closure type` is determined as follows:
+The :dt:`return type` of a :t:`closure type` is determined as follows:
 
 * :dp:`fls_af1WL2mBKMfW`
   If the :t:`closure expression` specifies a :s:`ClosureBodyWithReturnType`, then the :t:`return type` is the specified :s:`ReturnTypeWithoutBounds`.

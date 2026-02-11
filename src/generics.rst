@@ -102,7 +102,7 @@ A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
 except for the ``'static`` :t:`lifetime`.
 
 :dp:`fls_95eooah0vcqx`
-A :dt:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
 :dp:`fls_ahCqtkh0m5sR`
 A :dt:`type parameter initializer` is a :t:`construct` that provides the
@@ -291,7 +291,7 @@ A :dt:`lifetime bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` on a :t:`lifetime parameter`.
 
 :dp:`fls_cslGPmVjujHD`
-A :dt:`type bound predicate` is a :t:`construct` that specifies
+A :t:`type bound predicate` is a :t:`construct` that specifies
 :t:`[lifetime bound]s` and :t:`[trait bound]s` on a :t:`type`.
 
 :dp:`fls_ytk74dyxuy6d`

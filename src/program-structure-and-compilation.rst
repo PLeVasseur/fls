@@ -178,7 +178,7 @@ A :dt:`crate import` specifies a required dependency on an external :t:`crate`.
 A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
 
 :dp:`fls_2v7k7p4v0xra`
-A :dt:`renaming` provides an alternative :t:`name` for an existing name.
+A :t:`renaming` provides an alternative :t:`name` for an existing name.
 
 :dp:`fls_ft860vkz0lkc`
 A :t:`crate import` binds an external :t:`crate` to its :t:`crate indication`.

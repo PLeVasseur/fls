@@ -68,7 +68,7 @@ A :dt:`function parameter` is a :t:`construct` that yields a set of
 site of a :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_ymeo93t4mz4`
-A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
 ``self``.
 
 :dp:`fls_ijbt4tgnl95n`
@@ -138,7 +138,7 @@ A :t:`variadic function` shall specify one of the following :t:`[ABI]s`:
   ``extern "win64-unwind"``
 
 :dp:`fls_vljy4mm0zca2`
-A :dt:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
+A :t:`return type` is the :t:`type` of the result a :t:`function`, :t:`closure type` or :t:`function pointer type` returns.
 
 :dp:`fls_EqJb3Jl3vK8K`
 The :t:`return type` of a :t:`function` is determined as follows:

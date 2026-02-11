@@ -18,7 +18,7 @@ Unsafety
 implementation]s` in program text.
 
 :dp:`fls_9k2m4p7q1v6n`
-A :dt:`safety invariant` is an invariant that when violated may result in
+A :t:`safety invariant` is an invariant that when violated may result in
 :t:`undefined behavior`.
 
 :dp:`fls_M4Q4vAJmapq8`
