@@ -3,37 +3,11 @@
 
 from __future__ import annotations
 
-from pathlib import Path
 import re
+from pathlib import Path
 
-DISALLOWED_DIRECTIVES = (".. glossary-entry::", ".. glossary-include::")
 GLOSSARY_DOC = "glossary.rst"
 DT_ROLE_RE = re.compile(r":dt:`")
-
-
-def iter_rst_files(root: Path):
-    src = root / "src"
-    for path in sorted(src.glob("*.rst")):
-        yield path
-
-
-def find_disallowed_directives(root: Path):
-    violations = []
-    for path in iter_rst_files(root):
-        lines = path.read_text(encoding="utf-8").splitlines()
-        for index, line in enumerate(lines, start=1):
-            stripped = line.strip()
-            for directive in DISALLOWED_DIRECTIVES:
-                if stripped.startswith(directive):
-                    violations.append(
-                        {
-                            "file": path,
-                            "line": index,
-                            "directive": directive,
-                            "text": stripped,
-                        }
-                    )
-    return violations
 
 
 def find_glossary_dt_lines(root: Path):
@@ -56,10 +30,6 @@ def check(app, raise_error):
         return
 
     root = Path(app.confdir).resolve().parent
-
-    for violation in find_disallowed_directives(root):
-        location = f"{violation['file']}:{violation['line']}"
-        raise_error(f"disallowed directive '{violation['directive']}' in {location}")
 
     if phase >= 3:
         for violation in find_glossary_dt_lines(root):

@@ -2182,7 +2182,8 @@ A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
 
 :dp:`fls_99kvyh4puy57`
-A :dt:`cast` is the process of changing the :t:`type` of an :t:`expression`.
+A :dt:`cast` or :dt:`casting` is the process of changing the :t:`type` of an
+:t:`expression`.
 
 :dp:`fls_a6midh2m0w0b`
 The ``TypeSpecificationWithoutBounds`` describes the :dt:`target type` of the
