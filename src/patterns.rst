@@ -1137,6 +1137,9 @@ A :t:`tuple pattern` is an :t:`irrefutable pattern` when all of its
 The :t:`type` of a :t:`tuple pattern` is the :t:`type` of the :t:`tuple` being
 destructured.
 
+:dp:`fls_v7c3y1q9m2bx`
+A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
+
 :dp:`fls_6WCm0Ra8NQl4`
 A :t:`subpattern` of a :t:`tuple pattern` matches a :t:`tuple field` of the
 :t:`tuple type` when its position and the position of the :t:`tuple field` in

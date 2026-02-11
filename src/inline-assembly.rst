@@ -704,6 +704,10 @@ A :dt:`const register expression` is an :t:`expression` that is evaluated at com
 An :dt:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
+:dp:`fls_pydmv629vfuu`
+An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+in a :t:`simple register expression`.
+
 :dp:`fls_aniw4ehsn2kb`
 A :dt:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.

@@ -46,15 +46,8 @@ Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4rhjpdu4zfqj`
-A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
-those :t:`[value]s`.
-
 :dp:`fls_r3g5n7t2k9vq`
 A :t:`type specification` describes the structure of a :t:`type`.
-
-:dp:`fls_x4p7m2c9v6qn`
-A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
 
 :dp:`fls_0yaYKnFrJkhG`
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
@@ -690,12 +683,6 @@ Tuple Types
 A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
 
-:dp:`fls_m8n4t5c1k0pz`
-A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
-
-:dp:`fls_v7c3y1q9m2bx`
-A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.
-
 :dp:`fls_h7v2m9q3k1zp`
 A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
 
@@ -780,10 +767,6 @@ possible variations of an :t:`enum`.
 :dp:`fls_9vlr65nzdwf2`
 A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
-
-:dp:`fls_v1q7n3t5c9xz`
-A :dt:`tuple enum variant` is an :t:`enum variant` with a
-:s:`TupleStructFieldList`.
 
 :dp:`fls_YERnNZiSdCRn`
 A :dt:`field list` is a :s:`RecordStructFieldList` or a
@@ -934,20 +917,11 @@ A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
 :dp:`fls_9m52m0px5y0r`
 A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
 
-:dp:`fls_q1m7v9b3k5ha`
-A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
-
-:dp:`fls_g6t2n8c5p4xy`
-A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
-
 :dp:`fls_j9r1c6m3v7kw`
 A :t:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 
 :dp:`fls_z4p8t1x6n2qv`
 A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
-
-:dp:`fls_4q6m9t1w7zpa`
-A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
 
 :dp:`fls_x2k7m9p1v5qa`
 A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
@@ -1018,9 +992,6 @@ A :dt:`union` is an :t:`item` that declares a :t:`union type`.
 :dp:`fls_nskmnzq95yqm`
 A :dt:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
-
-:dp:`fls_q7v2m9t4k1pa`
-A :dt:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_p2m7v9k1t4qa`
 A :dt:`union field` is a :t:`field` of a :t:`union type`.
@@ -1132,10 +1103,6 @@ identifies a :t:`function`.
 :dp:`fls_sas3ahcshnrh`
 An :t:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
-
-:dp:`fls_liwnzwu1el1i`
-An :dt:`unsafe function item type` is a :t:`function item type` where the related
-:t:`function` is an :t:`unsafe function`.
 
 :dp:`fls_e9x4f7qxvvjv`
 A :t:`function item type` is coercible to a :t:`function pointer type`.
@@ -2269,6 +2236,10 @@ The following :t:`[expression]s` constitute a
 * :dp:`fls_dgoypa3hcxc0`
   Each :t:`operand` of a :t:`tuple expression`.
 
+:dp:`fls_4rhjpdu4zfqj`
+A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
+those :t:`[value]s`.
+
 :dp:`fls_h8dkehit8rza`
 :t:`Type coercion` from a source :t:`type` to a target :t:`type` is allowed to
 occur when:
@@ -2324,6 +2295,10 @@ occur when:
 
 * :dp:`fls_SYnFJBhi0IWj`
   The source :t:`type` is a :t:`trait object type` and the target :t:`type` is a :t:`trait object type` with the same or no :t:`principal trait`, and the target :t:`type` has the same or less non-:t:`principal trait` :t:`[trait bound]s`.
+
+* :dp:`fls_CYtxPjK3zq2T`
+  A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
+  implement.
 
 * :dp:`fls_QB4c6FNKxaPl`
   The source :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``T``
@@ -3007,17 +2982,9 @@ Traits
 A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
-:dp:`fls_q9m2v7k1t4pa`
-An :dt:`unsafe trait` is a :t:`trait` declared with :t:`keyword` ``unsafe``.
-
 :dp:`fls_u2XiDIAk6tQz`
 A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
 the compiler.
-
-:dp:`fls_PiAR1B26SoZV`
-A :dt:`trait body` is a :t:`construct` that encapsulates the
-:t:`[associated item]s`, :t:`[inner attribute]s`, and
-:t:`[inner doc comment]s` of a :t:`trait`.
 
 :dp:`fls_Y28596CVBzDG`
 :dt:`Self` is either an implicit :t:`type parameter` in :t:`[trait]s` or an
@@ -3029,10 +2996,6 @@ A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 :dp:`fls_I9JaKZelMiby`
 A :dt:`subtrait` is a :t:`trait` with a :t:`supertrait`.
-
-:dp:`fls_CYtxPjK3zq2T`
-A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
-implement.
 
 :dp:`fls_ytn5cdonytyn`
 A :t:`subtrait` shall not be its own :t:`supertrait`.

@@ -870,6 +870,9 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   :t:`Fragment specifier` **pat_param** requires a
   :t:`pattern-without-alternation`.
 
+:dp:`fls_h2zikgmazoxx`
+A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
+
 * :dp:`fls_3zdts0fsa36u`
   :t:`Fragment specifier` **path** requires a :t:`type path`.
 
@@ -1083,6 +1086,9 @@ them is a property that aims to eliminate the syntactic interference between a
 :dp:`fls_3axjf28xb1nt`
 :t:`hygiene` is categorized as follows:
 
+:dp:`fls_94TOYfoplm4f`
+An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
+
 * :dp:`fls_dz2mvodl818d`
   :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
@@ -1103,9 +1109,6 @@ them is a property that aims to eliminate the syntactic interference between a
 
 :dp:`fls_4bTKuwDSu5FJ`
 An :t:`identifier` is :t:`hygienic` when it has :t:`definition site hygiene`.
-
-:dp:`fls_94TOYfoplm4f`
-An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
 
 :dp:`fls_jGq0s5E0T9fd`
 An :t:`identifier` is :dt:`partially hygienic` when it has

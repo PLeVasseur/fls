@@ -190,9 +190,6 @@ External Blocks
 An :dt:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
 
-:dp:`fls_8ltVLtAfvy0m`
-An :dt:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
-
 :dp:`fls_Nz0l16hMxqTd`
 The :t:`ABI` of an :t:`external block` is determined as follows:
 
@@ -226,6 +223,10 @@ External Functions
 
 :dp:`fls_v24ino4hix3m`
 An :t:`external function` is an unchecked import of a foreign :t:`function`.
+
+:dp:`fls_8ltVLtAfvy0m`
+An :dt:`unsafe external block` is an :t:`external block` subject to keyword
+``unsafe``.
 
 :dp:`fls_l88r9fj82650`
 An :t:`external function` shall be invoked from an :t:`unsafe context` unless it is defined in an :t:`unsafe external block` and subject to :s:`ItemSafety` with keyword ``safe``.

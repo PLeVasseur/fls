@@ -21,14 +21,14 @@ chapter.
 Character Set
 -------------
 
-:dp:`fls_itcth8292ud6`
-The program text of a Rust program is written using the :t:`Unicode` character
-set.
-
 :dp:`fls_m2v7k1p9t4qa`
 :dt:`Unicode` is the universal character encoding standard for written
 characters and text described in the Unicode Standard by the Unicode
 Consortium.
+
+:dp:`fls_itcth8292ud6`
+The program text of a Rust program is written using the :t:`Unicode` character
+set.
 
 :dp:`fls_4h2v3pk7qz6n`
 In :t:`Unicode`, a :t:`code point` is a numeric :t:`value` that maps to a

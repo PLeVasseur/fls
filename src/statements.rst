@@ -93,6 +93,9 @@ token ``}``.
 :dp:`fls_iB25BeFys0j8`
 The :t:`expected type` of the :t:`pattern` of the :t:`let statement` is determined as follows:
 
+:dp:`fls_x4p7m2c9v6qn`
+A :dt:`type ascription` specifies the :t:`type` of a :t:`construct`.
+
 * :dp:`fls_zObyLdya4DYc`
   If the :t:`let statement` lacks a :t:`type ascription` and a :t:`let initializer`, then the :t:`expected type` is the :t:`inferred type`.
 

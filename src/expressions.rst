@@ -654,6 +654,9 @@ A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :t:`tuple struct`, a :t:`unit enum variant`, a :t:`unit struct`, or a
 :t:`variable`.
 
+:dp:`fls_4q6m9t1w7zpa`
+A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
 :t:`unsafe context`.
@@ -1445,6 +1448,10 @@ An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression
 
 :dp:`fls_kr8Opj3c7uvb`
 An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
+
+:dp:`fls_ry3an0mwb63g`
+A :dt:`trait implementation` is an :t:`implementation` that adds functionality
+specified by a :t:`trait`.
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
@@ -2463,6 +2470,10 @@ Destructuring Assignment
 
 .. rubric:: Legality Rules
 
+:dp:`fls_QpBu34U6hXn9`
+A :dt:`tuple struct call expression` is a :t:`call expression` where the
+:t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
+
 :dp:`fls_2eheo4yo2orm`
 A :dt:`destructuring assignment` is an :t:`assignment expression` where
 the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
@@ -2878,10 +2889,6 @@ Underscore Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_pydmv629vfuu`
-An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
-in a :t:`destructuring assignment`.
-
 :dp:`fls_wms3dbwjwyu4`
 An :t:`underscore expression` shall appear in the :t:`assigned operand` of a
 :t:`destructuring assignment`.
@@ -3255,6 +3262,9 @@ Struct Expressions
 A :t:`struct expression` is an :t:`expression` that constructs an
 :dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
 
+:dp:`fls_q7v2m9t4k1pa`
+A :dt:`union value` is a :t:`value` of a :t:`union type`.
+
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
@@ -3473,9 +3483,23 @@ Call Expressions
 A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :dt:`tuple enum variant value` or a :dt:`tuple struct value`.
 
+:dp:`fls_v1q7n3t5c9xz`
+A :dt:`tuple enum variant` is an :t:`enum variant` with a
+:s:`TupleStructFieldList`.
+
+:dp:`fls_q1m7v9b3k5ha`
+A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_g6t2n8c5p4xy`
+A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+
 :dp:`fls_jvz5z3eqxb39`
 An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
+
+:dp:`fls_m8n4t5c1k0pz`
+A :dt:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
+:t:`function trait` calls.
 
 :dp:`fls_7ql1c71eidg8`
 A :dt:`call operand` is the :t:`function` being invoked or the
@@ -3486,16 +3510,16 @@ by a :t:`call expression`.
 An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
 adjustments required by :t:`call resolution`.
 
-:dp:`fls_QpBu34U6hXn9`
-A :dt:`tuple struct call expression` is a :t:`call expression` where the
-:t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
-
 :dp:`fls_4t6imtiw6kzt`
 A :dt:`callee type` is either a :t:`function item type`, a
 :t:`function pointer type`, a :t:`tuple enum variant`, a
 :t:`tuple struct type`, or a :t:`type` that implements any of the
 :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
 :t:`[trait]s`.
+
+:dp:`fls_liwnzwu1el1i`
+An :dt:`unsafe function item type` is a :t:`function item type` where the related
+:t:`function` is an :t:`unsafe function`.
 
 :dp:`fls_5dd7icjcl3nt`
 An :dt:`unsafe function pointer type` is a :t:`function pointer type` subject to

@@ -366,9 +366,6 @@ An :dt:`unqualified path expression` is a :t:`path expression` without a
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.
 
-:dp:`fls_h2zikgmazoxx`
-A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
-
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
 
@@ -551,6 +548,11 @@ related :t:`[field]s` and :t:`where clause`.
 :dp:`fls_y8j4isk9libl`
 A :t:`generic parameter` of a :t:`trait` is :t:`in scope` within the related
 :t:`trait body` and :t:`where clause`.
+
+:dp:`fls_PiAR1B26SoZV`
+A :dt:`trait body` is a :t:`construct` that encapsulates the
+:t:`[associated item]s`, :t:`[inner attribute]s`, and
+:t:`[inner doc comment]s` of a :t:`trait`.
 
 :dp:`fls_ow5ih7q3xxfx`
 A :t:`generic parameter` of a :t:`trait bound` is :t:`in scope` within the
