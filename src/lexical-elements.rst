@@ -31,7 +31,7 @@ The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
 :dp:`fls_4h2v3pk7qz6n`
-In :t:`Unicode`, a :t:`code point` is a numeric :t:`value` that maps to a
+In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
 character.
 
 :dp:`fls_6n9y0qb5t2mc`
@@ -1059,6 +1059,10 @@ A :dt:`float literal` is a :t:`numeric literal` that denotes a fractional number
 :dp:`fls_2ru1zyrykd37`
 A :dt:`float suffix` is a component of a :t:`float literal` that specifies an
 explicit :t:`floating-point type`.
+
+:dp:`fls_wb014floattype`
+A :dt:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+fractional numbers.
 
 :dp:`fls_21mhnhplzam7`
 A :dt:`suffixed float` is a :t:`float literal` with a :t:`float suffix`.

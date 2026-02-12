@@ -305,6 +305,10 @@ A :dt:`constant context` is a :t:`construct` that requires a
 :t:`constant expression`. The following :t:`[construct]s` are
 :t:`[constant context]s`:
 
+:dp:`fls_wb010assocconst`
+An :dt:`associated constant` is a :t:`constant` that appears as an
+:t:`associated item`.
+
 * :dp:`fls_ljc6jq5ksbcs`
   The :dt:`constant initializer` of an :t:`associated constant` or a
   :dt:`constant`,
@@ -437,6 +441,10 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
 A :dt:`mutable place expression` is a :t:`place expression` whose memory
 location can be modified. The following :t:`[place expression]s` are
 :t:`[mutable place expression]s`:
+
+:dp:`fls_wb006containerop`
+A :dt:`container operand` is an :t:`operand` that indicates the :t:`value`
+whose :t:`field` is selected in a :t:`field access expression`.
 
 * :dp:`fls_1tq2o2huda9l`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` implements the
@@ -656,6 +664,13 @@ A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 
 :dp:`fls_4q6m9t1w7zpa`
 A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+
+:dp:`fls_wb001fieldlist`
+A :dt:`field list` is a :s:`RecordStructFieldList` or :s:`TupleStructFieldList`.
+
+:dp:`fls_wb017unsafecontext`
+An :dt:`unsafe context` is either an :t:`unsafe block` or an
+:t:`unsafe function`.
 
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
@@ -1550,7 +1565,7 @@ The :t:`evaluation` of an :t:`addition expression` proceeds as follows:
 
 #. :dp:`fls_NcLf4o1dpniS`
    If the :t:`type` of both :t:`[operand]s` is the same :t:`integer type` or
-   :dt:`floating-point type`, then the :t:`addition expression` evaluates to the
+   :t:`floating-point type`, then the :t:`addition expression` evaluates to the
    sum of the :t:`[operand]s`, following the rules of unsigned integer addition
    for :t:`[unsigned integer type]s`, two's complement addition for
    :t:`[signed integer type]s`, or floating-point addition for
@@ -2234,7 +2249,7 @@ A :t:`type cast expression` with the following characteristics performs a
 
   * :dp:`fls_eb00s8fxlvjb`
     Convert an :t:`operand` of :t:`type` :c:`char` to the :t:`value` of the
-    corresponding :dt:`code point`, followed by a :t:`numeric cast`.
+    corresponding :t:`code point`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_qk5trk8wkvxb`
   An :t:`operand` of :t:`type` :c:`u8` and a target :t:`type` :c:`char` performs
@@ -2308,7 +2323,7 @@ The :t:`evaluation` of a :dt:`numeric cast` proceeds as follows:
 
 * :dp:`fls_kc3gwj9x3jnr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
-  of the same :dt:`size` has no effect.
+  of the same :t:`size` has no effect.
 
 * :dp:`fls_76eq3bd6birr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
@@ -3651,7 +3666,7 @@ A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
-A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
@@ -3758,7 +3773,7 @@ A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_jb6krd90tjmc`
-An :dt:`unsafe context` is either an :t:`unsafe block` or an
+An :t:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 :dp:`fls_s2vpn4ihenpe`

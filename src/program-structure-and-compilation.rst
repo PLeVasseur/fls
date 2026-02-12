@@ -207,7 +207,7 @@ Compilation Roots
 .. rubric:: Legality Rules
 
 :dp:`fls_fhiqvgdamq5`
-A :t:`crate root module` is the root of the nested :t:`module` tree of a
+A :dt:`crate root module` is the root of the nested :t:`module` tree of a
 :t:`crate`.
 
 :dp:`fls_1NrcosNZJu5V`

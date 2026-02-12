@@ -146,6 +146,10 @@ a particular kind and bind its :t:`value` to a name for use during
 :dp:`fls_4zdait30exvn`
 A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
 
+:dp:`fls_wb005variable`
+A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
+stack.
+
 :dp:`fls_2HguXbL7DjKH`
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :t:`macro rule` of the :t:`macro matcher` it is declared in.
@@ -334,6 +338,10 @@ Function-like Macros
 :dp:`fls_utd3zqczix`
 A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream of
 :t:`[token]s` and produces a stream of :t:`[token]s`.
+
+:dp:`fls_wb002typespec`
+A :dt:`type specification` is a construct that describes the structure of a
+:t:`type`.
 
 :dp:`fls_ojr30lf6jfx0`
 The :t:`macro implementation function` of a :t:`function-like macro` shall be

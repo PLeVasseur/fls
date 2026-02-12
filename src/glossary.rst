@@ -7228,7 +7228,7 @@ undefined behavior
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_WpwmltUMQGZa`
-:dt:`Undefined behavior` is a situation that results in an unbounded error.
+:dt:`undefined behavior` is a situation that results in an unbounded error.
 
 .. _fls_X6XjWwYeTnVR:
 

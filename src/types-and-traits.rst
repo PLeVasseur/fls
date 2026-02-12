@@ -47,14 +47,13 @@ Types
 .. rubric:: Legality Rules
 
 :dp:`fls_r3g5n7t2k9vq`
-A :t:`type specification` describes the structure of a :t:`type`.
+A :dt:`type specification` describes the structure of a :t:`type`.
 
 :dp:`fls_0yaYKnFrJkhG`
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 :dp:`fls_cTF1sJ9I2XJd`
-A :t:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
-:t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
+A :dt:`concrete type` is a :t:`type` described by a :t:`type specification`.
 
 .. _fls_963gsjp2jas2:
 
@@ -346,6 +345,9 @@ Operation ``a <= b`` is equivalent to ``a == b | a < b``.
 :dp:`fls_M4Q4vAJmapq8`
 A :dt:`validity invariant` is an invariant that when violated results in
 immediate :t:`undefined behavior`.
+
+:dp:`fls_wb007undefbehavior`
+:dt:`undefined behavior` is a situation that results in an unbounded error.
 
 .. rubric:: Undefined Behavior
 
@@ -642,6 +644,10 @@ Str Type
 A :dt:`str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
 bytes.
 
+:dp:`fls_wb015safetyinvar`
+A :dt:`safety invariant` is an invariant that when violated may result in
+:t:`undefined behavior`.
+
 :dp:`fls_1xa6fas6laha`
 :t:`Type` :c:`str` is a :t:`dynamically sized type`.
 
@@ -769,7 +775,7 @@ A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 :dp:`fls_YERnNZiSdCRn`
-A :dt:`field list` is a :s:`RecordStructFieldList` or a
+A :t:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_h2m9k6p4r7vd`
@@ -1609,6 +1615,11 @@ Type Layout
 
 :dp:`fls_kdbq02iguzgl`
 All :t:`[value]s` have an :dt:`alignment` and a :t:`size`.
+
+:dp:`fls_wb013size`
+The :dt:`size` of a :t:`value` is the offset in bytes between successive
+elements in an :t:`array type` with the same :t:`element type`, including any
+padding for :t:`alignment`.
 
 :dp:`fls_5kz6p0m2v9nd`
 A :dt:`sized type` is a :t:`type` that implements the
@@ -3628,6 +3639,10 @@ Static Lifetime Elision
 :dp:`fls_l4RDXaFwnQZ6`
 :dt:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
 the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
+
+:dp:`fls_wb018assoctraitconst`
+An :dt:`associated trait constant` is an :t:`associated constant` that appears
+within a :t:`trait`.
 
 :dp:`fls_8irr97rZWfSC`
 An :t:`elided` :t:`lifetime` of a :t:`reference type` or :t:`path` in the
