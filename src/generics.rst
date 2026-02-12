@@ -62,7 +62,7 @@ A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 :dp:`fls_z311nxou9yi3`
-A :dt:`generic implementation` is an :t:`implementation` with
+A :dt:`generic implementation` is an :dt:`implementation` with
 :t:`[generic parameter]s`.
 
 :dp:`fls_0GhOR32Z4j7M`
@@ -433,12 +433,12 @@ Generic Conformance
 :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
 
 :dp:`fls_ltch5eivxgaa`
-A :t:`binding argument` is conformant with an :t:`associated type` when the
+A :dt:`binding argument` is conformant with an :t:`associated type` when the
 supplied :t:`type` of the :t:`binding argument` fulfills the required
 :t:`[trait bound]s` of the :t:`associated type`.
 
 :dp:`fls_gb3mpt5rxjoa`
-A :t:`constant argument` is conformant with a :t:`constant parameter` when
+A :t:`constant argument` is conformant with a :dt:`constant parameter` when
 the :t:`[type]s` of the :t:`constant argument` and the :t:`constant parameter`
 are :t:`unifiable`.
 
@@ -488,7 +488,7 @@ The :t:`value` of a :t:`constant parameter` is determined as follows:
 
 * :dp:`fls_OhVxhJ23x7W2`
   Otherwise, if the :t:`constant parameter` has a
-  :t:`constant parameter initializer`, then the :t:`value` is that of the
+  :dt:`constant parameter initializer`, then the :t:`value` is that of the
   :t:`constant parameter initializer`.
 
 * :dp:`fls_Kyar0jH9BqeW`

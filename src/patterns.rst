@@ -85,7 +85,7 @@ restrictions:
 
 * :dp:`fls_kv533rntni1x`
   Any two :t:`[binding]s` with the same name in the two :t:`[pattern-without-alternation]s` shall have
-  :t:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
+  :dt:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
 
 .. _fls_uh76pw6ykd57:
 
@@ -170,7 +170,7 @@ A :t:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
 :dp:`fls_r2m9k6t1v4pa`
-A :t:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_6c1v8m4p2tqa`
 A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
@@ -376,7 +376,7 @@ A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
 :dp:`fls_5y6ae0xqux57`
-An :t:`associated constant` is a :t:`constant` that appears as an
+An :dt:`associated constant` is a :t:`constant` that appears as an
 :t:`associated item`.
 
 :dp:`fls_xz5otkhogn31`
@@ -391,7 +391,7 @@ When a :t:`path pattern` refers to an :t:`associated constant` or a
 :dp:`fls_zCswsyuitexI`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
 :t:`constant`, the :t:`type` of the :t:`associated constant` or :t:`constant`
-shall be :t:`structurally equal`.
+shall be :dt:`structurally equal`.
 
 :dp:`fls_wJ9f906BlBvg`
 When a :t:`path pattern` refers to an :t:`associated constant` or a
@@ -833,7 +833,7 @@ Record Struct Patterns
 
 :dp:`fls_g6dytd6aq62d`
 A :dt:`record struct pattern` is a :t:`pattern` that matches a
-:t:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
+:dt:`enum variant value`, a :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_3px4oiweg9dm`
 The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
@@ -841,7 +841,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 
 :dp:`fls_mnh35ehva8tx`
 An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
-a :t:`field`.
+a :dt:`field`.
 
 :dp:`fls_p2rjnlbvifaa`
 An :t:`indexed deconstructor` matches a :t:`field` of the :t:`deconstructee`
@@ -1071,7 +1071,7 @@ The position of a :t:`subpattern` is determined as follows:
   * :dp:`fls_w369n8lmwr7g`
     If the :t:`subpattern` succeeds the :s:`RecordStructRestPattern`, then its
     position is the position within the :s:`PatternList` list in right-to-left
-    order, starting from the :t:`arity` of the :t:`deconstructee` minus one.
+    order, starting from the :dt:`arity` of the :t:`deconstructee` minus one.
 
 * :dp:`fls_4is6h95jj3gd`
   Otherwise the position is the position within the :s:`PatternList` in

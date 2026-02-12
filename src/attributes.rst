@@ -824,7 +824,7 @@ It is undefined behavior when :t:`attribute` :c:`track_caller` applies to an
 
 :dp:`fls_ddg0u5lej74x`
 It is undefined behavior when :t:`attribute` :c:`track_caller` is applied to
-an :t:`exported function` but the :t:`external function` it links to is missing
+an :dt:`exported function` but the :t:`external function` it links to is missing
 the :t:`attribute`.
 
 .. rubric:: Examples
@@ -871,7 +871,7 @@ Attribute ``naked``
 .. rubric:: Undefined Behavior
 
 :dp:`fls_0tYMAQY1V55p`
-It is a :t:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
+It is a :dt:`safety invariant` for the :t:`function body` to respect the :t:`ABI` of the function.
 
 :dp:`fls_wGbJrz4OpKKb`
 It is a :t:`safety invariant` for the :t:`function body` to :t:`diverge <diverging expression>`.
@@ -1708,7 +1708,7 @@ Attribute ``type_length_limit``
 :dp:`fls_61vt1r8g51nh`
 :t:`Attribute` :dc:`type_length_limit` sets the maximum number of
 :t:`[generic substitution]s` for :t:`[type parameter]s` when constructing a
-:t:`concrete type`.
+:dt:`concrete type`.
 
 .. rubric:: Examples
 
@@ -2176,7 +2176,7 @@ Attribute ``windows_subsystem``
 
 :dp:`fls_7mzjahvdzpy5`
 :t:`Attribute` :c:`windows_subsystem` shall apply to the :t:`crate root module`
-of a :t:`binary crate`.
+of a :dt:`binary crate`.
 
 :dp:`fls_t3c0t3lcnebk`
 :t:`Attribute` :dc:`windows_subsystem` specifies the subsystem on Windows.

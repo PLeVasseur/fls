@@ -148,7 +148,7 @@ Visibility
 
 :dp:`fls_7kpepal8ghuj`
 :dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
-which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
+which :t:`[module]s` can refer to the :dt:`name` of the :t:`field` or :t:`item`.
 
 :dp:`fls_qo0itr5il1kk`
 :dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
@@ -370,14 +370,14 @@ A :t:`path expression` is subject to :t:`path expression resolution`.
 A :t:`type path` is subject to :t:`type path resolution`.
 
 :dp:`fls_e65q3iz50j6a`
-A :t:`qualifying trait` is a :t:`trait` that imposes a restriction on a
+A :dt:`qualifying trait` is a :t:`trait` that imposes a restriction on a
 :t:`qualified type`.
 
 :dp:`fls_Ai1jN5a8h3Dz`
 A :t:`qualifying trait` shall resolve to a :t:`trait`.
 
 :dp:`fls_ybv0tdu7dnj5`
-A :t:`qualified type` is a :t:`type` that is restricted to a set of
+A :dt:`qualified type` is a :t:`type` that is restricted to a set of
 :t:`[implementation]s` that exhibit :t:`implementation conformance` to a
 :t:`qualifying trait`.
 
@@ -522,9 +522,9 @@ Generic Parameter Scope
 A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
 :dp:`fls_3nqb7p5ifvio`
-A :t:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
 :t:`[lifetime parameter]s` and :t:`[type]s` that have
-to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
+to hold for the :dt:`construct` subject to the :t:`where clause` to be valid.
 
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
@@ -539,7 +539,7 @@ within the related :t:`type specification`.
 
 :dp:`fls_pmo939jw9m1m`
 A :t:`generic parameter` of an :t:`implementation` is :t:`in scope` within the
-related :t:`implementation body` and :t:`where clause`.
+related :dt:`implementation body` and :t:`where clause`.
 
 :dp:`fls_67dtv1z3arbl`
 A :t:`generic parameter` of a :t:`struct type` is :t:`in scope` within the
@@ -550,7 +550,7 @@ A :t:`generic parameter` of a :t:`trait` is :t:`in scope` within the related
 :t:`trait body` and :t:`where clause`.
 
 :dp:`fls_PiAR1B26SoZV`
-A :t:`trait body` is a :t:`construct` that encapsulates the
+A :dt:`trait body` is a :t:`construct` that encapsulates the
 :t:`[associated item]s`, :t:`[inner attribute]s`, and
 :t:`[inner doc comment]s` of a :t:`trait`.
 
@@ -586,7 +586,7 @@ An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 :dp:`fls_huvo0mp2i6fb`
 An :t:`item` declared within the :t:`block expression` of an
-:t:`expression-with-block` is :t:`in scope` within the related
+:dt:`expression-with-block` is :t:`in scope` within the related
 :t:`block expression`.
 
 :dp:`fls_x8r0oppuc1t6`
@@ -756,7 +756,7 @@ The :t:`declaration` of a :t:`function` introduces a :t:`binding scope` and a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_9k9hourczbv7`
-The :t:`type specification` of a :t:`function pointer type` introduces a
+The :dt:`type specification` of a :t:`function pointer type` introduces a
 :t:`generic parameter scope` into the :t:`scope hierarchy`.
 
 :dp:`fls_p6wiuhkeypzs`
@@ -970,7 +970,7 @@ The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
 
 :dp:`fls_atvnwly4w8g2`
 An :dt:`external prelude` is a :t:`prelude` that brings :t:`in scope` of the
-:t:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
+:dt:`crate root module` the :t:`entities <entity>` of the :t:`[crate]s` imported
 using external :dt:`[crate import]s` or supplied by a tool. If the external
 :t:`crate import` uses a :t:`renaming`, then the :t:`identifier` of the
 :t:`renaming` is instead added to the :t:`external prelude`. The core
@@ -1076,7 +1076,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
 :dp:`fls_2bkcn83smy2y`
 A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
-:t:`name` than they are declared with by using a :t:`renaming`.
+:t:`name` than they are declared with by using a :dt:`renaming`.
 
 :dp:`fls_v3a6y2ze44v2`
 A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`
@@ -1281,7 +1281,7 @@ Field Resolution
 :t:`field access expression`.
 
 :dp:`fls_j1bip4w30q8`
-A :dt:`candidate container type` is the :t:`type` of the :t:`container operand`
+A :dt:`candidate container type` is the :t:`type` of the :dt:`container operand`
 of a :t:`field access expression` :t:`under resolution`.
 
 :dp:`fls_jrk3gzqvqr8e`
@@ -1369,7 +1369,7 @@ Method Resolution
 :t:`method call expression`.
 
 :dp:`fls_mbdS0xiNlj92`
-A :dt:`receiver type` is the :t:`type` of the :t:`receiver operand`
+A :dt:`receiver type` is the :t:`type` of the :dt:`receiver operand`
 of a :t:`method call expression`.
 
 :dp:`fls_z80ylmlu1f3q`
@@ -1444,7 +1444,7 @@ proceeds as follows:
    For each :t:`dereference type` in the :t:`dereference type chain`
 
    #. :dp:`fls_bsf4hy9x7c2e`
-      For each :t:`inherent implementation` in the set of
+      For each :dt:`inherent implementation` in the set of
       :t:`[inherent implementation]s` of the :t:`dereference type` where the
       :t:`implementing type` :t:`unifies <unify>` with the
       :t:`dereference type`
@@ -1534,7 +1534,7 @@ Path Resolution
 :t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
 
 :dp:`fls_p23q1ob2qitz`
-A :t:`path segment` shall resolve to exactly one :t:`entity`.
+A :t:`path segment` shall resolve to exactly one :dt:`entity`.
 
 :dp:`fls_e9rv8dfa0arl`
 A :dt:`candidate direct entity` is an :t:`entity` that is visible from the
@@ -1755,7 +1755,7 @@ in left-to-right order, as follows:
 
   * :dp:`fls_qbmp0blpoxx9`
     If the previous :t:`[path segment]'s` :t:`resolution context` is a
-    :t:`trait` or a :t:`type`, then perform
+    :dt:`trait` or a :t:`type`, then perform
     :t:`path expression resolution implementation candidate lookup` for the
     current :t:`path segment` and that :t:`trait` or :t:`type`.
 

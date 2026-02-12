@@ -769,7 +769,7 @@ A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 :dp:`fls_YERnNZiSdCRn`
-A :t:`field list` is a :s:`RecordStructFieldList` or a
+A :dt:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_h2m9k6p4r7vd`
@@ -1173,7 +1173,7 @@ A :dt:`function pointer type parameter` is a :t:`function parameter` of a
 :t:`function pointer type`.
 
 :dp:`fls_B0SMXRqQMS1E`
-A :dt:`variadic part` indicates the presence of :t:`C`-like optional
+A :dt:`variadic part` indicates the presence of :dt:`C`-like optional
 parameters.
 
 :dp:`fls_hbn1l42xmr3h`
@@ -1489,7 +1489,7 @@ Type Parameters
 
 :dp:`fls_dCIIVXGhXDlO`
 A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
-to be substituted by :t:`generic substitution`.
+to be substituted by :dt:`generic substitution`.
 
 .. rubric:: Examples
 
@@ -2237,7 +2237,7 @@ The following :t:`[expression]s` constitute a
   Each :t:`operand` of a :t:`tuple expression`.
 
 :dp:`fls_4rhjpdu4zfqj`
-A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
+A :dt:`type` defines a set of :t:`[value]s` and a set of operations that act on
 those :t:`[value]s`.
 
 :dp:`fls_h8dkehit8rza`
@@ -2519,7 +2519,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   A :t:`constant argument`.
 
 * :dp:`fls_htLp5J5ObgNh`
-  The :t:`expression` of a :t:`constant initializer`.
+  The :dt:`expression` of a :t:`constant initializer`.
 
 * :dp:`fls_cPlCLGCcl7EK`
   The :t:`expression` of a :t:`static initializer`.
@@ -2534,7 +2534,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   The :t:`expression` of a :t:`constant argument`.
 
 * :dp:`fls_Sowatt1V988J`
-  A :t:`function body`.
+  A :dt:`function body`.
 
 * :dp:`fls_A1NVYkepoaMk`
   The :t:`size operand` of an :t:`array expression` or an :t:`array type`.
@@ -3106,7 +3106,7 @@ A :t:`trait` is :dt:`object safe` when:
   :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
 
 :dp:`fls_lj7492aq7fzo`
-An :t:`associated function` is a :t:`function` that appears as an
+An :dt:`associated function` is a :t:`function` that appears as an
 :t:`associated item`.
 
 :dp:`fls_uixekv82g2e5`
@@ -3122,7 +3122,7 @@ A dispatchable :t:`function` is :t:`object safe` when:
 
 * :dp:`fls_k1vc9vd8at92`
   Is a :t:`method` that does not use :c:`Self` in its :t:`function signature`
-  except in the :t:`type` of its :t:`self parameter` or as the :t:`type` of a
+  except in the :t:`type` of its :dt:`self parameter` or as the :t:`type` of a
   :t:`type bound predicate`, and
 
 * :dp:`fls_kqylg31sm5wv`

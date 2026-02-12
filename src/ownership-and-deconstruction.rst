@@ -37,7 +37,7 @@ Initialization
 :t:`variable`.
 
 :dp:`fls_hl5tnd9yy252`
-A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
+A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
 
 :dp:`fls_wnhci8phdu4m`
@@ -627,7 +627,7 @@ An :dt:`extending pattern` is either
   an :t:`extending pattern`.
 
 :dp:`fls_3ycn4u1fe9h`
-If the :t:`pattern-without-alternation` of a :t:`let statement` is an
+If the :dt:`pattern-without-alternation` of a :t:`let statement` is an
 :t:`extending pattern`, then the :t:`drop scope` of the :t:`expression` of
 the :t:`let statement` is extended to the :t:`drop scope` of the
 :t:`block expression` that contains the :t:`let statement`.

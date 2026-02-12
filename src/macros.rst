@@ -309,11 +309,11 @@ Procedural Macros
 
 :dp:`fls_ejbddhggstd2`
 A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
-transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
+transformations in a :dt:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
 :dp:`fls_pcce9gmjpxba`
-:t:`[Procedural macro]s` shall be defined in a :t:`crate` subject to
+:t:`[Procedural macro]s` shall be defined in a :dt:`crate` subject to
 :t:`attribute` :c:`crate_type` where the type is ``proc-macro``.
 
 :dp:`fls_vtzuplb1p3s`
@@ -495,7 +495,7 @@ empty.
 :dp:`fls_knjsslplv5ri`
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
-all :t:`[outer attribute]s` that apply to that :t:`item`.
+all :t:`[outer attribute]s` that apply to that :dt:`item`.
 
 .. rubric:: Examples
 
@@ -549,7 +549,7 @@ result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
 A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
-as a :t:`statement`.
+as a :dt:`statement`.
 
 .. rubric:: Examples
 
@@ -637,7 +637,7 @@ Macro Expansion
    :t:`macro invocation` resides. The expected expansion syntax is as follows:
 
    #. :dp:`fls_y20pmwo3v3uu`
-      If the :t:`macro invocation` appears as part of an :t:`associated item`,
+      If the :t:`macro invocation` appears as part of an :dt:`associated item`,
       an :t:`item` within an :t:`external block`, or another
       :t:`macro invocation`, the output is required to constitute zero or more
       :t:`[item]s`.
@@ -649,7 +649,7 @@ Macro Expansion
 
    #. :dp:`fls_tu6kmwm4v9nj`
       If the :t:`macro invocation` appears as part of a
-      :t:`pattern-without-range`, the output is required to constitute a
+      :dt:`pattern-without-range`, the output is required to constitute a
       :t:`[pattern]`.
 
    #. :dp:`fls_3zn4dz19nyvq`
@@ -860,7 +860,7 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   (hyphen-minus), followed by a :t:`literal expression`.
 
 * :dp:`fls_wtol98rrqka5`
-  :t:`Fragment specifier` **meta** requires an :t:`attribute content`.
+  :t:`Fragment specifier` **meta** requires an :dt:`attribute content`.
 
 * :dp:`fls_iorqt9q4ie9j`
   :t:`Fragment specifier` **pat** requires a :t:`pattern` that matches the
@@ -871,7 +871,7 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   :t:`pattern-without-alternation`.
 
 :dp:`fls_h2zikgmazoxx`
-A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
+A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 * :dp:`fls_3zdts0fsa36u`
   :t:`Fragment specifier` **path** requires a :t:`type path`.
@@ -896,7 +896,7 @@ bound to that :t:`metavariable`.
 
 :dp:`fls_ghqjk6xj85ng`
 Repetition in a :t:`macro matcher` is matched based on how many times the
-:t:`pattern` appears consecutively optionally separated by a :t:`separator` in
+:t:`pattern` appears consecutively optionally separated by a :dt:`separator` in
 the :s:`TokenTree` of the :t:`macro invocation`, as follows:
 
 * :dp:`fls_lzwl4en5wcw0`

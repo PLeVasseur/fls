@@ -316,7 +316,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The default :t:`value` of a :t:`constant parameter`,
 
 * :dp:`fls_66m2hwkju0vv`
-  The :t:`discriminant initializer` of an :t:`enum variant`,
+  The :dt:`discriminant initializer` of an :t:`enum variant`,
 
 * :dp:`fls_fsn32kmwg65u`
   The :t:`size operand` of an :t:`array repetition constructor`,
@@ -325,7 +325,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :t:`static initializer` of a :t:`static`.
+  The :dt:`static initializer` of a :dt:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -431,7 +431,7 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
   :t:`[Path expression]s` that resolve to a :t:`static` or a :t:`variable`.
 
 * :dp:`fls_gv4M0DE3OMwk`
-  A :t:`temporary`.
+  A :dt:`temporary`.
 
 :dp:`fls_ku38h562vfyl`
 A :dt:`mutable place expression` is a :t:`place expression` whose memory
@@ -465,10 +465,10 @@ location can be modified. The following :t:`[place expression]s` are
   :t:`mutable place expression`,
 
 * :dp:`fls_ilaqmj3hc5uv`
-  A :t:`path expression` that resolves to a :t:`mutable static`,
+  A :t:`path expression` that resolves to a :dt:`mutable static`,
 
 * :dp:`fls_m0gbw9myylv2`
-  A :t:`path expression` that resolves to a :t:`mutable variable` that is not
+  A :t:`path expression` that resolves to a :dt:`mutable variable` that is not
   currently borrowed,
 
 * :dp:`fls_dcm3yr3y9y0a`
@@ -506,7 +506,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The initialization :t:`expression` of a :t:`let statement`,
 
 * :dp:`fls_jLZlxIHr4w2v`
-  The :t:`operand` of an :t:`implicit borrow`,
+  The :t:`operand` of an :dt:`implicit borrow`,
 
 * :dp:`fls_giZ7w1G02JSg`
   The :dt:`indexed operand` of an :t:`index expression`,
@@ -655,7 +655,7 @@ A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :t:`variable`.
 
 :dp:`fls_4q6m9t1w7zpa`
-A :t:`unit struct` is a :t:`struct` without a :t:`field list`.
+A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
 
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
@@ -1016,9 +1016,9 @@ A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 
 :dp:`fls_ya77l2zgtilp`
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
-the :t:`borrow expression` produces a :t:`reference` to the memory location
+the :t:`borrow expression` produces a :dt:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
-state, or simply :t:`borrowed`.
+state, or simply :dt:`borrowed`.
 
 :dp:`fls_chr03xll75d`
 The :t:`type` of a :t:`borrow expression` is determined as follows:
@@ -1169,7 +1169,7 @@ The :t:`type` of a :t:`dereference expression` is determined as follows:
   ``*const T``, then the :t:`type` is ``T``.
 
 * :dp:`fls_y9bc691kkh6v`
-  Otherwise the :t:`type` is :t:`associated type`
+  Otherwise the :t:`type` is :dt:`associated type`
   :std:`core::ops::Deref::Target`.
 
 :dp:`fls_gw49nukfveib`
@@ -1193,7 +1193,7 @@ The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
 
 :dp:`fls_9wgldua1u8yt`
 It is undefined behavior to dereference a :t:`raw pointer` that is either
-:t:`dangling` or unaligned.
+:dt:`dangling` or unaligned.
 
 .. rubric:: Examples
 
@@ -1454,13 +1454,13 @@ An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression
 An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
 
 :dp:`fls_ry3an0mwb63g`
-A :t:`trait implementation` is an :t:`implementation` that adds functionality
+A :dt:`trait implementation` is an :t:`implementation` that adds functionality
 specified by a :t:`trait`.
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
 implement the :std:`core::ops::Add` :t:`trait` with the :t:`type` of the
-:dt:`right operand` as the :t:`trait implementation` :t:`type parameter`.
+:dt:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
 
 :dp:`fls_vk17mfv47wk9`
 The :t:`type` of an :t:`addition expression` is :t:`associated type`
@@ -1868,7 +1868,7 @@ The :t:`evaluation` of a :t:`shift right expression` proceeds as follows:
    :t:`shift right expression` evaluates to the value of the left :t:`operand`
    whose bits are shifted right by the number of positions the right
    :t:`operand` evaluates to. If the type of the left :t:`operand` is any
-   :t:`signed integer type` and is negative, then vacated bits are filled
+   :dt:`signed integer type` and is negative, then vacated bits are filled
    with ones. Otherwise, vacated bits are filled with zeros. ``lhs >> rhs``
    evaluates to :math:`\mathrm{lhs} / 2^ \mathrm{rhs}`, casted to the type of
    the left :t:`operand`. If the value of the right :t:`operand` is negative,
@@ -2017,7 +2017,7 @@ The :t:`value` of a :t:`not-equals expression` is the result of
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_ydt9zvh0h5ex`
-The :t:`evaluation` of an :t:`equals expression` proceeds as follows:
+The :dt:`evaluation` of an :t:`equals expression` proceeds as follows:
 
 #. :dp:`fls_4vbrc31r0o60`
    The :t:`left operand` is evaluated.
@@ -2211,7 +2211,7 @@ A :t:`type cast expression` with the following characteristics performs a
 :dt:`specialized cast`:
 
 :dp:`fls_buyaqara7am4`
-A :t:`value` is either a :t:`literal` or the result of a computation, that may
+A :dt:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
 
 * :dp:`fls_4s69s9pcvbn7`
@@ -2221,7 +2221,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
 * :dp:`fls_le6bchl25ewz`
   An :t:`operand` of an :t:`enum type` and a target :t:`integer type`
   perform :t:`enum cast`. An :dt:`enum cast` converts the :t:`operand` to its
-  :t:`discriminant`, followed by a :t:`numeric cast`.
+  :dt:`discriminant`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_pcromhosmnf0`
   An operand of :t:`type` :c:`bool` or :t:`type` :c:`char` and a
@@ -2262,7 +2262,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
   An :dt:`operand` of :dt:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
   perform :t:`address-to-pointer cast`. An :dt:`address-to-pointer cast`
-  produces a :t:`pointer` that interprets the integer as a machine address.
+  produces a :dt:`pointer` that interprets the integer as a machine address.
 
 * :dp:`fls_8ccwlliqw9jx`
   An :t:`operand` of :t:`type` ``&mut [T; N]`` and a :t:`target type`
@@ -2505,7 +2505,7 @@ The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
   a :t:`bound pattern`.
 
 * :dp:`fls_hj6srmzbobid`
-  A :t:`struct expression` corresponds to a :t:`struct pattern` with all the
+  A :t:`struct expression` corresponds to a :dt:`struct pattern` with all the
   :t:`[subexpression]s` lowered to their corresponding :t:`[pattern]s`.
 
 * :dp:`fls_uydzlfc4hjbx`
@@ -3013,7 +3013,7 @@ The :t:`type` of the :t:`size operand` shall be :t:`type` :c:`usize`.
 
 :dp:`fls_wmsekin1gd2y`
 The :t:`type` of an :t:`array expression` is ``[T; N]``, where ``T`` is the
-:t:`element type` and ``N`` is the size of the array. The :t:`size` of an
+:dt:`element type` and ``N`` is the size of the array. The :t:`size` of an
 :t:`array` is determined as follows:
 
 * :dp:`fls_2gto5kp9bjw8`
@@ -3126,7 +3126,7 @@ then
   :t:`associated type` :std:`core::ops::Index::Output`.
 
 :dp:`fls_y3sduoma6q9v`
-If the :t:`indexed operand` is :t:`mutable` and the :t:`index expression` is
+If the :t:`indexed operand` is :dt:`mutable` and the :t:`index expression` is
 evaluated in a :t:`mutable place expression context`, then
 
 * :dp:`fls_ld7lbvqms5i6`
@@ -3267,14 +3267,14 @@ A :t:`struct expression` is an :t:`expression` that constructs an
 :dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
 
 :dp:`fls_q7v2m9t4k1pa`
-A :t:`union value` is a :t:`value` of a :t:`union type`.
+A :dt:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 :dp:`fls_uib1ml41mfrn`
-A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
 a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
@@ -3289,7 +3289,7 @@ initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
-when the :t:`field index` of the :t:`indexed initializer` resolves to a valid
+when the :dt:`field index` of the :t:`indexed initializer` resolves to a valid
 position of a :t:`field` in the :t:`constructee`. Such an
 :t:`indexed initializer` is a :dt:`matched indexed initializer`.
 
@@ -3349,7 +3349,7 @@ The :t:`value` of a :t:`struct expression` is the :t:`enum value`,
 :t:`struct value`, or :t:`union value` in construction.
 
 :dp:`fls_ccqomsereni2`
-If the :t:`constructee` is a :t:`record enum variant` or a :dt:`record struct`,
+If the :t:`constructee` is a :dt:`record enum variant` or a :dt:`record struct`,
 then
 
 * :dp:`fls_pivpdyr4seez`
@@ -3488,21 +3488,21 @@ A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
 constructs a :dt:`tuple enum variant value` or a :dt:`tuple struct value`.
 
 :dp:`fls_v1q7n3t5c9xz`
-A :t:`tuple enum variant` is an :t:`enum variant` with a
+A :dt:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_q1m7v9b3k5ha`
-A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
 :dp:`fls_g6t2n8c5p4xy`
-A :t:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
 
 :dp:`fls_jvz5z3eqxb39`
 An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_m8n4t5c1k0pz`
-A :t:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
+A :dt:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
 :t:`function trait` calls.
 
 :dp:`fls_7ql1c71eidg8`
@@ -3537,7 +3537,7 @@ The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
 
 :dp:`fls_8ljrgdept7s8`
 A :t:`call expression` whose :t:`callee type` is either an
-:t:`external function item type`, an :t:`unsafe function item type`, or an
+:dt:`external function item type`, an :t:`unsafe function item type`, or an
 :t:`unsafe function pointer type` shall require :t:`unsafe context`.
 
 :dp:`fls_7p6zrjbpj0kl`
@@ -3651,7 +3651,7 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_b7i26954j1hc`
-A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
+A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
@@ -3762,7 +3762,7 @@ A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_jb6krd90tjmc`
-An :t:`unsafe context` is either an :t:`unsafe block` or an
+An :dt:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 :dp:`fls_s2vpn4ihenpe`
@@ -3991,7 +3991,7 @@ A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_1MTa81vtePN8`
-A :t:`label` is the :t:`name` of a :t:`loop expression` or a
+A :dt:`label` is the :t:`name` of a :t:`loop expression` or a
 :t:`named block expression`.
 
 :dp:`fls_eg93m93gvwal`
@@ -4864,7 +4864,7 @@ a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are
-:t:`immutable` in the :t:`match arm guard`.
+:dt:`immutable` in the :t:`match arm guard`.
 
 :dp:`fls_knv1affr2o8t`
 The :t:`type` of the :t:`subject expression` and the :t:`[type]s` of all
@@ -5056,7 +5056,7 @@ Await Expressions
 
 :dp:`fls_sjz5s71hwm7l`
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
+suspending the :t:`execution` of the :dt:`future` until the :t:`future` is ready.
 
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
@@ -5307,7 +5307,7 @@ the :t:`capturing environment`.
 
 :dp:`fls_aCxt2Ovmb5He`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by immutable reference capture` binds an :t:`immutable reference` to the
+:dt:`by immutable reference capture` binds an :dt:`immutable reference` to the
 :t:`capture target` and passes the :t:`immutable reference` into the
 :t:`capturing environment`.
 
@@ -5364,7 +5364,7 @@ Arithmetic Overflow
 
 :dp:`fls_oFIRXBPXu6Zv`
 An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
-:t:`value` of a :t:`scalar type` that lies outside of the range of valid
+:t:`value` of a :dt:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
 the operation.
