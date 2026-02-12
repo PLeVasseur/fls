@@ -71,6 +71,9 @@ site of a :t:`call expression` or a :t:`method call expression`.
 A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
 ``self``.
 
+:dp:`fls_4jrj1t4jcf8p`
+A :dt:`method` is an :t:`associated function` with a :t:`self parameter`.
+
 :dp:`fls_ijbt4tgnl95n`
 A :t:`function` shall not specify a :t:`self parameter` unless it is an
 :t:`associated function`.
