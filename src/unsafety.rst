@@ -11,7 +11,7 @@ Unsafety
 .. rubric:: Legality Rules
 
 :dp:`fls_r1m7v4k2t9pa`
-:t:`Undefined behavior` is a situation that results in an unbounded error.
+:dt:`Undefined behavior` is a situation that results in an unbounded error.
 
 :dp:`fls_9k2m4p7q1v6n`
 A :t:`safety invariant` is an invariant that when violated may result in

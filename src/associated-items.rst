@@ -104,7 +104,7 @@ An :t:`associated trait constant` is an :t:`associated constant` that appears
 within a :t:`trait`.
 
 :dp:`fls_b6nns7oqvdpm`
-An :dt:`associated trait function` is an :t:`associated function` that appears
+An :t:`associated trait function` is an :t:`associated function` that appears
 within a :t:`trait`.
 
 :dp:`fls_2TRwCz38kuRz`

@@ -376,7 +376,7 @@ A :dt:`path pattern` is a :t:`pattern` that matches a :t:`constant`, a
 :t:`unit enum variant`, or a :t:`unit struct constant` indicated by a :t:`path`.
 
 :dp:`fls_5y6ae0xqux57`
-An :t:`associated constant` is a :t:`constant` that appears as an
+An :dt:`associated constant` is a :t:`constant` that appears as an
 :t:`associated item`.
 
 :dp:`fls_xz5otkhogn31`
