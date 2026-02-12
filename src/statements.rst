@@ -21,6 +21,9 @@ Statements
 
 .. rubric:: Legality Rules
 
+:dp:`fls_v4q2n8m1x7pc`
+A :dt:`statement` is a component of a :t:`block expression`.
+
 :dp:`fls_5t8n2p7c0m1d`
 A :t:`statement` is a :t:`construct` described by :s:`Statement`.
 
