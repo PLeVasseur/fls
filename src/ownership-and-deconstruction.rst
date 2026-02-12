@@ -175,6 +175,10 @@ A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 A :t:`value` is :t:`borrowed` when it is associated with an active
 :t:`borrow`.
 
+:dp:`fls_wb031borrowed`
+:dt:`borrowed` is the state of a memory location when a :t:`reference`
+pointing to it is :t:`active`.
+
 :dp:`fls_zepwytjwy049`
 An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
 program text. An :t:`implicit borrow` occurs in the following contexts:

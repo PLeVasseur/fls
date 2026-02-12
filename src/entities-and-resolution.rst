@@ -637,6 +637,11 @@ A :dt:`Self scope` is a :t:`scope` for :c:`Self`.
 :c:`Self` of an :t:`implementation` is :t:`in scope` within the related
 :t:`[generic parameter]s`, :t:`implementation body`, and :t:`where clause`.
 
+:dp:`fls_wb035implbody`
+An :dt:`implementation body` is a :t:`construct` that encapsulates the
+:t:`[associated item]s`, :t:`[inner attribute]s`, and
+:t:`[inner doc comment]s` of an :t:`implementation`.
+
 :dp:`fls_dy4gyepebe7b`
 :c:`Self` of a :t:`struct type` is :t:`in scope` within the related
 :t:`[field]s`, :t:`[generic parameter]s`, and :t:`where clause`.

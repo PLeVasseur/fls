@@ -2105,7 +2105,7 @@ evaluation
 ^^^^^^^^^^
 
 :dp:`fls_8zmtio6razl1`
-:dt:`Evaluation` is the process by which an :t:`expression` achieves its
+:dt:`evaluation` is the process by which an :t:`expression` achieves its
 runtime effects.
 
 .. _fls_EJSzYb4IxvtR:
@@ -2134,7 +2134,7 @@ execution
 ^^^^^^^^^
 
 :dp:`fls_e5jbii84hd5g`
-:dt:`Execution` is the process by which a :t:`statement` achieves its runtime
+:dt:`execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
 .. _fls_B1qkkSvc69J4:

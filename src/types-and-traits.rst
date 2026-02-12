@@ -423,7 +423,7 @@ An :t:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
 numbers.
 
 :dp:`fls_3g2cxq6r7nkp`
-A :t:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
 signed whole numbers.
 
 :dp:`fls_k9n8q1rm2v3a`
@@ -759,7 +759,7 @@ An :dt:`enum type` is an :t:`abstract data type` that contains
 An :t:`enum value` is a :t:`value` of an :t:`enum type`.
 
 :dp:`fls_KTzAGty3T5fF`
-An :t:`enum variant value` is the :t:`enum value` of the corresponding
+An :dt:`enum variant value` is the :t:`enum value` of the corresponding
 :t:`enum` of the :t:`enum variant`.
 
 :dp:`fls_il9a1olqmu38`
@@ -789,7 +789,7 @@ The :t:`name` of an :t:`enum variant` shall be unique within the related
 :s:`EnumDeclaration`.
 
 :dp:`fls_t4yeovFm83Wo`
-A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
 
 :dp:`fls_IhqHv2D1nuXj`
 A :t:`discriminant initializer` provides the :t:`value` of a
@@ -945,7 +945,7 @@ A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
 A :t:`struct value` is a :t:`value` of a :t:`struct type`.
 
 :dp:`fls_3QSa0wGQtbHh`
-A :t:`field index` is the position of a :t:`field` within a
+A :dt:`field index` is the position of a :t:`field` within a
 :t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
 :t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
 
@@ -2432,8 +2432,8 @@ Structural Equality
 .. rubric:: Legality Rules
 
 :dp:`fls_uVTpA7gbLCYX`
-A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
-for equality by structure.
+A :dt:`structurally equal` :t:`type` is a :t:`type` whose :t:`[value]s` can be
+compared for equality by structure.
 
 :dp:`fls_2DZAP6JJjJ9h`
 The following :t:`[type]s` are :t:`structurally equal`:

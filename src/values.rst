@@ -59,9 +59,9 @@ Two :t:`[value]s` :dt:`overlap` when
 A :dc:`null` :t:`value` denotes the address ``0``.
 
 :dp:`fls_649WudgnmRKE`
-A :t:`value` of an :t:`indirection type` is :t:`dangling` if it is either
-:c:`null` or not all of the bytes at the referred memory location are part of
-the same allocation.
+A :dt:`dangling` :t:`value` of an :t:`indirection type` is either :c:`null` or
+not all of the bytes at the referred memory location are part of the same
+allocation.
 
 .. rubric:: Undefined Behavior
 
@@ -165,7 +165,7 @@ Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_ibrmiwfypldh`
-A :t:`static` is a :t:`value` that is associated with a specific memory
+A :dt:`static` is a :t:`value` that is associated with a specific memory
 location.
 
 :dp:`fls_mt94jvoot9dx`

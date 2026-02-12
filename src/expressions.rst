@@ -119,7 +119,7 @@ A :dt:`subject let expression` is an :t:`expression` that controls
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_1223lwh4nq49`
-:t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
+:dt:`evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
 
 :dp:`fls_47a9kz2nq5l8`

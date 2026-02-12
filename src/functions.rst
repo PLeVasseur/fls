@@ -153,7 +153,7 @@ The :t:`return type` of a :t:`function` is determined as follows:
   Otherwise the :t:`return type` is the :t:`unit type`.
 
 :dp:`fls_927nfm5mkbsp`
-A :t:`function body` is the :t:`block expression` of a :t:`function`.
+A :dt:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an

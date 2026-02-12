@@ -263,6 +263,9 @@ External Statics
 :dp:`fls_8ddsytjr4il6`
 An :t:`external static` is an import of a foreign :t:`variable`.
 
+:dp:`fls_wb026immutable`
+An :dt:`immutable` :t:`value` is a :t:`value` that cannot be modified.
+
 :dp:`fls_H0cg9XMaGz0y`
 An :t:`external static` inherits the :t:`ABI` of its enclosing
 :t:`external block`.

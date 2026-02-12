@@ -99,7 +99,8 @@ Refutability
 match all possible values of a :t:`type`.
 
 :dp:`fls_9fjspnefoyvz`
-An :t:`irrefutable pattern` is a :t:`pattern` that always matches any :t:`value` of its :t:`type`.
+An :dt:`irrefutable pattern` is a :t:`pattern` that always matches the
+:t:`value` it is being matched against.
 
 :dp:`fls_uq7ftuuq1sig`
 A :dt:`refutable pattern` is a :t:`pattern` that has a possibility of not
@@ -599,6 +600,9 @@ Reference Patterns
 A :dt:`reference pattern` is a :t:`pattern` that dereferences a :t:`pointer` that
 is being matched.
 
+:dp:`fls_wb037pointer`
+A :dt:`pointer` is a :t:`value` of a :t:`pointer type`.
+
 :dp:`fls_x0bmzl1315gq`
 A :t:`reference pattern` is an :t:`irrefutable pattern` when its nested :t:`pattern` itself is an :t:`irrefutable pattern`.
 
@@ -896,6 +900,10 @@ The :t:`type` of a :t:`matched shorthand deconstructor` and the :t:`type` of the
 matched :t:`field` shall be :t:`unifiable`.
 
 :dp:`fls_m91ith3rjy79`
+A :dt:`record enum variant` is an :t:`enum variant` with a
+:s:`RecordStructFieldList`.
+
+:dp:`fls_wb033recordenumvariant`
 If the :t:`deconstructee` of a :t:`record struct pattern` is a
 :t:`record enum variant` or a :t:`record struct`, then
 

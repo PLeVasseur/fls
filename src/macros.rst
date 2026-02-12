@@ -846,6 +846,10 @@ The outer :s:`[Delimiter]s` of a :t:`macro matcher` match any outer
 A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
 :t:`[token]s` in the :t:`macro invocation` based on its :t:`fragment specifier`:
 
+:dp:`fls_wb038underscoreexpr`
+An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+in a :t:`destructuring assignment`.
+
 * :dp:`fls_p9eqa17d3dx`
   :t:`Fragment specifier` **block** requires a :t:`block expression`.
 

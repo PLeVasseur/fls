@@ -44,7 +44,7 @@ A :dt:`macro statement` is a :t:`statement` expressed as a
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_estqu395zxgk`
-:t:`Execution` is the process by which a :t:`statement` achieves its runtime
+:dt:`execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
 :dp:`fls_h5c8k2n9p4d1`
