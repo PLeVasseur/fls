@@ -521,10 +521,14 @@ Generic Parameter Scope
 :dp:`fls_amoh8r4gghyj`
 A :dt:`generic parameter scope` is a :t:`scope` for :t:`[generic parameter]s`.
 
+:dp:`fls_2tk3wryqpzev`
+A :dt:`construct` is a piece of program text that is an instance of a
+:t:`syntactic category`.
+
 :dp:`fls_3nqb7p5ifvio`
 A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
 :t:`[lifetime parameter]s` and :t:`[type]s` that have
-to hold for the :dt:`construct` subject to the :t:`where clause` to be valid.
+to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
 :dp:`fls_6o38qhbna46z`
 A :t:`generic parameter` is :t:`in scope` of a :s:`GenericParameterList`.
@@ -1533,8 +1537,12 @@ Path Resolution
 :t:`Path resolution` resolves a :t:`path` by resolving individual
 :t:`[path segment]s` in sequence, starting from the leftmost :t:`path segment`.
 
+:dp:`fls_41of3g2m26q7`
+An :dt:`entity` is a :t:`construct` that can be referred to within program
+text, usually via a :t:`field access expression` or a :t:`path`.
+
 :dp:`fls_p23q1ob2qitz`
-A :t:`path segment` shall resolve to exactly one :dt:`entity`.
+A :t:`path segment` shall resolve to exactly one :t:`entity`.
 
 :dp:`fls_e9rv8dfa0arl`
 A :dt:`candidate direct entity` is an :t:`entity` that is visible from the
@@ -1755,7 +1763,7 @@ in left-to-right order, as follows:
 
   * :dp:`fls_qbmp0blpoxx9`
     If the previous :t:`[path segment]'s` :t:`resolution context` is a
-    :dt:`trait` or a :t:`type`, then perform
+    :t:`trait` or a :t:`type`, then perform
     :t:`path expression resolution implementation candidate lookup` for the
     current :t:`path segment` and that :t:`trait` or :t:`type`.
 

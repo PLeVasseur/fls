@@ -2979,7 +2979,7 @@ Traits
 .. rubric:: Legality Rules
 
 :dp:`fls_tani6lesan9u`
-A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
 :dp:`fls_u2XiDIAk6tQz`
