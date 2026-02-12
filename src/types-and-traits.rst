@@ -776,7 +776,7 @@ A :dt:`field list` is a :s:`RecordStructFieldList` or a
 A :t:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
 
 :dp:`fls_1PqJYZ5eMNym`
-An :dt:`enum field` is a :dt:`field` of an :t:`enum variant`.
+An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
 
 :dp:`fls_g5qle7xzaoif`
 The :t:`name` of an :t:`enum variant` shall be unique within the related
@@ -2519,7 +2519,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   A :t:`constant argument`.
 
 * :dp:`fls_htLp5J5ObgNh`
-  The :t:`expression` of a :t:`constant initializer`.
+  The :dt:`expression` of a :t:`constant initializer`.
 
 * :dp:`fls_cPlCLGCcl7EK`
   The :t:`expression` of a :t:`static initializer`.
@@ -2979,7 +2979,7 @@ Traits
 .. rubric:: Legality Rules
 
 :dp:`fls_tani6lesan9u`
-A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
 :dp:`fls_u2XiDIAk6tQz`

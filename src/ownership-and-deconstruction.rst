@@ -94,7 +94,7 @@ References
 .. rubric:: Legality Rules
 
 :dp:`fls_7x9pi2o7pee7`
-A :dt:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
+A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
 can be obtained explicitly by using a :t:`borrow expression` or implicitly in
 certain scenarios.
 

@@ -110,7 +110,7 @@ Crates
 .. rubric:: Legality Rules
 
 :dp:`fls_qwghk79ok5h0`
-A :dt:`crate` is a unit of compilation and linking that contains a tree of
+A :t:`crate` is a unit of compilation and linking that contains a tree of
 nested :t:`[module]s`.
 
 :dp:`fls_unxalgMqIr3v`

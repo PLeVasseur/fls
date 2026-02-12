@@ -22,7 +22,7 @@ Statements
 .. rubric:: Legality Rules
 
 :dp:`fls_5t8n2p7c0m1d`
-A :dt:`statement` is a :t:`construct` described by :s:`Statement`.
+A :t:`statement` is a :t:`construct` described by :s:`Statement`.
 
 :dp:`fls_7zh6ziglo5iy`
 An :dt:`expression statement` is an :t:`expression` whose result is ignored.

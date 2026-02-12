@@ -1755,7 +1755,7 @@ in left-to-right order, as follows:
 
   * :dp:`fls_qbmp0blpoxx9`
     If the previous :t:`[path segment]'s` :t:`resolution context` is a
-    :t:`trait` or a :t:`type`, then perform
+    :dt:`trait` or a :t:`type`, then perform
     :t:`path expression resolution implementation candidate lookup` for the
     current :t:`path segment` and that :t:`trait` or :t:`type`.
 

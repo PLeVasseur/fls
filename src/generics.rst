@@ -62,7 +62,7 @@ A :dt:`generic enum` is an :t:`enum` with :t:`[generic parameter]s`.
 A :t:`generic function` is a :t:`function` with :t:`[generic parameter]s`.
 
 :dp:`fls_z311nxou9yi3`
-A :dt:`generic implementation` is an :t:`implementation` with
+A :dt:`generic implementation` is an :dt:`implementation` with
 :t:`[generic parameter]s`.
 
 :dp:`fls_0GhOR32Z4j7M`

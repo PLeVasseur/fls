@@ -14,7 +14,7 @@ Values
 :t:`Mutability` determines whether a :t:`construct` can modify a :t:`value`.
 
 :dp:`fls_CEBZEvtmIRGv`
-A :dt:`value` is :t:`immutable` when it cannot be modified.
+A :t:`value` is :t:`immutable` when it cannot be modified.
 
 :dp:`fls_U9CPQq4fs7IK`
 A :t:`value` is :t:`mutable` when it can be modified.
