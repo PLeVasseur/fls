@@ -42,6 +42,10 @@ Items
 
 .. rubric:: Legality Rules
 
+:dp:`fls_d0q4h7p2m9vx`
+An :dt:`item` is the most basic semantic element in program text. An item
+defines the compile- and run-time semantics of a program.
+
 :dp:`fls_s3b1cba9lfj5`
 The :t:`macro expansion` of a :t:`terminated macro invocation` is treated as
 zero or more :t:`[item]s` if the :t:`terminated macro invocation` appears as

@@ -905,6 +905,9 @@ A :dt:`struct` is an :t:`abstract data type` declared with a
 A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
 
+:dp:`fls_f2v8k1m4q9zd`
+A :dt:`field` is an element of an :t:`abstract data type`.
+
 :dp:`fls_r3g6b8q1bphw`
 A :t:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
 
