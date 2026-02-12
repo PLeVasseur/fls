@@ -53,7 +53,7 @@ A :t:`type specification` describes the structure of a :t:`type`.
 A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
 
 :dp:`fls_cTF1sJ9I2XJd`
-A :t:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
+A :dt:`concrete type` is a :t:`type` where all :t:`[type parameter]s` and
 :t:`[constant parameter]s` have been substituted with :t:`[generic argument]s`.
 
 .. _fls_963gsjp2jas2:
@@ -345,7 +345,7 @@ Operation ``a <= b`` is equivalent to ``a == b | a < b``.
 
 :dp:`fls_M4Q4vAJmapq8`
 A :dt:`validity invariant` is an invariant that when violated results in
-immediate :t:`undefined behavior`.
+immediate :dt:`undefined behavior`.
 
 .. rubric:: Undefined Behavior
 
@@ -656,7 +656,7 @@ A :dt:`textual type` is a :t:`type` class that includes type :c:`char` and type
 .. rubric:: Undefined Behavior
 
 :dp:`fls_wacoqrtzvrwu`
-It is a :t:`safety invariant` for a :t:`value` of :t:`type` :c:`str` to denote
+It is a :dt:`safety invariant` for a :t:`value` of :t:`type` :c:`str` to denote
 a valid UTF-8 sequence of characters.
 
 .. _fls_4ckl3n2ko3i4:
@@ -769,7 +769,7 @@ A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
 
 :dp:`fls_YERnNZiSdCRn`
-A :dt:`field list` is a :s:`RecordStructFieldList` or a
+A :t:`field list` is a :s:`RecordStructFieldList` or a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_h2m9k6p4r7vd`
@@ -1638,7 +1638,7 @@ and always a power of two. A :t:`value` of :t:`alignment` ``N`` is stored at an
 address that is a multiple of ``N``.
 
 :dp:`fls_1pbwigq6f3ha`
-The :t:`size` of a :t:`type` is the offset in bytes between successive elements
+The :dt:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
@@ -3640,7 +3640,7 @@ The :t:`lifetime` of an :t:`associated implementation constant` shall not be
 :t:`elided`.
 
 :dp:`fls_xi86he5vvill`
-The :t:`lifetime` of an :t:`associated trait constant` shall not be :t:`elided`.
+The :t:`lifetime` of an :dt:`associated trait constant` shall not be :t:`elided`.
 
 .. rubric:: Examples
 

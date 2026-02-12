@@ -144,7 +144,7 @@ a particular kind and bind its :t:`value` to a name for use during
 :t:`macro transcription`.
 
 :dp:`fls_4zdait30exvn`
-A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+A :dt:`metavariable` is a :t:`macro match` that describes a :dt:`variable`.
 
 :dp:`fls_2HguXbL7DjKH`
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
@@ -352,7 +352,7 @@ subject to the following restrictions:
   It shall lack :t:`[generic parameter]s`,
 
 * :dp:`fls_etyo9bmzxby6`
-  It shall have a single :dt:`function parameter` whose :t:`type specification`
+  It shall have a single :dt:`function parameter` whose :dt:`type specification`
   indicates :t:`type` :std:`proc_macro::TokenStream`,
 
 * :dp:`fls_mkl9b38m0sf1`

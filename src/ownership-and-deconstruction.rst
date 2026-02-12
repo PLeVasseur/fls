@@ -37,7 +37,7 @@ Initialization
 :t:`variable`.
 
 :dp:`fls_hl5tnd9yy252`
-A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
+A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
 stack.
 
 :dp:`fls_wnhci8phdu4m`
@@ -627,7 +627,7 @@ An :dt:`extending pattern` is either
   an :t:`extending pattern`.
 
 :dp:`fls_3ycn4u1fe9h`
-If the :dt:`pattern-without-alternation` of a :t:`let statement` is an
+If the :t:`pattern-without-alternation` of a :t:`let statement` is an
 :t:`extending pattern`, then the :t:`drop scope` of the :t:`expression` of
 the :t:`let statement` is extended to the :t:`drop scope` of the
 :t:`block expression` that contains the :t:`let statement`.
@@ -719,7 +719,7 @@ When a :t:`drop scope` is left, all :t:`[value]s` associated with that
 * :dp:`fls_W2S2FrkuedYC`
   :t:`[Binding]s` introduced by an :t:`or-pattern` are dropped in reverse
   declaration order, where the declaration order is defined by the first
-  :t:`pattern-without-alternation`.
+  :dt:`pattern-without-alternation`.
 
 * :dp:`fls_a5tmilqxdb6f`
   :t:`Temporaries <temporary>` are :t:`dropped` in reverse creation order.

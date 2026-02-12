@@ -31,7 +31,7 @@ The program text of a Rust program is written using the :t:`Unicode` character
 set.
 
 :dp:`fls_4h2v3pk7qz6n`
-In :t:`Unicode`, a :t:`code point` is a numeric :t:`value` that maps to a
+In :t:`Unicode`, a :dt:`code point` is a numeric :t:`value` that maps to a
 character.
 
 :dp:`fls_6n9y0qb5t2mc`
@@ -1081,7 +1081,7 @@ The :t:`type` of an :t:`unsuffixed float` is determined by :t:`type inference`
 as follows:
 
 * :dp:`fls_4sxt1ct7fyen`
-  If a :t:`floating-point type` can be uniquely determined from the surrounding
+  If a :dt:`floating-point type` can be uniquely determined from the surrounding
   program context, then the :t:`unsuffixed float` has that :t:`type`.
 
 * :dp:`fls_wa72rssp0jnt`

@@ -306,7 +306,7 @@ A :dt:`constant context` is a :t:`construct` that requires a
 :t:`[constant context]s`:
 
 * :dp:`fls_ljc6jq5ksbcs`
-  The :dt:`constant initializer` of an :t:`associated constant` or a
+  The :dt:`constant initializer` of an :dt:`associated constant` or a
   :dt:`constant`,
 
 * :dp:`fls_3of516eo0kkx`
@@ -453,7 +453,7 @@ location can be modified. The following :t:`[place expression]s` are
   ``mut``),
 
 * :dp:`fls_xm0gm2q27x2e`
-  A :t:`field access expression` where the :t:`container operand` is a
+  A :t:`field access expression` where the :dt:`container operand` is a
   :t:`mutable place expression`,
 
 * :dp:`fls_bt50fltfqcvn`
@@ -651,15 +651,15 @@ A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
 :dp:`fls_EOkrcIj9CuhV`
 A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :t:`constant`, a :t:`function`, a :t:`static`, a :t:`tuple enum variant`, a
-:t:`tuple struct`, a :t:`unit enum variant`, a :t:`unit struct`, or a
+:t:`tuple struct`, a :t:`unit enum variant`, a :dt:`unit struct`, or a
 :t:`variable`.
 
 :dp:`fls_4q6m9t1w7zpa`
-A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+A :t:`unit struct` is a :t:`struct` without a :dt:`field list`.
 
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
-:t:`unsafe context`.
+:dt:`unsafe context`.
 
 :dp:`fls_cjywisyiyti6`
 The :t:`type` of a :t:`path expression` is the :t:`type` of the :t:`entity` that
@@ -1550,7 +1550,7 @@ The :t:`evaluation` of an :t:`addition expression` proceeds as follows:
 
 #. :dp:`fls_NcLf4o1dpniS`
    If the :t:`type` of both :t:`[operand]s` is the same :t:`integer type` or
-   :dt:`floating-point type`, then the :t:`addition expression` evaluates to the
+   :t:`floating-point type`, then the :t:`addition expression` evaluates to the
    sum of the :t:`[operand]s`, following the rules of unsigned integer addition
    for :t:`[unsigned integer type]s`, two's complement addition for
    :t:`[signed integer type]s`, or floating-point addition for
@@ -2238,7 +2238,7 @@ be stored in a memory location, and interpreted based on some :t:`type`.
 
   * :dp:`fls_eb00s8fxlvjb`
     Convert an :t:`operand` of :t:`type` :c:`char` to the :t:`value` of the
-    corresponding :dt:`code point`, followed by a :t:`numeric cast`.
+    corresponding :t:`code point`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_qk5trk8wkvxb`
   An :t:`operand` of :t:`type` :c:`u8` and a target :t:`type` :c:`char` performs
@@ -2312,7 +2312,7 @@ The :t:`evaluation` of a :dt:`numeric cast` proceeds as follows:
 
 * :dp:`fls_kc3gwj9x3jnr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
-  of the same :dt:`size` has no effect.
+  of the same :t:`size` has no effect.
 
 * :dp:`fls_76eq3bd6birr`
   Casting an :t:`operand` of an :t:`integer type` to a target :t:`integer type`
@@ -3264,10 +3264,10 @@ Struct Expressions
 
 :dp:`fls_ij8rebvupb85`
 A :t:`struct expression` is an :t:`expression` that constructs an
-:dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
+:dt:`enum value`, a :dt:`struct value`, or a :dt:`union value`.
 
 :dp:`fls_q7v2m9t4k1pa`
-A :dt:`union value` is a :t:`value` of a :t:`union type`.
+A :t:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_4z91ymz3ciup`
 A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
@@ -3655,7 +3655,7 @@ A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
-A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
@@ -3762,7 +3762,7 @@ A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
 
 :dp:`fls_jb6krd90tjmc`
-An :dt:`unsafe context` is either an :t:`unsafe block` or an
+An :t:`unsafe context` is either an :t:`unsafe block` or an
 :t:`unsafe function`.
 
 :dp:`fls_s2vpn4ihenpe`
