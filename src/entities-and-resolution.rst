@@ -148,7 +148,10 @@ Visibility
 
 :dp:`fls_7kpepal8ghuj`
 :dt:`Visibility` is a property of :t:`[field]s` and :t:`[item]s` that determines
-which :t:`[module]s` can refer to the :dt:`name` of the :t:`field` or :t:`item`.
+which :t:`[module]s` can refer to the :t:`name` of the :t:`field` or :t:`item`.
+
+:dp:`fls_3l0m6k29jv8n`
+A :dt:`name` is an :t:`identifier` that refers to an :t:`entity`.
 
 :dp:`fls_qo0itr5il1kk`
 :dt:`Public visibility` is a kind of :t:`visibility` that allows for a :t:`name`
