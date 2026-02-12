@@ -23,6 +23,10 @@ A :t:`value` is :t:`mutable` when it can be modified.
 :t:`Initialization` is the act of supplying an initial :t:`value` to a
 :t:`constant`, a :t:`static`, or a :t:`variable`.
 
+:dp:`fls_buyaqara7am4`
+A :dt:`value` is either a :t:`literal` or the result of a computation, that may
+be stored in a memory location, and interpreted based on some :t:`type`.
+
 :dp:`fls_CUJyMj0Sj8NS`
 An :dt:`allocated object` is a :t:`value` stored at some memory address.
 

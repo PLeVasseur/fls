@@ -75,7 +75,7 @@ A :ds:`SubjectLetExpression` is any expression in category
 .. rubric:: Legality Rules
 
 :dp:`fls_h5o6tgul4yor`
-An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
@@ -2209,10 +2209,6 @@ The ``TypeSpecificationWithoutBounds`` describes the :dt:`target type` of the
 :dp:`fls_otaxe9okhdr1`
 A :t:`type cast expression` with the following characteristics performs a
 :dt:`specialized cast`:
-
-:dp:`fls_buyaqara7am4`
-A :dt:`value` is either a :t:`literal` or the result of a computation, that may
-be stored in a memory location, and interpreted based on some :t:`type`.
 
 * :dp:`fls_4s69s9pcvbn7`
   An :t:`operand` of a :t:`numeric type` and a target :t:`numeric type` perform
