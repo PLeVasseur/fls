@@ -841,7 +841,7 @@ The :t:`deconstructee` of a :t:`record struct pattern` shall resolve to an
 
 :dp:`fls_mnh35ehva8tx`
 An :dt:`indexed deconstructor` is a :t:`construct` that matches the position of
-a :t:`field`.
+a :dt:`field`.
 
 :dp:`fls_p2rjnlbvifaa`
 An :t:`indexed deconstructor` matches a :t:`field` of the :t:`deconstructee`

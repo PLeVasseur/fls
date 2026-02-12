@@ -495,7 +495,7 @@ empty.
 :dp:`fls_knjsslplv5ri`
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
-all :t:`[outer attribute]s` that apply to that :t:`item`.
+all :t:`[outer attribute]s` that apply to that :dt:`item`.
 
 .. rubric:: Examples
 

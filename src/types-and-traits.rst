@@ -764,9 +764,6 @@ A :dt:`zero-variant enum type` is an :t:`enum type` without any
 An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
 
-:dp:`fls_v7r2m5k8q1hz`
-A :dt:`field` is an element of an :t:`abstract data type`.
-
 :dp:`fls_9vlr65nzdwf2`
 A :t:`record enum variant` is an :t:`enum variant` with a
 :s:`RecordStructFieldList`.
