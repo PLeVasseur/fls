@@ -65,7 +65,7 @@ A :t:`function` shall not be subject to both :t:`keyword` ``async`` and
 :dp:`fls_uwuthzfgslif`
 A :t:`function parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
-site of a :t:`call expression` or a :t:`method call expression`.
+site of a :t:`call expression` or a :dt:`method` call expression.
 
 :dp:`fls_ymeo93t4mz4`
 A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`

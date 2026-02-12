@@ -37,7 +37,7 @@ Implementations
 .. rubric:: Legality Rules
 
 :dp:`fls_ivxpoxggy7s6`
-An :t:`implementation` is an :t:`item` that supplements an
+An :dt:`implementation` is an :t:`item` that supplements an
 :t:`implementing type` by extending its functionality.
 
 :dp:`fls_yopmjbnw8tbl`

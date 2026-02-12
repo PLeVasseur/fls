@@ -75,7 +75,7 @@ A :ds:`SubjectLetExpression` is any expression in category
 .. rubric:: Legality Rules
 
 :dp:`fls_h5o6tgul4yor`
-An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
@@ -1016,7 +1016,7 @@ A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 
 :dp:`fls_ya77l2zgtilp`
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
-the :t:`borrow expression` produces a :dt:`reference` to the memory location
+the :t:`borrow expression` produces a :t:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
 state, or simply :dt:`borrowed`.
 
@@ -2211,7 +2211,7 @@ A :t:`type cast expression` with the following characteristics performs a
 :dt:`specialized cast`:
 
 :dp:`fls_buyaqara7am4`
-A :dt:`value` is either a :t:`literal` or the result of a computation, that may
+A :t:`value` is either a :t:`literal` or the result of a computation, that may
 be stored in a memory location, and interpreted based on some :t:`type`.
 
 * :dp:`fls_4s69s9pcvbn7`
@@ -3651,7 +3651,7 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_b7i26954j1hc`
-A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
+A :dt:`method call expression` is an :t:`expression` that invokes a :t:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`

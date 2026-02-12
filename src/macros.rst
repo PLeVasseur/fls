@@ -313,7 +313,7 @@ transformations in a :dt:`function`. :t:`[Procedural macro]s` consume one or mor
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
 :dp:`fls_pcce9gmjpxba`
-:t:`[Procedural macro]s` shall be defined in a :dt:`crate` subject to
+:t:`[Procedural macro]s` shall be defined in a :t:`crate` subject to
 :t:`attribute` :c:`crate_type` where the type is ``proc-macro``.
 
 :dp:`fls_vtzuplb1p3s`
@@ -495,7 +495,7 @@ empty.
 :dp:`fls_knjsslplv5ri`
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
-all :t:`[outer attribute]s` that apply to that :dt:`item`.
+all :t:`[outer attribute]s` that apply to that :t:`item`.
 
 .. rubric:: Examples
 
@@ -549,7 +549,7 @@ result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
 A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
-as a :dt:`statement`.
+as a :t:`statement`.
 
 .. rubric:: Examples
 

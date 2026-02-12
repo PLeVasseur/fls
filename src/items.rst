@@ -45,7 +45,7 @@ Items
 :dp:`fls_s3b1cba9lfj5`
 The :t:`macro expansion` of a :t:`terminated macro invocation` is treated as
 zero or more :t:`[item]s` if the :t:`terminated macro invocation` appears as
-an :t:`item`.
+an :dt:`item`.
 
 .. rubric:: Dynamic Semantics
 
