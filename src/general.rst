@@ -54,6 +54,9 @@ It documents the current understanding for the purposes of
 compiler validation. As such, given any doubt, it prefers documenting behavior
 of :t:`rustc` over claiming correctness as a specification.
 
+:dp:`fls_u3f8a2y3p9c1`
+:dt:`rustc` is a compiler that implements the FLS.
+
 :dp:`fls_dv1qish8svc`
 This document is made available for contribution and review,
 and can be a place of shared understanding. It
@@ -256,7 +259,7 @@ Backus-Naur form. In particular:
   A ``monospaced`` font is used to denote Rust syntax.
 
 * :dp:`fls_ceb5a8t6cakr`
-  Words in PascalCase font are used to denote a syntactic category, for example:
+  A :dt:`syntactic category` is a grammar symbol denoted in PascalCase, for example:
 
 .. syntax::
 

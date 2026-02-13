@@ -35,7 +35,7 @@ Source Files
 .. rubric:: Legality Rules
 
 :dp:`fls_4vicosdeaqmp`
-A :t:`source file` contains the program text consisting of :t:`[inner
+A :dt:`source file` contains the program text consisting of :t:`[inner
 attribute]s`, :t:`[inner doc comment]s`, and :t:`[item]s`. The location of a
 :t:`source file` is tool defined.
 
@@ -70,17 +70,17 @@ Modules
 .. rubric:: Legality Rules
 
 :dp:`fls_odd1hj3y1mgu`
-A :t:`module` is a container for zero or more :t:`[item]s`.
+A :dt:`module` is a container for zero or more :t:`[item]s`.
 
 :dp:`fls_whgv72emrm47`
 The ``unsafe`` :t:`keyword` of a :t:`module` is rejected, but may still
 be consumed by :t:`[macro]s`.
 
 :dp:`fls_qypjjpcf8uwq`
-An :t:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
+An :dt:`inline module` is a :t:`module` with an :s:`InlineModuleSpecification`.
 
 :dp:`fls_cavwpr1ybk37`
-An :t:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
+An :dt:`outline module` is a :t:`module` with an :s:`OutlineModuleSpecification`.
 
 :dp:`fls_plepew2319g4`
 An :t:`outline module` loads a :t:`source file` and considers the text of the
@@ -110,11 +110,11 @@ Crates
 .. rubric:: Legality Rules
 
 :dp:`fls_qwghk79ok5h0`
-A :t:`crate` is a unit of compilation and linking that contains a tree of
+A :dt:`crate` is a unit of compilation and linking that contains a tree of
 nested :t:`[module]s`.
 
 :dp:`fls_unxalgMqIr3v`
-The :t:`crate type` of a :t:`crate` is the value of the :t:`attribute`
+The :dt:`crate type` of a :t:`crate` is the value of the :t:`attribute`
 ``crate_type`` of a :t:`crate` or the value of ``--crate-type`` flag passed to
 the tool compiling the :t:`crate`.
 
@@ -126,12 +126,12 @@ A :t:`crate` may be subject to multiple :t:`[crate type]s`, treating each type
 as a separate :t:`crate`.
 
 :dp:`fls_9ub6ks8qrang`
-A :t:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
+A :dt:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
 
 :dp:`fls_OyFwBtDGVimT`
 A :t:`binary crate` that is not subject to :t:`attribute` ``no_main`` shall have
 a :t:`function` in scope of its :t:`crate root module` under the :t:`name`
-``main`` with a :t:`main function signature`.
+``main`` with a :dt:`main function signature`.
 
 :dp:`fls_jQqXxPyND1ds`
 The :t:`function` in scope of a :t:`binary crate`'s :t:`crate root module` under
@@ -139,11 +139,11 @@ the :t:`name` ``main`` with a :t:`main function signature` is the :t:`binary
 crate`'s :t:`program entry point`.
 
 :dp:`fls_d9nn4yuiw1ja`
-A :t:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
+A :dt:`library crate` is a :t:`crate` whose :t:`crate type` is ``lib``, ``rlib``,
 ``staticlib``, ``dylib``, or ``cdylib``.
 
 :dp:`fls_Mf62VqAhoZ3c`
-A :t:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
+A :dt:`proc-macro crate` is a :t:`crate` whose :t:`crate type` is ``proc-macro``.
 
 :dp:`fls_RJJmN4tP7j4m`
 A :t:`proc-macro crate` shall not declare :t:`[item]s` in its :t:`crate root
@@ -175,7 +175,10 @@ Crate Imports
 A :t:`crate import` specifies a required dependency on an external :t:`crate`.
 
 :dp:`fls_vfam3wzeAiah`
-A :t:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+A :dt:`crate indication` is a :t:`construct` that indicates a :t:`crate`.
+
+:dp:`fls_2v7k7p4v0xra`
+A :t:`renaming` provides an alternative :t:`name` for an existing name.
 
 :dp:`fls_ft860vkz0lkc`
 A :t:`crate import` binds an external :t:`crate` to its :t:`crate indication`.
@@ -204,14 +207,17 @@ Compilation Roots
 .. rubric:: Legality Rules
 
 :dp:`fls_fhiqvgdamq5`
-A :t:`crate root module` is the root of the nested :t:`module` tree of a
+A :dt:`crate root module` is the root of the nested :t:`module` tree of a
 :t:`crate`.
+
+:dp:`fls_1NrcosNZJu5V`
+A :dt:`crate root` is the :t:`crate root module` of a :t:`crate`.
 
 :dp:`fls_tk8tl2e0a34`
 A tool can define a :t:`crate root module` for a single :t:`crate`.
 
 :dp:`fls_bsyfxdk3ap1t`
-A :t:`compilation root` is an input to a compilation performed by a tool. A
+A :dt:`compilation root` is an input to a compilation performed by a tool. A
 :t:`crate root module` is a :t:`compilation root`.
 
 .. _fls_u1afezy1ye99:
@@ -222,12 +228,12 @@ Conditional Compilation
 .. rubric:: Legality Rules
 
 :dp:`fls_9stc6nul6vq9`
-:t:`Conditionally-compiled source code` is source code that may or may
+:dt:`conditionally-compiled source code` is source code that may or may
 not be considered a part of a Rust program depending on
 :t:`[configuration predicate]s`.
 
 :dp:`fls_a0u9nnaf6drz`
-:t:`Conditional compilation` is the process of compiling
+:t:`conditional compilation` is the process of compiling
 :t:`conditionally-compiled source code`.
 
 :dp:`fls_pf1v89h7pjhh`
@@ -253,12 +259,12 @@ Program Entry Point
 .. rubric:: Legality Rules
 
 :dp:`fls_dp64b08em9BJ`
-A :t:`program entry point` is a :t:`function` that is invoked at the start of
+A :dt:`program entry point` is a :t:`function` that is invoked at the start of
 a Rust program.
 
 :dp:`fls_sbGnkm8Ephiu`
-A :t:`main function signature` is a :t:`function signature` subject to the
-following restrictions:
+A :t:`main function signature` is the :t:`function signature` required for the
+:t:`program entry point` function named ``main``.
 
 * :dp:`fls_o4fxok23134r`
   It lacks :t:`[function qualifier]s` ``async`` and ``unsafe``,

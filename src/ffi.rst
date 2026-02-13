@@ -11,9 +11,12 @@ FFI
 .. rubric:: Legality Rules
 
 :dp:`fls_djlglv2eaihl`
-:t:`Foreign Function Interface` or :t:`FFI` employs :t:`ABI`,
-:t:`[attribute]s`, :t:`[external block]s`, :t:`[external function]s`, linkage,
-and :t:`type` :t:`layout` to interface a Rust program with foreign code.
+A :dt:`Foreign Function Interface` employs :t:`ABI`, :t:`[attribute]s`,
+:t:`[external block]s`, :t:`[external function]s`, linkage, and :t:`type`
+:t:`layout` to interface a Rust program with foreign code.
+
+:dp:`fls_JpmkeFXLhQyy`
+:dt:`FFI` is an abbreviation for :t:`Foreign Function Interface`.
 
 :dp:`fls_k1hiwghzxtfa`
 The following :t:`[attribute]s` affect :t:`FFI`:
@@ -52,11 +55,21 @@ ABI
 .. rubric:: Legality Rules
 
 :dp:`fls_xangrq3tfze0`
-:t:`Application Binary Interface` or :t:`ABI` is a set of conventions that
-dictate how data and computation cross language boundaries.
+An :dt:`Application Binary Interface` is a set of conventions that dictate how
+data and computation cross language boundaries.
+
+:dp:`fls_q2wp45ZVk16O`
+An :dt:`ABI` is an :t:`Application Binary Interface`.
+
+:dp:`fls_EcG0AVDg8TUj`
+:dt:`c` is the programming language described in the ISO/IEC 9899:2018 International Standard.
+
+:dp:`fls_wb082c1a9kp3`
+In this specification, :t:`c` refers to the C programming language used for
+foreign function interfaces.
 
 :dp:`fls_2w0xi6rxw3uz`
-The :t:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
+The :dt:`ABI kind` indicates the :t:`ABI` of a :t:`construct`.
 
 :dp:`fls_9zitf1fvvfk8`
 The following :t:`[ABI]s` are supported:
@@ -177,11 +190,8 @@ External Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_4dje9t5y2dia`
-An :t:`external block` is a :t:`construct` that provides the declarations of
+An :dt:`external block` is a :t:`construct` that provides the declarations of
 :t:`[external function]s` and :t:`[external static]s` as unchecked imports.
-
-:dp:`fls_8ltVLtAfvy0m`
-An :t:`unsafe external block` is an :t:`external block` subject to keyword ``unsafe``.
 
 :dp:`fls_Nz0l16hMxqTd`
 The :t:`ABI` of an :t:`external block` is determined as follows:
@@ -215,7 +225,11 @@ External Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_v24ino4hix3m`
-An :t:`external function` is an unchecked import of a foreign :t:`function`.
+An :dt:`external function` is an unchecked import of a foreign :t:`function`.
+
+:dp:`fls_8ltVLtAfvy0m`
+An :dt:`unsafe external block` is an :t:`external block` subject to keyword
+``unsafe``.
 
 :dp:`fls_l88r9fj82650`
 An :t:`external function` shall be invoked from an :t:`unsafe context` unless it is defined in an :t:`unsafe external block` and subject to :s:`ItemSafety` with keyword ``safe``.
@@ -250,7 +264,10 @@ External Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_8ddsytjr4il6`
-An :t:`external static` is an import of a foreign :t:`variable`.
+An :dt:`external static` is an import of a foreign :t:`variable`.
+
+:dp:`fls_wb026immutable`
+An :dt:`immutable` :t:`value` is a :t:`value` that cannot be modified.
 
 :dp:`fls_H0cg9XMaGz0y`
 An :t:`external static` inherits the :t:`ABI` of its enclosing

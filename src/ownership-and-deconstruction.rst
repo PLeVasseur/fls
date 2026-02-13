@@ -16,11 +16,11 @@ Ownership
 .. rubric:: Legality Rules
 
 :dp:`fls_wt81sbsecmu0`
-:t:`Ownership` is a property of :t:`[value]s` that is central to the resource
+:dt:`Ownership` is a property of :t:`[value]s` that is central to the resource
 management model of Rust.
 
 :dp:`fls_ckcnkbb6y3cq`
-An :t:`owner` is a :t:`variable` that holds a :t:`value`.
+An :dt:`owner` is a :t:`variable` that holds a :t:`value`.
 
 :dp:`fls_ze0u9gfylmhn`
 A :t:`value` shall have only one :t:`owner`.
@@ -33,8 +33,12 @@ Initialization
 .. rubric:: Legality Rules
 
 :dp:`fls_drfzu02bo7oe`
-:t:`Initialization` is the act of supplying an initial :t:`value` to a
+:dt:`Initialization` is the act of supplying an initial :t:`value` to a
 :t:`variable`.
+
+:dp:`fls_hl5tnd9yy252`
+A :t:`variable` is a placeholder for a :t:`value` that is allocated on the
+stack.
 
 :dp:`fls_wnhci8phdu4m`
 When a :t:`variable` holds a :t:`value`, the :t:`variable` is considered to be
@@ -94,8 +98,11 @@ A :t:`reference` is a :t:`value` of a :t:`reference type`. A :t:`reference`
 can be obtained explicitly by using a :t:`borrow expression` or implicitly in
 certain scenarios.
 
+:dp:`fls_2s9h4k8v1qpm`
+A :dt:`reference` is a :t:`value` of a :t:`reference type`.
+
 :dp:`fls_tsqvr3fmcel`
-A :t:`referent` is the :t:`value` pointed-to by a :t:`reference`.
+A :dt:`referent` is the :t:`value` pointed-to by a :t:`reference`.
 
 :dp:`fls_ev4a82fdhwr8`
 A :t:`reference` shall point to an :t:`initialized` :t:`referent`.
@@ -120,6 +127,9 @@ A :t:`referent` shall not be modified while a :t:`reference` to it is
 :dp:`fls_wcf5mxrzbujn`
 An :t:`immutable reference` is a :t:`value` of a :t:`shared reference type`, and
 prevents the mutation of its :t:`referent`.
+
+:dp:`fls_4m2v8k1q9p0s`
+A :t:`shared reference` is a :t:`value` of a :t:`shared reference type`.
 
 :dp:`fls_fckoj1jh5mrc`
 A :t:`mutable reference` is a :t:`value` of a :t:`mutable reference type`, and
@@ -155,15 +165,26 @@ Borrowing
 .. rubric:: Legality Rules
 
 :dp:`fls_c02flohk54pc`
-:t:`Borrowing` is the process of temporarily associating a :t:`reference` with a
+:dt:`Borrowing` is the process of temporarily associating a :t:`reference` with a
 :t:`value` without transferring :t:`ownership` permanently.
 
 :dp:`fls_j9kof0px3l7s`
 A :t:`borrow` is a :t:`reference` produced by :t:`borrowing`.
 
+:dp:`fls_yL6cMahJUIqO`
+A :t:`value` is :t:`borrowed` when it is associated with an active
+:t:`borrow`.
+
+:dp:`fls_wb031borrowed`
+:dt:`borrowed` is the state of a memory location when a :t:`reference`
+pointing to it is :t:`active`.
+
 :dp:`fls_zepwytjwy049`
-An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
-program text. An :t:`implicit borrow` occurs in the following contexts:
+An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+program text.
+
+:dp:`fls_wb065implicitborrowctx`
+An :t:`implicit borrow` occurs in the following contexts:
 
 * :dp:`fls_nordokzfy36d`
   The :t:`call operand` of a :t:`call expression`,
@@ -187,15 +208,23 @@ program text. An :t:`implicit borrow` occurs in the following contexts:
   The :t:`receiver operand` of a :t:`method call expression`.
 
 :dp:`fls_MT69AGRXH9pS``
-An :t:`implicit borrow` may be an :t:`immutable borrow` or a :t:`mutable borrow`
+An :t:`implicit borrow` may be an :dt:`immutable borrow` or a :t:`mutable borrow`
 if required.
 
 :dp:`fls_hyl4bdjbuzbw`
 An :t:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
 
+:dp:`fls_wb076immutableref`
+An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`,
+and prevents the mutation of its :t:`referent`.
+
+:dp:`fls_8q0n7v3k2m1b`
+A :dt:`shared borrow` is a :t:`borrow` produced by evaluating an
+:t:`immutable borrow expression`.
+
 :dp:`fls_pu19i4sj6yg0`
-A :t:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
+A :dt:`mutable borrow` is a :t:`mutable reference` produced by :t:`borrowing`.
 
 :dp:`fls_kxws4zmaahj6`
 :t:`Borrowing` a :t:`field` of a :t:`union type` borrows all remaining
@@ -260,7 +289,7 @@ Passing Conventions
 .. rubric:: Legality Rules
 
 :dp:`fls_fvwx2ufeyzcs`
-A :t:`passing convention` is the mechanism that defines how a :t:`value` is
+A :dt:`passing convention` is the mechanism that defines how a :t:`value` is
 transferred between :t:`[place]s`.
 
 :dp:`fls_h2pgsij1rbms`
@@ -273,7 +302,7 @@ A :t:`value` of a :t:`copy type` is :t:`passed <passing convention>`
 :t:`value`.
 
 :dp:`fls_6ul3f6v0foma`
-A :t:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
+A :dt:`move type` is a :t:`type` that implements the :std:`core::marker::Sized`
 :t:`trait` and is not a :t:`copy type`.
 
 :dp:`fls_3ztdz02efeoc`
@@ -356,7 +385,7 @@ Destruction
 .. rubric:: Legality Rules
 
 :dp:`fls_e7ucq87s806d`
-:t:`Destruction` is the process of recovering resources associated with a
+:dt:`Destruction` is the process of recovering resources associated with a
 :t:`value` as it goes out of scope.
 
 .. _fls_u2mzjgiwbkz0:
@@ -367,16 +396,19 @@ Destructors
 .. rubric:: Legality Rules
 
 :dp:`fls_9m0gszdle0qb`
-A :t:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
+A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
 :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 :dp:`fls_4nkzidytpi6`
-A :t:`destructor` is a :t:`function` that is invoked immediately before the
+A :dt:`destructor` is a :t:`function` that is invoked immediately before the
 :t:`destruction` of a :t:`value` of a :t:`drop type`.
 
 :dp:`fls_wzuwapjqtyyy`
-:t:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
-related :t:`type`. Such an object is said to be :dt:`dropped`.
+:dt:`Dropping` a :t:`value` is the act of invoking the :t:`destructor` of the
+related :t:`type`.
+
+:dp:`fls_8U45VMMfCU7F`
+A :t:`value` is :dt:`dropped` when its :t:`destructor` is invoked.
 
 :dp:`fls_gfvm70iqu1l4`
 An :t:`uninitialized` :t:`variable` is not :t:`dropped`.
@@ -458,13 +490,17 @@ Drop Scopes
 .. rubric:: Legality Rules
 
 :dp:`fls_7uav7vkcv4pz`
-A :t:`drop scope` is a region of program text that governs the :t:`dropping` of
+A :dt:`drop scope` is a region of program text that governs the :t:`dropping` of
 :t:`[value]s`. When control flow leaves a :t:`drop scope`, all :t:`[value]s`
 associated with that :t:`drop scope` are :t:`dropped` based on a
 :t:`drop order`.
 
+:dp:`fls_vWILlWIfhB69`
+:dt:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
+:t:`drop scope` is left.
+
 :dp:`fls_txvxrn6wbyql`
-A :t:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
+A :dt:`drop construct` is a :t:`construct` that employs a :t:`drop scope`. The
 following :t:`[construct]s` are :t:`[drop construct]s`:
 
 * :dp:`fls_n6y6brm6pghr`
@@ -589,7 +625,7 @@ Drop Scope Extension
 .. rubric:: Legality Rules
 
 :dp:`fls_kflqez2mtbit`
-:t:`Drop scope extension` is the process of extending a :t:`drop scope`
+:dt:`Drop scope extension` is the process of extending a :t:`drop scope`
 associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
 :t:`temporary`.
 
@@ -597,7 +633,7 @@ associated with a :t:`temporary` to prevent the premature :t:`dropping` of the
 An :dt:`extending pattern` is either
 
 * :dp:`fls_965wt48ooqyw`
-  A :t:`reference identifier pattern`, or
+  A :dt:`reference identifier pattern`, or
 
 * :dp:`fls_r8nt0zp8dnyp`
   A :t:`slice pattern`, a :t:`struct pattern`, :t:`tuple pattern` or a
@@ -690,6 +726,9 @@ Drop Order
 :t:`Drop order` is the order by which :t:`[value]s` are :t:`dropped` when a
 :t:`drop scope` is left.
 
+:dp:`fls_wb020patnoalt`
+A :dt:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
+
 :dp:`fls_jwofws3022ar`
 When a :t:`drop scope` is left, all :t:`[value]s` associated with that
 :t:`drop scope` are :t:`dropped` as follows:
@@ -773,4 +812,3 @@ Dropping proceeds as follows:
    drop_order(Ok([PrintOnDrop("1"), PrintOnDrop("2")]));
 
    drop_order(Err([PrintOnDrop("2"), PrintOnDrop("1")]));
-

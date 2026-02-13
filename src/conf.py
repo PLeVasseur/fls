@@ -59,3 +59,13 @@ html_short_title = "FLS"
 lint_alphabetical_section_titles = ["glossary"]
 
 lint_no_paragraph_ids = ["index", "changelog"]
+
+lint_glossary_migration_phase = int(os.environ.get("FLS_GLOSSARY_MIGRATION_PHASE", "0"))
+lint_glossary_migration_strict = (
+    os.environ.get("FLS_GLOSSARY_MIGRATION_STRICT", "0") == "1"
+)
+lint_glossary_migration_report = os.environ.get("FLS_GLOSSARY_MIGRATION_REPORT", "")
+lint_glossary_migration_report_root = os.path.join(
+    os.environ.get("OPENCODE_CONFIG_DIR", "."),
+    "reports",
+)

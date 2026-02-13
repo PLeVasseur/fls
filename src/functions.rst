@@ -49,13 +49,13 @@ Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_gn1ngtx2tp2s`
-A :t:`function` is a :t:`value` of a :t:`function type` that models a behavior.
+A :dt:`function` is a :t:`value` of a :t:`function type` that models a behavior.
 
 :dp:`fls_bdx9gnnjxru3`
 A :t:`function` declares a unique :t:`function item type` for itself.
 
 :dp:`fls_87jnkimc15gi`
-A :t:`function qualifier` is a :t:`construct` that determines the role of
+A :dt:`function qualifier` is a :t:`construct` that determines the role of
 a :t:`function`.
 
 :dp:`fls_nwywh1vjt6rr`
@@ -68,8 +68,11 @@ A :t:`function parameter` is a :t:`construct` that yields a set of
 site of a :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_ymeo93t4mz4`
-A :t:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
+A :dt:`self parameter` is a :t:`function parameter` expressed by :t:`keyword`
 ``self``.
+
+:dp:`fls_4jrj1t4jcf8p`
+A :dt:`method` is an :t:`associated function` with a :t:`self parameter`.
 
 :dp:`fls_ijbt4tgnl95n`
 A :t:`function` shall not specify a :t:`self parameter` unless it is an
@@ -150,7 +153,7 @@ The :t:`return type` of a :t:`function` is determined as follows:
   Otherwise the :t:`return type` is the :t:`unit type`.
 
 :dp:`fls_927nfm5mkbsp`
-A :t:`function body` is the :t:`block expression` of a :t:`function`.
+A :dt:`function body` is the :t:`block expression` of a :t:`function`.
 
 :dp:`fls_yfm0jh62oaxr`
 A :t:`function` shall have a :t:`function body` unless it is an
@@ -199,9 +202,6 @@ is equivalent to :t:`function`
            /* tail expression */
        }
    }
-
-:dp:`fls_7ucwmzqtittv`
-An :t:`unsafe function` is a :t:`function` subject to an :s:`ItemSafety` with :t:`keyword` ``unsafe``.
 
 :dp:`fls_nUADhgcfvvGC`
 A :t:`function` shall only be subject to an :s:`ItemSafety` with :t:`keyword` ``safe`` if it is an :t:`external function` in an :t:`unsafe external block`.

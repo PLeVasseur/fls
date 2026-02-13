@@ -11,7 +11,7 @@ Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_j1jc83erljo0`
-A :t:`macro` is a custom definition that extends Rust by defining callable
+A :dt:`macro` is a custom definition that extends Rust by defining callable
 syntactic transformations. The effects of a :t:`macro` are realized through
 :t:`[macro invocation]s` or :t:`attribute` use. :t:`[Macro]s` come in two
 distinct forms:
@@ -25,7 +25,7 @@ distinct forms:
   return a stream of :t:`[lexical element]s`.
 
 :dp:`fls_rnty1c8l5495`
-:t:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
+:dt:`[Token]s` are a subset of :t:`[lexical element]s` consumed by :t:`[macro]s`.
 
 .. _fls_xa7lp0zg1ol2:
 
@@ -71,22 +71,22 @@ A :ds:`MacroMatchToken` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 :dp:`fls_w44hav7mw3ao`
-A :t:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
+A :dt:`declarative macro` is a :t:`macro` that associates a :t:`name` with a set
 of syntactic transformation :t:`[macro rule]s`.
 
 :dp:`fls_dw1nq4r9ghhd`
-A :t:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
+A :dt:`macro rule` is a :t:`construct` that consists of a :t:`macro matcher` and
 a :t:`macro transcriber`.
 
 :dp:`fls_oq4xn8guos8f`
-A :t:`macro matcher` is a :t:`construct` that describes a syntactic pattern that
+A :dt:`macro matcher` is a :t:`construct` that describes a syntactic pattern that
 a :t:`macro` must match.
 
 :dp:`fls_cdaf8viwmdfe`
-A :t:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
+A :dt:`macro match` is the most basic form of a satisfied :t:`macro matcher`.
 
 :dp:`fls_ljavs0w61z3j`
-A :t:`macro transcriber` is a :t:`construct` that describes the replacement
+A :dt:`macro transcriber` is a :t:`construct` that describes the replacement
 syntax of a :t:`macro`.
 
 :dp:`fls_3jspk8obv7sd`
@@ -144,14 +144,18 @@ a particular kind and bind its :t:`value` to a name for use during
 :t:`macro transcription`.
 
 :dp:`fls_4zdait30exvn`
-A :t:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+A :dt:`metavariable` is a :t:`macro match` that describes a :t:`variable`.
+
+:dp:`fls_wb005variable`
+A :dt:`variable` is a placeholder for a :t:`value` that is allocated on the
+stack.
 
 :dp:`fls_2HguXbL7DjKH`
 A :t:`metavariable` is visible in the :t:`macro transcriber` of the
 :t:`macro rule` of the :t:`macro matcher` it is declared in.
 
 :dp:`fls_8zypylq60zba`
-A :t:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
+A :dt:`fragment specifier` is a :t:`construct` that indicates the :t:`type` of
 a :t:`metavariable`.
 
 :dp:`fls_8o9mcV2KrKac`
@@ -192,7 +196,7 @@ a :t:`metavariable`.
   Any other kind may be followed by any token.
 
 :dp:`fls_ephlmLsGTMgw`
-A :t:`metavariable indication` is a :t:`construct` that indicates a
+A :dt:`metavariable indication` is a :t:`construct` that indicates a
 :t:`metavariable`.
 
 .. rubric:: Examples
@@ -234,19 +238,19 @@ A :ds:`MacroRepetitionSeparator` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 :dp:`fls_8byjmlgum2f3`
-A :t:`macro repetition in matching` allows for a syntactic pattern to be matched
+A :dt:`macro repetition in matching` allows for a syntactic pattern to be matched
 zero or multiple times during :t:`macro matching`.
 
 :dp:`fls_ltdp3zs60dzr`
-A :t:`macro repetition in transcription` allows for a syntactic pattern to be
+A :dt:`macro repetition in transcription` allows for a syntactic pattern to be
 transcribed zero or multiple times during :t:`macro transcription`.
 
 :dp:`fls_V1WRuzZUWUGj`
-A :t:`macro repetition` is either a :t:`macro repetition in matching` or a
+A :dt:`macro repetition` is either a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription`.
 
 :dp:`fls_u86j0zm2jshf`
-A :t:`repetition operator` is a :t:`construct` that indicates the number
+A :dt:`repetition operator` is a :t:`construct` that indicates the number
 of times a :t:`macro repetition in matching` or a
 :t:`macro repetition in transcription` can be repeated.
 
@@ -308,7 +312,7 @@ Procedural Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_ejbddhggstd2`
-A :t:`procedural macro` is a :t:`macro` that encapsulates syntactic
+A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
 transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
@@ -317,7 +321,7 @@ streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 :t:`attribute` :c:`crate_type` where the type is ``proc-macro``.
 
 :dp:`fls_vtzuplb1p3s`
-A :t:`macro implementation function` is the :t:`function` that encapsulates the
+A :dt:`macro implementation function` is the :t:`function` that encapsulates the
 syntactic transformations of a :t:`procedural macro`.
 
 :dp:`fls_mewfehvgm16r`
@@ -332,8 +336,12 @@ Function-like Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_utd3zqczix`
-A :t:`function-like macro` is a :t:`procedural macro` that consumes a stream of
+A :dt:`function-like macro` is a :t:`procedural macro` that consumes a stream of
 :t:`[token]s` and produces a stream of :t:`[token]s`.
+
+:dp:`fls_wb002typespec`
+A :dt:`type specification` is a construct that describes the structure of a
+:t:`type`.
 
 :dp:`fls_ojr30lf6jfx0`
 The :t:`macro implementation function` of a :t:`function-like macro` shall be
@@ -352,7 +360,7 @@ subject to the following restrictions:
   It shall lack :t:`[generic parameter]s`,
 
 * :dp:`fls_etyo9bmzxby6`
-  It shall have a single :t:`function parameter` whose :t:`type specification`
+  It shall have a single :dt:`function parameter` whose :t:`type specification`
   indicates :t:`type` :std:`proc_macro::TokenStream`,
 
 * :dp:`fls_mkl9b38m0sf1`
@@ -384,7 +392,7 @@ Derive Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_e5x92q2rq8a0`
-A :t:`derive macro` is a :t:`procedural macro` that consumes a stream of
+A :dt:`derive macro` is a :t:`procedural macro` that consumes a stream of
 :t:`[token]s` and produces a stream of :t:`[token]s`. :t:`[Derive macro]s` are
 used to construct new syntax for :t:`[abstract data type]s`.
 
@@ -446,7 +454,7 @@ Attribute Macros
 .. rubric:: Legality Rules
 
 :dp:`fls_l3epi1dqpi8o`
-An :t:`attribute macro` is a :t:`procedural macro` that consumes two streams
+An :dt:`attribute macro` is a :t:`procedural macro` that consumes two streams
 of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
 new :t:`outer attribute` that can be attached to :t:`[item]s`.
 :t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
@@ -495,7 +503,7 @@ empty.
 :dp:`fls_knjsslplv5ri`
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
-all :t:`[outer attribute]s` that apply to that :t:`item`.
+all :t:`[outer attribute]s` that apply to that :dt:`item`.
 
 .. rubric:: Examples
 
@@ -543,12 +551,12 @@ A :ds:`NonDelimitedToken` is any :t:`lexical element` in category
 .. rubric:: Legality Rules
 
 :dp:`fls_snpxxcqhtjfv`
-A :t:`macro invocation` is a call of a :t:`declarative macro` or
+A :dt:`macro invocation` is a call of a :t:`declarative macro` or
 :t:`function-like macro` that is expanded statically and replaced with the
 result of the :t:`macro`.
 
 :dp:`fls_6v06zvi1ctub`
-A :t:`terminated macro invocation` is a :t:`macro invocation` that may be used
+A :dt:`terminated macro invocation` is a :t:`macro invocation` that may be used
 as a :t:`statement`.
 
 .. rubric:: Examples
@@ -607,7 +615,7 @@ Macro Expansion
 .. rubric:: Legality Rules
 
 :dp:`fls_xscdaxvs4wx4`
-:t:`Macro expansion` is the process of statically executing a
+:dt:`Macro expansion` is the process of statically executing a
 :t:`macro invocation` and replacing it with the produced output of the
 :t:`macro invocation`.
 
@@ -644,7 +652,7 @@ Macro Expansion
 
    #. :dp:`fls_nsh2vwx8oiw`
       If the :t:`macro invocation` appears as part of an
-      :t:`expression-without-block`, the output is required to constitute an
+      :dt:`expression-without-block`, the output is required to constitute an
       :t:`expression`.
 
    #. :dp:`fls_tu6kmwm4v9nj`
@@ -732,7 +740,8 @@ Macro Expansion
 #. :dp:`fls_my93neopj9x0`
    The returned :std:`proc_macro::TokenStream` of the
    :t:`macro implementation function` call is appended to the enclosing
-   :t:`block expression` or :t:`module` where the related :s:`EnumDeclaration`,
+   :t:`block expression` or :t:`module` (a container of :t:`[item]s`) where the
+   related :s:`EnumDeclaration`,
    :s:`StructDeclaration`, or :s:`UnionDeclaration` resides. It is a static
    error if the output :std:`proc_macro::TokenStream` does not constitute zero
    or more :t:`[item]s`.
@@ -778,7 +787,7 @@ Macro Matching
 .. rubric:: Legality Rules
 
 :dp:`fls_ZmQZ8HQWv77L`
-:t:`Macro matching` is the process of performing :t:`rule matching` and
+:dt:`Macro matching` is the process of performing :t:`rule matching` and
 :t:`token matching`.
 
 .. _fls_n3ktmjqf87qb:
@@ -789,7 +798,7 @@ Rule Matching
 .. rubric:: Legality Rules
 
 :dp:`fls_77ucvwu6idms`
-:t:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
+:dt:`Rule matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy the :t:`macro matcher` of a :t:`macro rule` that belongs to a
 resolved :t:`declarative macro`.
 
@@ -822,7 +831,7 @@ Token Matching
 .. rubric:: Legality Rules
 
 :dp:`fls_k6a24sbon5v9`
-:t:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
+:dt:`Token matching` is the process of consuming a :s:`TokenTree` in an attempt
 to fully satisfy a :t:`macro match` of a selected :t:`macro matcher` that
 belongs to a resolved :t:`declarative macro`.
 
@@ -836,6 +845,10 @@ The outer :s:`[Delimiter]s` of a :t:`macro matcher` match any outer
 :dp:`fls_h7x3tc208zpk`
 A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
 :t:`[token]s` in the :t:`macro invocation` based on its :t:`fragment specifier`:
+
+:dp:`fls_wb038underscoreexpr`
+An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+in a :t:`destructuring assignment`.
 
 * :dp:`fls_p9eqa17d3dx`
   :t:`Fragment specifier` **block** requires a :t:`block expression`.
@@ -859,14 +872,18 @@ A :t:`metavariable` in a :t:`macro matcher` is matched against a sequence of
   (hyphen-minus), followed by a :t:`literal expression`.
 
 * :dp:`fls_wtol98rrqka5`
-  :t:`Fragment specifier` **meta** requires an :t:`attribute content`.
+  :t:`Fragment specifier` **meta** requires an :dt:`attribute content`.
 
 * :dp:`fls_iorqt9q4ie9j`
-  :t:`Fragment specifier` **pat** requires a :t:`pattern`.
+  :t:`Fragment specifier` **pat** requires a :t:`pattern` that matches the
+  accepted :t:`value` shape.
 
 * :dp:`fls_2zjed913qpvi`
   :t:`Fragment specifier` **pat_param** requires a
   :t:`pattern-without-alternation`.
+
+:dp:`fls_h2zikgmazoxx`
+A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 * :dp:`fls_3zdts0fsa36u`
   :t:`Fragment specifier` **path** requires a :t:`type path`.
@@ -947,7 +964,7 @@ Macro Transcription
 .. rubric:: Legality Rules
 
 :dp:`fls_y21i8062mft0`
-:t:`Macro transcription` is the process of producing the expansion of a
+:dt:`Macro transcription` is the process of producing the expansion of a
 :t:`declarative macro`.
 
 :dp:`fls_n2dx4ug5nd5w`
@@ -1072,32 +1089,42 @@ Hygiene
 -------
 
 :dp:`fls_7ezc7ncs678f`
-:t:`Hygiene` is a property of :t:`[macro]s` and :t:`[identifier]s` that appear
-within them, which aims to eliminate the syntactic interference between a
+The :dt:`hygiene` of :t:`[macro]s` and :t:`[identifier]s` that appear within
+them is a property that aims to eliminate the syntactic interference between a
 :t:`macro` and its environment.
 
 .. rubric:: Legality Rules
 
 :dp:`fls_3axjf28xb1nt`
-:t:`Hygiene` is categorized as follows:
+:t:`hygiene` is categorized as follows:
+
+:dp:`fls_94TOYfoplm4f`
+An :t:`identifier` is :dt:`unhygienic` when it has :t:`call site hygiene`.
 
 * :dp:`fls_dz2mvodl818d`
-  :t:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
+  :dt:`Definition site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
   site. :t:`[Identifier]s` with :t:`definition site hygiene` cannot reference
   the environment of the :s:`MacroRulesDeclaration`, cannot be referenced by the
-  environment of a :s:`MacroInvocation`, and are considered :t:`hygienic`.
+  environment of a :s:`MacroInvocation`, and are considered :dt:`hygienic`.
 
 * :dp:`fls_puqhytfzfsg6`
-  :t:`Call site hygiene`, which resolves to a :s:`MacroInvocation` site.
+  :dt:`call site hygiene`, which resolves to a :s:`MacroInvocation` site.
   :t:`[Identifier]s` with :t:`call site hygiene` can reference the environment
   of the :s:`MacroRulesDeclaration`, can reference the environment of the
   :s:`MacroInvocation`, and are considered :t:`unhygienic`.
 
 * :dp:`fls_uyvnq88y9gk3`
-  :t:`Mixed site hygiene`, which resolves to a :s:`MacroRulesDeclaration`
-  site for :t:`[label]s`, :t:`[variable]s`, and the ``$crate``
-  :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise, and is
-  considered :dt:`partially hygienic`.
+  :dt:`mixed site hygiene` is a hygiene category that resolves to a
+  :s:`MacroRulesDeclaration` site for :t:`[label]s`, :t:`[variable]s`, and the
+  ``$crate`` :t:`metavariable`, and to the :s:`MacroInvocation` site otherwise,
+  and is considered :t:`partially hygienic`.
+
+:dp:`fls_4bTKuwDSu5FJ`
+An :t:`identifier` is :t:`hygienic` when it has :t:`definition site hygiene`.
+
+:dp:`fls_jGq0s5E0T9fd`
+An :t:`identifier` is :dt:`partially hygienic` when it has
+:t:`mixed site hygiene`.
 
 :dp:`fls_yxqcr19dig18`
 Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
@@ -1113,4 +1140,3 @@ Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 :dp:`fls_7eqqk2cj0clr`
 The :t:`metavariable` ``$crate`` in a :t:`declarative macro`'s expansion refers
 to the crate the :t:`declarative macro` was declared in.
-

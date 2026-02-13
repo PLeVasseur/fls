@@ -46,12 +46,14 @@ Types
 
 .. rubric:: Legality Rules
 
-:dp:`fls_4rhjpdu4zfqj`
-A :t:`type` defines a set of :t:`[value]s` and a set of operations that act on
-those :t:`[value]s`.
+:dp:`fls_r3g5n7t2k9vq`
+A :dt:`type specification` describes the structure of a :t:`type`.
 
 :dp:`fls_0yaYKnFrJkhG`
-A :t:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+A :dt:`local type` is a :t:`type` that is defined in the current :t:`crate`.
+
+:dp:`fls_cTF1sJ9I2XJd`
+A :dt:`concrete type` is a :t:`type` described by a :t:`type specification`.
 
 .. _fls_963gsjp2jas2:
 
@@ -157,6 +159,10 @@ Type Classification
 Scalar Types
 ------------
 
+:dp:`fls_5y8tfx2kgj0c`
+A :t:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or a
+:t:`numeric type`.
+
 .. _fls_tiqp1gxf116z:
 
 Bool Type
@@ -165,7 +171,7 @@ Bool Type
 .. rubric:: Legality Rules
 
 :dp:`fls_h5994su1yft3`
-:c:`Bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
+:dt:`bool` is a :t:`type` whose :t:`[value]s` denote the truth :t:`[value]s` of
 logic and Boolean algebra.
 
 :dp:`fls_v8atmrwz6wzk`
@@ -336,6 +342,13 @@ Operation ``a < b`` is equivalent to ``!(a >= b)``.
 :dp:`fls_d09l2rl0161l`
 Operation ``a <= b`` is equivalent to ``a == b | a < b``.
 
+:dp:`fls_M4Q4vAJmapq8`
+A :dt:`validity invariant` is an invariant that when violated results in
+immediate :t:`undefined behavior`.
+
+:dp:`fls_wb007undefbehavior`
+:dt:`undefined behavior` is a situation that results in an unbounded error.
+
 .. rubric:: Undefined Behavior
 
 :dp:`fls_2sd39mj05mb9`
@@ -350,7 +363,7 @@ Char Type
 .. rubric:: Legality Rules
 
 :dp:`fls_vnwbs0exbwcn`
-:c:`Char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
+A :dt:`char` is a :t:`type` whose :t:`[value]s` are represented as a 32-bit
 unsigned word in the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges
 of :t:`Unicode`.
 
@@ -366,6 +379,11 @@ inside the 0x000 - 0xD7FF or the 0xE000 - 0x10FFFF inclusive ranges of
 Numeric Types
 ~~~~~~~~~~~~~
 
+.. rubric:: Legality Rules
+
+:dp:`fls_WoLf75ZAyg05`
+A :dt:`numeric type` is a :t:`type` whose :t:`[value]s` denote numbers.
+
 .. _fls_b4xporvr64s:
 
 Floating Point Types
@@ -373,11 +391,20 @@ Floating Point Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_xcUkEjuclTjp`
+A :t:`floating-point type` is a :t:`numeric type` whose :t:`[value]s` denote
+fractional numbers.
+
+:dp:`fls_a5exYaDySck3`
+A :dt:`floating-point value` is a :t:`value` of a :t:`floating-point type`.
+
 :dp:`fls_30yny2xb9b6b`
-:t:`Type` :c:`f32` is equivalent to the IEEE 754-2008 binary32 :t:`type`.
+:dc:`f32` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+binary32 :t:`type`.
 
 :dp:`fls_yqflrq9s6p6n`
-:t:`Type` :c:`f64` is equivalent to the IEEE 754-2008 binary64 :t:`type`.
+:dc:`f64` is a :t:`floating-point type` equivalent to the IEEE 754-2008
+binary64 :t:`type`.
 
 .. rubric:: Dynamic Semantics
 
@@ -391,8 +418,20 @@ Integer Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_tHog6qQQp5Bo`
+An :t:`integer type` is a :t:`numeric type` whose :t:`[value]s` denote whole
+numbers.
+
+:dp:`fls_3g2cxq6r7nkp`
+A :dt:`signed integer type` is an :t:`integer type` whose :t:`[value]s` denote
+signed whole numbers.
+
+:dp:`fls_k9n8q1rm2v3a`
+An :dt:`unsigned integer type` is an :t:`integer type` whose :t:`values <value>`
+denote zero and positive whole numbers.
+
 :dp:`fls_cokwseo3nnr`
-:t:`[Unsigned integer type]s` define the following inclusive ranges over the
+:t:`[unsigned integer type]s` define the following inclusive ranges over the
 domain of whole numbers:
 
 .. list-table::
@@ -422,9 +461,29 @@ domain of whole numbers:
      - 0
      - 2\ :sup:`128` - 1
 
+:dp:`fls_2r9b7y4m1wqk`
+:dc:`u8` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`8` - 1, all inclusive.
+
+:dp:`fls_7p6k2z9n4mva`
+:dc:`u16` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`16` - 1, all inclusive.
+
+:dp:`fls_9f3x8k2m7n1a`
+:dc:`u32` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`32` - 1, all inclusive.
+
+:dp:`fls_w5c1p8r2t9zq`
+:dc:`u64` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`64` - 1, all inclusive.
+
+:dp:`fls_v4m7q1s8k2jd`
+:dc:`u128` is an :t:`unsigned integer type` whose :t:`[value]s` range from 0 to
+2\ :sup:`128` - 1, all inclusive.
+
 :dp:`fls_75lntwhg20l`
-:t:`Type` :c:`usize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+:dc:`usize` is an :t:`unsigned integer type` with the same number of bits as the
+platform's :t:`pointer type`, and is at least 16-bits wide.
 
 :dp:`fls_p2shoji3xg5a`
 :t:`[Signed integer type]s` define the following inclusive ranges over the
@@ -457,14 +516,37 @@ domain of whole numbers:
      - \- (2\ :sup:`127`)
      - 2\ :sup:`127` - 1
 
+:dp:`fls_ooK58arLzTu0`
+:dc:`i8` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`7`) to 2\ :sup:`7` - 1, all inclusive.
+
+:dp:`fls_oxa40W48GQJa`
+:dc:`i16` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`15`) to 2\ :sup:`15` - 1, all inclusive.
+
+:dp:`fls_qKtVYx9rFwdF`
+:dc:`i32` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`31`) to 2\ :sup:`31` - 1, all inclusive.
+
+:dp:`fls_x0ZGfEWHDE6C`
+:dc:`i64` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`63`) to 2\ :sup:`63` - 1, all inclusive.
+
+:dp:`fls_XmTzsm78eJvh`
+:dc:`i128` is a :t:`signed integer type` whose :t:`[value]s` range from - (2\
+:sup:`127`) to 2\ :sup:`127` - 1, all inclusive.
+
 :dp:`fls_t9oyfmgqka6u`
-:t:`Type` :c:`isize` has the same number of bits as the platform's
-:t:`pointer type`, and is at least 16-bits wide.
+:dc:`isize` is a :t:`signed integer type` with the same number of bits as the
+platform's :t:`pointer type`, and is at least 16-bits wide.
 
 .. _fls_fbchw64p6n2x:
 
 Sequence Types
 --------------
+
+:dp:`fls_4bc1m2n7r0qp`
+A :dt:`sequence type` is a :t:`type` that represents a sequence of elements.
 
 .. _fls_uj0kpjwyld60:
 
@@ -484,8 +566,16 @@ Array Types
 .. rubric:: Legality Rules
 
 :dp:`fls_fx7b3qv3ghca`
-An :t:`array type` is a :t:`sequence type` that represents a fixed sequence
+An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
+
+:dp:`fls_mRbOQQQPbVyU`
+An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
+a :t:`slice type`.
+
+:dp:`fls_4sd5dgy2unq7`
+A :t:`size operand` is a :t:`constant expression` or an :t:`inferred constant`
+that specifies the length of an :t:`array type`.
 
 :dp:`fls_pkts1p2dnxo`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -521,8 +611,11 @@ Slice Types
 .. rubric:: Legality Rules
 
 :dp:`fls_ftvua2hlvr08`
-A :t:`slice type` is a :t:`sequence type` that provides a view into a sequence
+A :dt:`slice type` is a :t:`sequence type` that provides a view into a sequence
 of elements.
+
+:dp:`fls_qqw9h1x0ptl6`
+A :dt:`slice` is a :t:`value` of a :t:`slice type`.
 
 :dp:`fls_acgtczhk8ci0`
 The :t:`element type` shall be a :t:`fixed sized type`.
@@ -548,8 +641,12 @@ Str Type
 .. rubric:: Legality Rules
 
 :dp:`fls_wlnoq1qoq2kr`
-:c:`Str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
+A :dt:`str` is a :t:`sequence type` that represents a :t:`slice` of 8-bit unsigned
 bytes.
+
+:dp:`fls_wb015safetyinvar`
+A :dt:`safety invariant` is an invariant that when violated may result in
+:t:`undefined behavior`.
 
 :dp:`fls_1xa6fas6laha`
 :t:`Type` :c:`str` is a :t:`dynamically sized type`.
@@ -557,6 +654,10 @@ bytes.
 :dp:`fls_yu7r2077n9m7`
 A :t:`value` of :t:`type` :c:`str` shall denote a valid UTF-8 sequence of
 characters.
+
+:dp:`fls_w2n7c4p8m1vj`
+A :dt:`textual type` is a :t:`type` class that includes type :c:`char` and type
+:c:`str`.
 
 .. rubric:: Undefined Behavior
 
@@ -585,8 +686,15 @@ Tuple Types
 .. rubric:: Legality Rules
 
 :dp:`fls_bn7wmf681ngt`
-A :t:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
+A :dt:`tuple type` is a :t:`sequence type` that represents a heterogeneous list
 of other :t:`[type]s`.
+
+:dp:`fls_h7v2m9q3k1zp`
+A :dt:`unit tuple` is a :t:`value` of the :t:`unit type`.
+
+:dp:`fls_ivWBnhfOZUrW`
+The :t:`arity` of a :t:`tuple type` is the number of :t:`[tuple field]s` in its
+:s:`TupleFieldList`.
 
 :dp:`fls_s9a36zsrfqew`
 If the :t:`type` of a :t:`tuple field` is a :t:`dynamically-sized type`, then
@@ -605,6 +713,12 @@ the :t:`tuple field` shall be the last :t:`tuple field` in the
 
 Abstract Data Types
 -------------------
+
+:dp:`fls_n9HtRM22YEv5`
+An :dt:`abstract data type` is a collection of other :t:`[type]s`.
+
+:dp:`fls_74bRiJktNHvk`
+A :t:`field` is an element of an :t:`abstract data type`.
 
 .. _fls_szibmtfv117b:
 
@@ -634,23 +748,52 @@ Enum Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_9ZleHwO3HlUX`
+An :dt:`enum` is an :t:`item` that declares an :t:`enum type`.
+
 :dp:`fls_gbdd37seqoab`
-An :t:`enum type` is an :t:`abstract data type` that contains
+An :dt:`enum type` is an :t:`abstract data type` that contains
 :t:`[enum variant]s`.
 
+:dp:`fls_v4QIqcZGsG6C`
+An :t:`enum value` is a :t:`value` of an :t:`enum type`.
+
+:dp:`fls_KTzAGty3T5fF`
+An :dt:`enum variant value` is the :t:`enum value` of the corresponding
+:t:`enum` of the :t:`enum variant`.
+
 :dp:`fls_il9a1olqmu38`
-A :t:`zero-variant enum type` has no :t:`[value]s`.
+A :dt:`zero-variant enum type` is an :t:`enum type` without any
+:t:`[enum variant]s`.
 
 :dp:`fls_wQTFwl88VujQ`
-An :t:`enum variant` is a :t:`construct` that declares one of the
+An :dt:`enum variant` is a :t:`construct` that declares one of the
 possible variations of an :t:`enum`.
+
+:dp:`fls_9vlr65nzdwf2`
+A :t:`record enum variant` is an :t:`enum variant` with a
+:s:`RecordStructFieldList`.
+
+:dp:`fls_YERnNZiSdCRn`
+A :t:`field list` is a :s:`RecordStructFieldList` or a
+:s:`TupleStructFieldList`.
+
+:dp:`fls_h2m9k6p4r7vd`
+A :t:`tuple enum variant value` is a :t:`value` of a :t:`tuple enum variant`.
+
+:dp:`fls_1PqJYZ5eMNym`
+An :dt:`enum field` is a :t:`field` of an :t:`enum variant`.
 
 :dp:`fls_g5qle7xzaoif`
 The :t:`name` of an :t:`enum variant` shall be unique within the related
 :s:`EnumDeclaration`.
 
 :dp:`fls_t4yeovFm83Wo`
-A :t:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
+
+:dp:`fls_IhqHv2D1nuXj`
+A :dt:`discriminant initializer` is a construct that provides the :t:`value`
+of a :t:`discriminant`.
 
 :dp:`fls_hp5frc752dam`
 A :t:`discriminant initializer` shall be specified only when all :t:`[enum
@@ -760,9 +903,54 @@ Struct Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_9h1rj4lq6vzx`
+A :dt:`struct` is an :t:`abstract data type` declared with a
+:s:`StructDeclaration`.
+
 :dp:`fls_g1azfj548136`
-A :t:`struct type` is an :t:`abstract data type` that is a product of other
+A :dt:`struct type` is an :t:`abstract data type` that is a product of other
 :t:`[type]s`.
+
+:dp:`fls_f2v8k1m4q9zd`
+A :dt:`field` is an element of an :t:`abstract data type`.
+
+:dp:`fls_r3g6b8q1bphw`
+A :t:`record struct` is a :t:`struct` with a :s:`RecordStructFieldList`.
+
+:dp:`fls_5b2q0xj9k7ry`
+A :dt:`record struct type` is the :t:`type` of a :t:`record struct`.
+
+:dp:`fls_7ac1p6f1v9tj`
+A :dt:`record struct value` is a :t:`value` of a :t:`record struct type`.
+
+:dp:`fls_9m52m0px5y0r`
+A :dt:`record struct field` is a :t:`field` of a :t:`record struct type`.
+
+:dp:`fls_j9r1c6m3v7kw`
+A :t:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
+
+:dp:`fls_z4p8t1x6n2qv`
+A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
+
+:dp:`fls_wb087tuplestructtype`
+A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+
+:dp:`fls_x2k7m9p1v5qa`
+A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
+
+:dp:`fls_t9m2v7k4q1za`
+A :dt:`unit struct value` is a :t:`value` of a :t:`unit struct type`.
+
+:dp:`fls_6b2xm9k1qz0w`
+A :dt:`struct field` is a :t:`field` declared in a :t:`struct type`.
+
+:dp:`fls_0r4qz8k5n1mp`
+A :t:`struct value` is a :t:`value` of a :t:`struct type`.
+
+:dp:`fls_3QSa0wGQtbHh`
+A :dt:`field index` is the position of a :t:`field` within a
+:t:`tuple struct type` or :t:`tuple enum variant`. The first :t:`field` has a
+:t:`field index` of zero, the Nth :t:`field` has a :t:`field index` of N-1.
 
 :dp:`fls_r885av95eivp`
 The :t:`name` of a :t:`record struct field` shall be unique within the
@@ -810,9 +998,15 @@ Union Types
 
 .. rubric:: Legality Rules
 
+:dp:`fls_j4m8v1q2t9za`
+A :dt:`union` is an :t:`item` that declares a :t:`union type`.
+
 :dp:`fls_nskmnzq95yqm`
-A :t:`union type` is an :t:`abstract data type` that is a sum of other
+A :dt:`union type` is an :t:`abstract data type` that is a sum of other
 :t:`[type]s`.
+
+:dp:`fls_p2m7v9k1t4qa`
+A :dt:`union field` is a :t:`field` of a :t:`union type`.
 
 :dp:`fls_I5fN5Fmo5CyK`
 A :t:`union` without any :t:`[union field]s` is rejected, but may still be consumed by
@@ -826,7 +1020,7 @@ The :t:`name` of a :t:`union field` shall be unique within the related
 The :t:`type` of a :t:`union field` shall be either:
 
 * :dp:`fls_hLTnHnZuaHve`
-  A :t:`copy type`, or
+  A :dt:`copy type`, or
 
 * :dp:`fls_JWgSckDtN13c`
   A :t:`mutable reference type`, or
@@ -857,6 +1051,10 @@ The :t:`type` of a :t:`union field` shall be either:
 Function Types
 --------------
 
+:dp:`fls_P5PFddyptGec`
+A :dt:`function type` is either a :t:`closure type` or a
+:t:`function item type`.
+
 .. _fls_xd2oxlebhs14:
 
 Closure Types
@@ -865,7 +1063,7 @@ Closure Types
 .. rubric:: Legality Rules
 
 :dp:`fls_bsykgnbatpmi`
-A :t:`closure type` is a unique anonymous :t:`function type` that encapsulates
+A :dt:`closure type` is a unique anonymous :t:`function type` that encapsulates
 all :t:`[capture target]s` of a :t:`closure expression`.
 
 :dp:`fls_zfj4l8bigdg0`
@@ -911,16 +1109,12 @@ Function Item Types
 .. rubric:: Legality Rules
 
 :dp:`fls_t24iojx7yc23`
-A :t:`function item type` is a unique anonymous :t:`function type` that
+A :dt:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
 :dp:`fls_sas3ahcshnrh`
-An :t:`external function item type` is a :t:`function item type` where the
+An :dt:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
-
-:dp:`fls_liwnzwu1el1i`
-An :t:`unsafe function item type` is a :t:`function item type` where the related
-:t:`function` is an :t:`unsafe function`.
 
 :dp:`fls_e9x4f7qxvvjv`
 A :t:`function item type` is coercible to a :t:`function pointer type`.
@@ -936,6 +1130,23 @@ the :std:`core::marker::Send` :t:`trait`, and the :std:`core::marker::Sync`
 
 Indirection Types
 -----------------
+
+:dp:`fls_dPFd7zMOKt5b`
+An :dt:`indirection type` is a :t:`type` whose :t:`[value]s` refer to memory
+locations.
+
+:dp:`fls_mtIPI4ofJsUB`
+A :dt:`pointer type` is a :t:`type` whose :t:`[value]s` indicate memory locations.
+
+:dp:`fls_TGJQnwS4v9nZ`
+A :t:`pointer` is a :t:`value` of a :t:`pointer type`.
+
+:dp:`fls_b7m2q9t4v1cx`
+A :dt:`thin pointer type` is an :t:`indirection type` that refers to a
+:t:`fixed sized type`.
+
+:dp:`fls_p4n8k2y6c7rm`
+A :dt:`thin pointer` is a :t:`value` of a :t:`thin pointer type`.
 
 .. _fls_xztr1kebz8bo:
 
@@ -966,15 +1177,15 @@ Function Pointer Types
 .. rubric:: Legality Rules
 
 :dp:`fls_v2wrytr3t04h`
-A :t:`function pointer type` is an :t:`indirection type` that refers to a
+A :dt:`function pointer type` is an :t:`indirection type` that refers to a
 :t:`function`.
 
-:dp:`fls_5dd7icjcl3nt`
-An :t:`unsafe function pointer type` is a function pointer type subject to
-:t:`keyword` ``unsafe``.
+:dp:`fls_aXhHQFNr7kaf`
+A :dt:`function pointer type parameter` is a :t:`function parameter` of a
+:t:`function pointer type`.
 
 :dp:`fls_B0SMXRqQMS1E`
-A :t:`variadic part` indicates the presence of :t:`C`-like optional
+A :dt:`variadic part` indicates the presence of :t:`c`-like optional
 parameters.
 
 :dp:`fls_hbn1l42xmr3h`
@@ -1016,14 +1227,17 @@ Raw Pointer Types
 .. rubric:: Legality Rules
 
 :dp:`fls_rpbhr0xukbx9`
-A :t:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+A :dt:`raw pointer type` is an :t:`indirection type` without validity guarantees.
+
+:dp:`fls_7c5w2c2n2nhb`
+A :dt:`raw pointer` is a pointer of a :t:`raw pointer type`.
 
 :dp:`fls_bYWfGDAQcWfA`
-A :t:`mutable raw pointer type` is a :t:`raw pointer type` subject to
+A :dt:`mutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``mut``.
 
 :dp:`fls_8uWfFAsZeRCs`
-An :t:`immutable raw pointer type` is a :t:`raw pointer type` subject to
+An :dt:`immutable raw pointer type` is a :t:`raw pointer type` subject to
 :t:`keyword` ``const``.
 
 :dp:`fls_hrum767l6dte`
@@ -1056,10 +1270,10 @@ Reference Types
 .. rubric:: Legality Rules
 
 :dp:`fls_twhq24s8kchh`
-A :t:`reference type` is an :t:`indirection type` with :t:`ownership`.
+A :dt:`reference type` is an :t:`indirection type` with :t:`ownership`.
 
 :dp:`fls_w4NbA7WhZfR2`
-A :t:`shared reference type` is a :t:`reference type` not subject to
+A :dt:`shared reference type` is a :t:`reference type` not subject to
 :t:`keyword` ``mut``.
 
 :dp:`fls_ie0avzljmxfm`
@@ -1068,13 +1282,13 @@ A :t:`shared reference type` prevents the direct mutation of a referenced
 
 :dp:`fls_15zdiqsm1q3p`
 A :t:`shared reference type` implements the :std:`core::marker::Copy`
-:t:`trait`. Copying a :t:`shared reference` performs a shallow copy.
+:t:`trait`. Copying a :dt:`shared reference` performs a shallow copy.
 
 :dp:`fls_csdjfwczlzfd`
 Releasing a :t:`shared reference` has no effect on the :t:`value` it refers to.
 
 :dp:`fls_GUZuiST7ucib`
-A :t:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
+A :dt:`mutable reference type` is a :t:`reference type` subject to :t:`keyword`
 ``mut``.
 
 :dp:`fls_vaas9kns4zo6`
@@ -1102,6 +1316,10 @@ not :c:`null`.
 
 Trait Types
 -----------
+
+:dp:`fls_k2m9v6r1t7yx`
+A :dt:`trait type` is either an :t:`impl trait type` or a
+:t:`trait object type`.
 
 .. _fls_3xqobbu7wfsf:
 
@@ -1131,16 +1349,16 @@ Impl Trait Types
 .. rubric:: Legality Rules
 
 :dp:`fls_a6zlvyxpgsew`
-An :t:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
+An :dt:`impl trait type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is known at compile time.
 
 :dp:`fls_ieyqx5vzas2m`
 An :t:`impl trait type` shall appear only within a :t:`function parameter` or
 the :t:`return type` of a :t:`function`.
 
-:dp:`fls_3aKZB0ILIkZw`
-An :t:`anonymous return type` is an :t:`impl trait type` ascribed to a
-:t:`function` :t:`return type`.
+:dp:`fls_0rAmIzljJgWi`
+An :dt:`anonymous type parameter` is an :t:`impl trait type` ascribed to a
+:t:`function parameter`.
 
 :dp:`fls_Xo1ODwOyX7Vm`
 An :t:`anonymous return type` behaves as if it contains all declared :t:`[type
@@ -1157,7 +1375,7 @@ of the :t:`return type`'s :t:`function` and its parent :t:`trait` or
 An :t:`impl trait type` shall not contain :t:`[opt-out trait bound]s`.
 
 :dp:`fls_69hqMjvNno9u`
-An :t:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
+An :dt:`use capture` is a :t:`generic parameter` referenced within an :t:`anonymous return type`.
 
 :dp:`fls_KgH6c5cC4S0G`
 An :t:`anonymous return type` that does not specify a list of :t:`[use capture]s` implicitly :t:`[use capture]s` all :t:`[type parameter]s` and :t:`[constant parameter]s` that are in :t:`scope`.
@@ -1192,11 +1410,11 @@ Trait Object Types
 .. rubric:: Legality Rules
 
 :dp:`fls_sgrvona1nb6h`
-A :t:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
+A :dt:`trait object type` is a :t:`type` that implements a :t:`trait`, where the
 :t:`type` is not known at compile time.
 
 :dp:`fls_eWac7zOda3lh`
-The :t:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
+The :dt:`principal trait` of :t:`trait object type` is the first :t:`trait bound`.
 
 :dp:`fls_9z8oleh0wdel`
 The :t:`principal trait` shall denote an :t:`object safe` :t:`trait`.
@@ -1243,7 +1461,7 @@ Inferred Types
 .. rubric:: Legality Rules
 
 :dp:`fls_xdtgr5toulpb`
-An :t:`inferred type` is a placeholder for a :t:`type` deduced by
+An :dt:`inferred type` is a placeholder for a :t:`type` deduced by
 :t:`type inference`.
 
 :dp:`fls_3abhsuaa8nas`
@@ -1282,7 +1500,7 @@ Type Parameters
 .. rubric:: Legality Rules
 
 :dp:`fls_dCIIVXGhXDlO`
-A :t:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
+A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
 to be substituted by :t:`generic substitution`.
 
 .. rubric:: Examples
@@ -1306,7 +1524,7 @@ Never Type
 .. rubric:: Legality Rules
 
 :dp:`fls_4u0v5uy95pyf`
-The :t:`never type` is a :t:`type` that represents the result of a computation
+The :dt:`never type` is a :t:`type` that represents the result of a computation
 that never completes.
 
 :dp:`fls_xmtc10qzw0ui`
@@ -1338,7 +1556,7 @@ Parenthesized Types
 .. rubric:: Legality Rules
 
 :dp:`fls_1dvo1epstrdv`
-A :t:`parenthesized type` is a :t:`type` that disambiguates the interpretation
+A :dt:`parenthesized type` is a :t:`type` that disambiguates the interpretation
 of :t:`[lexical element]s`.
 
 .. rubric:: Examples
@@ -1366,7 +1584,15 @@ Type Aliases
 .. rubric:: Legality Rules
 
 :dp:`fls_bibigic4jjad`
-A :t:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
+
+:dp:`fls_2uLBgKLYXoJV`
+An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
+:t:`name` for.
+
+:dp:`fls_wb048whereclause`
+A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+:t:`[lifetime parameter]s` and :t:`[type parameter]s`.
 
 :dp:`fls_rosdkeck5ax2`
 A :t:`type alias` shall not have a :s:`TypeBoundList` unless it is an
@@ -1395,13 +1621,36 @@ Type Layout
 .. rubric:: Legality Rules
 
 :dp:`fls_kdbq02iguzgl`
-All :t:`[value]s` have an :t:`alignment` and a :t:`size`.
+All :t:`[value]s` have an :dt:`alignment` and a :t:`size`.
+
+:dp:`fls_wb013size`
+The :dt:`size` of a :t:`value` is the offset in bytes between successive
+elements in an :t:`array type` with the same :t:`element type`, including any
+padding for :t:`alignment`.
+
+:dp:`fls_5kz6p0m2v9nd`
+A :dt:`sized type` is a :t:`type` that implements the
+:std:`core::marker::Sized` :t:`trait`.
+
+:dp:`fls_c6lSeub6RBUV`
+A :dt:`fixed sized type` is a :t:`type` that implements the
+:std:`core::marker::Sized` :t:`trait`.
+
+:dp:`fls_zn7x5u9r0c3y`
+A :dt:`zero-sized type` is a :t:`fixed sized type` with :t:`size` zero.
 
 :dp:`fls_26Xgem831Nqg`
 A :dt:`dynamically sized type` is a :t:`type` that does not implement the :std:`core::marker::Sized` :t:`trait`.
 
+:dp:`fls_q3m7v2k9t1pa`
+An :dt:`unsized type` is a :t:`type` that does not implement the
+:std:`core::marker::Sized` :t:`trait`.
+
 :dp:`fls_ozYgHEHFTT5c`
 A :dt:`fat pointer type` is an :t:`indirection type` whose contained :t:`type specification` is a :t:`dynamically sized type`.
+
+:dp:`fls_w1KifBNDp4VE`
+A :dt:`fat pointer` is a :t:`value` of a :t:`fat pointer type`.
 
 :dp:`fls_muxfn9soi47l`
 The :t:`alignment` of a :t:`value` specifies which addresses are valid for
@@ -1414,6 +1663,10 @@ The :t:`size` of a :t:`type` is the offset in bytes between successive elements
 in :t:`array type` ``[T, N]`` where ``T`` is the :t:`type` of the :t:`value`,
 including any padding for :t:`alignment`. :t:`Size` is a multiple of the
 :t:`alignment`.
+
+:dp:`fls_B2pGRVJlOihB`
+A :dt:`layout` specifies the :t:`alignment`, :t:`size`, and the relative offset
+of :t:`[field]s` in a :t:`type`.
 
 :dp:`fls_bk3nm2n47afu`
 The :t:`size` of :t:`[scalar type]s` is as follows:
@@ -1511,10 +1764,13 @@ Type Representation
 .. rubric:: Legality Rules
 
 :dp:`fls_mpqlyi3lgrfv`
-:t:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
+:dt:`Type representation` specifies the :t:`layout` of :t:`[field]s` of
 :t:`[abstract data type]s`. :t:`Type representation` changes the bit padding
 between :t:`[field]s` of :t:`[abstract data type]s` as well as their order, but
 does not change the :t:`layout` of the :t:`[field]s` themselves.
+
+:dp:`fls_5n2x8q1j7r4m`
+For :dt:`representation`, see :t:`type representation`.
 
 :dp:`fls_9dhnanv21y9z`
 :t:`Type representation` is classified into:
@@ -1532,20 +1788,20 @@ does not change the :t:`layout` of the :t:`[field]s` themselves.
   :t:`Transparent representation`.
 
 :dp:`fls_8s1vddh8vdhy`
-:t:`C representation` lays out a :t:`type` such that the :t:`type` is
+:dt:`C representation` lays out a :t:`type` such that the :t:`type` is
 interoperable with the :t:`C` language.
 
 :dp:`fls_b005bktrkrxy`
-:t:`Default representation` makes no guarantees about the :t:`layout`.
+:dt:`Default representation` makes no guarantees about the :t:`layout`.
 
 :dp:`fls_7plbkqlmed0r`
-:t:`Primitive representation` is the :t:`type representation` of individual
+:dt:`Primitive representation` is the :t:`type representation` of individual
 :t:`[integer type]s`. :t:`Primitive representation` applies only to an
 :t:`enum type` that is not a :t:`zero-variant enum type`. It is possible to
 combine :t:`C representation` and :t:`primitive representation`.
 
 :dp:`fls_ml4khttq3w5k`
-:t:`Transparent representation` applies only to an :t:`enum type` with a
+:dt:`Transparent representation` applies only to an :t:`enum type` with a
 single :t:`enum variant` or a :t:`struct type` where the :t:`struct type` or
 :t:`enum variant` has a single :t:`field` of non-zero :t:`size` and any number
 of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
@@ -1563,7 +1819,7 @@ of :t:`[field]s` of :t:`size` zero and :t:`alignment` one.
 :dp:`fls_qkkc8x2oghst`
 :t:`Type representation` may be specified using :t:`attribute` :c:`[repr]` and
 modified further using :t:`attribute` :c:`[repr]`'s :s:`Alignment`
-:t:`[representation modifier]s`. A :t:`representation modifier` shall apply only
+:dt:`representation modifier`s. A :t:`representation modifier` shall apply only
 to a :t:`struct type` or a :t:`union type` subject to :t:`C representation` or
 :t:`default representation`.
 
@@ -1577,6 +1833,9 @@ Enum Type Representation
 :dp:`fls_p0c62ejo1u1t`
 :t:`[Zero-variant enum type]s` shall not be subject to :t:`C representation`.
 
+:dp:`fls_pwtzoGxdQk3U`
+A :dt:`discriminant type` is the :t:`type` of a :t:`discriminant`.
+
 :dp:`fls_efp1kfgkpba8`
 The :t:`size` and :t:`alignment` of an :t:`enum type` without :t:`[field]s`
 subject to :t:`C representation`, :t:`default representation`, or
@@ -1586,6 +1845,9 @@ subject to :t:`C representation`, :t:`default representation`, or
 The :t:`discriminant type` of an :t:`enum type` with :t:`C representation` is
 the corresponding :t:`c signed int type` for the target platform's :t:`C`
 :t:`ABI`.
+
+:dp:`fls_w3g7m2k9p1s4`
+:dt:`C signed int type` is the `signed int` :t:`type` of the :t:`C` language.
 
 :dp:`fls_slhvf3gmqz4h`
 The :t:`discriminant type` of an :t:`enum type` with :t:`default representation`
@@ -1720,7 +1982,7 @@ Recursive Types
 .. rubric:: Legality Rules
 
 :dp:`fls_z22std1crl49`
-A :t:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
+A :dt:`recursive type` is a :t:`type` whose contained :t:`[type]s` refer back to
 the containing :t:`type`, either directly or by referring to another :t:`type`
 which refers back to the original :t:`recursive type`.
 
@@ -1744,18 +2006,24 @@ Type Unification
 .. rubric:: Legality Rules
 
 :dp:`fls_ryvdhkgm7vzj`
-:t:`Type unification` is the process by which :t:`type inference` propagates
+:dt:`Type unification` is the process by which :t:`type inference` propagates
 known :t:`[type]s` across the :t:`type inference root` and assigns concrete
 :t:`[type]s` to :t:`[type variable]s`, as well as a general mechanism to check
 for compatibility between two :t:`[type]s` during :t:`method resolution`.
 
 :dp:`fls_67VZrx6dw68H`
-A :t:`type` is said to :t:`unify` with another :t:`type` when the domains,
+A :t:`type` is said to :dt:`unify` with another :t:`type` when the domains,
 ranges, and structures of both :t:`[type]s` are compatible according to the
 rules detailed below.
 
+:dp:`fls_m4p8k1v7t2qa`
+Two :t:`[type]s` are :t:`unifiable` when they :t:`unify`.
+
+:dp:`fls_v7k2m9p1t4qa`
+A :t:`unified type` is a :t:`type` produced by :t:`type unification`.
+
 :dp:`fls_aie0tr62vhw5`
-Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
+:dt:`[unifiable type]s` are two :t:`[type]s` that :t:`unify`.
 
 :dp:`fls_3U7Ue6Xzuv9M`
 :t:`Type unification` is a symmetric operation. If :t:`type` ``A`` unifies
@@ -1894,7 +2162,7 @@ A :t:`raw pointer type` is unifiable only with another :t:`raw pointer type`
 when:
 
 * :dp:`fls_x9933rjecrna`
-  The :t:`mutability` is the same, and
+  The :dt:`mutability` is the same, and
 
 * :dp:`fls_mizmcykgdisb`
   The :t:`[target type]s` are unifiable.
@@ -1943,7 +2211,7 @@ Type Coercion
 .. rubric:: Legality Rules
 
 :dp:`fls_w5pjcj9qmgbv`
-:t:`Type coercion` is an implicit operation that changes the :t:`type` of a
+:dt:`Type coercion` is an implicit operation that changes the :t:`type` of a
 :t:`value`. Any implicit conversion allowed by :t:`type coercion` can be made
 explicit using a :t:`type cast expression`.
 
@@ -1989,12 +2257,16 @@ The following :t:`[expression]s` constitute a
 * :dp:`fls_dgoypa3hcxc0`
   Each :t:`operand` of a :t:`tuple expression`.
 
+:dp:`fls_4rhjpdu4zfqj`
+A :dt:`type` is a set of :t:`[value]s` and a set of operations that act on
+those :t:`[value]s`.
+
 :dp:`fls_h8dkehit8rza`
 :t:`Type coercion` from a source :t:`type` to a target :t:`type` is allowed to
 occur when:
 
 * :dp:`fls_z00wtlna6grk`
-  The source :t:`type` is a :t:`subtype` of the target :t:`type`.
+  The source :t:`type` is a :dt:`subtype` of the target :t:`type`.
 
 * :dp:`fls_rfjdh79k0wou`
   The source :t:`type` ``T`` coerces to intermediate :t:`type` ``W``, and
@@ -2032,7 +2304,7 @@ occur when:
 
 * :dp:`fls_ulcdetwp6x96`
   The source :t:`type` is a :t:`function item type`, the target :t:`type` is
-  a :t:`function pointer type` and the source's :t:`function signature` is a :t:`subtype` of the target's :t:`function signature`.
+  a :t:`function pointer type` and the source's :dt:`function signature` is a :t:`subtype` of the target's :t:`function signature`.
 
 * :dp:`fls_2uv1r0gni1fk`
   The source :t:`type` is a non-capturing :t:`closure type`, the target
@@ -2045,13 +2317,17 @@ occur when:
 * :dp:`fls_SYnFJBhi0IWj`
   The source :t:`type` is a :t:`trait object type` and the target :t:`type` is a :t:`trait object type` with the same or no :t:`principal trait`, and the target :t:`type` has the same or less non-:t:`principal trait` :t:`[trait bound]s`.
 
+* :dp:`fls_CYtxPjK3zq2T`
+  A :dt:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
+  implement.
+
 * :dp:`fls_QB4c6FNKxaPl`
   The source :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``T``
   and the target :t:`type` is a :t:`trait object type` with some :t:`principal trait` ``U``,
   where ``U`` is a :t:`supertrait` of ``T``.
 
 :dp:`fls_iiiu2q7pym4p`
-An :t:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
+An :dt:`unsized coercion` is a :t:`type coercion` that converts a :t:`sized type`
 into an :t:`unsized type`. :t:`Unsized coercion` from a source :t:`type` to a
 target :t:`type` is allowed to occur when:
 
@@ -2163,8 +2439,8 @@ Structural Equality
 .. rubric:: Legality Rules
 
 :dp:`fls_uVTpA7gbLCYX`
-A :t:`type` is :t:`structurally equal` when its :t:`[value]s` can be compared
-for equality by structure.
+A :dt:`structurally equal` :t:`type` is a :t:`type` whose :t:`[value]s` can be
+compared for equality by structure.
 
 :dp:`fls_2DZAP6JJjJ9h`
 The following :t:`[type]s` are :t:`structurally equal`:
@@ -2197,7 +2473,7 @@ Interior Mutability
 .. rubric:: Legality Rules
 
 :dp:`fls_khy2e23i9o7z`
-:t:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
+:dt:`Interior mutability` is a property of :t:`[type]s` whose :t:`[value]s` can
 be modified through :t:`[immutable reference]s`.
 
 :dp:`fls_sWiU26n2xS3r`
@@ -2212,13 +2488,10 @@ Visible Emptiness
 .. rubric:: Legality Rules
 
 :dp:`fls_SD4yUEQ9hHa3`
-:t:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
+:dt:`Visible emptiness <visible emptiness>` is a property of :t:`[type]s` and :t:`[enum variant]s` that have no :t:`[value]s` that are fully observable.
 
 :dp:`fls_GeoneCP5TYwf`
-A :t:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
-
-:dp:`fls_A2W4v53ihTGx`
-A :t:`visible empty enum variant` is an :t:`enum variant` subject to :t:`visible emptiness`.
+A :dt:`visible empty type` is a :t:`type` subject to :t:`visible emptiness`.
 
 :dp:`fls_AXOtKdSQR4AF`
 A :t:`type` is subject to :t:`visible emptiness` as follows:
@@ -2252,11 +2525,11 @@ Type Inference
 .. rubric:: Legality Rules
 
 :dp:`fls_h8sedxew0d4u`
-:t:`Type inference` is the process of automatically determining the :t:`type` of
+:dt:`Type inference` is the process of automatically determining the :t:`type` of
 :t:`[expression]s` and :t:`[pattern]s` within a :t:`type inference root`.
 
 :dp:`fls_ybvrhh96fc7y`
-A :t:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
+A :dt:`type inference root` is an :t:`expression` whose inner :t:`[expression]s`
 and :t:`[pattern]s` are subject to :t:`type inference` independently of those
 found in other :t:`[type inference root]s`.
 
@@ -2282,7 +2555,7 @@ The following :t:`[expression]s` are considered :t:`[type inference root]s`:
   The :t:`expression` of a :t:`constant argument`.
 
 * :dp:`fls_Sowatt1V988J`
-  A :t:`function body`.
+  A :dt:`function body`.
 
 * :dp:`fls_A1NVYkepoaMk`
   The :t:`size operand` of an :t:`array expression` or an :t:`array type`.
@@ -2326,23 +2599,23 @@ depending on the :t:`type inference root` as follows:
   an :t:`array type` is :c:`usize`.
 
 :dp:`fls_uvvn4usfsbhr`
-A :t:`type variable` is a placeholder used during :t:`type inference` to stand
+A :dt:`type variable` is a placeholder used during :t:`type inference` to stand
 in for an undetermined :t:`type` of an :t:`expression` or a :t:`pattern`.
 
 :dp:`fls_gDalJm1XS0mi`
-A :t:`global type variable` is a :t:`type variable` that can refer to any
+A :dt:`global type variable` is a :t:`type variable` that can refer to any
 :t:`type`.
 
 :dp:`fls_7ov36fpd9mwe`
-An :t:`integer type variable` is a :t:`type variable` that can refer only to
+An :dt:`integer type variable` is a :t:`type variable` that can refer only to
 :t:`[integer type]s`.
 
 :dp:`fls_3hv3wxkhjjp1`
-A :t:`floating-point type variable` is a :t:`type variable` that can refer only
+A :dt:`floating-point type variable` is a :t:`type variable` that can refer only
 to :t:`[floating-point type]s`.
 
 :dp:`fls_bXQ63GYYDuMp`
-A :t:`diverging type variable` is a :t:`type variable` that can refer to any
+A :dt:`diverging type variable` is a :t:`type variable` that can refer to any
 :t:`type` and originates from a :t:`diverging expression`.
 
 :dp:`fls_JryXiKBIFvF3`
@@ -2360,6 +2633,9 @@ Performing :t:`type inference` may introduce a requirement that some :t:`type`
 must implement a :t:`trait`, or that a :t:`type` or :t:`lifetime` must outlive
 some other :t:`lifetime`. Such requirements are referred to as
 :dt:`[obligation]s` and are detailed in the inference rules below.
+
+:dp:`fls_s1m7q5t2v8wn`
+The :dt:`unit type` is a :t:`tuple type` of zero :t:`arity`.
 
 :dp:`fls_9dSltJ6U98Fo`
 If insufficient :t:`type` information is available at the time an
@@ -2685,7 +2961,7 @@ The :t:`type inference` rules for :t:`[expression]s` are as follows:
     :t:`expected type` implements :std:`core::ops::FnOnce` or a :t:`trait` that
     has :std:`core::ops::FnOnce` as one of its :t:`[supertrait]s`, derive the
     closure signature from the parameters and return :t:`type` of the
-    :std:`core::ops::FnOnce` :t:`bound` or :t:`supertrait`.
+    :std:`core::ops::FnOnce` :dt:`bound` or :t:`supertrait`.
 
   * :dp:`fls_U46IXItEKMCB`
     Otherwise, the closure signature remains undeduced. No outside type
@@ -2724,27 +3000,23 @@ Traits
 .. rubric:: Legality Rules
 
 :dp:`fls_tani6lesan9u`
-A :t:`trait` is an :t:`item` that describes an interface a :t:`type` can
+A :dt:`trait` is an :t:`item` that describes an interface a :t:`type` can
 implement.
 
-:dp:`fls_PiAR1B26SoZV`
-A :t:`trait body` is a :t:`construct` that encapsulates the
-:t:`[associated item]s`, :t:`[inner attribute]s`, and
-:t:`[inner doc comment]s` of a :t:`trait`.
+:dp:`fls_u2XiDIAk6tQz`
+A :dt:`built-in trait` is a language-defined :t:`trait` with special meaning to
+the compiler.
 
 :dp:`fls_Y28596CVBzDG`
-Within a :t:`trait`, the :t:`type` :c:`Self` acts as a placeholder for a
-:t:`type` implementing the :t:`trait`, and behaves like a :t:`type parameter`.
+:dt:`Self` is either an implicit :t:`type parameter` in :t:`[trait]s` or an
+implicit :t:`type alias` in :t:`[implementation]s`, and refers to the
+:t:`type` that implements a :t:`trait`.
 
 :dp:`fls_AdbbUZZgMEsQ`
-A :t:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
+A :dt:`local trait` is a :t:`trait` that is defined in the current :t:`crate`.
 
 :dp:`fls_I9JaKZelMiby`
-A :t:`subtrait` is a :t:`trait` with a :t:`supertrait`.
-
-:dp:`fls_CYtxPjK3zq2T`
-A :t:`supertrait` is a transitive :t:`trait` that a :t:`type` must additionally
-implement.
+A :dt:`subtrait` is a :t:`trait` with a :t:`supertrait`.
 
 :dp:`fls_ytn5cdonytyn`
 A :t:`subtrait` shall not be its own :t:`supertrait`.
@@ -2764,7 +3036,7 @@ is equivalent to a :t:`where clause` of the following form:
    	trait T where Self: Bound {}
 
 :dp:`fls_YynbrIceKmsJ`
-An :t:`auto trait` is a :t:`trait` that is implicitly and automatically
+An :dt:`auto trait` is a :t:`trait` that is implicitly and automatically
 implemented by a :t:`type` when the types of its constituent :t:`[field]s`
 implement the :t:`trait`.
 
@@ -2831,8 +3103,12 @@ Object Safety
 
 .. rubric:: Legality Rules
 
+:dp:`fls_aG0l4OGm8sMG`
+:dt:`Object safety` is the process of determining whether a :t:`trait` can be used
+as a :t:`trait object type`.
+
 :dp:`fls_lrdki56hpc3k`
-A :t:`trait` is :t:`object safe` when:
+A :t:`trait` is :dt:`object safe` when:
 
 * :dp:`fls_5wlltclogfkw`
   Its :t:`[supertrait]s` are :t:`object safe`, and
@@ -2848,7 +3124,11 @@ A :t:`trait` is :t:`object safe` when:
 
 * :dp:`fls_vmLLL82EQasI`
   Its :t:`[associated type]s` specify a :std:`core::marker::Sized`
-  :t:`[trait bound]` for :c:`Self` in a :t:`type bound predicate`.
+  :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
+
+:dp:`fls_lj7492aq7fzo`
+An :t:`associated function` is a :t:`function` that appears as an
+:t:`associated item`.
 
 :dp:`fls_uixekv82g2e5`
 An :t:`associated function` is :t:`object safe` when it is either an
@@ -2863,7 +3143,7 @@ A dispatchable :t:`function` is :t:`object safe` when:
 
 * :dp:`fls_k1vc9vd8at92`
   Is a :t:`method` that does not use :c:`Self` in its :t:`function signature`
-  except in the :t:`type` of its :t:`self parameter` or as the :t:`type` of a
+  except in the :t:`type` of its :dt:`self parameter` or as the :t:`type` of a
   :t:`type bound predicate`, and
 
 * :dp:`fls_kqylg31sm5wv`
@@ -2923,11 +3203,11 @@ A :t:`bound` does not impose a constraint on a :t:`generic parameter` of a
 :t:`type alias` unless it is an :t:`associated item`.
 
 :dp:`fls_grby8tmmd8sb`
-A :t:`lifetime bound` is a :t:`bound` that imposes a constraint on the
+A :dt:`lifetime bound` is a :t:`bound` that imposes a constraint on the
 :t:`[lifetime]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_knut10hoz6wc`
-A :t:`trait bound` is a :t:`bound` that imposes a constraint on the
+A :dt:`trait bound` is a :t:`bound` that imposes a constraint on the
 :t:`[trait]s` of :t:`[generic parameter]s`.
 
 :dp:`fls_sf6zg0ez9hbb`
@@ -2935,7 +3215,7 @@ A :s:`ForGenericParameterList` shall not specify :s:`[ConstantParameter]s` or
 :s:`[TypeParameter]s`.
 
 :dp:`fls_vujl3fblz6x2`
-A :t:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
+A :dt:`higher-ranked trait bound` is a :t:`bound` that specifies an infinite
 list of :t:`[bound]s` for all possible :t:`[lifetime]s` specified by the
 :s:`ForGenericParameterList`.
 
@@ -2944,8 +3224,8 @@ An :t:`opt-out trait bound` is a :t:`trait bound` with :s:`Punctuation` ``?``
 that nullifies an implicitly added :t:`trait bound`.
 
 :dp:`fls_1Sm2Yq1Ow76f`
-An :t:`outlives bound` is a :t:`trait bound` which requires that a
-:t:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
+An :dt:`outlives bound` is a :t:`trait bound` which requires that a
+:dt:`lifetime parameter` or :t:`type` outlives a :t:`lifetime parameter`.
 
 :dp:`fls_tx4uspewnk7w`
 :t:`Outlives bound` ``'a: 'b`` indicates that ``'a`` outlives ``'b``.
@@ -2955,7 +3235,7 @@ An :t:`outlives bound` is a :t:`trait bound` which requires that a
 ``T`` outlive ``'a``.
 
 :dp:`fls_J9DEsd06Ttu9`
-An :t:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
+An :dt:`implied bound` is a :t:`bound` that is not expressed in syntax, but is
 is the byproduct of relations between :t:`[lifetime parameter]s` and
 :t:`[function parameter]s`, between :t:`[lifetime parameter]s` and a
 :t:`return type`, and between :t:`[lifetime parameter]s` and :t:`[field]s`.
@@ -3005,7 +3285,7 @@ Lifetimes
 .. rubric:: Legality Rules
 
 :dp:`fls_nne91at3143t`
-A :t:`lifetime` specifies the expected longevity of a :t:`value`.
+A :dt:`lifetime` specifies the expected longevity of a :t:`value`.
 
 :dp:`fls_vbclxg9dq4yo`
 A :t:`lifetime bound` shall apply to :t:`[type]s` and other :t:`[lifetime]s`.
@@ -3032,9 +3312,9 @@ Subtyping and Variance
 where another :t:`type` is expected.
 
 :dp:`fls_df87d44kgwcv`
-:t:`Variance` is a property of :t:`[lifetime parameter]s` and
+:dt:`Variance` is a property of :t:`[lifetime parameter]s` and
 :t:`[type parameter]s` that describes the circumstances under which a
-:t:`generic type` is a :t:`subtype` of an instantiation of itself with
+:dt:`generic type` is a :t:`subtype` of an instantiation of itself with
 different :t:`[generic argument]s`.
 
 :dp:`fls_7ex941yysuhq`
@@ -3147,6 +3427,14 @@ a :t:`tuple type` is determined as follows:
    #. :dp:`fls_9ae3idezsths`
       It is a static error if :t:`variance` ``V`` is ``any``.
 
+:dp:`fls_3l9q2g8v6n0c`
+:dt:`subtyping` is the relation that determines when one :t:`type` may be used
+in place of another.
+
+:dp:`fls_1q7k3n9m5v2b`
+A :t:`subtype` is a :t:`type` that may be used in place of another :t:`type`
+according to :t:`subtyping`.
+
 :dp:`fls_WD6uyTCziRac`
 :t:`[Expression]s` and :t:`[statement]s` may impose :t:`subtyping` requirements
 on their :t:`[subexpression]s`. Such requirements are applied after
@@ -3221,9 +3509,20 @@ Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_9wtuclhm7yz5`
-:t:`Lifetime elision` is a set of rules that automatically insert
+:dt:`Lifetime elision` is a set of rules that automatically insert
 :t:`[lifetime parameter]s` and/or :t:`[lifetime argument]s` when they are
 elided in the source code.
+
+:dp:`fls_HvZUV1WQH4GA`
+For :dt:`elided`, see :t:`elided lifetime`.
+
+:dp:`fls_t4m7k2v9q1pa`
+An :dt:`unnamed lifetime` is the ``'_`` :t:`lifetime`.
+
+:dp:`fls_aHW1eUlKeOgr`
+An :dt:`elided lifetime` is either an :t:`unnamed lifetime` or a :t:`lifetime`
+that has been explicitly omitted from a :t:`function signature` or an
+:t:`implementation`.
 
 :dp:`fls_JmP6O9zj8fkV`
 A :t:`lifetime` may be elided either implicitly or explicitly.
@@ -3259,7 +3558,7 @@ Function Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_lAdIRCFFlydD`
-:t:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
+:dt:`Function lifetime elision` is a form of :t:`lifetime elision` that applies
 to :t:`[function]s`, :t:`[function pointer type parameter]s`, and :t:`[path]s`
 that resolve to one of the :std:`core::ops::Fn`, :std:`core::ops::FnMut`, and
 :std:`core::ops::FnOnce` :t:`[trait]s`.
@@ -3283,8 +3582,8 @@ A :dt:`self input lifetime` is an :t:`input lifetime` of a :t:`self parameter`
 that is a :t:`lifetime` of a :t:`reference type` whose referent is :c:`Self`.
 
 * :dp:`fls_ks8wlufmhz6d`
-  Any :t:`lifetime` related to an :t:`implementing type` and an
-  :t:`implemented trait` of an :t:`implementation`.
+  Any :t:`lifetime` related to an :dt:`implementing type` and an
+  :dt:`implemented trait` of an :dt:`implementation`.
 
 :dp:`fls_hsg9kfyvh35m`
 An :dt:`output lifetime` is one of the following :t:`[lifetime]s`:
@@ -3345,13 +3644,21 @@ Static Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_l4RDXaFwnQZ6`
-:t:`Static lifetime elision` is a form of :t:`lifetime elision` that applies to
+:dt:`static lifetime elision` is a form of :t:`lifetime elision` that applies to
 the :t:`type ascription` of :t:`[constant]s` and :t:`[static]s`.
+
+:dp:`fls_wb018assoctraitconst`
+An :dt:`associated trait constant` is an :t:`associated constant` that appears
+within a :t:`trait`.
 
 :dp:`fls_8irr97rZWfSC`
 An :t:`elided` :t:`lifetime` of a :t:`reference type` or :t:`path` in the
 :t:`type specification` of a :t:`constant` or :t:`static` is inferred to be the
 ``'static'`` lifetime.
+
+:dp:`fls_l3iwn56n1uz8`
+An :dt:`associated implementation constant` is an :t:`associated constant` that
+appears within an :t:`implementation`.
 
 :dp:`fls_37udexenqv3p`
 The :t:`lifetime` of an :t:`associated implementation constant` shall not be
@@ -3384,7 +3691,7 @@ Trait Object Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_fuBYWRrgxlbQ`
-:t:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
+:dt:`Trait object lifetime elision` is a form of :t:`lifetime elision` that
 applies to :t:`[trait object type]s`.
 
 :dp:`fls_URl9CeIVsiWs`
@@ -3444,7 +3751,7 @@ Impl Header Lifetime Elision
 .. rubric:: Legality Rules
 
 :dp:`fls_FUdsmzN0T8XP`
-:t:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
+:dt:`Impl header lifetime elision` is a form of :t:`lifetime elision` that
 applies to the :t:`implementing type` and :t:`implemented trait` (if any) of an
 :t:`implementation`.
 
