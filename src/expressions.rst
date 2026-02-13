@@ -435,7 +435,7 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
   :t:`[Path expression]s` that resolve to a :t:`static` or a :t:`variable`.
 
 * :dp:`fls_gv4M0DE3OMwk`
-  A :dt:`temporary`.
+  A :t:`temporary`.
 
 :dp:`fls_ku38h562vfyl`
 A :dt:`mutable place expression` is a :t:`place expression` whose memory
@@ -528,6 +528,11 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
 
 * :dp:`fls_JBfZuFDQg3mU`
   The :t:`base initializer` of a :dt:`struct expression`.
+
+:dp:`fls_wb089baseinit`
+A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`,
+a :t:`struct value`, or a :t:`union value` to be used as a base for
+construction in a :t:`struct expression`.
 
 :dp:`fls_wxGAOWEVT77u`
 A :dt:`mutable place expression context` is a :t:`place expression context` that
@@ -3301,7 +3306,7 @@ A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 :dp:`fls_uib1ml41mfrn`
-A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
+A :t:`base initializer` is a :t:`construct` that specifies an :t:`enum value`, or
 a :t:`struct value` to be used as a base for
 construction in a :t:`struct expression`.
 
@@ -3522,7 +3527,7 @@ A :t:`tuple enum variant` is an :t:`enum variant` with a
 A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
 :dp:`fls_g6t2n8c5p4xy`
-A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+A :t:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
 
 :dp:`fls_jvz5z3eqxb39`
 An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
@@ -5097,6 +5102,10 @@ yet.
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
 an :t:`await expression`.
+
+:dp:`fls_wb084temporary`
+A :dt:`temporary` is an anonymous :t:`variable` produced by some intermediate
+computation.
 
 :dp:`fls_k9pncajmhgk1`
 An :t:`await expression` shall appear within an

@@ -932,6 +932,9 @@ A :t:`tuple struct value` is a :t:`value` of a :t:`tuple struct type`.
 :dp:`fls_z4p8t1x6n2qv`
 A :dt:`tuple struct field` is a :t:`field` of a :t:`tuple struct type`.
 
+:dp:`fls_wb087tuplestructtype`
+A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
+
 :dp:`fls_x2k7m9p1v5qa`
 A :dt:`unit struct type` is the :t:`type` of a :t:`unit struct`.
 

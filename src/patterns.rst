@@ -48,7 +48,7 @@ An :dt:`or-pattern` is a :t:`pattern` that matches on one of two or more :t:`[pa
 A :t:`pattern-without-alternation` is a :t:`pattern` that cannot be alternated.
 
 :dp:`fls_JJ1fJa1SsaWh`
-A :t:`pattern-without-range` is a :t:`pattern-without-alternation` that
+A :dt:`pattern-without-range` is a :t:`pattern-without-alternation` that
 excludes :t:`[range pattern]s`.
 
 :dp:`fls_6xx34zr069bj`

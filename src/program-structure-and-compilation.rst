@@ -126,7 +126,7 @@ A :t:`crate` may be subject to multiple :t:`[crate type]s`, treating each type
 as a separate :t:`crate`.
 
 :dp:`fls_9ub6ks8qrang`
-A :t:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
+A :dt:`binary crate` is a :t:`crate` whose :t:`crate type` is ``bin``.
 
 :dp:`fls_OyFwBtDGVimT`
 A :t:`binary crate` that is not subject to :t:`attribute` ``no_main`` shall have
