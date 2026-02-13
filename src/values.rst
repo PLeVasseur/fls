@@ -17,7 +17,7 @@ Values
 A :t:`value` is :t:`immutable` when it cannot be modified.
 
 :dp:`fls_U9CPQq4fs7IK`
-A :t:`value` is :t:`mutable` when it can be modified.
+:dt:`mutable` is the property of a :t:`value` that can be modified.
 
 :dp:`fls_8rAyM4S3x1ap`
 :t:`Initialization` is the act of supplying an initial :t:`value` to a
@@ -135,7 +135,7 @@ The value of a :t:`constant` is determined by evaluating its
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_xezt9hl069h4`
-The :dt:`elaboration` of a :t:`constant` evaluates its :t:`constant initializer`.
+The :t:`elaboration` of a :t:`constant` evaluates its :t:`constant initializer`.
 
 :dp:`fls_ndobth7s92if`
 A :t:`path` that refers to a :t:`constant` is replaced with the :t:`value` of
@@ -266,7 +266,7 @@ An :dt:`immutable variable` is a :t:`variable` whose :t:`value` cannot be
 modified.
 
 :dp:`fls_kBX7Qa4S2VnM`
-A :t:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
+A :dt:`mutable variable` is a :t:`variable` whose :t:`value` can be modified.
 
 :dp:`fls_vgi0gh5zmoiu`
 The following :t:`[construct]s` are :t:`[variable]s`:
@@ -308,7 +308,7 @@ into a :t:`constant`.
   The :t:`value expression` is a :t:`constant expression`, and
 
 * :dp:`fls_tms5r9f5ogcb`
-  The :t:`type` of the :t:`value expression` does not have a :dt:`destructor`,
+  The :t:`type` of the :t:`value expression` does not have a :t:`destructor`,
   and
 
 * :dp:`fls_bysv5r7iuf5j`

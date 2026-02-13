@@ -570,7 +570,7 @@ An :dt:`array type` is a :t:`sequence type` that represents a fixed sequence
 of elements.
 
 :dp:`fls_mRbOQQQPbVyU`
-An :t:`element type` is the :t:`type` of the elements of an :t:`array type` or
+An :dt:`element type` is the :t:`type` of the elements of an :t:`array type` or
 a :t:`slice type`.
 
 :dp:`fls_4sd5dgy2unq7`
@@ -792,8 +792,8 @@ The :t:`name` of an :t:`enum variant` shall be unique within the related
 A :dt:`discriminant` is an opaque integer that identifies an :t:`enum variant`.
 
 :dp:`fls_IhqHv2D1nuXj`
-A :t:`discriminant initializer` provides the :t:`value` of a
-:t:`discriminant`.
+A :dt:`discriminant initializer` is a construct that provides the :t:`value`
+of a :t:`discriminant`.
 
 :dp:`fls_hp5frc752dam`
 A :t:`discriminant initializer` shall be specified only when all :t:`[enum
@@ -1110,7 +1110,7 @@ A :dt:`function item type` is a unique anonymous :t:`function type` that
 identifies a :t:`function`.
 
 :dp:`fls_sas3ahcshnrh`
-An :t:`external function item type` is a :t:`function item type` where the
+An :dt:`external function item type` is a :t:`function item type` where the
 related :t:`function` is an :t:`external function`.
 
 :dp:`fls_e9x4f7qxvvjv`
@@ -1587,6 +1587,10 @@ A :dt:`type alias` is an :t:`item` that defines a :t:`name` for a :t:`type`.
 An :dt:`initialization type` is the :t:`type` a :t:`type alias` defines a
 :t:`name` for.
 
+:dp:`fls_wb048whereclause`
+A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+:t:`[lifetime parameter]s` and :t:`[type parameter]s`.
+
 :dp:`fls_rosdkeck5ax2`
 A :t:`type alias` shall not have a :s:`TypeBoundList` unless it is an
 :t:`associated item`.
@@ -2016,7 +2020,7 @@ Two :t:`[type]s` are :t:`unifiable` when they :t:`unify`.
 A :t:`unified type` is a :t:`type` produced by :t:`type unification`.
 
 :dp:`fls_aie0tr62vhw5`
-Two types that :t:`unify` are said to be :t:`[unifiable type]s`.
+:dt:`[unifiable type]s` are two :t:`[type]s` that :t:`unify`.
 
 :dp:`fls_3U7Ue6Xzuv9M`
 :t:`Type unification` is a symmetric operation. If :t:`type` ``A`` unifies
@@ -3120,7 +3124,7 @@ A :t:`trait` is :dt:`object safe` when:
   :t:`[trait bound]` for :c:`Self` in a :dt:`type bound predicate`.
 
 :dp:`fls_lj7492aq7fzo`
-An :dt:`associated function` is a :t:`function` that appears as an
+An :t:`associated function` is a :t:`function` that appears as an
 :t:`associated item`.
 
 :dp:`fls_uixekv82g2e5`

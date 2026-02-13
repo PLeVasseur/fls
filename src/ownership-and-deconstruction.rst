@@ -393,7 +393,7 @@ A :dt:`drop type` is a :t:`type` that implements the :std:`core::ops::Drop`
 :t:`trait` or contains a :t:`field` that has a :t:`drop type`.
 
 :dp:`fls_4nkzidytpi6`
-A :t:`destructor` is a :t:`function` that is invoked immediately before the
+A :dt:`destructor` is a :t:`function` that is invoked immediately before the
 :t:`destruction` of a :t:`value` of a :t:`drop type`.
 
 :dp:`fls_wzuwapjqtyyy`

@@ -51,7 +51,7 @@ effects.
 For :dt:`executed`, see :t:`execution`.
 
 :dp:`fls_dl763ssb54q1`
-The :dt:`execution` of an :t:`empty statement` has no effect.
+The :t:`execution` of an :t:`empty statement` has no effect.
 
 .. _fls_yivm43r5wnp1:
 

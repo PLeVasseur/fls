@@ -529,7 +529,7 @@ A :dt:`construct` is a piece of program text that is an instance of a
 :t:`syntactic category`.
 
 :dp:`fls_3nqb7p5ifvio`
-A :dt:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
+A :t:`where clause` is a :t:`construct` that specifies :t:`[bound]s` on
 :t:`[lifetime parameter]s` and :t:`[type]s` that have
 to hold for the :t:`construct` subject to the :t:`where clause` to be valid.
 
@@ -593,7 +593,7 @@ An :dt:`item scope` is a :t:`scope` for :t:`[item]s`.
 
 :dp:`fls_huvo0mp2i6fb`
 An :t:`item` declared within the :t:`block expression` of an
-:dt:`expression-with-block` is :t:`in scope` within the related
+:t:`expression-with-block` is :t:`in scope` within the related
 :t:`block expression`.
 
 :dp:`fls_x8r0oppuc1t6`
@@ -975,6 +975,9 @@ A :dt:`prelude entity` is an :t:`entity` declared in a :t:`prelude`.
 :dp:`fls_eS8zAvhDy3gJ`
 A :dt:`prelude name` is a :t:`name` of a :t:`prelude entity`.
 
+:dp:`fls_wb050renaming`
+A :dt:`renaming` is an alternative :t:`name` for an existing :t:`name`.
+
 :dp:`fls_n4102qskkmz2`
 The :dt:`core prelude` is a :t:`prelude` that brings :t:`in scope` of every
 :t:`module` all re-exported :t:`entities <entity>` from the
@@ -1048,6 +1051,10 @@ Use Imports
 
 .. rubric:: Legality Rules
 
+:dp:`fls_wb045exprwithblock`
+A :dt:`expression-with-block` is an :t:`expression` whose structure involves a
+:t:`block expression`.
+
 :dp:`fls_lyw4t098sxrj`
 A :dt:`use import` brings :t:`entities <entity>` :t:`in scope` within the
 :t:`scope` of the :t:`block expression` of an :t:`expression-with-block` or
@@ -1088,7 +1095,7 @@ An :dt:`import path prefix` is the fully constructed :t:`path` prefix of a
 :dp:`fls_2bkcn83smy2y`
 A :dt:`simple import` is a :t:`use import` that brings all :t:`entities <entity>`
 it refers to into scope, optionally with a different
-:t:`name` than they are declared with by using a :dt:`renaming`.
+:t:`name` than they are declared with by using a :t:`renaming`.
 
 :dp:`fls_v3a6y2ze44v2`
 A :dt:`glob import` is a :t:`use import` that brings all :t:`entities <entity>`

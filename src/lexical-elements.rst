@@ -186,7 +186,7 @@ line.
 The representation of an end of line is tool-defined.
 
 :dp:`fls_a6t53o8h1vdk`
-A :t:`separator` is a character or a string that separates adjacent :t:`[lexical
+A :dt:`separator` is a character or a string that separates adjacent :t:`[lexical
 element]s`. A :t:`whitespace string` is a :t:`separator`.
 
 :dp:`fls_Ag1xnfxiNYTB`
@@ -1133,7 +1133,7 @@ Character Literals
      | $$\x$$ OctalDigit HexadecimalDigit
 
 :dp:`fls_TXk2yFGh8at5`
-An :t:`escaped character` is the textual representation for a character with
+An :dt:`escaped character` is the textual representation for a character with
 special meaning. An escaped character consists of character 0x5C (reverse
 solidus), followed by the single character encoding of the special meaning
 character. For example, ``\t`` is the escaped character for 0x09 (horizontal

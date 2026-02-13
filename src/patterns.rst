@@ -85,7 +85,7 @@ restrictions:
 
 * :dp:`fls_kv533rntni1x`
   Any two :t:`[binding]s` with the same name in the two :t:`[pattern-without-alternation]s` shall have
-  :dt:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
+  :t:`[unifiable type]s` and shall have the same :t:`[binding mode]s`.
 
 .. _fls_uh76pw6ykd57:
 
@@ -766,7 +766,7 @@ Struct Patterns
 .. rubric:: Legality Rules
 
 :dp:`fls_vjdkpr3zml51`
-A :t:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
+A :dt:`struct pattern` is a :t:`pattern` that matches an :t:`enum value`, a
 :t:`struct value`, or a :t:`union value`.
 
 :dp:`fls_6o3x101wo478`

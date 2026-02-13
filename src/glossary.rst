@@ -1935,7 +1935,7 @@ elaboration
 ^^^^^^^^^^^
 
 :dp:`fls_xoahzmwu1std`
-:dt:`Elaboration` is the process by which a :t:`declaration` achieves its
+:dt:`elaboration` is the process by which a :t:`declaration` achieves its
 runtime effects.
 
 .. _fls_bxm4njfo2h58:

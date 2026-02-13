@@ -645,7 +645,7 @@ Macro Expansion
    :t:`macro invocation` resides. The expected expansion syntax is as follows:
 
    #. :dp:`fls_y20pmwo3v3uu`
-      If the :t:`macro invocation` appears as part of an :dt:`associated item`,
+      If the :t:`macro invocation` appears as part of an :t:`associated item`,
       an :t:`item` within an :t:`external block`, or another
       :t:`macro invocation`, the output is required to constitute zero or more
       :t:`[item]s`.
@@ -908,7 +908,7 @@ bound to that :t:`metavariable`.
 
 :dp:`fls_ghqjk6xj85ng`
 Repetition in a :t:`macro matcher` is matched based on how many times the
-:t:`pattern` appears consecutively optionally separated by a :dt:`separator` in
+:t:`pattern` appears consecutively optionally separated by a :t:`separator` in
 the :s:`TokenTree` of the :t:`macro invocation`, as follows:
 
 * :dp:`fls_lzwl4en5wcw0`
