@@ -171,7 +171,7 @@ A :t:`reference identifier pattern` is an :t:`identifier pattern` with
 :t:`keyword` ``ref``.
 
 :dp:`fls_r2m9k6t1v4pa`
-A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+A :t:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_6c1v8m4p2tqa`
 A :dt:`unit struct constant` is a :t:`constant` implicitly created by a
@@ -550,6 +550,10 @@ The :t:`[type]s` of the :t:`range pattern low bound` and the
 
 :dp:`fls_3js1645tgh31`
 The :t:`type` of a :t:`range pattern` is determined as follows:
+
+:dp:`fls_wb074scalartype`
+A :dt:`scalar type` is either a :c:`bool` :t:`type`, a :c:`char` :t:`type`, or
+a :t:`numeric type`.
 
 * :dp:`fls_8Q6NfRx4j5V7`
   If the :t:`range pattern` is expressed as an :t:`inclusive range pattern`, an
@@ -1079,7 +1083,7 @@ The position of a :t:`subpattern` is determined as follows:
   * :dp:`fls_w369n8lmwr7g`
     If the :t:`subpattern` succeeds the :s:`RecordStructRestPattern`, then its
     position is the position within the :s:`PatternList` list in right-to-left
-    order, starting from the :dt:`arity` of the :t:`deconstructee` minus one.
+    order, starting from the :t:`arity` of the :t:`deconstructee` minus one.
 
 * :dp:`fls_4is6h95jj3gd`
   Otherwise the position is the position within the :s:`PatternList` in
@@ -1144,6 +1148,9 @@ A :t:`tuple pattern` is an :t:`irrefutable pattern` when all of its
 :dp:`fls_yhcaz6v49ub2`
 The :t:`type` of a :t:`tuple pattern` is the :t:`type` of the :t:`tuple` being
 destructured.
+
+:dp:`fls_wb071arity`
+An :dt:`arity` is the number of :t:`[tuple field]s` in a :t:`tuple type`.
 
 :dp:`fls_v7c3y1q9m2bx`
 A :dt:`tuple field` is a :t:`field` of a :t:`tuple type`.

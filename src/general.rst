@@ -212,10 +212,10 @@ its interactions with its external environment. The following are defined as
 external interactions:
 
 * :dp:`fls_gu3331rmv2ho`
-  Any call to an :dt:`external function`,
+  Any call to an :t:`external function`,
 
 * :dp:`fls_AR8ZIYlDRSNs`
-  Any interaction with an :dt:`external static`,
+  Any interaction with an :t:`external static`,
 
 * :dp:`fls_xAYhvEh7WWel`
   Any result returned from a :t:`program entry point`,

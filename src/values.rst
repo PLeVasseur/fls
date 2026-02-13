@@ -184,7 +184,7 @@ The :t:`type` of a :t:`static` shall implement the :std:`core::marker::Sized`
 A :t:`static` shall only be subject to an :s:`ItemSafety` if it is an :t:`external static` in an :t:`unsafe external block`.
 
 :dp:`fls_doi4z6u55bi7`
-A :t:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
+A :dt:`mutable static` is a :t:`static` with :t:`keyword` ``mut`` whose
 :t:`value` can be modified.
 
 :dp:`fls_74hp208pto22`
@@ -198,7 +198,7 @@ The type of an :t:`immutable static` shall implement the
 :std:`core::marker::Sync` :t:`trait`.
 
 :dp:`fls_t17h5h6a6v4c`
-A :t:`static initializer` is a :t:`construct` that provides the :t:`value` of
+A :dt:`static initializer` is a :t:`construct` that provides the :t:`value` of
 its related :t:`static`.
 
 :dp:`fls_yq0hpy4jx2qb`

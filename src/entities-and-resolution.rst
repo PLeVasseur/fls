@@ -1463,7 +1463,7 @@ proceeds as follows:
    For each :t:`dereference type` in the :t:`dereference type chain`
 
    #. :dp:`fls_bsf4hy9x7c2e`
-      For each :dt:`inherent implementation` in the set of
+      For each :t:`inherent implementation` in the set of
       :t:`[inherent implementation]s` of the :t:`dereference type` where the
       :t:`implementing type` :t:`unifies <unify>` with the
       :t:`dereference type`
@@ -1741,6 +1741,10 @@ Path Expression Resolution
 :dp:`fls_akjlqm3a2lb1`
 :dt:`Path expression resolution` is a form of :t:`path resolution` that applies
 to a :t:`unqualified path expression`.
+
+:dp:`fls_wb061inherentimpl`
+An :dt:`inherent implementation` is an :t:`implementation` that adds direct
+functionality.
 
 :dp:`fls_xyzdajtf4u2t`
 The :t:`namespace context` of :t:`path expression resolution` is the

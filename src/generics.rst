@@ -81,10 +81,10 @@ A :dt:`generic type alias` is a :t:`type alias` with :t:`[generic parameter]s`.
 A :dt:`generic union` is a :t:`union` with :t:`[generic parameter]s`.
 
 :dp:`fls_vpcqgec83ybt`
-A :t:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
+A :dt:`constant parameter` is a :t:`generic parameter` for a :t:`constant`.
 
 :dp:`fls_3SjMBlc0b7qo`
-A :t:`constant parameter initializer` is a :t:`construct` that provides the
+A :dt:`constant parameter initializer` is a :t:`construct` that provides the
 default :t:`value` of its related :t:`constant parameter`.
 
 :dp:`fls_p4yb8EAXlRU0`
@@ -102,7 +102,7 @@ A :t:`lifetime parameter` shall not be used within a :t:`constant context`,
 except for the ``'static`` :t:`lifetime`.
 
 :dp:`fls_95eooah0vcqx`
-A :t:`type parameter` is a :t:`generic parameter` for a :t:`type`.
+A :dt:`type parameter` is a :t:`generic parameter` for a :t:`type`.
 
 :dp:`fls_ahCqtkh0m5sR`
 A :dt:`type parameter initializer` is a :t:`construct` that provides the
@@ -433,12 +433,12 @@ Generic Conformance
 :t:`[generic parameter]s` and a set of :t:`[generic argument]s`.
 
 :dp:`fls_ltch5eivxgaa`
-A :dt:`binding argument` is conformant with an :t:`associated type` when the
+A :t:`binding argument` is conformant with an :t:`associated type` when the
 supplied :t:`type` of the :t:`binding argument` fulfills the required
 :t:`[trait bound]s` of the :t:`associated type`.
 
 :dp:`fls_gb3mpt5rxjoa`
-A :t:`constant argument` is conformant with a :dt:`constant parameter` when
+A :t:`constant argument` is conformant with a :t:`constant parameter` when
 the :t:`[type]s` of the :t:`constant argument` and the :t:`constant parameter`
 are :t:`unifiable`.
 
@@ -488,7 +488,7 @@ The :t:`value` of a :t:`constant parameter` is determined as follows:
 
 * :dp:`fls_OhVxhJ23x7W2`
   Otherwise, if the :t:`constant parameter` has a
-  :dt:`constant parameter initializer`, then the :t:`value` is that of the
+  :t:`constant parameter initializer`, then the :t:`value` is that of the
   :t:`constant parameter initializer`.
 
 * :dp:`fls_Kyar0jH9BqeW`

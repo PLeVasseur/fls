@@ -329,7 +329,7 @@ An :dt:`associated constant` is a :t:`constant` that appears as an
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :dt:`static initializer` of a :dt:`static`.
+  The :t:`static initializer` of a :dt:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -514,7 +514,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The initialization :t:`expression` of a :t:`let statement`,
 
 * :dp:`fls_jLZlxIHr4w2v`
-  The :t:`operand` of an :dt:`implicit borrow`,
+  The :t:`operand` of an :t:`implicit borrow`,
 
 * :dp:`fls_giZ7w1G02JSg`
   The :dt:`indexed operand` of an :t:`index expression`,
@@ -665,6 +665,12 @@ A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :dp:`fls_wb053tupleenumvariant`
 A :dt:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
+
+:dp:`fls_wb080tuplestruct`
+A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_wb079unitenumvariant`
+A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
 
 :dp:`fls_4q6m9t1w7zpa`
 A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
@@ -905,6 +911,9 @@ Named Blocks
 :dp:`fls_J8wJNfcSAYrS`
 A :dt:`named block expression` is a :t:`block expression` with a :t:`label`,
 which names the block for :t:`break expression` control flow.
+
+:dp:`fls_wb069label`
+A :dt:`label` is the :t:`name` of a :t:`loop expression`.
 
 :dp:`fls_B4NBv2jfZLuy`
 The :t:`type` of the :t:`named block expression` is the :t:`type` of its
@@ -3210,6 +3219,9 @@ A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
 :t:`tuple field` in a :t:`tuple expression`.
 
+:dp:`fls_wb063tuple`
+A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
+
 :dp:`fls_ljz3sxmfzflm`
 The :t:`type` of a :t:`tuple expression` is ``(T1, T2, ..., TN)``, where ``T1``
 is the :t:`type` of the first :t:`tuple initializer`, ``T2`` is the :t:`type` of
@@ -3507,7 +3519,7 @@ A :t:`tuple enum variant` is an :t:`enum variant` with a
 :s:`TupleStructFieldList`.
 
 :dp:`fls_q1m7v9b3k5ha`
-A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
 
 :dp:`fls_g6t2n8c5p4xy`
 A :dt:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
@@ -3517,7 +3529,7 @@ An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
 :dp:`fls_m8n4t5c1k0pz`
-A :dt:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
+A :t:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
 :t:`function trait` calls.
 
 :dp:`fls_7ql1c71eidg8`
@@ -3903,6 +3915,10 @@ An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
 :dp:`fls_DSy7bPKGzyov`
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.
 
+:dp:`fls_wb067bindingarg`
+A :dt:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
+of an :t:`associated trait type`.
+
 :dp:`fls_srbl7ptknjyk`
 A :dt:`closure body` is a :t:`construct` that represents the executable portion
 of a :t:`closure expression`.
@@ -4006,7 +4022,7 @@ A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
 :dp:`fls_1MTa81vtePN8`
-A :dt:`label` is the :t:`name` of a :t:`loop expression` or a
+A :t:`label` is the :t:`name` of a :t:`loop expression` or a
 :t:`named block expression`.
 
 :dp:`fls_eg93m93gvwal`
@@ -5071,7 +5087,12 @@ Await Expressions
 
 :dp:`fls_sjz5s71hwm7l`
 An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
-suspending the :t:`execution` of the :dt:`future` until the :t:`future` is ready.
+suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
+
+:dp:`fls_wb068future`
+A :dt:`future` is a :t:`value` of a :t:`type` that implements the
+:std:`core::future::Future` :t:`trait` which may not have finished computing
+yet.
 
 :dp:`fls_vhchgab59jvd`
 A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
@@ -5322,7 +5343,7 @@ the :t:`capturing environment`.
 
 :dp:`fls_aCxt2Ovmb5He`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by immutable reference capture` binds an :dt:`immutable reference` to the
+:dt:`by immutable reference capture` binds an :t:`immutable reference` to the
 :t:`capture target` and passes the :t:`immutable reference` into the
 :t:`capturing environment`.
 
@@ -5379,7 +5400,7 @@ Arithmetic Overflow
 
 :dp:`fls_oFIRXBPXu6Zv`
 An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
-:t:`value` of a :dt:`scalar type` that lies outside of the range of valid
+:t:`value` of a :t:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for
 the operation.

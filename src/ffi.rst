@@ -222,7 +222,7 @@ External Functions
 .. rubric:: Legality Rules
 
 :dp:`fls_v24ino4hix3m`
-An :t:`external function` is an unchecked import of a foreign :t:`function`.
+An :dt:`external function` is an unchecked import of a foreign :t:`function`.
 
 :dp:`fls_8ltVLtAfvy0m`
 An :dt:`unsafe external block` is an :t:`external block` subject to keyword
@@ -261,7 +261,7 @@ External Statics
 .. rubric:: Legality Rules
 
 :dp:`fls_8ddsytjr4il6`
-An :t:`external static` is an import of a foreign :t:`variable`.
+An :dt:`external static` is an import of a foreign :t:`variable`.
 
 :dp:`fls_wb026immutable`
 An :dt:`immutable` :t:`value` is a :t:`value` that cannot be modified.

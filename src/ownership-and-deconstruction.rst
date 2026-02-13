@@ -180,8 +180,11 @@ A :t:`value` is :t:`borrowed` when it is associated with an active
 pointing to it is :t:`active`.
 
 :dp:`fls_zepwytjwy049`
-An :t:`implicit borrow` is a :t:`borrow` that is not present syntactically in
-program text. An :t:`implicit borrow` occurs in the following contexts:
+An :dt:`implicit borrow` is a :t:`borrow` that is not present syntactically in
+program text.
+
+:dp:`fls_wb065implicitborrowctx`
+An :t:`implicit borrow` occurs in the following contexts:
 
 * :dp:`fls_nordokzfy36d`
   The :t:`call operand` of a :t:`call expression`,
@@ -211,6 +214,10 @@ if required.
 :dp:`fls_hyl4bdjbuzbw`
 An :t:`immutable borrow` is an :t:`immutable reference` produced by
 :t:`borrowing`.
+
+:dp:`fls_wb076immutableref`
+An :dt:`immutable reference` is a :t:`value` of a :t:`shared reference type`,
+and prevents the mutation of its :t:`referent`.
 
 :dp:`fls_8q0n7v3k2m1b`
 A :dt:`shared borrow` is a :t:`borrow` produced by evaluating an

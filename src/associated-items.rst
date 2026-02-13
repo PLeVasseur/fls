@@ -29,7 +29,7 @@ An :dt:`associated item` is an :t:`item` that appears within an
 :t:`implementation` or a :t:`trait`.
 
 :dp:`fls_8cz4rdrklaj4`
-An :t:`associated type` is a :t:`type alias` that appears as an
+An :dt:`associated type` is a :t:`type alias` that appears as an
 :t:`associated item`.
 
 :dp:`fls_wb049assocfn`
