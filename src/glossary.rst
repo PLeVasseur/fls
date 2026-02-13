@@ -1045,7 +1045,7 @@ C
 ^
 
 :dp:`fls_d4q2ro4nsnop`
-:dt:`C` is the programming language described in the ISO/IEC 9899:2018
+:dt:`c` is the programming language described in the ISO/IEC 9899:2018
 International Standard.
 
 .. _fls_wenn1wdsicfz:
