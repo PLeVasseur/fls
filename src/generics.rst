@@ -352,7 +352,7 @@ A :dt:`generic argument` supplies a static input for an
 :t:`associated trait type` or a :t:`generic parameter`.
 
 :dp:`fls_8j3ARLPm65vI`
-A :t:`generic substitution` is the replacement of a :t:`generic parameter`
+A :dt:`generic substitution` is the replacement of a :t:`generic parameter`
 with a :t:`generic argument`.
 
 :dp:`fls_ky39fb2vcom6`

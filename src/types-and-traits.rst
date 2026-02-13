@@ -1501,7 +1501,7 @@ Type Parameters
 
 :dp:`fls_dCIIVXGhXDlO`
 A :dt:`type parameter type` is a placeholder :t:`type` of a :t:`type parameter`
-to be substituted by :dt:`generic substitution`.
+to be substituted by :t:`generic substitution`.
 
 .. rubric:: Examples
 

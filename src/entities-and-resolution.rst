@@ -369,6 +369,9 @@ An :dt:`unqualified path expression` is a :t:`path expression` without a
 :dp:`fls_tvvycup09b51`
 A :t:`path expression` is subject to :t:`path expression resolution`.
 
+:dp:`fls_wb060typepath`
+A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
+
 :dp:`fls_nj7s6xmzx55f`
 A :t:`type path` is subject to :t:`type path resolution`.
 

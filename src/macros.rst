@@ -313,7 +313,7 @@ Procedural Macros
 
 :dp:`fls_ejbddhggstd2`
 A :dt:`procedural macro` is a :t:`macro` that encapsulates syntactic
-transformations in a :dt:`function`. :t:`[Procedural macro]s` consume one or more
+transformations in a :t:`function`. :t:`[Procedural macro]s` consume one or more
 streams of :t:`[token]s` and produce a stream of :t:`[token]s`.
 
 :dp:`fls_pcce9gmjpxba`
@@ -883,7 +883,7 @@ in a :t:`destructuring assignment`.
   :t:`pattern-without-alternation`.
 
 :dp:`fls_h2zikgmazoxx`
-A :dt:`type path` is a :t:`path` that acts as a :t:`type specification`.
+A :t:`type path` is a :t:`path` that acts as a :t:`type specification`.
 
 * :dp:`fls_3zdts0fsa36u`
   :t:`Fragment specifier` **path** requires a :t:`type path`.
