@@ -13,7 +13,7 @@ Inline Assembly
 .. rubric:: Legality Rules
 
 :dp:`fls_leamdp1r3hez`
-:t:`Inline assembly` is hand-written assembly code that is integrated into a
+:dt:`Inline assembly` is hand-written assembly code that is integrated into a
 Rust program.
 
 :dp:`fls_3fg60jblx0xb`
@@ -21,7 +21,8 @@ Rust program.
 wrapped inside a :t:`macro invocation` of
 :t:`macro` :std:`core::arch::asm`,
 :t:`macro` :std:`core::arch::global_asm`, or
-:t:`macro` :std:`core::arch::naked_asm`.
+:t:`macro` :std:`core::arch::naked_asm`; these :t:`[macro]s` apply compile-time
+syntactic transformations.
 
 :dp:`fls_helnk2iz8qhp`
 :t:`Inline assembly` is available on the following architectures:
@@ -101,16 +102,16 @@ Registers
 .. rubric:: Legality Rules
 
 :dp:`fls_w5a6rybvptn6`
-A :t:`register` is a hardware component capable of holding data that can be
+A :dt:`register` is a hardware component capable of holding data that can be
 read and written.
 
 :dp:`fls_rr8rsy7oilf0`
-An :t:`input register` is a :t:`register` whose :t:`register name` is used in
-a :t:`register argument` subject to :t:`direction modifier` ``in``, ``inout``,
+An :dt:`input register` is a :t:`register` whose :t:`register name` is used in
+a :t:`register argument` subject to :dt:`direction modifier` ``in``, ``inout``,
 or ``inlateout``.
 
 :dp:`fls_5ruu8n6r9mvp`
-An :t:`output register` is a :t:`register` whose :t:`register name` is
+An :dt:`output register` is a :t:`register` whose :t:`register name` is
 used in a :t:`register argument` subject to :t:`direction modifier` ``out``,
 ``lateout``, ``inout``, or ``inlateout``.
 
@@ -120,12 +121,12 @@ same :t:`value` upon exit from an :t:`assembly code block` as it did upon entry
 into the :t:`assembly code block`.
 
 :dp:`fls_vesfzh8h6qzu`
-A :t:`register name` is either the :t:`explicit register name` of a
+A :dt:`register name` is either the :t:`explicit register name` of a
 :t:`register`, or the :t:`register class name` of the :t:`register class` a
 :t:`register` belongs to.
 
 :dp:`fls_ffwqxlh60i5w`
-An :t:`explicit register name` is a target-specific string that identifies
+An :dt:`explicit register name` is a target-specific string that identifies
 a :t:`register`.
 
 :dp:`fls_3p8akc7gcsnx`
@@ -443,10 +444,10 @@ Register Classes
 .. rubric:: Legality Rules
 
 :dp:`fls_7gxb7ztpuofj`
-A :t:`register class` represents a set of :t:`[register]s`.
+A :dt:`register class` represents a set of :t:`[register]s`.
 
 :dp:`fls_on0i2cpk254y`
-A :t:`register class name` is a target-specific string that identifies a
+A :dt:`register class name` is a target-specific string that identifies a
 :t:`register class`.
 
 :dp:`fls_40ksem5g5xx9`
@@ -575,6 +576,10 @@ A :t:`register class name` is a target-specific string that identifies a
      - ``tmm_reg``
      - ``tmm[0-7]``
 
+:dp:`fls_jS4EegNx4PAy`
+:dt:`NaN-boxing` is a technique for encoding :t:`[value]s` using the low order
+bits of the mantissa of a 64-bit IEEE floating-point ``NaN``.
+
 :dp:`fls_mnzt6bxhycv9`
 If a :t:`value` has a smaller size than the :t:`register` it is allocated in,
 then
@@ -644,7 +649,7 @@ Register Arguments
 .. rubric:: Legality Rules
 
 :dp:`fls_455dmnp4cxqv`
-A :t:`register argument` is a :t:`construct` that configures the input
+A :dt:`register argument` is a :t:`construct` that configures the input
 and output of a :t:`register`, and optionally binds the configuration to an
 :t:`identifier`.
 
@@ -652,11 +657,11 @@ and output of a :t:`register`, and optionally binds the configuration to an
 A :t:`register argument` shall be used within an :t:`assembly instruction`.
 
 :dp:`fls_uddjvkz4g899`
-A :t:`named register argument` is a :t:`register argument` whose configuration
+A :dt:`named register argument` is a :t:`register argument` whose configuration
 is bound to an :t:`identifier`.
 
 :dp:`fls_sqs5to20p0te`
-A :t:`positional register argument` is a :t:`register argument` whose
+A :dt:`positional register argument` is a :t:`register argument` whose
 configuration is not bound to an :t:`identifier`.
 
 :dp:`fls_dzlycyk24euk`
@@ -664,7 +669,7 @@ A :t:`named register argument` shall appear after a
 :t:`positional register argument`.
 
 :dp:`fls_ics6gdzww1p`
-An :t:`explicit register argument` is a :t:`register argument` that uses an
+An :dt:`explicit register argument` is a :t:`register argument` that uses an
 :t:`explicit register name`.
 
 :dp:`fls_mmc1w8jjr55r`
@@ -672,7 +677,7 @@ An :t:`explicit register argument` shall appear after a
 :t:`named register argument`.
 
 :dp:`fls_9hhtcey2d4t6`
-A :t:`register class argument` is a :t:`register argument` that uses a
+A :dt:`register class argument` is a :t:`register argument` that uses a
 :t:`register class name`.
 
 :dp:`fls_8aynifgq02gt`
@@ -685,26 +690,30 @@ A :t:`direction modifier` is a :t:`construct` that indicates whether a
 :t:`register` to an :t:`expression`, or both.
 
 :dp:`fls_fta1gb5tzi3a`
-An :t:`input register expression` is an :t:`expression` that provides the
+An :dt:`input register expression` is an :t:`expression` that provides the
 initial :t:`value` of a :t:`register`.
 
 :dp:`fls_sopiivuae0x7`
-An :t:`output register expression` is an :t:`expression` that is assigned the
+An :dt:`output register expression` is an :t:`expression` that is assigned the
 :t:`value` of a :t:`register`.
 
 :dp:`fls_81Ju1TEqJ48K`
 A :dt:`const register expression` is an :t:`expression` that is evaluated at compile-time.
 
 :dp:`fls_kkrcyk96w8x1`
-An :t:`input-output register expression` is a :t:`construct` that specifies
+An :dt:`input-output register expression` is a :t:`construct` that specifies
 both an :t:`input register expression` and an :t:`output register expression`.
 
+:dp:`fls_pydmv629vfuu`
+An :dt:`underscore expression` is an :t:`expression` that acts as a placeholder
+in a :t:`simple register expression`.
+
 :dp:`fls_aniw4ehsn2kb`
-A :t:`simple register expression` is either an :t:`expression` or an
+A :dt:`simple register expression` is either an :t:`expression` or an
 :t:`underscore expression`.
 
 :dp:`fls_j9XOoXDmN5Dq`
-A :t:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
+A :dt:`register expression` is either an :t:`input-output register expression`, a :t:`simple register expression` or a :t:`const register expression`.
 
 :dp:`fls_jU8zg4k8dFsY`
 The :t:`type` of a :t:`const register expression` shall be an :t:`integer type`.
@@ -971,7 +980,7 @@ Assembly Instructions
 .. rubric:: Legality Rules
 
 :dp:`fls_4jr7eg6e0g4w`
-An :t:`assembly instruction` is a :t:`string literal` that represents a
+An :dt:`assembly instruction` is a :t:`string literal` that represents a
 low-level assembly operation or an :t:`assembly directive`.
 
 :dp:`fls_ihjhpy4osl53`
@@ -980,7 +989,7 @@ defined in :t:`module` :std:`std::fmt`, and contain zero or more
 :t:`[register parameter]s`.
 
 :dp:`fls_2d05gcixjrzt`
-An :t:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
+An :dt:`assembly code block` is a sequence of :t:`[assembly instruction]s`.
 
 :dp:`fls_z64f094aivp6`
 When an :t:`assembly code block` contains multiple :t:`[assembly instruction]s`,
@@ -1002,7 +1011,7 @@ appear in the same declarative order in the final assembly output, or appear
 contiguously in successive addresses.
 
 :dp:`fls_xugsn2ghh73c`
-A :t:`register parameter` is a substring delimited by characters 0x7B (left
+A :dt:`register parameter` is a substring delimited by characters 0x7B (left
 curly bracket) and 0x7D (right curly bracket) that is substituted with a
 :t:`register argument` in an :t:`assembly instruction`.
 
@@ -1030,7 +1039,7 @@ Register Parameter Modifiers
 .. rubric:: Legality Rules
 
 :dp:`fls_2xilifichdqu`
-A :t:`register parameter modifier` is a substring that starts with character
+A :dt:`register parameter modifier` is a substring that starts with character
 0x3A (colon), follows a :t:`register parameter`, and changes the formatting of
 the related :t:`register parameter`.
 
@@ -1234,7 +1243,7 @@ Directive Support
 .. rubric:: Legality Rules
 
 :dp:`fls_4tfod2vgz2m6`
-An :t:`assembly directive` is a request to the assembler to perform a
+An :dt:`assembly directive` is a request to the assembler to perform a
 particular action or change a setting.
 
 :dp:`fls_3b0ab1nlo641`
@@ -1396,7 +1405,7 @@ ABI Clobbers
 .. rubric:: Legality Rules
 
 :dp:`fls_xa11ggykg0sh`
-An :t:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
+An :dt:`ABI clobber` is an argument to :t:`macro` :std:`core::arch::asm` which
 indicates that the :t:`[value]s` of selected :t:`[register]s` might be
 overwritten during the :t:`execution` of an :t:`assembly code block`.
 
@@ -1490,7 +1499,7 @@ Assembly Options
 .. rubric:: Legality Rules
 
 :dp:`fls_i21l6t3vn95t`
-An :t:`assembly option` is used to specify a characteristic of or a restriction
+An :dt:`assembly option` is used to specify a characteristic of or a restriction
 on the related :t:`assembly code block`.
 
 :dp:`fls_g09kmp2a04g9`

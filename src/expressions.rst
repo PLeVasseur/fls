@@ -75,7 +75,7 @@ A :ds:`SubjectLetExpression` is any expression in category
 .. rubric:: Legality Rules
 
 :dp:`fls_h5o6tgul4yor`
-An :t:`expression` is a :t:`construct` that produces a :t:`value`, and may have
+An :dt:`expression` is a :t:`construct` that produces a :t:`value`, and may have
 side effects at run-time.
 
 :dp:`fls_xmklb3070sp`
@@ -89,27 +89,41 @@ involve a :t:`block expression`.
 :dp:`fls_gwgttltgjma4`
 An :t:`operand` is an :t:`expression` nested within an :t:`expression`.
 
+:dp:`fls_2y7n8m4q1v9c`
+A :dt:`subexpression` is an :t:`expression` nested within another
+:t:`expression`.
+
 :dp:`fls_1r29rtnjlkql`
-A :t:`left operand` is an :t:`operand` that appears on the left-hand side of a
-:t:`binary operator`.
+A :dt:`left operand` is an :t:`operand` that appears on the left-hand side of a
+:dt:`binary operator`.
 
 :dp:`fls_qxdpyf4u3hbz`
 A :t:`right operand` is an :t:`operand` that appears on the right-hand side of a
 :t:`binary operator`.
 
+:dp:`fls_yOW2wnLPzlPy`
+A :t:`binary operator` is an operator that combines a :t:`left operand` and a
+:t:`right operand`; the :t:`left operand` is the first operand in evaluation order.
+
+:dp:`fls_m8v2k1p7t4qa`
+A :dt:`unary operator` is an operator that operates on one :t:`operand`.
+
 :dp:`fls_2j132xueobfv`
-A :t:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
+A :dt:`subject expression` is an :t:`expression` that controls :t:`[for loop]s`,
 :t:`[if expression]s`, and :t:`[match expression]s`.
 
 :dp:`fls_a243nclqqjlu`
-A :t:`subject let expression` is an :t:`expression` that controls
+A :dt:`subject let expression` is an :t:`expression` that controls
 :t:`[if let expression]s` and :t:`[while let loop]s`.
 
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_1223lwh4nq49`
-:t:`Evaluation` is the process by which an :t:`expression` achieves its runtime
+:dt:`evaluation` is the process by which an :t:`expression` achieves its runtime
 effects.
+
+:dp:`fls_47a9kz2nq5l8`
+For :dt:`evaluated`, see :t:`evaluation`.
 
 .. _fls_isyftqu120l:
 
@@ -124,7 +138,7 @@ Assignee Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_oqj7s9fi3j3j`
-An :t:`assignee expression` is an :t:`expression` that appears as the
+An :dt:`assignee expression` is an :t:`expression` that appears as the
 :t:`left operand` of an :t:`assignment expression`. The following
 :t:`[expression]s` are :t:`[assignee expression]s`:
 
@@ -146,6 +160,10 @@ An :t:`assignee expression` is an :t:`expression` that appears as the
 * :dp:`fls_horl3qcfdb0k`
   :t:`[Tuple struct call expression]s` of :t:`[assignee expression]s`,
 
+:dp:`fls_sehmhBQREyr7`
+A :dt:`mutable assignee expression` is an :t:`assignee expression` whose
+:t:`value` can be modified.
+
 :dp:`fls_1smb3tj9pxsq`
 :t:`[Parenthesized expression]s` are allowed to appear anywhere in
 :t:`[assignee expression]s`.
@@ -158,7 +176,7 @@ Constant Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_1ji7368ieg0b`
-A :t:`constant expression` is an :t:`expression` that can be evaluated
+A :dt:`constant expression` is an :t:`expression` that can be evaluated
 statically. The following :t:`[construct]s` are :t:`[constant expression]s` as
 long as their :t:`[operand]s` are also :t:`[constant expression]s` and do not
 involve :t:`[type]s` that require :t:`destruction`:
@@ -179,7 +197,7 @@ involve :t:`[type]s` that require :t:`destruction`:
   :t:`[Block expression]s`,
 
 * :dp:`fls_490a1b74fut6`
-  :t:`[Call expression]s` where the callee is a :t:`constant function`,
+  :t:`[Call expression]s` where the callee is a :dt:`constant function`,
 
 * :dp:`fls_8nyu6phm1nji`
   :t:`[Closure expression]s` that do not :t:`capture <capturing>`,
@@ -278,21 +296,25 @@ explicitly invokes an :t:`associated trait function` or uses
 :std:`core::ops` :t:`[trait]s`.
 
 :dp:`fls_fmqar6o1bwqk`
-It is a static error if the :t:`size operand` of an
+It is a static error if the :dt:`size operand` of an
 :t:`array repetition constructor` or an :t:`array type` depends on
 :t:`[generic parameter]s`.
 
 :dp:`fls_kjhma680hz3g`
-A :t:`constant context` is a :t:`construct` that requires a
+A :dt:`constant context` is a :t:`construct` that requires a
 :t:`constant expression`. The following :t:`[construct]s` are
 :t:`[constant context]s`:
 
+:dp:`fls_wb010assocconst`
+An :dt:`associated constant` is a :t:`constant` that appears as an
+:t:`associated item`.
+
 * :dp:`fls_ljc6jq5ksbcs`
-  The :t:`constant initializer` of an :t:`associated constant` or a
-  :t:`constant`,
+  The :dt:`constant initializer` of an :t:`associated constant` or a
+  :dt:`constant`,
 
 * :dp:`fls_3of516eo0kkx`
-  The :t:`constant argument` for a :t:`constant parameter`,
+  The :dt:`constant argument` for a :t:`constant parameter`,
 
 * :dp:`fls_yiks5bvojncc`
   The default :t:`value` of a :t:`constant parameter`,
@@ -307,7 +329,7 @@ A :t:`constant context` is a :t:`construct` that requires a
   The :t:`size operand` of an :t:`array type`,
 
 * :dp:`fls_ib8p7dfwddx2`
-  The :t:`static initializer` of a :t:`static`.
+  The :t:`static initializer` of a :dt:`static`.
 
 * :dp:`fls_ucFupTeCyylb`
   The :t:`block expression` of a :t:`const block expression`.
@@ -355,7 +377,7 @@ Diverging Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_oth9vFtcb9l4`
-A :t:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
+A :dt:`diverging expression` is an :t:`expression` whose :t:`evaluation` causes
 program flow to diverge from the normal :t:`evaluation` order.
 
 :dp:`fls_cmBVodJMjZi7`
@@ -389,8 +411,11 @@ Place Expressions
 
 .. rubric:: Legality Rules
 
+:dp:`fls_yBEzAdfSAMYQ`
+A :dt:`place` is a location where a :t:`value` resides.
+
 :dp:`fls_qbrcg3cl9td`
-A :t:`place expression` is an :t:`expression` that represents a memory
+A :dt:`place expression` is an :t:`expression` that represents a memory
 location. The following :t:`[expression]s` are :t:`[place expression]s`:
 
 * :dp:`fls_jpmhibm4omm7`
@@ -413,9 +438,13 @@ location. The following :t:`[expression]s` are :t:`[place expression]s`:
   A :t:`temporary`.
 
 :dp:`fls_ku38h562vfyl`
-A :t:`mutable place expression` is a :t:`place expression` whose memory
+A :dt:`mutable place expression` is a :t:`place expression` whose memory
 location can be modified. The following :t:`[place expression]s` are
 :t:`[mutable place expression]s`:
+
+:dp:`fls_wb006containerop`
+A :dt:`container operand` is an :t:`operand` that indicates the :t:`value`
+whose :t:`field` is selected in a :t:`field access expression`.
 
 * :dp:`fls_1tq2o2huda9l`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` implements the
@@ -423,18 +452,20 @@ location can be modified. The following :t:`[place expression]s` are
 
 * :dp:`fls_6b4rwkrc1ap6`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` is a
-  :t:`mutable raw pointer type`,
+  :t:`mutable raw pointer type` (a :t:`raw pointer type` subject to
+  :t:`keyword` ``mut``),
 
 * :dp:`fls_s4bhrpykzmm7`
   A :t:`dereference expression` whose :t:`operand`'s :t:`type` is a
-  :t:`mutable reference type`,
+  :t:`mutable reference type` (a :t:`reference type` subject to :t:`keyword`
+  ``mut``),
 
 * :dp:`fls_xm0gm2q27x2e`
   A :t:`field access expression` where the :t:`container operand` is a
   :t:`mutable place expression`,
 
 * :dp:`fls_bt50fltfqcvn`
-  An :t:`index expression` whose :t:`type` implements the
+  An :dt:`index expression` whose :t:`type` implements the
   :std:`core::ops::IndexMut` :t:`trait`,
 
 * :dp:`fls_Sgfxp186GMvz`
@@ -442,7 +473,7 @@ location can be modified. The following :t:`[place expression]s` are
   :t:`mutable place expression`,
 
 * :dp:`fls_ilaqmj3hc5uv`
-  A :t:`path expression` that resolves to a :t:`mutable static`,
+  A :t:`path expression` that resolves to a :dt:`mutable static`,
 
 * :dp:`fls_m0gbw9myylv2`
   A :t:`path expression` that resolves to a :t:`mutable variable` that is not
@@ -452,12 +483,12 @@ location can be modified. The following :t:`[place expression]s` are
   A :t:`temporary`.
 
 :dp:`fls_cPEMHZtPkctX`
-An :t:`immutable place expression` is a :t:`place expression` whose memory
+An :dt:`immutable place expression` is a :t:`place expression` whose memory
 location cannot be modified. All :t:`[place expression]s` that are not
 :t:`[mutable place expression]s` are :t:`[immutable place expression]s`.
 
 :dp:`fls_4vxi1ji93dxb`
-A :t:`place expression context` is a :t:`construct` that may evaluate its
+A :dt:`place expression context` is a :t:`construct` that may evaluate its
 :t:`operand` as a memory location.
 
 :dp:`fls_fzsrdrHnndRd`
@@ -486,7 +517,7 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The :t:`operand` of an :t:`implicit borrow`,
 
 * :dp:`fls_giZ7w1G02JSg`
-  The :t:`indexed operand` of an :t:`index expression`,
+  The :dt:`indexed operand` of an :t:`index expression`,
 
 * :dp:`fls_5yXuTLQOQ3cc`
   The :t:`subject let expression` of an :t:`if let expression` or a
@@ -496,10 +527,15 @@ The following :t:`[construct]s` are :t:`[place expression context]s`:
   The :t:`subject expression` of a :t:`match expression`,
 
 * :dp:`fls_JBfZuFDQg3mU`
-  The :t:`base initializer` of a :t:`struct expression`.
+  The :t:`base initializer` of a :dt:`struct expression`.
+
+:dp:`fls_wb089baseinit`
+A :dt:`base initializer` is a :t:`construct` that specifies an :t:`enum value`,
+a :t:`struct value`, or a :t:`union value` to be used as a base for
+construction in a :t:`struct expression`.
 
 :dp:`fls_wxGAOWEVT77u`
-A :t:`mutable place expression context` is a :t:`place expression context` that
+A :dt:`mutable place expression context` is a :t:`place expression context` that
 may evaluate its :t:`operand` as a mutable memory location. The following
 :t:`[construct]s` are :t:`[mutable place expression context]s`:
 
@@ -535,6 +571,13 @@ may evaluate its :t:`operand` as a mutable memory location. The following
 * :dp:`fls_brwv1zwu37e8`
   The :t:`subject expression` of a :t:`match expression`,
 
+:dp:`fls_YHj3sB09Wbyb`
+An :dt:`immutable place expression context` is a :t:`place expression context`
+that may evaluate its :t:`operand` as an immutable memory location. All
+:t:`[place expression context]s` that are not
+:t:`[mutable place expression context]s` are
+:t:`[immutable place expression context]s`.
+
 :dp:`fls_4axr4V0icdBP`
 A :t:`place expression` that is evaluated in a :t:`value expression context`
 or bound :t:`by value` in a :t:`pattern` denotes the :t:`value` held in the
@@ -549,12 +592,12 @@ Value Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_7q4hrt6yfr9b`
-A :t:`value expression` is an :t:`expression` that represents a :t:`value`.
+A :dt:`value expression` is an :t:`expression` that represents a :t:`value`.
 All :t:`[expression]s` that are not :t:`[place expression]s` are
 :t:`[value expression]s`.
 
 :dp:`fls_pB6xlp4uAg37`
-A :t:`value expression context` is an expression context that is not a
+A :dt:`value expression context` is an expression context that is not a
 :t:`place expression context`.
 
 :dp:`fls_8uhfwqurbyqf`
@@ -577,7 +620,7 @@ Literal Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_rbwwczom3agt`
-A :t:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
+A :dt:`literal expression` is an :t:`expression` that denotes a :t:`literal`.
 
 :dp:`fls_w30su9x4q13r`
 The :t:`type` of a :t:`literal expression` is the :t:`type` of the corresponding
@@ -616,13 +659,33 @@ Path Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_gvanx4874ycy`
-A :t:`path expression` is an :t:`expression` that denotes a :t:`path`.
+A :dt:`path expression` is an :t:`expression` that denotes a :t:`path`.
 
 :dp:`fls_EOkrcIj9CuhV`
 A :t:`path expression` shall resolve to either a :t:`constant parameter`, a
 :t:`constant`, a :t:`function`, a :t:`static`, a :t:`tuple enum variant`, a
 :t:`tuple struct`, a :t:`unit enum variant`, a :t:`unit struct`, or a
 :t:`variable`.
+
+:dp:`fls_wb053tupleenumvariant`
+A :dt:`tuple enum variant` is an :t:`enum variant` with a
+:s:`TupleStructFieldList`.
+
+:dp:`fls_wb080tuplestruct`
+A :dt:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_wb079unitenumvariant`
+A :dt:`unit enum variant` is an :t:`enum variant` without a :t:`field list`.
+
+:dp:`fls_4q6m9t1w7zpa`
+A :dt:`unit struct` is a :t:`struct` without a :t:`field list`.
+
+:dp:`fls_wb001fieldlist`
+A :dt:`field list` is a :s:`RecordStructFieldList` or :s:`TupleStructFieldList`.
+
+:dp:`fls_wb017unsafecontext`
+An :dt:`unsafe context` is either an :t:`unsafe block` or an
+:t:`unsafe function`.
 
 :dp:`fls_gz67ju6l7uhn`
 A :t:`path expression` that resolves to a :t:`mutable static` shall require
@@ -663,11 +726,11 @@ Block Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_nf65p0l0v0gr`
-A :t:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
+A :dt:`block expression` is an :t:`expression` that sequences :t:`[expression]s`
 and :t:`[statement]s`.
 
 :dp:`fls_tn3hj7k2lliu`
-A :t:`tail expression` is the last :t:`expression` within a :t:`block
+A :dt:`tail expression` is the last :t:`expression` within a :t:`block
 expression`.
 
 :dp:`fls_DfCne8YWevLE`
@@ -679,7 +742,7 @@ The :t:`type` of a :t:`block expression` is determined as follows:
 
 * :dp:`fls_ltEygvWDtHXE`
   If the :t:`block expression` contains at least one :t:`break expression` and
-  has a :t:`tail expression`, then the :t:`type` is the :t:`unified type` of
+  has a :t:`tail expression`, then the :t:`type` is the :dt:`unified type` of
   the :t:`[break type]s` of all :t:`[break expression]s` and the :t:`type` of the
   :t:`tail expression`.
 
@@ -694,6 +757,9 @@ The :t:`type` of a :t:`block expression` is determined as follows:
 
 * :dp:`fls_u0avbm147nyh`
   Otherwise the :t:`type` is the :t:`unit type`.
+
+:dp:`fls_y6c2p9k4m1ra`
+The :dt:`unit value` is the :t:`value` of a :t:`unit type`.
 
 :dp:`fls_1hzup0sf8l7l`
 The :t:`value` of a :t:`block expression` is determined as follows:
@@ -746,9 +812,21 @@ Async Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_hhidi5ukxo`
-An :t:`async block expression` is a :t:`block expression` that is specified
+An :dt:`async block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``async`` and encapsulates behavior which is executed in
 an asynchronous manner.
+
+:dp:`fls_DnCb6ei84CeI`
+An :dt:`async block` is an :t:`async block expression`.
+
+:dp:`fls_h36F1drHlHkH`
+A :dt:`control flow boundary` is a :t:`construct` that provides the target of
+a :t:`return expression` and bounds its control flow transfer.
+
+:dp:`fls_sRfEgIkgKhlk`
+An :dt:`async control flow boundary` is a :t:`control flow boundary` introduced
+by an :t:`async block expression`, :dt:`async function`, or
+:t:`async closure expression`.
 
 :dp:`fls_oisws5qykedi`
 An :t:`async block expression` denotes a new :t:`async control flow boundary`.
@@ -794,7 +872,7 @@ Const Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_0lcunL4bo8ka`
-A :t:`const block expression` is a :t:`block expression` that is specified
+A :dt:`const block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``const`` and encapsulates behavior which is evaluated
 statically.
 
@@ -836,7 +914,11 @@ Named Blocks
 .. rubric:: Legality Rules
 
 :dp:`fls_J8wJNfcSAYrS`
-A :t:`named block expression` is a :t:`block expression` with a :t:`label`.
+A :dt:`named block expression` is a :t:`block expression` with a :t:`label`,
+which names the block for :t:`break expression` control flow.
+
+:dp:`fls_wb069label`
+A :dt:`label` is the :t:`name` of a :t:`loop expression`.
 
 :dp:`fls_B4NBv2jfZLuy`
 The :t:`type` of the :t:`named block expression` is the :t:`type` of its
@@ -869,9 +951,16 @@ Unsafe Blocks
 
 .. rubric:: Legality Rules
 
+:dp:`fls_p1v7k4m2t9qa`
+An :dt:`unsafe block` is an :t:`unsafe block expression`.
+
 :dp:`fls_2az5huhcxzzy`
-An :t:`unsafe block expression` is a :t:`block expression` that is specified
+An :dt:`unsafe block expression` is a :t:`block expression` that is specified
 with :t:`keyword` ``unsafe``.
+
+:dp:`fls_8kqo952gjhaf`
+:dt:`unsafety` is the presence of :t:`[unsafe operation]s` and :t:`[unsafe trait
+implementation]s` in program text.
 
 :dp:`fls_5ucvvja4dzoc`
 An :t:`unsafe block expression` allows :t:`unsafety`.
@@ -924,7 +1013,7 @@ Operator Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ursc5ynymoy`
-An :t:`operator expression` is an :t:`expression` that involves an operator.
+An :dt:`operator expression` is an :t:`expression` that involves an operator.
 
 .. rubric:: Dynamic Semantics
 
@@ -946,23 +1035,23 @@ Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_nnqfkl228hjx`
-A :t:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
+A :dt:`borrow expression` is an :t:`expression` that borrows the :t:`value` of
 its :t:`operand` and creates a :t:`reference` to the memory location of its
 :t:`operand`.
 
 :dp:`fls_r7ix8webgqlm`
-An :t:`immutable borrow expression` is a :t:`borrow expression` that lacks
+An :dt:`immutable borrow expression` is a :t:`borrow expression` that lacks
 :t:`keyword` ``mut``.
 
 :dp:`fls_50j167r4v61b`
-A :t:`mutable borrow expression` is a :t:`borrow expression` that has
+A :dt:`mutable borrow expression` is a :t:`borrow expression` that has
 :t:`keyword` ``mut``.
 
 :dp:`fls_ya77l2zgtilp`
 When the :t:`operand` of a :t:`borrow expression` is a :t:`place expression`,
-the :t:`borrow expression` produces a :t:`reference` to the memory location
+the :t:`borrow expression` produces a :dt:`reference` to the memory location
 indicated by the :t:`operand`. The memory location is placed in a borrowed
-state, or simply :t:`borrowed`.
+state, or simply :dt:`borrowed`.
 
 :dp:`fls_chr03xll75d`
 The :t:`type` of a :t:`borrow expression` is determined as follows:
@@ -1016,7 +1105,7 @@ Raw Borrow Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_TS6DvMon5h27`
-A :t:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :t:`borrow`.
+A :dt:`raw borrow expression` is an :t:`expression` that creates a :t:`raw pointer` to the memory location of its :t:`operand` without incurring a :dt:`borrow`; this :t:`raw pointer` is a pointer of a :t:`raw pointer type`.
 
 :dp:`fls_UtjWrE2qeplQ`
 An :dt:`immutable raw borrow expression` is a :t:`raw borrow expression` that has :t:`keyword` ``const``.
@@ -1075,8 +1164,12 @@ Dereference Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_f6wktzofzdn1`
-A :t:`dereference expression` is an :t:`expression` that obtains the pointed-to
+A :dt:`dereference expression` is an :t:`expression` that obtains the pointed-to
 memory location of its :t:`operand`.
+
+:dp:`fls_aOXtV5sEUGxJ`
+A :dt:`dereference` is the memory location produced by evaluating a
+:t:`dereference expression`.
 
 :dp:`fls_aeh5pzpcjveq`
 When the :t:`operand` of a :t:`dereference expression` is of a :t:`pointer
@@ -1109,7 +1202,7 @@ The :t:`type` of a :t:`dereference expression` is determined as follows:
   ``*const T``, then the :t:`type` is ``T``.
 
 * :dp:`fls_y9bc691kkh6v`
-  Otherwise the :t:`type` is :t:`associated type`
+  Otherwise the :t:`type` is :dt:`associated type`
   :std:`core::ops::Deref::Target`.
 
 :dp:`fls_gw49nukfveib`
@@ -1133,7 +1226,7 @@ The :t:`evaluation` of a :t:`dereference expression` evaluates its :t:`operand`.
 
 :dp:`fls_9wgldua1u8yt`
 It is undefined behavior to dereference a :t:`raw pointer` that is either
-:t:`dangling` or unaligned.
+:dt:`dangling` or unaligned.
 
 .. rubric:: Examples
 
@@ -1159,7 +1252,7 @@ Error Propagation Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_8q59wbumrt5s`
-An :t:`error propagation expression` is an :t:`expression` that either evaluates
+An :dt:`error propagation expression` is an :t:`expression` that either evaluates
 to a :t:`value` of its :t:`operand` or returns a value to the enclosing control
 flow boundary.
 
@@ -1243,7 +1336,7 @@ Negation Expression
 .. rubric:: Legality Rules
 
 :dp:`fls_pfa81kv2mru8`
-A :t:`negation expression` is an :t:`expression` that negates its :t:`operand`.
+A :dt:`negation expression` is an :t:`expression` that negates its :t:`operand`.
 
 :dp:`fls_plcut8vzdwox`
 The :t:`type` of the :t:`operand` of a :t:`negation expression` with a
@@ -1384,16 +1477,23 @@ Arithmetic Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_asibqpe3z95h`
-An :t:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
+An :dt:`arithmetic expression` is an :t:`expression` that computes a :t:`value`
 from two :t:`[operand]s` using arithmetic.
 
+:dp:`fls_I6ELmHXM1xv4`
+An :dt:`arithmetic operator` is an operator used in an :t:`arithmetic expression`.
+
 :dp:`fls_kr8Opj3c7uvb`
-An :t:`addition expression` is an :t:`arithmetic expression` that uses addition.
+An :dt:`addition expression` is an :t:`arithmetic expression` that uses addition.
+
+:dp:`fls_ry3an0mwb63g`
+A :dt:`trait implementation` is an :t:`implementation` that adds functionality
+specified by a :t:`trait`.
 
 :dp:`fls_8imzo7agyx0k`
 The :t:`type` of the :t:`left operand` of an :t:`addition expression` shall
 implement the :std:`core::ops::Add` :t:`trait` with the :t:`type` of the
-:t:`right operand` as the :t:`trait implementation` :t:`type parameter`.
+:dt:`right operand` as the :t:`trait implementation` :dt:`type parameter`.
 
 :dp:`fls_vk17mfv47wk9`
 The :t:`type` of an :t:`addition expression` is :t:`associated type`
@@ -1404,7 +1504,7 @@ The :t:`value` of an :t:`addition expression` is the result of
 ``core::ops::Add::add(left_operand, right_operand)``.
 
 :dp:`fls_dstca76y08ge`
-A :t:`division expression` is an :t:`arithmetic expression` that uses division.
+A :dt:`division expression` is an :t:`arithmetic expression` that uses division.
 
 :dp:`fls_f1puss9t4btz`
 The :t:`type` of the :t:`left operand` of a :t:`division expression` shall
@@ -1420,7 +1520,7 @@ The :t:`value` of a :t:`division expression` is the result of
 ``core::ops::Div::div(left_operand, right_operand)``.
 
 :dp:`fls_kf41bphvlse3`
-A :t:`multiplication expression` is an :t:`arithmetic expression` that uses
+A :dt:`multiplication expression` is an :t:`arithmetic expression` that uses
 multiplication.
 
 :dp:`fls_hrml95g2txcj`
@@ -1437,7 +1537,7 @@ The :t:`value` of a :t:`multiplication expression` is the result of
 ``core::ops::Mul::mul(left_operand, right_operand)``.
 
 :dp:`fls_3de9ulyzuoa`
-A :t:`remainder expression` is an :t:`arithmetic expression` that uses remainder
+A :dt:`remainder expression` is an :t:`arithmetic expression` that uses remainder
 division.
 
 :dp:`fls_8fbhreyynhid`
@@ -1454,7 +1554,7 @@ The :t:`value` of a :t:`remainder expression` is the result of
 ``core::ops::Rem::rem(left_operand, right_operand)``.
 
 :dp:`fls_aalxhbvu8kdi`
-A :t:`subtraction expression` is an :t:`arithmetic expression` that uses
+A :dt:`subtraction expression` is an :t:`arithmetic expression` that uses
 subtraction.
 
 :dp:`fls_fjcv1nm8tlgf`
@@ -1513,7 +1613,7 @@ The :t:`evaluation` of a :t:`division expression` proceeds as follows:
 
    #. :dp:`fls_Q9dhNiICGIfr`
       If unsigned integer division is performed and the :t:`right operand` is
-      0, then the operation results in a :t:`panic`.
+      0, then the operation results in a :t:`panic`, an abnormal program state.
 
    #. :dp:`fls_albbLSTYtmyq`
       If two's complement division is performed and the :t:`right operand` is 0
@@ -1641,11 +1741,11 @@ Bit Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_3zd59yuywz6l`
-A :t:`bit expression` is an :t:`expression` that computes a :t:`value` from two
+A :dt:`bit expression` is an :t:`expression` that computes a :t:`value` from two
 :t:`[operand]s` using bit arithmetic.
 
 :dp:`fls_f6mmva3lbj1i`
-A :t:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
+A :dt:`bit and expression` is a :t:`bit expression` that uses bit and arithmetic.
 
 :dp:`fls_cmowpfrcelke`
 The :t:`type` of the :t:`left operand` of a :t:`bit and expression` shall
@@ -1661,7 +1761,7 @@ The :t:`value` of a :t:`bit and expression` is the result of
 ``core::ops::BitAnd::bitand(left_operand, right_operand)``.
 
 :dp:`fls_3136k1y6x3cu`
-A :t:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
+A :dt:`bit or expression` is a :t:`bit expression` that uses bit or arithmetic.
 
 :dp:`fls_oo2ynd8e1ys6`
 The :t:`type` of the :t:`left operand` of a :t:`bit or expression` shall
@@ -1677,7 +1777,7 @@ The :t:`value` of a :t:`bit or expression` is the result of
 ``core::ops::BitOr::bitor(left_operand, right_operand)``.
 
 :dp:`fls_j7ujcuthga1i`
-A :t:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
+A :dt:`bit xor expression` is a :t:`bit expression` that uses bit exclusive or
 arithmetic.
 
 :dp:`fls_fnywefl9nty2`
@@ -1694,7 +1794,7 @@ The :t:`value` of a :t:`bit xor expression` is the result of
 ``core::ops::BitXor::bitxor(left_operand, right_operand)``.
 
 :dp:`fls_caxn774ij8lk`
-A :t:`shift left expression` is a :t:`bit expression` that uses bit shift left
+A :dt:`shift left expression` is a :t:`bit expression` that uses bit shift left
 arithmetic.
 
 :dp:`fls_1f4pc612f2a8`
@@ -1711,7 +1811,7 @@ The :t:`value` of a :t:`shift left expression` is the result of
 ``core::ops::Shl::shl(left_operand, right_operand)``.
 
 :dp:`fls_t709sl4co3al`
-A :t:`shift right expression` is a :t:`bit expression` that uses bit shift right
+A :dt:`shift right expression` is a :t:`bit expression` that uses bit shift right
 arithmetic.
 
 :dp:`fls_onutb0b9p9zj`
@@ -1801,7 +1901,7 @@ The :t:`evaluation` of a :t:`shift right expression` proceeds as follows:
    :t:`shift right expression` evaluates to the value of the left :t:`operand`
    whose bits are shifted right by the number of positions the right
    :t:`operand` evaluates to. If the type of the left :t:`operand` is any
-   :t:`signed integer type` and is negative, then vacated bits are filled
+   :dt:`signed integer type` and is negative, then vacated bits are filled
    with ones. Otherwise, vacated bits are filled with zeros. ``lhs >> rhs``
    evaluates to :math:`\mathrm{lhs} / 2^ \mathrm{rhs}`, casted to the type of
    the left :t:`operand`. If the value of the right :t:`operand` is negative,
@@ -1859,7 +1959,7 @@ Comparison Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_yzuceqx6nxwa`
-A :t:`comparison expression` is an :t:`expression` that compares the
+A :dt:`comparison expression` is an :t:`expression` that compares the
 :t:`[value]s` of two :t:`[operand]s`.
 
 :dp:`fls_asfrqemqviad`
@@ -1870,7 +1970,7 @@ A :t:`comparison expression` implicitly takes :t:`[shared borrow]s` of its
 The :t:`type` of a :t:`comparison expression` is :t:`type` :c:`bool`.
 
 :dp:`fls_ruyho6cu7rxg`
-An :t:`equals expression` is a :t:`comparison expression` that tests equality.
+An :dt:`equals expression` is a :t:`comparison expression` that tests equality.
 
 :dp:`fls_8echqk9po1cf`
 The :t:`type` of the :t:`left operand` of an :t:`equals expression` shall
@@ -1882,7 +1982,7 @@ The :t:`value` of an :t:`equals expression` is the result of
 ``core::cmp::PartialEq::eq(&left_operand, &right_operand)``.
 
 :dp:`fls_wapl0ir7uvbp`
-A :t:`greater-than expression` is a :t:`comparison expression` that tests for a
+A :dt:`greater-than expression` is a :t:`comparison expression` that tests for a
 greater-than relationship.
 
 :dp:`fls_x2s6ydvj5zyd`
@@ -1895,7 +1995,7 @@ The :t:`value` of a :t:`greater-than expression` is the result of
 ``core::cmp::PartialOrd::gt(&left_operand, &right_operand)``.
 
 :dp:`fls_7n5gol6a8lod`
-A :t:`greater-than-or-equals expression` is a :t:`comparison expression` that
+A :dt:`greater-than-or-equals expression` is a :t:`comparison expression` that
 tests for a greater-than-or-equals relationship.
 
 :dp:`fls_hholzcbp5u3n`
@@ -1909,7 +2009,7 @@ The :t:`value` of a :t:`greater-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::ge(&left_operand, &right_operand)``.
 
 :dp:`fls_yd4qqi39w248`
-A :t:`less-than expression` is a :t:`comparison expression` that tests for a
+A :dt:`less-than expression` is a :t:`comparison expression` that tests for a
 less-than relationship.
 
 :dp:`fls_ynibdcke3etb`
@@ -1922,7 +2022,7 @@ The :t:`value` of a :t:`less-than expression` is the result of
 ``core::cmp::PartialOrd::lt(&left_operand, &right_operand)``.
 
 :dp:`fls_yxwe1o27u6ns`
-A :t:`less-than-or-equals expression` is a :t:`comparison expression` that tests
+A :dt:`less-than-or-equals expression` is a :t:`comparison expression` that tests
 for a less-than-or-equals relationship.
 
 :dp:`fls_6dgfieyxdan0`
@@ -1935,7 +2035,7 @@ The :t:`value` of a :t:`less-than-or-equals expression` is the result of
 ``core::cmp::PartialOrd::le(&left_operand, &right_operand)``.
 
 :dp:`fls_w71j7i3n1kit`
-A :t:`not-equals expression` is a :t:`comparison expression` that tests for
+A :dt:`not-equals expression` is a :t:`comparison expression` that tests for
 inequality.
 
 :dp:`fls_qzo1torhv5i3`
@@ -2056,15 +2156,15 @@ Lazy Boolean Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_gpbvus89iy4c`
-A :t:`lazy boolean expression` is an :t:`expression` that performs short circuit
+A :dt:`lazy boolean expression` is an :t:`expression` that performs short circuit
 Boolean arithmetic.
 
 :dp:`fls_40jya46h62yi`
-A :t:`lazy and expression` is a :t:`lazy boolean expression` that uses short
+A :dt:`lazy and expression` is a :t:`lazy boolean expression` that uses short
 circuit and arithmetic.
 
 :dp:`fls_k8u77ow5bb6c`
-A :t:`lazy or expression` is a :t:`lazy boolean expression` that uses short
+A :dt:`lazy or expression` is a :t:`lazy boolean expression` that uses short
 circuit or arithmetic.
 
 :dp:`fls_u0gwo0s2l0tn`
@@ -2128,11 +2228,11 @@ Type Cast Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ltioqbhl14g0`
-A :t:`type cast expression` is an :t:`expression` that changes the :t:`type` of
+A :dt:`type cast expression` is an :t:`expression` that changes the :t:`type` of
 an :t:`operand`.
 
 :dp:`fls_99kvyh4puy57`
-:t:`Cast` or :t:`casting` is the process of changing the :t:`type` of an
+A :dt:`cast` or :dt:`casting` is the process of changing the :t:`type` of an
 :t:`expression`.
 
 :dp:`fls_a6midh2m0w0b`
@@ -2150,7 +2250,7 @@ A :t:`type cast expression` with the following characteristics performs a
 * :dp:`fls_le6bchl25ewz`
   An :t:`operand` of an :t:`enum type` and a target :t:`integer type`
   perform :t:`enum cast`. An :dt:`enum cast` converts the :t:`operand` to its
-  :t:`discriminant`, followed by a :t:`numeric cast`.
+  :dt:`discriminant`, followed by a :t:`numeric cast`.
 
 * :dp:`fls_pcromhosmnf0`
   An operand of :t:`type` :c:`bool` or :t:`type` :c:`char` and a
@@ -2188,10 +2288,10 @@ A :t:`type cast expression` with the following characteristics performs a
   address is truncated.
 
 * :dp:`fls_59mpteeczzo`
-  An :t:`operand` of :t:`integer type` and :t:`target type` ``*const V`` or
+  An :dt:`operand` of :dt:`integer type` and :t:`target type` ``*const V`` or
   ``*mut V`` where ``V`` implements the :std:`core::marker::Sized` :t:`trait`
   perform :t:`address-to-pointer cast`. An :dt:`address-to-pointer cast`
-  produces a :t:`pointer` that interprets the integer as a machine address.
+  produces a :dt:`pointer` that interprets the integer as a machine address.
 
 * :dp:`fls_8ccwlliqw9jx`
   An :t:`operand` of :t:`type` ``&mut [T; N]`` and a :t:`target type`
@@ -2342,16 +2442,11 @@ Assignment Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_nhgexeu2h6wi`
-An :t:`assignment expression` is an :t:`expression` that assigns the :t:`value`
+An :dt:`assignment expression` is an :t:`expression` that assigns the :t:`value`
 of a :t:`value operand` to an :t:`assignee operand`.
 
-:dp:`fls_bsjw6f4a3wol`
-An :t:`assignee operand` is the target :t:`operand` of an
-:t:`assignment expression`.
-
-:dp:`fls_uinh05sslxeo`
-A :t:`value operand` is an :t:`operand` that supplies the :t:`value` that is
-assigned to an :t:`assignee operand` by an :t:`assignment expression`.
+:dp:`fls_1m8q0t2y6b9v`
+For :dt:`assignment`, see :t:`assignment expression`.
 
 :dp:`fls_qengy157fa4a`
 The :t:`type` of an :t:`assignment expression` is the :t:`unit type`.
@@ -2367,7 +2462,7 @@ Basic Assignment
 .. rubric:: Legality Rules
 
 :dp:`fls_uhcodvq75nlr`
-A :t:`basic assignment` is an :t:`assignment expression` that is not a
+A :dt:`basic assignment` is an :t:`assignment expression` that is not a
 :t:`destructuring assignment`.
 
 .. rubric:: Dynamic Semantics
@@ -2388,7 +2483,8 @@ The :t:`evaluation` of a :t:`basic assignment` proceeds as follows:
 
 #. :dp:`fls_hc01gtvlxba`
    The :t:`value` of the :t:`value operand` is :t:`passed <passing convention>`
-   into the :t:`place` of the :t:`assignee operand`.
+   into the :t:`place` of the :t:`assignee operand`, following the move or copy
+   rules that define the :t:`passing convention`.
 
 .. rubric:: Examples
 
@@ -2403,10 +2499,22 @@ Destructuring Assignment
 
 .. rubric:: Legality Rules
 
+:dp:`fls_QpBu34U6hXn9`
+A :dt:`tuple struct call expression` is a :t:`call expression` where the
+:t:`call operand` resolves to a :t:`tuple struct` or a :t:`tuple enum variant`.
+
 :dp:`fls_2eheo4yo2orm`
-A :t:`destructuring assignment` is an :t:`assignment expression` where
+A :dt:`destructuring assignment` is an :t:`assignment expression` where
 the :t:`assignee operand` is either an :t:`array expression`, a :t:`struct
 expression`, a :t:`tuple expression` or a :t:`tuple struct call expression`.
+
+:dp:`fls_bsjw6f4a3wol`
+An :dt:`assignee operand` is the target :t:`operand` of an
+:t:`assignment expression`.
+
+:dp:`fls_uinh05sslxeo`
+A :dt:`value operand` is an :t:`operand` that supplies the :t:`value` that is
+assigned to an :t:`assignee operand` by an :t:`assignment expression`.
 
 :dp:`fls_z8c3b9s9de3x`
 The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
@@ -2444,6 +2552,10 @@ The :t:`assignee operand` of a :t:`destructuring assignment` is treated as an
 :dp:`fls_4bb07tn28ivw`
 The :t:`pattern` that corresponds to a :t:`destructuring assignment` shall be
 an :t:`irrefutable pattern`.
+
+:dp:`fls_heGDNsmThYjn`
+An :dt:`initialization expression` is either a :t:`constant initializer` or a
+:t:`static initializer`.
 
 :dp:`fls_g80a92tr2ser`
 A :t:`destructuring assignment` is equivalent to a :t:`block expression` of the
@@ -2554,52 +2666,89 @@ Compound Assignment Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_3bu3g8o5nopc`
-A :t:`compound assignment expression` is an expression that first computes
+A :dt:`compound assignment expression` is an expression that first computes
 a :t:`value` from two :t:`[operand]s` and then assigns the value to an
 :t:`assigned operand`.
 
+:dp:`fls_dvy201zd6oym`
+An :dt:`assigned operand` is the target :t:`operand` of a
+:t:`compound assignment expression`.
+
+:dp:`fls_Z6ch8bZOzgxq`
+A :dt:`compound assignment` is a :t:`compound assignment expression`.
+
+:dp:`fls_tX1jlnTfON9X`
+An :dt:`addition assignment expression` is a :t:`compound assignment expression`
+that uses addition.
+
 :dp:`fls_w2hbhb989yr4`
-A :t:`bit and assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit and assignment expression` is a :t:`compound assignment expression`
 that uses bit and arithmetic.
 
 :dp:`fls_ak4g5112jkl`
-A :t:`bit or assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit or assignment expression` is a :t:`compound assignment expression`
 that uses bit or arithmetic.
 
 :dp:`fls_lkjwyy78m2vx`
-A :t:`bit xor assignment expression` is a :t:`compound assignment expression`
+A :dt:`bit xor assignment expression` is a :t:`compound assignment expression`
 that uses bit exclusive or arithmetic.
 
 :dp:`fls_pkzj0uigfcgm`
-A :t:`division assignment expression` is a :t:`compound assignment expression`
+A :dt:`division assignment expression` is a :t:`compound assignment expression`
 that uses division.
 
 :dp:`fls_ndlv3k9uclz2`
-A :t:`multiplication assignment expression` is a
+A :dt:`multiplication assignment expression` is a
 :t:`compound assignment expression` that uses multiplication.
 
 :dp:`fls_fbp5dojti27r`
-A :t:`remainder assignment expression` is a :t:`compound assignment expression`
+A :dt:`remainder assignment expression` is a :t:`compound assignment expression`
 that uses remainder division.
 
 :dp:`fls_oy9ur11k78t`
-A :t:`shift left assignment expression` is a :t:`compound assignment expression`
+A :dt:`shift left assignment expression` is a :t:`compound assignment expression`
 that uses bit shift left arithmetic.
 
 :dp:`fls_s7rey2bndfei`
-A :t:`shift right assignment expression` is a
+A :dt:`shift right assignment expression` is a
 :t:`compound assignment expression` that uses bit shift right arithmetic.
 
 :dp:`fls_7l7v7vigw3fu`
-A :t:`subtraction assignment expression` is a
+A :dt:`subtraction assignment expression` is a
 :t:`compound assignment expression` that uses subtraction.
 
-:dp:`fls_dvy201zd6oym`
-An :t:`assigned operand` is the target :t:`operand` of a
-:t:`compound assignment expression`.
+:dp:`fls_UDyCznokIYFo`
+An :dt:`addition assignment` is an :t:`addition assignment expression`.
+
+:dp:`fls_H5zoK7zj9NZZ`
+An :dt:`bit and assignment` is a :t:`bit and assignment expression`.
+
+:dp:`fls_JxiaXUUJY7lz`
+An :dt:`bit or assignment` is a :t:`bit or assignment expression`.
+
+:dp:`fls_0PENxft8n4Vz`
+An :dt:`bit xor assignment` is a :t:`bit xor assignment expression`.
+
+:dp:`fls_YUraJ9uJt34w`
+A :dt:`division assignment` is a :t:`division assignment expression`.
+
+:dp:`fls_lrPZDSrw30b5`
+A :dt:`multiplication assignment` is a :t:`multiplication assignment expression`.
+
+:dp:`fls_1b5aqr1cp1d0`
+A :dt:`remainder assignment` is a :t:`remainder assignment expression`.
+
+:dp:`fls_5n1a7tq9vx0p`
+A :dt:`shift left assignment` is a :t:`shift left assignment expression`.
+
+:dp:`fls_j8v2m0p6r3kx`
+A :dt:`shift right assignment` is a :t:`shift right assignment expression`.
+
+:dp:`fls_y1m4q6t9x3nc`
+A :dt:`subtraction assignment` is a :t:`subtraction assignment expression`.
 
 :dp:`fls_9v09ayi2azpe`
-A :t:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
+A :dt:`modifying operand` is an :t:`operand` that supplies the :t:`value` that
 is used in the calculation of a :t:`compound assignment expression`.
 
 :dp:`fls_row7saf53vwd`
@@ -2773,10 +2922,6 @@ Underscore Expressions
 
 .. rubric:: Legality Rules
 
-:dp:`fls_pydmv629vfuu`
-An :t:`underscore expression` is an :t:`expression` that acts as a placeholder
-in a :t:`destructuring assignment`.
-
 :dp:`fls_wms3dbwjwyu4`
 An :t:`underscore expression` shall appear in the :t:`assigned operand` of a
 :t:`destructuring assignment`.
@@ -2804,7 +2949,7 @@ Parenthesized Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_jhazc75w5vj`
-A :t:`parenthesized expression` is an :t:`expression` that groups other
+A :dt:`parenthesized expression` is an :t:`expression` that groups other
 :t:`[expression]s`.
 
 :dp:`fls_5d66h7naoup6`
@@ -2858,18 +3003,21 @@ Array Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ya9res33oxt6`
-An :t:`array expression` is an :t:`expression` that constructs an :t:`array`.
+An :dt:`array expression` is an :t:`expression` that constructs an :t:`array`.
+
+:dp:`fls_xmmgSHsTHDtc`
+An :dt:`array` is a :t:`value` of an :t:`array type`.
 
 :dp:`fls_fwtd3b10veiw`
-An :t:`array element constructor` is an :t:`array expression` that lists all
+An :dt:`array element constructor` is an :t:`array expression` that lists all
 elements of the :t:`array` being constructed.
 
 :dp:`fls_81jf78m5uga4`
-An :t:`array repetition constructor` is an :t:`array expression` that specifies
+An :dt:`array repetition constructor` is an :t:`array expression` that specifies
 how many times an element is repeated in the :t:`array` being constructed.
 
 :dp:`fls_3y69y9ga4at7`
-A :t:`repeat operand` is an :t:`operand` that specifies the element being
+A :dt:`repeat operand` is an :t:`operand` that specifies the element being
 repeated in an :t:`array repetition constructor`.
 
 :dp:`fls_2l9objtb23zn`
@@ -2881,7 +3029,7 @@ The :t:`size operand` shall be a :t:`constant expression`.
 
 :dp:`fls_by21pey7k423`
 The :t:`[type]s` of the :t:`[operand]s` of an :t:`array element constructor`
-shall be :t:`unifiable`.
+shall be :dt:`unifiable`.
 
 :dp:`fls_x2xu2pynxy1u`
 If the :t:`size operand` is greater than one, then the :t:`type` of the
@@ -2970,7 +3118,7 @@ Indexing Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_X9kdEAPTqsAe`
-An :t:`indexable type` is a :t:`type` that implements the
+An :dt:`indexable type` is a :t:`type` that implements the
 :std:`core::ops::Index` :t:`trait`.
 
 :dp:`fls_42ijvuqqqlvh`
@@ -2982,7 +3130,7 @@ An :t:`indexed operand` is an :t:`operand` which indicates the :t:`value`
 being indexed into by an :t:`index expression`.
 
 :dp:`fls_ff3sgpldn52o`
-An :t:`indexing operand` is an :t:`operand` which specifies the index of an
+An :dt:`indexing operand` is an :t:`operand` which specifies the index of an
 :t:`index expression`.
 
 :dp:`fls_w96p9oyv5mqt`
@@ -3070,11 +3218,14 @@ Tuple Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_87rp1hfwvjel`
-A :t:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
+A :dt:`tuple expression` is an :t:`expression` that constructs a :t:`tuple`.
 
 :dp:`fls_581y6jq1eyn8`
-A :t:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
+A :dt:`tuple initializer` is an :t:`operand` that provides the :t:`value` of a
 :t:`tuple field` in a :t:`tuple expression`.
+
+:dp:`fls_wb063tuple`
+A :dt:`tuple` is a :t:`value` of a :t:`tuple type`.
 
 :dp:`fls_ljz3sxmfzflm`
 The :t:`type` of a :t:`tuple expression` is ``(T1, T2, ..., TN)``, where ``T1``
@@ -3145,10 +3296,13 @@ Struct Expressions
 
 :dp:`fls_ij8rebvupb85`
 A :t:`struct expression` is an :t:`expression` that constructs an
-:t:`enum value`, a :t:`struct value`, or a :t:`union value`.
+:dt:`enum value`, a :dt:`struct value`, or a :t:`union value`.
+
+:dp:`fls_q7v2m9t4k1pa`
+A :dt:`union value` is a :t:`value` of a :t:`union type`.
 
 :dp:`fls_4z91ymz3ciup`
-A :t:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
+A :dt:`constructee` indicates the :t:`enum variant`, :t:`struct`, or :t:`union`
 whose value is being constructed by a :t:`struct expression`.
 
 :dp:`fls_uib1ml41mfrn`
@@ -3162,12 +3316,12 @@ The :t:`type` of a :t:`base initializer` shall be the same as the :t:`type` of
 the :t:`constructee`.
 
 :dp:`fls_ph7fsphbpbv4`
-An :t:`indexed initializer` is a :t:`construct` that specifies the index and
+An :dt:`indexed initializer` is a :t:`construct` that specifies the index and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_y3p6rtm7ek3l`
 An :t:`indexed initializer` matches a :t:`field` of the :t:`constructee`
-when the :t:`field index` of the :t:`indexed initializer` resolves to a valid
+when the :dt:`field index` of the :t:`indexed initializer` resolves to a valid
 position of a :t:`field` in the :t:`constructee`. Such an
 :t:`indexed initializer` is a :dt:`matched indexed initializer`.
 
@@ -3180,12 +3334,12 @@ The :t:`value` of an :t:`indexed initializer` is the :t:`value` of its
 :t:`operand`.
 
 :dp:`fls_lwyq3vyc91rn`
-A :t:`named initializer` is a :t:`construct` that specifies the name and
+A :dt:`named initializer` is a :t:`construct` that specifies the name and
 initial :t:`value` of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_qed1pps827dv`
 A :t:`named initializer` matches a :t:`field` of the :t:`constructee` when
-its :t:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
+its :dt:`identifier` and the :t:`name` of the :t:`field` are the same. Such a
 :t:`named initializer` is a :dt:`matched named initializer`.
 
 :dp:`fls_b60omrhc7t73`
@@ -3197,7 +3351,7 @@ The :t:`value` of a :t:`named initializer` is the :t:`value` of its
 :t:`expression`.
 
 :dp:`fls_57t368kema7h`
-A :t:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
+A :dt:`shorthand initializer` is a :t:`construct` that specifies the :t:`name`
 of a :t:`field` in a :t:`struct expression`.
 
 :dp:`fls_sm2hx8sh4agb`
@@ -3227,7 +3381,7 @@ The :t:`value` of a :t:`struct expression` is the :t:`enum value`,
 :t:`struct value`, or :t:`union value` in construction.
 
 :dp:`fls_ccqomsereni2`
-If the :t:`constructee` is a :t:`record enum variant` or a :t:`record struct`,
+If the :t:`constructee` is a :dt:`record enum variant` or a :dt:`record struct`,
 then
 
 * :dp:`fls_pivpdyr4seez`
@@ -3362,28 +3516,50 @@ Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_fvgfx17ossd9`
-A :t:`call expression` is an :t:`expression` that invokes a :t:`function` or
-constructs a :t:`tuple enum variant value` or a :t:`tuple struct value`.
+A :dt:`call expression` is an :t:`expression` that invokes a :t:`function` or
+constructs a :dt:`tuple enum variant value` or a :dt:`tuple struct value`.
+
+:dp:`fls_v1q7n3t5c9xz`
+A :t:`tuple enum variant` is an :t:`enum variant` with a
+:s:`TupleStructFieldList`.
+
+:dp:`fls_q1m7v9b3k5ha`
+A :t:`tuple struct` is a :t:`struct` with a :s:`TupleStructFieldList`.
+
+:dp:`fls_g6t2n8c5p4xy`
+A :t:`tuple struct type` is the :t:`type` of a :t:`tuple struct`.
 
 :dp:`fls_jvz5z3eqxb39`
-An :t:`argument operand` is an :t:`operand` which is used as an argument in a
+An :dt:`argument operand` is an :t:`operand` which is used as an argument in a
 :t:`call expression` or a :t:`method call expression`.
 
+:dp:`fls_m8n4t5c1k0pz`
+A :t:`tuple` is a :t:`value` that wraps :t:`[argument operand]s` in
+:t:`function trait` calls.
+
 :dp:`fls_7ql1c71eidg8`
-A :t:`call operand` is the :t:`function` being invoked or the
+A :dt:`call operand` is the :t:`function` being invoked or the
 :t:`tuple enum variant value` or the :t:`tuple struct value` being constructed
 by a :t:`call expression`.
 
-:dp:`fls_QpBu34U6hXn9`
-A :t:`tuple struct call expression` is a :t:`call expression` where the
-:t:`call operand` resolves to a :t:`tuple struct`.
+:dp:`fls_qOTBw10dW37D`
+An :dt:`adjusted call operand` is the :t:`call operand` after any implicit
+adjustments required by :t:`call resolution`.
 
 :dp:`fls_4t6imtiw6kzt`
-A :t:`callee type` is either a :t:`function item type`, a
+A :dt:`callee type` is either a :t:`function item type`, a
 :t:`function pointer type`, a :t:`tuple enum variant`, a
 :t:`tuple struct type`, or a :t:`type` that implements any of the
 :std:`core::ops::Fn`, :std:`core::ops::FnMut`, or :std:`core::ops::FnOnce`
 :t:`[trait]s`.
+
+:dp:`fls_liwnzwu1el1i`
+An :dt:`unsafe function item type` is a :t:`function item type` where the related
+:t:`function` is an :t:`unsafe function`.
+
+:dp:`fls_5dd7icjcl3nt`
+An :dt:`unsafe function pointer type` is a :t:`function pointer type` subject to
+:t:`keyword` ``unsafe``.
 
 :dp:`fls_bu6i3mcvnbin`
 The :t:`type` of a :t:`call expression` is the :t:`return type` of the invoked
@@ -3472,6 +3648,10 @@ The :t:`evaluation` of a :t:`call expression` proceeds as follows:
 
 .. rubric:: Undefined Behavior
 
+:dp:`fls_PIR4LRdYSKjj`
+A :dt:`call conformance` is the requirement that a :t:`call expression` uses
+the :t:`ABI` of the invoked :t:`function`.
+
 :dp:`fls_5yeq4oah58dl`
 It is undefined behavior to call a :t:`function` with an :t:`ABI` other than the
 :t:`ABI` the :t:`function` was defined with.
@@ -3503,15 +3683,15 @@ Method Call Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_b7i26954j1hc`
-A :t:`method call expression` is an :t:`expression` that invokes a :t:`method`
+A :dt:`method call expression` is an :t:`expression` that invokes a :dt:`method`
 of a :t:`variable`.
 
 :dp:`fls_jx3ryre0xs88`
-A :t:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
+A :dt:`receiver operand` is an :t:`operand` that denotes the :t:`value` whose
 :t:`method` is being invoked by a :t:`method call expression`.
 
 :dp:`fls_3AQUOBo7akXu`
-A :t:`method operand` is an :t:`operand` that denotes the :t:`method` being
+A :dt:`method operand` is an :t:`operand` that denotes the :t:`method` being
 invoked by a :t:`method call expression`.
 
 :dp:`fls_11glzggtbgb3`
@@ -3610,19 +3790,19 @@ Field Access Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_hr8qvwlhd9ts`
-A :t:`field access expression` is an :t:`expression` that accesses a :t:`field`
+A :dt:`field access expression` is an :t:`expression` that accesses a :t:`field`
 of a :t:`value`.
+
+:dp:`fls_jb6krd90tjmc`
+An :t:`unsafe context` is either an :t:`unsafe block` or an
+:t:`unsafe function`.
 
 :dp:`fls_s2vpn4ihenpe`
 A :t:`container operand` is an :t:`operand` that indicates the :t:`value` whose
 :t:`field` is selected in a :t:`field access expression`.
 
-:dp:`fls_yeuayil6uxzx`
-A :t:`field selector` is a :t:`construct` that selects the :t:`field` to be
-accessed in a :t:`field access expression`.
-
 :dp:`fls_qqrconpa92i3`
-A :t:`selected field` is a :t:`field` that is selected by a
+A :dt:`selected field` is a :t:`field` that is selected by a
 :t:`field access expression`.
 
 :dp:`fls_fovs9il2h9xg`
@@ -3714,14 +3894,18 @@ Closure Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_2d141c9a0yui`
-A :t:`closure expression` is an :t:`expression` that defines a
+A :dt:`closure expression` is an :t:`expression` that defines a
 :t:`closure type` and constructs a value of that :t:`type`.
 
 :dp:`fls_My6pMgpeFCFg`
-An :t:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+An :dt:`async closure expression` is a :t:`closure expression` subject to keyword ``async`` that defines an :t:`async closure type` and constructs a value of that :t:`type`.
+
+:dp:`fls_7ln7IejTjdmi`
+An :dt:`async closure type` is the :t:`closure type` defined by an
+:t:`async closure expression`.
 
 :dp:`fls_UgJgur0z6d4a`
-The :t:`return type` of a :t:`closure type` is determined as follows:
+The :dt:`return type` of a :t:`closure type` is determined as follows:
 
 * :dp:`fls_af1WL2mBKMfW`
   If the :t:`closure expression` specifies a :s:`ClosureBodyWithReturnType`, then the :t:`return type` is the specified :s:`ReturnTypeWithoutBounds`.
@@ -3729,11 +3913,19 @@ The :t:`return type` of a :t:`closure type` is determined as follows:
 * :dp:`fls_wLVeE6cNG8oa`
   Otherwise the :t:`return type` is the :t:`type` of the :t:`closure body`.
 
+:dp:`fls_3aKZB0ILIkZw`
+An :dt:`anonymous return type` is an :t:`impl trait type` ascribed to a
+:t:`function` :t:`return type`.
+
 :dp:`fls_DSy7bPKGzyov`
 The :t:`return type` of an :t:`async closure type` is an :t:`anonymous return type` with a :std:`core::future::Future` :t:`trait bound` and a :t:`binding argument` for the ``Output`` :t:`associated type alias` with the actual :t:`return type` of the corresponding :t:`closure type`.
 
+:dp:`fls_wb067bindingarg`
+A :dt:`binding argument` is a :t:`generic argument` that supplies the :t:`type`
+of an :t:`associated trait type`.
+
 :dp:`fls_srbl7ptknjyk`
-A :t:`closure body` is a :t:`construct` that represents the executable portion
+A :dt:`closure body` is a :t:`construct` that represents the executable portion
 of a :t:`closure expression`.
 
 :dp:`fls_oey0ivaiu1l`
@@ -3743,7 +3935,7 @@ A :t:`closure body` denotes a new :t:`control flow boundary`.
 A :t:`closure body` is subject to :t:`capturing`.
 
 :dp:`fls_c3rzwUxjmBMY`
-A :t:`closure parameter` is a :t:`construct` that yields a set of
+A :dt:`closure parameter` is a :t:`construct` that yields a set of
 :t:`[binding]s` that bind matched input :t:`[value]s` to :t:`[name]s` at the
 site of a :t:`call expression` or a :t:`method call expression`.
 
@@ -3822,26 +4014,33 @@ Loop Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_y1d8kd1bdlmx`
-A :t:`loop expression` is an :t:`expression` that evaluates a :t:`block
+A :dt:`loop expression` is an :t:`expression` that evaluates a :t:`block
 expression` continuously as long as some criterion holds true.
 
+:dp:`fls_JaGSm6bX2HGc`
+For :dt:`loop`, see :t:`loop expression`.
+
 :dp:`fls_BjZjuiFnPtFd`
-A :t:`loop body` is the :t:`block expression` of a :t:`loop expression`.
+A :dt:`loop body` is the :t:`block expression` of a :t:`loop expression`.
 
 :dp:`fls_XEc0cIkpkyzJ`
 The :t:`type` of the :t:`loop body` shall be the :t:`unit type`.
 
+:dp:`fls_1MTa81vtePN8`
+A :t:`label` is the :t:`name` of a :t:`loop expression` or a
+:t:`named block expression`.
+
 :dp:`fls_eg93m93gvwal`
-An :t:`anonymous loop expression` is a :t:`loop expression` without a
+An :dt:`anonymous loop expression` is a :t:`loop expression` without a
 :t:`label`.
 
 :dp:`fls_phpoq9ho8f1v`
-A :t:`named loop expression` is a :t:`loop expression` with a :t:`label`.
+A :dt:`named loop expression` is a :t:`loop expression` with a :t:`label`.
 
 .. rubric:: Dynamic Semantics
 
 :dp:`fls_aw6qczl4zpko`
-A :t:`loop expression` is :t:`terminated` when its :t:`block expression` is no
+A :t:`loop expression` is :dt:`terminated` when its :t:`block expression` is no
 longer evaluated.
 
 .. _fls_onfyolkcbeh3:
@@ -3858,8 +4057,11 @@ For Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_RPflON3LZDnO`
+For :dt:`for loop`, see :t:`for loop expression`.
+
 :dp:`fls_1bh2alh37frz`
-A :t:`for loop expression` is a :t:`loop expression` that continues to evaluate
+A :dt:`for loop expression` is a :t:`loop expression` that continues to evaluate
 its :t:`loop body` as long as its :t:`subject expression` yields a :t:`value`.
 
 :dp:`fls_fkgbin6ydkm4`
@@ -3933,8 +4135,11 @@ Infinite Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_OcNtRVV2WaUe`
+For :dt:`infinite loop`, see :t:`infinite loop expression`.
+
 :dp:`fls_p11qw6mtxlda`
-An :t:`infinite loop expression` is a :t:`loop expression` that continues to
+An :dt:`infinite loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` indefinitely.
 
 :dp:`fls_b314wjbv0zwe`
@@ -3997,9 +4202,12 @@ While Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_4w8j2v6m0qpc`
+A :dt:`while loop` is a :t:`while loop expression`.
+
 :dp:`fls_ajby242tnu7c`
-A :t:`while loop expression` is a :t:`loop expression` that continues to
-evaluate its :t:`loop body` as long as its :t:`iteration expression` holds
+A :dt:`while loop expression` is a :t:`loop expression` that continues to
+evaluate its :t:`loop body` as long as its :dt:`iteration expression` holds
 true.
 
 :dp:`fls_13hmhzqz82v6`
@@ -4057,8 +4265,11 @@ While Let Loops
 
 .. rubric:: Legality Rules
 
+:dp:`fls_j3t9k1w5z7rn`
+A :dt:`while let loop` is a :t:`while let loop expression`.
+
 :dp:`fls_fmdlyp9r9zl7`
-A :t:`while let loop expression` is a :t:`loop expression` that continues to
+A :dt:`while let loop expression` is a :t:`loop expression` that continues to
 evaluate its :t:`loop body` as long as its :t:`subject let expression` yields
 a :t:`value` that can be matched against its :t:`pattern`.
 
@@ -4119,7 +4330,7 @@ Loop Labels
 .. rubric:: Legality Rules
 
 :dp:`fls_tx5u743391h7`
-A :t:`label indication` is a :t:`construct` that indicates a :t:`label`.
+A :dt:`label indication` is a :t:`construct` that indicates a :t:`label`.
 
 :dp:`fls_7hc8yboeaho0`
 A :t:`label indication` shall indicate a :t:`label` of an enclosing
@@ -4142,7 +4353,7 @@ Break Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_i5ko1t2wbgxe`
-A :t:`break expression` is an :t:`expression` that terminates a
+A :dt:`break expression` is an :t:`expression` that terminates a
 :t:`loop expression` or a :t:`named block expression`.
 
 :dp:`fls_jiykbp51909f`
@@ -4176,7 +4387,7 @@ with an :t:`infinite loop`.
 The :t:`type` of a :t:`break expression` is the :t:`never type`.
 
 :dp:`fls_1wdybpfldj7q`
-:t:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
+:dt:`Break type` is the :t:`type` of the :t:`operand` of a :t:`break expression`.
 
 :dp:`fls_8yore99adr22`
 The :t:`break type` is determined as follows:
@@ -4190,7 +4401,7 @@ The :t:`break type` is determined as follows:
   the :t:`type` of its :t:`operand`.
 
 :dp:`fls_bgd7d5q69q0g`
-:t:`Break value` is the :t:`value` of the :t:`operand` of a
+:dt:`Break value` is the :t:`value` of the :t:`operand` of a
 :t:`break expression`.
 
 :dp:`fls_yb8jv4mkmki0`
@@ -4254,6 +4465,10 @@ Continue Expressions
        $$continue$$ LabelIndication?
 
 .. rubric:: Legality Rules
+
+:dp:`fls_LsRcIX9zGlRG`
+A :dt:`continue expression` is an :t:`expression` that restarts evaluation of
+an enclosing :t:`loop expression`.
 
 :dp:`fls_wzs6kz9ffqzt`
 A :t:`continue expression` shall appear within a :t:`loop expression`.
@@ -4341,14 +4556,14 @@ Range Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_bi82rusji8g0`
-A :t:`range expression` is an :t:`expression` that constructs a range.
+A :dt:`range expression` is an :t:`expression` that constructs a range.
 
 :dp:`fls_msyv4oyk5zp9`
-A :t:`range expression low bound` is an :t:`operand` that specifies the start of
+A :dt:`range expression low bound` is an :t:`operand` that specifies the start of
 a range.
 
 :dp:`fls_f648uuxxh4vk`
-A :t:`range expression high bound` is an :t:`operand` that specifies the end of
+A :dt:`range expression high bound` is an :t:`operand` that specifies the end of
 a range.
 
 :dp:`fls_9pl4629t54yq`
@@ -4356,7 +4571,7 @@ If a :t:`range expression` has two :t:`[operand]s`, then the :t:`[type]s` of the
 :t:`[operand]s` shall be :t:`unifiable`.
 
 :dp:`fls_xaumwogwbv3g`
-A :t:`range-from expression` is a :t:`range expression` that specifies an
+A :dt:`range-from expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound`.
 
 :dp:`fls_exa2ufugnpgc`
@@ -4367,7 +4582,7 @@ The :t:`value` of a :t:`range-from expression` is
 ``core::ops::RangeFrom { start: range_expression_low_bound }``.
 
 :dp:`fls_ppustuqdji7b`
-A :t:`range-from-to expression` is a :t:`range expression` that specifies an
+A :dt:`range-from-to expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an excluded
 :t:`range expression high bound`.
 
@@ -4379,17 +4594,20 @@ The :t:`value` of a :t:`range-from-to expression` is
 ``core::ops::Range { start: range_expression_low_bound, end: range_expression_high_bound }``.
 
 :dp:`fls_x67xo25n0qlz`
-A :t:`range-full expression` is a :t:`range expression` that covers the whole
+A :dt:`full range expression` is a :t:`range expression` that covers the whole
 range of a :t:`type`.
 
 :dp:`fls_m6n0gvg3ct1b`
-The :t:`type` of a :t:`range-full expression` is :std:`core::ops::RangeFull`.
+The :t:`type` of a :t:`full range expression` is :std:`core::ops::RangeFull`.
 
 :dp:`fls_yvh5cdgzevni`
-The :t:`value` of a :t:`range-full expression` is ``core::ops::RangeFull {}``.
+The :t:`value` of a :t:`full range expression` is ``core::ops::RangeFull {}``.
+
+:dp:`fls_f4q7x1m8z2cb`
+For :dt:`range-full expression`, see :t:`full range expression`.
 
 :dp:`fls_lh9my7g8oflq`
-A :t:`range-inclusive expression` is a :t:`range expression` that specifies an
+A :dt:`range-inclusive expression` is a :t:`range expression` that specifies an
 included :t:`range expression low bound` and an included
 :t:`range expression high bound`.
 
@@ -4402,7 +4620,7 @@ The :t:`value` of a :t:`range-inclusive expression` is
 ``core::ops::RangeInclusive::new(range_expression_low_bound, range_expression_high_bound)``.
 
 :dp:`fls_5a1uivj19kob`
-A :t:`range-to expression` is a :t:`range expression` that specifies an excluded
+A :dt:`range-to expression` is a :t:`range expression` that specifies an excluded
 :t:`range expression high bound`.
 
 :dp:`fls_k611yoc8hk0n`
@@ -4413,7 +4631,7 @@ The :t:`value` of a :t:`range-to expression` is
 ``core::ops::RangeTo { end: range_expression_high_bound }``.
 
 :dp:`fls_1gc436ee1nzm`
-A :t:`range-to-inclusive expression` is a :t:`range expression` that specifies
+A :dt:`range-to-inclusive expression` is a :t:`range expression` that specifies
 an included :t:`range expression high bound`.
 
 :dp:`fls_8sfjw83irpre`
@@ -4463,8 +4681,8 @@ If Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_2i4fbxbbvpf1`
-An :t:`if expression` is an :t:`expression` that evaluates either a
-:t:`block expression` or an :t:`else expression` depending on the :t:`value` of
+An :dt:`if expression` is an :t:`expression` that evaluates either a
+:t:`block expression` or an :dt:`else expression` depending on the :t:`value` of
 its :t:`subject expression`.
 
 :dp:`fls_5azwlk7hav1k`
@@ -4546,7 +4764,7 @@ If Let Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_dsrjup2umr9`
-An :t:`if let expression` is an :t:`expression` that evaluates either a
+An :dt:`if let expression` is an :t:`expression` that evaluates either a
 :t:`block expression` or an :t:`else expression` depending on whether its
 :t:`pattern` can be matched against its :t:`subject let expression`.
 
@@ -4651,38 +4869,38 @@ Match Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_ei4pbeksd1v8`
-A :t:`match expression` is an :t:`expression` that tries to match one of its
+A :dt:`match expression` is an :t:`expression` that tries to match one of its
 multiple :t:`[pattern]s` against its :t:`subject expression` and if it succeeds,
 evaluates an :t:`operand`.
 
 :dp:`fls_l45i24ikfavm`
-A :t:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
+A :dt:`match arm` is a :t:`construct` that consists of a :t:`match arm matcher`
 and a :t:`match arm body`.
 
 :dp:`fls_d9gerg12hm2d`
-An :t:`intermediate match arm` is any :t:`non-[final match arm]` of a
+An :dt:`intermediate match arm` is any :t:`non-[final match arm]` of a
 :t:`match expression`.
 
 :dp:`fls_oj8dg28xw5yp`
-A :t:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
+A :dt:`final match arm` is the last :t:`match arm` of a :t:`match expression`.
 
 :dp:`fls_lrdrtedyz28i`
-A :t:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
+A :dt:`match arm matcher` is a :t:`construct` that consists of a :t:`pattern` and
 a :t:`match arm guard`.
 
 :dp:`fls_zJQ4LecT1HYd`
 The :t:`expected type` of the :t:`pattern` of the :t:`match arm matcher` is the :t:`type` of the :t:`subject expression`.
 
 :dp:`fls_8wjdichfxp0y`
-A :t:`match arm body` is the :t:`operand` of a :t:`match arm`.
+A :dt:`match arm body` is the :t:`operand` of a :t:`match arm`.
 
 :dp:`fls_hs1rr54hu18w`
-A :t:`match arm guard` is a :t:`construct` that provides additional filtering to
+A :dt:`match arm guard` is a :t:`construct` that provides additional filtering to
 a :t:`match arm matcher`.
 
 :dp:`fls_RPMOAaZ6lflI`
 :t:`[Binding]s` introduced in the :t:`pattern` of a :t:`match arm matcher` are
-:t:`immutable` in the :t:`match arm guard`.
+:dt:`immutable` in the :t:`match arm guard`.
 
 :dp:`fls_knv1affr2o8t`
 The :t:`type` of the :t:`subject expression` and the :t:`[type]s` of all
@@ -4801,7 +5019,7 @@ Return Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_u7jk4j8gkho`
-A :t:`return expression` is an :t:`expression` that optionally yields a
+A :dt:`return expression` is an :t:`expression` that optionally yields a
 :t:`value` and causes control flow to return to the end of the enclosing
 :t:`control flow boundary`.
 
@@ -4873,12 +5091,21 @@ Await Expressions
 .. rubric:: Legality Rules
 
 :dp:`fls_sjz5s71hwm7l`
-An :t:`await expression` is an :t:`expression` that polls a :t:`future`,
+An :dt:`await expression` is an :t:`expression` that polls a :t:`future`,
 suspending the :t:`execution` of the :t:`future` until the :t:`future` is ready.
 
+:dp:`fls_wb068future`
+A :dt:`future` is a :t:`value` of a :t:`type` that implements the
+:std:`core::future::Future` :t:`trait` which may not have finished computing
+yet.
+
 :dp:`fls_vhchgab59jvd`
-A :t:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
+A :dt:`future operand` is an :t:`operand` whose :t:`future` is being awaited by
 an :t:`await expression`.
+
+:dp:`fls_wb084temporary`
+A :dt:`temporary` is an anonymous :t:`variable` produced by some intermediate
+computation.
 
 :dp:`fls_k9pncajmhgk1`
 An :t:`await expression` shall appear within an
@@ -4943,10 +5170,10 @@ Expression Precedence
 
 :dp:`fls_cwt7afsbgs7w`
 Certain :t:`[expression]s` are subject to :t:`precedence` and
-:t:`associativity`.
+:dt:`associativity`.
 
 :dp:`fls_ya23jjg5wjl`
-:t:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
+:dt:`Precedence` is the order by which :t:`[expression]s` are evaluated in the
 presence of other :t:`[expression]s`.
 
 :dp:`fls_bezkcuwp5qol`
@@ -5094,19 +5321,19 @@ Capturing
 .. rubric:: Legality Rules
 
 :dp:`fls_iamnzlm430ef`
-A :t:`capturing expression` is either an :t:`async block expression` or a
+A :dt:`capturing expression` is either an :t:`async block expression` or a
 :t:`closure expression`.
 
 :dp:`fls_eca6tl7j0afx`
-A :t:`capture target` is either a :t:`variable` or a :t:`field` of a
+A :dt:`capture target` is either a :t:`variable` or a :t:`field` of a
 :t:`variable`.
 
 :dp:`fls_e70ywb8191h`
-The :t:`capturing environment` of a :t:`capturing expression` consists of the
+The :dt:`capturing environment` of a :t:`capturing expression` consists of the
 :t:`[value]s` of all :t:`captured` :t:`[capture target]s`.
 
 :dp:`fls_1y2ttb466m9c`
-:t:`Capturing` is the process of saving the :t:`[capture target]s` of a
+:dt:`capturing` is the process of saving the :t:`[capture target]s` of a
 :t:`[capturing expression]'s` :t:`capturing environment`.
 
 :dp:`fls_ip81lt2mm940`
@@ -5116,7 +5343,7 @@ the :t:`capturing expression` and it is defined outside of the
 :dt:`captured`.
 
 :dp:`fls_y9n1i4hbq8sf`
-:t:`Capture mode` is the mechanism by which a :t:`capture target` is captured.
+:dt:`capture mode` is the mechanism by which a :t:`capture target` is captured.
 
 :dp:`fls_O6WYL8AUyPje`
 A :t:`captured` :t:`capture target` with :t:`capture mode` :dt:`by value capture`
@@ -5131,9 +5358,14 @@ A :t:`captured` :t:`capture target` with :t:`capture mode`
 
 :dp:`fls_xTNFfkxHm5yy`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
-:dt:`by mutable reference capture` binds a :t:`mutable reference` to the
+:dt:`by mutable reference capture` binds a :dt:`mutable reference` to the
 :t:`capture target` and passes the :t:`mutable reference` into the
 :t:`capturing environment`.
+
+:dp:`fls_k2v7m1p9t4qa`
+A :dt:`unique immutable reference` is an :t:`immutable reference` produced by
+:t:`capturing` what is asserted to be the only live :t:`reference` to a
+:t:`value` while the :t:`reference` exists.
 
 :dp:`fls_8HLaLAIZgYfs`
 A :t:`captured` :t:`capture target` with :t:`capture mode`
@@ -5176,7 +5408,7 @@ Arithmetic Overflow
 -------------------
 
 :dp:`fls_oFIRXBPXu6Zv`
-An :t:`arithmetic overflow` occurs when an :t:`operator expression` computes a
+An :dt:`arithmetic overflow` occurs when an :t:`operator expression` computes a
 :t:`value` of a :t:`scalar type` that lies outside of the range of valid
 :t:`[value]s` for the :t:`scalar type` or when one or more :t:`operand` of an
 :t:`operator expression` lies outside of the range of valid :t:`[value]s` for

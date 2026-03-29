@@ -15,7 +15,7 @@ without :t:`[data race]s`, whose rules are presented in this chapter.
 .. rubric:: Legality Rules
 
 :dp:`fls_tx4b8r6i93n4`
-A :t:`data race` is a scenario where two or more threads access a shared memory
+A :dt:`data race` is a scenario where two or more threads access a shared memory
 location concurrently without any synchronization, where one of the accesses is
 a modification.
 
@@ -37,7 +37,7 @@ The Rust programming language provides the :std:`core::marker::Send` and
 :t:`type` level.
 
 :dp:`fls_2jujsujpjp3w`
-A :t:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
+A :dt:`send type` is a :t:`type` that implements the :std:`core::marker::Send`
 :t:`trait`.
 
 :dp:`fls_cax6fe4em23k`
@@ -50,7 +50,7 @@ A :t:`send type` shall have :t:`[value]s` that are safe to transfer across
 thread boundaries.
 
 :dp:`fls_dekskhk4g895`
-A :t:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
+A :dt:`sync type` is a :t:`type` that implements the :std:`core::marker::Sync`
 :t:`trait`.
 
 :dp:`fls_y0iqr5ibnbfe`
@@ -70,9 +70,12 @@ Atomics
 .. rubric:: Legality Rules
 
 :dp:`fls_3pjla9s93mhd`
-An :t:`atomic type` is a :t:`type` defined in :t:`module`
+An :dt:`atomic type` is a :t:`type` defined in :t:`module`
 :std:`core::sync::atomic`. :t:`[Atomic type]s` provide primitive shared-memory
 communication between threads.
+
+:dp:`fls_7r2m9q4t1c6v`
+For :dt:`atomic`, see :t:`atomic type`.
 
 :dp:`fls_wn4ynaio8u47`
 :t:`[Atomic type]s` are related to :t:`[type]s` as follows:
@@ -142,4 +145,3 @@ The computed :t:`value` of a :t:`future` is obtained by using an
 :dp:`fls_ftzey2156ha`
 :std:`core::future::Future::poll` shall not be invoked on a :t:`future` that has
 already returned :std:`core::task::Poll::Ready`.
-

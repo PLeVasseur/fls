@@ -48,15 +48,15 @@ An :t:`attribute` is a general, free-form metadatum that is interpreted based on
 its :t:`name`, convention, language, and tool.
 
 :dp:`fls_yd0ehw5csaur`
-An :t:`inner attribute` is an :t:`attribute` that applies to an enclosing
+An :dt:`inner attribute` is an :t:`attribute` that applies to an enclosing
 :t:`item`.
 
 :dp:`fls_8o6vmzbw1b1j`
-An :t:`outer attribute` is an :t:`attribute` that applies to a subsequent
+An :dt:`outer attribute` is an :t:`attribute` that applies to a subsequent
 :t:`item`.
 
 :dp:`fls_9TMRVlQwAdTB`
-An :t:`attribute content` is a :t:`construct` that provides the content of
+An :dt:`attribute content` is a :t:`construct` that provides the content of
 an :t:`attribute`.
 
 .. rubric:: Examples
@@ -78,11 +78,11 @@ Attribute Properties
 .. rubric:: Legality Rules
 
 :dp:`fls_p4potvq7x532`
-An :t:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
+An :dt:`active attribute` is an :t:`attribute` that is removed from the :t:`item`
 it decorates.
 
 :dp:`fls_xk7lb2g02sy7`
-An :t:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
+An :dt:`inert attribute` is an :t:`attribute` that remains with the :t:`item`
 it decorates.
 
 :dp:`fls_q8wl7pidx2za`
@@ -166,7 +166,7 @@ Built-in Attributes
 .. rubric:: Legality Rules
 
 :dp:`fls_92tqo8uas8kd`
-A :t:`built-in attribute` is a language-defined :t:`attribute`.
+A :dt:`built-in attribute` is a language-defined :t:`attribute`.
 
 :dp:`fls_bxucstrfcco8`
 The following :t:`[built-in attribute]s` are :dt:`[code generation attribute]s`:
@@ -406,6 +406,8 @@ Attribute ``inline``
 
 :dp:`fls_s7bf7tf9206d`
 :t:`Attribute` :dc:`inline` marks its related :t:`function` as :dt:`inlined`.
+
+:dp:`fls_WKfvccIyiUsm`
 The process of replacing a :t:`call expression` to an :t:`inlined` :t:`function`
 with the :t:`function body` is referred to as :dt:`inlining`.
 
@@ -923,14 +925,14 @@ Attribute ``cfg``
 .. rubric:: Legality Rules
 
 :dp:`fls_xrjp7xw9jutz`
-:t:`Attribute` :dc:`cfg` enables :t:`conditional compilation`.
+:dt:`Attribute` :dc:`cfg` enables :dt:`conditional compilation`.
 
 :dp:`fls_l96kyix5xsof`
-A :t:`configuration predicate` is a :t:`construct` that evaluates statically
+A :dt:`configuration predicate` is a :t:`construct` that evaluates statically
 to either ``true`` or ``false``, and controls :t:`conditional compilation`.
 
 :dp:`fls_y1MUhnKCxK6T`
-An :t:`all configuration predicate` is a :t:`configuration predicate` that
+An :dt:`all configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ALL.
 
 :dp:`fls_tncxxsyutppf`
@@ -939,7 +941,7 @@ all nested configuration predicates evaluate to ``true``, or there are no nested
 configuration predicates.
 
 :dp:`fls_Rp73YEE3aFdI`
-An :t:`any configuration predicate` is a :t:`configuration predicate` that
+An :dt:`any configuration predicate` is a :t:`configuration predicate` that
 models existential quantifier ANY.
 
 :dp:`fls_m0zxktz168e0`
@@ -947,7 +949,7 @@ An :t:`any configuration predicate` evaluates statically to ``true`` when any
 nested configuration predicate evaluates to ``true``.
 
 :dp:`fls_XsxeOd32JI8x`
-A :t:`not configuration predicate` is a :t:`configuration predicate` that
+A :dt:`not configuration predicate` is a :t:`configuration predicate` that
 negates the Boolean :t:`value` of its nested :t:`configuration predicate`.
 
 :dp:`fls_tvsadfy9uibu`
@@ -1486,11 +1488,10 @@ or :t:`static`.
 be publicly exported from the produced library or object file.
 
 :dp:`fls_VKuSiswPMll7`
-An :t:`exported function` is a :t:`function` subject to :t:`attribute`
-:c:`no_mangle`.
+An :dt:`exported function` is an export of a :t:`function`.
 
 :dp:`fls_I029Rvr5BX5P`
-An :t:`exported static` is a :t:`static` subject to :t:`attribute`
+An :dt:`exported static` is a :t:`static` subject to :t:`attribute`
 :c:`no_mangle`.
 
 .. rubric:: Examples
@@ -1561,6 +1562,10 @@ Attribute ``repr``
 :t:`Attribute` :dc:`repr` shall indicate the :t:`type representation` of the
 related :t:`type`.
 
+:dp:`fls_8l5b6qxw0c9d`
+A :t:`representation modifier` is a :t:`construct` that modifies the
+:t:`alignment` of a :t:`type`.
+
 .. rubric:: Examples
 
 .. code-block:: rust
@@ -1584,6 +1589,10 @@ Attribute ``unsafe``
        $$unsafe$$ $$($$ BuiltinAttributeContent $$)$$
 
 .. rubric:: Legality Rules
+
+:dp:`fls_ovn9czwnwxue`
+An :dt:`unsafe operation` is an operation that may result in
+:t:`undefined behavior` that is not diagnosed as a static error.
 
 :dp:`fls_z5DTDKM9mU3o`
 :t:`Attribute` :dc:`unsafe` is used to indicate that an  :t:`attribute` is :t:`unsafe <unsafe operation>`.
@@ -1845,7 +1854,8 @@ Attribute ``proc_macro``
 
 :dp:`fls_u48dtmh97g`
 :t:`Attribute` :c:`proc_macro` shall apply to public :t:`[function]s` in the
-:t:`crate root module` of a :t:`proc-macro crate`.
+:t:`crate root module` of a :t:`proc-macro crate` (a :t:`crate` whose
+:t:`crate type` is ``proc-macro``).
 
 :dp:`fls_t4ez0zg1m569`
 :t:`Attribute` :dc:`proc_macro` turns the related :t:`function` into a
@@ -1963,8 +1973,9 @@ Attribute ``path``
 :t:`Attribute` :c:`path` shall apply to :t:`[module]s`.
 
 :dp:`fls_qb6anohvc03k`
-:t:`Attribute` :dc:`path` specifies the :dt:`module path` of the respective
-:t:`module` as a :t:`string literal`.
+The :dt:`path attribute` is an :t:`attribute` (written as :c:`path`) that
+specifies the :dt:`module path` of the respective :t:`module` as a
+:t:`string literal`.
 
 :dp:`fls_18tcecx4p2wp`
 A tool is free to define the format of a :t:`module path`.
@@ -2004,7 +2015,8 @@ shall apply to the :t:`crate root module` or to :t:`[module]s`.
 
 :dp:`fls_cmrqxc5oax4r`
 The :t:`outer attribute` version of :t:`attribute` :c:`no_implicit_prelude`
-shall apply to :t:`[module]s`.
+shall apply to :t:`[module]s`, because an :t:`outer attribute` applies to a
+subsequent :t:`item`.
 
 :dp:`fls_c7v2hbdb7g2d`
 :t:`Attribute` :dc:`no_implicit_prelude` prevents the import of the

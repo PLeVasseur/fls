@@ -1045,7 +1045,7 @@ C
 ^
 
 :dp:`fls_d4q2ro4nsnop`
-:dt:`C` is the programming language described in the ISO/IEC 9899:2018
+:dt:`c` is the programming language described in the ISO/IEC 9899:2018
 International Standard.
 
 .. _fls_wenn1wdsicfz:
@@ -1935,7 +1935,7 @@ elaboration
 ^^^^^^^^^^^
 
 :dp:`fls_xoahzmwu1std`
-:dt:`Elaboration` is the process by which a :t:`declaration` achieves its
+:dt:`elaboration` is the process by which a :t:`declaration` achieves its
 runtime effects.
 
 .. _fls_bxm4njfo2h58:
@@ -2105,7 +2105,7 @@ evaluation
 ^^^^^^^^^^
 
 :dp:`fls_8zmtio6razl1`
-:dt:`Evaluation` is the process by which an :t:`expression` achieves its
+:dt:`evaluation` is the process by which an :t:`expression` achieves its
 runtime effects.
 
 .. _fls_EJSzYb4IxvtR:
@@ -2134,7 +2134,7 @@ execution
 ^^^^^^^^^
 
 :dp:`fls_e5jbii84hd5g`
-:dt:`Execution` is the process by which a :t:`statement` achieves its runtime
+:dt:`execution` is the process by which a :t:`statement` achieves its runtime
 effects.
 
 .. _fls_B1qkkSvc69J4:
@@ -7228,7 +7228,7 @@ undefined behavior
 ^^^^^^^^^^^^^^^^^^
 
 :dp:`fls_WpwmltUMQGZa`
-:dt:`Undefined behavior` is a situation that results in an unbounded error.
+:dt:`undefined behavior` is a situation that results in an unbounded error.
 
 .. _fls_X6XjWwYeTnVR:
 
