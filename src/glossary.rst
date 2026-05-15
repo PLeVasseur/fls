@@ -2489,7 +2489,9 @@ See :s:`LessThanOrEqualsExpression`.
 let binding
 ^^^^^^^^^^^
 
-A :dt:`let binding` is the :t:`binding` introduced by a :t:`let statement`, an :t:`if let expression`, or a :t:`while let loop expression`.
+A :dt:`let binding` is a :t:`binding` introduced by the :t:`pattern` of a
+:t:`let statement`, an :t:`if let expression`, a :t:`while let loop expression`,
+or a :t:`match arm guard let pattern`.
 
 let initializer
 ^^^^^^^^^^^^^^^
@@ -2765,6 +2767,62 @@ A :dt:`match arm guard` is a :t:`construct` that provides additional filtering
 to a :t:`match arm matcher`.
 
 See :s:`MatchArmGuard`.
+
+match arm guard chain
+^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard chain` is a sequence of one or more
+:t:`[match arm guard condition]s`, separated by ``&&``, that appears after the
+``if`` of a :t:`match arm guard` and contains at least one
+:t:`match arm guard let pattern`.
+
+See :s:`MatchArmGuardChain`.
+
+match arm guard condition
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard condition` is a component of a
+:t:`match arm guard chain` that is either a
+:t:`match arm guard condition operand` or a
+:t:`match arm guard let pattern`.
+
+See :s:`MatchArmGuardCondition`.
+
+match arm guard condition operand
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard condition operand` is an :t:`expression` in a
+:t:`match arm guard chain` whose :t:`type` shall be :t:`type` :c:`bool`.
+
+See :s:`MatchArmGuardConditionOperand`.
+
+match arm guard let pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard let pattern` is a :t:`match arm guard condition` that
+matches a :t:`pattern` against a :t:`match arm guard scrutinee` and introduces
+any resulting :t:`[binding]s` into the following
+:t:`[match arm guard condition]s` and the related :t:`match arm body`.
+
+See :s:`MatchArmGuardLetPattern`.
+
+match arm guard operand
+^^^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard operand` is the ordinary expression-valued condition of a
+:t:`match arm guard` that contains no :t:`match arm guard let pattern` and whose
+:t:`type` shall be :t:`type` :c:`bool`.
+
+See :s:`MatchArmGuardOperand`.
+
+match arm guard scrutinee
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A :dt:`match arm guard scrutinee` is the :t:`expression` in a
+:t:`match arm guard let pattern` whose :t:`value` is matched against that
+condition's :t:`pattern`.
+
+See :s:`MatchArmGuardScrutinee`.
 
 match arm matcher
 ^^^^^^^^^^^^^^^^^
