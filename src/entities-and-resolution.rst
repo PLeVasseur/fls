@@ -1031,16 +1031,16 @@ An :dt:`import path prefix` is a sequence of :t:`[namespace qualifier]s` and :t:
    For each :t:`nesting import` in which the :t:`glob import` or :t:`simple import` is nested, from outermost to innermost:
 
    * :dp:`fls_irdKqoYzBM0M`
-     The :t:`nesting import`'s :t:`common path prefix` if it has one, :t:`namespace qualifier` ``::`` if it lacks a :t:`common path prefix` and its :s:`CommonPathPrefix` is present, or an empty sequence otherwise.
+     The :s:`SimplePath` of the :t:`nesting import`'s :s:`CommonPathPrefix` if that :s:`SimplePath` is present, :t:`namespace qualifier` ``::`` if the :s:`CommonPathPrefix` is present without a :s:`SimplePath`, or an empty sequence if the :s:`CommonPathPrefix` is absent.
 
 #. :dp:`fls_IPYvldMqduf4`
    A sequence determined by the kind of import:
 
    * :dp:`fls_2UyFcB6Our1v`
-     For a :t:`glob import`, the :t:`glob import`'s :t:`common path prefix` if it has one, :t:`namespace qualifier` ``::`` if it lacks a :t:`common path prefix` and its :s:`CommonPathPrefix` is present, or an empty sequence otherwise.
+     For a :t:`glob import`, the :s:`SimplePath` of the :t:`glob import`'s :s:`CommonPathPrefix` if that :s:`SimplePath` is present, :t:`namespace qualifier` ``::`` if the :s:`CommonPathPrefix` is present without a :s:`SimplePath`, or an empty sequence if the :s:`CommonPathPrefix` is absent.
 
    * :dp:`fls_MOXId37fcNPY`
-     For a :t:`simple import`, the :t:`simple import`'s :t:`simple path` after removing its last :t:`path segment` and, if another :t:`path segment` precedes the last :t:`path segment`, the :t:`namespace qualifier` that separates them.
+     For a :t:`simple import`, the :t:`simple import`'s :t:`simple path` after removing the last :t:`path segment` and any :t:`namespace qualifier` ``::`` that separates the last :t:`path segment` from a preceding :t:`path segment`.
 
 :dp:`fls_2bkcn83smy2y`
 A :dt:`simple import` is a :t:`use import` that brings into :t:`scope` an :t:`entity` selected by its :t:`simple import path`, or by its :t:`import path prefix` when its :t:`simple path` ends in :t:`keyword` ``self``.
@@ -1051,10 +1051,10 @@ exported by the :t:`module` or :t:`enum` its :t:`import path prefix` resolves to
 into :t:`scope`.
 
 :dp:`fls_BMtRtjJ7gBKT`
-A :t:`glob import`, :t:`nesting import`, or :t:`simple import` expressed with a leading :t:`namespace qualifier` ``::`` shall not be nested, directly or indirectly, within any :t:`nesting import` whose :s:`CommonPathPrefix` is present.
+A :t:`glob import`, :t:`nesting import`, or :t:`simple import` expressed with a leading :t:`namespace qualifier` ``::`` shall not be nested within any :t:`nesting import` whose :s:`CommonPathPrefix` is present.
 
 :dp:`fls_UZHHtqJ0ekju`
-An empty :t:`import path prefix` that selects the :t:`entity` of a :t:`simple import` resolves to the current :t:`module`.
+An empty :t:`import path prefix` of a :t:`simple import` whose :t:`simple path` is expressed as :t:`keyword` ``self`` resolves to the current :t:`module`.
 
 :dp:`fls_JHU0ersYB6eL`
 An :t:`import path prefix` that contains a :t:`path segment` shall resolve to an :t:`enum` or :t:`module`.
@@ -1103,7 +1103,7 @@ A :t:`nesting import` is a :t:`use import` that provides a common
 :t:`common path prefix` for its nested :t:`[use import]s`.
 
 :dp:`fls_iNUBX5fJAI1N`
-A :t:`glob import` whose :t:`import path prefix` is empty or consists only of :t:`namespace qualifier` ``::`` is rejected, but may still be consumed by :t:`[macro]s`.
+It is a static error if the :t:`import path prefix` of a :t:`glob import` is empty or consists only of :t:`namespace qualifier` ``::``.
 
 :dp:`fls_wB3fVglLOqbZ`
 It is a static error if two :t:`[glob import]s` import the same :t:`name` in the
@@ -1124,7 +1124,7 @@ A :t:`use import` with a single :t:`path segment` expressed as either :t:`keywor
 When a :t:`path segment` expressed as :t:`keyword` ``super`` is used to import a parent :t:`module`, the imported :t:`entity` shall be subject to a :t:`renaming`.
 
 :dp:`fls_aam34hsRmKU2`
-An :t:`import path prefix` that selects the :t:`entity` of a :t:`simple import` shall not consist only of :t:`namespace qualifier` ``::``.
+The :t:`import path prefix` of a :t:`simple import` whose :t:`simple path` is expressed as :t:`keyword` ``self`` shall not consist only of :t:`namespace qualifier` ``::``.
 
 :dp:`fls_LV94x3HlpBWk`
 A :t:`simple import` shall not refer to :t:`[enum variant]s` through a :t:`type alias`.
