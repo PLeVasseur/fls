@@ -421,7 +421,7 @@ the :t:`token` stream produced from the related :s:`EnumDeclaration`,
 :s:`StructDeclaration`, or :s:`UnionDeclaration`.
 
 :dp:`fls_TFDKS0Nl3Rwh`
-In the :t:`token` stream captured by the sole :t:`function parameter`, an :t:`outline module` is represented by the :t:`[token]s` of the :t:`item` that declares it. Its :t:`source file` is not loaded when forming this stream, and the file's contents are not part of the stream.
+In the :t:`token` stream captured by the sole :t:`function parameter` of the :t:`macro implementation function` of a :t:`derive macro`, an :t:`outline module` is represented by the :t:`[token]s` of the :t:`item` that declares it. The :t:`source file` of the :t:`outline module` is not loaded to form this stream, and the contents of that :t:`source file` are not included in the stream.
 
 :dp:`fls_H5ipqqlH3pJh`
 A :t:`derive macro` adds all its declared :t:`[derive helper attribute]s` into
@@ -501,7 +501,7 @@ captures the :t:`token` stream produced from the related :t:`item`, including
 all :t:`[outer attribute]s` that apply to that :t:`item`.
 
 :dp:`fls_yJma4E9orknX`
-In the :t:`token` stream captured by the second :t:`function parameter`, an :t:`outline module` is represented by the :t:`[token]s` of the :t:`item` that declares it. Its :t:`source file` is not loaded when forming this stream, and the file's contents are not part of the stream.
+In the :t:`token` stream captured by the second :t:`function parameter` of the :t:`macro implementation function` of an :t:`attribute macro`, an :t:`outline module` is represented by the :t:`[token]s` of the :t:`item` that declares it. The :t:`source file` of the :t:`outline module` is not loaded to form this stream, and the contents of that :t:`source file` are not included in the stream.
 
 .. rubric:: Examples
 
@@ -605,13 +605,16 @@ See :p:`fls_4vjbkm4ceymk` for the declaration of
    #[output_and_return_item]
    fn attribute_macro_invoker() {}
 
+:dp:`fls_WEHtpidpQoI6`
+An :t:`attribute macro` applied to an :t:`outline module`.
+
 .. code-block:: rust
 
    #[output_and_return_item]
    mod outline;
 
 :dp:`fls_C6XuQtYCZTEi`
-The :t:`source file` ``outline.rs`` contains:
+The :t:`source file` ``outline.rs`` declares ``VALUE``.
 
 .. code-block:: rust
 
@@ -740,7 +743,7 @@ Macro Expansion
    by their equivalent :t:`attribute` :c:`doc` representation.
 
 #. :dp:`fls_grtiwf7q8jah`
-   The :t:`item` subject to the :t:`derive macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :c:`derive` :t:`attribute` as well as any preceding :c:`derive` :t:`[attribute]s`. See :p:`fls_TFDKS0Nl3Rwh` for the representation of :t:`[outline module]s` in this :t:`token` stream.
+   The :t:`item` subject to the :t:`derive macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :c:`derive` :t:`attribute` as well as any preceding :c:`derive` :t:`[attribute]s`, with any :t:`outline module` represented as described in :p:`fls_TFDKS0Nl3Rwh`.
 
 #. :dp:`fls_tbe2qq7whq10`
    The :t:`macro implementation function` is called with the
@@ -772,7 +775,7 @@ Macro Expansion
    by their equivalent :t:`attribute` :c:`doc` representation.
 
 #. :dp:`fls_mpgh22bi8caz`
-   The :t:`item` subject to the :t:`attribute macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :t:`attribute`. This :std:`proc_macro::TokenStream` constitutes the second :t:`function parameter` of the :t:`macro implementation function`. See :p:`fls_yJma4E9orknX` for the representation of :t:`[outline module]s` in this :t:`token` stream.
+   The :t:`item` subject to the :t:`attribute macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :t:`attribute`, with any :t:`outline module` represented as described in :p:`fls_yJma4E9orknX`. This :std:`proc_macro::TokenStream` constitutes the second :t:`function parameter` of the :t:`macro implementation function`.
 
 #. :dp:`fls_ul7nhfyvyzh`
    The :t:`macro implementation function` is called with the two
