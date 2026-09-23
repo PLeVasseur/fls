@@ -751,10 +751,7 @@ Macro Expansion
    by their equivalent :t:`attribute` :c:`doc` representation.
 
 #. :dp:`fls_grtiwf7q8jah`
-   The :t:`item` subject to the :t:`derive macro` is transformed into a
-   corresponding :std:`proc_macro::TokenStream` without the
-   invoking :c:`derive` :t:`attribute` as well as any preceding :c:`derive`
-   :t:`[attribute]s`.
+   The :t:`item` subject to the :t:`derive macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :c:`derive` :t:`attribute` as well as any preceding :c:`derive` :t:`[attribute]s`.
 
 #. :dp:`fls_tbe2qq7whq10`
    The :t:`macro implementation function` is called with the
@@ -786,10 +783,7 @@ Macro Expansion
    by their equivalent :t:`attribute` :c:`doc` representation.
 
 #. :dp:`fls_mpgh22bi8caz`
-   The :t:`item` subject to the :t:`attribute macro` is transformed into a
-   corresponding :std:`proc_macro::TokenStream` without the invoking
-   :t:`attribute`. This :std:`proc_macro::TokenStream` constitutes the second
-   :t:`function parameter` of the :t:`macro implementation function`.
+   The :t:`item` subject to the :t:`attribute macro` is transformed into a corresponding :std:`proc_macro::TokenStream` without the invoking :t:`attribute`. This :std:`proc_macro::TokenStream` constitutes the second :t:`function parameter` of the :t:`macro implementation function`.
 
 #. :dp:`fls_ul7nhfyvyzh`
    The :t:`macro implementation function` is called with the two
