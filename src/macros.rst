@@ -608,6 +608,29 @@ See :p:`fls_4vjbkm4ceymk` for the declaration of
    #[output_and_return_item]
    fn attribute_macro_invoker() {}
 
+:dp:`fls_C6XuQtYCZTEi`
+With ``output_and_return_item`` defined in a :t:`proc-macro crate` named ``example_macros``, an :t:`outline module` can be used as follows:
+
+.. code-block:: rust
+
+   // main.rs
+   use example_macros::output_and_return_item;
+
+   #[output_and_return_item]
+   mod outline;
+
+   fn main() {
+       assert_eq!(outline::VALUE, 42);
+   }
+
+.. code-block:: rust
+
+   // outline.rs
+   pub const VALUE: u32 = 42;
+
+:dp:`fls_uVUipNSEORny`
+The second :t:`function parameter` of ``output_and_return_item`` contains ``mod outline;``, without the contents of ``outline.rs``. The :t:`macro` returns these :t:`[token]s` unchanged, and the :t:`outline module` in its output loads ``outline.rs``.
+
 .. _fls_wjldgtio5o75:
 
 Macro Expansion

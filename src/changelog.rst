@@ -43,6 +43,8 @@ Language changes in Rust 1.99.0
   - :p:`fls_TFDKS0Nl3Rwh`
   - :p:`fls_5WSbtlryusMG`
   - :p:`fls_yJma4E9orknX`
+  - :p:`fls_C6XuQtYCZTEi`
+  - :p:`fls_uVUipNSEORny`
 
 - `Fix the 'overflowing_literals' lint with repeated negation <https://github.com/rust-lang/rust/pull/158302>`_
 
