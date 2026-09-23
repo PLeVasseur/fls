@@ -605,23 +605,8 @@ See :p:`fls_4vjbkm4ceymk` for the declaration of
    #[output_and_return_item]
    fn attribute_macro_invoker() {}
 
-:dp:`fls_WEHtpidpQoI6`
-An :t:`attribute macro` applied to an :t:`outline module`.
-
-.. code-block:: rust
-
    #[output_and_return_item]
    mod outline;
-
-:dp:`fls_C6XuQtYCZTEi`
-The :t:`source file` ``outline.rs`` declares ``VALUE``.
-
-.. code-block:: rust
-
-   pub const VALUE: u32 = 42;
-
-:dp:`fls_uVUipNSEORny`
-The second :t:`function parameter` of ``output_and_return_item`` captures the :t:`[token]s` ``mod outline;``. The :t:`attribute macro` returns these :t:`[token]s` unchanged, and the resulting :t:`outline module` loads ``outline.rs``.
 
 .. _fls_wjldgtio5o75:
 
