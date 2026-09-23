@@ -420,6 +420,9 @@ The sole parameter of the :t:`macro implementation function` captures
 the :t:`token` stream produced from the related :s:`EnumDeclaration`,
 :s:`StructDeclaration`, or :s:`UnionDeclaration`.
 
+:dp:`fls_TFDKS0Nl3Rwh`
+For any :t:`[outline module]s` in the input to a :t:`derive macro`, the input contains the :t:`[token]s` of their :s:`[ModuleDeclaration]s`, without loading or including the contents of their :t:`[source file]s`.
+
 :dp:`fls_H5ipqqlH3pJh`
 A :t:`derive macro` adds all its declared :t:`[derive helper attribute]s` into
 the :t:`derive helper attribute` scope of the :t:`abstract data type` the
@@ -451,6 +454,9 @@ of :t:`[token]s` to produce a single stream of :t:`[token]s`, and defines a
 new :t:`outer attribute` that can be attached to :t:`[item]s`.
 :t:`[Attribute macro]s` are used to replace :t:`[item]s` with other
 :t:`[item]s`.
+
+:dp:`fls_5WSbtlryusMG`
+An :t:`attribute macro` may be applied to an :t:`outline module`.
 
 :dp:`fls_3sublbi9bz7k`
 The :t:`macro implementation function` of an :t:`attribute macro` shall be
@@ -496,6 +502,9 @@ empty.
 The second :t:`function parameter` of the :t:`macro implementation function`
 captures the :t:`token` stream produced from the related :t:`item`, including
 all :t:`[outer attribute]s` that apply to that :t:`item`.
+
+:dp:`fls_yJma4E9orknX`
+For any :t:`[outline module]s` in the input to an :t:`attribute macro`, the input contains the :t:`[token]s` of their :s:`[ModuleDeclaration]s`, without loading or including the contents of their :t:`[source file]s`.
 
 .. rubric:: Examples
 
@@ -1113,4 +1122,3 @@ Every :t:`macro` has associated :t:`hygiene` that depends on its kind:
 :dp:`fls_7eqqk2cj0clr`
 The :t:`metavariable` ``$crate`` in a :t:`declarative macro`'s expansion refers
 to the crate the :t:`declarative macro` was declared in.
-
